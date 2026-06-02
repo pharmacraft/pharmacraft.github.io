@@ -9,30 +9,33 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#fff9f3;--card:#ffffff;--card2:#fff5ec;
-  --teal:#ff6b9d;--teal2:#e63d80;--gold:#f59e0b;
-  --red:#ef4444;--blue:#0ea5e9;--purple:#8b5cf6;
-  --border:rgba(255,107,157,0.22);
-  --text:#2c1810;--muted:#7a6a5e;--white:#1a0e08;
-  --soft:rgba(0,0,0,0.04);--soft2:rgba(0,0,0,0.07);
-  --shadow:0 4px 20px rgba(255,107,157,0.08);
-  --shadow-hover:0 10px 30px rgba(255,107,157,0.18);
+  --bg:#eef4f8;--card:#ffffff;--card2:#e6f0f5;
+  --teal:#14a085;--teal2:#0e7a64;--gold:#f59e0b;
+  --red:#ef4444;--blue:#1a3a5f;--purple:#6366f1;
+  --navy:#1a3a5f;--navy2:#0f2847;--navy3:#284b75;
+  --border:rgba(20,160,133,0.28);
+  --text:#0f2847;--muted:#5a6b7d;--white:#0a1d33;
+  --soft:rgba(15,40,71,0.05);--soft2:rgba(15,40,71,0.09);
+  --shadow:0 4px 20px rgba(15,40,71,0.10);
+  --shadow-hover:0 12px 32px rgba(15,40,71,0.18);
 }
 html{scroll-behavior:smooth;}
 body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-height:1.6;}
 .app{min-height:100vh;
-  background:radial-gradient(ellipse at 10% 0%,#ffcce0 0%,transparent 55%),
-             radial-gradient(ellipse at 90% 100%,#bae6fd 0%,transparent 55%),
-             radial-gradient(ellipse at 50% 50%,#fef3c7 0%,transparent 70%),var(--bg);}
+  background:radial-gradient(ellipse at 10% 0%,#c8e6dc 0%,transparent 55%),
+             radial-gradient(ellipse at 90% 100%,#b8d4e6 0%,transparent 55%),
+             radial-gradient(ellipse at 50% 100%,#e6f0f5 0%,transparent 70%),var(--bg);}
 
 /* ── NAV ──────────────────────────────────────── */
-.nav{display:flex;align-items:center;gap:6px;padding:14px 24px;
-  background:rgba(255,249,243,0.85);backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;overflow-x:auto;
-  box-shadow:0 2px 12px rgba(255,107,157,0.05);}
-.nav-brand{font-size:18px;font-weight:800;background:linear-gradient(135deg,var(--teal),var(--gold));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  white-space:nowrap;margin-right:18px;flex-shrink:0;letter-spacing:.5px;}
+.nav{display:flex;align-items:center;gap:6px;padding:12px 24px;
+  background:rgba(238,244,248,0.92);backdrop-filter:blur(16px);
+  border-bottom:1.5px solid var(--border);position:sticky;top:0;z-index:99;overflow-x:auto;
+  box-shadow:0 2px 14px rgba(15,40,71,0.06);}
+.nav-brand{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;color:var(--navy);
+  white-space:nowrap;margin-right:18px;flex-shrink:0;letter-spacing:.3px;text-decoration:none;}
+.nav-brand img{height:40px;width:auto;display:block;}
+.nav-brand-text{background:linear-gradient(135deg,var(--navy),var(--teal));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .nav a{flex-shrink:0;background:transparent;border:1.5px solid transparent;
   border-radius:10px;padding:8px 14px;color:var(--muted);font-family:'Sora',sans-serif;
   font-size:12px;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap;text-decoration:none;}
@@ -41,13 +44,17 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   box-shadow:0 3px 10px rgba(255,107,157,0.3);}
 
 /* ── HERO ─────────────────────────────────────── */
-.hero{max-width:1100px;margin:0 auto;padding:64px 24px 36px;text-align:center;}
-.hero-badge{display:inline-block;background:linear-gradient(135deg,rgba(255,107,157,.15),rgba(245,158,11,.15));border:1.5px solid var(--border);
+.hero{max-width:1100px;margin:0 auto;padding:54px 24px 36px;text-align:center;}
+.hero-logo{width:130px;height:auto;display:block;margin:0 auto 18px;
+  filter:drop-shadow(0 8px 24px rgba(20,160,133,0.25));
+  animation:hero-float 4s ease-in-out infinite;}
+@keyframes hero-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+.hero-badge{display:inline-block;background:linear-gradient(135deg,rgba(20,160,133,.12),rgba(26,58,95,.12));border:1.5px solid var(--border);
   color:var(--teal2);padding:6px 16px;border-radius:20px;font-size:11px;font-weight:800;
   letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;
-  box-shadow:0 2px 8px rgba(255,107,157,0.1);}
+  box-shadow:0 2px 10px rgba(20,160,133,0.12);}
 .hero h1{font-size:46px;font-weight:800;line-height:1.15;margin-bottom:16px;
-  background:linear-gradient(135deg,var(--teal) 0%,var(--gold) 50%,var(--blue) 100%);
+  background:linear-gradient(135deg,var(--navy) 0%,var(--teal) 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .hero p{color:var(--muted);font-size:16px;max-width:680px;margin:0 auto 26px;line-height:1.8;}
 .hero-stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:28px;}
@@ -86,7 +93,7 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   border:1.5px solid var(--border);border-radius:16px;padding:20px;cursor:pointer;
   transition:all .25s;position:relative;overflow:hidden;box-shadow:var(--shadow);}
 .topic-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;
-  background:linear-gradient(90deg,var(--teal),var(--gold),var(--blue));}
+  background:linear-gradient(90deg,var(--navy),var(--teal));}
 .topic-card:hover{transform:translateY(-6px);border-color:var(--teal);
   box-shadow:var(--shadow-hover);}
 .topic-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);
@@ -228,7 +235,7 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   padding:16px 18px;position:relative;overflow:hidden;transition:all .2s;
   box-shadow:0 2px 8px rgba(255,107,157,0.06);}
 .ppt-slide::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;
-  background:linear-gradient(90deg,var(--teal),var(--gold),var(--blue));}
+  background:linear-gradient(90deg,var(--navy),var(--teal));}
 .ppt-slide:hover{transform:translateY(-3px);border-color:var(--teal);box-shadow:var(--shadow-hover);}
 .ppt-num{font-size:9px;color:var(--teal2);letter-spacing:1.5px;font-family:'JetBrains Mono',monospace;margin-bottom:5px;font-weight:700;}
 .ppt-title{font-size:13px;font-weight:800;color:var(--text);margin-bottom:8px;line-height:1.4;}
@@ -258,10 +265,15 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 .quiz-launch-meta{font-size:10px;color:var(--muted);font-weight:600;}
 
 /* ── FOOTER ───────────────────────────────────── */
-.footer{background:linear-gradient(135deg,#fff5ec,#ffeef5,#fef9c3);border-top:2px solid var(--border);padding:36px 24px;text-align:center;margin-top:60px;}
-.footer-name{font-size:20px;font-weight:800;background:linear-gradient(135deg,var(--teal),var(--gold),var(--blue));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px;}
-.footer-desig{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:14px;}
+.footer{background:linear-gradient(135deg,#dce8ef,#e6f0f5,#d0e3e0);border-top:2px solid var(--border);padding:40px 24px 32px;text-align:center;margin-top:60px;}
+.footer-logo{width:90px;height:auto;display:block;margin:0 auto 12px;
+  filter:drop-shadow(0 4px 12px rgba(15,40,71,0.15));}
+.footer-name{font-size:22px;font-weight:800;background:linear-gradient(135deg,var(--navy),var(--teal));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;letter-spacing:.5px;}
+.footer-author{font-size:18px;color:var(--navy);margin-bottom:8px;letter-spacing:.3px;}
+.footer-author strong{font-weight:800;background:linear-gradient(135deg,var(--navy),var(--teal2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.footer-desig{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:14px;font-weight:500;}
 .footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:14px;}
 .footer-links a{color:var(--teal2);font-size:11px;text-decoration:none;transition:color .2s;font-weight:700;}
 .footer-links a:hover{color:var(--gold);}
@@ -287,7 +299,7 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 
 <!-- ── NAVIGATION ───────────────────────────────── -->
 <nav class="nav">
-  <div class="nav-brand">⚗️ PharmaCraft</div>
+  <a href="#home" class="nav-brand"><img src="logo.png" alt="PharmaCraft Logo"><span class="nav-brand-text">PharmaCraft</span></a>
   <a href="#home" class="active">Home</a>
   <a href="#topics">Topics</a>
   <a href="#pyq">PYQs</a>
@@ -299,6 +311,7 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 
 <!-- ── HERO ─────────────────────────────────────── -->
 <section class="hero" id="home">
+  <img src="logo.png" alt="PharmaCraft Logo" class="hero-logo">
   <div class="hero-badge">⚡ Complete Pharmacology Platform</div>
   <h1>Master Pharmacology<br>The Smart Way</h1>
   <p>A complete teaching platform built for MBBS, NEET PG, INI-CET and FMGE aspirants. Animated mechanisms, high-yield classifications, drug-by-drug profiles, exam-oriented MCQs, PYQs and timed practice sets — all in one place.</p>
@@ -395,7 +408,7 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   <div class="section-head">
     <div class="section-tag">About PharmaCraft</div>
     <h2>Crafted by an Educator</h2>
-    <p>PharmaCraft is built and curated by <strong style="color:var(--teal);">Dr. Susheel Kumar</strong>, with a focus on clinical integration and exam-oriented teaching.</p>
+    <p>PharmaCraft is built and curated by <strong style="font-size:1.15em;font-weight:800;background:linear-gradient(135deg,var(--navy),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Dr. Susheel Kumar</strong>, with a focus on clinical integration and exam-oriented teaching.</p>
   </div>
   <div class="cblock" style="max-width:760px;margin:0 auto;">
     <h4>Our Mission</h4>
@@ -412,9 +425,10 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 
 <!-- ── FOOTER ───────────────────────────────────── -->
 <footer class="footer">
-  <div class="footer-name">⚗️ PharmaCraft</div>
+  <img src="logo.png" alt="PharmaCraft Logo" class="footer-logo">
+  <div class="footer-name">PharmaCraft</div>
+  <div class="footer-author"><strong>Dr. Susheel Kumar</strong></div>
   <div class="footer-desig">
-    Dr. Susheel Kumar<br>
     A complete Pharmacology learning platform for MBBS, NEET PG, INI-CET &amp; FMGE
   </div>
   <div class="footer-links">
@@ -423,11 +437,11 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
     <a href="#pyq">PYQs</a>
     <a href="#practice">Practice</a>
     <a href="#fmge">FMGE</a>
-    <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="color:#ff5e5e;">▶ YouTube – Dr. Susheel Kumar</a>
+    <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="color:#dc2626;font-weight:800;">▶ YouTube – <strong>Dr. Susheel Kumar</strong></a>
   </div>
   <div style="margin:14px auto 18px;max-width:560px;background:linear-gradient(135deg,rgba(255,0,0,0.08),rgba(255,0,0,0.02));border:1px solid rgba(255,0,0,0.25);border-radius:12px;padding:16px 20px;">
     <div style="font-size:11px;color:#ff5e5e;letter-spacing:1px;font-weight:700;margin-bottom:6px;">▶ FOLLOW ON YOUTUBE</div>
-    <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;">Dr. Susheel Kumar – Pharmacology Lectures</div>
+    <div style="font-size:16px;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:.3px;"><strong>Dr. Susheel Kumar</strong> – Pharmacology Lectures</div>
     <div style="font-size:11px;color:var(--muted);margin-bottom:10px;">Animated mechanisms, classifications, NEET PG &amp; FMGE high-yield videos</div>
     <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="display:inline-block;background:#ff0000;color:#fff;font-weight:700;font-size:12px;padding:8px 18px;border-radius:8px;text-decoration:none;">Subscribe →</a>
   </div>
