@@ -280,6 +280,111 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 .footer-copy{font-size:11px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;max-width:680px;margin:0 auto;line-height:1.8;}
 .footer-copy strong{color:var(--teal2);font-weight:800;}
 
+/* ── SEARCH ───────────────────────────────────── */
+.search-trigger{display:flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--border);
+  border-radius:10px;padding:7px 14px;color:var(--muted);font-family:'Sora',sans-serif;font-size:12px;
+  font-weight:600;cursor:pointer;transition:all .2s;flex-shrink:0;}
+.search-trigger:hover{border-color:var(--teal);color:var(--teal2);}
+.search-trigger kbd{background:var(--soft);border-radius:4px;padding:2px 6px;font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--muted);}
+.search-overlay{position:fixed;inset:0;background:rgba(15,40,71,0.7);backdrop-filter:blur(8px);
+  z-index:200;display:none;align-items:flex-start;justify-content:center;padding:60px 20px;}
+.search-overlay.show{display:flex;animation:fi .2s ease;}
+.search-box{background:#fff;border-radius:18px;width:100%;max-width:640px;
+  box-shadow:0 20px 60px rgba(15,40,71,0.3);overflow:hidden;display:flex;flex-direction:column;max-height:80vh;}
+.search-input-wrap{display:flex;align-items:center;gap:12px;padding:18px 22px;border-bottom:1px solid var(--soft);}
+.search-input-wrap span{font-size:20px;}
+.search-input{flex:1;border:none;background:transparent;outline:none;font-family:'Sora',sans-serif;
+  font-size:16px;color:var(--text);font-weight:500;}
+.search-close{background:var(--soft);border:none;border-radius:8px;padding:4px 10px;cursor:pointer;
+  font-size:11px;font-weight:700;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+.search-results{overflow-y:auto;flex:1;padding:6px 0;}
+.search-empty{padding:36px 22px;text-align:center;color:var(--muted);font-size:13px;}
+.search-empty strong{color:var(--text);display:block;margin-bottom:6px;font-size:15px;}
+.search-section{padding:8px 22px;}
+.search-section-h{font-size:10px;font-weight:800;color:var(--teal2);letter-spacing:1px;
+  text-transform:uppercase;margin:8px 0 6px;}
+.search-result{padding:10px 14px;border-radius:10px;cursor:pointer;display:flex;align-items:center;
+  gap:12px;transition:background .15s;margin-bottom:3px;}
+.search-result:hover,.search-result.active{background:var(--card2);}
+.search-result-icon{font-size:18px;flex-shrink:0;}
+.search-result-meta{flex:1;min-width:0;}
+.search-result-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px;}
+.search-result-sub{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.search-result-type{font-size:9px;background:rgba(20,160,133,.1);color:var(--teal2);
+  padding:3px 8px;border-radius:6px;font-weight:700;flex-shrink:0;text-transform:uppercase;letter-spacing:.5px;}
+
+/* ── BOOKMARKS ────────────────────────────────── */
+.bookmark-btn{position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.9);border:1px solid var(--border);
+  border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .2s;font-size:14px;color:var(--muted);}
+.bookmark-btn:hover{transform:scale(1.15);color:#dc2626;}
+.bookmark-btn.active{background:#dc2626;color:#fff;border-color:#dc2626;animation:bm-pop .3s ease;}
+@keyframes bm-pop{0%{transform:scale(1);}50%{transform:scale(1.3);}100%{transform:scale(1);}}
+.drug-card{position:relative;}
+.bookmark-panel{background:linear-gradient(135deg,#fef2f2,#fef9c3);border:2px solid #f87171;border-radius:14px;padding:20px;margin:24px 0;}
+.bookmark-panel-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.bookmark-panel-h h3{font-size:16px;color:#b91c1c;font-weight:800;display:flex;align-items:center;gap:8px;}
+.bookmark-empty{text-align:center;padding:24px;color:var(--muted);font-size:13px;}
+
+/* ── FLASHCARDS ───────────────────────────────── */
+.fc-wrap{padding:8px 0;}
+.fc-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px;
+  background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:12px 16px;}
+.fc-progress{font-size:12px;color:var(--muted);font-weight:700;}
+.fc-progress strong{color:var(--teal2);font-size:14px;}
+.fc-card{background:linear-gradient(135deg,#fff,var(--card2));border:2px solid var(--border);
+  border-radius:18px;padding:30px 24px;min-height:240px;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;text-align:center;perspective:1000px;position:relative;transition:transform .2s;
+  box-shadow:var(--shadow);}
+.fc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.fc-inner{transition:transform .6s;transform-style:preserve-3d;position:relative;width:100%;min-height:200px;}
+.fc-card.flipped .fc-inner{transform:rotateY(180deg);}
+.fc-front,.fc-back{position:absolute;width:100%;backface-visibility:hidden;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;padding:8px;}
+.fc-back{transform:rotateY(180deg);}
+.fc-name{font-size:24px;font-weight:800;color:var(--navy);margin-bottom:10px;letter-spacing:.5px;}
+.fc-hint{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700;}
+.fc-class{font-size:13px;color:var(--teal2);font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px;}
+.fc-use{font-size:13px;color:var(--text);line-height:1.7;}
+.fc-nav{display:flex;gap:10px;margin-top:14px;justify-content:center;}
+.fc-btn{background:#fff;border:2px solid var(--border);border-radius:10px;padding:10px 18px;
+  color:var(--text);font-family:'Sora',sans-serif;font-size:12px;font-weight:700;cursor:pointer;
+  transition:all .2s;display:flex;align-items:center;gap:6px;}
+.fc-btn:hover{border-color:var(--teal);color:var(--teal2);transform:translateY(-1px);}
+.fc-btn.primary{background:linear-gradient(135deg,var(--teal),var(--teal2));border-color:var(--teal);color:#fff;}
+
+/* ── DAILY MCQ ───────────────────────────────── */
+.daily-mcq{background:linear-gradient(135deg,#fff,#fef9c3);border:2px solid #fcd34d;border-radius:18px;
+  padding:24px;max-width:720px;margin:32px auto 0;box-shadow:0 8px 24px rgba(245,158,11,0.15);}
+.daily-h{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.daily-badge{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;padding:5px 14px;border-radius:12px;
+  font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;}
+.daily-h h3{font-size:16px;font-weight:800;color:#92400e;}
+.daily-q{font-size:14px;line-height:1.7;color:var(--text);margin-bottom:14px;font-weight:600;}
+.daily-opts{display:flex;flex-direction:column;gap:6px;margin-bottom:12px;}
+.daily-opt{background:#fff;border:1.5px solid var(--border);border-radius:9px;padding:9px 13px;
+  font-size:12px;cursor:pointer;transition:all .2s;color:var(--text);}
+.daily-opt:hover{border-color:var(--teal);}
+.daily-opt.correct{background:rgba(16,185,129,0.12);border-color:#10b981;color:#047857;font-weight:700;}
+.daily-opt.wrong{background:rgba(239,68,68,0.1);border-color:var(--red);color:#b91c1c;}
+.daily-letter{font-family:'JetBrains Mono',monospace;font-weight:800;margin-right:6px;color:#92400e;}
+.daily-exp{background:rgba(16,185,129,0.08);border:1px solid #86efac;border-radius:8px;padding:11px 13px;
+  font-size:12px;line-height:1.7;display:none;}
+.daily-exp.show{display:block;animation:fi .3s;}
+
+/* ── PRINT / PDF ─────────────────────────────── */
+.topic-export-btn{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,var(--navy),var(--teal));
+  color:#fff;border:none;border-radius:8px;padding:7px 14px;font-family:'Sora',sans-serif;font-size:11px;
+  font-weight:700;cursor:pointer;margin-left:auto;}
+.topic-export-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(20,160,133,0.3);}
+@media print{
+  .nav,.footer,.hero-cta,.daily-mcq,.bookmark-btn,.topic-export-btn,.search-trigger,.exam-filter,.quiz-launcher,
+  #practice-arena,.sub-tabs{display:none !important;}
+  .topic-detail .sub-panel{display:block !important;page-break-inside:avoid;}
+  .app{background:#fff !important;}
+  body{font-size:11pt;}
+}
+
 /* ── RESPONSIVE ───────────────────────────────── */
 @media(max-width:680px){
   .hero h1{font-size:32px;}
@@ -306,8 +411,26 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   <a href="#practice">Practice Sets</a>
   <a href="#fmge">FMGE</a>
   <a href="#about">About</a>
-  <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="background:linear-gradient(135deg,#ff0000,#cc0000);color:#fff;border-color:#ff0000;margin-left:auto;">▶ YouTube</a>
+  <button class="search-trigger" onclick="openSearch()" style="margin-left:auto;">🔍 Search <kbd>/</kbd></button>
+  <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="background:linear-gradient(135deg,#ff0000,#cc0000);color:#fff;border-color:#ff0000;">▶ YouTube</a>
 </nav>
+
+<!-- ── SEARCH OVERLAY ─────────────────────────── -->
+<div class="search-overlay" id="search-overlay" onclick="if(event.target===this)closeSearch()">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <span>🔍</span>
+      <input type="text" class="search-input" id="search-input" placeholder="Search drugs, topics, MCQs… (e.g. Metformin)" oninput="runSearch(this.value)" onkeydown="searchKeys(event)">
+      <button class="search-close" onclick="closeSearch()">ESC</button>
+    </div>
+    <div class="search-results" id="search-results">
+      <div class="search-empty">
+        <strong>🚀 Type to search</strong>
+        Quick examples: <em>Atorvastatin · Insulin · MOA · NEET PG · Antibiotics</em>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ── HERO ─────────────────────────────────────── -->
 <section class="hero" id="home">
@@ -327,6 +450,20 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
     <a href="#topics" class="btn-primary">Start Learning →</a>
     <a href="#practice" class="btn-secondary">Take a Practice Test</a>
     <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="background:#ff0000;color:#fff;border-radius:10px;padding:12px 24px;font-weight:700;font-size:13px;text-decoration:none;display:inline-block;transition:all .2s;">▶ Watch on YouTube</a>
+  </div>
+
+  <!-- ── DAILY MCQ ────────────────────────────── -->
+  <div class="daily-mcq" id="daily-mcq-host"></div>
+</section>
+
+<!-- ── BOOKMARKS PANEL ──────────────────────────── -->
+<section class="section" id="bookmarks-section" style="display:none;padding-top:8px;padding-bottom:0;">
+  <div class="bookmark-panel">
+    <div class="bookmark-panel-h">
+      <h3>❤️ My Bookmarked Drugs <span id="bm-count" style="background:#dc2626;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;">0</span></h3>
+      <button onclick="clearBookmarks()" style="background:transparent;border:1px solid #fca5a5;color:#b91c1c;padding:4px 12px;border-radius:8px;font-size:11px;cursor:pointer;font-weight:700;">Clear All</button>
+    </div>
+    <div class="drug-grid" id="bookmark-grid"></div>
   </div>
 </section>
 
@@ -2371,8 +2508,9 @@ function renderTopicAccordions(){
           <div class="topic-detail-icon">${t.icon}</div>
           <div class="topic-detail-meta">
             <h3>${idx+1}. ${t.title}</h3>
-            <span>Classification · MOA · PK/PD · ADR · Drugs · PPT · MCQs</span>
+            <span>Classification · MOA · PK/PD · ADR · Drugs · PPT · MCQs · Flashcards</span>
           </div>
+          <button class="topic-export-btn" onclick="event.stopPropagation();exportTopic('${t.id}')" title="Print or save as PDF">📥 PDF</button>
           <div class="topic-toggle">+</div>
         </div>
         <div class="topic-detail-body">
@@ -2382,6 +2520,7 @@ function renderTopicAccordions(){
             <button class="sub-tab" onclick="switchSub(this,'pkpd-${t.id}')">📊 PK / PD</button>
             <button class="sub-tab" onclick="switchSub(this,'adr-${t.id}')">⚠️ ADR</button>
             <button class="sub-tab" onclick="switchSub(this,'drugs-${t.id}')">💊 Drugs</button>
+            <button class="sub-tab" onclick="switchSub(this,'fc-${t.id}')">🎴 Flashcards</button>
             <button class="sub-tab" onclick="switchSub(this,'ppt-${t.id}')">🖥️ PPT Outline</button>
             <button class="sub-tab" onclick="switchSub(this,'mcq-${t.id}')">🎯 NEET MCQs</button>
           </div>
@@ -2389,13 +2528,250 @@ function renderTopicAccordions(){
           <div id="moa-${t.id}" class="sub-panel">${t.moa}</div>
           <div id="pkpd-${t.id}" class="sub-panel"><div class="cblock">${t.pkpd}</div></div>
           <div id="adr-${t.id}" class="sub-panel"><div class="high-yield"><h4>⚠️ Adverse Drug Reactions &amp; Toxicity</h4>${t.adr}</div></div>
-          <div id="drugs-${t.id}" class="sub-panel"><div class="drug-grid">${t.drugs.map(d=>`<div class="drug-card"><div class="drug-name">${d.n}</div><div class="drug-class">${d.c}</div><div class="drug-uses">${d.u}</div></div>`).join('')}</div></div>
+          <div id="drugs-${t.id}" class="sub-panel"><div class="drug-grid">${t.drugs.map((d,di)=>renderDrugCard(d,t.id,di)).join('')}</div></div>
+          <div id="fc-${t.id}" class="sub-panel">${renderFlashcardSection(t)}</div>
           <div id="ppt-${t.id}" class="sub-panel"><div class="ppt-grid">${t.ppt.map((s,i)=>`<div class="ppt-slide"><div class="ppt-num">SLIDE ${i+1}</div><div class="ppt-title">${s.t}</div><ul class="ppt-pts">${s.p.map(p=>`<li>${p}</li>`).join('')}</ul></div>`).join('')}</div></div>
           <div id="mcq-${t.id}" class="sub-panel"><div class="mcq-list">${t.mcqs.map((m,i)=>renderMCQ(m,i,`${t.id}-mcq-${i}`)).join('')}</div></div>
         </div>
       </div>`);
     root.appendChild(accordion);
   });
+}
+
+/* ── DRUG CARD WITH BOOKMARK ────────────────── */
+function renderDrugCard(d,topicId,di){
+  const drugKey = `${topicId}|${d.n}`;
+  const bookmarked = isBookmarked(drugKey);
+  return `<div class="drug-card" data-drug-key="${drugKey}">
+    <button class="bookmark-btn ${bookmarked?'active':''}" onclick="toggleBookmark('${drugKey}','${(d.n||'').replace(/'/g,"\\'")}','${(d.c||'').replace(/'/g,"\\'")}','${(d.u||'').replace(/'/g,"\\'")}',this)" title="Bookmark drug">${bookmarked?'❤️':'🤍'}</button>
+    <div class="drug-name">${d.n}</div>
+    <div class="drug-class">${d.c}</div>
+    <div class="drug-uses">${d.u}</div>
+  </div>`;
+}
+
+/* ── FLASHCARD RENDERER ─────────────────────── */
+function renderFlashcardSection(t){
+  return `<div class="fc-wrap" id="fc-wrap-${t.id}">
+    <div class="fc-controls">
+      <div class="fc-progress">Card <strong id="fc-cur-${t.id}">1</strong> of <strong>${t.drugs.length}</strong></div>
+      <button class="fc-btn" onclick="shuffleFlashcards('${t.id}')">🔀 Shuffle</button>
+    </div>
+    <div class="fc-card" id="fc-card-${t.id}" onclick="flipFlashcard('${t.id}')">
+      <div class="fc-inner">
+        <div class="fc-front">
+          <div class="fc-hint">Drug Name — Tap to reveal</div>
+          <div class="fc-name" id="fc-front-name-${t.id}">${t.drugs[0].n}</div>
+        </div>
+        <div class="fc-back">
+          <div class="fc-class" id="fc-back-class-${t.id}">${t.drugs[0].c}</div>
+          <div class="fc-use" id="fc-back-use-${t.id}">${t.drugs[0].u}</div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-nav">
+      <button class="fc-btn" onclick="prevFlashcard('${t.id}')">← Previous</button>
+      <button class="fc-btn primary" onclick="nextFlashcard('${t.id}')">Next →</button>
+    </div>
+  </div>`;
+}
+
+/* ── FLASHCARD STATE & LOGIC ───────────────── */
+const fcState = {};
+function getFcState(topicId){
+  if(!fcState[topicId]) fcState[topicId]={idx:0,order:null};
+  return fcState[topicId];
+}
+function flashcardUpdate(t){
+  const s = getFcState(t.id);
+  const order = s.order || t.drugs.map((_,i)=>i);
+  const drug = t.drugs[order[s.idx]];
+  const card = document.getElementById(`fc-card-${t.id}`);
+  card.classList.remove('flipped');
+  document.getElementById(`fc-front-name-${t.id}`).textContent = drug.n;
+  document.getElementById(`fc-back-class-${t.id}`).textContent = drug.c;
+  document.getElementById(`fc-back-use-${t.id}`).textContent = drug.u;
+  document.getElementById(`fc-cur-${t.id}`).textContent = s.idx + 1;
+}
+function flipFlashcard(topicId){
+  document.getElementById(`fc-card-${topicId}`).classList.toggle('flipped');
+}
+function nextFlashcard(topicId){
+  const t = TOPICS.find(x=>x.id===topicId); if(!t) return;
+  const s = getFcState(topicId);
+  s.idx = (s.idx + 1) % t.drugs.length;
+  flashcardUpdate(t);
+}
+function prevFlashcard(topicId){
+  const t = TOPICS.find(x=>x.id===topicId); if(!t) return;
+  const s = getFcState(topicId);
+  s.idx = (s.idx - 1 + t.drugs.length) % t.drugs.length;
+  flashcardUpdate(t);
+}
+function shuffleFlashcards(topicId){
+  const t = TOPICS.find(x=>x.id===topicId); if(!t) return;
+  const s = getFcState(topicId);
+  s.order = t.drugs.map((_,i)=>i).sort(()=>Math.random()-0.5);
+  s.idx = 0;
+  flashcardUpdate(t);
+}
+
+/* ── BOOKMARKS (localStorage) ───────────────── */
+function getBookmarks(){
+  try{return JSON.parse(localStorage.getItem('pc_bookmarks')||'{}');}catch{return {};}
+}
+function isBookmarked(key){return !!getBookmarks()[key];}
+function toggleBookmark(key,n,c,u,btn){
+  const bm = getBookmarks();
+  if(bm[key]){delete bm[key];btn.classList.remove('active');btn.textContent='🤍';}
+  else{bm[key]={n,c,u};btn.classList.add('active');btn.textContent='❤️';}
+  localStorage.setItem('pc_bookmarks',JSON.stringify(bm));
+  renderBookmarksPanel();
+}
+function clearBookmarks(){
+  if(!confirm('Clear all bookmarks?')) return;
+  localStorage.removeItem('pc_bookmarks');
+  document.querySelectorAll('.bookmark-btn.active').forEach(b=>{b.classList.remove('active');b.textContent='🤍';});
+  renderBookmarksPanel();
+}
+function renderBookmarksPanel(){
+  const bm = getBookmarks();
+  const keys = Object.keys(bm);
+  const sec = document.getElementById('bookmarks-section');
+  const grid = document.getElementById('bookmark-grid');
+  const cnt = document.getElementById('bm-count');
+  cnt.textContent = keys.length;
+  if(!keys.length){sec.style.display='none';return;}
+  sec.style.display='block';
+  grid.innerHTML = keys.map(k=>{
+    const d = bm[k];
+    return `<div class="drug-card">
+      <button class="bookmark-btn active" onclick="unBookmark('${k}',this)" title="Remove">❤️</button>
+      <div class="drug-name">${d.n}</div>
+      <div class="drug-class">${d.c}</div>
+      <div class="drug-uses">${d.u}</div>
+    </div>`;
+  }).join('');
+}
+function unBookmark(key,btn){
+  const bm = getBookmarks();
+  delete bm[key];
+  localStorage.setItem('pc_bookmarks',JSON.stringify(bm));
+  // Update all matching buttons on page
+  document.querySelectorAll(`.drug-card[data-drug-key="${key}"] .bookmark-btn`).forEach(b=>{b.classList.remove('active');b.textContent='🤍';});
+  renderBookmarksPanel();
+}
+
+/* ── SEARCH ─────────────────────────────────── */
+const SEARCH_INDEX = [];
+function buildSearchIndex(){
+  TOPICS.forEach((t,ti)=>{
+    SEARCH_INDEX.push({type:'topic',title:t.title,sub:'Topic — full content',id:t.id,icon:t.icon});
+    t.drugs.forEach((d,di)=>{
+      SEARCH_INDEX.push({type:'drug',title:d.n,sub:`${d.c} — ${d.u.substring(0,60)}`,id:t.id,icon:'💊'});
+    });
+    t.mcqs.forEach((m,mi)=>{
+      SEARCH_INDEX.push({type:'mcq',title:m.q.substring(0,80),sub:`Answer: ${m.a}`,id:t.id,icon:'🎯'});
+    });
+  });
+  PYQ.forEach(p=>{
+    SEARCH_INDEX.push({type:'pyq',title:p.q.substring(0,80),sub:`${p.exam.toUpperCase()} ${p.year} — ${p.t}`,id:'pyq',icon:'📋'});
+  });
+}
+function openSearch(){
+  document.getElementById('search-overlay').classList.add('show');
+  setTimeout(()=>document.getElementById('search-input').focus(),50);
+}
+function closeSearch(){
+  document.getElementById('search-overlay').classList.remove('show');
+  document.getElementById('search-input').value='';
+  runSearch('');
+}
+function runSearch(q){
+  const results = document.getElementById('search-results');
+  q = q.trim().toLowerCase();
+  if(!q){
+    results.innerHTML = `<div class="search-empty"><strong>🚀 Type to search</strong>Quick examples: <em>Atorvastatin · Insulin · MOA · NEET PG · Antibiotics</em></div>`;
+    return;
+  }
+  const matches = SEARCH_INDEX.filter(item=>(item.title+' '+item.sub).toLowerCase().includes(q)).slice(0,30);
+  if(!matches.length){
+    results.innerHTML = `<div class="search-empty"><strong>No results for "${q}"</strong>Try drug names, topic names, or keywords</div>`;
+    return;
+  }
+  const groups = {topic:[],drug:[],mcq:[],pyq:[]};
+  matches.forEach(m=>groups[m.type].push(m));
+  let html = '';
+  const labels = {topic:'📚 Topics',drug:'💊 Drugs',mcq:'🎯 MCQs',pyq:'📋 PYQs'};
+  ['topic','drug','mcq','pyq'].forEach(k=>{
+    if(groups[k].length){
+      html += `<div class="search-section"><div class="search-section-h">${labels[k]} (${groups[k].length})</div>`;
+      html += groups[k].map(item=>`<div class="search-result" onclick="goToResult('${item.type}','${item.id}')">
+        <span class="search-result-icon">${item.icon}</span>
+        <div class="search-result-meta">
+          <div class="search-result-title">${highlight(item.title,q)}</div>
+          <div class="search-result-sub">${item.sub}</div>
+        </div>
+        <span class="search-result-type">${item.type}</span>
+      </div>`).join('');
+      html += '</div>';
+    }
+  });
+  results.innerHTML = html;
+}
+function highlight(text,q){
+  if(!q) return text;
+  return text.replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&')})`,'gi'),'<mark style="background:#fef3c7;color:#92400e;padding:0 2px;border-radius:2px;">$1</mark>');
+}
+function goToResult(type,id){
+  closeSearch();
+  if(type==='pyq'){
+    document.getElementById('pyq').scrollIntoView({behavior:'smooth'});
+  } else {
+    openTopic(id);
+  }
+}
+function searchKeys(e){
+  if(e.key==='Escape') closeSearch();
+}
+
+/* ── DAILY MCQ ──────────────────────────────── */
+function renderDailyMCQ(){
+  const allMCQ = [];
+  TOPICS.forEach(t=>t.mcqs.forEach(m=>allMCQ.push({...m,topic:t.title})));
+  if(!allMCQ.length) return;
+  const day = Math.floor(Date.now()/86400000);
+  const idx = day % allMCQ.length;
+  const q = allMCQ[idx];
+  const letters = ['A','B','C','D'];
+  const host = document.getElementById('daily-mcq-host');
+  if(!host) return;
+  host.innerHTML = `
+    <div class="daily-h">
+      <span class="daily-badge">📅 MCQ of the Day</span>
+      <h3>${q.topic}</h3>
+    </div>
+    <p class="daily-q">${q.q}</p>
+    <div class="daily-opts" id="daily-opts">
+      ${q.o.map((opt,i)=>`<div class="daily-opt" onclick="dailyPick(this,'${opt.replace(/'/g,"\\'")}','${q.a.replace(/'/g,"\\'")}')"><span class="daily-letter">${letters[i]}.</span> ${opt}</div>`).join('')}
+    </div>
+    <div class="daily-exp" id="daily-exp"><strong style="color:#047857;display:block;margin-bottom:4px;">✅ Correct: ${q.a}</strong><p>${q.e}</p></div>
+  `;
+}
+function dailyPick(elx,picked,correct){
+  document.querySelectorAll('#daily-opts .daily-opt').forEach(o=>{o.onclick=null;});
+  document.querySelectorAll('#daily-opts .daily-opt').forEach(o=>{
+    if(o.textContent.includes(correct)) o.classList.add('correct');
+    else if(o===elx) o.classList.add('wrong');
+  });
+  document.getElementById('daily-exp').classList.add('show');
+}
+
+/* ── PRINT / EXPORT ─────────────────────────── */
+function exportTopic(topicId){
+  const node = document.getElementById('topic-'+topicId);
+  if(node && !node.classList.contains('open')) node.classList.add('open');
+  setTimeout(()=>window.print(),300);
 }
 
 function renderMCQ(m,idx,key){
@@ -2525,12 +2901,15 @@ function startPractice(id){
   arena.scrollIntoView({behavior:'smooth'});
 }
 
-/* ── Nav active state on scroll ─────────────────── */
+/* ── Nav active state + initialization ───────── */
 document.addEventListener('DOMContentLoaded',()=>{
   renderTopicAccordions();
   renderPYQ('all');
   renderFMGE();
   renderPracticeLauncher();
+  buildSearchIndex();
+  renderDailyMCQ();
+  renderBookmarksPanel();
 
   const navLinks = document.querySelectorAll('.nav a');
   document.querySelectorAll('.nav a').forEach(a=>{
@@ -2538,6 +2917,14 @@ document.addEventListener('DOMContentLoaded',()=>{
       navLinks.forEach(l=>l.classList.remove('active'));
       a.classList.add('active');
     });
+  });
+
+  // Keyboard shortcut: "/" opens search
+  document.addEventListener('keydown',(e)=>{
+    if(e.key==='/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){
+      e.preventDefault();openSearch();
+    }
+    if(e.key==='Escape') closeSearch();
   });
 });
 </script>
