@@ -280,6 +280,90 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 .footer-copy{font-size:11px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;max-width:680px;margin:0 auto;line-height:1.8;}
 .footer-copy strong{color:var(--teal2);font-weight:800;}
 
+/* ── 6 CONTENT BOXES (Game-changer template) ── */
+.box-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:18px 0;}
+.info-box{border-radius:14px;padding:16px 18px;border:1.5px solid;border-left-width:5px;
+  box-shadow:0 3px 12px rgba(15,40,71,0.06);transition:transform .2s;}
+.info-box:hover{transform:translateY(-2px);}
+.info-box h5{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+  margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.info-box ul, .info-box ol{padding-left:18px;margin-top:6px;}
+.info-box li{font-size:12.5px;line-height:1.75;margin-bottom:4px;}
+.info-box p{font-size:12.5px;line-height:1.75;}
+.info-box strong{font-weight:700;}
+.info-box em{font-style:normal;font-weight:700;}
+.info-box code{background:rgba(0,0,0,0.05);padding:1px 5px;border-radius:3px;font-family:'JetBrains Mono',monospace;font-size:11.5px;}
+.info-pearl{background:linear-gradient(135deg,#dbeafe,#eff6ff);border-color:#3b82f6;color:#1e3a8a;}
+.info-pearl h5{color:#1e40af;}
+.info-pearl em{color:#1d4ed8;}
+.info-pregnancy{background:linear-gradient(135deg,#fce7f3,#fbcfe8);border-color:#ec4899;color:#831843;}
+.info-pregnancy h5{color:#be185d;}
+.info-pregnancy em{color:#a21caf;}
+.info-recent{background:linear-gradient(135deg,#dcfce7,#d1fae5);border-color:#10b981;color:#064e3b;}
+.info-recent h5{color:#047857;}
+.info-recent em{color:#059669;}
+.info-pyq{background:linear-gradient(135deg,#ede9fe,#e0e7ff);border-color:#8b5cf6;color:#3b0764;}
+.info-pyq h5{color:#6d28d9;}
+.info-pyq em{color:#5b21b6;}
+.info-pyq .qrow{padding:8px 10px;background:rgba(139,92,246,0.08);border-radius:8px;margin-bottom:6px;}
+.info-pyq .qa{font-size:12.5px;font-weight:700;margin-bottom:3px;}
+.info-pyq .ans{font-size:12px;color:#059669;font-weight:700;}
+.info-brand{background:linear-gradient(135deg,#fef3c7,#fef9c3);border-color:#f59e0b;color:#451a03;}
+.info-brand h5{color:#b45309;}
+.info-brand em{color:#92400e;}
+.info-brand .brand-row{font-size:12px;line-height:1.85;padding:4px 0;border-bottom:1px dashed rgba(180,83,9,0.2);}
+.info-brand .brand-row:last-child{border-bottom:none;}
+.info-brand .brand-row strong{color:#7c2d12;}
+.info-youtube{background:linear-gradient(135deg,#fee2e2,#fecaca);border-color:#dc2626;color:#7f1d1d;}
+.info-youtube h5{color:#b91c1c;}
+.info-youtube .yt-btn{display:inline-flex;align-items:center;gap:6px;background:#dc2626;color:#fff;
+  padding:9px 16px;border-radius:8px;text-decoration:none;font-weight:700;font-size:12px;margin-top:8px;
+  transition:all .2s;}
+.info-youtube .yt-btn:hover{background:#b91c1c;transform:translateY(-1px);box-shadow:0 4px 12px rgba(220,38,38,0.4);}
+
+/* ── INFO BOXES (6-TEMPLATE) ──────────────────── */
+.boxes-header{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;
+  padding:12px 18px;border-radius:12px;font-size:14px;font-weight:800;
+  margin:24px 0 14px;text-align:center;letter-spacing:.5px;
+  box-shadow:0 4px 16px rgba(20,160,133,0.25);}
+.info-box{border-radius:12px;padding:16px 18px;margin:12px 0;
+  border-left-width:4px;border-left-style:solid;box-shadow:0 3px 12px rgba(15,40,71,0.06);}
+.info-box h4{font-size:12px;text-transform:uppercase;letter-spacing:.5px;
+  font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.info-box ul,.info-box ol{padding-left:18px;margin:6px 0;}
+.info-box li{font-size:13px;line-height:1.85;margin-bottom:4px;}
+.info-box strong{font-weight:800;}
+.info-box em{font-style:normal;font-weight:700;background:rgba(255,255,255,0.55);padding:1px 6px;border-radius:4px;}
+
+.pearl-box{background:linear-gradient(135deg,#e0f2fe,#dbeafe);border-left-color:#0284c7;border:1px solid rgba(2,132,199,0.18);}
+.pearl-box h4,.pearl-box li{color:#0c4a6e;}
+.pearl-box strong{color:#075985;}
+
+.caution-box{background:linear-gradient(135deg,#fff7ed,#fef3c7);border-left-color:#f97316;border:1px solid rgba(249,115,22,0.2);}
+.caution-box h4,.caution-box li{color:#7c2d12;}
+.caution-box strong{color:#9a3412;}
+
+.recent-box{background:linear-gradient(135deg,#f5f3ff,#ede9fe);border-left-color:#7c3aed;border:1px solid rgba(124,58,237,0.18);}
+.recent-box h4,.recent-box li{color:#4c1d95;}
+.recent-box strong{color:#5b21b6;}
+
+.pyq-box{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left-color:#d97706;border:1px solid rgba(217,119,6,0.25);}
+.pyq-box h4,.pyq-box li{color:#7c2d12;}
+.pyq-box strong{color:#92400e;}
+
+.indian-box{background:linear-gradient(135deg,#dcfce7,#fff7ed);border-left-color:#16a34a;border:1px solid rgba(22,163,74,0.2);}
+.indian-box h4,.indian-box li{color:#14532d;}
+.indian-box strong{color:#15803d;}
+
+.youtube-box{background:linear-gradient(135deg,#fef2f2,#ffffff);border:1.5px solid #fecaca;border-left:4px solid #dc2626;text-align:center;}
+.youtube-box h4{color:#b91c1c;justify-content:center;}
+.youtube-box p{font-size:13px;line-height:1.7;color:#7f1d1d;margin:4px 0;}
+.youtube-box .yt-btn{display:inline-block;background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;
+  padding:10px 26px;border-radius:10px;font-weight:800;text-decoration:none;
+  margin-top:10px;font-size:13px;letter-spacing:.3px;
+  box-shadow:0 4px 14px rgba(220,38,38,0.3);transition:all .2s;}
+.youtube-box .yt-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(220,38,38,0.4);}
+
 /* ── SEARCH ───────────────────────────────────── */
 .search-trigger{display:flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--border);
   border-radius:10px;padding:7px 14px;color:var(--muted);font-family:'Sora',sans-serif;font-size:12px;
@@ -1209,7 +1293,60 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <tr><td>Inhaled</td><td>1–5 min</td><td>Local high</td><td>No</td><td>Variable</td><td>—</td></tr>
 <tr><td>Transdermal</td><td>Hours</td><td>Steady</td><td>No</td><td>Excellent</td><td>No</td></tr>
 <tr><td>Intrathecal</td><td>5–15 min</td><td>Direct CNS</td><td>No</td><td>Special</td><td>Strict</td></tr>
-</table>`,
+</table>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · Indian Practice</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>NEVER give Vincristine intrathecally</strong> — FATAL ascending paralysis &amp; death (always IV)</li>
+<li><strong>Adrenaline in anaphylaxis</strong>: <em>IM anterolateral thigh</em> 0.3–0.5 mg (1:1000) — NOT SC, NOT IV bolus</li>
+<li><strong>Regular insulin</strong> is the ONLY insulin given IV (only in DKA emergency)</li>
+<li><strong>Nitroglycerin TTS patch</strong>: 12 h on, 12 h off — prevents tolerance</li>
+<li><strong>IM volume limits</strong>: Gluteal max 5 ml · Deltoid 2 ml · Vastus lateralis 5 ml; SC max 1–2 ml</li>
+<li><strong>Insulin needles</strong>: SC 4–8 mm, no aspiration needed (minimal vasculature)</li>
+<li><strong>IO (Intraosseous) access</strong>: Equivalent to IV in emergencies — proximal tibia (adults), distal femur (paediatric)</li>
+<li><strong>Z-track IM technique</strong> for irritant drugs (iron sorbitol) — prevents leakage to skin</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Oral Semaglutide (Rybelsus)</strong> — first oral GLP-1 receptor agonist for T2DM</li>
+<li><strong>Inhaled Insulin (Afrezza)</strong> — ultra-rapid prandial insulin, FDA approved</li>
+<li><strong>Nasal Naloxone (Narcan Spray)</strong> — OTC approved (2023) for opioid overdose reversal</li>
+<li><strong>Long-acting Cabotegravir (Apretude) IM</strong> — every 8 weeks for HIV PrEP</li>
+<li><strong>Microneedle vaccine patches</strong> — painless, thermostable; COVID, flu, polio under trial</li>
+<li><strong>Implantable Buprenorphine (Probuphine)</strong> — 6-month subdermal for opioid use disorder</li>
+<li><strong>3D-printed Spritam (Levetiracetam)</strong> — rapidly dissolving porous tablets</li>
+<li><strong>Smart Inhalers</strong> — Bluetooth-tracked (Propeller Health, Hailie) for asthma/COPD compliance</li>
+<li><strong>Long-acting Lenacapavir (Sunlenca) SC</strong> — twice-yearly injection for HIV</li>
+<li><strong>Inhaled Gene Therapy</strong> — trials for cystic fibrosis (CFTR delivery via nebulization)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for status epilepticus in child without IV access → <em>Buccal / Intranasal Midazolam</em></li>
+<li><strong>NEET PG 2024</strong>: Route with 100% bioavailability by definition → <em>Intravenous (IV)</em></li>
+<li><strong>INI-CET 2023</strong>: Drug with highest first-pass metabolism → <em>Lignocaine (also Propranolol, Nitrates, Morphine)</em></li>
+<li><strong>NEET PG 2024</strong>: Vesicant chemotherapy drugs should be given via → <em>Central venous line (Hickman / PICC)</em></li>
+<li><strong>INI-CET 2024</strong>: Transdermal patch for chronic cancer pain (72 h duration) → <em>Fentanyl</em></li>
+<li><strong>NEET PG 2023</strong>: Route of Adrenaline in anaphylaxis → <em>IM, anterolateral thigh (vastus lateralis)</em></li>
+<li><strong>FMGE 2024</strong>: Drug given by intrathecal route for ALL with CNS spread → <em>Methotrexate</em></li>
+<li><strong>NEET PG 2025</strong>: Iontophoresis is used for → <em>Pilocarpine (CF sweat test); Lidocaine (skin anaesthesia)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation, case-based discussion &amp; exam tips on <strong>Routes of Drug Administration</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Routes of Drug Administration — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`,
   moa:MOA.receptor,
   pkpd:`<h4>ADME — The Four Pillars</h4>
 <ul>
