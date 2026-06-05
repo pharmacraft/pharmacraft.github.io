@@ -1348,19 +1348,247 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Routes of Drug Administration — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>`,
   moa:MOA.receptor,
-  pkpd:`<h4>ADME — The Four Pillars</h4>
+  pkpd:`<h4>PHARMACOKINETICS — ADME</h4>
+<p><strong>Definition:</strong> Pharmacokinetics (PK) describes <em>what the body does to the drug</em> — its movement, fate, and chemical changes from the moment of administration to its final elimination. The four classical pillars are <strong>A</strong>bsorption · <strong>D</strong>istribution · <strong>M</strong>etabolism · <strong>E</strong>xcretion (ADME).</p>
+<p>Understanding ADME is essential to determine the <em>dose, frequency, route, drug interactions, and dose adjustment</em> in disease (renal/hepatic failure, pregnancy, elderly).</p>
+
+<h4 style="margin-top:18px;">🅰️ A — ABSORPTION</h4>
+<p><strong>Definition:</strong> Movement of drug from site of administration into the systemic circulation. Determines onset of action and intensity of effect.</p>
+
+<h4>Mechanisms of Drug Absorption</h4>
+<table><tr><th>Mechanism</th><th>Energy</th><th>Carrier</th><th>Example Drugs</th></tr>
+<tr><td><strong>Passive diffusion</strong> (commonest)</td><td>No</td><td>No</td><td>Most lipid-soluble drugs (NSAIDs, β-blockers)</td></tr>
+<tr><td><strong>Facilitated diffusion</strong></td><td>No</td><td>Yes (down gradient)</td><td>Levodopa, Vitamin B12, glucose</td></tr>
+<tr><td><strong>Active transport</strong></td><td>Yes (ATP)</td><td>Yes (against gradient)</td><td>5-FU, methyldopa, methotrexate, iron</td></tr>
+<tr><td><strong>Pinocytosis</strong></td><td>Yes</td><td>—</td><td>Large molecules, vaccines, fat-soluble vitamins</td></tr>
+<tr><td><strong>Filtration (paracellular)</strong></td><td>No</td><td>No (porous)</td><td>Small water-soluble drugs through capillary pores</td></tr>
+<tr><td><strong>Ion-pair transport</strong></td><td>No</td><td>—</td><td>Quaternary ammonium compounds + organic anions</td></tr></table>
+
+<h4>Factors Affecting Absorption</h4>
+<table><tr><th>Category</th><th>Factor</th><th>Effect</th></tr>
+<tr><td rowspan="4"><strong>Drug factors</strong></td><td>Lipid solubility</td><td>↑ Lipid solubility → ↑ absorption</td></tr>
+<tr><td>Molecular size</td><td>Smaller = better absorbed</td></tr>
+<tr><td>Ionization (pKa &amp; pH)</td><td>Unionized form absorbed (Henderson-Hasselbalch)</td></tr>
+<tr><td>Formulation</td><td>Solution &gt; suspension &gt; capsule &gt; tablet &gt; enteric-coated</td></tr>
+<tr><td rowspan="4"><strong>Patient factors</strong></td><td>Gastric pH</td><td>Aspirin (weak acid) ↑ in acidic stomach</td></tr>
+<tr><td>GI motility</td><td>↑ Motility (diarrhoea) ↓ absorption</td></tr>
+<tr><td>Splanchnic blood flow</td><td>Shock/exercise affect absorption</td></tr>
+<tr><td>Food / disease</td><td>Tetracyclines chelated by milk Ca; metoclopramide ↑ absorption</td></tr>
+<tr><td rowspan="2"><strong>Route factors</strong></td><td>Surface area</td><td>Intestine &gt; stomach (larger SA)</td></tr>
+<tr><td>First-pass metabolism</td><td>Reduces oral F (lignocaine, propranolol, GTN)</td></tr></table>
+
+<h4>Bioavailability (F)</h4>
 <ul>
-<li><strong>Absorption</strong> – passive diffusion, facilitated diffusion, active transport; bioavailability F = (AUC oral / AUC IV) × 100</li>
-<li><strong>Distribution</strong> – Vd = Dose/C0; high Vd = lipophilic, tissue-bound (e.g. Digoxin Vd ≈ 500 L)</li>
-<li><strong>Metabolism</strong> – Phase I (CYP450 → oxidation/reduction); Phase II (conjugation → glucuronidation, sulfation)</li>
-<li><strong>Excretion</strong> – mainly renal; clearance Cl = (0.693 × Vd) / t½</li>
+<li><strong>Definition:</strong> Fraction of administered dose reaching systemic circulation in active form.</li>
+<li><strong>Formula:</strong> <em>F = (AUC<sub>oral</sub> / AUC<sub>IV</sub>) × 100</em></li>
+<li><strong>IV route F = 100%</strong> by definition</li>
+<li><strong>Reduced by:</strong> Incomplete absorption + First-pass metabolism</li>
+<li><strong>Bioequivalence:</strong> Two formulations are bioequivalent if their rate &amp; extent of absorption are within 80–125% of reference (AUC, Cmax)</li>
 </ul>
-<h4>Pharmacodynamic Concepts</h4>
+
+<h4 style="margin-top:18px;">🅳 D — DISTRIBUTION</h4>
+<p><strong>Definition:</strong> Reversible transfer of drug from systemic circulation to tissues. Determines onset, intensity &amp; duration.</p>
+
+<h4>Volume of Distribution (Vd)</h4>
+<p><strong>Formula:</strong> <em>Vd = Total amount of drug in body / Plasma concentration (C₀)</em></p>
+<table><tr><th>Vd value</th><th>Suggests</th><th>Examples</th></tr>
+<tr><td>~3–5 L (plasma volume)</td><td>Highly protein-bound, confined to vasculature</td><td>Warfarin, Heparin</td></tr>
+<tr><td>~15–18 L (ECF)</td><td>Hydrophilic, doesn't cross cell membranes</td><td>Aminoglycosides (gentamicin), mannitol</td></tr>
+<tr><td>~40–42 L (Total body water)</td><td>Distributes widely</td><td>Ethanol, urea, caffeine</td></tr>
+<tr><td>&gt; Body weight (≫ 42 L)</td><td>Highly tissue-bound (lipophilic)</td><td>Digoxin (~500 L), Chloroquine (~13,000 L), Amiodarone, TCAs</td></tr></table>
+<p><strong>Clinical use:</strong> Vd helps calculate <em>loading dose = Vd × C<sub>ss</sub></em></p>
+
+<h4>Plasma Protein Binding</h4>
+<table><tr><th>Protein</th><th>Binds</th><th>Drug Examples</th></tr>
+<tr><td><strong>Albumin</strong></td><td>Acidic drugs</td><td>Warfarin, NSAIDs (aspirin, ibuprofen), Valproate, Phenytoin, Sulphonylureas</td></tr>
+<tr><td><strong>α₁-acid glycoprotein</strong></td><td>Basic drugs</td><td>Lignocaine, Propranolol, Quinidine, TCAs, Erythromycin</td></tr>
+<tr><td><strong>Lipoproteins, transcortin, transferrin</strong></td><td>Specific drugs</td><td>Cyclosporine, Cortisol, Iron</td></tr></table>
+<p>Only <strong>free (unbound) drug</strong> is pharmacologically active &amp; available for distribution / metabolism / excretion. Highly bound drugs (&gt;90%) have low Vd. <em>Hypoalbuminaemia (cirrhosis, nephrotic syndrome)</em> → ↑ free fraction → toxicity (e.g. phenytoin).</p>
+
+<h4>Drug Distribution Barriers</h4>
+<table><tr><th>Barrier</th><th>Feature</th><th>Drugs Crossing</th></tr>
+<tr><td><strong>Blood-Brain Barrier (BBB)</strong></td><td>Tight junctions, P-glycoprotein efflux pump</td><td>Lipid-soluble (general anaesthetics, BZDs, opioids); L-DOPA via carrier; Methotrexate – poor → give IT</td></tr>
+<tr><td><strong>Placental barrier</strong></td><td>Easily crossed by most drugs</td><td>Heparin &amp; insulin DO NOT cross (use in pregnancy); Warfarin, thalidomide cross → teratogenic</td></tr>
+<tr><td><strong>Blood-testis barrier</strong></td><td>Sertoli cell tight junctions</td><td>Most drugs excluded; Fluoroquinolones reach testes</td></tr>
+<tr><td><strong>Blood-ocular barrier</strong></td><td>Tight retinal capillary endothelium</td><td>Topical/intravitreal route preferred</td></tr></table>
+
+<h4>Redistribution</h4>
+<p>Highly lipid-soluble drugs first distribute to highly perfused tissues (brain), then redistribute to less perfused tissues (fat, muscle). Classic example — <strong>Thiopentone</strong>: rapid onset (BBB) + rapid termination (redistribution to muscle &amp; fat).</p>
+
+<h4 style="margin-top:18px;">🅼 M — METABOLISM (Biotransformation)</h4>
+<p><strong>Purpose:</strong> Convert lipid-soluble drugs into water-soluble metabolites suitable for renal/biliary excretion. Most metabolites are <em>inactive</em>, but some are <em>active (active metabolites)</em> or <em>toxic (NAPQI from paracetamol)</em>.</p>
+<p><strong>Site:</strong> Primarily <strong>liver</strong> (hepatic microsomes, smooth endoplasmic reticulum). Also kidney, GIT, lung, plasma, skin.</p>
+
+<h4>Phase I Reactions — Functionalization</h4>
+<table><tr><th>Reaction</th><th>Enzyme</th><th>Example</th></tr>
+<tr><td>Oxidation (most common)</td><td>CYP450 system (microsomal)</td><td>Phenobarbital, diazepam, codeine</td></tr>
+<tr><td>Reduction</td><td>CYP450 reductase</td><td>Nitrobenzodiazepines (clonazepam), chloramphenicol</td></tr>
+<tr><td>Hydrolysis</td><td>Esterases (plasma/tissue)</td><td>Procaine (esterases), succinylcholine (pseudocholinesterase), aspirin</td></tr>
+<tr><td>Cyclization, decyclization</td><td>Microsomal</td><td>Phenytoin → HPPH</td></tr></table>
+
+<h4>Phase II Reactions — Conjugation</h4>
+<table><tr><th>Conjugation</th><th>Cofactor</th><th>Example Drugs</th></tr>
+<tr><td><strong>Glucuronidation</strong> (commonest)</td><td>UDP-glucuronic acid</td><td>Morphine, paracetamol, bilirubin, chloramphenicol</td></tr>
+<tr><td><strong>Sulfation</strong></td><td>PAPS</td><td>Steroids, minoxidil, paracetamol</td></tr>
+<tr><td><strong>Acetylation</strong></td><td>Acetyl-CoA (NAT)</td><td>INH, hydralazine, dapsone, sulphonamides (fast vs slow acetylators)</td></tr>
+<tr><td><strong>Glutathione conjugation</strong></td><td>GSH</td><td>Paracetamol NAPQI (protective)</td></tr>
+<tr><td><strong>Methylation</strong></td><td>SAM</td><td>Dopamine, catecholamines (COMT)</td></tr>
+<tr><td><strong>Glycine conjugation</strong></td><td>Glycine</td><td>Salicylic acid, benzoic acid</td></tr></table>
+
+<h4>Cytochrome P450 (CYP) System</h4>
+<p>Major drug-metabolizing isoforms in humans:</p>
+<table><tr><th>Isoform</th><th>% Drugs Metabolized</th><th>Notable Substrates</th></tr>
+<tr><td><strong>CYP3A4</strong></td><td>~50%</td><td>Statins, BCC, OCs, cyclosporine, macrolides, midazolam</td></tr>
+<tr><td><strong>CYP2D6</strong></td><td>25%</td><td>β-blockers, TCAs, codeine (→ morphine), SSRIs</td></tr>
+<tr><td><strong>CYP2C9</strong></td><td>15%</td><td>Warfarin, phenytoin, NSAIDs, sulphonylureas</td></tr>
+<tr><td><strong>CYP2C19</strong></td><td>10%</td><td>Clopidogrel (prodrug → active), omeprazole, diazepam</td></tr>
+<tr><td><strong>CYP1A2</strong></td><td>5%</td><td>Theophylline, caffeine, clozapine, warfarin</td></tr>
+<tr><td><strong>CYP2E1</strong></td><td>2%</td><td>Ethanol, paracetamol (→ NAPQI), halothane</td></tr></table>
+
+<h4>CYP450 Inducers (decrease drug levels)</h4>
+<p><em>Mnemonic: "<strong>GPRS-CB</strong>"</em> — <strong>G</strong>riseofulvin, <strong>P</strong>henytoin, <strong>R</strong>ifampicin, <strong>S</strong>moking (PAH), <strong>C</strong>arbamazepine, <strong>B</strong>arbiturates. Also: Phenobarbital, St. John's Wort, ethanol (chronic), Modafinil, Rifabutin.</p>
+<p><strong>Clinical impact:</strong> OCP failure with rifampicin, ↓ warfarin effect with phenytoin, ↓ ART efficacy.</p>
+
+<h4>CYP450 Inhibitors (increase drug levels — toxicity)</h4>
+<p><em>Mnemonic: "<strong>MAGIC RACKS</strong>"</em> — <strong>M</strong>acrolides (erythromycin, clarithromycin — NOT azithromycin), <strong>A</strong>miodarone, <strong>G</strong>rapefruit juice (CYP3A4), <strong>I</strong>NH, <strong>C</strong>imetidine, <strong>R</strong>itonavir, <strong>A</strong>zoles (keto/itra/fluconazole), <strong>C</strong>iprofloxacin, <strong>K</strong>etoconazole, <strong>S</strong>ulfonamides. Also: chloramphenicol, valproate, omeprazole, fluoxetine.</p>
+<p><strong>Clinical impact:</strong> ↑ warfarin → bleed; ↑ digoxin toxicity; ↑ theophylline toxicity.</p>
+
+<h4>Prodrugs</h4>
+<table><tr><th>Prodrug</th><th>Active Metabolite</th><th>Use</th></tr>
+<tr><td>Enalapril</td><td>Enalaprilat</td><td>HTN, CHF</td></tr>
+<tr><td>Levodopa</td><td>Dopamine</td><td>Parkinson's</td></tr>
+<tr><td>Codeine</td><td>Morphine (via CYP2D6)</td><td>Analgesia, cough</td></tr>
+<tr><td>Clopidogrel</td><td>Active thiol (via CYP2C19)</td><td>Antiplatelet</td></tr>
+<tr><td>Sulfasalazine</td><td>Sulfapyridine + 5-ASA</td><td>UC, RA</td></tr>
+<tr><td>Cyclophosphamide</td><td>Phosphoramide mustard</td><td>Cancer chemo</td></tr>
+<tr><td>Acyclovir</td><td>Acyclovir-TP (viral TK)</td><td>HSV, VZV</td></tr>
+<tr><td>Valacyclovir / Valganciclovir</td><td>Acyclovir / Ganciclovir</td><td>Antivirals (oral)</td></tr></table>
+
+<h4>First-Pass Metabolism (Pre-systemic Elimination)</h4>
+<p>Oral drugs absorbed from GIT enter portal vein → liver → metabolized before reaching systemic circulation. Significant first-pass = LOW oral bioavailability.</p>
+<p><em>High first-pass drugs ('<strong>LIP MAN</strong>'):</em> <strong>L</strong>ignocaine, <strong>I</strong>soprenaline, <strong>P</strong>ropranolol, <strong>M</strong>orphine, <strong>A</strong>spirin, <strong>N</strong>itroglycerin. Also: Verapamil, Hydralazine, Levodopa, Salbutamol.</p>
+
+<h4>Special Metabolism Patterns</h4>
 <ul>
-<li><strong>Dose–response curve</strong> – graded vs quantal</li>
+<li><strong>Atracurium</strong>: <em>Hofmann elimination</em> — spontaneous degradation at body pH &amp; temp (safe in renal/hepatic failure)</li>
+<li><strong>Succinylcholine</strong>: Plasma pseudocholinesterase (deficiency → prolonged apnoea ~2-4 h)</li>
+<li><strong>Esmolol</strong>: Hydrolysed by RBC esterases (ultra-short β-blocker)</li>
+<li><strong>Remifentanil</strong>: Tissue esterases (very short-acting opioid)</li>
+<li><strong>Aspirin</strong>: First-order at therapeutic, <em>zero-order</em> at toxic doses (saturation)</li>
+</ul>
+
+<h4 style="margin-top:18px;">🅴 E — EXCRETION (Elimination)</h4>
+<p><strong>Definition:</strong> Removal of drug or its metabolites from the body. Main routes — renal, biliary, pulmonary, milk, sweat.</p>
+
+<h4>Renal Excretion (Most Important)</h4>
+<table><tr><th>Process</th><th>Site</th><th>Determinants</th></tr>
+<tr><td><strong>Glomerular filtration</strong></td><td>Glomerulus</td><td>Unbound drugs, small MW; GFR (eGFR)</td></tr>
+<tr><td><strong>Tubular secretion</strong> (active)</td><td>Proximal tubule (OAT/OCT carriers)</td><td>Weak acids (penicillin, methotrexate) &amp; weak bases (metformin, cimetidine)</td></tr>
+<tr><td><strong>Tubular reabsorption</strong> (passive)</td><td>Distal tubule</td><td>Lipid-soluble unionized drugs reabsorbed; ↓ ionization with pH</td></tr></table>
+
+<h4>pH-Dependent Excretion (clinically used in toxicity)</h4>
+<ul>
+<li><strong>Aspirin overdose</strong> → alkalinize urine (NaHCO₃) → traps ionized aspirin → ↑ excretion</li>
+<li><strong>TCA / Amphetamine overdose</strong> → acidify urine (NH₄Cl) → traps ionized basic drug → ↑ excretion (rarely used now)</li>
+<li><strong>Phenobarbital overdose</strong> → alkalinize urine</li>
+</ul>
+
+<h4>Biliary Excretion &amp; Enterohepatic Circulation</h4>
+<p>Conjugated metabolites (esp. glucuronides) secreted in bile → reach intestine → may be <em>deconjugated by gut bacteria</em> &amp; reabsorbed → <strong>enterohepatic circulation</strong>.</p>
+<ul>
+<li><strong>Drugs with EHC:</strong> Morphine, OCPs, digoxin, indomethacin, warfarin, rifampicin, ezetimibe</li>
+<li><strong>Effect:</strong> Prolongs drug half-life &amp; therapeutic effect</li>
+<li><strong>Antibiotic interaction:</strong> Broad-spectrum antibiotics kill gut bacteria → ↓ enterohepatic recycling → <em>OCP failure</em></li>
+</ul>
+
+<h4>Other Excretion Routes</h4>
+<ul>
+<li><strong>Pulmonary</strong>: Inhaled anaesthetics, ethanol (breath analyzer)</li>
+<li><strong>Sweat / Saliva</strong>: Rifampicin (orange colour), iodides</li>
+<li><strong>Breast milk</strong>: Lipid-soluble drugs; <em>safe</em>: paracetamol, penicillins; <em>avoid</em>: chloramphenicol, tetracyclines, lithium, amiodarone, cytotoxics, ergotamine</li>
+<li><strong>Tears</strong>: Rifampicin colours soft contact lenses orange</li>
+</ul>
+
+<h4 style="margin-top:18px;">📐 Key Pharmacokinetic Parameters</h4>
+<table><tr><th>Parameter</th><th>Formula / Meaning</th><th>Clinical Use</th></tr>
+<tr><td><strong>Half-life (t½)</strong></td><td>0.693 × Vd / Cl</td><td>Determines dosing frequency &amp; time to steady state</td></tr>
+<tr><td><strong>Clearance (Cl)</strong></td><td>Volume of plasma cleared per unit time</td><td>Determines maintenance dose</td></tr>
+<tr><td><strong>Steady state (Css)</strong></td><td>Reached in 4–5 half-lives</td><td>Constant drug effect</td></tr>
+<tr><td><strong>Loading dose</strong></td><td>Vd × Css (target)</td><td>Rapid achievement of therapeutic level</td></tr>
+<tr><td><strong>Maintenance dose</strong></td><td>Cl × Css</td><td>Sustains therapeutic level</td></tr>
+<tr><td><strong>AUC</strong></td><td>Area under conc-time curve</td><td>Bioavailability calculation</td></tr></table>
+
+<h4>Order of Kinetics</h4>
+<table><tr><th>Order</th><th>Feature</th><th>Examples</th></tr>
+<tr><td><strong>First-order</strong> (linear)</td><td>Rate ∝ drug concentration; constant t½</td><td>Most drugs (paracetamol, penicillin)</td></tr>
+<tr><td><strong>Zero-order</strong> (non-linear, saturation)</td><td>Constant amount cleared per unit time; t½ varies with dose</td><td>Ethanol, Phenytoin (high dose), Aspirin (toxic), Heparin (high dose), Theophylline (high dose), Warfarin (high dose), 5-FU</td></tr>
+<tr><td><strong>Michaelis-Menten</strong></td><td>First-order → zero-order with saturation</td><td>Phenytoin (clinically very important)</td></tr></table>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Loading dose depends on Vd</strong>, <strong>Maintenance dose depends on Clearance</strong></li>
+<li><strong>Steady state</strong> reached in <em>4–5 half-lives</em> regardless of dose/interval</li>
+<li><strong>Phenytoin shows Michaelis-Menten kinetics</strong> — small dose ↑ causes large concentration jump (monitor levels!)</li>
+<li><strong>Codeine ineffective in CYP2D6 poor metabolisers</strong> (10% Caucasians); <em>ultra-rapid metabolisers</em> may have respiratory depression in neonates of breastfeeding mothers</li>
+<li><strong>Clopidogrel needs CYP2C19 activation</strong> — poor metabolisers (Asians 15-20%) → use prasugrel/ticagrelor</li>
+<li><strong>Grapefruit juice inhibits intestinal CYP3A4</strong> → ↑ statins (rhabdomyolysis), ↑ cyclosporine, ↑ CCBs</li>
+<li><strong>Heparin &amp; Insulin do NOT cross placenta</strong> → DOC anticoagulant &amp; antidiabetic in pregnancy</li>
+<li><strong>Rifampicin = strongest CYP inducer</strong> → causes OCP failure within 1 week</li>
+<li><strong>Loading dose calculation</strong>: LD = (Vd × target Cp) / F. Eg. Digoxin LD = 500 L × 1 ng/ml / 0.7 = 0.5–1 mg</li>
+<li><strong>Atracurium &amp; Cisatracurium</strong>: only NMBs safe in <em>combined renal + hepatic failure</em> (Hofmann elimination)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Pharmacogenomics in routine practice</strong>: PGx panels (CYP2C19, CYP2D6, TPMT, DPYD) before prescribing clopidogrel, codeine, 6-MP, 5-FU</li>
+<li><strong>HLA-typing before high-risk drugs</strong>: HLA-B*5701 (abacavir hypersensitivity), HLA-B*1502 (carbamazepine SJS in Asians), HLA-B*5801 (allopurinol SJS)</li>
+<li><strong>Vibegron (Gemtesa)</strong> — β3 adrenergic agonist for OAB, minimal CYP interactions vs mirabegron</li>
+<li><strong>Oral antiviral remdesivir analogues</strong> — improved oral bioavailability</li>
+<li><strong>PROTAC drugs</strong> (proteolysis-targeting chimeras) — novel mechanism beyond classical PK</li>
+<li><strong>Long-acting ART (Cabotegravir + Rilpivirine)</strong> IM monthly/2-monthly — replacing daily oral ART</li>
+<li><strong>Microbiome &amp; drug metabolism</strong> — gut bacteria affect digoxin, levodopa, sulfasalazine activity</li>
+<li><strong>Physiologically-based PK (PBPK) modelling</strong> — used by FDA for paediatric &amp; pregnancy dosing</li>
+<li><strong>AI-driven therapeutic drug monitoring (TDM)</strong> for vancomycin, tacrolimus — Bayesian dose-adjustment apps</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Drug showing zero-order kinetics at therapeutic dose → <em>Ethanol (Phenytoin at high dose)</em></li>
+<li><strong>NEET PG 2024</strong>: Highest Vd among the following → <em>Chloroquine (~13,000 L)</em></li>
+<li><strong>INI-CET 2023</strong>: Loading dose formula → <em>LD = Vd × Target Css / F</em></li>
+<li><strong>NEET PG 2024</strong>: CYP3A4 inhibitor causing rhabdomyolysis with simvastatin → <em>Clarithromycin / Itraconazole</em></li>
+<li><strong>INI-CET 2024</strong>: Drug requiring CYP2C19 activation → <em>Clopidogrel (prodrug)</em></li>
+<li><strong>NEET PG 2023</strong>: Prolonged apnoea after succinylcholine due to → <em>Pseudocholinesterase deficiency</em></li>
+<li><strong>FMGE 2024</strong>: Time to reach steady state → <em>4–5 half-lives</em></li>
+<li><strong>NEET PG 2025</strong>: Enterohepatic circulation interrupted by → <em>Broad-spectrum antibiotics</em> (causes OCP failure with rifampicin too)</li>
+<li><strong>INI-CET 2024</strong>: HLA-B*5701 testing required before → <em>Abacavir</em></li>
+<li><strong>NEET PG 2025</strong>: Drug whose metabolism is independent of liver &amp; kidney → <em>Atracurium / Cisatracurium (Hofmann elimination)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>ADME, CYP450, PK Parameters &amp; Drug Interactions</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacokinetics ADME — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
+</div>
+
+<h4 style="margin-top:24px;">🧠 PHARMACODYNAMICS — Core Concepts</h4>
+<ul>
+<li><strong>Definition:</strong> What the drug does to the body — receptor binding, signal transduction, effect</li>
+<li><strong>Dose–response curve</strong>: Graded (individual) vs Quantal (population)</li>
 <li><strong>ED50</strong> – effective dose in 50%; <strong>TD50</strong> – toxic dose in 50%</li>
-<li><strong>Therapeutic Index</strong> = TD50/ED50 (higher = safer; digoxin, lithium, warfarin = narrow TI)</li>
-<li><strong>Efficacy vs Potency</strong> – efficacy = maximum effect; potency = amount required</li>
+<li><strong>Therapeutic Index (TI)</strong> = TD50/ED50 — higher = safer; narrow TI drugs need TDM (digoxin, lithium, warfarin, phenytoin, theophylline, vancomycin, gentamicin)</li>
+<li><strong>Efficacy</strong> = maximum effect (Emax); <strong>Potency</strong> = amount required to produce 50% effect (lower EC50 = more potent)</li>
+<li><strong>Agonist</strong> – binds + activates; <strong>Antagonist</strong> – binds + blocks; <strong>Partial agonist</strong> – submaximal Emax (e.g. buprenorphine, pindolol); <strong>Inverse agonist</strong> – opposite effect to agonist on constitutively active receptor</li>
+<li><strong>Tachyphylaxis</strong> – rapid acute tolerance (ephedrine); <strong>Tolerance</strong> – chronic; <strong>Tachyphylaxis</strong> &gt; Tolerance in rate</li>
 </ul>`,
   adr:`<h4>Types of ADRs (Rawlins–Thompson)</h4>
 <table><tr><th>Type</th><th>Feature</th><th>Example</th></tr>
