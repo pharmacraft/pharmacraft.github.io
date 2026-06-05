@@ -1580,16 +1580,162 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacokinetics ADME — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
 </div>
 
-<h4 style="margin-top:24px;">🧠 PHARMACODYNAMICS — Core Concepts</h4>
+<h4 style="margin-top:24px;">🧠 PHARMACODYNAMICS</h4>
+<p><strong>Definition:</strong> Pharmacodynamics (PD) describes <em>what the drug does to the body</em> — the biochemical, physiological &amp; molecular effects of drugs and their <strong>mechanism of action</strong>. While PK determines drug levels at the site of action, PD determines the <em>magnitude and time-course of the effect</em>.</p>
+
+<h4 style="margin-top:16px;">📡 1. Mechanisms of Drug Action</h4>
+<table><tr><th>Mechanism</th><th>Examples</th></tr>
+<tr><td><strong>Receptor binding</strong> (commonest)</td><td>β-blockers, opioids, insulin, antipsychotics</td></tr>
+<tr><td><strong>Enzyme inhibition</strong></td><td>Statins (HMG-CoA red), ACE-I (ACE), Allopurinol (XO), Aspirin (COX), PPIs (H+/K+ ATPase)</td></tr>
+<tr><td><strong>Ion channel modulation</strong></td><td>Local anaesthetics (Na⁺), Phenytoin (Na⁺), Verapamil (Ca²⁺), Sulphonylureas (K-ATP)</td></tr>
+<tr><td><strong>Transporter / Pump inhibition</strong></td><td>Digoxin (Na/K ATPase), Furosemide (NKCC2), SSRIs (SERT), Tiazides (Na/Cl)</td></tr>
+<tr><td><strong>Direct physicochemical</strong></td><td>Antacids (acid neutralization), Mannitol (osmosis), Activated charcoal (adsorption), Cholestyramine (bile acid binding)</td></tr>
+<tr><td><strong>Antibody/Cytokine binding</strong></td><td>Rituximab (CD20), Infliximab (TNF-α), Trastuzumab (HER2)</td></tr>
+<tr><td><strong>Nucleic acid disruption</strong></td><td>Alkylating agents (cyclophosphamide), Antimetabolites (MTX, 5-FU)</td></tr>
+<tr><td><strong>False substrate</strong></td><td>Methyldopa → α-methyl NA (false NT)</td></tr>
+<tr><td><strong>Gene therapy / siRNA</strong></td><td>Patisiran (TTR-amyloidosis), Inclisiran (PCSK9 siRNA)</td></tr></table>
+
+<h4 style="margin-top:16px;">🎯 2. Receptors — Types &amp; Signal Transduction</h4>
+<table><tr><th>Type</th><th>Mechanism</th><th>Time-scale</th><th>Examples</th></tr>
+<tr><td><strong>1. Ligand-gated ion channels</strong><br>(Ionotropic, transmembrane)</td><td>Ligand opens channel → fast ion flux</td><td>Milliseconds</td><td>Nicotinic ACh, GABA-A (Cl⁻), Glycine, 5-HT3, NMDA, AMPA</td></tr>
+<tr><td><strong>2. G-protein coupled receptors (GPCRs)</strong><br>(Metabotropic, 7TM)</td><td>Ligand → Gs/Gi/Gq → 2nd messenger (cAMP, IP3, DAG)</td><td>Seconds</td><td>Muscarinic, Adrenergic (α, β), Histamine, Dopamine, Opioid, 5-HT, Glucagon</td></tr>
+<tr><td><strong>3. Enzyme-linked receptors</strong><br>(Tyrosine kinase / Guanylate cyclase)</td><td>Ligand → autophosphorylation → downstream kinase cascade</td><td>Minutes</td><td>Insulin, EGF, PDGF, VEGF, Cytokine (JAK-STAT), ANP (gC)</td></tr>
+<tr><td><strong>4. Intracellular (Nuclear)</strong><br>receptors</td><td>Lipophilic ligand → cytosolic/nuclear binding → DNA transcription</td><td>Hours–days</td><td>Steroids (cortisol, sex hormones), Thyroid hormone, Vitamin D, Retinoid, PPARγ (TZDs)</td></tr></table>
+
+<h4>G-Protein Subtypes &amp; Effects</h4>
+<table><tr><th>G-protein</th><th>2nd messenger</th><th>Effect</th><th>Receptor Examples</th></tr>
+<tr><td><strong>Gs</strong></td><td>↑ cAMP (via ↑ AC)</td><td>↑ Effects</td><td>β1, β2, β3, D1, H2, V2, 5-HT4, glucagon</td></tr>
+<tr><td><strong>Gi</strong></td><td>↓ cAMP (via ↓ AC)</td><td>↓ Effects</td><td>α2, M2, M4, D2, opioid (μ, κ, δ), 5-HT1, adenosine A1</td></tr>
+<tr><td><strong>Gq</strong></td><td>↑ IP3 + DAG (via PLC)</td><td>↑ intracellular Ca²⁺</td><td>α1, M1, M3, M5, H1, V1, 5-HT2, AT1</td></tr></table>
+<p><em>Mnemonic: "<strong>QISS QIQ SIQ SQS</strong>"</em> — α1=Q · α2=I · β1=S · β2=S · M1=Q · M2=I · M3=Q · D1=S · D2=I · H1=Q · H2=S · V1=Q · V2=S.</p>
+
+<h4 style="margin-top:16px;">⚖️ 3. Drug–Receptor Interactions</h4>
+<table><tr><th>Concept</th><th>Definition</th><th>Example</th></tr>
+<tr><td><strong>Affinity</strong></td><td>Tendency of drug to bind receptor (1/Kd)</td><td>Both agonists &amp; antagonists need affinity</td></tr>
+<tr><td><strong>Intrinsic activity (α)</strong></td><td>Ability to produce response after binding (0–1)</td><td>Agonist α=1; partial 0&lt;α&lt;1; antagonist α=0; inverse α=-1</td></tr>
+<tr><td><strong>Full agonist</strong></td><td>Maximum efficacy (Emax)</td><td>Morphine (μ), Isoprenaline (β)</td></tr>
+<tr><td><strong>Partial agonist</strong></td><td>Submaximal effect, acts as antagonist in presence of full agonist</td><td>Buprenorphine (μ), Pindolol (β), Aripiprazole (D2), Tamoxifen (ER), Salbutamol (β2)</td></tr>
+<tr><td><strong>Inverse agonist</strong></td><td>Opposite effect on constitutively active receptor</td><td>β-carbolines (BZ receptor), Famotidine? — best examples: GABA-A inverse agonists (Flumazenil at high dose), some antihistamines</td></tr>
+<tr><td><strong>Competitive antagonist</strong></td><td>Reversible, surmountable; ↑ agonist conc overcomes block</td><td>Atropine vs ACh, Propranolol vs Adrenaline, Losartan vs AT1</td></tr>
+<tr><td><strong>Non-competitive antagonist</strong></td><td>Irreversible / allosteric; ↓ Emax, unsurmountable</td><td>Phenoxybenzamine (α), Aspirin (COX), Omeprazole (H+/K+ ATPase)</td></tr>
+<tr><td><strong>Allosteric modulator</strong></td><td>Binds at site other than active site; modifies affinity/activity</td><td>BZDs at GABA-A (positive); cinacalcet (positive on CaSR)</td></tr>
+<tr><td><strong>Physiological antagonist</strong></td><td>Opposite effect via different receptor</td><td>Adrenaline ↔ Histamine (in anaphylaxis); Insulin ↔ Glucagon</td></tr>
+<tr><td><strong>Chemical antagonist</strong></td><td>Direct chemical inactivation</td><td>Protamine + Heparin; Dimercaprol + Heavy metals</td></tr></table>
+
+<h4 style="margin-top:16px;">📊 4. Dose–Response Relationships</h4>
+<table><tr><th>Curve Type</th><th>Feature</th><th>Use</th></tr>
+<tr><td><strong>Graded (Continuous)</strong></td><td>Plot drug dose vs continuous response (BP, HR); sigmoidal on log dose</td><td>Determines EC50, Emax, efficacy, potency</td></tr>
+<tr><td><strong>Quantal (All-or-none)</strong></td><td>Plot dose vs % of population responding; cumulative S-shaped curve</td><td>Determines ED50, TD50, LD50, TI</td></tr></table>
+
+<h4>Key PD Parameters</h4>
 <ul>
-<li><strong>Definition:</strong> What the drug does to the body — receptor binding, signal transduction, effect</li>
-<li><strong>Dose–response curve</strong>: Graded (individual) vs Quantal (population)</li>
-<li><strong>ED50</strong> – effective dose in 50%; <strong>TD50</strong> – toxic dose in 50%</li>
-<li><strong>Therapeutic Index (TI)</strong> = TD50/ED50 — higher = safer; narrow TI drugs need TDM (digoxin, lithium, warfarin, phenytoin, theophylline, vancomycin, gentamicin)</li>
-<li><strong>Efficacy</strong> = maximum effect (Emax); <strong>Potency</strong> = amount required to produce 50% effect (lower EC50 = more potent)</li>
-<li><strong>Agonist</strong> – binds + activates; <strong>Antagonist</strong> – binds + blocks; <strong>Partial agonist</strong> – submaximal Emax (e.g. buprenorphine, pindolol); <strong>Inverse agonist</strong> – opposite effect to agonist on constitutively active receptor</li>
-<li><strong>Tachyphylaxis</strong> – rapid acute tolerance (ephedrine); <strong>Tolerance</strong> – chronic; <strong>Tachyphylaxis</strong> &gt; Tolerance in rate</li>
-</ul>`,
+<li><strong>EC50</strong>: concentration producing 50% of max effect (potency indicator)</li>
+<li><strong>Emax</strong>: maximum effect (efficacy indicator)</li>
+<li><strong>ED50</strong>: dose effective in 50% of population</li>
+<li><strong>TD50</strong>: dose toxic to 50%</li>
+<li><strong>LD50</strong>: dose lethal to 50%</li>
+</ul>
+
+<h4>Efficacy vs Potency</h4>
+<table><tr><th>Property</th><th>Determined by</th><th>Example</th></tr>
+<tr><td><strong>Efficacy</strong></td><td>Maximum effect (Emax)</td><td>Loop diuretics (Furosemide) &gt; Thiazides — higher efficacy</td></tr>
+<tr><td><strong>Potency</strong></td><td>EC50 (lower = more potent)</td><td>Bumetanide &gt; Furosemide — more potent; Sufentanil &gt; Morphine</td></tr></table>
+<p><em>Clinical point:</em> Choice between drugs is based on <strong>efficacy</strong> (do they work?), not potency. Higher potency just means lower dose — not better therapy.</p>
+
+<h4 style="margin-top:16px;">🛡️ 5. Therapeutic Index &amp; Safety Margins</h4>
+<table><tr><th>Index</th><th>Formula</th><th>Interpretation</th></tr>
+<tr><td><strong>Therapeutic Index (TI)</strong></td><td>LD50 / ED50</td><td>Higher = safer drug</td></tr>
+<tr><td><strong>Therapeutic Window</strong></td><td>Range between MEC (min effective conc) &amp; MTC (min toxic conc)</td><td>Wider = safer</td></tr>
+<tr><td><strong>Standard Safety Margin (SSM)</strong></td><td>(LD1 − ED99 / ED99) × 100</td><td>More clinically useful than TI</td></tr>
+<tr><td><strong>Certain Safety Factor</strong></td><td>LD1 / ED99</td><td>Also clinically relevant</td></tr></table>
+
+<h4>⚠️ Drugs with Narrow Therapeutic Index (need TDM)</h4>
+<p><em>Mnemonic: "<strong>DTV-PALWP</strong>"</em> — <strong>D</strong>igoxin · <strong>T</strong>heophylline · <strong>V</strong>ancomycin · <strong>P</strong>henytoin · <strong>A</strong>minoglycosides (gentamicin) · <strong>L</strong>ithium · <strong>W</strong>arfarin · <strong>P</strong>rocainamide / Tacrolimus / Carbamazepine / Methotrexate / Cyclosporine.</p>
+
+<h4 style="margin-top:16px;">🔄 6. Receptor Regulation</h4>
+<table><tr><th>Process</th><th>Mechanism</th><th>Example</th></tr>
+<tr><td><strong>Up-regulation</strong></td><td>Prolonged antagonist use → ↑ receptor density</td><td>β-blocker withdrawal → tachycardia, MI risk</td></tr>
+<tr><td><strong>Down-regulation</strong></td><td>Prolonged agonist use → ↓ receptor density</td><td>Salbutamol chronic use → ↓ β2 response</td></tr>
+<tr><td><strong>Desensitization (homologous)</strong></td><td>Receptor phosphorylation, internalization (β-arrestin)</td><td>Minutes-hours; β-receptor with chronic stimulation</td></tr>
+<tr><td><strong>Tachyphylaxis (acute tolerance)</strong></td><td>Depletion of presynaptic neurotransmitter</td><td>Ephedrine, amphetamine, nicotine (rapid in hours)</td></tr>
+<tr><td><strong>Tolerance (chronic)</strong></td><td>Pharmacokinetic (enzyme induction) or PD (down-regulation)</td><td>Opioids, BZDs, alcohol, nitrates (days-weeks)</td></tr></table>
+<p><em>Tolerance vs Tachyphylaxis vs Dependence:</em> Tolerance = ↑ dose needed for same effect (chronic). Tachyphylaxis = same but acute (hours). Dependence = withdrawal symptoms on stopping.</p>
+
+<h4 style="margin-top:16px;">🔗 7. Pharmacodynamic Drug Interactions</h4>
+<table><tr><th>Type</th><th>Definition</th><th>Example</th></tr>
+<tr><td><strong>Additive (1 + 1 = 2)</strong></td><td>Combined = sum of individual effects</td><td>Aspirin + Paracetamol; ACE-I + Thiazide</td></tr>
+<tr><td><strong>Synergism / Supra-additive (1 + 1 &gt; 2)</strong></td><td>Combined &gt; sum of individuals</td><td>Sulfamethoxazole + Trimethoprim; β-lactam + Aminoglycoside</td></tr>
+<tr><td><strong>Potentiation (1 + 0 = 2)</strong></td><td>One drug increases effect of another (which alone has no/less effect)</td><td>Cocaine + Catecholamines; Carbidopa + Levodopa; Probenecid + Penicillin</td></tr>
+<tr><td><strong>Competitive antagonism</strong></td><td>Same receptor, ↑ agonist overcomes</td><td>Naloxone + Morphine; Flumazenil + BZD</td></tr>
+<tr><td><strong>Physiological antagonism</strong></td><td>Different receptors, opposing effects</td><td>Adrenaline + Histamine (anaphylaxis)</td></tr>
+<tr><td><strong>Chemical antagonism</strong></td><td>Direct chemical inactivation</td><td>Protamine + Heparin; Dimercaprol + Pb/As</td></tr>
+<tr><td><strong>Antagonism / Subadditive (1 + 1 &lt; 2)</strong></td><td>Combined less than expected</td><td>β-blocker + β-agonist; Vit K + Warfarin</td></tr></table>
+
+<h4 style="margin-top:16px;">📈 8. Other Important PD Concepts</h4>
+<table><tr><th>Concept</th><th>Meaning</th><th>Example</th></tr>
+<tr><td><strong>Spare receptors</strong></td><td>Maximum response achieved with only fractional receptor occupation</td><td>Insulin (only 5-10% receptors needed for max glucose uptake)</td></tr>
+<tr><td><strong>Hormesis</strong></td><td>Low-dose stimulation, high-dose inhibition</td><td>Some toxins, radiation</td></tr>
+<tr><td><strong>Idiosyncrasy</strong></td><td>Unusual response due to genetic abnormality</td><td>G6PD deficiency + primaquine → haemolysis; pseudocholinesterase def + succinylcholine</td></tr>
+<tr><td><strong>Hypersensitivity</strong></td><td>Allergic response, immune-mediated</td><td>Penicillin anaphylaxis</td></tr>
+<tr><td><strong>Drug resistance</strong></td><td>Failure of response — microbial (efflux, β-lactamase) or human (CYP variation)</td><td>Antibiotic resistance, clopidogrel resistance</td></tr>
+<tr><td><strong>Cumulation</strong></td><td>Drug accumulates with repeated doses (long t½)</td><td>Digoxin, Amiodarone, Fluoxetine</td></tr></table>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Naloxone</strong> is competitive antagonist at μ-opioid; high-dose morphine OD may need <em>repeat naloxone</em> as t½ is shorter (30 min vs morphine 2-4 h)</li>
+<li><strong>Phenoxybenzamine</strong> (irreversible α-blocker) — preferred over phentolamine in <em>pheochromocytoma</em> pre-op (sustained block)</li>
+<li><strong>Partial agonists in addiction</strong>: Buprenorphine for opioid use disorder, Varenicline for smoking cessation, Aripiprazole in schizophrenia</li>
+<li><strong>β-blocker withdrawal</strong> → up-regulated receptors → rebound tachycardia &amp; angina/MI; taper over 1-2 weeks</li>
+<li><strong>Nitrate tolerance</strong> develops within 24 h of continuous use → <em>nitrate-free interval of 8 h</em> daily prevents it</li>
+<li><strong>Therapeutic index (TI)</strong> &lt; 10 = narrow; needs TDM — <em>DTV-PALWP mnemonic</em></li>
+<li><strong>Insulin receptor</strong> — only 5–10% occupancy gives maximum glucose response (spare receptors)</li>
+<li><strong>G6PD deficient patients</strong>: Avoid primaquine, sulfonamides, dapsone, nitrofurantoin, methylene blue (paradoxically)</li>
+<li><strong>Pseudocholinesterase deficient patients</strong>: Succinylcholine causes prolonged apnoea (2-4 h instead of 5 min)</li>
+<li><strong>Clopidogrel + PPI (omeprazole)</strong> reduces antiplatelet efficacy (CYP2C19 inhibition); use pantoprazole instead</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Biased agonism / Functional selectivity</strong> — drugs preferentially activate one GPCR signalling pathway (G-protein vs β-arrestin) over another; <em>Oliceridine</em> (μ-opioid biased agonist) — analgesia with less respiratory depression</li>
+<li><strong>Allosteric drugs</strong> — Cinacalcet (CaSR), Maraviroc (CCR5 negative allosteric for HIV entry), Mavacamten (cardiac myosin – HOCM)</li>
+<li><strong>PROTAC (Proteolysis Targeting Chimera)</strong> — bifunctional molecules causing target protein degradation rather than just inhibition; Arvinas' ARV-471 for breast Ca</li>
+<li><strong>Molecular glue degraders</strong> — Lenalidomide, Pomalidomide</li>
+<li><strong>Antibody-Drug Conjugates (ADCs)</strong> — Trastuzumab-deruxtecan (Enhertu), Sacituzumab govitecan</li>
+<li><strong>Bispecific T-cell engagers (BiTEs)</strong> — Blinatumomab (CD3+CD19), Teclistamab (BCMA)</li>
+<li><strong>siRNA therapeutics</strong> — Inclisiran (PCSK9) for hyperlipidaemia, Patisiran (TTR amyloidosis)</li>
+<li><strong>CAR-T cell therapy</strong> — Tisagenlecleucel (CD19) for ALL, BCMA-CAR T for myeloma</li>
+<li><strong>Theranostics</strong> — Lu-177 PSMA for prostate Ca (combines diagnosis + therapy)</li>
+<li><strong>AI-driven dose optimization</strong> — apps using Bayesian PD modelling for vancomycin, tacrolimus, MTX</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Drug acting as partial agonist at μ-opioid receptor → <em>Buprenorphine</em></li>
+<li><strong>INI-CET 2023</strong>: Phenoxybenzamine is preferred over phentolamine in pheochromocytoma because → <em>Irreversible (non-competitive) α-blockade</em></li>
+<li><strong>NEET PG 2024</strong>: G-protein associated with α1 receptor → <em>Gq (IP3, DAG)</em></li>
+<li><strong>INI-CET 2024</strong>: Spare receptors are best illustrated by → <em>Insulin (5-10% occupancy → max effect)</em></li>
+<li><strong>NEET PG 2024</strong>: Mechanism of clopidogrel resistance → <em>CYP2C19 polymorphism (PD-PK interaction)</em></li>
+<li><strong>NEET PG 2023</strong>: Drug with highest efficacy in oedema → <em>Furosemide (loop diuretic)</em></li>
+<li><strong>NEET PG 2025</strong>: Biased agonist at μ-opioid receptor with less respiratory depression → <em>Oliceridine</em></li>
+<li><strong>INI-CET 2024</strong>: Tachyphylaxis vs Tolerance — main difference → <em>Time-course (hours vs days-weeks)</em></li>
+<li><strong>FMGE 2024</strong>: Naloxone in opioid OD acts as → <em>Competitive μ-receptor antagonist</em></li>
+<li><strong>NEET PG 2025</strong>: PROTAC drugs work by → <em>Targeted protein degradation (ubiquitin-proteasome)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Receptors, Dose-Response, TI &amp; Drug Interactions</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacodynamics — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
+</div>`,
   adr:`<h4>Types of ADRs (Rawlins–Thompson)</h4>
 <table><tr><th>Type</th><th>Feature</th><th>Example</th></tr>
 <tr><td>Type A (Augmented)</td><td>Dose-related, predictable</td><td>Bradycardia with β-blockers</td></tr>
