@@ -33,7 +33,7 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   box-shadow:0 2px 14px rgba(15,40,71,0.06);}
 .nav-brand{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;color:var(--navy);
   white-space:nowrap;margin-right:18px;flex-shrink:0;letter-spacing:.3px;text-decoration:none;}
-.nav-brand img{height:40px;width:auto;display:block;}
+.nav-brand img{height:32px;width:auto;display:block;}
 .nav-brand-text{background:linear-gradient(135deg,var(--navy),var(--teal));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .nav a{flex-shrink:0;background:transparent;border:1.5px solid transparent;
@@ -45,8 +45,8 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 
 /* ── HERO ─────────────────────────────────────── */
 .hero{max-width:1100px;margin:0 auto;padding:54px 24px 36px;text-align:center;}
-.hero-logo{width:130px;height:auto;display:block;margin:0 auto 18px;
-  filter:drop-shadow(0 8px 24px rgba(20,160,133,0.25));
+.hero-logo{width:90px;height:auto;display:block;margin:0 auto 16px;
+  filter:drop-shadow(0 6px 18px rgba(20,160,133,0.22));
   animation:hero-float 4s ease-in-out infinite;}
 @keyframes hero-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
 .hero-badge{display:inline-block;background:linear-gradient(135deg,rgba(20,160,133,.12),rgba(26,58,95,.12));border:1.5px solid var(--border);
@@ -266,8 +266,8 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
 
 /* ── FOOTER ───────────────────────────────────── */
 .footer{background:linear-gradient(135deg,#dce8ef,#e6f0f5,#d0e3e0);border-top:2px solid var(--border);padding:40px 24px 32px;text-align:center;margin-top:60px;}
-.footer-logo{width:90px;height:auto;display:block;margin:0 auto 12px;
-  filter:drop-shadow(0 4px 12px rgba(15,40,71,0.15));}
+.footer-logo{width:60px;height:auto;display:block;margin:0 auto 10px;
+  filter:drop-shadow(0 4px 10px rgba(15,40,71,0.15));}
 .footer-name{font-size:22px;font-weight:800;background:linear-gradient(135deg,var(--navy),var(--teal));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;letter-spacing:.5px;}
 .footer-author{font-size:18px;color:var(--navy);margin-bottom:8px;letter-spacing:.3px;}
@@ -980,10 +980,99 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <tr><td>Pharmacogenetics</td><td>Genetic basis of drug variability</td></tr>
 <tr><td>Pharmacovigilance</td><td>Detection &amp; reporting of ADRs</td></tr>
 <tr><td>Pharmacoeconomics</td><td>Cost-effectiveness of drugs</td></tr></table>
-<h4>Routes of Drug Administration</h4>
-<ul><li><strong>Enteral</strong> – oral, sublingual, rectal</li>
-<li><strong>Parenteral</strong> – IV, IM, SC, intrathecal</li>
-<li><strong>Topical / Inhalational / Transdermal</strong></li></ul>`,
+
+<h4 style="margin-top:18px;">Routes of Drug Administration</h4>
+<p><strong>Definition:</strong> The pathway through which a drug enters the body to produce its therapeutic effect. Choice depends on — drug's physicochemical properties, desired onset, site of action, patient condition, duration, compliance &amp; cost.</p>
+
+<h4>📋 Classification of Routes</h4>
+<table>
+<tr><th>Category</th><th>Sub-types</th></tr>
+<tr><td><strong>A. Enteral</strong></td><td>Oral · Sublingual · Buccal · Rectal</td></tr>
+<tr><td><strong>B. Parenteral</strong></td><td>IV · IM · SC · ID · Intra-arterial · Intrathecal · Epidural · Intra-articular · Intracardiac · Intraperitoneal</td></tr>
+<tr><td><strong>C. Topical</strong></td><td>Skin · Eye · Ear · Nose · Vagina</td></tr>
+<tr><td><strong>D. Inhalational</strong></td><td>Gases · Aerosols · Vapours · Dry powder</td></tr>
+<tr><td><strong>E. Transdermal</strong></td><td>Patches (TTS – transdermal therapeutic system)</td></tr>
+<tr><td><strong>F. Special / Modern</strong></td><td>Intraosseous · Intratracheal · Implants · Depot · Liposomes · Nanoparticles · Pumps</td></tr>
+</table>
+
+<h4 style="margin-top:16px;">🅰️ A. Enteral Routes</h4>
+<table><tr><th>Route</th><th>Description</th><th>Example</th></tr>
+<tr><td><strong>Oral (PO)</strong></td><td>Most common, safest, cheapest. Absorption in stomach &amp; small intestine. Subject to first-pass metabolism. Onset 30–90 min.</td><td>Paracetamol, Metformin, Amoxicillin</td></tr>
+<tr><td><strong>Sublingual (SL)</strong></td><td>Under the tongue → rapid absorption via buccal mucosa. <em>Bypasses first-pass.</em> Onset 1–3 min.</td><td>Nitroglycerin (angina), Buprenorphine, Nifedipine (HTN urgency)</td></tr>
+<tr><td><strong>Buccal</strong></td><td>Between cheek &amp; gum. Slower onset than SL, longer duration.</td><td>Fentanyl lozenge, Prochlorperazine, Midazolam (status epilepticus in children)</td></tr>
+<tr><td><strong>Rectal</strong></td><td>Lower 1/3 bypasses liver (partial first-pass avoidance). Useful in vomiting, unconscious, paediatric.</td><td>Diazepam (status epilepticus), Indomethacin, Paracetamol suppository</td></tr></table>
+
+<h4 style="margin-top:16px;">🅱️ B. Parenteral Routes</h4>
+<table><tr><th>Route</th><th>Description</th><th>Example</th></tr>
+<tr><td><strong>Intravenous (IV)</strong></td><td><em>Bioavailability 100%</em>. Immediate onset (15–30 sec). Titrable, large volume, irritant drugs OK. Risk – embolism, infection.</td><td>Lignocaine (arrhythmia), Adrenaline (cardiac arrest), Mannitol, Heparin, Diazepam IV</td></tr>
+<tr><td><strong>Intramuscular (IM)</strong></td><td>Deltoid / gluteus / vastus lateralis. Onset 10–30 min aqueous, weeks for depot. Avoid if on anticoagulants.</td><td>Diclofenac, Vitamin B12, Vaccines; <em>Depot</em>: Benzathine penicillin, Haloperidol decanoate, Medroxyprogesterone (DMPA)</td></tr>
+<tr><td><strong>Subcutaneous (SC)</strong></td><td>Under skin, onset 15–30 min. Self-administration possible. Max 1–2 ml.</td><td>Insulin, Heparin, GLP-1 agonists (Liraglutide), Adrenaline 1:1000 (anaphylaxis – IM preferred), Hormonal implants</td></tr>
+<tr><td><strong>Intradermal (ID)</strong></td><td>Between epidermis &amp; dermis, 0.1–0.2 ml. Used for testing &amp; immunization.</td><td>BCG vaccine, Mantoux test, Allergy testing</td></tr>
+<tr><td><strong>Intra-arterial</strong></td><td>Directly into artery. Risk of embolism, gangrene. Diagnostic + therapeutic.</td><td>Contrast (angiography), TACE chemoembolization (Doxorubicin in HCC)</td></tr>
+<tr><td><strong>Intrathecal (IT)</strong></td><td>Into CSF via lumbar puncture (subarachnoid). <em>Bypasses BBB</em>. Strict aseptic technique.</td><td>Methotrexate (CNS ALL), Bupivacaine (spinal anaesthesia), Baclofen (severe spasticity), Morphine (cancer pain)</td></tr>
+<tr><td><strong>Epidural</strong></td><td>Into epidural space (outside dura). Larger volume than IT, fewer SE.</td><td>Bupivacaine + Fentanyl (labour analgesia), post-op pain, steroid for back pain</td></tr>
+<tr><td><strong>Intra-articular</strong></td><td>Into synovial joint cavity for local action.</td><td>Triamcinolone, Hyaluronic acid (osteoarthritis)</td></tr>
+<tr><td><strong>Intracardiac</strong></td><td>Direct into ventricle (last resort in cardiac arrest – rarely used now).</td><td>Adrenaline (historical), IV/IO preferred today</td></tr>
+<tr><td><strong>Intraperitoneal</strong></td><td>Into peritoneal cavity. Mainly lab animals, also dialysis &amp; intraperitoneal chemotherapy.</td><td>Cisplatin (ovarian Ca peritoneal seeding), Peritoneal dialysis fluid</td></tr>
+<tr><td><strong>Intraosseous (IO)</strong></td><td>Into bone marrow (tibia/humerus). Emergency access when IV fails.</td><td>Paediatric resuscitation, trauma — any IV drug can be given IO</td></tr></table>
+
+<h4 style="margin-top:16px;">🅲 C. Topical Routes (Local action mainly)</h4>
+<table><tr><th>Site</th><th>Examples</th></tr>
+<tr><td>Skin – creams, ointments, gel</td><td>Hydrocortisone, Clotrimazole, Diclofenac gel</td></tr>
+<tr><td>Eye – drops, ointment</td><td>Timolol, Latanoprost (glaucoma), Tropicamide, Ciprofloxacin</td></tr>
+<tr><td>Ear – drops</td><td>Chloramphenicol, Ciprofloxacin, Carbamide peroxide</td></tr>
+<tr><td>Nose – sprays, drops</td><td>Oxymetazoline (decongestant), Mometasone (rhinitis), Desmopressin (DI)</td></tr>
+<tr><td>Vagina – pessaries, gels</td><td>Clotrimazole, Estrogen cream, Misoprostol (induction)</td></tr>
+</table>
+
+<h4 style="margin-top:16px;">🅳 D. Inhalational</h4>
+<p>Lungs have ~70 m² SA → rapid absorption. <strong>Local action</strong> (asthma) or <strong>systemic</strong> (general anaesthesia). Forms: MDI, DPI, nebulizer, vapours.</p>
+<ul>
+<li><strong>Bronchodilators</strong>: Salbutamol, Ipratropium, Salmeterol, Tiotropium</li>
+<li><strong>Inhaled steroids</strong>: Budesonide, Fluticasone, Beclomethasone</li>
+<li><strong>General anaesthetics</strong>: Halothane, Sevoflurane, Isoflurane, N₂O</li>
+<li><strong>Other</strong>: Cromolyn, Insulin (Afrezza – inhaled)</li>
+</ul>
+
+<h4 style="margin-top:16px;">🅴 E. Transdermal (TTS – Patches)</h4>
+<p>Steady systemic release through skin. Bypasses first-pass. Once-daily / weekly.</p>
+<table><tr><th>Drug</th><th>Indication</th></tr>
+<tr><td>Nitroglycerin patch</td><td>Angina prophylaxis (12 h on, 12 h off → avoid tolerance)</td></tr>
+<tr><td>Fentanyl patch</td><td>Chronic severe pain (cancer) — 72 h</td></tr>
+<tr><td>Hyoscine (Scopolamine)</td><td>Motion sickness</td></tr>
+<tr><td>Estrogen / Estradiol</td><td>HRT, contraception</td></tr>
+<tr><td>Nicotine patch</td><td>Smoking cessation</td></tr>
+<tr><td>Clonidine patch</td><td>Hypertension (weekly)</td></tr>
+<tr><td>Rivastigmine</td><td>Alzheimer's disease</td></tr>
+<tr><td>Selegiline</td><td>Major depression (avoids tyramine interaction)</td></tr>
+</table>
+
+<h4 style="margin-top:16px;">🅵 F. Modern / Special Delivery Systems</h4>
+<table><tr><th>System</th><th>Concept &amp; Example</th></tr>
+<tr><td><strong>Depot injection</strong></td><td>Long-acting IM/SC, weeks–months: Benzathine penicillin (3–4 wk), Haloperidol decanoate (4 wk), DMPA (3 mo), Leuprolide (1–6 mo)</td></tr>
+<tr><td><strong>Implants</strong></td><td>Subdermal slow release: Norplant (Levonorgestrel × 5 y), Goserelin (Zoladex – prostate Ca), Buprenorphine (Probuphine)</td></tr>
+<tr><td><strong>Sustained release (SR/XR/CR)</strong></td><td>Diltiazem SR, Metformin XR, Bupropion SR — gradual release ↓ dosing frequency</td></tr>
+<tr><td><strong>Liposomes</strong></td><td>Phospholipid vesicles ↓ toxicity: Amphotericin B (AmBisome – ↓ nephrotoxicity), Doxorubicin (Doxil)</td></tr>
+<tr><td><strong>Nanoparticles</strong></td><td>Targeted delivery: Abraxane (albumin-bound Paclitaxel)</td></tr>
+<tr><td><strong>Iontophoresis</strong></td><td>Mild electric current pushes drug through skin: Lidocaine patches, Pilocarpine (CF sweat test)</td></tr>
+<tr><td><strong>DPI – Dry Powder Inhaler</strong></td><td>Breath-activated, no propellant: Salmeterol DPI, Tiotropium HandiHaler</td></tr>
+<tr><td><strong>Pumps</strong></td><td>Continuous SC delivery: Insulin pump, Apomorphine pump (PD), PCA morphine</td></tr>
+<tr><td><strong>Ocular inserts</strong></td><td>Sustained drug release in eye: Pilocarpine Ocusert (rarely used now), Ganciclovir Vitrasert (CMV retinitis)</td></tr>
+</table>
+
+<h4 style="margin-top:18px;">📊 Comparison Table — Major Routes</h4>
+<table>
+<tr><th>Route</th><th>Onset</th><th>Bioavailability</th><th>1st-Pass</th><th>Compliance</th><th>Sterility</th></tr>
+<tr><td>IV</td><td>Immediate</td><td><strong>100%</strong></td><td>No</td><td>Poor (painful)</td><td>Yes</td></tr>
+<tr><td>IM</td><td>10–30 min</td><td>75–100%</td><td>No</td><td>Moderate</td><td>Yes</td></tr>
+<tr><td>SC</td><td>15–30 min</td><td>75–100%</td><td>No</td><td>Good</td><td>Yes</td></tr>
+<tr><td>Oral</td><td>30–90 min</td><td>Variable</td><td><strong>YES</strong></td><td>Excellent</td><td>No</td></tr>
+<tr><td>Sublingual</td><td>1–3 min</td><td>High</td><td>No</td><td>Good</td><td>No</td></tr>
+<tr><td>Rectal</td><td>5–30 min</td><td>Variable</td><td>Partial</td><td>Poor</td><td>No</td></tr>
+<tr><td>Inhaled</td><td>1–5 min</td><td>Local high</td><td>No</td><td>Variable</td><td>—</td></tr>
+<tr><td>Transdermal</td><td>Hours</td><td>Steady</td><td>No</td><td>Excellent</td><td>No</td></tr>
+<tr><td>Intrathecal</td><td>5–15 min</td><td>Direct CNS</td><td>No</td><td>Special</td><td>Strict</td></tr>
+</table>`,
   moa:MOA.receptor,
   pkpd:`<h4>ADME — The Four Pillars</h4>
 <ul>
@@ -1032,7 +1121,40 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
     {q:"Tachyphylaxis is best described as:",o:["Rapidly developing tolerance","Genetic enzyme deficiency","Anaphylactic reaction","Drug-drug interaction"],a:"Rapidly developing tolerance",e:"Tachyphylaxis = rapid acute tolerance over hours, seen with ephedrine, amphetamines, nicotine due to depletion of presynaptic stores."},
     {q:"Zero-order kinetics is shown by:",o:["Penicillin","Aspirin in toxic doses","Digoxin","Propranolol"],a:"Aspirin in toxic doses",e:"Aspirin shows zero-order kinetics at high doses (saturation of metabolism). Other examples: phenytoin, ethanol, theophylline (high dose)."}
   ],
-  mnemonic:`<strong>PK in 4 letters – ADME</strong> (Absorption, Distribution, Metabolism, Excretion). <strong>Narrow TI drugs – &lsquo;Drugs With Low TI&rsquo;</strong>: <em>D</em>igoxin, <em>W</em>arfarin, <em>L</em>ithium, <em>T</em>heophylline + Phenytoin.`
+  mnemonic:`<strong>🧠 PK in 4 letters – ADME</strong> (Absorption, Distribution, Metabolism, Excretion).<br>
+<strong>📌 Narrow TI drugs – 'Drugs With Low TI'</strong>: <em>D</em>igoxin, <em>W</em>arfarin, <em>L</em>ithium, <em>T</em>heophylline + Phenytoin.<br><br>
+
+<strong>💊 ROUTES — High-Yield Mnemonics</strong><br><br>
+
+<strong>🔸 Sublingual drugs ('Nitro Buys Nifty')</strong>: <em>N</em>itroglycerin, <em>Bu</em>prenorphine, <em>Ni</em>fedipine, <em>I</em>soprenaline, <em>Me</em>thyl-testosterone.<br><br>
+
+<strong>🔸 High first-pass metabolism (avoid oral!) — 'LIP MAN'</strong>: <em>L</em>ignocaine, <em>I</em>soprenaline, <em>P</em>ropranolol, <em>M</em>orphine, <em>A</em>spirin, <em>N</em>itroglycerin (also Verapamil, Hydralazine).<br><br>
+
+<strong>🔸 Intrathecal drugs — 'BMW'</strong>: <em>B</em>aclofen (spasticity), <em>M</em>ethotrexate (CNS leukemia), <em>W</em>ater-soluble anaesthetics (Bupivacaine).<br><br>
+
+<strong>🔸 Depot preparations — 'BeHMo-LG'</strong>: <em>Be</em>nzathine penicillin (3-4 wk), <em>H</em>aloperidol decanoate (4 wk), <em>Mo</em>droxyprogesterone DMPA (3 mo), <em>L</em>euprolide (1-6 mo), <em>G</em>oserelin implant.<br><br>
+
+<strong>🔸 Transdermal patches — 'FENS-NCR'</strong>: <em>F</em>entanyl, <em>E</em>strogen, <em>N</em>itroglycerin, <em>S</em>copolamine (Hyoscine), <em>N</em>icotine, <em>C</em>lonidine, <em>R</em>ivastigmine.<br><br>
+
+<strong>🎯 NEET PG / INI-CET TOP-10 POINTS</strong><br>
+1. <strong>100% bioavailability = IV only</strong> (by definition)<br>
+2. <strong>Fastest onset</strong>: IV (15-30 sec) — even Sublingual takes 1-3 min<br>
+3. <strong>DOC for anaphylaxis = Adrenaline IM</strong> in anterolateral thigh (NOT SC, NOT IV)<br>
+4. <strong>Status epilepticus in child without IV access</strong>: Buccal/Intranasal Midazolam or Rectal Diazepam<br>
+5. <strong>Insulin route = SC</strong> (Regular insulin can be IV in DKA)<br>
+6. <strong>Nitroglycerin TTS patch</strong>: Apply 12 h, remove 12 h (prevent tolerance)<br>
+7. <strong>Aerosols for asthma</strong>: Local action → systemic side effects minimal<br>
+8. <strong>Drugs absorbed in stomach</strong>: Weak acids (aspirin); weak bases in intestine<br>
+9. <strong>Rectal route partially bypasses liver</strong> (lower 1/3 → IVC directly)<br>
+10. <strong>Intrathecal Methotrexate dose</strong> = small (12 mg) — never give IT vincristine (fatal!)<br><br>
+
+<strong>📋 CASE-BASED INSIGHTS</strong><br>
+• <strong>Case 1</strong>: 6-year-old in convulsions, no IV access → <em>Buccal midazolam</em> 0.3 mg/kg.<br>
+• <strong>Case 2</strong>: Bee-sting anaphylaxis → <em>Adrenaline 0.3-0.5 mg IM</em> anterolateral thigh.<br>
+• <strong>Case 3</strong>: Cancer patient, chronic severe pain → <em>Transdermal Fentanyl patch</em> ± IT morphine.<br>
+• <strong>Case 4</strong>: Schizophrenia non-compliant → <em>Haloperidol decanoate IM monthly</em>.<br>
+• <strong>Case 5</strong>: HCC with liver mass → <em>Intra-arterial chemoembolization (TACE) with Doxorubicin</em>.<br>
+• <strong>Case 6</strong>: ALL with CNS spread → <em>Intrathecal Methotrexate</em> 12 mg + IT steroid.`
 });
 
 TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
