@@ -711,6 +711,151 @@ function md(s){return (s||'').replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').re
    Each MOA is a stand-alone SVG with CSS-driven animations
 ═════════════════════════════════════════════════════ */
 const MOA = {
+  generalReceptors: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🎯 The 4 Major Receptor Types — Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Receptors are macromolecules that bind drugs &amp; transduce signals. Below — visualize each type with its signal-transduction mechanism.</p>
+</div>
+
+<!-- 1. LIGAND-GATED ION CHANNEL -->
+<div class="moa-stage">
+  <div class="moa-title">⚡ Type 1 — Ligand-Gated Ion Channel (Ionotropic) · Example: Nicotinic ACh Receptor</div>
+  <svg class="moa-svg" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="110" width="700" height="40" fill="#172246"/>
+    <line x1="0" y1="110" x2="700" y2="110" stroke="#00d4aa" stroke-width="1.5"/>
+    <line x1="0" y1="150" x2="700" y2="150" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="540" y="105" fill="#7a88b0" font-size="10">Plasma membrane</text>
+    <rect x="300" y="90" width="40" height="80" rx="4" fill="#4da6ff" stroke="#fff"/>
+    <text x="300" y="80" fill="#4da6ff" font-size="10" font-weight="700">Ion Channel</text>
+    <circle cx="250" cy="60" r="14" fill="#f5c518" class="anim-bind"/>
+    <text x="244" y="64" fill="#08112a" font-size="11" font-weight="800">L</text>
+    <text x="232" y="40" fill="#f5c518" font-size="11" font-weight="700">Ligand (ACh)</text>
+    <g>
+      <circle cx="315" cy="85" r="5" fill="#00d4aa"><animate attributeName="cy" values="85;180;85" dur="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="325" cy="80" r="5" fill="#00d4aa"><animate attributeName="cy" values="80;175;80" dur="1.7s" repeatCount="indefinite" begin=".3s"/></circle>
+      <circle cx="320" cy="70" r="5" fill="#00d4aa"><animate attributeName="cy" values="65;165;65" dur="1.6s" repeatCount="indefinite" begin=".6s"/></circle>
+    </g>
+    <text x="420" y="80" fill="#00d4aa" font-size="11" font-weight="700">Na⁺ / Ca²⁺ influx</text>
+    <text x="420" y="100" fill="#00d4aa" font-size="11">↓</text>
+    <text x="420" y="120" fill="#00d4aa" font-size="11">Depolarization</text>
+    <text x="420" y="140" fill="#00d4aa" font-size="11">↓</text>
+    <text x="420" y="160" fill="#00d4aa" font-size="12" font-weight="700">Action Potential</text>
+    <text x="80" y="200" fill="#7a88b0" font-size="10">⏱️ Onset: milliseconds</text>
+    <text x="80" y="220" fill="#7a88b0" font-size="10">Examples: Nicotinic ACh · GABA-A (Cl⁻) · NMDA · AMPA · 5-HT3 · Glycine</text>
+  </svg>
+</div>
+
+<!-- 2. GPCR -->
+<div class="moa-stage">
+  <div class="moa-title">🔗 Type 2 — G-Protein Coupled Receptor (GPCR / Metabotropic) · Example: β-Adrenergic (Gs)</div>
+  <svg class="moa-svg" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="110" width="700" height="40" fill="#172246"/>
+    <line x1="0" y1="110" x2="700" y2="110" stroke="#00d4aa" stroke-width="1.5"/>
+    <line x1="0" y1="150" x2="700" y2="150" stroke="#00d4aa" stroke-width="1.5"/>
+    <!-- 7TM receptor as wavy zigzag -->
+    <path d="M180 90 L180 170 M195 90 L195 170 M210 90 L210 170 M225 90 L225 170 M240 90 L240 170 M255 90 L255 170 M270 90 L270 170" stroke="#4da6ff" stroke-width="4"/>
+    <text x="170" y="80" fill="#4da6ff" font-size="10" font-weight="700">7-TM Receptor</text>
+    <!-- Ligand -->
+    <circle cx="225" cy="50" r="14" fill="#f5c518" class="anim-bind"/>
+    <text x="218" y="54" fill="#08112a" font-size="10" font-weight="800">β</text>
+    <text x="195" y="32" fill="#f5c518" font-size="11" font-weight="700">Agonist (Adrenaline)</text>
+    <!-- G-protein -->
+    <ellipse cx="295" cy="180" rx="42" ry="14" fill="#b388ff"/>
+    <text x="280" y="184" fill="#fff" font-size="10" font-weight="800">Gs (α β γ)</text>
+    <text x="290" y="208" fill="#b388ff" font-size="10">↓ GTP exchange</text>
+    <!-- Enzyme -->
+    <rect x="380" y="170" width="60" height="22" fill="#00d4aa"/>
+    <text x="385" y="185" fill="#08112a" font-size="11" font-weight="800">AC (↑)</text>
+    <text x="365" y="210" fill="#00d4aa" font-size="10">↓ ATP → cAMP ↑</text>
+    <!-- Effect path -->
+    <text x="470" y="180" fill="#fbbf24" font-size="11" font-weight="700">↓ PKA activation</text>
+    <text x="470" y="200" fill="#fbbf24" font-size="11">↓ Phosphorylation cascade</text>
+    <text x="470" y="220" fill="#fbbf24" font-size="12" font-weight="700">↑ HR · Bronchodilation</text>
+    <text x="80" y="250" fill="#7a88b0" font-size="10">⏱️ Onset: seconds–minutes. Sub-types: Gs (↑cAMP), Gi (↓cAMP), Gq (↑IP3+DAG → ↑Ca²⁺)</text>
+    <text x="80" y="270" fill="#7a88b0" font-size="10">Examples: Adrenergic α/β · Muscarinic · Histamine · Dopamine · Opioid · 5-HT</text>
+  </svg>
+</div>
+
+<!-- 3. ENZYME-LINKED RECEPTOR (Tyrosine Kinase) -->
+<div class="moa-stage">
+  <div class="moa-title">🧬 Type 3 — Enzyme-Linked Receptor (Receptor Tyrosine Kinase) · Example: Insulin Receptor</div>
+  <svg class="moa-svg" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="110" width="700" height="40" fill="#172246"/>
+    <line x1="0" y1="110" x2="700" y2="110" stroke="#00d4aa" stroke-width="1.5"/>
+    <line x1="0" y1="150" x2="700" y2="150" stroke="#00d4aa" stroke-width="1.5"/>
+    <!-- Receptor dimer -->
+    <rect x="180" y="80" width="22" height="80" fill="#4da6ff"/>
+    <rect x="240" y="80" width="22" height="80" fill="#4da6ff"/>
+    <text x="170" y="70" fill="#4da6ff" font-size="10" font-weight="700">Tyrosine Kinase Receptor</text>
+    <!-- Ligand binding -->
+    <circle cx="221" cy="45" r="14" fill="#f5c518" class="anim-bind"/>
+    <text x="216" y="49" fill="#08112a" font-size="10" font-weight="800">I</text>
+    <text x="190" y="25" fill="#f5c518" font-size="11" font-weight="700">Ligand (Insulin)</text>
+    <!-- Autophosphorylation -->
+    <text x="280" y="135" fill="#fbbf24" font-size="11" font-weight="700">↓ Autophosphorylation (P-P)</text>
+    <text x="280" y="160" fill="#fbbf24" font-size="11">↓</text>
+    <text x="280" y="180" fill="#fbbf24" font-size="11" font-weight="700">IRS-1 → PI3K → Akt</text>
+    <text x="280" y="200" fill="#fbbf24" font-size="11">↓</text>
+    <text x="280" y="220" fill="#fbbf24" font-size="11" font-weight="700">↑ GLUT-4 translocation</text>
+    <!-- Glucose -->
+    <g>
+      <circle cx="520" cy="60" r="9" fill="#00d4aa"><animate attributeName="cy" values="60;140;60" dur="2s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="540" y="65" fill="#00d4aa" font-size="11" font-weight="700">Glucose entry ↓</text>
+    <rect x="500" y="95" width="32" height="24" fill="#b388ff"/>
+    <text x="495" y="135" fill="#b388ff" font-size="9">GLUT-4</text>
+    <text x="80" y="250" fill="#7a88b0" font-size="10">⏱️ Onset: minutes. Other examples: EGF, PDGF, VEGF, FGF, MAPK pathway</text>
+    <text x="80" y="270" fill="#7a88b0" font-size="10">Also: JAK-STAT (cytokine receptors), Guanylate Cyclase (ANP)</text>
+  </svg>
+</div>
+
+<!-- 4. NUCLEAR RECEPTOR -->
+<div class="moa-stage">
+  <div class="moa-title">🧪 Type 4 — Intracellular (Nuclear) Receptor · Example: Steroid Hormone Receptor</div>
+  <svg class="moa-svg" viewBox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell membrane (lipid bilayer drug passes through) -->
+    <rect x="40" y="100" width="620" height="30" fill="#172246"/>
+    <line x1="40" y1="100" x2="660" y2="100" stroke="#00d4aa" stroke-width="1.5"/>
+    <line x1="40" y1="130" x2="660" y2="130" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="510" y="95" fill="#7a88b0" font-size="10">Plasma membrane</text>
+    <!-- Drug crossing -->
+    <circle cx="100" cy="60" r="13" fill="#f5c518">
+      <animate attributeName="cx" values="100;200;300" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="60;130;180" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="40" y="55" fill="#f5c518" font-size="11" font-weight="700">Lipid-soluble drug</text>
+    <text x="40" y="70" fill="#f5c518" font-size="10">(Steroid, T3, Vit D)</text>
+    <!-- Cytoplasmic receptor -->
+    <ellipse cx="340" cy="200" rx="40" ry="20" fill="#b388ff"/>
+    <text x="312" y="204" fill="#fff" font-size="10" font-weight="800">R + HSP90</text>
+    <text x="290" y="230" fill="#b388ff" font-size="10">Cytoplasm</text>
+    <!-- Translocation arrow -->
+    <path d="M385 195 Q450 175 510 165" stroke="#fbbf24" stroke-width="2" fill="none" stroke-dasharray="4,3" marker-end="url(#arrN)"/>
+    <defs><marker id="arrN" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#fbbf24"/></marker></defs>
+    <text x="400" y="180" fill="#fbbf24" font-size="10" font-weight="700">Translocation</text>
+    <!-- Nucleus -->
+    <ellipse cx="570" cy="180" rx="65" ry="40" fill="none" stroke="#00d4aa" stroke-width="2"/>
+    <text x="548" y="155" fill="#00d4aa" font-size="11" font-weight="700">Nucleus</text>
+    <text x="535" y="180" fill="#00d4aa" font-size="10" font-weight="700">↓ HRE binding</text>
+    <text x="535" y="200" fill="#00d4aa" font-size="10">↓ Gene transcription</text>
+    <text x="535" y="220" fill="#00d4aa" font-size="11" font-weight="700">New proteins</text>
+    <text x="80" y="265" fill="#7a88b0" font-size="10">⏱️ Onset: hours–days (slow due to gene transcription)</text>
+    <text x="80" y="280" fill="#7a88b0" font-size="10">Examples: Glucocorticoids · Mineralocorticoids · Sex hormones · Thyroid (T3) · Vit D · Retinoids · PPARγ (TZDs)</text>
+  </svg>
+</div>
+
+<div style="margin-top:14px;padding:14px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border-left:4px solid var(--gold);border-radius:10px;">
+<h4 style="color:#92400e;font-size:12px;text-transform:uppercase;letter-spacing:.5px;font-weight:800;margin-bottom:6px;">📊 Receptor Comparison — Quick Recap</h4>
+<table style="width:100%;font-size:12px;border-collapse:collapse;">
+<tr style="background:rgba(245,158,11,0.15);"><th style="padding:6px 8px;text-align:left;color:#92400e;">Type</th><th style="padding:6px 8px;text-align:left;color:#92400e;">Location</th><th style="padding:6px 8px;text-align:left;color:#92400e;">Onset</th><th style="padding:6px 8px;text-align:left;color:#92400e;">Examples</th></tr>
+<tr><td style="padding:6px 8px;color:#7c2d12;"><strong>Ligand-gated</strong></td><td style="padding:6px 8px;color:#7c2d12;">Transmembrane</td><td style="padding:6px 8px;color:#7c2d12;">ms</td><td style="padding:6px 8px;color:#7c2d12;">Nicotinic, GABA-A, NMDA, 5-HT3</td></tr>
+<tr style="background:rgba(245,158,11,0.05);"><td style="padding:6px 8px;color:#7c2d12;"><strong>GPCR</strong></td><td style="padding:6px 8px;color:#7c2d12;">Transmembrane (7TM)</td><td style="padding:6px 8px;color:#7c2d12;">sec</td><td style="padding:6px 8px;color:#7c2d12;">Adrenergic, Muscarinic, Histamine, Opioid</td></tr>
+<tr><td style="padding:6px 8px;color:#7c2d12;"><strong>Enzyme-linked</strong></td><td style="padding:6px 8px;color:#7c2d12;">Transmembrane</td><td style="padding:6px 8px;color:#7c2d12;">min</td><td style="padding:6px 8px;color:#7c2d12;">Insulin (TK), EGF, JAK-STAT, ANP (gC)</td></tr>
+<tr style="background:rgba(245,158,11,0.05);"><td style="padding:6px 8px;color:#7c2d12;"><strong>Nuclear</strong></td><td style="padding:6px 8px;color:#7c2d12;">Cytoplasm/Nucleus</td><td style="padding:6px 8px;color:#7c2d12;">hrs–days</td><td style="padding:6px 8px;color:#7c2d12;">Steroids, Thyroid, Vit D, PPARγ</td></tr>
+</table>
+</div>
+`,
+
   receptor: `
 <div class="moa-stage">
   <div class="moa-title">⚙️ Drug–Receptor Interaction (Lock & Key Model)</div>
@@ -1212,23 +1357,40 @@ const MOA = {
    FOURTEEN TOPICS — FULL DATA
 ═════════════════════════════════════════════════════ */
 TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
+  hiddenTabs:['pkpd','adr','drugs'],
   subtopics:[
-    {n:1,label:"Nature, Sources & Info Resources",tab:"class",anchor:"sub-sources"},
-    {n:2,label:"Routes of Drug Administration",tab:"class",anchor:"sub-routes"},
-    {n:3,label:"Pharmacokinetics (ADME)",tab:"pkpd",anchor:"sub-pk"},
-    {n:4,label:"Pharmacodynamics",tab:"pkpd",anchor:"sub-pd"},
-    {n:5,label:"ADR & Pharmacovigilance",tab:"adr",anchor:"sub-adr"},
-    {n:6,label:"Drug Development & Trials",tab:"class",anchor:"sub-dev"}
+    {n:1,label:"Nature, Sources & Info Resources",panelId:"details",anchor:"sub-sources"},
+    {n:2,label:"Routes of Drug Administration",panelId:"details",anchor:"sub-routes"},
+    {n:3,label:"Pharmacokinetics (ADME)",panelId:"pkpd",anchor:"sub-pk"},
+    {n:4,label:"Pharmacodynamics",panelId:"pkpd",anchor:"sub-pd"},
+    {n:5,label:"ADR & Pharmacovigilance",panelId:"adr"},
+    {n:6,label:"Drug Development & Trials",panelId:"details",anchor:"sub-dev"}
   ],
   classification:`<h4>Branches of Pharmacology</h4>
 <table><tr><th>Branch</th><th>Definition</th></tr>
-<tr><td>Pharmacokinetics</td><td>What the body does to the drug (ADME)</td></tr>
-<tr><td>Pharmacodynamics</td><td>What the drug does to the body (MOA, effect)</td></tr>
-<tr><td>Pharmacogenetics</td><td>Genetic basis of drug variability</td></tr>
-<tr><td>Pharmacovigilance</td><td>Detection &amp; reporting of ADRs</td></tr>
-<tr><td>Pharmacoeconomics</td><td>Cost-effectiveness of drugs</td></tr></table>
+<tr><td><strong>Pharmacokinetics</strong></td><td>What the body does to the drug — Absorption, Distribution, Metabolism, Excretion (ADME)</td></tr>
+<tr><td><strong>Pharmacodynamics</strong></td><td>What the drug does to the body — Mechanism of action, effects, dose–response</td></tr>
+<tr><td><strong>Pharmacotherapeutics</strong></td><td>Clinical application of drugs for treatment</td></tr>
+<tr><td><strong>Pharmacogenetics / Pharmacogenomics</strong></td><td>Genetic basis of variability in drug response (CYP polymorphisms, HLA testing)</td></tr>
+<tr><td><strong>Pharmacovigilance</strong></td><td>Detection, assessment &amp; prevention of adverse drug reactions (PvPI in India)</td></tr>
+<tr><td><strong>Pharmacoeconomics</strong></td><td>Cost-effectiveness, cost-benefit, cost-utility analysis of drugs</td></tr>
+<tr><td><strong>Pharmacoepidemiology</strong></td><td>Use &amp; effects of drugs in large populations</td></tr>
+<tr><td><strong>Toxicology</strong></td><td>Study of harmful effects of drugs/chemicals; poisoning &amp; antidotes</td></tr>
+<tr><td><strong>Clinical Pharmacology</strong></td><td>Application of pharmacology to clinical practice — TDM, rational prescribing</td></tr>
+<tr><td><strong>Chronopharmacology</strong></td><td>Effect of biological rhythms on drug action (e.g. asthma worse at night → evening LABA)</td></tr></table>
+<div class="cblock" style="margin-top:14px;border-left-color:var(--teal);">
+<h4>📌 Quick Definitions</h4>
+<ul>
+<li><strong>Drug</strong> – Any substance used to modify physiological function for therapeutic / diagnostic / preventive purpose (WHO).</li>
+<li><strong>Pharmacy</strong> – Science of preparation, dispensing &amp; distribution of drugs.</li>
+<li><strong>Pharmacology</strong> – Science of drugs (Greek: <em>pharmakon</em> = drug, <em>logos</em> = study).</li>
+<li><strong>Therapeutics</strong> – Application of drugs for treatment of disease.</li>
+<li><strong>Pharmacopoeia</strong> – Official, legally binding text with standards for drug identity, purity &amp; strength.</li>
+</ul>
+</div>
+<p style="margin-top:12px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>For detailed content of Sources, Routes, PK, PD, ADR &amp; Drug Development — please use the 6-button Sub-Topic Navigator above</em></p>`,
 
-<span id="sub-routes-general" style="display:block;height:1px;"></span>
+  extraPanels:[{id:"details",content:`<span id="sub-routes-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:18px;">Routes of Drug Administration</h4>
 <p><strong>Definition:</strong> The pathway through which a drug enters the body to produce its therapeutic effect. Choice depends on — drug's physicochemical properties, desired onset, site of action, patient condition, duration, compliance &amp; cost.</p>
 
@@ -1881,8 +2043,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p>For complete animated explanation of <strong>Nature, Sources of Drugs, Nomenclature, Pharmacopoeias &amp; Drug Information Resources</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Nature, Sources &amp; Drug Information Resources — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>`,
-  moa:MOA.receptor,
+</div>`}],
+  moa:MOA.generalReceptors,
   pkpd:`<span id="sub-pk-general" style="display:block;height:1px;"></span>
 <h4>PHARMACOKINETICS — ADME</h4>
 <p><strong>Definition:</strong> Pharmacokinetics (PK) describes <em>what the body does to the drug</em> — its movement, fate, and chemical changes from the moment of administration to its final elimination. The four classical pillars are <strong>A</strong>bsorption · <strong>D</strong>istribution · <strong>M</strong>etabolism · <strong>E</strong>xcretion (ADME).</p>
@@ -3778,13 +3940,34 @@ function renderTopicAccordions(){
   const root = document.getElementById('topic-accordions');
   root.innerHTML = '';
   TOPICS.forEach((t,idx)=>{
+    const hidden = t.hiddenTabs || [];
+    const isHidden = (k)=>hidden.includes(k);
+    // Build tab buttons dynamically
+    const allTabs = [
+      {k:'class', label:'🗂️ Classification'},
+      {k:'moa',   label:'⚙️ Animated MOA'},
+      {k:'pkpd',  label:'📊 PK / PD'},
+      {k:'adr',   label:'⚠️ ADR'},
+      {k:'drugs', label:'💊 Drugs'},
+      {k:'fc',    label:'🎴 Flashcards'},
+      {k:'ppt',   label:'🖥️ PPT Outline'},
+      {k:'mcq',   label:'🎯 NEET MCQs'}
+    ];
+    const visibleTabs = allTabs.filter(x=>!isHidden(x.k));
+    const tabsHTML = visibleTabs.map((x,i)=>`<button class="sub-tab ${i===0?'active':''}" onclick="switchSub(this,'${x.k}-${t.id}')">${x.label}</button>`).join('');
+    const firstVisibleKey = visibleTabs[0]?.k || 'class';
+    const isFirstActive = (k)=>k===firstVisibleKey?'active':'';
+    // Build summary text for header
+    const summaryText = visibleTabs.map(x=>x.label.replace(/^.+?\s/,'')).join(' · ');
+    // Extra hidden panels (for sub-topic nav access)
+    const extraPanelsHTML = (t.extraPanels||[]).map(p=>`<div id="${p.id}-${t.id}" class="sub-panel ${isFirstActive(p.id)}">${p.content}</div>`).join('');
     const accordion = el(`
       <div class="topic-detail" id="topic-${t.id}">
         <div class="topic-detail-head" onclick="toggleTopic('${t.id}')">
           <div class="topic-detail-icon">${t.icon}</div>
           <div class="topic-detail-meta">
             <h3>${idx+1}. ${t.title}</h3>
-            <span>Classification · MOA · PK/PD · ADR · Drugs · PPT · MCQs · Flashcards</span>
+            <span>${summaryText}</span>
           </div>
           <button class="topic-export-btn" onclick="event.stopPropagation();exportTopic('${t.id}')" title="Print or save as PDF">📥 PDF</button>
           <div class="topic-toggle">+</div>
@@ -3792,26 +3975,18 @@ function renderTopicAccordions(){
         <div class="topic-detail-body">
           ${t.subtopics?`<div class="subtopic-nav">
             <div class="subtopic-nav-title">📚 Quick Jump to Sub-Topics</div>
-            ${t.subtopics.map(s=>`<button class="subtopic-btn" onclick="goSubtopic('${t.id}','${s.tab}','${s.anchor}')"><span class="subtopic-btn-num">${s.n}</span>${s.label}</button>`).join('')}
+            ${t.subtopics.map(s=>`<button class="subtopic-btn" onclick="goSubtopic('${t.id}','${s.panelId||s.tab}','${s.anchor||''}')"><span class="subtopic-btn-num">${s.n}</span>${s.label}</button>`).join('')}
           </div>`:''}
-          <div class="sub-tabs">
-            <button class="sub-tab active" onclick="switchSub(this,'class-${t.id}')">🗂️ Classification</button>
-            <button class="sub-tab" onclick="switchSub(this,'moa-${t.id}')">⚙️ Animated MOA</button>
-            <button class="sub-tab" onclick="switchSub(this,'pkpd-${t.id}')">📊 PK / PD</button>
-            <button class="sub-tab" onclick="switchSub(this,'adr-${t.id}')">⚠️ ADR</button>
-            <button class="sub-tab" onclick="switchSub(this,'drugs-${t.id}')">💊 Drugs</button>
-            <button class="sub-tab" onclick="switchSub(this,'fc-${t.id}')">🎴 Flashcards</button>
-            <button class="sub-tab" onclick="switchSub(this,'ppt-${t.id}')">🖥️ PPT Outline</button>
-            <button class="sub-tab" onclick="switchSub(this,'mcq-${t.id}')">🎯 NEET MCQs</button>
-          </div>
-          <div id="class-${t.id}" class="sub-panel active"><div class="cblock">${t.classification}</div>${t.mnemonic?`<div class="mnemonic"><h4>🧠 Memory Aid</h4><p>${t.mnemonic}</p></div>`:''}</div>
-          <div id="moa-${t.id}" class="sub-panel">${t.moa}</div>
-          <div id="pkpd-${t.id}" class="sub-panel"><div class="cblock">${t.pkpd}</div></div>
-          <div id="adr-${t.id}" class="sub-panel"><div class="high-yield"><h4>⚠️ Adverse Drug Reactions &amp; Toxicity</h4>${t.adr}</div></div>
-          <div id="drugs-${t.id}" class="sub-panel"><div class="drug-grid">${t.drugs.map((d,di)=>renderDrugCard(d,t.id,di)).join('')}</div></div>
-          <div id="fc-${t.id}" class="sub-panel">${renderFlashcardSection(t)}</div>
-          <div id="ppt-${t.id}" class="sub-panel"><div class="ppt-grid">${t.ppt.map((s,i)=>`<div class="ppt-slide"><div class="ppt-num">SLIDE ${i+1}</div><div class="ppt-title">${s.t}</div><ul class="ppt-pts">${s.p.map(p=>`<li>${p}</li>`).join('')}</ul></div>`).join('')}</div></div>
-          <div id="mcq-${t.id}" class="sub-panel"><div class="mcq-list">${t.mcqs.map((m,i)=>renderMCQ(m,i,`${t.id}-mcq-${i}`)).join('')}</div></div>
+          <div class="sub-tabs">${tabsHTML}</div>
+          ${!isHidden('class')?`<div id="class-${t.id}" class="sub-panel ${isFirstActive('class')}"><div class="cblock">${t.classification}</div>${t.mnemonic?`<div class="mnemonic"><h4>🧠 Memory Aid</h4><p>${t.mnemonic}</p></div>`:''}</div>`:`<div id="class-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.classification||''}</div></div>`}
+          <div id="moa-${t.id}" class="sub-panel ${isFirstActive('moa')}">${t.moa}</div>
+          ${!isHidden('pkpd')?`<div id="pkpd-${t.id}" class="sub-panel ${isFirstActive('pkpd')}"><div class="cblock">${t.pkpd}</div></div>`:`<div id="pkpd-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.pkpd||''}</div></div>`}
+          ${!isHidden('adr')?`<div id="adr-${t.id}" class="sub-panel ${isFirstActive('adr')}"><div class="high-yield"><h4>⚠️ Adverse Drug Reactions &amp; Toxicity</h4>${t.adr}</div></div>`:`<div id="adr-${t.id}" class="sub-panel" style="display:none;"><div class="high-yield">${t.adr||''}</div></div>`}
+          ${!isHidden('drugs')?`<div id="drugs-${t.id}" class="sub-panel ${isFirstActive('drugs')}"><div class="drug-grid">${t.drugs.map((d,di)=>renderDrugCard(d,t.id,di)).join('')}</div></div>`:''}
+          ${extraPanelsHTML}
+          ${!isHidden('fc')?`<div id="fc-${t.id}" class="sub-panel ${isFirstActive('fc')}">${renderFlashcardSection(t)}</div>`:''}
+          ${!isHidden('ppt')?`<div id="ppt-${t.id}" class="sub-panel ${isFirstActive('ppt')}"><div class="ppt-grid">${t.ppt.map((s,i)=>`<div class="ppt-slide"><div class="ppt-num">SLIDE ${i+1}</div><div class="ppt-title">${s.t}</div><ul class="ppt-pts">${s.p.map(p=>`<li>${p}</li>`).join('')}</ul></div>`).join('')}</div></div>`:''}
+          ${!isHidden('mcq')?`<div id="mcq-${t.id}" class="sub-panel ${isFirstActive('mcq')}"><div class="mcq-list">${t.mcqs.map((m,i)=>renderMCQ(m,i,`${t.id}-mcq-${i}`)).join('')}</div></div>`:''}
         </div>
       </div>`);
     root.appendChild(accordion);
@@ -4105,30 +4280,40 @@ function switchSub(btn,panelId){
   document.getElementById(panelId).classList.add('active');
 }
 
-function goSubtopic(topicId,tabKey,anchor){
+function goSubtopic(topicId,panelKey,anchor){
   const topicNode = document.getElementById('topic-'+topicId);
   if(!topicNode) return;
   // Ensure accordion is open
   if(!topicNode.classList.contains('open')) topicNode.classList.add('open');
-  // Switch to correct tab
+  // Switch all panels off, then activate target
   const body = topicNode.querySelector('.topic-detail-body');
   body.querySelectorAll('.sub-tab').forEach(b=>b.classList.remove('active'));
-  body.querySelectorAll('.sub-panel').forEach(p=>p.classList.remove('active'));
-  const targetTabBtn = body.querySelector(`.sub-tab[onclick*="'${tabKey}-${topicId}'"]`);
+  body.querySelectorAll('.sub-panel').forEach(p=>{p.classList.remove('active');p.style.display='';});
+  // Activate matching visible tab button (if exists)
+  const targetTabBtn = body.querySelector(`.sub-tab[onclick*="'${panelKey}-${topicId}'"]`);
   if(targetTabBtn) targetTabBtn.classList.add('active');
-  const targetPanel = document.getElementById(`${tabKey}-${topicId}`);
-  if(targetPanel) targetPanel.classList.add('active');
-  // Scroll to anchor after the tab content is shown
+  // Activate target panel
+  const targetPanel = document.getElementById(`${panelKey}-${topicId}`);
+  if(targetPanel){
+    targetPanel.classList.add('active');
+    targetPanel.style.display='block';
+  }
+  // Scroll to anchor if given, else to topic top
   setTimeout(()=>{
-    const anchorEl = document.getElementById(`${anchor}-${topicId}`);
-    if(anchorEl){
-      const rect = anchorEl.getBoundingClientRect();
-      const top = rect.top + window.pageYOffset - 90; // offset for sticky nav
+    let scrollTarget = null;
+    if(anchor){
+      scrollTarget = document.getElementById(`${anchor}-${topicId}`) || targetPanel;
+    } else {
+      scrollTarget = targetPanel;
+    }
+    if(scrollTarget){
+      const rect = scrollTarget.getBoundingClientRect();
+      const top = rect.top + window.pageYOffset - 90;
       window.scrollTo({top, behavior:'smooth'});
     } else {
       topicNode.scrollIntoView({behavior:'smooth',block:'start'});
     }
-  },150);
+  },180);
 }
 
 /* ── PYQ render ─────────────────────────────────── */
