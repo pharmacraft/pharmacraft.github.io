@@ -1736,14 +1736,241 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacodynamics — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
 </div>`,
-  adr:`<h4>Types of ADRs (Rawlins–Thompson)</h4>
-<table><tr><th>Type</th><th>Feature</th><th>Example</th></tr>
-<tr><td>Type A (Augmented)</td><td>Dose-related, predictable</td><td>Bradycardia with β-blockers</td></tr>
-<tr><td>Type B (Bizarre)</td><td>Idiosyncratic, unpredictable</td><td>Penicillin anaphylaxis</td></tr>
-<tr><td>Type C (Chronic)</td><td>Long-term use</td><td>Osteoporosis with steroids</td></tr>
-<tr><td>Type D (Delayed)</td><td>Late-onset</td><td>Teratogenicity (thalidomide)</td></tr>
-<tr><td>Type E (End of use)</td><td>Withdrawal</td><td>Rebound HTN on clonidine stop</td></tr>
-<tr><td>Type F (Failure)</td><td>Therapeutic failure</td><td>OCP failure with rifampicin</td></tr></table>`,
+  adr:`<h4>ADVERSE DRUG REACTIONS (ADRs) &amp; PHARMACOVIGILANCE</h4>
+<p><strong>Definition (WHO):</strong> "A response to a drug which is <em>noxious and unintended</em>, and which occurs at doses normally used in humans for prophylaxis, diagnosis, or therapy of disease, or for modification of physiological function."</p>
+
+<h4>Important Definitions</h4>
+<table><tr><th>Term</th><th>Meaning</th></tr>
+<tr><td><strong>Adverse Event (AE)</strong></td><td>Any untoward medical occurrence after drug administration — may or may not be drug-related</td></tr>
+<tr><td><strong>Adverse Drug Reaction (ADR)</strong></td><td>An AE with a <em>causal relationship</em> to the drug</td></tr>
+<tr><td><strong>Side effect</strong></td><td>Predictable, dose-related unintended effect — <em>not always harmful</em> (e.g. drowsiness with diphenhydramine)</td></tr>
+<tr><td><strong>Toxicity</strong></td><td>Effect due to overdose or accumulation</td></tr>
+<tr><td><strong>Idiosyncrasy</strong></td><td>Unusual, genetically determined response (e.g. primaquine in G6PD def)</td></tr>
+<tr><td><strong>Hypersensitivity / Allergy</strong></td><td>Immunologically mediated reaction (e.g. penicillin anaphylaxis)</td></tr>
+<tr><td><strong>Iatrogenic disease</strong></td><td>Physician-induced illness from drug therapy</td></tr></table>
+
+<h4 style="margin-top:18px;">📋 1. Classification of ADRs — Rawlins–Thompson (Types A–F)</h4>
+<table><tr><th>Type</th><th>Features</th><th>Frequency</th><th>Mortality</th><th>Examples</th></tr>
+<tr><td><strong>Type A — Augmented</strong></td><td>Dose-related, predictable, common, pharmacological extension</td><td>Most common (~80%)</td><td>Low</td><td>Bradycardia with β-blockers · Hypoglycaemia with insulin · GI bleed with NSAIDs</td></tr>
+<tr><td><strong>Type B — Bizarre</strong></td><td>Non-dose-related, unpredictable, idiosyncratic / immune</td><td>Uncommon</td><td>High</td><td>Penicillin anaphylaxis · Halothane hepatitis · SJS/TEN · Aplastic anaemia (chloramphenicol)</td></tr>
+<tr><td><strong>Type C — Chronic (Continuous)</strong></td><td>Long-term use, cumulative</td><td>Uncommon</td><td>Variable</td><td>Steroid-induced osteoporosis · Analgesic nephropathy · Amiodarone pulmonary fibrosis</td></tr>
+<tr><td><strong>Type D — Delayed</strong></td><td>Manifest after years or in next generation</td><td>Uncommon</td><td>Variable</td><td>Teratogenicity (thalidomide) · Tardive dyskinesia · Carcinogenesis (DES → vaginal Ca)</td></tr>
+<tr><td><strong>Type E — End of use (Withdrawal)</strong></td><td>On stopping the drug</td><td>Uncommon</td><td>Variable</td><td>Opioid withdrawal · β-blocker rebound tachycardia · Clonidine rebound HTN · Steroid withdrawal Addisonian crisis</td></tr>
+<tr><td><strong>Type F — Failure</strong></td><td>Unexpected therapeutic failure</td><td>Common</td><td>—</td><td>OCP failure with rifampicin · Antibiotic resistance · ↓ warfarin with phenytoin</td></tr>
+<tr><td><strong>Type G — Genetic</strong> (newer)</td><td>Genetic-determined damage</td><td>Rare</td><td>—</td><td>Long-term mutagenesis from chemo</td></tr>
+<tr><td><strong>Type H — Hypersensitivity</strong> (newer)</td><td>Allergic, anaphylactic</td><td>Variable</td><td>High</td><td>Penicillin anaphylaxis</td></tr>
+<tr><td><strong>Type U — Unexpected</strong> (newer)</td><td>Unique to drug, mechanism unclear</td><td>Rare</td><td>—</td><td>—</td></tr></table>
+
+<h4>DoTS Classification (Aronson, 2003 — Modern Approach)</h4>
+<p>Based on <strong>D</strong>ose-relationship, <strong>T</strong>ime-course, <strong>S</strong>usceptibility:</p>
+<table><tr><th>Component</th><th>Categories</th></tr>
+<tr><td><strong>Dose</strong></td><td>Toxic (high), Collateral (normal dose), Hypersusceptible (sub-therapeutic)</td></tr>
+<tr><td><strong>Time</strong></td><td>Time-independent OR Time-dependent (Rapid, First-dose, Early, Intermediate, Late, Delayed)</td></tr>
+<tr><td><strong>Susceptibility</strong></td><td>Genetic, Age, Sex, Pregnancy, Disease, Drug interactions</td></tr></table>
+
+<h4 style="margin-top:18px;">⚠️ 2. Severity Grading (CTCAE / WHO)</h4>
+<table><tr><th>Grade</th><th>Severity</th><th>Action</th></tr>
+<tr><td>Grade 1 — Mild</td><td>Asymptomatic / mild symptoms</td><td>No intervention</td></tr>
+<tr><td>Grade 2 — Moderate</td><td>Limits instrumental ADL; minimal intervention</td><td>Oral therapy</td></tr>
+<tr><td>Grade 3 — Severe</td><td>Hospitalization, limits self-care ADL</td><td>IV therapy, hospitalize</td></tr>
+<tr><td>Grade 4 — Life-threatening</td><td>Urgent intervention needed</td><td>ICU care</td></tr>
+<tr><td>Grade 5 — Death</td><td>Death related to ADR</td><td>—</td></tr></table>
+<p><strong>Hartwig Severity Scale (clinical)</strong>: Mild (no Rx) → Moderate (Rx given, no hospitalization) → Severe (hospitalize / prolonged stay / disability / death)</p>
+
+<h4 style="margin-top:18px;">🩺 3. Drug-Induced Syndromes</h4>
+<table><tr><th>Syndrome</th><th>Drug</th><th>Features</th></tr>
+<tr><td><strong>Cushingoid syndrome</strong></td><td>Glucocorticoids (long-term)</td><td>Moon face, buffalo hump, striae, HTN, DM</td></tr>
+<tr><td><strong>Drug-induced SLE</strong></td><td><em>HIPP</em> – Hydralazine, INH, Procainamide, Phenytoin (+ Chlorpromazine, Quinidine, Methyldopa)</td><td>Arthralgia, malar rash, anti-histone Ab +ve (not anti-dsDNA)</td></tr>
+<tr><td><strong>Serotonin syndrome</strong></td><td>SSRI + MAOI / Tramadol / Linezolid / Triptans</td><td>Autonomic instability + neuromuscular excitability + altered mental status (3 components). Treat: cyproheptadine</td></tr>
+<tr><td><strong>Neuroleptic malignant syndrome (NMS)</strong></td><td>Antipsychotics (typical &gt; atypical), rapid stop of L-DOPA</td><td>Rigidity, hyperthermia, autonomic instability, ↑ CK; Treat: Dantrolene + Bromocriptine</td></tr>
+<tr><td><strong>Stevens-Johnson Syndrome (SJS) / TEN</strong></td><td>Sulfonamides, Carbamazepine, Lamotrigine, Allopurinol, NSAIDs, Nevirapine</td><td>Mucocutaneous bullae, &gt;30% epidermal detachment = TEN; HLA-B*1502 (Asians) for CBZ; HLA-B*5801 for allopurinol</td></tr>
+<tr><td><strong>DRESS</strong> (Drug Reaction with Eosinophilia &amp; Systemic Symptoms)</td><td>Anticonvulsants (carbamazepine, phenytoin), Sulfonamides, Allopurinol, Vancomycin, Minocycline</td><td>Rash + fever + eosinophilia + LN + multi-organ; 2-8 wk onset; mortality 10%</td></tr>
+<tr><td><strong>Grey baby syndrome</strong></td><td>Chloramphenicol in neonates</td><td>Vomiting, hypothermia, cyanosis, vasomotor collapse (poor glucuronidation)</td></tr>
+<tr><td><strong>Reye syndrome</strong></td><td>Aspirin in children with viral fever</td><td>Hepatic encephalopathy, fatty liver</td></tr>
+<tr><td><strong>Disulfiram-like reaction</strong></td><td>Metronidazole, Cefoperazone, Cefotetan, Chlorpropamide, Procarbazine, Griseofulvin with alcohol</td><td>Flushing, vomiting, hypotension</td></tr>
+<tr><td><strong>Malignant hyperthermia</strong></td><td>Halothane, Succinylcholine</td><td>Hyperthermia, rigidity, ↑ CK; Treat: Dantrolene</td></tr>
+<tr><td><strong>Vasculitis</strong></td><td>Hydralazine, Propylthiouracil, Minocycline</td><td>ANCA-positive vasculitis</td></tr></table>
+
+<h4 style="margin-top:18px;">🫀 4. Organ-Specific Drug-Induced ADRs</h4>
+
+<h4>Hepatotoxic Drugs</h4>
+<p><em>Mnemonic "<strong>HHRR-PPMM</strong>"</em>: <strong>H</strong>alothane, <strong>H</strong>ydralazine, <strong>R</strong>ifampicin, <strong>RA</strong>+ <strong>I</strong>NH, <strong>P</strong>aracetamol (OD), <strong>P</strong>henytoin, <strong>M</strong>ethyldopa, <strong>M</strong>ethotrexate. Also: Pyrazinamide, Valproate, Statins, Ketoconazole, Erythromycin, Amiodarone.</p>
+
+<h4>Nephrotoxic Drugs</h4>
+<p><em>Mnemonic "<strong>PAGE-NSAIDS</strong>"</em>: <strong>P</strong>enicillamine, <strong>A</strong>minoglycosides, <strong>G</strong>old, <strong>E</strong>thylene glycol/Heavy metals, <strong>N</strong>SAIDs, <strong>S</strong>ulphonamides, <strong>A</strong>cyclovir, <strong>I</strong>V contrast, <strong>D</strong>iuretics, <strong>S</strong>tatins (rare). Also: Vancomycin, Amphotericin B, Cisplatin, Methotrexate, Tacrolimus, Cyclosporine.</p>
+
+<h4>Pulmonary Fibrosis</h4>
+<p><em>Mnemonic "<strong>BB-MMA-N</strong>"</em>: <strong>B</strong>leomycin, <strong>B</strong>usulfan, <strong>M</strong>ethotrexate, <strong>M</strong>ethysergide, <strong>A</strong>miodarone, <strong>N</strong>itrofurantoin.</p>
+
+<h4>Bone Marrow Suppression / Aplastic Anaemia</h4>
+<p><em>Mnemonic "<strong>CCC-FIRMS</strong>"</em>: <strong>C</strong>hloramphenicol, <strong>C</strong>arbimazole, <strong>C</strong>otrimoxazole, <strong>F</strong>elbamate, <strong>I</strong>ndomethacin, <strong>R</strong>itonavir/Methotrexate, <strong>S</strong>ulphonamides. Also: Phenytoin, Zidovudine, Linezolid, Vinca alkaloids.</p>
+
+<h4>QT-Prolonging Drugs (Torsades de Pointes risk)</h4>
+<p><em>Mnemonic "<strong>QT-CMM</strong>"</em>: <strong>Q</strong>uinidine, <strong>T</strong>CAs, <strong>C</strong>iprofloxacin/Macrolides, <strong>M</strong>ethadone, <strong>M</strong>esoridazine. Also: Sotalol, Amiodarone, Dofetilide, Ondansetron, Haloperidol, Pentamidine, Antipsychotics.</p>
+
+<h4>Photosensitivity</h4>
+<p><em>Mnemonic "<strong>SAT-Phototoxic</strong>"</em>: <strong>S</strong>ulphonamides, <strong>A</strong>miodarone, <strong>T</strong>etracyclines (doxycycline), <strong>P</strong>henothiazines, <strong>H</strong>CTZ, <strong>F</strong>luoroquinolones, <strong>P</strong>soralens, <strong>NSAIDs</strong>, <strong>G</strong>riseofulvin.</p>
+
+<h4>Drug-Induced Gingival Hyperplasia</h4>
+<p><em>Mnemonic "<strong>PCN</strong>"</em>: <strong>P</strong>henytoin, <strong>C</strong>yclosporine, <strong>N</strong>ifedipine (also Verapamil, Amlodipine).</p>
+
+<h4>Drug-Induced Pigmentation</h4>
+<table><tr><th>Color</th><th>Drug</th></tr>
+<tr><td>Slate / blue-grey skin</td><td>Amiodarone, Minocycline, Chlorpromazine</td></tr>
+<tr><td>Orange urine, sweat, tears</td><td>Rifampicin</td></tr>
+<tr><td>Brown urine</td><td>Methyldopa, Metronidazole, Nitrofurantoin</td></tr>
+<tr><td>Yellow skin</td><td>Quinacrine</td></tr>
+<tr><td>Teeth staining</td><td>Tetracycline (in &lt; 8 yr), Fluorides (mottling)</td></tr>
+<tr><td>Black tongue / stool</td><td>Bismuth, Iron</td></tr></table>
+
+<h4>Endocrine ADRs</h4>
+<table><tr><th>ADR</th><th>Drug</th></tr>
+<tr><td>Hyperprolactinaemia / Gynaecomastia</td><td>Metoclopramide, Phenothiazines, Risperidone, Cimetidine, Spironolactone, Methyldopa, Verapamil, Digoxin</td></tr>
+<tr><td>Hyperglycaemia</td><td>Steroids, Thiazides, β-blockers, OCPs, Atypical antipsychotics, Tacrolimus, HAART</td></tr>
+<tr><td>Hypothyroidism</td><td>Lithium, Amiodarone, Sulphonylureas</td></tr>
+<tr><td>SIADH</td><td>SSRIs, Carbamazepine, Cyclophosphamide, Vincristine</td></tr>
+<tr><td>Diabetes insipidus (nephrogenic)</td><td>Lithium, Demeclocycline</td></tr></table>
+
+<h4>Electrolyte ADRs</h4>
+<table><tr><th>Effect</th><th>Drug</th></tr>
+<tr><td><strong>Hyperkalaemia</strong></td><td>ACE-I, ARBs, K-sparing diuretics, NSAIDs, Heparin, Succinylcholine, Tacrolimus, Trimethoprim, Digoxin OD, β-blockers</td></tr>
+<tr><td><strong>Hypokalaemia</strong></td><td>Loop diuretics, Thiazides, β2 agonists, Insulin, Steroids, Amphotericin B, Theophylline</td></tr>
+<tr><td><strong>Hypercalcaemia</strong></td><td>Thiazides, Vit D/A excess, Lithium, Tamoxifen, Antacids</td></tr>
+<tr><td><strong>Hyponatraemia</strong></td><td>SSRIs (especially elderly), Thiazides, Carbamazepine, Vincristine</td></tr>
+<tr><td><strong>Hypomagnesaemia</strong></td><td>Loop diuretics, PPIs (chronic), Aminoglycosides, Cisplatin</td></tr></table>
+
+<h4 style="margin-top:18px;">🤰 5. Teratogenic Drugs (FDA Category D &amp; X)</h4>
+<p><em>Mnemonic "<strong>W</strong> <strong>A</strong> <strong>R</strong> <strong>L</strong> <strong>I</strong> <strong>K</strong> <strong>E</strong>"</em>:<br>
+<strong>W</strong>arfarin · <strong>A</strong>CE-I/ARBs/Aminoglycosides · <strong>R</strong>etinoids (Isotretinoin, Acitretin) · <strong>L</strong>ithium (Ebstein) · <strong>I</strong>odide/Iso-tretinoin · <strong>K</strong>etoconazole · <strong>E</strong>thanol.</p>
+<p>Plus: Thalidomide (phocomelia), Valproate (NTD), Phenytoin (FHS), Carbamazepine, Methotrexate, Misoprostol, Diethylstilbestrol (DES — vaginal CCA), Tetracyclines, Statins, Antithyroid (PTU preferred in 1st trim).</p>
+
+<h4 style="margin-top:18px;">🌐 6. Pharmacovigilance (PV)</h4>
+<p><strong>Definition (WHO):</strong> "The science and activities relating to the detection, assessment, understanding, and prevention of adverse effects or any other drug-related problems."</p>
+
+<h4>Aims of Pharmacovigilance</h4>
+<ul>
+<li>Improve patient safety and care</li>
+<li>Detect new/unknown ADRs</li>
+<li>Identify risk factors</li>
+<li>Quantify benefit/risk ratio</li>
+<li>Communicate risk to healthcare professionals &amp; public</li>
+<li>Promote rational drug use</li>
+</ul>
+
+<h4>Pharmacovigilance Programme of India (PvPI)</h4>
+<table><tr><th>Feature</th><th>Detail</th></tr>
+<tr><td><strong>Launched</strong></td><td>14th July 2010</td></tr>
+<tr><td><strong>National Coordination Centre</strong></td><td>IPC (Indian Pharmacopoeia Commission), Ghaziabad</td></tr>
+<tr><td><strong>Reporting tool</strong></td><td>VigiFlow software (uploaded to WHO UMC, Uppsala)</td></tr>
+<tr><td><strong>Form used</strong></td><td>Suspected ADR reporting form (red form in India); WHO Yellow form</td></tr>
+<tr><td><strong>Toll-free</strong></td><td>1800-180-3024 for healthcare professionals &amp; public</td></tr>
+<tr><td><strong>App</strong></td><td>ADR PvPI app for mobile reporting</td></tr></table>
+
+<h4>Drug Development Phases &amp; Pharmacovigilance Timing</h4>
+<table><tr><th>Phase</th><th>Subjects</th><th>Purpose</th></tr>
+<tr><td><strong>Preclinical</strong></td><td>Animals, in vitro</td><td>Toxicity, PK</td></tr>
+<tr><td><strong>Phase 0 (Microdosing)</strong></td><td>10–15 volunteers</td><td>Very early human PK</td></tr>
+<tr><td><strong>Phase I</strong></td><td>20–100 healthy</td><td>Safety, PK, MTD</td></tr>
+<tr><td><strong>Phase II</strong></td><td>100–300 patients</td><td>Efficacy, dose-finding</td></tr>
+<tr><td><strong>Phase III</strong></td><td>1000–3000 patients</td><td>Confirmatory efficacy &amp; safety (RCT)</td></tr>
+<tr><td><strong>Phase IV</strong> (Post-marketing)</td><td>General population</td><td>Long-term safety, rare ADRs — <em>this is where pharmacovigilance is critical</em></td></tr></table>
+
+<h4 style="margin-top:18px;">🔬 7. WHO Causality Assessment</h4>
+<table><tr><th>Category</th><th>Criteria</th></tr>
+<tr><td><strong>Certain</strong></td><td>Time relationship + Rechallenge positive + Dechallenge positive + Plausible</td></tr>
+<tr><td><strong>Probable / Likely</strong></td><td>Time relationship + Dechallenge positive + No other cause likely (rechallenge not done)</td></tr>
+<tr><td><strong>Possible</strong></td><td>Time relationship + Could be explained by other causes / disease</td></tr>
+<tr><td><strong>Unlikely</strong></td><td>Time relationship unlikely + Other causes more probable</td></tr>
+<tr><td><strong>Conditional / Unclassified</strong></td><td>Event with insufficient data, more info needed</td></tr>
+<tr><td><strong>Unassessable / Unclassifiable</strong></td><td>Cannot judge — information inadequate / contradictory</td></tr></table>
+
+<h4>Naranjo Algorithm (ADR Probability Scale)</h4>
+<p>10 questions; scoring –4 to +13. Most commonly used scoring system.</p>
+<table><tr><th>Score</th><th>Causality</th></tr>
+<tr><td>≥ 9</td><td>Definite</td></tr>
+<tr><td>5–8</td><td>Probable</td></tr>
+<tr><td>1–4</td><td>Possible</td></tr>
+<tr><td>≤ 0</td><td>Doubtful</td></tr></table>
+
+<h4 style="margin-top:18px;">⚫ 8. Black Box Warnings (BBW)</h4>
+<p>Strongest FDA warning indicating serious / life-threatening ADRs.</p>
+<table><tr><th>Drug</th><th>BBW</th></tr>
+<tr><td>SSRIs (in adolescents)</td><td>Suicidality</td></tr>
+<tr><td>Atypical antipsychotics (elderly dementia)</td><td>↑ mortality</td></tr>
+<tr><td>Fluoroquinolones</td><td>Tendon rupture, aortic aneurysm, peripheral neuropathy</td></tr>
+<tr><td>Rosiglitazone</td><td>MI risk</td></tr>
+<tr><td>Bevacizumab</td><td>GI perforation, haemorrhage</td></tr>
+<tr><td>Isotretinoin</td><td>Teratogenicity</td></tr>
+<tr><td>Clozapine</td><td>Agranulocytosis</td></tr>
+<tr><td>Vinca alkaloids</td><td>Fatal if given IT</td></tr>
+<tr><td>NSAIDs</td><td>CV events, GI bleed</td></tr>
+<tr><td>Metformin</td><td>Lactic acidosis (in renal impairment)</td></tr></table>
+
+<h4>REMS Programs (Risk Evaluation &amp; Mitigation Strategies)</h4>
+<p>FDA programs requiring monitoring before/during drug use:</p>
+<ul>
+<li><strong>Isotretinoin</strong> (iPLEDGE) — pregnancy test, 2 forms of contraception</li>
+<li><strong>Clozapine</strong> — CBC monitoring weekly</li>
+<li><strong>Thalidomide</strong> (THALOMID REMS) — pregnancy prevention</li>
+<li><strong>Buprenorphine-Naloxone</strong> — prescriber training</li>
+</ul>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Type A ADRs are most common</strong> (~80%); Type B carry highest <em>mortality</em> (anaphylaxis, SJS)</li>
+<li><strong>Drug-induced SLE</strong>: anti-histone Ab +ve (NOT anti-dsDNA); no renal/CNS involvement; resolves on drug stoppage</li>
+<li><strong>HLA typing before high-risk drugs</strong>: B*1502 → Carbamazepine SJS (Asians); B*5801 → Allopurinol SJS; B*5701 → Abacavir hypersensitivity; A*3101 → CBZ DRESS</li>
+<li><strong>Disulfiram-like reaction drugs</strong>: <em>'MCCPG'</em> – Metronidazole, Cefoperazone, Chlorpropamide, Procarbazine, Griseofulvin — counsel patients NO alcohol</li>
+<li><strong>Aspirin avoided in children</strong> &lt; 16 yr with viral fever → Reye's syndrome (paracetamol preferred)</li>
+<li><strong>Reporting ADRs</strong>: Even <em>suspected</em> ADRs should be reported (no causality proof needed); use IPC red form or PvPI app</li>
+<li><strong>Drug-induced gingival hyperplasia 'PCN'</strong>: Phenytoin, Cyclosporine, Nifedipine — good oral hygiene reduces it</li>
+<li><strong>QT-prolonging combinations to AVOID</strong>: Macrolide + Antifungal · TCA + Antipsychotic · Ondansetron + Methadone</li>
+<li><strong>Vincristine intrathecally = FATAL</strong> — every year deaths still happen → BBW</li>
+<li><strong>Beers Criteria</strong> — list of potentially inappropriate medications (PIM) in elderly &gt; 65 yr</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>AI/ML in pharmacovigilance</strong> — Real-time signal detection from EHRs, social media, claims data; FDA's Sentinel Initiative</li>
+<li><strong>Pharmacogenomic-guided prescribing</strong> — CPIC guidelines for CYP2C19/2C9/2D6, TPMT, DPYD, HLA panels</li>
+<li><strong>Real-World Evidence (RWE)</strong> in regulatory decisions — FDA 21st Century Cures Act expanding RWE acceptance</li>
+<li><strong>VigiAccess (WHO)</strong> — public access to global ADR database from VigiBase (over 30 million reports)</li>
+<li><strong>e-Pharmacovigilance</strong> — Mobile apps for patient self-reporting (PvPI app in India)</li>
+<li><strong>Newer drug withdrawals</strong>: Rosiglitazone (CV risk), Ranitidine (NDMA contamination), Belviq (cancer risk)</li>
+<li><strong>Newer BBW additions</strong>: Fluoroquinolones (aortic aneurysm 2018), JAK inhibitors (CV death, malignancy, thrombosis 2021)</li>
+<li><strong>COVID-19 pharmacovigilance lessons</strong> — vaccine safety surveillance via V-safe (CDC), expanded post-marketing</li>
+<li><strong>Patient-Reported Outcome Measures (PROMs)</strong> increasingly used in ADR detection</li>
+<li><strong>Newer apps</strong>: Med-watcher, Drugs.com Pill ID, BNF integration with ADR reporting</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Type A ADR is best characterized by → <em>Dose-related, predictable, pharmacological extension</em></li>
+<li><strong>INI-CET 2023</strong>: Anti-histone antibody is positive in → <em>Drug-induced SLE (NOT anti-dsDNA which is for idiopathic SLE)</em></li>
+<li><strong>NEET PG 2024</strong>: HLA-B*1502 testing recommended before → <em>Carbamazepine (in Asians for SJS prevention)</em></li>
+<li><strong>INI-CET 2024</strong>: Most commonly used ADR causality assessment scale → <em>Naranjo algorithm</em></li>
+<li><strong>NEET PG 2024</strong>: Disulfiram-like reaction with alcohol can occur with all EXCEPT → <em>(Identify exception from given list — Metronidazole, Cefoperazone, Chlorpropamide cause it)</em></li>
+<li><strong>NEET PG 2023</strong>: Causality category requiring positive rechallenge → <em>Certain</em></li>
+<li><strong>NEET PG 2025</strong>: Reye syndrome is associated with → <em>Aspirin in viral fever in children</em></li>
+<li><strong>INI-CET 2024</strong>: PvPI in India is coordinated by → <em>Indian Pharmacopoeia Commission (IPC), Ghaziabad</em></li>
+<li><strong>FMGE 2024</strong>: Phase responsible for detecting rare ADRs → <em>Phase IV (post-marketing surveillance)</em></li>
+<li><strong>NEET PG 2025</strong>: Drug causing pulmonary fibrosis with cumulative dose → <em>Bleomycin (max dose 400 units)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>ADR Classification, Drug-induced Syndromes, Pharmacovigilance &amp; WHO Causality</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Adverse Drug Reactions &amp; Pharmacovigilance — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`,
   drugs:[
     {n:"Bioavailability",c:"PK Concept",u:"Fraction of drug reaching systemic circulation; IV = 100%"},
     {n:"First-Pass Metabolism",c:"PK Concept",u:"Hepatic metab before systemic; e.g. lignocaine, propranolol, nitrates"},
