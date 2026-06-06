@@ -321,6 +321,24 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   transition:all .2s;}
 .info-youtube .yt-btn:hover{background:#b91c1c;transform:translateY(-1px);box-shadow:0 4px 12px rgba(220,38,38,0.4);}
 
+/* ── SUB-TOPIC NAV (within a topic) ───────────── */
+.subtopic-nav{display:flex;flex-wrap:wrap;gap:8px;padding:14px 16px;margin-bottom:18px;
+  background:linear-gradient(135deg,#e8f4f0,#dde9ee);border:1.5px solid var(--border);
+  border-radius:14px;box-shadow:var(--shadow);}
+.subtopic-nav-title{width:100%;font-size:11px;font-weight:800;color:var(--navy);
+  text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;
+  display:flex;align-items:center;gap:8px;}
+.subtopic-btn{background:#fff;border:1.5px solid var(--border);border-radius:10px;
+  padding:10px 12px;color:var(--navy);font-family:'Sora',sans-serif;font-size:11px;
+  font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;
+  gap:8px;flex:1 1 180px;min-width:160px;text-align:left;line-height:1.3;}
+.subtopic-btn:hover{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;
+  border-color:var(--teal);transform:translateY(-2px);box-shadow:0 4px 12px rgba(20,160,133,0.25);}
+.subtopic-btn-num{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;
+  width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:11px;flex-shrink:0;}
+.subtopic-btn:hover .subtopic-btn-num{background:#fff;color:var(--teal2);}
+
 /* ── INFO BOXES (6-TEMPLATE) ──────────────────── */
 .boxes-header{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;
   padding:12px 18px;border-radius:12px;font-size:14px;font-weight:800;
@@ -1194,6 +1212,14 @@ const MOA = {
    FOURTEEN TOPICS — FULL DATA
 ═════════════════════════════════════════════════════ */
 TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
+  subtopics:[
+    {n:1,label:"Nature, Sources & Info Resources",tab:"class",anchor:"sub-sources"},
+    {n:2,label:"Routes of Drug Administration",tab:"class",anchor:"sub-routes"},
+    {n:3,label:"Pharmacokinetics (ADME)",tab:"pkpd",anchor:"sub-pk"},
+    {n:4,label:"Pharmacodynamics",tab:"pkpd",anchor:"sub-pd"},
+    {n:5,label:"ADR & Pharmacovigilance",tab:"adr",anchor:"sub-adr"},
+    {n:6,label:"Drug Development & Trials",tab:"class",anchor:"sub-dev"}
+  ],
   classification:`<h4>Branches of Pharmacology</h4>
 <table><tr><th>Branch</th><th>Definition</th></tr>
 <tr><td>Pharmacokinetics</td><td>What the body does to the drug (ADME)</td></tr>
@@ -1202,6 +1228,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <tr><td>Pharmacovigilance</td><td>Detection &amp; reporting of ADRs</td></tr>
 <tr><td>Pharmacoeconomics</td><td>Cost-effectiveness of drugs</td></tr></table>
 
+<span id="sub-routes-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:18px;">Routes of Drug Administration</h4>
 <p><strong>Definition:</strong> The pathway through which a drug enters the body to produce its therapeutic effect. Choice depends on — drug's physicochemical properties, desired onset, site of action, patient condition, duration, compliance &amp; cost.</p>
 
@@ -1348,6 +1375,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Routes of Drug Administration — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>
 
+<span id="sub-dev-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧪 DRUG DEVELOPMENT &amp; CLINICAL TRIALS</h4>
 
 <p style="margin-top:14px;"><strong>Definition:</strong> Drug development is the <em>systematic, multi-stage process</em> of taking a candidate molecule from discovery → preclinical testing → clinical trials → regulatory approval → post-marketing surveillance. Average timeline <strong>10–15 years</strong>, average cost <strong>USD 1–2.6 billion</strong>, attrition rate <em>1 in 10,000</em> candidates reaches market.</p>
@@ -1600,6 +1628,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Drug Development &amp; Clinical Trials — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>
 
+<span id="sub-sources-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🌱 NATURE, SOURCES &amp; INFORMATION RESOURCES OF DRUGS</h4>
 
 <p style="margin-top:14px;"><strong>Definition (Drug — WHO):</strong> "Any substance or product that is used or intended to be used to <em>modify or explore physiological systems or pathological states</em> for the benefit of the recipient." (Origin – Dutch <em>droog</em> = dry herb)</p>
@@ -1854,7 +1883,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Nature, Sources &amp; Drug Information Resources — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>`,
   moa:MOA.receptor,
-  pkpd:`<h4>PHARMACOKINETICS — ADME</h4>
+  pkpd:`<span id="sub-pk-general" style="display:block;height:1px;"></span>
+<h4>PHARMACOKINETICS — ADME</h4>
 <p><strong>Definition:</strong> Pharmacokinetics (PK) describes <em>what the body does to the drug</em> — its movement, fate, and chemical changes from the moment of administration to its final elimination. The four classical pillars are <strong>A</strong>bsorption · <strong>D</strong>istribution · <strong>M</strong>etabolism · <strong>E</strong>xcretion (ADME).</p>
 <p>Understanding ADME is essential to determine the <em>dose, frequency, route, drug interactions, and dose adjustment</em> in disease (renal/hepatic failure, pregnancy, elderly).</p>
 
@@ -2086,6 +2116,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacokinetics ADME — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
 </div>
 
+<span id="sub-pd-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:24px;">🧠 PHARMACODYNAMICS</h4>
 <p><strong>Definition:</strong> Pharmacodynamics (PD) describes <em>what the drug does to the body</em> — the biochemical, physiological &amp; molecular effects of drugs and their <strong>mechanism of action</strong>. While PK determines drug levels at the site of action, PD determines the <em>magnitude and time-course of the effect</em>.</p>
 
@@ -2242,7 +2273,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacodynamics — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
 </div>`,
-  adr:`<h4>ADVERSE DRUG REACTIONS (ADRs) &amp; PHARMACOVIGILANCE</h4>
+  adr:`<span id="sub-adr-general" style="display:block;height:1px;"></span>
+<h4>ADVERSE DRUG REACTIONS (ADRs) &amp; PHARMACOVIGILANCE</h4>
 <p><strong>Definition (WHO):</strong> "A response to a drug which is <em>noxious and unintended</em>, and which occurs at doses normally used in humans for prophylaxis, diagnosis, or therapy of disease, or for modification of physiological function."</p>
 
 <h4>Important Definitions</h4>
@@ -3758,6 +3790,10 @@ function renderTopicAccordions(){
           <div class="topic-toggle">+</div>
         </div>
         <div class="topic-detail-body">
+          ${t.subtopics?`<div class="subtopic-nav">
+            <div class="subtopic-nav-title">📚 Quick Jump to Sub-Topics</div>
+            ${t.subtopics.map(s=>`<button class="subtopic-btn" onclick="goSubtopic('${t.id}','${s.tab}','${s.anchor}')"><span class="subtopic-btn-num">${s.n}</span>${s.label}</button>`).join('')}
+          </div>`:''}
           <div class="sub-tabs">
             <button class="sub-tab active" onclick="switchSub(this,'class-${t.id}')">🗂️ Classification</button>
             <button class="sub-tab" onclick="switchSub(this,'moa-${t.id}')">⚙️ Animated MOA</button>
@@ -4067,6 +4103,32 @@ function switchSub(btn,panelId){
   parent.querySelectorAll('.sub-panel').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
   document.getElementById(panelId).classList.add('active');
+}
+
+function goSubtopic(topicId,tabKey,anchor){
+  const topicNode = document.getElementById('topic-'+topicId);
+  if(!topicNode) return;
+  // Ensure accordion is open
+  if(!topicNode.classList.contains('open')) topicNode.classList.add('open');
+  // Switch to correct tab
+  const body = topicNode.querySelector('.topic-detail-body');
+  body.querySelectorAll('.sub-tab').forEach(b=>b.classList.remove('active'));
+  body.querySelectorAll('.sub-panel').forEach(p=>p.classList.remove('active'));
+  const targetTabBtn = body.querySelector(`.sub-tab[onclick*="'${tabKey}-${topicId}'"]`);
+  if(targetTabBtn) targetTabBtn.classList.add('active');
+  const targetPanel = document.getElementById(`${tabKey}-${topicId}`);
+  if(targetPanel) targetPanel.classList.add('active');
+  // Scroll to anchor after the tab content is shown
+  setTimeout(()=>{
+    const anchorEl = document.getElementById(`${anchor}-${topicId}`);
+    if(anchorEl){
+      const rect = anchorEl.getBoundingClientRect();
+      const top = rect.top + window.pageYOffset - 90; // offset for sticky nav
+      window.scrollTo({top, behavior:'smooth'});
+    } else {
+      topicNode.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+  },150);
 }
 
 /* ── PYQ render ─────────────────────────────────── */
