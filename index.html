@@ -2671,22 +2671,96 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Adverse Drug Reactions &amp; Pharmacovigilance — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>`,
   drugs:[
-    {n:"Bioavailability",c:"PK Concept",u:"Fraction of drug reaching systemic circulation; IV = 100%"},
-    {n:"First-Pass Metabolism",c:"PK Concept",u:"Hepatic metab before systemic; e.g. lignocaine, propranolol, nitrates"},
-    {n:"Volume of Distribution",c:"PK Concept",u:"Apparent volume; high Vd suggests tissue binding"},
-    {n:"Plasma Half-life",c:"PK Concept",u:"Time for plasma concentration to halve"},
-    {n:"Therapeutic Index",c:"PD Concept",u:"Margin of safety = TD50/ED50"},
-    {n:"Tachyphylaxis",c:"Tolerance",u:"Rapid tolerance e.g. ephedrine, amphetamine"}
+    // ── Sub-Topic 1: Nature, Sources & Info Resources ──
+    {n:"Drug (WHO Definition)",c:"1️⃣ Sources & Info",u:"Any substance used to modify physiological function for diagnosis, treatment, prevention of disease. Origin: Dutch 'droog' = dry herb."},
+    {n:"Sources of Drugs (8 Types)",c:"1️⃣ Sources & Info",u:"Plant (alkaloids), Animal (insulin, heparin), Microbial (penicillin), Mineral (Fe, Au), Synthetic, Semi-synthetic, Biotech (rDNA, mAbs), Cell/Gene therapy"},
+    {n:"INN — International Non-Proprietary Name",c:"1️⃣ Sources & Info",u:"Generic name issued by WHO. Examples: 'Aspirin' (generic), 'Acetylsalicylic acid' (chemical), 'Disprin' (brand)"},
+    {n:"Pharmacopoeia",c:"1️⃣ Sources & Info",u:"Official LEGALLY BINDING text with standards of drug identity, purity, strength. IP (India 2022) by IPC Ghaziabad. Others: BP, USP, Ph.Eur., JP"},
+    {n:"Captopril",c:"1️⃣ Sources & Info",u:"First RATIONALLY DESIGNED drug (1981) based on Brazilian pit viper (Bothrops jararaca) venom — for hypertension"},
+    {n:"WHO EML",c:"1️⃣ Sources & Info",u:"Essential Medicines List — launched 1977, updated every 2 years. Latest: 23rd EML (2023). Indian NLEM 2022 has ~384 drugs"},
+    {n:"Schedule H, X, Y in India",c:"1️⃣ Sources & Info",u:"H — Prescription drugs (Rx); X — Narcotics/psychotropics with strict records; Y — Clinical trials & new drug regulations (updated by NDCT Rules 2019)"},
+
+    // ── Sub-Topic 2: Routes of Drug Administration ──
+    {n:"Enteral vs Parenteral",c:"2️⃣ Routes",u:"Enteral = via GI tract (oral, SL, buccal, rectal). Parenteral = bypassing GI (IV, IM, SC, ID, IT, epidural, IA, IO, IP)"},
+    {n:"IV Route — Bioavailability",c:"2️⃣ Routes",u:"100% bioavailability BY DEFINITION. Immediate onset (15-30 sec). Used for emergency, titrable dosing, irritant drugs"},
+    {n:"Sublingual — Key Drugs",c:"2️⃣ Routes",u:"Bypasses first-pass. Onset 1-3 min. Drugs: Nitroglycerin (angina), Buprenorphine, Nifedipine (HTN urgency). Mnemonic: 'Nitro Buys Nifty'"},
+    {n:"Intrathecal Drugs — BMW",c:"2️⃣ Routes",u:"Baclofen (spasticity), Methotrexate (CNS ALL), Water-soluble anaesthetics (Bupivacaine). NEVER give Vincristine IT — FATAL!"},
+    {n:"Depot Preparations",c:"2️⃣ Routes",u:"Long-acting IM/SC: Benzathine penicillin (3-4 wk), Haloperidol decanoate (4 wk), Medroxyprogesterone DMPA (3 mo), Leuprolide (1-6 mo)"},
+    {n:"Transdermal Patches — FENS-NCR",c:"2️⃣ Routes",u:"Fentanyl, Estrogen, Nitroglycerin, Scopolamine, Nicotine, Clonidine, Rivastigmine — steady release, bypasses first-pass"},
+    {n:"Adrenaline Route in Anaphylaxis",c:"2️⃣ Routes",u:"IM in ANTEROLATERAL THIGH (vastus lateralis) — 0.3-0.5 mg of 1:1000. NEVER SC, NEVER IV bolus (arrhythmia risk)"},
+
+    // ── Sub-Topic 3: Pharmacokinetics (ADME) ──
+    {n:"ADME",c:"3️⃣ Pharmacokinetics",u:"Absorption · Distribution · Metabolism · Excretion — the 4 pillars of pharmacokinetics. Describes what BODY does to DRUG."},
+    {n:"Bioavailability (F)",c:"3️⃣ Pharmacokinetics",u:"F = (AUC oral / AUC IV) × 100. IV = 100%. Reduced by: incomplete absorption + first-pass metabolism. Bioequivalent if 80-125% of reference"},
+    {n:"First-Pass Metabolism — LIP MAN",c:"3️⃣ Pharmacokinetics",u:"Lignocaine, Isoprenaline, Propranolol, Morphine, Aspirin, Nitroglycerin — high first-pass → poor oral bioavailability"},
+    {n:"CYP450 Inducers — GPRS-CB",c:"3️⃣ Pharmacokinetics",u:"Griseofulvin, Phenytoin, Rifampicin, Smoking, Carbamazepine, Barbiturates — DECREASE drug levels (e.g. OCP failure with rifampicin)"},
+    {n:"CYP450 Inhibitors — MAGIC RACKS",c:"3️⃣ Pharmacokinetics",u:"Macrolides, Amiodarone, Grapefruit, INH, Cimetidine, Ritonavir, Azoles, Cipro, Ketoconazole, Sulfas — INCREASE drug levels → toxicity"},
+    {n:"Volume of Distribution (Vd)",c:"3️⃣ Pharmacokinetics",u:"Vd = Total drug / Plasma conc. ~3-5L → plasma-bound (warfarin); ~42L → TBW (ethanol); >42L → tissue-bound (digoxin 500L, chloroquine 13000L)"},
+    {n:"Hofmann Elimination — Atracurium",c:"3️⃣ Pharmacokinetics",u:"Spontaneous degradation at body pH/temp — NO liver/kidney needed. Atracurium & Cisatracurium safest NMBs in combined renal+hepatic failure"},
+
+    // ── Sub-Topic 4: Pharmacodynamics ──
+    {n:"4 Receptor Types",c:"4️⃣ Pharmacodynamics",u:"1. Ligand-gated ion channel (ms — Nicotinic, GABA-A, NMDA); 2. GPCR (sec — Adrenergic, Muscarinic); 3. Enzyme-linked (min — Insulin TK); 4. Nuclear (hrs-days — Steroids)"},
+    {n:"G-Protein Subtypes (QISS QIQ SIS)",c:"4️⃣ Pharmacodynamics",u:"Gs (↑cAMP — β1/β2, D1, H2); Gi (↓cAMP — α2, M2, D2, opioid μ); Gq (↑IP3/DAG — α1, M1/M3, H1, AT1, 5-HT2)"},
+    {n:"Partial Agonist",c:"4️⃣ Pharmacodynamics",u:"Sub-maximal Emax. Acts as antagonist in presence of full agonist. Examples: Buprenorphine (μ), Pindolol (β), Aripiprazole (D2), Varenicline (nicotinic)"},
+    {n:"Therapeutic Index (TI)",c:"4️⃣ Pharmacodynamics",u:"TI = LD50 / ED50. Higher = safer. Better clinical measure = Standard Safety Margin = (LD1 - ED99)/ED99 × 100"},
+    {n:"Narrow TI Drugs — DTV-PALWP",c:"4️⃣ Pharmacodynamics",u:"Digoxin, Theophylline, Vancomycin, Phenytoin, Aminoglycosides, Lithium, Warfarin, Procainamide — need Therapeutic Drug Monitoring (TDM)"},
+    {n:"Spare Receptors",c:"4️⃣ Pharmacodynamics",u:"Maximum response achieved with only fractional receptor occupation. Classic example: Insulin — only 5-10% receptors occupied gives max glucose response"},
+    {n:"Tachyphylaxis vs Tolerance",c:"4️⃣ Pharmacodynamics",u:"Tachyphylaxis — RAPID acute tolerance (hours) due to NT depletion (ephedrine, amphetamine, nicotine). Tolerance — CHRONIC (days-weeks) (opioids, BZDs)"},
+
+    // ── Sub-Topic 5: ADR & Pharmacovigilance ──
+    {n:"Type A — Augmented",c:"5️⃣ ADR & PV",u:"Dose-related, predictable, pharmacological extension. MOST COMMON ADR (~80%). Low mortality. Examples: Bradycardia with β-blockers, GI bleed with NSAIDs"},
+    {n:"Type B — Bizarre",c:"5️⃣ ADR & PV",u:"NON-dose-related, unpredictable, idiosyncratic/immune-mediated. Uncommon but HIGH MORTALITY. Examples: Penicillin anaphylaxis, SJS/TEN, Aplastic anaemia"},
+    {n:"Drug-induced SLE — HIPP",c:"5️⃣ ADR & PV",u:"Hydralazine, INH, Procainamide, Phenytoin. Anti-histone Ab POSITIVE (NOT anti-dsDNA). No renal/CNS involvement. Resolves on drug stoppage"},
+    {n:"SJS/TEN — HLA Testing",c:"5️⃣ ADR & PV",u:"Mucocutaneous bullae. HLA-B*1502 → Carbamazepine SJS (Asians screen!); HLA-B*5801 → Allopurinol SJS; HLA-B*5701 → Abacavir hypersensitivity"},
+    {n:"Serotonin Syndrome — Triad",c:"5️⃣ ADR & PV",u:"Triad: Autonomic instability + Neuromuscular excitability + Altered mental status. Cause: SSRI + MAOI/Tramadol/Linezolid/Triptans. Treat: Cyproheptadine"},
+    {n:"WHO Causality — Naranjo Score",c:"5️⃣ ADR & PV",u:"Naranjo: ≥9 Definite, 5-8 Probable, 1-4 Possible, ≤0 Doubtful. WHO categories: Certain, Probable, Possible, Unlikely, Conditional, Unassessable"},
+    {n:"PvPI — Pharmacovigilance Programme India",c:"5️⃣ ADR & PV",u:"Launched 14 July 2010. Coordinated by IPC Ghaziabad. Reporting: VigiFlow → WHO UMC Uppsala. Form: Red form. App: PvPI app. Toll-free: 1800-180-3024"},
+
+    // ── Sub-Topic 6: Drug Development ──
+    {n:"Drug Development — 4 Phases",c:"6️⃣ Drug Development",u:"Phase 0 (microdosing, 10-15 vol); Phase I (safety, 20-100 healthy); Phase II (efficacy, 100-300 pts); Phase III (RCT, 1000-3000 pts); Phase IV (post-marketing)"},
+    {n:"Phase 0 — Microdosing",c:"6️⃣ Drug Development",u:"Sub-therapeutic dose (≤1/100th pharmacological) in 10-15 vol. Early human PK without significant exposure. FDA introduced 2006 — Exploratory IND"},
+    {n:"Phase III — RCT (Gold Standard)",c:"6️⃣ Drug Development",u:"1000-3000 pts. Randomized, double-blind, multi-centre. Confirmatory efficacy + safety. Forms basis of NDA. Success rate ~58% pass to approval"},
+    {n:"IND vs NDA",c:"6️⃣ Drug Development",u:"IND (Investigational New Drug) — submitted BEFORE Phase I to test in humans. NDA (New Drug Application) — after Phase III for marketing approval. CTD format (5 modules)"},
+    {n:"Orphan Drug Act (1983, US)",c:"6️⃣ Drug Development",u:"Rare disease <200,000 patients in US. Incentives: 7-year market exclusivity + tax credits. Examples: Eculizumab, Imatinib (initial), Nusinersen (SMA)"},
+    {n:"ICH-GCP (E6 R2)",c:"6️⃣ Drug Development",u:"Good Clinical Practice — international ETHICAL & SCIENTIFIC standard for trial conduct. ICH = International Council for Harmonisation. Mandatory globally"},
+    {n:"Biosimilars vs Generics",c:"6️⃣ Drug Development",u:"Generic = IDENTICAL chemical, ANDA pathway, bioequivalence only. Biosimilar = HIGHLY SIMILAR biological, 351(k) pathway, requires clinical comparability"}
   ],
   ppt:[
-    {t:"Introduction to Pharmacology",p:["Definition & scope","Branches","Sources of drugs","Drug nomenclature"]},
-    {t:"Routes of Administration",p:["Enteral routes","Parenteral routes","Inhalational/topical","Choice of route"]},
-    {t:"Pharmacokinetics – ADME",p:["Absorption","Distribution","Metabolism (Phase I & II)","Excretion"]},
-    {t:"Bioavailability & First-Pass",p:["Definition","Factors","First-pass effect","Bioequivalence"]},
-    {t:"Pharmacodynamics",p:["Receptors","Dose–response curve","Agonist/antagonist","Spare receptors"]},
-    {t:"Dose Calculation",p:["Loading dose","Maintenance dose","Plasma half-life","Steady state"]},
-    {t:"Drug Interactions",p:["PK interactions","PD interactions","Enzyme inducers/inhibitors"]},
-    {t:"ADR Classification",p:["Rawlins–Thompson","Common ADRs","Pharmacovigilance","WHO causality"]}
+    // ── Sub-Topic 1: Nature, Sources & Info Resources (4 slides) ──
+    {t:"1️⃣ Drug — Definition & Nature",p:["Drug = substance modifying physiological function (WHO)","Etymology: Dutch 'droog' = dry herb","Physical state: Solid, liquid, gas, semi-solid","Chemical nature: Alkaloids, glycosides, peptides, proteins","Molecular weight: small (<900 Da) vs biologics (>5,000 Da)"],note:"Foundation slide — set the stage for what is a drug"},
+    {t:"1️⃣ Sources of Drugs (8 Categories)",p:["Plant — Morphine (opium), Atropine (belladonna), Vincristine (Vinca)","Animal — Insulin (porcine), Heparin (bovine lung), Captopril (snake venom)","Microbial — Penicillin (Penicillium), Cyclosporine (Tolypocladium), Lovastatin (Aspergillus)","Mineral — Fe, Mg, Au, Li, Pt (cisplatin)","Synthetic, Semi-synthetic, Biotech (rDNA, mAbs), Cell/Gene therapy (CAR-T, CRISPR)"],note:"Cover 8 sources with at least 1 classic example each"},
+    {t:"1️⃣ Drug Nomenclature & Pharmacopoeias",p:["Chemical name (IUPAC) vs Code name vs INN (generic) vs Brand","WHO assigns INN; generic names preferred for prescription","Pharmacopoeias (LEGAL): IP, BP, USP, Ph.Eur., Ph.Int. (WHO), JP","India: IP 2022 by IPC Ghaziabad — also publishes NFI 2021","Online: UpToDate, Medscape, Micromedex, Lexicomp, DrugBank"],note:"Highlight that pharmacopoeias are legally binding"},
+    {t:"1️⃣ Indian Drug Regulation",p:["Schedules: H (Rx), H1, X (narcotics), G (warning), M (GMP), Y (clinical trials)","Acts: Drugs & Cosmetics 1940, NDPS 1985, Patents 2005, NDCT Rules 2019","Bodies: CDSCO + DCGI (national), State FDA, NPPA (price control)","NLEM 2022 — ~384 drugs; DPCO price regulation","Jan Aushadhi — affordable generics initiative"],note:"Schedules and acts important for NEET PG"},
+
+    // ── Sub-Topic 2: Routes of Drug Administration (4 slides) ──
+    {t:"2️⃣ Classification of Routes",p:["Enteral: Oral, Sublingual, Buccal, Rectal","Parenteral: IV, IM, SC, ID, IA, IT, Epidural, Intra-articular, Intracardiac, IP, IO","Topical: Skin, Eye, Ear, Nose, Vagina","Inhalational: Gases, aerosols, DPI","Transdermal (TTS patches) + Modern delivery systems"],note:"Tree-like organization helps recall"},
+    {t:"2️⃣ Enteral & Parenteral — Detail",p:["Oral: Most common, 1st-pass metabolism, 30-90 min onset","Sublingual: Rapid (1-3 min), bypass 1st-pass — Nitroglycerin","IV: 100% F, immediate, titrable, max sterility","IM: 10-30 min onset, depot possible, avoid anticoagulants","SC: 15-30 min, max 1-2 ml, insulin/heparin"],note:"Compare F, onset, key uses"},
+    {t:"2️⃣ Special Routes (IT, IA, IO)",p:["Intrathecal — into CSF: Methotrexate (CNS ALL), Bupivacaine (spinal anesthesia), Baclofen","NEVER GIVE VINCRISTINE IT — fatal","Intra-arterial — diagnostic angiography, TACE (HCC with Doxorubicin)","Intra-osseous (IO) — emergency, equivalent to IV, tibia/femur","Epidural — labour analgesia, post-op pain (Bupivacaine + Fentanyl)"],note:"Highlight IT vincristine warning"},
+    {t:"2️⃣ Modern Drug Delivery Systems",p:["Depot IM/SC: Benzathine penicillin, DMPA, Leuprolide","Transdermal patches: GTN, Fentanyl, Estrogen, Nicotine, Clonidine, Rivastigmine","Implants: Norplant, Probuphine (buprenorphine 6-mo)","Liposomes (AmBisome), Nanoparticles (Abraxane)","Smart inhalers (Bluetooth), microneedle patches, 3D-printed tablets (Spritam)"],note:"Bring in 2023-25 advances"},
+
+    // ── Sub-Topic 3: Pharmacokinetics (ADME) (4 slides) ──
+    {t:"3️⃣ Absorption & Bioavailability",p:["Mechanisms: passive diffusion (most), facilitated, active, pinocytosis","Factors: drug (lipid solubility, pKa), patient (gut, food), route (SA, blood flow)","Bioavailability (F) = (AUC oral / AUC IV) × 100","IV = 100%; F reduced by first-pass metabolism","Bioequivalence = 80-125% range"],note:"Emphasize F definition and first-pass"},
+    {t:"3️⃣ Distribution & Vd",p:["Vd = Total drug / Plasma concentration","Vd ~ Plasma (3-5L): protein-bound (Warfarin)","Vd ~ ECF (15L): hydrophilic (Aminoglycosides)","Vd ~ TBW (42L): Ethanol, urea","Vd >> body weight: Digoxin (500L), Chloroquine (13,000L)","Plasma protein binding: Albumin (acids), AAG (bases)"],note:"Vd helps calculate loading dose"},
+    {t:"3️⃣ Metabolism & CYP450",p:["Phase I: Oxidation/reduction/hydrolysis (CYP450)","Phase II: Glucuronidation, sulfation, acetylation, GSH conjugation","CYP3A4 metabolizes ~50% drugs","Inducers (GPRS-CB) ↓ drug levels: Griseofulvin, Phenytoin, Rifampicin, Smoking, Carbamazepine, Barbs","Inhibitors (MAGIC RACKS) ↑ drug levels → toxicity"],note:"Memorize 2 major mnemonics"},
+    {t:"3️⃣ Excretion & Kinetics",p:["Renal: filtration, secretion, reabsorption (pH-dependent)","Aspirin OD → alkalinize urine (NaHCO3) → ↑ excretion","Enterohepatic circulation prolongs t½ (morphine, OCPs, digoxin)","First-order: rate ∝ conc, constant t½","Zero-order: constant rate, saturable: Ethanol, Phenytoin (high dose), Aspirin (toxic)","Steady state = 4-5 half-lives"],note:"Aspirin OD → alkalinize urine"},
+
+    // ── Sub-Topic 4: Pharmacodynamics (4 slides) ──
+    {t:"4️⃣ Receptors & Signal Transduction",p:["4 types: Ligand-gated channels (ms), GPCRs (sec), Enzyme-linked (min), Nuclear (hrs-days)","GPCRs: Gs (↑cAMP), Gi (↓cAMP), Gq (↑IP3+DAG → ↑Ca²⁺)","Ligand-gated: Nicotinic, GABA-A (Cl⁻), NMDA (Ca²⁺)","Enzyme-linked: Insulin (TK), JAK-STAT (cytokines), ANP (gC)","Nuclear: Steroids, T3, Vit D, PPARγ"],note:"4 types is the foundational concept"},
+    {t:"4️⃣ Agonists vs Antagonists",p:["Affinity vs Intrinsic activity (α: 0 to 1)","Full agonist α=1; Partial 0<α<1; Antagonist α=0; Inverse α=-1","Competitive antagonist: reversible, surmountable (Naloxone)","Non-competitive: irreversible (Phenoxybenzamine, Aspirin)","Allosteric modulators: BZDs at GABA-A","Partial agonists in addiction: Buprenorphine, Varenicline"],note:"Define all types with examples"},
+    {t:"4️⃣ Dose-Response & TI",p:["Graded vs Quantal dose-response curves","EC50 (potency), Emax (efficacy), ED50, TD50, LD50","Therapeutic Index = LD50/ED50 (higher = safer)","Narrow TI: Digoxin, Theophylline, Vancomycin, Phenytoin, Aminoglycosides, Lithium, Warfarin","Standard Safety Margin clinically more useful","Spare receptors: Insulin (5-10% occupancy = max effect)"],note:"Connect efficacy/potency to clinical decisions"},
+    {t:"4️⃣ Drug Interactions (PD)",p:["Additive (1+1=2): Aspirin + Paracetamol","Synergism (>2): SMX + TMP, β-lactam + Aminoglycoside","Potentiation (0+1=2): Carbidopa + Levodopa","Antagonism: Naloxone + Morphine","Physiological antagonism: Adrenaline vs Histamine in anaphylaxis","Chemical antagonism: Protamine + Heparin"],note:"Clinical examples emphasize relevance"},
+
+    // ── Sub-Topic 5: ADR & Pharmacovigilance (4 slides) ──
+    {t:"5️⃣ ADR Classification (Rawlins-Thompson)",p:["Type A — Augmented (80%, dose-related, low mortality)","Type B — Bizarre (idiosyncratic, immune, HIGH mortality)","Type C — Chronic (cumulative use)","Type D — Delayed (teratogenic, tardive dyskinesia)","Type E — End of use (withdrawal: β-blocker, clonidine)","Type F — Failure (resistance, OCP + rifampicin)","Newer DoTS: Dose, Time, Susceptibility"],note:"6 types A-F + DoTS"},
+    {t:"5️⃣ Drug-Induced Syndromes",p:["Drug-induced SLE — HIPP (Hydralazine, INH, Procainamide, Phenytoin) — anti-HISTONE Ab","Serotonin syndrome — SSRI + Tramadol/MAOI/Linezolid","NMS — antipsychotics — rigidity + hyperthermia + autonomic instability","SJS/TEN — Carbamazepine (B*1502), Allopurinol (B*5801), Sulfas","DRESS — anticonvulsants, allopurinol (2-8 wk onset)","Disulfiram-like — Metronidazole, Cefoperazone with alcohol"],note:"6 classic syndromes"},
+    {t:"5️⃣ Organ-Specific ADRs",p:["Hepatotoxic (HHRR-PPMM): Halothane, INH, Rifampicin, Methotrexate, Statins","Nephrotoxic (PAGE-NSAIDS): Aminoglycosides, Cisplatin, NSAIDs, Contrast","Pulmonary fibrosis (BB-MMA-N): Bleomycin, Busulfan, Amiodarone, Methotrexate, Nitrofurantoin","Bone marrow (CCC-FIRMS): Chloramphenicol, Cotrimoxazole, Methotrexate","QT prolong: Macrolides, FQs, Methadone, Antipsychotics, Ondansetron","Gingival hyperplasia (PCN): Phenytoin, Cyclosporine, Nifedipine"],note:"Mnemonics for high-yield ADRs"},
+    {t:"5️⃣ Pharmacovigilance & WHO Causality",p:["PvPI — Pharmacovigilance Programme of India (2010), IPC Ghaziabad","Report via VigiFlow → WHO UMC Uppsala","WHO Causality: Certain, Probable, Possible, Unlikely","Naranjo Algorithm: ≥9 Definite, 5-8 Probable, 1-4 Possible, ≤0 Doubtful","Phase IV — Post-marketing surveillance detects rare ADRs","Beers Criteria — PIM in elderly >65 y","BBW examples: SSRI suicidality, FQ tendon rupture"],note:"Indian PvPI structure important"},
+
+    // ── Sub-Topic 6: Drug Development (4 slides) ──
+    {t:"6️⃣ Drug Discovery & Preclinical",p:["Target identification → validation → lead identification → optimization","HTS (High-Throughput Screening) of >10,000 compounds","SAR (Structure-Activity Relationship) optimization","Preclinical: in vitro + animal studies under GLP","Tests: PK, toxicity (acute LD50, chronic), genotoxicity (Ames test), carcinogenicity (2-year)","Submit IND application to regulator"],note:"Drug discovery pipeline overview"},
+    {t:"6️⃣ Clinical Trial Phases (0-IV)",p:["Phase 0 — Microdosing (10-15 vol, sub-therapeutic dose)","Phase I — Safety, MTD, PK (20-100 healthy vol)","Phase II — Efficacy + dose finding (100-300 patients; IIa pilot, IIb pivotal)","Phase III — Confirmatory RCT (1000-3000 patients; IIIa pre-NDA, IIIb during)","Phase IV — Post-marketing surveillance (general population)","Success rate: only 10% Phase I → approval"],note:"Sample sizes and purposes"},
+    {t:"6️⃣ Regulatory Bodies & GxP",p:["FDA (USA), CDSCO + DCGI (India), EMA (EU), PMDA (Japan), ICH (global)","India: NDCT Rules 2019 (updated Schedule Y), CTRI mandatory","GLP — Preclinical lab","GCP (ICH E6 R2) — Clinical trials globally","GMP (Schedule M India) — Manufacturing","GVP — Post-marketing surveillance"],note:"Acronyms important for exams"},
+    {t:"6️⃣ Special Pathways & Recent Advances",p:["Orphan Drug Act (1983, US): <200,000 patients, 7-year exclusivity, tax credits","Fast Track, Breakthrough, Priority Review, Accelerated Approval","Compassionate Use, Right to Try Act 2018","Biosimilars (351k) vs Generics (ANDA)","AI/ML drug discovery (AlphaFold, INS018_055)","CRISPR therapy (Casgevy 2023), CAR-T, mRNA platforms"],note:"2023-25 milestones highlight"}
   ],
   mcqs:[
     {q:"Which of the following has 100% bioavailability?",o:["Oral aspirin","IV lignocaine","Sublingual nitroglycerin","Inhaled salbutamol"],a:"IV lignocaine",e:"Bioavailability of IV route is 100% by definition – the drug is directly delivered to systemic circulation, bypassing absorption."},
