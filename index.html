@@ -2864,19 +2864,549 @@ e:"Loading Dose = Vd × Target Css / F. Maintenance Dose = Cl × Css. Knowing Vd
 });
 
 TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
-  classification:`<h4>Cholinergic Drugs</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>Direct M-agonists</td><td>Pilocarpine, Bethanechol, Methacholine</td></tr>
-<tr><td>Reversible Anti-ChE</td><td>Neostigmine, Physostigmine, Pyridostigmine, Donepezil, Rivastigmine</td></tr>
-<tr><td>Irreversible Anti-ChE</td><td>Organophosphates (parathion, malathion, echothiophate)</td></tr>
-<tr><td>M-antagonists</td><td>Atropine, Hyoscine, Glycopyrrolate, Ipratropium, Tropicamide, Oxybutynin</td></tr>
-<tr><td>Nicotinic blockers</td><td>Trimethaphan (ganglion); d-tubocurarine, succinylcholine (NM)</td></tr></table>
-<h4>Adrenergic Drugs</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>Direct α/β agonists</td><td>Adrenaline, Noradrenaline, Phenylephrine (α1), Clonidine (α2), Dobutamine (β1), Salbutamol (β2)</td></tr>
-<tr><td>Indirect</td><td>Tyramine, Amphetamine, Ephedrine, Cocaine</td></tr>
-<tr><td>α-blockers</td><td>Prazosin, Phenoxybenzamine, Phentolamine, Tamsulosin</td></tr>
-<tr><td>β-blockers</td><td>Propranolol (non-selective), Atenolol/Metoprolol (β1), Labetalol/Carvedilol (α+β), Nebivolol</td></tr></table>`,
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Cholinergic Drugs",panelId:"details",anchor:"sub-cholin"},
+    {n:2,label:"Anticholinergic Drugs",panelId:"details",anchor:"sub-anticholin"},
+    {n:3,label:"Adrenergic Drugs",panelId:"details",anchor:"sub-adrenergic"},
+    {n:4,label:"Antiadrenergic Drugs",panelId:"details",anchor:"sub-antiadren"}
+  ],
+  classification:`<h4>Autonomic Nervous System — Overview</h4>
+<p>The Autonomic Nervous System (ANS) is the involuntary motor system regulating <em>visceral functions</em> — cardiovascular, respiratory, GI, urinary, exocrine glands &amp; metabolism. It has two complementary divisions:</p>
+<table>
+<tr><th>Feature</th><th>Sympathetic (SNS)</th><th>Parasympathetic (PSNS)</th></tr>
+<tr><td><strong>Origin</strong></td><td>Thoracolumbar (T1-L2)</td><td>Craniosacral (CN III, VII, IX, X + S2-S4)</td></tr>
+<tr><td><strong>Preganglionic fibre</strong></td><td>Short → Long postganglionic</td><td>Long → Short postganglionic</td></tr>
+<tr><td><strong>Ganglia location</strong></td><td>Near spinal cord (sympathetic chain)</td><td>Near/in target organ</td></tr>
+<tr><td><strong>Pre-ganglionic NT</strong></td><td>ACh → Nn (nicotinic)</td><td>ACh → Nn (nicotinic)</td></tr>
+<tr><td><strong>Post-ganglionic NT</strong></td><td>Noradrenaline (except sweat glands → ACh)</td><td>Acetylcholine</td></tr>
+<tr><td><strong>Post-ganglionic receptor</strong></td><td>α / β adrenergic</td><td>Muscarinic (M1-M5)</td></tr>
+<tr><td><strong>Effect</strong></td><td>"Fight or Flight" — ↑HR, BP, bronchodilation, pupil dilation, glycolysis</td><td>"Rest &amp; Digest" — ↓HR, ↑secretions, miosis, peristalsis</td></tr>
+</table>
+
+<h4 style="margin-top:18px;">🧬 Receptor Pharmacology Summary</h4>
+<table>
+<tr><th>Receptor</th><th>G-protein / Channel</th><th>Location &amp; Effect</th></tr>
+<tr><td><strong>M1</strong> (muscarinic)</td><td>Gq</td><td>CNS, ENS — memory, gastric acid secretion</td></tr>
+<tr><td><strong>M2</strong></td><td>Gi</td><td>Heart — ↓HR, ↓AV conduction</td></tr>
+<tr><td><strong>M3</strong></td><td>Gq</td><td>Smooth muscle (contraction), glands (secretion), eye (miosis &amp; accommodation)</td></tr>
+<tr><td><strong>Nn</strong> (nicotinic)</td><td>Ligand-gated</td><td>Autonomic ganglia + CNS — fast depolarization</td></tr>
+<tr><td><strong>Nm</strong></td><td>Ligand-gated</td><td>Neuromuscular junction — skeletal muscle contraction</td></tr>
+<tr><td><strong>α1</strong> (adrenergic)</td><td>Gq</td><td>Vasoconstriction · Mydriasis · Prostate contraction · ↑ glycogenolysis</td></tr>
+<tr><td><strong>α2</strong></td><td>Gi</td><td>Pre-synaptic ↓NA release · Central sympatholysis · ↓ insulin</td></tr>
+<tr><td><strong>β1</strong></td><td>Gs</td><td>↑HR, ↑contractility, ↑AV conduction · Renin release</td></tr>
+<tr><td><strong>β2</strong></td><td>Gs</td><td>Bronchodilation · Vasodilation (skeletal m) · Uterine relaxation · ↑ glycogenolysis</td></tr>
+<tr><td><strong>β3</strong></td><td>Gs</td><td>Lipolysis · Bladder detrusor relaxation</td></tr>
+<tr><td><strong>D1</strong> (dopamine)</td><td>Gs</td><td>Renal/mesenteric vasodilation</td></tr>
+</table>
+
+<div class="cblock" style="margin-top:14px;border-left-color:var(--teal);">
+<h4>📌 Key Concepts</h4>
+<ul>
+<li><strong>ACh</strong> is the neurotransmitter at: ALL pre-ganglionic fibres (both SNS &amp; PSNS), ALL post-ganglionic PSNS fibres, sympathetic post-ganglionic to sweat glands, and at NMJ.</li>
+<li><strong>NA (Noradrenaline)</strong> is the neurotransmitter at most sympathetic post-ganglionic fibres.</li>
+<li><strong>Adrenal medulla</strong> = modified sympathetic ganglion releasing 80% Adrenaline + 20% NA into bloodstream.</li>
+<li><strong>Dual innervation</strong> — most organs receive both SNS &amp; PSNS (opposing effects). Exceptions: blood vessels (mainly SNS), sweat glands (cholinergic SNS).</li>
+</ul>
+</div>
+<p style="margin-top:12px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>For detailed content of Cholinergic, Anticholinergic, Adrenergic &amp; Antiadrenergic drugs — please use the 4-button Sub-Topic Navigator above</em></p>`,
+  extraPanels:[{id:"details",content:`
+<span id="sub-cholin-ans" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💧 1️⃣ CHOLINERGIC DRUGS</h4>
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that mimic or potentiate the action of <em>acetylcholine</em> at muscarinic and/or nicotinic receptors. Also called <strong>parasympathomimetics</strong>.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Category</th><th>Subtype</th><th>Drugs</th></tr>
+<tr><td rowspan="3"><strong>A. Direct-Acting (Cholinomimetics)</strong></td><td>Choline esters</td><td>Acetylcholine, Methacholine, Bethanechol, Carbachol</td></tr>
+<tr><td>Plant alkaloids</td><td>Pilocarpine, Muscarine, Arecoline, Cevimeline</td></tr>
+<tr><td>Selective</td><td>Cevimeline (M3), Xanomeline (M1, M4 — Alzheimer's trial)</td></tr>
+<tr><td rowspan="2"><strong>B. Indirect (Anti-Cholinesterases)</strong></td><td>Reversible (carbamates &amp; alcohols)</td><td>Neostigmine, Physostigmine, Pyridostigmine, Edrophonium, Donepezil, Rivastigmine, Galantamine, Tacrine</td></tr>
+<tr><td>Irreversible (Organophosphates)</td><td>Malathion, Parathion, Echothiophate, Diisopropyl fluorophosphate (DFP), Sarin (nerve gas), Soman</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">A. Direct-Acting Cholinergic Drugs</h4>
+<table>
+<tr><th>Drug</th><th>Receptor</th><th>Use</th></tr>
+<tr><td><strong>Pilocarpine</strong></td><td>M3 (mainly)</td><td>Open-angle &amp; closed-angle glaucoma (drops); Sjögren's syndrome (oral); CF sweat test (iontophoresis)</td></tr>
+<tr><td><strong>Bethanechol</strong></td><td>M3 (resistant to AChE)</td><td>Post-op urinary retention, neurogenic atonic bladder, paralytic ileus</td></tr>
+<tr><td><strong>Methacholine</strong></td><td>M (resistant to AChE)</td><td>Bronchial provocation test for asthma</td></tr>
+<tr><td><strong>Carbachol</strong></td><td>M + N</td><td>Glaucoma surgery (intra-ocular)</td></tr>
+<tr><td><strong>Cevimeline</strong></td><td>M3 selective</td><td>Xerostomia in Sjögren's syndrome</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">B. Indirect Cholinergic (Anti-Cholinesterases) — Reversible</h4>
+<table>
+<tr><th>Drug</th><th>BBB</th><th>Use</th><th>Duration</th></tr>
+<tr><td><strong>Edrophonium</strong></td><td>—</td><td>Diagnosis of MG (Tensilon test); distinguishes myasthenic vs cholinergic crisis</td><td>5–15 min (very short)</td></tr>
+<tr><td><strong>Neostigmine</strong></td><td>NO (quaternary)</td><td>Myasthenia gravis treatment; reversal of non-depolarizing NMB; post-op urinary retention &amp; ileus</td><td>2–4 hr</td></tr>
+<tr><td><strong>Pyridostigmine</strong></td><td>NO</td><td>Long-term MG therapy (preferred over neostigmine — fewer GI SE)</td><td>3–6 hr</td></tr>
+<tr><td><strong>Physostigmine</strong></td><td>YES (tertiary)</td><td>Atropine / TCA / antimuscarinic overdose; glaucoma (rare)</td><td>1–3 hr</td></tr>
+<tr><td><strong>Donepezil, Rivastigmine, Galantamine</strong></td><td>YES</td><td>Alzheimer's disease (mild-moderate); also Lewy body dementia, vascular dementia</td><td>Long</td></tr>
+</table>
+
+<h4>B. Irreversible Anti-AChE (Organophosphates &amp; Carbamates)</h4>
+<ul>
+<li><strong>Used as</strong>: Insecticides (malathion, parathion), nerve gases (sarin, soman, VX), ophthalmic drug (echothiophate)</li>
+<li><strong>Mechanism</strong>: Phosphorylate AChE → permanent inactivation. After "aging" (24-48 h), the bond becomes irreversible</li>
+<li><strong>Carbamates</strong> (e.g. carbaryl, propoxur): similar but reversible (no aging)</li>
+</ul>
+
+<h4>🚨 Organophosphate Poisoning</h4>
+<p><strong>Clinical features — DUMBBELS / SLUDGE-M mnemonic:</strong></p>
+<ul>
+<li><strong>D</strong>iarrhoea · <strong>U</strong>rination · <strong>M</strong>iosis · <strong>B</strong>radycardia/Bronchorrhoea/Bronchospasm · <strong>E</strong>mesis · <strong>L</strong>acrimation · <strong>S</strong>alivation</li>
+<li>Plus nicotinic effects: Muscle fasciculations, weakness, paralysis</li>
+<li>CNS: anxiety, ataxia, seizures, coma, respiratory failure (commonest cause of death)</li>
+</ul>
+<p><strong>Treatment (NEET PG high-yield):</strong></p>
+<ol>
+<li><strong>Atropine</strong> 2-4 mg IV every 5-15 min till atropinization (dry mucosa, mydriasis, HR &gt; 80); maintain for 24-48 h</li>
+<li><strong>Pralidoxime (2-PAM)</strong> 1-2 g IV — regenerates AChE BEFORE aging (give early!); ineffective after 24-48 h</li>
+<li>Supportive: airway, ventilation, decontamination, benzodiazepines for seizures</li>
+</ol>
+
+<h4>⚖️ Myasthenic Crisis vs Cholinergic Crisis</h4>
+<table>
+<tr><th>Feature</th><th>Myasthenic Crisis</th><th>Cholinergic Crisis</th></tr>
+<tr><td>Cause</td><td>Under-treatment</td><td>Over-treatment (anti-AChE excess)</td></tr>
+<tr><td>Pupils</td><td>Normal/dilated</td><td>Miosis</td></tr>
+<tr><td>Secretions</td><td>Normal</td><td>↑↑ (salivation, sweating)</td></tr>
+<tr><td>Fasciculations</td><td>Absent</td><td>Present</td></tr>
+<tr><td>Edrophonium test</td><td>Improves</td><td>Worsens</td></tr>
+<tr><td>Treatment</td><td>↑ Pyridostigmine + plasmapheresis/IVIG</td><td>Withdraw anti-AChE + atropine + supportive</td></tr>
+</table>
+
+<h4>Clinical Uses Summary</h4>
+<ul>
+<li><strong>Glaucoma</strong>: Pilocarpine (open + closed-angle)</li>
+<li><strong>Myasthenia gravis</strong>: Pyridostigmine (chronic), Neostigmine (acute)</li>
+<li><strong>Alzheimer's disease</strong>: Donepezil, Rivastigmine, Galantamine</li>
+<li><strong>Post-op ileus, urinary retention</strong>: Bethanechol, Neostigmine</li>
+<li><strong>Reverse non-depolarizing NMB</strong>: Neostigmine + Glycopyrrolate</li>
+<li><strong>Sjögren's xerostomia</strong>: Pilocarpine, Cevimeline</li>
+<li><strong>Atropine / TCA toxicity</strong>: Physostigmine</li>
+</ul>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Cholinergic Drugs</div>
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Mnemonic DUMBBELS</strong> for OP poisoning — Diarrhoea, Urination, Miosis, Bradycardia, Bronchospasm, Emesis, Lacrimation, Salivation</li>
+<li><strong>Pralidoxime (2-PAM)</strong> must be given EARLY — before aging of the AChE-OP complex (12-24 h window)</li>
+<li><strong>Carbamate poisoning</strong> (e.g. carbaryl) does NOT need pralidoxime — atropine alone suffices (no enzyme aging)</li>
+<li><strong>Edrophonium (Tensilon) test</strong> — improves MG (myasthenic crisis), worsens cholinergic crisis</li>
+<li><strong>Neostigmine doesn't cross BBB</strong> (quaternary) → preferred for MG &amp; NMB reversal (no CNS effects). <strong>Physostigmine crosses BBB</strong> (tertiary) → DOC for central anticholinergic toxicity</li>
+<li><strong>Bethanechol</strong> is resistant to AChE → long action; used for atonic bladder / paralytic ileus</li>
+<li><strong>Avoid cholinergic drugs in</strong>: Asthma (bronchospasm), peptic ulcer (↑ acid), urinary obstruction, AV block</li>
+<li><strong>Donepezil</strong> is the only anti-AChE approved for ALL stages of Alzheimer's (mild → severe); Rivastigmine also has Lewy body indication</li>
+</ul>
+</div>
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Xanomeline-Trospium (KarXT, Cobenfy)</strong> — FDA approved 2024 for schizophrenia. M1/M4 agonist (xanomeline) + peripheral M-antagonist (trospium) to ↓ side effects. <em>First non-D2 antipsychotic</em></li>
+<li><strong>Donanemab &amp; Lecanemab</strong> — anti-amyloid mAbs in Alzheimer's — may shift therapy beyond cholinesterase inhibitors</li>
+<li><strong>Rivastigmine transdermal patch</strong> increasingly preferred for tolerability in elderly</li>
+<li><strong>Pralidoxime aerosol</strong> and newer oximes (HI-6, MMB-4) under research for nerve agent prophylaxis</li>
+<li><strong>Edrophonium discontinued</strong> in many countries — replaced by ice-pack test / acetylcholine receptor Ab assay for MG diagnosis</li>
+</ul>
+</div>
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for OP poisoning → <em>Atropine + Pralidoxime (2-PAM)</em></li>
+<li><strong>NEET PG 2024</strong>: Drug that crosses BBB and used in atropine toxicity → <em>Physostigmine</em></li>
+<li><strong>INI-CET 2023</strong>: Drug used for diagnosing Myasthenia gravis → <em>Edrophonium</em></li>
+<li><strong>NEET PG 2024</strong>: Anti-Alzheimer drug with patch formulation → <em>Rivastigmine</em></li>
+<li><strong>INI-CET 2024</strong>: Pralidoxime is ineffective if given after → <em>24-48 hours (aging of OP-AChE complex)</em></li>
+<li><strong>NEET PG 2025</strong>: First non-D2 antipsychotic acting on muscarinic receptors → <em>Xanomeline-Trospium (KarXT)</em></li>
+</ul>
+</div>
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete explanation of <strong>Cholinergic Drugs, Anti-Cholinesterases &amp; OP Poisoning</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Cholinergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>
+
+<span id="sub-anticholin-ans" style="display:block;height:1px;"></span>
+<h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🚫 2️⃣ ANTICHOLINERGIC DRUGS</h4>
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that block the action of <em>acetylcholine</em> at muscarinic and/or nicotinic receptors. Also called <strong>parasympatholytics</strong> (when blocking M receptors).</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Category</th><th>Drugs</th></tr>
+<tr><td><strong>Muscarinic Antagonists — Tertiary amines</strong> (cross BBB)</td><td>Atropine, Hyoscine (Scopolamine), Homatropine, Tropicamide, Cyclopentolate, Benztropine, Trihexyphenidyl, Oxybutynin, Tolterodine, Solifenacin, Darifenacin</td></tr>
+<tr><td><strong>Muscarinic Antagonists — Quaternary amines</strong> (don't cross BBB)</td><td>Glycopyrrolate, Ipratropium, Tiotropium, Aclidinium, Umeclidinium, Propantheline, Trospium</td></tr>
+<tr><td><strong>Ganglion Blockers</strong> (block Nn)</td><td>Hexamethonium (historical), Trimethaphan, Mecamylamine</td></tr>
+<tr><td><strong>NMJ Blockers</strong> (block Nm)</td><td>Depolarizing: Succinylcholine · Non-depolarizing: Tubocurarine, Pancuronium, Vecuronium, Rocuronium, Atracurium, Cisatracurium, Mivacurium</td></tr>
+</table>
+
+<h4>🧪 Atropine — The Prototype</h4>
+<ul>
+<li><strong>Source</strong>: Atropa belladonna (deadly nightshade); active alkaloid is l-hyoscyamine</li>
+<li><strong>Mechanism</strong>: Competitive, reversible antagonist at M1-M5 (non-selective)</li>
+<li><strong>Onset</strong>: 30 sec IV, 30 min oral</li>
+<li><strong>Duration</strong>: 4-6 h systemically; <em>7-10 days as eyedrops!</em></li>
+<li><strong>Effects (dose-dependent)</strong>: ↓ salivation/sweating → tachycardia, mydriasis → hyperthermia, delirium</li>
+</ul>
+
+<h4>🤪 Atropine Toxicity — "Mad Hatter" Syndrome</h4>
+<p><em>Classical description:</em></p>
+<ul>
+<li><strong>Hot</strong> as a hare (hyperthermia — sweat glands blocked)</li>
+<li><strong>Dry</strong> as a bone (dry mouth, eyes, skin)</li>
+<li><strong>Red</strong> as a beet (flushed skin, cutaneous vasodilation)</li>
+<li><strong>Blind</strong> as a bat (mydriasis + cycloplegia)</li>
+<li><strong>Mad</strong> as a hatter (delirium, agitation, hallucinations)</li>
+<li><strong>Full</strong> as a flask (urinary retention)</li>
+<li><strong>Treatment</strong>: <em>Physostigmine</em> (crosses BBB) — supportive care, cooling, BZDs for agitation</li>
+</ul>
+
+<h4>📌 Atropine vs Glycopyrrolate — Which to use?</h4>
+<table>
+<tr><th>Feature</th><th>Atropine (Tertiary)</th><th>Glycopyrrolate (Quaternary)</th></tr>
+<tr><td>BBB crossing</td><td>Yes</td><td>NO</td></tr>
+<tr><td>CNS effects</td><td>Yes (delirium possible)</td><td>None</td></tr>
+<tr><td>Anti-secretory effect</td><td>Moderate</td><td>Stronger</td></tr>
+<tr><td>Tachycardia</td><td>More</td><td>Less</td></tr>
+<tr><td>Preferred for</td><td>Bradycardia (IV), OP poisoning</td><td>Pre-anaesthesia, NMB reversal (with neostigmine)</td></tr>
+</table>
+
+<h4>🩺 Major Anticholinergic Drugs &amp; Uses</h4>
+<table>
+<tr><th>Drug</th><th>Use</th></tr>
+<tr><td><strong>Atropine</strong></td><td>OP poisoning, bradyarrhythmia, premedication, IBS antispasmodic, mydriatic (cycloplegic in children)</td></tr>
+<tr><td><strong>Hyoscine (Scopolamine)</strong></td><td>Motion sickness (transdermal patch), post-op nausea</td></tr>
+<tr><td><strong>Tropicamide</strong></td><td>Short-acting mydriatic (4-6 h) for fundoscopy</td></tr>
+<tr><td><strong>Cyclopentolate</strong></td><td>Cycloplegic refraction in children</td></tr>
+<tr><td><strong>Homatropine</strong></td><td>Mydriatic (intermediate)</td></tr>
+<tr><td><strong>Glycopyrrolate</strong></td><td>Pre-anaesthesia, NMB reversal (with neostigmine), hyperhidrosis</td></tr>
+<tr><td><strong>Ipratropium (SAMA)</strong></td><td>Acute asthma/COPD bronchodilator</td></tr>
+<tr><td><strong>Tiotropium (LAMA)</strong></td><td>Maintenance COPD (1st line), severe asthma add-on</td></tr>
+<tr><td><strong>Oxybutynin / Tolterodine / Solifenacin / Darifenacin</strong></td><td>Overactive bladder, urge incontinence</td></tr>
+<tr><td><strong>Trihexyphenidyl / Benztropine</strong></td><td>Parkinson's disease (esp. tremor &amp; drug-induced EPS)</td></tr>
+<tr><td><strong>Pirenzepine</strong> (M1 selective)</td><td>Peptic ulcer (historical)</td></tr>
+</table>
+
+<h4>💉 Neuromuscular Blockers (Nicotinic Antagonists)</h4>
+<table>
+<tr><th>Type</th><th>Drug</th><th>Onset</th><th>Duration</th><th>Special Features</th></tr>
+<tr><td>Depolarizing</td><td>Succinylcholine</td><td>30 sec</td><td>5-10 min</td><td>RSI; metabolized by plasma pseudocholinesterase; SE: hyperkalaemia, MH trigger</td></tr>
+<tr><td rowspan="5">Non-depolarizing</td><td>Pancuronium</td><td>2-3 min</td><td>60-120 min</td><td>Long-acting, vagolytic (tachycardia)</td></tr>
+<tr><td>Vecuronium</td><td>3-5 min</td><td>30-60 min</td><td>Hepatic; cardiac-stable</td></tr>
+<tr><td>Rocuronium</td><td>1-2 min</td><td>30-60 min</td><td>RSI alternative to Succinylcholine; reversed by Sugammadex</td></tr>
+<tr><td>Atracurium</td><td>3-5 min</td><td>30-45 min</td><td>Hofmann elimination — SAFE in renal/hepatic failure</td></tr>
+<tr><td>Cisatracurium</td><td>5-8 min</td><td>30-60 min</td><td>Hofmann; no histamine release; best in critically ill</td></tr>
+</table>
+
+<h4>Reversal Agents</h4>
+<ul>
+<li><strong>Neostigmine + Glycopyrrolate</strong>: classical reversal of non-depolarizing block</li>
+<li><strong>Sugammadex</strong>: specific for Rocuronium &amp; Vecuronium; modified γ-cyclodextrin; rapid &amp; complete reversal</li>
+</ul>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Anticholinergic Drugs</div>
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Atropine eyedrops</strong> last 7-10 days — use Tropicamide (4-6 h) for fundoscopy in adults</li>
+<li><strong>Glycopyrrolate &gt; Atropine</strong> for pre-medication (no CNS effects, stronger anti-secretory, less tachycardia)</li>
+<li><strong>Ipratropium &amp; Tiotropium</strong> are quaternary → minimal systemic SE despite chronic use</li>
+<li><strong>Tiotropium</strong> = 1st line maintenance in COPD per GOLD (LAMA &gt; LABA monotherapy in COPD)</li>
+<li><strong>Beers Criteria</strong>: avoid anticholinergics in elderly (cognitive decline, falls); especially anti-OAB &amp; TCA</li>
+<li><strong>Avoid anticholinergics in</strong>: closed-angle glaucoma, BPH (urinary retention), severe constipation, paralytic ileus, myasthenia gravis</li>
+<li><strong>Succinylcholine</strong> trigger of <em>Malignant Hyperthermia</em> (with halothane) — Treat: Dantrolene</li>
+<li><strong>Pseudocholinesterase deficiency</strong> → prolonged Succinylcholine apnoea (2-4 hr)</li>
+</ul>
+</div>
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Revefenacin</strong> — once-daily nebulized LAMA approved for COPD (alternative for patients unable to use inhalers)</li>
+<li><strong>Aclidinium &amp; Umeclidinium</strong> — newer LAMAs increasingly used in COPD combinations (with LABA ± ICS)</li>
+<li><strong>Mirabegron + antimuscarinic combination</strong> in OAB shows superior efficacy than monotherapy</li>
+<li><strong>Sugammadex</strong> usage expanding — replaces neostigmine in many centres for rocuronium reversal</li>
+<li><strong>Xanomeline-Trospium (KarXT)</strong> 2024 — first muscarinic antipsychotic combining M-agonist + peripheral M-antagonist</li>
+<li><strong>Glycopyrronium topical</strong> (Qbrexza wipes) — FDA approved for primary axillary hyperhidrosis</li>
+</ul>
+</div>
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Pre-anaesthetic anti-cholinergic preferred for its quaternary structure → <em>Glycopyrrolate</em></li>
+<li><strong>NEET PG 2024</strong>: First-line LAMA in COPD → <em>Tiotropium</em></li>
+<li><strong>INI-CET 2023</strong>: Mydriatic of choice for fundoscopy in adults → <em>Tropicamide</em></li>
+<li><strong>NEET PG 2024</strong>: NMB reversal agent specific for Rocuronium → <em>Sugammadex</em></li>
+<li><strong>INI-CET 2024</strong>: NMB safe in combined renal &amp; hepatic failure → <em>Atracurium / Cisatracurium (Hofmann elimination)</em></li>
+<li><strong>NEET PG 2025</strong>: Succinylcholine causes phase I block by → <em>Persistent depolarization at NMJ</em></li>
+<li><strong>FMGE 2024</strong>: Treatment of atropine toxicity → <em>Physostigmine</em></li>
+</ul>
+</div>
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete explanation of <strong>Anticholinergic Drugs, NMJ Blockers &amp; Atropine Pharmacology</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Anticholinergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>
+
+<span id="sub-adrenergic-ans" style="display:block;height:1px;"></span>
+<h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚡ 3️⃣ ADRENERGIC DRUGS</h4>
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that mimic the effects of catecholamines (Adrenaline, Noradrenaline, Dopamine) by activating <em>α and/or β adrenergic receptors</em>. Also called <strong>sympathomimetics</strong>.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Category</th><th>Subtype</th><th>Drugs</th></tr>
+<tr><td rowspan="7"><strong>Direct-Acting</strong></td><td>α &amp; β (non-selective)</td><td>Adrenaline (Epinephrine), Noradrenaline, Dopamine</td></tr>
+<tr><td>β non-selective</td><td>Isoprenaline (Isoproterenol)</td></tr>
+<tr><td>α1 selective</td><td>Phenylephrine, Methoxamine, Midodrine, Mephentermine</td></tr>
+<tr><td>α2 selective (central)</td><td>Clonidine, Methyldopa (prodrug), Apraclonidine, Brimonidine, Tizanidine, Dexmedetomidine</td></tr>
+<tr><td>β1 selective</td><td>Dobutamine, Prenalterol</td></tr>
+<tr><td>β2 selective</td><td>Salbutamol, Terbutaline, Salmeterol, Formoterol, Indacaterol, Vilanterol, Olodaterol, Ritodrine</td></tr>
+<tr><td>β3 selective</td><td>Mirabegron, Vibegron (Gemtesa)</td></tr>
+<tr><td rowspan="2"><strong>Indirect-Acting</strong></td><td>Release NA from terminals</td><td>Amphetamine, Methylphenidate, Tyramine, Modafinil</td></tr>
+<tr><td>Reuptake inhibitors</td><td>Cocaine, TCAs (imipramine), Atomoxetine</td></tr>
+<tr><td><strong>Mixed (Direct + Indirect)</strong></td><td colspan="2">Ephedrine, Pseudoephedrine</td></tr>
+<tr><td><strong>Dopamine agonists</strong></td><td>D1 (renal)</td><td>Fenoldopam (HTN crisis with renal impairment)</td></tr>
+</table>
+
+<h4>🧬 Receptor-Effect Summary</h4>
+<table>
+<tr><th>Receptor</th><th>Location</th><th>Effect</th><th>Clinical Drug Example</th></tr>
+<tr><td><strong>α1</strong></td><td>Vascular smooth muscle, prostate, eye dilator m, sphincters</td><td>Vasoconstriction, mydriasis, urinary continence, ↑ BP</td><td>Phenylephrine, Methoxamine</td></tr>
+<tr><td><strong>α2</strong></td><td>Pre-synaptic adrenergic terminals, CNS, pancreas</td><td>↓ NA release (feedback), central sympatholysis (↓BP), ↓ insulin</td><td>Clonidine, Methyldopa, Dexmedetomidine</td></tr>
+<tr><td><strong>β1</strong></td><td>Heart (SA, AV, myocardium), JG cells (kidney)</td><td>↑ HR, ↑ contractility, ↑ AV conduction, ↑ renin → ↑ BP</td><td>Dobutamine</td></tr>
+<tr><td><strong>β2</strong></td><td>Bronchi, skeletal m vasculature, uterus, liver</td><td>Bronchodilation, vasodilation, uterine relaxation, ↑ glycogenolysis</td><td>Salbutamol, Terbutaline, Salmeterol</td></tr>
+<tr><td><strong>β3</strong></td><td>Adipose tissue, urinary bladder detrusor</td><td>↑ Lipolysis, ↑ thermogenesis, bladder relaxation</td><td>Mirabegron, Vibegron</td></tr>
+</table>
+
+<h4>💉 Catecholamines — Adrenaline, Noradrenaline, Dopamine, Dobutamine</h4>
+<table>
+<tr><th>Drug</th><th>Receptor Profile</th><th>Major Clinical Use</th></tr>
+<tr><td><strong>Adrenaline (Epi)</strong></td><td>α1, α2, β1, β2, β3 (all)</td><td>Anaphylaxis (IM thigh), cardiac arrest (IV), with LA (vasoconstrictor), severe croup (nebulized)</td></tr>
+<tr><td><strong>Noradrenaline (NE)</strong></td><td>α1 &gt; β1 (no β2)</td><td>Septic shock (1st line vasopressor), neurogenic shock</td></tr>
+<tr><td><strong>Dopamine</strong> (dose-dependent)</td><td>Low (1-5 µg/kg/min): D1 (renal); Medium (5-10): β1; High (&gt;10): α1</td><td>Cardiogenic / septic shock (when fluid resuscitated); falling out of favour due to mortality data</td></tr>
+<tr><td><strong>Dobutamine</strong></td><td>β1 &gt;&gt; β2, α1</td><td>Cardiogenic shock, acute decompensated HF, dobutamine stress echocardiography</td></tr>
+<tr><td><strong>Isoprenaline</strong></td><td>β1 = β2 (no α)</td><td>Bradycardia (AV block, awaiting pacer), torsades de pointes</td></tr>
+</table>
+
+<h4>🎯 Selective Adrenergic Agonists</h4>
+<table>
+<tr><th>Drug</th><th>Receptor</th><th>Use</th></tr>
+<tr><td><strong>Phenylephrine</strong></td><td>α1</td><td>Mydriasis without cycloplegia · Nasal decongestant · Hypotension during spinal anaesthesia</td></tr>
+<tr><td><strong>Midodrine</strong></td><td>α1</td><td>Orthostatic hypotension</td></tr>
+<tr><td><strong>Clonidine</strong></td><td>α2 (central)</td><td>Hypertension · ADHD · Opioid withdrawal · Tics · Adjuvant in regional anaesthesia</td></tr>
+<tr><td><strong>Methyldopa</strong></td><td>α2 (prodrug → α-methyl-NA)</td><td>DOC for HTN in pregnancy (Cat B)</td></tr>
+<tr><td><strong>Dexmedetomidine</strong></td><td>α2</td><td>ICU sedation (no respiratory depression), procedural sedation</td></tr>
+<tr><td><strong>Brimonidine, Apraclonidine</strong></td><td>α2 (ocular)</td><td>Glaucoma drops</td></tr>
+<tr><td><strong>Salbutamol (SABA)</strong></td><td>β2</td><td>Acute asthma rescue, hyperkalaemia adjunct</td></tr>
+<tr><td><strong>Salmeterol, Formoterol (LABA)</strong></td><td>β2</td><td>Chronic asthma (ALWAYS with ICS) &amp; COPD maintenance</td></tr>
+<tr><td><strong>Terbutaline, Ritodrine</strong></td><td>β2</td><td>Tocolysis (premature labour)</td></tr>
+<tr><td><strong>Mirabegron, Vibegron</strong></td><td>β3</td><td>Overactive bladder (alternative to antimuscarinics)</td></tr>
+</table>
+
+<h4>⚡ Indirect &amp; Mixed Adrenergic Agonists</h4>
+<ul>
+<li><strong>Amphetamine</strong> — releases NA and DA. Use: narcolepsy, ADHD (Adderall). Abuse potential</li>
+<li><strong>Methylphenidate (Ritalin)</strong> — DA-NA reuptake inhibitor. Use: ADHD (1st line)</li>
+<li><strong>Modafinil</strong> — selective for narcolepsy and excessive daytime sleepiness</li>
+<li><strong>Cocaine</strong> — NA-DA-5HT reuptake inhibitor + local anaesthetic. Recreational misuse</li>
+<li><strong>Tyramine</strong> — in cheese, wine, fermented foods. Releases NA. <em>"Cheese reaction"</em> with MAOIs → hypertensive crisis</li>
+<li><strong>Ephedrine, Pseudoephedrine</strong> — nasal decongestants; misused as stimulants</li>
+</ul>
+
+<h4>🦂 Special Clinical Scenarios</h4>
+<ul>
+<li><strong>Anaphylaxis</strong>: Adrenaline 0.3-0.5 mg <em>IM in anterolateral thigh</em> (1:1000) — DOC</li>
+<li><strong>Cardiac arrest</strong>: Adrenaline 1 mg IV every 3-5 min (1:10,000)</li>
+<li><strong>Local Anaesthesia</strong>: Adrenaline 1:200,000 → vasoconstriction, ↓ bleeding, ↑ duration (avoid in end-arteries — fingers, toes, penis)</li>
+<li><strong>Scorpion sting / Russell's viper bite</strong> → autonomic storm → DOC <em>Prazosin (α1 blocker)</em></li>
+<li><strong>Hypertensive emergency in pheochromocytoma</strong>: Phentolamine (or Sodium nitroprusside)</li>
+</ul>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Adrenergic Drugs</div>
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Anaphylaxis DOC</strong>: Adrenaline IM anterolateral thigh — NOT SC, NEVER IV bolus 1:1000</li>
+<li><strong>Methyldopa</strong> remains DOC for HTN in pregnancy (Cat B, safest); labetalol &amp; nifedipine are alternatives</li>
+<li><strong>Salmeterol &amp; Formoterol</strong> as MONOTHERAPY in asthma is CONTRAINDICATED — increases mortality. Always combine with ICS</li>
+<li><strong>Dobutamine</strong> stress echo — pharmacological stress for patients who can't exercise (CAD evaluation)</li>
+<li><strong>Cheese reaction</strong> — Tyramine + MAOI → hypertensive crisis; counsel patients on MAOI to avoid aged cheese, wine, fermented foods</li>
+<li><strong>Mirabegron</strong> alternative to antimuscarinics in OAB — no cognitive side effects (good for elderly)</li>
+<li><strong>Cardiac drug doses</strong>: 1 mg adrenaline IV in arrest (1:10,000); IM thigh 0.3-0.5 mg in anaphylaxis (1:1000)</li>
+<li><strong>Pseudoephedrine</strong> banned in many countries due to methamphetamine precursor use; replaced by phenylephrine</li>
+</ul>
+</div>
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Vibegron (Gemtesa, 2020-23)</strong> — β3 agonist with fewer drug interactions than mirabegron (no CYP3A4 inhibition)</li>
+<li><strong>Long-acting β2 agonists</strong>: Indacaterol, Olodaterol, Vilanterol — 24-hour duration, once daily for COPD/asthma</li>
+<li><strong>Inhaled triple therapy</strong> (LAMA + LABA + ICS) — Trelegy Ellipta (umeclidinium/vilanterol/fluticasone) — single inhaler</li>
+<li><strong>Selepressin (V1a agonist)</strong> for septic shock — vasopressin analog under investigation</li>
+<li><strong>Levosimendan</strong> — calcium sensitizer (acts on troponin) — alternative to dobutamine in acute HF</li>
+<li><strong>Lifileucel</strong> &amp; other TIL therapies — combine with epinephrine — newer cancer protocols</li>
+</ul>
+</div>
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Adrenaline route in anaphylaxis → <em>IM, anterolateral thigh</em></li>
+<li><strong>NEET PG 2024</strong>: DOC for HTN in pregnancy → <em>Methyldopa</em></li>
+<li><strong>INI-CET 2023</strong>: Drug for scorpion sting envenomation → <em>Prazosin</em></li>
+<li><strong>NEET PG 2024</strong>: β3 agonist for OAB → <em>Mirabegron / Vibegron</em></li>
+<li><strong>INI-CET 2024</strong>: ICU sedation with no respiratory depression → <em>Dexmedetomidine</em></li>
+<li><strong>NEET PG 2025</strong>: Adrenergic agonist used for tocolysis → <em>Ritodrine / Terbutaline</em></li>
+<li><strong>FMGE 2024</strong>: Cheese reaction caused by → <em>Tyramine + MAOI</em></li>
+</ul>
+</div>
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete explanation of <strong>Adrenergic Drugs, Catecholamines &amp; Selective Agonists</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Adrenergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>
+
+<span id="sub-antiadren-ans" style="display:block;height:1px;"></span>
+<h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🛑 4️⃣ ANTIADRENERGIC DRUGS (α &amp; β Blockers)</h4>
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that block the action of catecholamines at <em>α and/or β adrenergic receptors</em>. Also called <strong>sympatholytics</strong>.</p>
+
+<h4>📋 Classification — α Blockers</h4>
+<table>
+<tr><th>Type</th><th>Drugs</th><th>Key Feature</th></tr>
+<tr><td><strong>Non-selective, Irreversible</strong></td><td>Phenoxybenzamine</td><td>Long-acting (days); pre-op pheochromocytoma</td></tr>
+<tr><td><strong>Non-selective, Reversible</strong></td><td>Phentolamine, Tolazoline</td><td>Short-acting; IV for pheo crisis</td></tr>
+<tr><td><strong>α1 selective</strong></td><td>Prazosin, Terazosin, Doxazosin</td><td>HTN, BPH; first-dose hypotension</td></tr>
+<tr><td><strong>α1A selective (prostate)</strong></td><td>Tamsulosin, Silodosin, Alfuzosin</td><td>BPH — minimal BP effect</td></tr>
+<tr><td><strong>α2 selective</strong></td><td>Yohimbine</td><td>Historical impotence; ↑ NA release</td></tr>
+</table>
+
+<h4>📋 Classification — β Blockers</h4>
+<table>
+<tr><th>Type</th><th>Drugs</th><th>Key Feature</th></tr>
+<tr><td><strong>Non-selective (β1=β2)</strong></td><td>Propranolol, Nadolol, Timolol, Sotalol</td><td>HTN, migraine; AVOID in asthma</td></tr>
+<tr><td><strong>Non-selective with ISA</strong></td><td>Pindolol, Penbutolol, Carteolol, Oxprenolol</td><td>Partial agonist; less bradycardia</td></tr>
+<tr><td><strong>β1 selective (Cardioselective)</strong></td><td>Atenolol, Metoprolol, Bisoprolol, Esmolol, Acebutolol, Betaxolol</td><td>Safer in asthma; <em>'ABEAM'</em> mnemonic</td></tr>
+<tr><td><strong>β1 selective + NO release</strong></td><td>Nebivolol</td><td>HTN with metabolic syndrome — vasodilation via NO</td></tr>
+<tr><td><strong>Mixed α + β blocker</strong></td><td>Labetalol, Carvedilol</td><td>Labetalol — HTN in pregnancy/emergency; Carvedilol — HFrEF</td></tr>
+</table>
+
+<p><em>Mnemonic for cardioselective β-blockers — <strong>"BEAM AN"</strong></em>: Bisoprolol, Esmolol, Atenolol, Metoprolol, Acebutolol, Nebivolol.</p>
+
+<h4>💊 Major α Blockers Detail</h4>
+<table>
+<tr><th>Drug</th><th>Detail</th></tr>
+<tr><td><strong>Phenoxybenzamine</strong></td><td>Irreversible covalent α1+α2 blocker. Pre-op pheochromocytoma (2-3 weeks). Long duration (days)</td></tr>
+<tr><td><strong>Phentolamine</strong></td><td>Reversible. IV for pheochromocytoma crisis, MAOI hypertensive crisis, extravasation of vasopressors (local infiltration)</td></tr>
+<tr><td><strong>Prazosin</strong></td><td>α1 selective. HTN, BPH, scorpion bite (DOC), PTSD nightmares</td></tr>
+<tr><td><strong>Terazosin, Doxazosin</strong></td><td>Once-daily α1 blockers. HTN, BPH</td></tr>
+<tr><td><strong>Tamsulosin, Silodosin</strong></td><td>α1A selective (prostate). BPH with minimal BP effect</td></tr>
+</table>
+
+<p><strong>⚠️ First-dose hypotension</strong> — common with prazosin family; start with low evening dose to minimize symptomatic hypotension.</p>
+
+<h4>💊 Major β Blockers Detail</h4>
+<table>
+<tr><th>Drug</th><th>Selectivity</th><th>Special Use / Notes</th></tr>
+<tr><td><strong>Propranolol</strong></td><td>Non-selective</td><td>HTN, IHD, migraine prophylaxis, essential tremor, performance anxiety, thyrotoxicosis, hepatic encephalopathy (portal HTN), HOCM. High first-pass metabolism</td></tr>
+<tr><td><strong>Metoprolol</strong></td><td>β1</td><td>HTN, post-MI, HFrEF (1 of 3 evidence-based BBs in HF)</td></tr>
+<tr><td><strong>Bisoprolol</strong></td><td>β1 (most selective)</td><td>HFrEF, HTN</td></tr>
+<tr><td><strong>Atenolol</strong></td><td>β1</td><td>HTN; water-soluble (less CNS SE); renal excretion → reduce dose in CKD</td></tr>
+<tr><td><strong>Esmolol</strong></td><td>β1, ultra-short-acting (RBC esterase)</td><td>Intra-op HTN, SVT — titrable IV use</td></tr>
+<tr><td><strong>Nebivolol</strong></td><td>β1 + NO release</td><td>HTN especially with metabolic syndrome (improves vasodilation)</td></tr>
+<tr><td><strong>Carvedilol</strong></td><td>α + β + antioxidant</td><td>HFrEF (mortality benefit)</td></tr>
+<tr><td><strong>Labetalol</strong></td><td>α + β (β &gt; α)</td><td>HTN in pregnancy &amp; emergency (IV)</td></tr>
+<tr><td><strong>Timolol</strong></td><td>Non-selective</td><td>Glaucoma eye drops</td></tr>
+<tr><td><strong>Sotalol</strong></td><td>β + K⁺ channel block (Class III)</td><td>AF, VT; QT prolongation</td></tr>
+</table>
+
+<h4>🏥 Major Clinical Uses of β-Blockers</h4>
+<ul>
+<li><strong>Hypertension</strong> (3rd-4th line; not preferred initial monotherapy except in IHD, HF)</li>
+<li><strong>IHD / Post-MI</strong> — ↓ mortality</li>
+<li><strong>HFrEF</strong> — only 3 evidence-based: <em>Bisoprolol, Carvedilol, Metoprolol succinate</em></li>
+<li><strong>Arrhythmias</strong> — Class II antiarrhythmic; rate control in AF</li>
+<li><strong>Migraine prophylaxis</strong> — Propranolol (also nadolol, timolol)</li>
+<li><strong>Essential tremor</strong> — Propranolol</li>
+<li><strong>Thyrotoxicosis</strong> — Propranolol (also ↓ T4 → T3 conversion); thyroid storm</li>
+<li><strong>Performance anxiety</strong> — Propranolol</li>
+<li><strong>Glaucoma</strong> — Timolol eyedrops</li>
+<li><strong>Pheochromocytoma</strong> — ONLY after α-blockade (never before — unopposed α → hypertensive crisis)</li>
+<li><strong>Hepatic encephalopathy / Portal HTN</strong> — Propranolol, Nadolol</li>
+<li><strong>HOCM</strong> — Propranolol, metoprolol</li>
+<li><strong>Aortic dissection</strong> — IV labetalol or esmolol (target HR &lt; 60, SBP &lt; 120)</li>
+</ul>
+
+<h4>⚠️ ADRs &amp; Contraindications</h4>
+<ul>
+<li>Bradycardia, AV block, hypotension</li>
+<li>Bronchospasm (especially non-selective in asthma — AVOID)</li>
+<li>Cold extremities, peripheral vasoconstriction</li>
+<li>Masking of hypoglycaemic symptoms (use cautiously in diabetics on insulin)</li>
+<li>Fatigue, depression, sleep disturbance (lipid-soluble — propranolol)</li>
+<li>Sexual dysfunction</li>
+<li><strong>Rebound HTN/MI</strong> on abrupt withdrawal — taper slowly</li>
+</ul>
+
+<h4>🧪 β-Blocker Overdose Management</h4>
+<ol>
+<li>Atropine for bradycardia</li>
+<li><strong>Glucagon</strong> (DOC!) — bypasses β-receptor, ↑ cAMP via own GPCR</li>
+<li>IV calcium</li>
+<li>High-dose insulin + euglycemic glucose (HIE therapy)</li>
+<li>Pacing if refractory</li>
+</ol>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Antiadrenergic Drugs</div>
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Pheochromocytoma rule</strong>: ALWAYS α-block first (Phenoxybenzamine 2-3 wk pre-op), THEN β-blocker if tachycardia. NEVER β alone — unopposed α → severe HTN</li>
+<li><strong>Prazosin</strong> = DOC for scorpion envenomation (autonomic storm) + Russell's viper bite</li>
+<li><strong>Three evidence-based β-blockers in HFrEF</strong>: Bisoprolol, Carvedilol, Metoprolol succinate (B-C-M)</li>
+<li><strong>Esmolol</strong> — IV β1-blocker with t½ ~9 min (RBC esterase); titrable for perioperative HTN/SVT</li>
+<li><strong>Labetalol</strong> — DOC for hypertensive emergency in pregnancy &amp; aortic dissection</li>
+<li><strong>Nebivolol</strong> — unique β1 + NO release → vasodilation; preferred in HTN with metabolic syndrome</li>
+<li><strong>Atenolol</strong> being phased out as 1st-line HTN — no mortality benefit shown vs other antihypertensives</li>
+<li><strong>Carvedilol vs Metoprolol</strong> — Carvedilol superior in COPET trial for HFrEF</li>
+<li><strong>Tamsulosin</strong> safer in BPH than non-selective α-blockers (minimal BP effect; α1A selective)</li>
+<li><strong>NEVER abruptly stop β-blockers</strong> — taper over 1-2 weeks to prevent rebound</li>
+</ul>
+</div>
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>HFrEF "Four Pillars"</strong> — ARNI/ACEi + β-blocker + MRA + SGLT-2i (2022-23 ESC/AHA guidelines)</li>
+<li><strong>Silodosin</strong> — α1A highly selective; minimal cardiovascular SE in BPH</li>
+<li><strong>Sotalol IV (2022 approval)</strong> — for rapid loading in AF</li>
+<li><strong>Nebivolol</strong> — increasingly preferred in elderly HTN due to vasodilation + tolerance</li>
+<li><strong>Aficamten &amp; Mavacamten</strong> — myosin inhibitors for HOCM (alternative to β-blockers)</li>
+<li><strong>Beta-blocker reassessment in HTN</strong>: ESC 2018+ — β-blockers reserved for HTN with comorbidities (IHD, HF, AF, post-MI)</li>
+<li><strong>Continuous β-blocker in COPD</strong> — cardioselective shown safe in stable COPD</li>
+</ul>
+</div>
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Drug used pre-op in pheochromocytoma → <em>Phenoxybenzamine</em></li>
+<li><strong>INI-CET 2023</strong>: Why prefer phenoxybenzamine over phentolamine in pheo → <em>Irreversible, long-acting α blockade</em></li>
+<li><strong>NEET PG 2024</strong>: β-blocker preferred in pregnancy → <em>Labetalol (or Methyldopa as α2 agonist)</em></li>
+<li><strong>NEET PG 2024</strong>: Most cardioselective β-blocker → <em>Bisoprolol</em></li>
+<li><strong>INI-CET 2024</strong>: DOC for β-blocker overdose → <em>Glucagon</em></li>
+<li><strong>NEET PG 2025</strong>: β-blocker with NO releasing property → <em>Nebivolol</em></li>
+<li><strong>NEET PG 2024</strong>: α1A selective for BPH → <em>Tamsulosin (also Silodosin)</em></li>
+<li><strong>FMGE 2024</strong>: Drug used in scorpion bite → <em>Prazosin</em></li>
+</ul>
+</div>
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete explanation of <strong>α-Blockers, β-Blockers &amp; Their Clinical Uses</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiadrenergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>
+`}],
   moa:MOA.ans,
   pkpd:`<h4>Cholinergic Receptors</h4>
 <ul>
