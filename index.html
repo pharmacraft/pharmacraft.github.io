@@ -20,7 +20,10 @@
   --shadow-hover:0 12px 32px rgba(15,40,71,0.18);
 }
 html{scroll-behavior:smooth;}
-body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-height:1.6;}
+body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-height:1.6;
+  -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+/* Allow text selection only in form inputs */
+input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
 .app{min-height:100vh;
   background:radial-gradient(ellipse at 10% 0%,#c8e6dc 0%,transparent 55%),
              radial-gradient(ellipse at 90% 100%,#b8d4e6 0%,transparent 55%),
@@ -480,11 +483,25 @@ body{background:var(--bg);font-family:'Sora',sans-serif;color:var(--text);line-h
   font-weight:700;cursor:pointer;margin-left:auto;}
 .topic-export-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(20,160,133,0.3);}
 @media print{
-  .nav,.footer,.hero-cta,.daily-mcq,.bookmark-btn,.topic-export-btn,.search-trigger,.exam-filter,.quiz-launcher,
-  #practice-arena,.sub-tabs{display:none !important;}
-  .topic-detail .sub-panel{display:block !important;page-break-inside:avoid;}
-  .app{background:#fff !important;}
-  body{font-size:11pt;}
+  /* Hide ALL site content during print */
+  body * { visibility: hidden !important; }
+  body::before {
+    content: "🔒 Content Protected — Printing & PDF Saving Disabled\A\A © PharmaCraft, Dr. Susheel Kumar\A pharmacraft.in\A\A To revisit any topic, please visit the website online.";
+    visibility: visible !important;
+    white-space: pre-line;
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sora', sans-serif;
+    font-size: 22px; font-weight: 800;
+    color: #1a3a5f; text-align: center;
+    line-height: 1.8; padding: 40px;
+    border: 4px solid #14a085;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 80px rgba(20,160,133,0.3);
+    max-width: 90%;
+  }
+  html, body { background: #fff !important; }
 }
 
 /* ── RESPONSIVE ───────────────────────────────── */
@@ -4083,7 +4100,6 @@ function renderTopicAccordions(){
             <h3>${idx+1}. ${t.title}</h3>
             <span>${summaryText}</span>
           </div>
-          <button class="topic-export-btn" onclick="event.stopPropagation();exportTopic('${t.id}')" title="Print or save as PDF">📥 PDF</button>
           <div class="topic-toggle">+</div>
         </div>
         <div class="topic-detail-body">
@@ -4531,7 +4547,56 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
     if(e.key==='Escape') closeSearch();
   });
+
+  // ── 🔒 PDF / PRINT / SAVE LOCK ─────────────────
+  // Block Ctrl/Cmd+P (print), Ctrl/Cmd+S (save), Ctrl/Cmd+Shift+P (print preview)
+  document.addEventListener('keydown', (e)=>{
+    const mod = e.ctrlKey || e.metaKey;
+    if (mod && (e.key === 'p' || e.key === 'P' || e.key === 's' || e.key === 'S')) {
+      e.preventDefault();
+      e.stopPropagation();
+      showLockMessage('🔒 Printing & saving are disabled to protect content. Please access pharmacraft.in online.');
+      return false;
+    }
+  });
+
+  // Block window.print() programmatic call
+  window.print = function(){
+    showLockMessage('🔒 Printing is disabled to protect content.');
+    return false;
+  };
+
+  // Block beforeprint event (catches all print attempts including browser menu)
+  window.addEventListener('beforeprint', (e)=>{
+    document.title = "Content Protected — PharmaCraft";
+  });
+
+  // Block right-click context menu (prevents "Save as PDF" via right-click)
+  document.addEventListener('contextmenu', (e)=>{
+    // Allow right-click only on text inputs (so users can paste search etc.)
+    if (!['INPUT', 'TEXTAREA'].includes(e.target.tagName)) {
+      e.preventDefault();
+      showLockMessage('🔒 Right-click is disabled to protect content.');
+      return false;
+    }
+  });
 });
+
+// Pop-up lock notification
+function showLockMessage(msg){
+  let toast = document.getElementById('pc-lock-toast');
+  if (!toast){
+    toast = document.createElement('div');
+    toast.id = 'pc-lock-toast';
+    toast.style.cssText = 'position:fixed;top:24px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#1a3a5f,#14a085);color:#fff;padding:14px 22px;border-radius:12px;font-family:Sora,sans-serif;font-size:13px;font-weight:700;z-index:9999;box-shadow:0 8px 24px rgba(15,40,71,0.35);text-align:center;max-width:90%;line-height:1.6;';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.style.display = 'block';
+  toast.style.opacity = '1';
+  clearTimeout(toast._t);
+  toast._t = setTimeout(()=>{toast.style.opacity = '0';setTimeout(()=>toast.style.display = 'none', 300);}, 3500);
+}
 </script>
 
 </body>
