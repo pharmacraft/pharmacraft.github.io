@@ -911,6 +911,217 @@ const MOA = {
   </div>
 </div>`,
 
+  ansComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🧠 ANS Pharmacology — 4 Key Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize the synaptic, organ-level &amp; toxicological mechanisms of autonomic drugs.</p>
+</div>
+
+<!-- MOA 1: OP POISONING + TREATMENT -->
+<div class="moa-stage">
+  <div class="moa-title">☠️ MOA 1 — Organophosphate Poisoning &amp; Treatment (Atropine + 2-PAM)</div>
+  <svg class="moa-svg" viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 90 L200 90 L220 60 L220 120 L200 90" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="50" y="60" fill="#7a88b0" font-size="10">Pre-synaptic terminal</text>
+    <circle cx="120" cy="80" r="8" fill="#f5c518" opacity="0.8"/>
+    <circle cx="150" cy="100" r="8" fill="#f5c518" opacity="0.8"/>
+    <circle cx="180" cy="85" r="8" fill="#f5c518" opacity="0.8"/>
+    <text x="100" y="135" fill="#f5c518" font-size="9">ACh vesicles</text>
+    <g>
+      <circle cx="245" cy="95" r="5" fill="#f5c518"><animate attributeName="cx" from="230" to="290" dur="1.6s" repeatCount="indefinite"/></circle>
+      <circle cx="245" cy="80" r="5" fill="#f5c518"><animate attributeName="cx" from="230" to="290" dur="1.8s" repeatCount="indefinite" begin=".3s"/></circle>
+    </g>
+    <rect x="290" y="80" width="40" height="30" fill="#00d4aa" stroke="#fff"/>
+    <text x="295" y="100" fill="#08112a" font-size="11" font-weight="800">AChE</text>
+    <rect x="300" y="85" width="20" height="20" rx="2" fill="#ff5e7e" class="anim-bind"/>
+    <text x="265" y="65" fill="#ff5e7e" font-size="11" font-weight="700">OP inactivates AChE</text>
+    <text x="270" y="135" fill="#ff5e7e" font-size="10">✕ ACh NOT broken</text>
+    <path d="M360 60 L600 60 L600 130 L360 130 Z" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="500" y="55" fill="#7a88b0" font-size="10">Effector tissue</text>
+    <rect x="380" y="60" width="20" height="15" fill="#4da6ff"/>
+    <rect x="420" y="60" width="20" height="15" fill="#4da6ff"/>
+    <rect x="460" y="60" width="20" height="15" fill="#4da6ff"/>
+    <text x="380" y="50" fill="#4da6ff" font-size="10" font-weight="700">M Receptors</text>
+    <text x="380" y="105" fill="#f5c518" font-size="12" font-weight="700">↑↑↑ Cholinergic Crisis</text>
+    <text x="380" y="120" fill="#f5c518" font-size="10">DUMBBELS</text>
+    <line x1="30" y1="170" x2="670" y2="170" stroke="#fbbf24" stroke-dasharray="4,3"/>
+    <text x="285" y="190" fill="#fbbf24" font-size="13" font-weight="800">💊 TREATMENT</text>
+    <rect x="380" y="220" width="20" height="15" fill="#4da6ff"/>
+    <circle cx="390" cy="215" r="11" fill="#f97316" class="anim-bind"/>
+    <text x="380" y="208" fill="#f97316" font-size="9" font-weight="800">Atro</text>
+    <text x="30" y="220" fill="#f97316" font-size="11" font-weight="700">Atropine blocks M</text>
+    <text x="30" y="234" fill="#f97316" font-size="10">Reverses muscarinic effects</text>
+    <rect x="510" y="220" width="40" height="30" fill="#00d4aa" stroke="#fff"/>
+    <text x="515" y="240" fill="#08112a" font-size="11" font-weight="800">AChE</text>
+    <text x="500" y="208" fill="#10b981" font-size="11" font-weight="700">↑ Regenerated</text>
+    <circle cx="475" cy="235" r="11" fill="#10b981"><animate attributeName="cx" values="445;505;475" dur="2.5s" repeatCount="indefinite"/></circle>
+    <text x="465" y="239" fill="#fff" font-size="9" font-weight="800">PAM</text>
+    <text x="420" y="280" fill="#10b981" font-size="11" font-weight="700">2-PAM regenerates AChE</text>
+    <text x="375" y="295" fill="#10b981" font-size="10">Before 24-48h aging window</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#f5c518"></span>ACh</span>
+    <span><span class="dot" style="background:#ff5e7e"></span>OP</span>
+    <span><span class="dot" style="background:#f97316"></span>Atropine</span>
+    <span><span class="dot" style="background:#10b981"></span>2-PAM</span>
+  </div>
+</div>
+
+<!-- MOA 2: MYASTHENIA GRAVIS -->
+<div class="moa-stage">
+  <div class="moa-title">💪 MOA 2 — Myasthenia Gravis &amp; Neostigmine Treatment at NMJ</div>
+  <svg class="moa-svg" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 80 L210 80 L230 60 L230 120 L210 80" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="60" y="55" fill="#7a88b0" font-size="10">Motor nerve terminal</text>
+    <circle cx="110" cy="80" r="8" fill="#f5c518"/>
+    <circle cx="140" cy="100" r="8" fill="#f5c518"/>
+    <text x="115" y="135" fill="#f5c518" font-size="9">ACh vesicles</text>
+    <g>
+      <circle cx="245" cy="95" r="5" fill="#f5c518"><animate attributeName="cx" from="240" to="320" dur="1.8s" repeatCount="indefinite"/></circle>
+    </g>
+    <line x1="320" y1="60" x2="320" y2="140" stroke="#7a88b0" stroke-dasharray="3,3"/>
+    <rect x="320" y="60" width="280" height="60" fill="#172246" stroke="#00d4aa"/>
+    <text x="440" y="50" fill="#00d4aa" font-size="11" font-weight="700">Muscle End-Plate (NMJ)</text>
+    <rect x="345" y="60" width="20" height="20" fill="#4da6ff"/>
+    <rect x="395" y="60" width="20" height="20" fill="#4da6ff"/>
+    <rect x="445" y="60" width="20" height="20" fill="#4da6ff"/>
+    <rect x="495" y="60" width="20" height="20" fill="#4da6ff"/>
+    <rect x="545" y="60" width="20" height="20" fill="#4da6ff"/>
+    <text x="345" y="100" fill="#4da6ff" font-size="9">Nicotinic (Nm)</text>
+    <ellipse cx="395" cy="65" rx="14" ry="9" fill="#ff5e7e" class="anim-bind"/>
+    <ellipse cx="495" cy="65" rx="14" ry="9" fill="#ff5e7e" class="anim-bind"/>
+    <text x="370" y="40" fill="#ff5e7e" font-size="10" font-weight="700">Anti-AChR Ab (MG)</text>
+    <rect x="600" y="65" width="35" height="20" fill="#00d4aa" stroke="#fff"/>
+    <text x="603" y="79" fill="#08112a" font-size="10" font-weight="800">AChE</text>
+    <line x1="30" y1="170" x2="670" y2="170" stroke="#fbbf24" stroke-dasharray="4,3"/>
+    <text x="240" y="192" fill="#fbbf24" font-size="13" font-weight="800">💊 NEOSTIGMINE</text>
+    <rect x="600" y="225" width="35" height="20" fill="#00d4aa" stroke="#fff"/>
+    <circle cx="617" cy="220" r="11" fill="#7c3aed" class="anim-bind"/>
+    <text x="610" y="224" fill="#fff" font-size="8" font-weight="800">Neo</text>
+    <text x="540" y="265" fill="#7c3aed" font-size="11" font-weight="700">Neostigmine blocks AChE</text>
+    <text x="540" y="280" fill="#7c3aed" font-size="10">↑ ACh persists</text>
+    <g>
+      <circle cx="380" cy="230" r="6" fill="#f5c518"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="230" r="6" fill="#f5c518"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite" begin=".3s"/></circle>
+      <circle cx="460" cy="230" r="6" fill="#f5c518"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite" begin=".6s"/></circle>
+    </g>
+    <text x="40" y="225" fill="#10b981" font-size="11" font-weight="700">↑ ACh available</text>
+    <text x="40" y="245" fill="#10b981" font-size="10">Outcompetes antibodies</text>
+    <text x="40" y="265" fill="#10b981" font-size="11" font-weight="700">Muscle contraction restored</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#f5c518"></span>ACh</span>
+    <span><span class="dot" style="background:#ff5e7e"></span>Anti-AChR Ab</span>
+    <span><span class="dot" style="background:#7c3aed"></span>Neostigmine</span>
+  </div>
+</div>
+
+<!-- MOA 3: EYE -->
+<div class="moa-stage">
+  <div class="moa-title">👁️ MOA 3 — Effects of Cholinergic, Anticholinergic &amp; Adrenergic Drugs on Eye</div>
+  <svg class="moa-svg" viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="120" cy="100" rx="70" ry="38" fill="#fff" stroke="#1a3a5f" stroke-width="2"/>
+    <circle cx="120" cy="100" r="28" fill="#4da6ff"/>
+    <circle cx="120" cy="100" r="6" fill="#000"/>
+    <text x="80" y="155" fill="#10b981" font-size="11" font-weight="700">Pilocarpine (M3)</text>
+    <text x="60" y="170" fill="#10b981" font-size="10">Sphincter → MIOSIS</text>
+    <text x="60" y="184" fill="#10b981" font-size="10">Ciliary → Accommodation</text>
+    <text x="60" y="198" fill="#10b981" font-size="10">↓ IOP</text>
+    <ellipse cx="350" cy="100" rx="70" ry="38" fill="#fff" stroke="#1a3a5f" stroke-width="2"/>
+    <circle cx="350" cy="100" r="20" fill="#4da6ff"/>
+    <circle cx="350" cy="100" r="14" fill="#000"/>
+    <text x="305" y="155" fill="#f97316" font-size="11" font-weight="700">Atropine (M3 block)</text>
+    <text x="290" y="170" fill="#f97316" font-size="10">Sphincter → MYDRIASIS</text>
+    <text x="290" y="184" fill="#f97316" font-size="10">Ciliary → Cycloplegia</text>
+    <text x="290" y="198" fill="#f97316" font-size="10">↑ IOP (avoid in glaucoma)</text>
+    <ellipse cx="580" cy="100" rx="70" ry="38" fill="#fff" stroke="#1a3a5f" stroke-width="2"/>
+    <circle cx="580" cy="100" r="22" fill="#4da6ff"/>
+    <circle cx="580" cy="100" r="12" fill="#000"/>
+    <text x="535" y="155" fill="#7c3aed" font-size="11" font-weight="700">Phenylephrine (α1)</text>
+    <text x="510" y="170" fill="#7c3aed" font-size="10">Dilator → MYDRIASIS</text>
+    <text x="510" y="184" fill="#7c3aed" font-size="10">NO Cycloplegia (preferred)</text>
+    <text x="85" y="68" fill="#10b981" font-size="11" font-weight="700">Constricted</text>
+    <text x="328" y="68" fill="#f97316" font-size="11" font-weight="700">Dilated + Fixed</text>
+    <text x="540" y="68" fill="#7c3aed" font-size="11" font-weight="700">Dilated, reactive</text>
+    <line x1="30" y1="225" x2="670" y2="225" stroke="#fbbf24" stroke-dasharray="4,3"/>
+    <text x="225" y="248" fill="#fbbf24" font-size="13" font-weight="800">💊 Anti-Glaucoma Drugs (↓ IOP)</text>
+    <text x="30" y="272" fill="#7c3aed" font-size="11" font-weight="700">β-blocker (Timolol)</text>
+    <text x="30" y="285" fill="#7c3aed" font-size="10">↓ aqueous production</text>
+    <text x="180" y="272" fill="#10b981" font-size="11" font-weight="700">α2 (Brimonidine)</text>
+    <text x="180" y="285" fill="#10b981" font-size="10">↓ aqueous, ↑ uveoscleral</text>
+    <text x="370" y="272" fill="#f97316" font-size="11" font-weight="700">PG (Latanoprost)</text>
+    <text x="370" y="285" fill="#f97316" font-size="10">↑ outflow (1st line)</text>
+    <text x="540" y="272" fill="#0ea5e9" font-size="11" font-weight="700">CAI (Acetazolamide)</text>
+    <text x="540" y="285" fill="#0ea5e9" font-size="10">↓ aqueous</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#10b981"></span>Cholinergic</span>
+    <span><span class="dot" style="background:#f97316"></span>Anticholinergic</span>
+    <span><span class="dot" style="background:#7c3aed"></span>Adrenergic</span>
+  </div>
+</div>
+
+<!-- MOA 4: ANS INNERVATION TO ORGANS -->
+<div class="moa-stage">
+  <div class="moa-title">🫀 MOA 4 — ANS Innervation to Major Organs (Pharmacological Perspective)</div>
+  <svg class="moa-svg" viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg">
+    <rect x="220" y="10" width="120" height="28" rx="6" fill="#dc2626"/>
+    <text x="250" y="29" fill="#fff" font-size="12" font-weight="800">SYMPATHETIC</text>
+    <rect x="370" y="10" width="140" height="28" rx="6" fill="#10b981"/>
+    <text x="380" y="29" fill="#fff" font-size="12" font-weight="800">PARASYMPATHETIC</text>
+    <text x="20" y="68" fill="#1a3a5f" font-size="13" font-weight="800">❤️ HEART</text>
+    <text x="220" y="68" fill="#dc2626" font-size="11" font-weight="700">β1 → ↑HR, contractility, AV, renin</text>
+    <text x="370" y="68" fill="#10b981" font-size="11" font-weight="700">M2 → ↓HR, AV conduction</text>
+    <text x="20" y="100" fill="#1a3a5f" font-size="13" font-weight="800">🫁 LUNGS</text>
+    <text x="220" y="100" fill="#dc2626" font-size="11" font-weight="700">β2 → Bronchodilation</text>
+    <text x="370" y="100" fill="#10b981" font-size="11" font-weight="700">M3 → Bronchoconstriction</text>
+    <text x="20" y="132" fill="#1a3a5f" font-size="13" font-weight="800">👁️ EYE</text>
+    <text x="220" y="125" fill="#dc2626" font-size="11" font-weight="700">α1 (dilator) → Mydriasis</text>
+    <text x="220" y="139" fill="#dc2626" font-size="10">β → ↑ aqueous humor</text>
+    <text x="370" y="125" fill="#10b981" font-size="11" font-weight="700">M3 (sphincter) → Miosis</text>
+    <text x="370" y="139" fill="#10b981" font-size="10">M3 (ciliary) → Accommodation</text>
+    <text x="20" y="172" fill="#1a3a5f" font-size="13" font-weight="800">🍽️ GIT</text>
+    <text x="220" y="165" fill="#dc2626" font-size="11" font-weight="700">α2, β2 → ↓ motility</text>
+    <text x="220" y="179" fill="#dc2626" font-size="10">α1 → Sphincter contraction</text>
+    <text x="370" y="165" fill="#10b981" font-size="11" font-weight="700">M3 → ↑ motility, ↑ secretions</text>
+    <text x="370" y="179" fill="#10b981" font-size="10">Sphincter relaxation</text>
+    <text x="20" y="212" fill="#1a3a5f" font-size="13" font-weight="800">🫛 BLADDER</text>
+    <text x="220" y="205" fill="#dc2626" font-size="11" font-weight="700">β3 (detrusor) → Relaxation</text>
+    <text x="220" y="219" fill="#dc2626" font-size="10">α1 (sphincter) → Contraction</text>
+    <text x="370" y="205" fill="#10b981" font-size="11" font-weight="700">M3 (detrusor) → Contraction</text>
+    <text x="370" y="219" fill="#10b981" font-size="10">Sphincter relaxation</text>
+    <text x="20" y="252" fill="#1a3a5f" font-size="13" font-weight="800">🩸 BLOOD VESSELS</text>
+    <text x="220" y="245" fill="#dc2626" font-size="11" font-weight="700">α1 → Vasoconstriction</text>
+    <text x="220" y="259" fill="#dc2626" font-size="11" font-weight="700">β2 → Vasodilation (skel m)</text>
+    <text x="370" y="252" fill="#7a88b0" font-size="11" font-style="italic">No direct PSNS</text>
+    <text x="20" y="290" fill="#1a3a5f" font-size="13" font-weight="800">🫘 KIDNEY</text>
+    <text x="220" y="290" fill="#dc2626" font-size="11" font-weight="700">β1 (JG) → ↑ Renin → AngII</text>
+    <text x="370" y="290" fill="#7a88b0" font-size="11" font-style="italic">Minimal</text>
+    <text x="20" y="322" fill="#1a3a5f" font-size="13" font-weight="800">🫀 LIVER</text>
+    <text x="220" y="322" fill="#dc2626" font-size="11" font-weight="700">β2, α1 → ↑ glycogenolysis</text>
+    <text x="370" y="322" fill="#10b981" font-size="11" font-weight="700">M3 → ↑ glycogen synthesis</text>
+    <text x="20" y="354" fill="#1a3a5f" font-size="13" font-weight="800">🍩 PANCREAS</text>
+    <text x="220" y="354" fill="#dc2626" font-size="11" font-weight="700">α2 → ↓ Insulin; β2 → ↑ Insulin</text>
+    <text x="370" y="354" fill="#10b981" font-size="11" font-weight="700">M3 → ↑ Insulin secretion</text>
+    <text x="20" y="386" fill="#1a3a5f" font-size="13" font-weight="800">💦 SWEAT</text>
+    <text x="220" y="380" fill="#dc2626" font-size="11" font-weight="700">⚡ Cholinergic SNS! (M3)</text>
+    <text x="220" y="394" fill="#dc2626" font-size="10">Exception — ACh in SNS</text>
+    <text x="370" y="386" fill="#7a88b0" font-size="11" font-style="italic">No PSNS</text>
+    <text x="20" y="420" fill="#1a3a5f" font-size="13" font-weight="800">⚡ ADRENAL MED</text>
+    <text x="220" y="414" fill="#dc2626" font-size="11" font-weight="700">Modified ganglion — Nn</text>
+    <text x="220" y="428" fill="#dc2626" font-size="10">Adrenaline 80% + NA 20%</text>
+    <text x="370" y="420" fill="#7a88b0" font-size="11" font-style="italic">No PSNS</text>
+    <text x="20" y="452" fill="#1a3a5f" font-size="13" font-weight="800">🤰 UTERUS</text>
+    <text x="220" y="452" fill="#dc2626" font-size="11" font-weight="700">β2 → Relaxation (tocolysis)</text>
+    <text x="370" y="452" fill="#7a88b0" font-size="11" font-style="italic">Minimal</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#dc2626"></span>Sympathetic</span>
+    <span><span class="dot" style="background:#10b981"></span>Parasympathetic</span>
+  </div>
+</div>
+`,
+
   ans: `
 <div class="moa-stage">
   <div class="moa-title">⚙️ Autonomic Synapse – Neurotransmitter Release & Receptor Activation</div>
@@ -2866,10 +3077,10 @@ e:"Loading Dose = Vd × Target Css / F. Maintenance Dose = Cl × Css. Knowing Vd
 TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
   hiddenTabs:['pkpd','adr','drugs'],
   subtopics:[
-    {n:1,label:"Cholinergic Drugs",panelId:"details",anchor:"sub-cholin"},
-    {n:2,label:"Anticholinergic Drugs",panelId:"details",anchor:"sub-anticholin"},
-    {n:3,label:"Adrenergic Drugs",panelId:"details",anchor:"sub-adrenergic"},
-    {n:4,label:"Antiadrenergic Drugs",panelId:"details",anchor:"sub-antiadren"}
+    {n:1,label:"Cholinergic Drugs",panelId:"cholin"},
+    {n:2,label:"Anticholinergic Drugs",panelId:"anticholin"},
+    {n:3,label:"Adrenergic Drugs",panelId:"adrenergic"},
+    {n:4,label:"Antiadrenergic Drugs",panelId:"antiadren"}
   ],
   classification:`<h4>Autonomic Nervous System — Overview</h4>
 <p>The Autonomic Nervous System (ANS) is the involuntary motor system regulating <em>visceral functions</em> — cardiovascular, respiratory, GI, urinary, exocrine glands &amp; metabolism. It has two complementary divisions:</p>
@@ -2910,8 +3121,8 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 </ul>
 </div>
 <p style="margin-top:12px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>For detailed content of Cholinergic, Anticholinergic, Adrenergic &amp; Antiadrenergic drugs — please use the 4-button Sub-Topic Navigator above</em></p>`,
-  extraPanels:[{id:"details",content:`
-<span id="sub-cholin-ans" style="display:block;height:1px;"></span>
+  extraPanels:[
+    {id:"cholin",content:`<span id="sub-cholin-ans" style="display:block;height:1px;"></span>
 <h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💧 1️⃣ CHOLINERGIC DRUGS</h4>
 <p style="margin-top:14px;"><strong>Definition:</strong> Drugs that mimic or potentiate the action of <em>acetylcholine</em> at muscarinic and/or nicotinic receptors. Also called <strong>parasympathomimetics</strong>.</p>
 
@@ -3028,9 +3239,8 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 <p>For complete explanation of <strong>Cholinergic Drugs, Anti-Cholinesterases &amp; OP Poisoning</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Cholinergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>
-
-<span id="sub-anticholin-ans" style="display:block;height:1px;"></span>
+</div>`},
+    {id:"anticholin",content:`<span id="sub-anticholin-ans" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🚫 2️⃣ ANTICHOLINERGIC DRUGS</h4>
 <p style="margin-top:14px;"><strong>Definition:</strong> Drugs that block the action of <em>acetylcholine</em> at muscarinic and/or nicotinic receptors. Also called <strong>parasympatholytics</strong> (when blocking M receptors).</p>
 
@@ -3149,9 +3359,8 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 <p>For complete explanation of <strong>Anticholinergic Drugs, NMJ Blockers &amp; Atropine Pharmacology</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Anticholinergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>
-
-<span id="sub-adrenergic-ans" style="display:block;height:1px;"></span>
+</div>`},
+    {id:"adrenergic",content:`<span id="sub-adrenergic-ans" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚡ 3️⃣ ADRENERGIC DRUGS</h4>
 <p style="margin-top:14px;"><strong>Definition:</strong> Drugs that mimic the effects of catecholamines (Adrenaline, Noradrenaline, Dopamine) by activating <em>α and/or β adrenergic receptors</em>. Also called <strong>sympathomimetics</strong>.</p>
 
@@ -3267,9 +3476,8 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 <p>For complete explanation of <strong>Adrenergic Drugs, Catecholamines &amp; Selective Agonists</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Adrenergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>
-
-<span id="sub-antiadren-ans" style="display:block;height:1px;"></span>
+</div>`},
+    {id:"antiadren",content:`<span id="sub-antiadren-ans" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🛑 4️⃣ ANTIADRENERGIC DRUGS (α &amp; β Blockers)</h4>
 <p style="margin-top:14px;"><strong>Definition:</strong> Drugs that block the action of catecholamines at <em>α and/or β adrenergic receptors</em>. Also called <strong>sympatholytics</strong>.</p>
 
@@ -3405,9 +3613,9 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 <p>For complete explanation of <strong>α-Blockers, β-Blockers &amp; Their Clinical Uses</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiadrenergic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>
-`}],
-  moa:MOA.ans,
+</div>`}
+  ],
+  moa:MOA.ansComplete,
   pkpd:`<h4>Cholinergic Receptors</h4>
 <ul>
 <li><strong>Muscarinic (G-protein coupled):</strong> M1 (CNS/ENS), M2 (heart, Gi → ↓HR), M3 (smooth muscle, glands, Gq → contraction), M4, M5</li>
