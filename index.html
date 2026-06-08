@@ -1635,8 +1635,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
   subtopics:[
     {n:1,label:"Nature, Sources & Info Resources",panelId:"sources"},
     {n:2,label:"Routes of Drug Administration",panelId:"routes"},
-    {n:3,label:"Pharmacokinetics (ADME)",panelId:"pkpd",anchor:"sub-pk"},
-    {n:4,label:"Pharmacodynamics",panelId:"pkpd",anchor:"sub-pd"},
+    {n:3,label:"Pharmacokinetics (ADME)",panelId:"pkpd"},
+    {n:4,label:"Pharmacodynamics",panelId:"pd"},
     {n:5,label:"ADR & Pharmacovigilance",panelId:"adr"},
     {n:6,label:"Drug Development & Trials",panelId:"dev"}
   ],
@@ -1920,7 +1920,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Nature, Sources &amp; Drug Information Resources — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>`},
     {id:"routes",content:`<span id="sub-routes-general" style="display:block;height:1px;"></span>
-<h4 style="margin-top:18px;">Routes of Drug Administration</h4>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💊 ROUTES OF DRUG ADMINISTRATION</h4>
 <p><strong>Definition:</strong> The pathway through which a drug enters the body to produce its therapeutic effect. Choice depends on — drug's physicochemical properties, desired onset, site of action, patient condition, duration, compliance &amp; cost.</p>
 
 <h4>📋 Classification of Routes</h4>
@@ -2357,7 +2357,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
   ],
   moa:MOA.generalReceptors,
   pkpd:`<span id="sub-pk-general" style="display:block;height:1px;"></span>
-<h4>PHARMACOKINETICS — ADME</h4>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">📊 PHARMACOKINETICS — ADME</h4>
 <p><strong>Definition:</strong> Pharmacokinetics (PK) describes <em>what the body does to the drug</em> — its movement, fate, and chemical changes from the moment of administration to its final elimination. The four classical pillars are <strong>A</strong>bsorption · <strong>D</strong>istribution · <strong>M</strong>etabolism · <strong>E</strong>xcretion (ADME).</p>
 <p>Understanding ADME is essential to determine the <em>dose, frequency, route, drug interactions, and dose adjustment</em> in disease (renal/hepatic failure, pregnancy, elderly).</p>
 
@@ -2587,10 +2587,9 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p>For complete animated explanation of <strong>ADME, CYP450, PK Parameters &amp; Drug Interactions</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacokinetics ADME — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
-</div>
-
-<span id="sub-pd-general" style="display:block;height:1px;"></span>
-<h4 style="margin-top:24px;">🧠 PHARMACODYNAMICS</h4>
+</div>`,
+  pd:`<span id="sub-pd-general" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧠 PHARMACODYNAMICS</h4>
 <p><strong>Definition:</strong> Pharmacodynamics (PD) describes <em>what the drug does to the body</em> — the biochemical, physiological &amp; molecular effects of drugs and their <strong>mechanism of action</strong>. While PK determines drug levels at the site of action, PD determines the <em>magnitude and time-course of the effect</em>.</p>
 
 <h4 style="margin-top:16px;">📡 1. Mechanisms of Drug Action</h4>
@@ -2747,7 +2746,7 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Pharmacodynamics — Pharmacology Lecture by Dr. Susheel Kumar"</em></p>
 </div>`,
   adr:`<span id="sub-adr-general" style="display:block;height:1px;"></span>
-<h4>ADVERSE DRUG REACTIONS (ADRs) &amp; PHARMACOVIGILANCE</h4>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚠️ ADVERSE DRUG REACTIONS &amp; PHARMACOVIGILANCE</h4>
 <p><strong>Definition (WHO):</strong> "A response to a drug which is <em>noxious and unintended</em>, and which occurs at doses normally used in humans for prophylaxis, diagnosis, or therapy of disease, or for modification of physiological function."</p>
 
 <h4>Important Definitions</h4>
@@ -4928,6 +4927,7 @@ function renderTopicAccordions(){
           ${!isHidden('class')?`<div id="class-${t.id}" class="sub-panel ${isFirstActive('class')}"><div class="cblock">${t.classification}</div>${t.mnemonic?`<div class="mnemonic"><h4>🧠 Memory Aid</h4><p>${t.mnemonic}</p></div>`:''}</div>`:`<div id="class-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.classification||''}</div></div>`}
           <div id="moa-${t.id}" class="sub-panel ${isFirstActive('moa')}">${t.moa}</div>
           ${!isHidden('pkpd')?`<div id="pkpd-${t.id}" class="sub-panel ${isFirstActive('pkpd')}"><div class="cblock">${t.pkpd}</div></div>`:`<div id="pkpd-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.pkpd||''}</div></div>`}
+          ${t.pd?`<div id="pd-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.pd}</div></div>`:''}
           ${!isHidden('adr')?`<div id="adr-${t.id}" class="sub-panel ${isFirstActive('adr')}"><div class="high-yield"><h4>⚠️ Adverse Drug Reactions &amp; Toxicity</h4>${t.adr}</div></div>`:`<div id="adr-${t.id}" class="sub-panel" style="display:none;"><div class="high-yield">${t.adr||''}</div></div>`}
           ${!isHidden('drugs')?`<div id="drugs-${t.id}" class="sub-panel ${isFirstActive('drugs')}"><div class="drug-grid">${t.drugs.map((d,di)=>renderDrugCard(d,t.id,di)).join('')}</div></div>`:''}
           ${extraPanelsHTML}
