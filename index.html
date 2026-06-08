@@ -1064,60 +1064,106 @@ const MOA = {
 <!-- MOA 4: ANS INNERVATION TO ORGANS -->
 <div class="moa-stage">
   <div class="moa-title">🫀 MOA 4 — ANS Innervation to Major Organs (Pharmacological Perspective)</div>
-  <svg class="moa-svg" viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg">
-    <rect x="220" y="10" width="120" height="28" rx="6" fill="#dc2626"/>
-    <text x="250" y="29" fill="#fff" font-size="12" font-weight="800">SYMPATHETIC</text>
-    <rect x="370" y="10" width="140" height="28" rx="6" fill="#10b981"/>
-    <text x="380" y="29" fill="#fff" font-size="12" font-weight="800">PARASYMPATHETIC</text>
-    <text x="20" y="68" fill="#1a3a5f" font-size="13" font-weight="800">❤️ HEART</text>
-    <text x="220" y="68" fill="#dc2626" font-size="11" font-weight="700">β1 → ↑HR, contractility, AV, renin</text>
-    <text x="370" y="68" fill="#10b981" font-size="11" font-weight="700">M2 → ↓HR, AV conduction</text>
-    <text x="20" y="100" fill="#1a3a5f" font-size="13" font-weight="800">🫁 LUNGS</text>
-    <text x="220" y="100" fill="#dc2626" font-size="11" font-weight="700">β2 → Bronchodilation</text>
-    <text x="370" y="100" fill="#10b981" font-size="11" font-weight="700">M3 → Bronchoconstriction</text>
-    <text x="20" y="132" fill="#1a3a5f" font-size="13" font-weight="800">👁️ EYE</text>
-    <text x="220" y="125" fill="#dc2626" font-size="11" font-weight="700">α1 (dilator) → Mydriasis</text>
-    <text x="220" y="139" fill="#dc2626" font-size="10">β → ↑ aqueous humor</text>
-    <text x="370" y="125" fill="#10b981" font-size="11" font-weight="700">M3 (sphincter) → Miosis</text>
-    <text x="370" y="139" fill="#10b981" font-size="10">M3 (ciliary) → Accommodation</text>
-    <text x="20" y="172" fill="#1a3a5f" font-size="13" font-weight="800">🍽️ GIT</text>
-    <text x="220" y="165" fill="#dc2626" font-size="11" font-weight="700">α2, β2 → ↓ motility</text>
-    <text x="220" y="179" fill="#dc2626" font-size="10">α1 → Sphincter contraction</text>
-    <text x="370" y="165" fill="#10b981" font-size="11" font-weight="700">M3 → ↑ motility, ↑ secretions</text>
-    <text x="370" y="179" fill="#10b981" font-size="10">Sphincter relaxation</text>
-    <text x="20" y="212" fill="#1a3a5f" font-size="13" font-weight="800">🫛 BLADDER</text>
-    <text x="220" y="205" fill="#dc2626" font-size="11" font-weight="700">β3 (detrusor) → Relaxation</text>
-    <text x="220" y="219" fill="#dc2626" font-size="10">α1 (sphincter) → Contraction</text>
-    <text x="370" y="205" fill="#10b981" font-size="11" font-weight="700">M3 (detrusor) → Contraction</text>
-    <text x="370" y="219" fill="#10b981" font-size="10">Sphincter relaxation</text>
-    <text x="20" y="252" fill="#1a3a5f" font-size="13" font-weight="800">🩸 BLOOD VESSELS</text>
-    <text x="220" y="245" fill="#dc2626" font-size="11" font-weight="700">α1 → Vasoconstriction</text>
-    <text x="220" y="259" fill="#dc2626" font-size="11" font-weight="700">β2 → Vasodilation (skel m)</text>
-    <text x="370" y="252" fill="#7a88b0" font-size="11" font-style="italic">No direct PSNS</text>
-    <text x="20" y="290" fill="#1a3a5f" font-size="13" font-weight="800">🫘 KIDNEY</text>
-    <text x="220" y="290" fill="#dc2626" font-size="11" font-weight="700">β1 (JG) → ↑ Renin → AngII</text>
-    <text x="370" y="290" fill="#7a88b0" font-size="11" font-style="italic">Minimal</text>
-    <text x="20" y="322" fill="#1a3a5f" font-size="13" font-weight="800">🫀 LIVER</text>
-    <text x="220" y="322" fill="#dc2626" font-size="11" font-weight="700">β2, α1 → ↑ glycogenolysis</text>
-    <text x="370" y="322" fill="#10b981" font-size="11" font-weight="700">M3 → ↑ glycogen synthesis</text>
-    <text x="20" y="354" fill="#1a3a5f" font-size="13" font-weight="800">🍩 PANCREAS</text>
-    <text x="220" y="354" fill="#dc2626" font-size="11" font-weight="700">α2 → ↓ Insulin; β2 → ↑ Insulin</text>
-    <text x="370" y="354" fill="#10b981" font-size="11" font-weight="700">M3 → ↑ Insulin secretion</text>
-    <text x="20" y="386" fill="#1a3a5f" font-size="13" font-weight="800">💦 SWEAT</text>
-    <text x="220" y="380" fill="#dc2626" font-size="11" font-weight="700">⚡ Cholinergic SNS! (M3)</text>
-    <text x="220" y="394" fill="#dc2626" font-size="10">Exception — ACh in SNS</text>
-    <text x="370" y="386" fill="#7a88b0" font-size="11" font-style="italic">No PSNS</text>
-    <text x="20" y="420" fill="#1a3a5f" font-size="13" font-weight="800">⚡ ADRENAL MED</text>
-    <text x="220" y="414" fill="#dc2626" font-size="11" font-weight="700">Modified ganglion — Nn</text>
-    <text x="220" y="428" fill="#dc2626" font-size="10">Adrenaline 80% + NA 20%</text>
-    <text x="370" y="420" fill="#7a88b0" font-size="11" font-style="italic">No PSNS</text>
-    <text x="20" y="452" fill="#1a3a5f" font-size="13" font-weight="800">🤰 UTERUS</text>
-    <text x="220" y="452" fill="#dc2626" font-size="11" font-weight="700">β2 → Relaxation (tocolysis)</text>
-    <text x="370" y="452" fill="#7a88b0" font-size="11" font-style="italic">Minimal</text>
+  <svg class="moa-svg" viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg">
+    <!-- Column headers -->
+    <rect x="180" y="10" width="180" height="32" rx="6" fill="#1a3a5f"/>
+    <text x="245" y="32" fill="#fff" font-size="13" font-weight="800">ORGAN</text>
+    <rect x="370" y="10" width="290" height="32" rx="6" fill="#dc2626"/>
+    <text x="445" y="32" fill="#fff" font-size="13" font-weight="800">SYMPATHETIC</text>
+    <rect x="670" y="10" width="320" height="32" rx="6" fill="#10b981"/>
+    <text x="755" y="32" fill="#fff" font-size="13" font-weight="800">PARASYMPATHETIC</text>
+
+    <!-- HEART -->
+    <line x1="20" y1="58" x2="990" y2="58" stroke="#e5e7eb"/>
+    <text x="30" y="80" fill="#1a3a5f" font-size="13" font-weight="800">❤️ HEART</text>
+    <text x="370" y="80" fill="#dc2626" font-size="12" font-weight="700">β1 → ↑HR, ↑contractility, ↑AV, ↑renin</text>
+    <text x="670" y="80" fill="#10b981" font-size="12" font-weight="700">M2 → ↓HR, ↓AV conduction</text>
+
+    <!-- LUNGS -->
+    <line x1="20" y1="98" x2="990" y2="98" stroke="#e5e7eb"/>
+    <text x="30" y="120" fill="#1a3a5f" font-size="13" font-weight="800">🫁 LUNGS</text>
+    <text x="370" y="120" fill="#dc2626" font-size="12" font-weight="700">β2 → Bronchodilation</text>
+    <text x="670" y="120" fill="#10b981" font-size="12" font-weight="700">M3 → Bronchoconstriction, ↑secretions</text>
+
+    <!-- EYE -->
+    <line x1="20" y1="138" x2="990" y2="138" stroke="#e5e7eb"/>
+    <text x="30" y="165" fill="#1a3a5f" font-size="13" font-weight="800">👁️ EYE</text>
+    <text x="370" y="158" fill="#dc2626" font-size="12" font-weight="700">α1 (dilator m) → Mydriasis</text>
+    <text x="370" y="178" fill="#dc2626" font-size="11">β (ciliary epi) → ↑ aqueous humor</text>
+    <text x="670" y="158" fill="#10b981" font-size="12" font-weight="700">M3 (sphincter) → Miosis</text>
+    <text x="670" y="178" fill="#10b981" font-size="11">M3 (ciliary m) → Accommodation</text>
+
+    <!-- GIT -->
+    <line x1="20" y1="198" x2="990" y2="198" stroke="#e5e7eb"/>
+    <text x="30" y="225" fill="#1a3a5f" font-size="13" font-weight="800">🍽️ GIT</text>
+    <text x="370" y="218" fill="#dc2626" font-size="12" font-weight="700">α2, β2 → ↓ Motility</text>
+    <text x="370" y="238" fill="#dc2626" font-size="11">α1 → Sphincter contraction</text>
+    <text x="670" y="218" fill="#10b981" font-size="12" font-weight="700">M3 → ↑ Motility, ↑ Secretions</text>
+    <text x="670" y="238" fill="#10b981" font-size="11">M3 → Sphincter relaxation</text>
+
+    <!-- BLADDER -->
+    <line x1="20" y1="258" x2="990" y2="258" stroke="#e5e7eb"/>
+    <text x="30" y="285" fill="#1a3a5f" font-size="13" font-weight="800">🫛 BLADDER</text>
+    <text x="370" y="278" fill="#dc2626" font-size="12" font-weight="700">β3 (detrusor) → Relaxation</text>
+    <text x="370" y="298" fill="#dc2626" font-size="11">α1 (trigone/sphincter) → Contraction</text>
+    <text x="670" y="278" fill="#10b981" font-size="12" font-weight="700">M3 (detrusor) → Contraction</text>
+    <text x="670" y="298" fill="#10b981" font-size="11">M3 (sphincter) → Relaxation</text>
+
+    <!-- BLOOD VESSELS -->
+    <line x1="20" y1="318" x2="990" y2="318" stroke="#e5e7eb"/>
+    <text x="30" y="345" fill="#1a3a5f" font-size="13" font-weight="800">🩸 BLOOD VESSELS</text>
+    <text x="370" y="338" fill="#dc2626" font-size="12" font-weight="700">α1 → Vasoconstriction (skin, splanchnic)</text>
+    <text x="370" y="358" fill="#dc2626" font-size="11">β2 → Vasodilation (skeletal muscle)</text>
+    <text x="670" y="348" fill="#7a88b0" font-size="12" font-style="italic">No direct PSNS innervation</text>
+
+    <!-- KIDNEY -->
+    <line x1="20" y1="378" x2="990" y2="378" stroke="#e5e7eb"/>
+    <text x="30" y="402" fill="#1a3a5f" font-size="13" font-weight="800">🫘 KIDNEY</text>
+    <text x="370" y="402" fill="#dc2626" font-size="12" font-weight="700">β1 (JG cells) → ↑ Renin → ↑ Ang II</text>
+    <text x="670" y="402" fill="#7a88b0" font-size="12" font-style="italic">Minimal</text>
+
+    <!-- LIVER -->
+    <line x1="20" y1="422" x2="990" y2="422" stroke="#e5e7eb"/>
+    <text x="30" y="446" fill="#1a3a5f" font-size="13" font-weight="800">🫀 LIVER</text>
+    <text x="370" y="446" fill="#dc2626" font-size="12" font-weight="700">β2, α1 → ↑ Glycogenolysis, gluconeogenesis</text>
+    <text x="670" y="446" fill="#10b981" font-size="12" font-weight="700">M3 → ↑ glycogen synthesis (minor)</text>
+
+    <!-- PANCREAS -->
+    <line x1="20" y1="466" x2="990" y2="466" stroke="#e5e7eb"/>
+    <text x="30" y="490" fill="#1a3a5f" font-size="13" font-weight="800">🍩 PANCREAS</text>
+    <text x="370" y="490" fill="#dc2626" font-size="12" font-weight="700">α2 → ↓ Insulin · β2 → ↑ Insulin</text>
+    <text x="670" y="490" fill="#10b981" font-size="12" font-weight="700">M3 → ↑ Insulin secretion</text>
+
+    <!-- SWEAT GLANDS -->
+    <line x1="20" y1="510" x2="990" y2="510" stroke="#e5e7eb"/>
+    <text x="30" y="537" fill="#1a3a5f" font-size="13" font-weight="800">💦 SWEAT GLANDS</text>
+    <text x="370" y="530" fill="#dc2626" font-size="12" font-weight="700">⚡ Cholinergic SNS! (M3)</text>
+    <text x="370" y="550" fill="#dc2626" font-size="11">Exception — ACh as NT in SNS</text>
+    <text x="670" y="540" fill="#7a88b0" font-size="12" font-style="italic">No PSNS innervation</text>
+
+    <!-- ADRENAL MEDULLA -->
+    <line x1="20" y1="570" x2="990" y2="570" stroke="#e5e7eb"/>
+    <text x="30" y="597" fill="#1a3a5f" font-size="13" font-weight="800">⚡ ADRENAL MED.</text>
+    <text x="370" y="590" fill="#dc2626" font-size="12" font-weight="700">Modified ganglion — Nn nicotinic</text>
+    <text x="370" y="610" fill="#dc2626" font-size="11">Releases Adrenaline (80%) + NA (20%)</text>
+    <text x="670" y="600" fill="#7a88b0" font-size="12" font-style="italic">No PSNS innervation</text>
+
+    <!-- UTERUS -->
+    <line x1="20" y1="630" x2="990" y2="630" stroke="#e5e7eb"/>
+    <text x="30" y="660" fill="#1a3a5f" font-size="13" font-weight="800">🤰 UTERUS</text>
+    <text x="370" y="653" fill="#dc2626" font-size="12" font-weight="700">β2 → Relaxation (tocolysis)</text>
+    <text x="370" y="673" fill="#dc2626" font-size="11">α1 → Contraction</text>
+    <text x="670" y="663" fill="#7a88b0" font-size="12" font-style="italic">Minimal direct innervation</text>
+
+    <!-- SALIVARY GLANDS -->
+    <line x1="20" y1="690" x2="990" y2="690" stroke="#e5e7eb"/>
+    <text x="30" y="713" fill="#1a3a5f" font-size="13" font-weight="800">💧 SALIVARY</text>
+    <text x="370" y="713" fill="#dc2626" font-size="12" font-weight="700">α1 → Thick, viscous saliva</text>
+    <text x="670" y="713" fill="#10b981" font-size="12" font-weight="700">M3 → Watery, profuse saliva</text>
   </svg>
   <div class="moa-legend">
-    <span><span class="dot" style="background:#dc2626"></span>Sympathetic</span>
-    <span><span class="dot" style="background:#10b981"></span>Parasympathetic</span>
+    <span><span class="dot" style="background:#dc2626"></span>Sympathetic (NA at α/β receptors)</span>
+    <span><span class="dot" style="background:#10b981"></span>Parasympathetic (ACh at M receptors)</span>
   </div>
 </div>
 `,
@@ -3200,6 +3246,11 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 </ul>
 
 <div class="boxes-header">💡 Quick Reference Boxes — Cholinergic Drugs</div>
+<div class="mnemonic" style="margin-top:14px;">
+<h4>🧠 Memory Aids — Cholinergic Drugs</h4>
+<p><strong>OP poisoning — DUMBBELS</strong>: <em>D</em>iarrhoea, <em>U</em>rination, <em>M</em>iosis, <em>B</em>radycardia, <em>B</em>ronchospasm, <em>E</em>mesis, <em>L</em>acrimation, <em>S</em>alivation.<br>
+<strong>Reversible Anti-ChE drugs</strong>: <em>"Don't Pee Naked Every Period"</em> — Donepezil, Pyridostigmine, Neostigmine, Edrophonium, Physostigmine.</p>
+</div>
 <div class="info-box pearl-box">
 <h4>📌 Clinical Pearls</h4>
 <ul>
@@ -3318,6 +3369,12 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 </ul>
 
 <div class="boxes-header">💡 Quick Reference Boxes — Anticholinergic Drugs</div>
+<div class="mnemonic" style="margin-top:14px;">
+<h4>🧠 Memory Aids — Anticholinergic Drugs</h4>
+<p><strong>Atropine Toxicity</strong> — <em>"Hot as a hare, Dry as a bone, Red as a beet, Blind as a bat, Mad as a hatter, Full as a flask"</em>.<br>
+<strong>Anti-M effects 'Can't see, Can't pee, Can't spit, Can't sh*t'</strong> — Mydriasis/cycloplegia, Urinary retention, Dry mouth, Constipation.<br>
+<strong>NMJ blockers — Non-depolarising end in '-curium' / '-uronium'</strong> (Atracurium, Pancuronium, Vecuronium, Rocuronium).</p>
+</div>
 <div class="info-box pearl-box">
 <h4>📌 Clinical Pearls</h4>
 <ul>
@@ -3435,6 +3492,12 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 </ul>
 
 <div class="boxes-header">💡 Quick Reference Boxes — Adrenergic Drugs</div>
+<div class="mnemonic" style="margin-top:14px;">
+<h4>🧠 Memory Aids — Adrenergic Drugs</h4>
+<p><strong>G-protein receptors 'QISS QIQ SQS'</strong> — α1=Q, α2=I, β1=S, β2=S, M1=Q, M2=I, M3=Q, D1=S, D2=I.<br>
+<strong>Receptor effects:</strong> α1 = constriction (vasoconstriction, mydriasis); β1 = "1 heart" (cardiostimulation); β2 = "2 lungs" (bronchodilation).<br>
+<strong>Adrenergic agonists ending in '-oline'</strong> are α2-agonists (Clonidine, Apraclonidine, Brimonidine).</p>
+</div>
 <div class="info-box pearl-box">
 <h4>📌 Clinical Pearls</h4>
 <ul>
@@ -3568,6 +3631,13 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 </ol>
 
 <div class="boxes-header">💡 Quick Reference Boxes — Antiadrenergic Drugs</div>
+<div class="mnemonic" style="margin-top:14px;">
+<h4>🧠 Memory Aids — Antiadrenergic Drugs</h4>
+<p><strong>β-blockers cardioselective — 'ABEAM'</strong>: <em>A</em>tenolol, <em>B</em>isoprolol, <em>E</em>smolol, <em>A</em>cebutolol, <em>M</em>etoprolol (+ Nebivolol).<br>
+<strong>α1-blockers end in '-osin'</strong>: Prazosin, Terazosin, Doxazosin, Tamsulosin, Silodosin, Alfuzosin.<br>
+<strong>HFrEF — 3 evidence-based β-blockers 'B-C-M'</strong>: Bisoprolol, Carvedilol, Metoprolol succinate.<br>
+<strong>β-blockers with ISA</strong>: Pindolol, Penbutolol, Carteolol, Acebutolol — useful when bradycardia is concern.</p>
+</div>
 <div class="info-box pearl-box">
 <h4>📌 Clinical Pearls</h4>
 <ul>
@@ -3668,7 +3738,7 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
     {q:"Drug of choice for anaphylaxis is:",o:["Hydrocortisone","Chlorpheniramine","Adrenaline IM","Salbutamol nebulisation"],a:"Adrenaline IM",e:"Adrenaline 0.3-0.5 mg IM into anterolateral thigh is the immediate life-saving drug — α effects reverse vasodilation, β2 reverses bronchospasm, β1 supports cardiac output."},
     {q:"All are cardioselective β-blockers EXCEPT:",o:["Atenolol","Metoprolol","Bisoprolol","Propranolol"],a:"Propranolol",e:"Cardioselective (β1) = AMBEN — Atenolol, Metoprolol, Bisoprolol, Esmolol, Nebivolol, (also Acebutolol). Propranolol blocks both β1 + β2."}
   ],
-  mnemonic:`<strong>Atropine toxicity</strong> – &ldquo;Hot, Dry, Red, Blind, Mad&rdquo;. <strong>OP poisoning</strong> – DUMBBELS. <strong>β-blockers cardioselective</strong> – ABEAM (Atenolol, Bisoprolol, Esmolol, Acebutolol, Metoprolol).`
+  mnemonic:`<strong>ANS Overview</strong> — Sympathetic (Thoracolumbar T1-L2) "fight or flight" · Parasympathetic (Craniosacral CN III/VII/IX/X + S2-4) "rest &amp; digest". <br><strong>NTs:</strong> ACh at all pre-ganglionic + all PSNS post-ganglionic + sympathetic to sweat glands. NA at most sympathetic post-ganglionic. <br><strong>G-protein mnemonic 'QISS QIQ SQS':</strong> α1=Q, α2=I, β1=S, β2=S, M1=Q, M2=I, M3=Q, D1=S, D2=I, H1=Q, H2=S, V1=Q, V2=S.`
 });
 
 TOPICS.push({id:"autacoids",icon:"🌡️",title:"Autacoids & NSAIDs",
