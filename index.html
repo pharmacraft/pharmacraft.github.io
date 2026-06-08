@@ -1633,12 +1633,12 @@ const MOA = {
 TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
   hiddenTabs:['pkpd','adr','drugs'],
   subtopics:[
-    {n:1,label:"Nature, Sources & Info Resources",panelId:"details",anchor:"sub-sources"},
-    {n:2,label:"Routes of Drug Administration",panelId:"details",anchor:"sub-routes"},
+    {n:1,label:"Nature, Sources & Info Resources",panelId:"sources"},
+    {n:2,label:"Routes of Drug Administration",panelId:"routes"},
     {n:3,label:"Pharmacokinetics (ADME)",panelId:"pkpd",anchor:"sub-pk"},
     {n:4,label:"Pharmacodynamics",panelId:"pkpd",anchor:"sub-pd"},
     {n:5,label:"ADR & Pharmacovigilance",panelId:"adr"},
-    {n:6,label:"Drug Development & Trials",panelId:"details",anchor:"sub-dev"}
+    {n:6,label:"Drug Development & Trials",panelId:"dev"}
   ],
   classification:`<h4>Branches of Pharmacology</h4>
 <table><tr><th>Branch</th><th>Definition</th></tr>
@@ -1664,7 +1664,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 </div>
 <p style="margin-top:12px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>For detailed content of Sources, Routes, PK, PD, ADR &amp; Drug Development — please use the 6-button Sub-Topic Navigator above</em></p>`,
 
-  extraPanels:[{id:"details",content:`<span id="sub-sources-general" style="display:block;height:1px;"></span>
+  extraPanels:[
+    {id:"sources",content:`<span id="sub-sources-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🌱 NATURE, SOURCES &amp; INFORMATION RESOURCES OF DRUGS</h4>
 
 <p style="margin-top:14px;"><strong>Definition (Drug — WHO):</strong> "Any substance or product that is used or intended to be used to <em>modify or explore physiological systems or pathological states</em> for the benefit of the recipient." (Origin – Dutch <em>droog</em> = dry herb)</p>
@@ -1917,8 +1918,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p>For complete animated explanation of <strong>Nature, Sources of Drugs, Nomenclature, Pharmacopoeias &amp; Drug Information Resources</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Nature, Sources &amp; Drug Information Resources — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>
-<span id="sub-routes-general" style="display:block;height:1px;"></span>
+</div>`},
+    {id:"routes",content:`<span id="sub-routes-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:18px;">Routes of Drug Administration</h4>
 <p><strong>Definition:</strong> The pathway through which a drug enters the body to produce its therapeutic effect. Choice depends on — drug's physicochemical properties, desired onset, site of action, patient condition, duration, compliance &amp; cost.</p>
 
@@ -2065,7 +2066,43 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Routes of Drug Administration — Pharmacology by Dr. Susheel Kumar"</em></p>
 </div>
 
-<span id="sub-dev-general" style="display:block;height:1px;"></span>
+<div class="mnemonic" style="margin-top:14px;">
+<h4>🧠 Memory Aids — Routes of Drug Administration</h4>
+<p><strong>Sublingual drugs 'Nitro Buys Nifty'</strong>: Nitroglycerin, Buprenorphine, Nifedipine, Isoprenaline, Methyl-testosterone.<br>
+<strong>High first-pass metabolism 'LIP MAN'</strong>: Lignocaine, Isoprenaline, Propranolol, Morphine, Aspirin, Nitroglycerin (also Verapamil, Hydralazine).<br>
+<strong>Intrathecal drugs 'BMW'</strong>: Baclofen (spasticity), Methotrexate (CNS leukaemia), Water-soluble anaesthetics (Bupivacaine). ⚠️ NEVER Vincristine IT — fatal!<br>
+<strong>Depot preparations 'BeHMo-LG'</strong>: Benzathine penicillin (3-4 wk), Haloperidol decanoate (4 wk), Medroxyprogesterone DMPA (3 mo), Leuprolide (1-6 mo), Goserelin implant.<br>
+<strong>Transdermal patches 'FENS-NCR'</strong>: Fentanyl, Estrogen, Nitroglycerin, Scopolamine, Nicotine, Clonidine, Rivastigmine.</p>
+</div>
+
+<div class="info-box pyq-box" style="margin-top:14px;">
+<h4>🎯 NEET PG / INI-CET — Routes Top-10 Points</h4>
+<ol style="padding-left:20px;line-height:1.9;">
+<li><strong>100% bioavailability</strong> = IV only (by definition)</li>
+<li><strong>Fastest onset</strong>: IV (15-30 sec) — even Sublingual takes 1-3 min</li>
+<li><strong>DOC for anaphylaxis</strong> = Adrenaline IM in anterolateral thigh (NOT SC, NOT IV)</li>
+<li><strong>Status epilepticus in child without IV access</strong>: Buccal/Intranasal Midazolam or Rectal Diazepam</li>
+<li><strong>Insulin route</strong> = SC (Regular insulin can be IV in DKA only)</li>
+<li><strong>Nitroglycerin TTS patch</strong>: 12 h on, 12 h off (prevent tolerance)</li>
+<li><strong>Inhaled drugs for asthma</strong>: Local action → minimal systemic SE</li>
+<li><strong>Drugs absorbed in stomach</strong>: Weak acids (aspirin); weak bases absorbed in intestine</li>
+<li><strong>Rectal lower 1/3</strong> partially bypasses liver (→ IVC directly)</li>
+<li><strong>Intrathecal Methotrexate</strong> dose = small (12 mg) — NEVER give IT Vincristine (fatal!)</li>
+</ol>
+</div>
+
+<div class="info-box pearl-box" style="margin-top:14px;">
+<h4>📋 Case-Based Insights — Routes</h4>
+<ul>
+<li><strong>Case 1</strong>: 6-yr-old in convulsions, no IV access → <em>Buccal midazolam 0.3 mg/kg</em></li>
+<li><strong>Case 2</strong>: Bee-sting anaphylaxis → <em>Adrenaline 0.3-0.5 mg IM anterolateral thigh</em></li>
+<li><strong>Case 3</strong>: Cancer pt with chronic severe pain → <em>Transdermal Fentanyl patch ± IT morphine</em></li>
+<li><strong>Case 4</strong>: Schizophrenia non-compliant → <em>Haloperidol decanoate IM monthly</em></li>
+<li><strong>Case 5</strong>: HCC with liver mass → <em>Intra-arterial chemoembolization (TACE) with Doxorubicin</em></li>
+<li><strong>Case 6</strong>: ALL with CNS spread → <em>Intrathecal Methotrexate 12 mg + IT steroid</em></li>
+</ul>
+</div>`},
+    {id:"dev",content:`<span id="sub-dev-general" style="display:block;height:1px;"></span>
 <h4 style="margin-top:28px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧪 DRUG DEVELOPMENT &amp; CLINICAL TRIALS</h4>
 
 <p style="margin-top:14px;"><strong>Definition:</strong> Drug development is the <em>systematic, multi-stage process</em> of taking a candidate molecule from discovery → preclinical testing → clinical trials → regulatory approval → post-marketing surveillance. Average timeline <strong>10–15 years</strong>, average cost <strong>USD 1–2.6 billion</strong>, attrition rate <em>1 in 10,000</em> candidates reaches market.</p>
@@ -2316,7 +2353,8 @@ TOPICS.push({id:"general",icon:"🧪",title:"General Pharmacology",
 <p>For complete animated explanation of <strong>Drug Development, Clinical Trial Phases, Regulatory Bodies &amp; Ethics</strong>:</p>
 <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
 <p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Drug Development &amp; Clinical Trials — Pharmacology by Dr. Susheel Kumar"</em></p>
-</div>`}],
+</div>`}
+  ],
   moa:MOA.generalReceptors,
   pkpd:`<span id="sub-pk-general" style="display:block;height:1px;"></span>
 <h4>PHARMACOKINETICS — ADME</h4>
@@ -3084,40 +3122,11 @@ e:"Loading Dose = Vd × Target Css / F. Maintenance Dose = Cl × Css. Knowing Vd
     {q:"[6️⃣ DD] Orphan Drug Act (US, 1983) criterion for rare disease:",o:["<50,000 patients","<100,000 patients","<200,000 patients","<500,000 patients"],a:"<200,000 patients",e:"US Orphan Drug Act 1983: rare disease = <200,000 patients in US (or <1 in 200,000 in EU). Incentives: 7-year market exclusivity + tax credits."},
     {q:"[6️⃣ DD] Difference between Generic and Biosimilar:",o:["Generic is identical, biosimilar is highly similar (not identical)","Both are identical","Generic is more expensive","Biosimilar needs no clinical trial"],a:"Generic is identical, biosimilar is highly similar (not identical)",e:"Generic = identical chemical (ANDA, bioequivalence only). Biosimilar = highly similar biological with microheterogeneity (351k pathway, requires clinical comparability studies)."}
   ],
-  mnemonic:`<strong>🧠 PK in 4 letters – ADME</strong> (Absorption, Distribution, Metabolism, Excretion).<br>
-<strong>📌 Narrow TI drugs – 'Drugs With Low TI'</strong>: <em>D</em>igoxin, <em>W</em>arfarin, <em>L</em>ithium, <em>T</em>heophylline + Phenytoin.<br><br>
-
-<strong>💊 ROUTES — High-Yield Mnemonics</strong><br><br>
-
-<strong>🔸 Sublingual drugs ('Nitro Buys Nifty')</strong>: <em>N</em>itroglycerin, <em>Bu</em>prenorphine, <em>Ni</em>fedipine, <em>I</em>soprenaline, <em>Me</em>thyl-testosterone.<br><br>
-
-<strong>🔸 High first-pass metabolism (avoid oral!) — 'LIP MAN'</strong>: <em>L</em>ignocaine, <em>I</em>soprenaline, <em>P</em>ropranolol, <em>M</em>orphine, <em>A</em>spirin, <em>N</em>itroglycerin (also Verapamil, Hydralazine).<br><br>
-
-<strong>🔸 Intrathecal drugs — 'BMW'</strong>: <em>B</em>aclofen (spasticity), <em>M</em>ethotrexate (CNS leukemia), <em>W</em>ater-soluble anaesthetics (Bupivacaine).<br><br>
-
-<strong>🔸 Depot preparations — 'BeHMo-LG'</strong>: <em>Be</em>nzathine penicillin (3-4 wk), <em>H</em>aloperidol decanoate (4 wk), <em>Mo</em>droxyprogesterone DMPA (3 mo), <em>L</em>euprolide (1-6 mo), <em>G</em>oserelin implant.<br><br>
-
-<strong>🔸 Transdermal patches — 'FENS-NCR'</strong>: <em>F</em>entanyl, <em>E</em>strogen, <em>N</em>itroglycerin, <em>S</em>copolamine (Hyoscine), <em>N</em>icotine, <em>C</em>lonidine, <em>R</em>ivastigmine.<br><br>
-
-<strong>🎯 NEET PG / INI-CET TOP-10 POINTS</strong><br>
-1. <strong>100% bioavailability = IV only</strong> (by definition)<br>
-2. <strong>Fastest onset</strong>: IV (15-30 sec) — even Sublingual takes 1-3 min<br>
-3. <strong>DOC for anaphylaxis = Adrenaline IM</strong> in anterolateral thigh (NOT SC, NOT IV)<br>
-4. <strong>Status epilepticus in child without IV access</strong>: Buccal/Intranasal Midazolam or Rectal Diazepam<br>
-5. <strong>Insulin route = SC</strong> (Regular insulin can be IV in DKA)<br>
-6. <strong>Nitroglycerin TTS patch</strong>: Apply 12 h, remove 12 h (prevent tolerance)<br>
-7. <strong>Aerosols for asthma</strong>: Local action → systemic side effects minimal<br>
-8. <strong>Drugs absorbed in stomach</strong>: Weak acids (aspirin); weak bases in intestine<br>
-9. <strong>Rectal route partially bypasses liver</strong> (lower 1/3 → IVC directly)<br>
-10. <strong>Intrathecal Methotrexate dose</strong> = small (12 mg) — never give IT vincristine (fatal!)<br><br>
-
-<strong>📋 CASE-BASED INSIGHTS</strong><br>
-• <strong>Case 1</strong>: 6-year-old in convulsions, no IV access → <em>Buccal midazolam</em> 0.3 mg/kg.<br>
-• <strong>Case 2</strong>: Bee-sting anaphylaxis → <em>Adrenaline 0.3-0.5 mg IM</em> anterolateral thigh.<br>
-• <strong>Case 3</strong>: Cancer patient, chronic severe pain → <em>Transdermal Fentanyl patch</em> ± IT morphine.<br>
-• <strong>Case 4</strong>: Schizophrenia non-compliant → <em>Haloperidol decanoate IM monthly</em>.<br>
-• <strong>Case 5</strong>: HCC with liver mass → <em>Intra-arterial chemoembolization (TACE) with Doxorubicin</em>.<br>
-• <strong>Case 6</strong>: ALL with CNS spread → <em>Intrathecal Methotrexate</em> 12 mg + IT steroid.`
+  mnemonic:`<strong>📚 General Pharmacology — Quick Concepts</strong><br>
+• <strong>ADME</strong> = Absorption · Distribution · Metabolism · Excretion (4 PK pillars).<br>
+• <strong>PK</strong> = what body does to drug; <strong>PD</strong> = what drug does to body.<br>
+• Drug nomenclature levels: Chemical → INN (generic) → Brand (proprietary).<br>
+• <em>For drug-specific mnemonics, NEET PG points &amp; case-based insights, please use the 6 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
