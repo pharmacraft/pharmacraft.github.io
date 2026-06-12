@@ -144,19 +144,64 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
 .cblock ul, .cblock ol{padding-left:20px;}
 .cblock strong{color:var(--white);font-weight:700;}
 .cblock em{color:#d97706;font-style:normal;font-weight:700;background:rgba(245,158,11,0.12);padding:1px 6px;border-radius:4px;}
-.cblock table{width:100%;border-collapse:separate;border-spacing:0;margin:12px 0;font-size:12px;
+/* Global table styling — applies to tables in cblock, sub-panel (any extra panel), and high-yield boxes */
+.cblock table, .sub-panel > table, .high-yield table,
+#sources-general table, #routes-general table, #dev-general table,
+#cholin-ans table, #anticholin-ans table, #adrenergic-ans table, #antiadren-ans table,
+[id^="sources-"] table, [id^="routes-"] table, [id^="dev-"] table,
+[id^="cholin-"] table, [id^="anticholin-"] table, [id^="adrenergic-"] table, [id^="antiadren-"] table,
+[id^="pd-"] table, [id^="adr-"] table{
+  width:100%;border-collapse:separate;border-spacing:0;margin:12px 0;font-size:12px;
   border:1.5px solid rgba(20,160,133,0.3);border-radius:10px;overflow:hidden;
   box-shadow:0 2px 10px rgba(15,40,71,0.07);}
-.cblock th{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;padding:11px 13px;
+
+.cblock th, .sub-panel > table th, .high-yield th,
+#sources-general th, #routes-general th, #dev-general th,
+#cholin-ans th, #anticholin-ans th, #adrenergic-ans th, #antiadren-ans th,
+[id^="sources-"] th, [id^="routes-"] th, [id^="dev-"] th,
+[id^="cholin-"] th, [id^="anticholin-"] th, [id^="adrenergic-"] th, [id^="antiadren-"] th,
+[id^="pd-"] th, [id^="adr-"] th{
+  background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;padding:11px 13px;
   text-align:left;font-weight:700;font-size:12px;letter-spacing:.3px;
   border-right:1px solid rgba(255,255,255,0.18);}
-.cblock th:last-child{border-right:none;}
-.cblock td{padding:10px 13px;border-bottom:1px solid rgba(20,160,133,0.15);
+
+.cblock th:last-child, .sub-panel > table th:last-child, .high-yield th:last-child,
+#sources-general th:last-child, #routes-general th:last-child, #dev-general th:last-child,
+#cholin-ans th:last-child, #anticholin-ans th:last-child, #adrenergic-ans th:last-child, #antiadren-ans th:last-child,
+[id^="sources-"] th:last-child, [id^="routes-"] th:last-child, [id^="dev-"] th:last-child,
+[id^="cholin-"] th:last-child, [id^="anticholin-"] th:last-child, [id^="adrenergic-"] th:last-child, [id^="antiadren-"] th:last-child,
+[id^="pd-"] th:last-child, [id^="adr-"] th:last-child{border-right:none;}
+
+.cblock td, .sub-panel > table td, .high-yield td,
+#sources-general td, #routes-general td, #dev-general td,
+#cholin-ans td, #anticholin-ans td, #adrenergic-ans td, #antiadren-ans td,
+[id^="sources-"] td, [id^="routes-"] td, [id^="dev-"] td,
+[id^="cholin-"] td, [id^="anticholin-"] td, [id^="adrenergic-"] td, [id^="antiadren-"] td,
+[id^="pd-"] td, [id^="adr-"] td{
+  padding:10px 13px;border-bottom:1px solid rgba(20,160,133,0.15);
   border-right:1px solid rgba(20,160,133,0.12);vertical-align:top;color:var(--text);line-height:1.7;}
-.cblock td:last-child{border-right:none;}
-.cblock tbody tr:last-child td{border-bottom:none;}
-.cblock tbody tr:nth-child(even) td{background:rgba(20,160,133,0.035);}
-.cblock tbody tr:hover td{background:rgba(20,160,133,0.10);}
+
+.cblock td:last-child, .sub-panel > table td:last-child, .high-yield td:last-child,
+#sources-general td:last-child, #routes-general td:last-child, #dev-general td:last-child,
+#cholin-ans td:last-child, #anticholin-ans td:last-child, #adrenergic-ans td:last-child, #antiadren-ans td:last-child,
+[id^="sources-"] td:last-child, [id^="routes-"] td:last-child, [id^="dev-"] td:last-child,
+[id^="cholin-"] td:last-child, [id^="anticholin-"] td:last-child, [id^="adrenergic-"] td:last-child, [id^="antiadren-"] td:last-child,
+[id^="pd-"] td:last-child, [id^="adr-"] td:last-child{border-right:none;}
+
+.cblock tbody tr:last-child td, .high-yield tbody tr:last-child td,
+[id^="sources-"] tbody tr:last-child td, [id^="routes-"] tbody tr:last-child td, [id^="dev-"] tbody tr:last-child td,
+[id^="cholin-"] tbody tr:last-child td, [id^="anticholin-"] tbody tr:last-child td, [id^="adrenergic-"] tbody tr:last-child td, [id^="antiadren-"] tbody tr:last-child td,
+[id^="pd-"] tbody tr:last-child td, [id^="adr-"] tbody tr:last-child td{border-bottom:none;}
+
+.cblock tbody tr:nth-child(even) td, .high-yield tbody tr:nth-child(even) td,
+[id^="sources-"] tbody tr:nth-child(even) td, [id^="routes-"] tbody tr:nth-child(even) td, [id^="dev-"] tbody tr:nth-child(even) td,
+[id^="cholin-"] tbody tr:nth-child(even) td, [id^="anticholin-"] tbody tr:nth-child(even) td, [id^="adrenergic-"] tbody tr:nth-child(even) td, [id^="antiadren-"] tbody tr:nth-child(even) td,
+[id^="pd-"] tbody tr:nth-child(even) td, [id^="adr-"] tbody tr:nth-child(even) td{background:rgba(20,160,133,0.035);}
+
+.cblock tbody tr:hover td, .high-yield tbody tr:hover td,
+[id^="sources-"] tbody tr:hover td, [id^="routes-"] tbody tr:hover td, [id^="dev-"] tbody tr:hover td,
+[id^="cholin-"] tbody tr:hover td, [id^="anticholin-"] tbody tr:hover td, [id^="adrenergic-"] tbody tr:hover td, [id^="antiadren-"] tbody tr:hover td,
+[id^="pd-"] tbody tr:hover td, [id^="adr-"] tbody tr:hover td{background:rgba(20,160,133,0.10);}
 
 .high-yield{background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.25);
   border-left:4px solid var(--gold);border-radius:12px;padding:16px 18px;margin:12px 0;
