@@ -1680,6 +1680,262 @@ const MOA = {
   </div>
 </div>`,
 
+  pnsComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">💉 Peripheral Nervous System Pharmacology — 2 Key Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize the neuromuscular junction with depolarising/non-depolarising blockade, and local anaesthetic Na-channel inhibition with fibre-size-dependent block order.</p>
+</div>
+
+<!-- MOA 1: NMJ BLOCKADE - DEPOLARISING vs NON-DEPOLARISING -->
+<div class="moa-stage">
+  <div class="moa-title">💪 MOA 1 — Skeletal Muscle Relaxants at the Neuromuscular Junction</div>
+  <svg class="moa-svg" viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg">
+    <!-- Title -->
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Neuromuscular Junction (NMJ) — Nm Nicotinic Receptor</text>
+
+    <!-- ═══ LEFT PANEL: Normal NMJ ═══ -->
+    <text x="170" y="65" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) NORMAL NMJ</text>
+
+    <!-- Motor nerve terminal -->
+    <rect x="40" y="80" width="260" height="60" rx="8" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="170" y="105" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">Motor Nerve Terminal</text>
+    <circle cx="100" cy="125" r="6" fill="#f5c518"/>
+    <circle cx="135" cy="125" r="6" fill="#f5c518"/>
+    <circle cx="170" cy="125" r="6" fill="#f5c518"/>
+    <circle cx="205" cy="125" r="6" fill="#f5c518"/>
+    <circle cx="240" cy="125" r="6" fill="#f5c518"/>
+    <text x="170" y="158" fill="#f5c518" font-size="10" text-anchor="middle">ACh vesicles</text>
+
+    <!-- ACh release animation -->
+    <g>
+      <circle cx="150" cy="160" r="5" fill="#f5c518"><animate attributeName="cy" values="160;195;160" dur="2s" repeatCount="indefinite"/></circle>
+      <circle cx="170" cy="160" r="5" fill="#f5c518"><animate attributeName="cy" values="160;195;160" dur="2.2s" repeatCount="indefinite" begin=".3s"/></circle>
+      <circle cx="190" cy="160" r="5" fill="#f5c518"><animate attributeName="cy" values="160;195;160" dur="2.1s" repeatCount="indefinite" begin=".5s"/></circle>
+    </g>
+
+    <!-- Synaptic cleft -->
+    <text x="40" y="185" fill="#7a88b0" font-size="10">Cleft</text>
+
+    <!-- Muscle membrane with Nm receptors -->
+    <rect x="40" y="200" width="260" height="80" rx="8" fill="#172246" stroke="#ff5e7e" stroke-width="1.5"/>
+    <rect x="80" y="205" width="20" height="25" fill="#4da6ff"/>
+    <rect x="125" y="205" width="20" height="25" fill="#4da6ff"/>
+    <rect x="170" y="205" width="20" height="25" fill="#4da6ff"/>
+    <rect x="215" y="205" width="20" height="25" fill="#4da6ff"/>
+    <rect x="260" y="205" width="20" height="25" fill="#4da6ff"/>
+    <text x="170" y="252" fill="#4da6ff" font-size="11" font-weight="700" text-anchor="middle">Nm Receptors (open)</text>
+    <text x="170" y="270" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">→ Depolarisation → Muscle Contraction ✓</text>
+
+    <!-- ═══ MIDDLE PANEL: Depolarising Block ═══ -->
+    <text x="500" y="65" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">B) DEPOLARISING BLOCK</text>
+    <text x="500" y="85" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Succinylcholine (Sux)</text>
+
+    <rect x="370" y="100" width="260" height="60" rx="8" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="500" y="125" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">Sux binds Nm — persistent activation</text>
+
+    <!-- Sux molecules binding Nm -->
+    <g>
+      <circle cx="430" cy="180" r="9" fill="#fbbf24" class="anim-glow"/>
+      <text x="425" y="184" fill="#08112a" font-size="10" font-weight="800">S</text>
+      <circle cx="500" cy="180" r="9" fill="#fbbf24" class="anim-glow"/>
+      <text x="495" y="184" fill="#08112a" font-size="10" font-weight="800">S</text>
+      <circle cx="570" cy="180" r="9" fill="#fbbf24" class="anim-glow"/>
+      <text x="565" y="184" fill="#08112a" font-size="10" font-weight="800">S</text>
+    </g>
+
+    <rect x="370" y="200" width="260" height="80" rx="8" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <rect x="410" y="205" width="20" height="25" fill="#dc2626"/>
+    <rect x="455" y="205" width="20" height="25" fill="#dc2626"/>
+    <rect x="500" y="205" width="20" height="25" fill="#dc2626"/>
+    <rect x="545" y="205" width="20" height="25" fill="#dc2626"/>
+    <rect x="590" y="205" width="20" height="25" fill="#dc2626"/>
+    <text x="500" y="252" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">Nm desensitised</text>
+    <text x="500" y="270" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">→ Fasciculation → Flaccid Paralysis</text>
+
+    <!-- ═══ RIGHT PANEL: Non-depolarising Block ═══ -->
+    <text x="830" y="65" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">C) NON-DEPOLARISING BLOCK</text>
+    <text x="830" y="85" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Vec / Roc / Atra / Cis (-curium / -uronium)</text>
+
+    <rect x="700" y="100" width="260" height="60" rx="8" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="830" y="125" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">ACh still released normally</text>
+    <circle cx="780" cy="135" r="5" fill="#f5c518"/>
+    <circle cx="830" cy="135" r="5" fill="#f5c518"/>
+    <circle cx="880" cy="135" r="5" fill="#f5c518"/>
+
+    <!-- Curare blocking Nm competitively -->
+    <g>
+      <rect x="775" y="175" width="14" height="14" rx="2" fill="#10b981" class="anim-bind"/>
+      <text x="775" y="186" fill="#fff" font-size="9" font-weight="800">V</text>
+      <rect x="825" y="175" width="14" height="14" rx="2" fill="#10b981" class="anim-bind"/>
+      <text x="825" y="186" fill="#fff" font-size="9" font-weight="800">V</text>
+      <rect x="875" y="175" width="14" height="14" rx="2" fill="#10b981" class="anim-bind"/>
+      <text x="875" y="186" fill="#fff" font-size="9" font-weight="800">V</text>
+    </g>
+    <text x="830" y="160" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Compete with ACh at Nm</text>
+
+    <rect x="700" y="200" width="260" height="80" rx="8" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="740" y="205" width="20" height="25" fill="#10b981"/>
+    <rect x="785" y="205" width="20" height="25" fill="#10b981"/>
+    <rect x="830" y="205" width="20" height="25" fill="#10b981"/>
+    <rect x="875" y="205" width="20" height="25" fill="#10b981"/>
+    <rect x="920" y="205" width="20" height="25" fill="#10b981"/>
+    <text x="830" y="252" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Nm receptor — NOT activated</text>
+    <text x="830" y="270" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">→ NO Depolarisation → Flaccid Paralysis</text>
+
+    <!-- ═══ BOTTOM: Comparison Table ═══ -->
+    <rect x="40" y="310" width="920" height="190" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="335" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 Comparison — Depolarising vs Non-Depolarising</text>
+
+    <!-- Headers -->
+    <line x1="60" y1="345" x2="940" y2="345" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
+    <text x="200" y="365" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Feature</text>
+    <text x="500" y="365" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">Depolarising (Sux)</text>
+    <text x="800" y="365" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Non-depolarising (Vec/Roc/Atra)</text>
+    <line x1="60" y1="373" x2="940" y2="373" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+
+    <text x="60" y="392" fill="#7a88b0" font-size="10">Fasciculation</text>
+    <text x="500" y="392" fill="#7a88b0" font-size="10" text-anchor="middle">✓ Present</text>
+    <text x="800" y="392" fill="#7a88b0" font-size="10" text-anchor="middle">✕ Absent</text>
+
+    <text x="60" y="410" fill="#7a88b0" font-size="10">Neostigmine reversal</text>
+    <text x="500" y="410" fill="#7a88b0" font-size="10" text-anchor="middle">Worsens Phase I block</text>
+    <text x="800" y="410" fill="#7a88b0" font-size="10" text-anchor="middle">✓ Reverses (with glycopyrrolate)</text>
+
+    <text x="60" y="428" fill="#7a88b0" font-size="10">Sugammadex reversal</text>
+    <text x="500" y="428" fill="#7a88b0" font-size="10" text-anchor="middle">✕ No</text>
+    <text x="800" y="428" fill="#7a88b0" font-size="10" text-anchor="middle">✓ For Roc/Vec only (rapid)</text>
+
+    <text x="60" y="446" fill="#7a88b0" font-size="10">Onset / Duration</text>
+    <text x="500" y="446" fill="#7a88b0" font-size="10" text-anchor="middle">30 s / 5-10 min</text>
+    <text x="800" y="446" fill="#7a88b0" font-size="10" text-anchor="middle">2-3 min / 30-60 min</text>
+
+    <text x="60" y="464" fill="#7a88b0" font-size="10">Adverse Effects</text>
+    <text x="500" y="464" fill="#7a88b0" font-size="10" text-anchor="middle">Hyperkalaemia · MH trigger · Myalgia</text>
+    <text x="800" y="464" fill="#7a88b0" font-size="10" text-anchor="middle">Histamine release (atracurium)</text>
+
+    <text x="60" y="482" fill="#7a88b0" font-size="10">Atracurium special</text>
+    <text x="500" y="482" fill="#7a88b0" font-size="10" text-anchor="middle">—</text>
+    <text x="800" y="482" fill="#7a88b0" font-size="10" text-anchor="middle">Hofmann elimination — safe in liver/renal failure</text>
+
+    <!-- Bottom: Malignant Hyperthermia caption -->
+    <text x="500" y="540" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">⚠️ Malignant Hyperthermia — triggered by Succinylcholine + Halothane → ↑ Ca²⁺ from SR → Antidote: Dantrolene (RyR1 blocker)</text>
+    <text x="500" y="560" fill="#7a88b0" font-size="10" text-anchor="middle">Sux avoid in: Burns · Crush injury · Denervation · Hyperkalaemia · Open eye injury · MH history</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#f5c518"></span>ACh</span>
+    <span><span class="dot" style="background:#4da6ff"></span>Normal Nm</span>
+    <span><span class="dot" style="background:#dc2626"></span>Sux / Desensitised</span>
+    <span><span class="dot" style="background:#10b981"></span>Non-depolarising NMB</span>
+  </div>
+</div>
+
+<!-- MOA 2: LOCAL ANAESTHETIC Na-CHANNEL BLOCKADE -->
+<div class="moa-stage">
+  <div class="moa-title">💊 MOA 2 — Local Anaesthetic Action: Na⁺ Channel Blockade &amp; Fibre Block Order</div>
+  <svg class="moa-svg" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Local Anaesthetic — Voltage-Gated Na⁺ Channel Inhibition</text>
+
+    <!-- ═══ LEFT: Nerve Cell with Na+ Channel ═══ -->
+    <text x="200" y="60" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) Mechanism — Na⁺ Channel Block</text>
+
+    <!-- Axon membrane -->
+    <rect x="40" y="80" width="320" height="100" rx="10" fill="#172246" stroke="#4da6ff" stroke-width="1.5"/>
+    <text x="200" y="100" fill="#4da6ff" font-size="11" font-weight="700" text-anchor="middle">Nerve Axon Membrane</text>
+
+    <!-- Na+ channel structure -->
+    <rect x="170" y="115" width="60" height="55" fill="#0ea5e9" stroke="#fff" stroke-width="1.5"/>
+    <text x="200" y="140" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">Na⁺</text>
+    <text x="200" y="160" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">channel</text>
+
+    <!-- LA cation form binding inside -->
+    <circle cx="200" cy="142" r="9" fill="#dc2626" class="anim-bind"/>
+    <text x="195" y="146" fill="#fff" font-size="9" font-weight="800">LA⁺</text>
+
+    <text x="200" y="200" fill="#7a88b0" font-size="10" text-anchor="middle">LA⁺ (ionised cation) blocks the inner channel pore</text>
+    <text x="200" y="215" fill="#7a88b0" font-size="10" text-anchor="middle">→ No depolarisation → No action potential</text>
+
+    <!-- pH dependence note -->
+    <rect x="40" y="240" width="320" height="120" rx="8" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="200" y="262" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">⚡ Key: LA = Weak Base</text>
+    <text x="60" y="284" fill="#7a88b0" font-size="10">• LA cross membrane in <strong>unionised</strong> form (lipid-soluble)</text>
+    <text x="60" y="302" fill="#7a88b0" font-size="10">• Bind channel in <strong>ionised</strong> form (LA⁺ cation) at acidic intracellular pH</text>
+    <text x="60" y="320" fill="#7a88b0" font-size="10">• <strong>Acidic tissue (abscess)</strong> → ↑ ionised form → can't cross → poor action</text>
+    <text x="60" y="338" fill="#7a88b0" font-size="10">• <strong>Adrenaline</strong> 1:200,000 → ↓ absorption → ↑ duration + ↓ toxicity</text>
+    <text x="60" y="355" fill="#dc2626" font-size="10" font-weight="700">⚠️ NEVER use adrenaline on digits/penis/nose/ear → end-artery necrosis</text>
+
+    <!-- ═══ RIGHT: Fibre Block Order ═══ -->
+    <text x="700" y="60" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">B) Order of Fibre Blockade (small → large)</text>
+
+    <!-- Fibre size bars -->
+    <rect x="430" y="90" width="540" height="270" rx="8" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="700" y="115" fill="#a855f7" font-size="11" font-weight="700" text-anchor="middle">Smaller / Less myelinated → Blocked FIRST</text>
+
+    <!-- Block sequence -->
+    <text x="460" y="145" fill="#fbbf24" font-size="11" font-weight="800">1. Pain (Aδ + C fibres)</text>
+    <rect x="700" y="135" width="80" height="15" fill="#10b981"/>
+    <text x="800" y="146" fill="#10b981" font-size="10" font-weight="700">Blocked FIRST</text>
+
+    <text x="460" y="175" fill="#fbbf24" font-size="11" font-weight="800">2. Temperature</text>
+    <rect x="700" y="165" width="110" height="15" fill="#10b981"/>
+    <text x="830" y="176" fill="#10b981" font-size="10">↓</text>
+
+    <text x="460" y="205" fill="#fbbf24" font-size="11" font-weight="800">3. Touch</text>
+    <rect x="700" y="195" width="140" height="15" fill="#4da6ff"/>
+    <text x="860" y="206" fill="#4da6ff" font-size="10">↓</text>
+
+    <text x="460" y="235" fill="#fbbf24" font-size="11" font-weight="800">4. Pressure / Proprioception</text>
+    <rect x="700" y="225" width="170" height="15" fill="#4da6ff"/>
+    <text x="890" y="236" fill="#4da6ff" font-size="10">↓</text>
+
+    <text x="460" y="265" fill="#fbbf24" font-size="11" font-weight="800">5. Motor (large Aα)</text>
+    <rect x="700" y="255" width="220" height="15" fill="#dc2626"/>
+    <text x="930" y="266" fill="#dc2626" font-size="10" font-weight="700">Last</text>
+
+    <text x="700" y="305" fill="#7a88b0" font-size="10" text-anchor="middle">Recovery occurs in reverse order — motor returns first, pain last</text>
+    <text x="700" y="325" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Mnemonic: Pain → Temperature → Touch → Pressure → Motor</text>
+    <text x="700" y="345" fill="#fbbf24" font-size="10" text-anchor="middle">(or "P-T-T-P-M" / "Patient Tells Truth Properly: Motor last")</text>
+
+    <!-- ═══ BOTTOM: Comparison Table ═══ -->
+    <rect x="40" y="385" width="930" height="180" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="410" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 LA Classification — Esters vs Amides</text>
+
+    <line x1="60" y1="420" x2="940" y2="420" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
+    <text x="180" y="440" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Feature</text>
+    <text x="500" y="440" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Esters (single "i")</text>
+    <text x="820" y="440" fill="#0ea5e9" font-size="11" font-weight="700" text-anchor="middle">Amides (two "i"s)</text>
+    <line x1="60" y1="448" x2="940" y2="448" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+
+    <text x="60" y="468" fill="#7a88b0" font-size="10">Examples</text>
+    <text x="500" y="468" fill="#7a88b0" font-size="10" text-anchor="middle">Procaine · Cocaine · Tetracaine · Benzocaine</text>
+    <text x="820" y="468" fill="#7a88b0" font-size="10" text-anchor="middle">Lignocaine · Bupivacaine · Ropivacaine · Prilocaine</text>
+
+    <text x="60" y="488" fill="#7a88b0" font-size="10">Metabolism</text>
+    <text x="500" y="488" fill="#7a88b0" font-size="10" text-anchor="middle">Plasma pseudocholinesterase</text>
+    <text x="820" y="488" fill="#7a88b0" font-size="10" text-anchor="middle">Hepatic CYP — slower</text>
+
+    <text x="60" y="508" fill="#7a88b0" font-size="10">Allergy risk</text>
+    <text x="500" y="508" fill="#7a88b0" font-size="10" text-anchor="middle">Higher (PABA metabolite)</text>
+    <text x="820" y="508" fill="#7a88b0" font-size="10" text-anchor="middle">Lower</text>
+
+    <text x="60" y="528" fill="#7a88b0" font-size="10">Cardiotoxicity</text>
+    <text x="500" y="528" fill="#7a88b0" font-size="10" text-anchor="middle">Low (except cocaine)</text>
+    <text x="820" y="528" fill="#7a88b0" font-size="10" text-anchor="middle">Bupivacaine WORST · Ropivacaine safer</text>
+
+    <text x="60" y="548" fill="#7a88b0" font-size="10">Special</text>
+    <text x="500" y="548" fill="#7a88b0" font-size="10" text-anchor="middle">Prilocaine → methaemoglobinaemia</text>
+    <text x="820" y="548" fill="#7a88b0" font-size="10" text-anchor="middle">Lignocaine — also IV Class IB antiarrhythmic</text>
+
+    <!-- Bottom Toxicity caption -->
+    <text x="500" y="585" fill="#dc2626" font-size="11" font-weight="800" text-anchor="middle">⚠️ LAST (Local Anaesthetic Systemic Toxicity) — CNS seizures + CV collapse → Antidote: 20% Intralipid emulsion</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#0ea5e9"></span>Na⁺ Channel</span>
+    <span><span class="dot" style="background:#dc2626"></span>LA⁺ Cation (Bound)</span>
+    <span><span class="dot" style="background:#10b981"></span>Esters / Pain block</span>
+    <span><span class="dot" style="background:#a855f7"></span>Fibre size</span>
+  </div>
+</div>`,
+
   respiratoryComplete: `
 <div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
   <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🫁 Respiratory Pharmacology — 2 Key Animated Mechanisms</h4>
@@ -5761,58 +6017,384 @@ TOPICS.push({id:"hormones",icon:"⚖️",title:"Hormones & Related Drugs",
 });
 
 TOPICS.push({id:"pns",icon:"💉",title:"Peripheral Nervous System",
-  classification:`<h4>Local Anaesthetics</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>Esters</td><td>Procaine, Cocaine, Benzocaine, Tetracaine, Chloroprocaine</td></tr>
-<tr><td>Amides</td><td>Lidocaine (Lignocaine), Bupivacaine, Ropivacaine, Mepivacaine, Prilocaine, Levobupivacaine</td></tr></table>
-<h4>Skeletal Muscle Relaxants</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>Depolarising (Phase I)</td><td>Succinylcholine (Suxamethonium)</td></tr>
-<tr><td>Non-depolarising (long)</td><td>d-Tubocurarine, Pancuronium, Doxacurium</td></tr>
-<tr><td>Non-depolarising (intermediate)</td><td>Vecuronium, Rocuronium, Atracurium, Cisatracurium</td></tr>
-<tr><td>Non-depolarising (short)</td><td>Mivacurium</td></tr>
-<tr><td>Centrally acting</td><td>Baclofen, Tizanidine, Diazepam, Cyclobenzaprine</td></tr>
-<tr><td>Direct-acting</td><td>Dantrolene (malignant hyperthermia)</td></tr></table>`,
-  moa:MOA.la,
-  pkpd:`<h4>Local Anaesthetic Properties</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Skeletal Muscle Relaxants",panelId:"smr"},
+    {n:2,label:"Local Anaesthetics",panelId:"la"}
+  ],
+  classification:`<h4>Peripheral Nervous System — Overview</h4>
+<p>The peripheral nervous system pharmacology section deals with two clinically critical drug families: <strong>(A) Skeletal Muscle Relaxants</strong> — agents that produce paralysis by blocking the neuromuscular junction (NMJ) or by acting on spinal/central centres; and <strong>(B) Local Anaesthetics</strong> — drugs that reversibly block conduction of nerve impulses by inhibiting voltage-gated Na⁺ channels.</p>
+
+<table>
+<tr><th>Domain</th><th>Major Drug Categories</th><th>Therapeutic Goal</th></tr>
+<tr><td><strong>Skeletal Muscle Relaxants</strong></td><td>Peripheral NMJ blockers (Depolarising + Non-depolarising), Centrally-acting spasmolytics, Direct-acting (Dantrolene)</td><td>Surgical relaxation · Intubation · Spasticity control · Malignant hyperthermia</td></tr>
+<tr><td><strong>Local Anaesthetics</strong></td><td>Esters &amp; Amides; topical, infiltration, regional &amp; central neuraxial blocks</td><td>Reversible loss of sensation at specific body region without loss of consciousness</td></tr>
+</table>
+
+<p style="margin-top:18px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>Sub-topic-specific content (classification, MOA, ADRs, mnemonics, NEET PG points) — please use the 2-button Sub-Topic Navigator above to open Skeletal Muscle Relaxants OR Local Anaesthetics panels.</em></p>`,
+  moa:MOA.pnsComplete,
+  extraPanels:[
+    /* ═══════════ SUB-TOPIC 1: SKELETAL MUSCLE RELAXANTS ═══════════ */
+    {id:"smr",content:`<span id="sub-smr-pns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💪 1️⃣ SKELETAL MUSCLE RELAXANTS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Skeletal muscle relaxants</em> are agents that produce reversible paralysis of skeletal muscles by acting either at the <strong>neuromuscular junction (NMJ)</strong> — neuromuscular blockers (NMBs), or in the <strong>central nervous system / spinal cord</strong> — spasmolytics, or directly on muscle (Dantrolene). They are essential for surgical relaxation, endotracheal intubation, mechanical ventilation, and management of muscle spasticity.</p>
+
+<h4>📋 Comprehensive Classification</h4>
+<table>
+<tr><th>Category</th><th>Sub-class</th><th>Drugs</th></tr>
+<tr><td rowspan="4"><strong>A. Peripheral (NMJ blockers)</strong></td><td>Depolarising (Phase I)</td><td>Succinylcholine (Suxamethonium) — only commonly used depolarising NMB</td></tr>
+<tr><td>Non-depolarising — long-acting</td><td>d-Tubocurarine, Pancuronium, Doxacurium, Pipecuronium</td></tr>
+<tr><td>Non-depolarising — intermediate</td><td>Vecuronium, Rocuronium, Atracurium, Cisatracurium</td></tr>
+<tr><td>Non-depolarising — short-acting</td><td>Mivacurium</td></tr>
+<tr><td rowspan="3"><strong>B. Centrally acting (Spasmolytics)</strong></td><td>GABA-B agonist</td><td>Baclofen (oral &amp; intrathecal)</td></tr>
+<tr><td>α2-agonist (central)</td><td>Tizanidine, Clonidine</td></tr>
+<tr><td>BZD / Muscle relaxants (other)</td><td>Diazepam, Cyclobenzaprine, Methocarbamol, Carisoprodol, Chlorzoxazone, Orphenadrine</td></tr>
+<tr><td><strong>C. Direct-acting</strong></td><td>RyR1 antagonist</td><td>Dantrolene — DOC for malignant hyperthermia and NMS</td></tr>
+<tr><td><strong>D. Botulinum Toxin (focal spasticity)</strong></td><td>Type A, B</td><td>Botulinum toxin A (Botox) — inhibits ACh release at presynaptic NMJ; used for cervical dystonia, blepharospasm, focal spasticity, hyperhidrosis, cosmesis</td></tr>
+<tr><td><strong>E. NMB Reversal Agents</strong></td><td>—</td><td>Neostigmine + Glycopyrrolate (AChE inhibitor reversal); <strong>Sugammadex</strong> (selective binder for Rocuronium / Vecuronium — rapid reversal)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action — Detailed</h4>
 <ul>
-<li>Weak bases → ionised in inflamed acidic tissue → poor action in abscess</li>
-<li>Pain &gt; temperature &gt; touch &gt; pressure &gt; motor (order of block)</li>
-<li>Small/unmyelinated fibres blocked first (Aδ, C)</li>
-<li>Adrenaline 1:200000 added → ↑ duration, ↓ systemic absorption (don&rsquo;t use on digits, penis, nose, ear)</li>
+<li><strong>Succinylcholine (depolarising):</strong> Two ACh molecules linked → binds Nm receptor → persistent depolarisation → desensitisation block → flaccid paralysis (Phase I). Initial transient fasciculation, then block. Phase II block resembles non-depolarising (with prolonged use or pseudocholinesterase deficiency).</li>
+<li><strong>Non-depolarising NMBs (Curare class &amp; "-uronium" group):</strong> Competitive antagonists at Nm nicotinic receptor → block ACh binding → no end-plate depolarisation → flaccid paralysis. No fasciculation. Reversible by Neostigmine + glycopyrrolate.</li>
+<li><strong>Baclofen:</strong> GABA-B receptor agonist at spinal cord → ↓ excitatory neurotransmitter release → ↓ stretch reflex → muscle relaxation.</li>
+<li><strong>Tizanidine:</strong> Central α2 agonist (like Clonidine) → ↓ excitatory transmission in spinal cord → muscle relaxation; minimal weakness.</li>
+<li><strong>Dantrolene:</strong> Blocks ryanodine receptor (RyR1) on sarcoplasmic reticulum → ↓ Ca²⁺ release → muscle relaxation. Acts <em>directly</em> on muscle, not NMJ.</li>
+<li><strong>Botulinum toxin A:</strong> Cleaves SNAP-25 → blocks ACh release from presynaptic terminal → muscle paralysis (months-long effect).</li>
+<li><strong>Sugammadex:</strong> γ-cyclodextrin that encapsulates steroidal NMBs (rocuronium, vecuronium) → rapid removal from circulation.</li>
 </ul>
-<h4>Comparative LA</h4>
-<table><tr><th>Drug</th><th>Onset</th><th>Duration</th><th>Use</th></tr>
-<tr><td>Lignocaine</td><td>Fast</td><td>1–2 h</td><td>Most versatile; antiarrhythmic IV</td></tr>
-<tr><td>Bupivacaine</td><td>Slow</td><td>3–8 h</td><td>Epidural / spinal; cardiotoxic</td></tr>
-<tr><td>Ropivacaine</td><td>Slow</td><td>3–8 h</td><td>Less cardiotoxic than bupiv</td></tr>
-<tr><td>Procaine</td><td>Slow</td><td>30–60 min</td><td>Historical</td></tr></table>
-<h4>Succinylcholine</h4>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Comparative</h4>
+<table>
+<tr><th>Drug</th><th>Onset</th><th>Duration</th><th>Metabolism / Excretion</th><th>Key Feature</th></tr>
+<tr><td><strong>Succinylcholine</strong></td><td>30-60 sec</td><td>5-10 min</td><td>Plasma pseudocholinesterase</td><td>Fastest NMB; pseudocholinesterase deficiency → prolonged apnoea</td></tr>
+<tr><td><strong>Vecuronium</strong></td><td>2-3 min</td><td>30-60 min</td><td>Hepatic (biliary)</td><td>Cardiac stable; preferred in heart disease</td></tr>
+<tr><td><strong>Rocuronium</strong></td><td>1-2 min (rapid)</td><td>30-45 min</td><td>Hepatic</td><td>Used for RSI when Sux contraindicated; reversed by Sugammadex</td></tr>
+<tr><td><strong>Atracurium</strong></td><td>2-3 min</td><td>30-40 min</td><td>Hofmann elimination + ester hydrolysis</td><td>Safe in renal AND hepatic failure; histamine release</td></tr>
+<tr><td><strong>Cisatracurium</strong></td><td>3-5 min</td><td>30-60 min</td><td>Hofmann elimination</td><td>Cleaner than atracurium — no histamine; preferred in ICU</td></tr>
+<tr><td><strong>Pancuronium</strong></td><td>3-5 min</td><td>60-90 min (long)</td><td>Renal</td><td>Tachycardia (vagolytic); avoid in renal failure</td></tr>
+<tr><td><strong>Mivacurium</strong></td><td>2-3 min</td><td>15-20 min (short)</td><td>Plasma pseudocholinesterase</td><td>Histamine release</td></tr>
+<tr><td><strong>Baclofen</strong></td><td>Oral 30-60 min</td><td>4-6 h</td><td>Renal (mostly unchanged)</td><td>Intrathecal pump for severe spasticity</td></tr>
+<tr><td><strong>Dantrolene</strong></td><td>IV 1-5 min</td><td>4-8 h</td><td>Hepatic</td><td>IV stat for MH crisis 2.5 mg/kg</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice</th><th>Notes</th></tr>
+<tr><td><strong>Rapid Sequence Intubation (RSI)</strong></td><td>Succinylcholine (1.0-1.5 mg/kg IV)</td><td>Onset 30 s; alternative: high-dose Rocuronium (1.2 mg/kg) with Sugammadex on standby</td></tr>
+<tr><td><strong>Intra-operative muscle relaxation</strong></td><td>Vecuronium, Rocuronium, Cisatracurium</td><td>Choice depends on duration and patient comorbidities</td></tr>
+<tr><td><strong>ICU sustained paralysis (ARDS)</strong></td><td>Cisatracurium (infusion)</td><td>Hofmann elimination — accumulates less</td></tr>
+<tr><td><strong>Hepatic + Renal failure</strong></td><td>Atracurium / Cisatracurium</td><td>Hofmann elimination — independent of liver and kidney</td></tr>
+<tr><td><strong>Spasticity (MS, CP, spinal cord injury)</strong></td><td>Baclofen oral (initial); Intrathecal Baclofen (severe)</td><td>Tizanidine alternative (less sedation)</td></tr>
+<tr><td><strong>Acute musculoskeletal pain / back spasm</strong></td><td>Cyclobenzaprine, Methocarbamol</td><td>Short-term (2-3 wk); avoid in elderly (anticholinergic)</td></tr>
+<tr><td><strong>Malignant Hyperthermia (MH)</strong></td><td>Dantrolene IV 2.5 mg/kg (repeat to 10 mg/kg)</td><td>+ Stop trigger + active cooling + treat hyperkalaemia</td></tr>
+<tr><td><strong>Neuroleptic Malignant Syndrome (NMS)</strong></td><td>Dantrolene + Bromocriptine</td><td>Stop antipsychotic; supportive care</td></tr>
+<tr><td><strong>Focal dystonia / spasticity</strong></td><td>Botulinum toxin A injection</td><td>Cervical dystonia, blepharospasm, focal spasticity, equinus deformity</td></tr>
+<tr><td><strong>Electroconvulsive therapy (ECT)</strong></td><td>Succinylcholine (low-dose, e.g. 0.5 mg/kg)</td><td>Modifies seizure-induced motor activity → prevents fractures</td></tr>
+<tr><td><strong>Hyperhidrosis (axillary)</strong></td><td>Botulinum toxin A</td><td>Blocks ACh on sweat glands; lasts 6-9 months</td></tr>
+<tr><td><strong>Tetanus muscle spasms</strong></td><td>Diazepam IV; Magnesium sulphate; Baclofen</td><td>Severe — non-depolarising NMB + mechanical ventilation</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
 <ul>
-<li>Onset 30 s; duration 5–10 min</li>
-<li>Metabolised by plasma pseudocholinesterase (deficient – prolonged apnoea)</li>
-<li>Causes hyperkalaemia (↑ K+ by 0.5 mEq) — avoid in burns, denervation, crush injury</li>
-<li>Trigger of malignant hyperthermia (Dantrolene = antidote)</li>
-</ul>`,
-  adr:`<h4>LA Systemic Toxicity (LAST)</h4>
-<p>CNS – perioral numbness, tinnitus, restlessness → seizures → coma. CVS – arrhythmia, hypotension, cardiac arrest (bupivacaine worst). <strong>Treatment</strong> – 20% Intralipid emulsion + supportive care.</p>
-<h4>Methemoglobinaemia</h4>
-<p>Highest with prilocaine and benzocaine. Treat with methylene blue 1-2 mg/kg.</p>
-<h4>Malignant Hyperthermia</h4>
-<p>Triggered by halothane, isoflurane, succinylcholine. ↑ Ca release from SR. Treatment – stop trigger, dantrolene IV 2.5 mg/kg, cooling, treat hyperkalaemia.</p>`,
+<li><strong>Succinylcholine:</strong> Hyperkalaemia (↑ K+ by 0.5 mEq/L; up to 5-10 mEq/L in susceptible — burns/denervation), malignant hyperthermia trigger, bradycardia (esp. in children), increased intra-ocular/intra-cranial/intra-gastric pressures, muscle pain (myalgia), prolonged apnoea (pseudocholinesterase deficiency), masseter rigidity, anaphylaxis.</li>
+<li><strong>Non-depolarising NMBs:</strong> Histamine release (Atracurium, Mivacurium, d-Tubocurarine) → flushing, bronchospasm, hypotension; vagolytic tachycardia (Pancuronium); prolonged action in liver/renal failure (except Atracurium/Cisatracurium).</li>
+<li><strong>Baclofen:</strong> Sedation, weakness, ataxia; SUDDEN WITHDRAWAL → hallucinations, seizures, rebound spasticity, autonomic instability (mimics NMS); intrathecal overdose → coma.</li>
+<li><strong>Tizanidine:</strong> Hypotension, dry mouth, sedation, hepatotoxicity (monitor LFTs).</li>
+<li><strong>Dantrolene:</strong> Hepatotoxicity (chronic oral); muscle weakness; phlebitis at IV site.</li>
+<li><strong>Botulinum toxin:</strong> Local muscle weakness, ptosis, diplopia, dysphagia; rare systemic spread → respiratory paralysis (BBW).</li>
+<li><strong>Sugammadex:</strong> Anaphylaxis (~1:3500), bradycardia, hypersensitivity; interferes with hormonal contraceptives → use additional contraception 7 days.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li><strong>Succinylcholine avoid in:</strong> Burns (after 24-48 h), spinal cord injury, prolonged immobilisation, severe trauma, denervation injuries (stroke), Duchenne muscular dystrophy (rhabdomyolysis), open eye injury, history of MH, pseudocholinesterase deficiency.</li>
+<li>Non-depolarising NMBs: Myasthenia gravis (extreme sensitivity — start at 1/10th dose); Eaton-Lambert syndrome (paradoxical sensitivity).</li>
+<li>Baclofen: avoid abrupt withdrawal; peptic ulcer; psychotic disorders.</li>
+<li>Dantrolene oral: active liver disease.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>NMB + Aminoglycosides / Tetracyclines / Polymyxins / Magnesium</strong> → potentiate neuromuscular block.</li>
+<li><strong>NMB + Volatile anaesthetics</strong> → potentiate block.</li>
+<li><strong>Sux + ChE inhibitors (Neostigmine, Echothiophate)</strong> → prolonged Sux action.</li>
+<li><strong>Sugammadex + Hormonal contraceptives</strong> → reduced efficacy 7 days.</li>
+<li><strong>Tizanidine + Ciprofloxacin / Fluvoxamine</strong> → CYP1A2 inhibition → ↑ tizanidine → severe hypotension.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 30-y-old patient given Succinylcholine for emergency intubation. Within minutes — masseter rigidity, ↑ EtCO2, tachycardia, hyperthermia 41°C, rigid chest. Diagnosis &amp; immediate treatment?<br><strong>Answer:</strong> <em>Malignant Hyperthermia</em>. STOP trigger (Sux + volatile anaesthetic) → 100% O2, hyperventilation → <em>Dantrolene 2.5 mg/kg IV</em> (repeat to 10 mg/kg) → active cooling → treat hyperkalaemia (insulin-dextrose).</p></div>
+<div class="cblock"><p><strong>Case:</strong> 65-y-old with renal failure needing prolonged ICU paralysis for ARDS. Best NMB?<br><strong>Answer:</strong> <em>Cisatracurium</em> infusion — Hofmann elimination, no histamine release, safe in renal failure.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Baclofen 80 mg/day stops abruptly. Develops hallucinations, hyperthermia, severe rigidity, autonomic instability.<br><strong>Answer:</strong> Baclofen withdrawal syndrome — resume Baclofen immediately + BZD; can be fatal if untreated.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Succinylcholine fastest onset (30 s)</strong> — preferred for RSI; alternative is high-dose Rocuronium with Sugammadex standby</li>
+<li><strong>Sux ↑ K⁺ by 0.5 mEq/L</strong> normally; avoid in burns (24-48 h post), crush, denervation, hyperkalaemia, MH, open eye, neuromuscular disease (massive K⁺ release possible)</li>
+<li><strong>Pseudocholinesterase deficiency</strong> → prolonged apnoea up to several hours after Sux; supportive ventilation</li>
+<li><strong>"-curium" and "-uronium" drugs</strong> are non-depolarising NMBs; competitively antagonise ACh at Nm</li>
+<li><strong>Atracurium &amp; Cisatracurium</strong> undergo Hofmann elimination — safe in renal AND hepatic failure</li>
+<li><strong>Cisatracurium</strong> has no histamine release (vs Atracurium) — preferred for ICU</li>
+<li><strong>Neostigmine</strong> reverses non-depolarising NMBs; always co-administer with Glycopyrrolate / Atropine to prevent bradycardia</li>
+<li><strong>Sugammadex</strong> — γ-cyclodextrin; rapid &amp; complete reversal of Rocuronium &amp; Vecuronium; revolutionised RSI failure rescue</li>
+<li><strong>Sugammadex + OCPs</strong> — use additional contraception for 7 days post-dose</li>
+<li><strong>Dantrolene = DOC for Malignant Hyperthermia</strong> AND Neuroleptic Malignant Syndrome; blocks RyR1 → ↓ SR Ca²⁺ release</li>
+<li><strong>Baclofen withdrawal</strong> mimics NMS — never stop abruptly; taper if needed</li>
+<li><strong>Botulinum toxin A</strong> blocks ACh release (SNAP-25 cleavage) — used for cervical dystonia, blepharospasm, focal spasticity, hyperhidrosis, migraine prophylaxis</li>
+<li><strong>Myasthenia gravis</strong> — extreme sensitivity to NMBs; reduce dose to 10% normal; consider Sugammadex for reversal</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Sugammadex broader use</strong> — even for ambulatory surgery; reduces residual paralysis vs Neostigmine</li>
+<li><strong>Rocuronium-Sugammadex RSI</strong> increasingly preferred over Sux — especially in Sux contraindications</li>
+<li><strong>Calabadion-2</strong> in development — synthetic chelator for reversing aminosteroid AND benzylisoquinolinium NMBs</li>
+<li><strong>OnabotulinumtoxinA</strong> — extended indications: chronic migraine (FDA 2010 still expanding), overactive bladder, neurogenic detrusor overactivity</li>
+<li><strong>Cisatracurium</strong> remains standard for prolonged ICU paralysis (PROSEVA, ACURASYS trials)</li>
+<li><strong>Smart NMB monitoring</strong> — quantitative neuromuscular monitoring (TOF-Watch) now standard of care</li>
+<li><strong>Intrathecal Baclofen Pumps (ITB)</strong> — refined dosing protocols for severe spasticity; reduced complications</li>
+<li><strong>Tolperisone</strong> — newer Na-channel blocker centrally-acting; available in EU for spasticity</li>
+<li><strong>Vibegron</strong> — newer β3 agonist alternative to anti-muscarinic in overactive bladder; reduces need for botulinum</li>
+<li><strong>AbobotulinumtoxinA (Dysport)</strong> &amp; <strong>PrabotulinumtoxinA (Jeuveau)</strong> — newer botulinum products with longer duration</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for malignant hyperthermia — <em>Dantrolene</em></li>
+<li><strong>INI-CET 2023</strong>: NMB safe in both renal and hepatic failure — <em>Atracurium / Cisatracurium (Hofmann elimination)</em></li>
+<li><strong>NEET PG 2024</strong>: Drug of choice for rapid sequence intubation — <em>Succinylcholine (or Rocuronium-Sugammadex if contraindicated)</em></li>
+<li><strong>INI-CET 2024</strong>: Sugammadex selectively binds — <em>Rocuronium and Vecuronium (steroidal NMBs)</em></li>
+<li><strong>NEET PG 2024</strong>: Succinylcholine contraindicated in all EXCEPT — <em>Healthy adult (it's contraindicated in burns, crush injury, hyperkalaemia, MH, denervation)</em></li>
+<li><strong>FMGE 2024</strong>: GABA-B agonist for spasticity — <em>Baclofen</em></li>
+<li><strong>NEET PG 2025</strong>: Botulinum toxin acts by — <em>Inhibiting ACh release at presynaptic NMJ (SNAP-25 cleavage)</em></li>
+<li><strong>INI-CET 2024</strong>: Prolonged apnoea with Succinylcholine is due to — <em>Pseudocholinesterase deficiency</em></li>
+<li><strong>NEET PG 2023</strong>: Cisatracurium is preferred over Atracurium because — <em>No histamine release</em></li>
+<li><strong>NEET PG 2025</strong>: Pancuronium causes — <em>Tachycardia (vagolytic action)</em></li>
+<li><strong>INI-CET 2024</strong>: Best NMB for ICU sustained paralysis in ARDS — <em>Cisatracurium</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Skeletal Muscle Relaxants — NMJ Pharmacology, Depolarising vs Non-Depolarising NMBs, Reversal, MH &amp; Spasticity</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Skeletal Muscle Relaxants — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ SUB-TOPIC 2: LOCAL ANAESTHETICS ═══════════ */
+    {id:"la",content:`<span id="sub-la-pns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💊 2️⃣ LOCAL ANAESTHETICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Local anaesthetics (LAs)</em> are drugs that <strong>reversibly block conduction of nerve impulses</strong> at the site of application by inhibiting voltage-gated Na⁺ channels, producing loss of sensation in a specific body region <em>without loss of consciousness</em>. They were pioneered by Karl Koller (1884) who introduced cocaine for ophthalmic anaesthesia.</p>
+
+<h4>📋 Comprehensive Classification</h4>
+<table>
+<tr><th>Group</th><th>Drugs</th><th>Key Notes</th></tr>
+<tr><td rowspan="2"><strong>A. Esters (single "i" in name)</strong></td><td><em>Short:</em> Procaine, Chloroprocaine.<br><em>Long:</em> Tetracaine, Benzocaine, Cocaine.</td><td>Metabolised by plasma pseudocholinesterase → PABA (allergenic); shorter duration.</td></tr>
+<tr><td>Topical Esters</td><td>Benzocaine, Tetracaine (eye drops, throat lozenges)</td><td>Benzocaine → methaemoglobinaemia risk in infants</td></tr>
+<tr><td rowspan="3"><strong>B. Amides (two "i"s in name)</strong></td><td><em>Intermediate:</em> Lignocaine (Lidocaine), Mepivacaine, Prilocaine.<br><em>Long:</em> Bupivacaine, Ropivacaine, Levobupivacaine, Etidocaine.</td><td>Hepatic CYP metabolism; lower allergy risk; preferred clinically.</td></tr>
+<tr><td>Topical Amides</td><td>EMLA cream (Eutectic Mixture of Lignocaine + Prilocaine), Lignocaine gel/spray/patch</td><td>Pre-cannulation, paediatric venepuncture, post-herpetic neuralgia patch</td></tr>
+<tr><td>Spinal / Epidural use</td><td>Bupivacaine, Levobupivacaine, Ropivacaine, Lignocaine (hyperbaric)</td><td>Long-acting; bupiv worst cardiotoxicity → ropiv/levobupiv safer</td></tr>
+<tr><td><strong>C. Special</strong></td><td>Cocaine (ester, vasoconstrictor — ENT use); Capsaicin (TRPV1 desensitisation — chronic pain patch)</td><td>Cocaine — only LA with intrinsic vasoconstriction</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action</h4>
+<ul>
+<li>LAs <strong>block voltage-gated Na⁺ channels</strong> from the inner side of the membrane → prevent depolarisation → prevent action potential propagation.</li>
+<li>LAs are <strong>weak bases (pKa 7.5–9)</strong>. In tissue (pH 7.4), they exist as equilibrium of <em>ionised (cation)</em> and <em>unionised (free base)</em> forms.</li>
+<li><strong>Free base (unionised)</strong> crosses the lipid axonal membrane → enters cytoplasm.</li>
+<li>Inside, lower pH ionises LA to <strong>cationic form (LA⁺)</strong> which binds to the Na⁺ channel inner gate (state-dependent block — prefers inactivated state).</li>
+<li><strong>Acidic infected tissue (abscess, pus)</strong> → keeps LA in ionised form → can't cross membrane → poor LA action.</li>
+<li><strong>Cocaine</strong> additionally inhibits NE reuptake → vasoconstriction (unique among LAs).</li>
+<li><strong>Adrenaline (1:200,000)</strong> is added to most LAs → local vasoconstriction → ↓ systemic absorption → ↑ duration + ↑ safety threshold (allows higher doses).</li>
+</ul>
+
+<h4 style="margin-top:14px;">📋 Fibre Block Order (Pain First, Motor Last)</h4>
+<p>Small &amp; unmyelinated fibres are blocked first:</p>
+<ol>
+<li><strong>Aδ + C fibres</strong> — pain, temperature (blocked first)</li>
+<li><strong>Aγ + Aβ fibres</strong> — proprioception, touch, pressure</li>
+<li><strong>Aα fibres</strong> — motor (blocked last)</li>
+</ol>
+<p>Recovery occurs in <em>reverse order</em> — motor function returns first.</p>
+
+<h4 style="margin-top:14px;">💉 Comparative Pharmacokinetics</h4>
+<table>
+<tr><th>Drug</th><th>Onset</th><th>Duration (alone / + Adrenaline)</th><th>Key Uses</th></tr>
+<tr><td><strong>Lignocaine (Lidocaine)</strong></td><td>Fast (1-3 min)</td><td>1-2 h / 2-3 h</td><td>Most versatile — infiltration, nerve block, topical, IV antiarrhythmic (Class IB)</td></tr>
+<tr><td><strong>Bupivacaine</strong></td><td>Slow (5-10 min)</td><td>3-8 h / up to 12 h</td><td>Spinal, epidural, peripheral nerve block; obstetric anaesthesia; long-acting; cardiotoxic</td></tr>
+<tr><td><strong>Ropivacaine</strong></td><td>Slow (5-15 min)</td><td>3-6 h</td><td>Obstetric epidural (less motor block, less cardiotoxic than bupiv)</td></tr>
+<tr><td><strong>Levobupivacaine</strong></td><td>Slow</td><td>3-8 h</td><td>S-enantiomer of bupiv; less cardiotoxic; same anaesthetic potency</td></tr>
+<tr><td><strong>Procaine</strong></td><td>Slow</td><td>30-60 min</td><td>Historical; allergy testing positive (PABA)</td></tr>
+<tr><td><strong>Tetracaine</strong></td><td>Slow</td><td>2-3 h</td><td>Spinal, topical (eye, throat); potent</td></tr>
+<tr><td><strong>Prilocaine</strong></td><td>Fast</td><td>2-3 h</td><td>EMLA cream component; methaemoglobinaemia risk</td></tr>
+<tr><td><strong>Cocaine</strong></td><td>Fast</td><td>30 min</td><td>ENT topical (vasoconstriction + LA effect); abuse potential</td></tr>
+<tr><td><strong>EMLA cream</strong></td><td>30-60 min</td><td>1-2 h</td><td>Pre-IV cannulation in children; superficial procedures</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Procedure</th><th>Technique</th><th>Drug of Choice</th></tr>
+<tr><td><strong>Topical (skin / mucosa)</strong></td><td>Cream / spray / gel</td><td>EMLA cream, Lignocaine gel 2-4%, Benzocaine spray</td></tr>
+<tr><td><strong>Infiltration (minor surgery, suturing)</strong></td><td>Subcutaneous</td><td>Lignocaine 1-2% ± Adrenaline (1:200,000)</td></tr>
+<tr><td><strong>Field block</strong></td><td>Around surgical site</td><td>Lignocaine 1-2%</td></tr>
+<tr><td><strong>Nerve block (e.g. dental, brachial plexus)</strong></td><td>Around nerve trunk</td><td>Lignocaine, Bupivacaine, Ropivacaine</td></tr>
+<tr><td><strong>IV Regional (Bier's block)</strong></td><td>Tourniquet + IV LA</td><td>Lignocaine (NEVER bupivacaine — cardiotoxic if tourniquet fails)</td></tr>
+<tr><td><strong>Spinal anaesthesia</strong></td><td>Intrathecal (CSF)</td><td>Bupivacaine 0.5% hyperbaric, Lignocaine 5% (now rare), Tetracaine</td></tr>
+<tr><td><strong>Epidural anaesthesia</strong></td><td>Epidural space</td><td>Bupivacaine 0.25-0.5%, Ropivacaine 0.2-0.5%, Lignocaine 1.5-2%</td></tr>
+<tr><td><strong>Obstetric labour analgesia</strong></td><td>Epidural</td><td>Bupivacaine 0.125% or Ropivacaine 0.2% ± Fentanyl</td></tr>
+<tr><td><strong>Eye surgery (cataract)</strong></td><td>Topical, peribulbar, retrobulbar</td><td>Tetracaine, Lignocaine + Bupivacaine combination</td></tr>
+<tr><td><strong>IV antiarrhythmic (ventricular)</strong></td><td>IV bolus + infusion</td><td>Lignocaine — Class IB; useful in VT post-MI</td></tr>
+<tr><td><strong>Post-herpetic neuralgia</strong></td><td>5% lidocaine patch</td><td>Topical analgesia</td></tr>
+<tr><td><strong>Pre-IV cannulation children</strong></td><td>EMLA cream 30-60 min before</td><td>Or Lignocaine intradermal weal</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>Local Anaesthetic Systemic Toxicity (LAST)</strong> — biphasic:
+<ul>
+<li><em>CNS first</em> (lower threshold): perioral numbness, tinnitus, lightheadedness, restlessness, dysarthria → <strong>seizures</strong> → CNS depression / coma.</li>
+<li><em>CVS later</em>: hypotension, arrhythmia, cardiovascular collapse, cardiac arrest. <strong>Bupivacaine worst</strong> (binds Na⁺ channels longest).</li>
+<li><strong>Treatment</strong> — STOP injection → ABC → 20% <em>Intralipid emulsion</em> 1.5 mL/kg bolus then 0.25 mL/kg/min infusion → seizure control (BZD) → supportive cardiac care; AVOID vasopressin/calcium channel blockers/lignocaine for arrhythmias.</li>
+</ul>
+</li>
+<li><strong>Methaemoglobinaemia:</strong> Highest with <em>Prilocaine</em> and <em>Benzocaine</em>; metabolite oxidises Fe²⁺ to Fe³⁺ in haemoglobin. Treat with <em>methylene blue</em> 1-2 mg/kg IV (avoid in G6PD deficiency).</li>
+<li><strong>Allergic reactions:</strong> Esters (PABA metabolite) >> amides. True allergy to amides is rare; usually preservative (methylparaben) reaction.</li>
+<li><strong>Cocaine:</strong> Hypertension, tachycardia, MI, abuse potential, nasal septal perforation.</li>
+<li><strong>Spinal anaesthesia:</strong> Hypotension, post-dural puncture headache, urinary retention, transient neurological symptoms (5% lignocaine spinal), cauda equina syndrome (rare).</li>
+<li><strong>Adrenaline addition:</strong> Tachycardia, tremor; <em>contraindicated on end-arteries</em> — finger, toe, penis, nose, ear → necrosis.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Known allergy to ester (PABA); methaemoglobinaemia history (prilocaine/benzocaine).</li>
+<li>Hypovolaemia, fixed cardiac output (severe AS) → avoid spinal anaesthesia.</li>
+<li>Increased intracranial pressure → avoid spinal/epidural.</li>
+<li>Adrenaline-containing LA on end-arteries (digits, penis, nose, ear).</li>
+<li>Bupivacaine in IV regional anaesthesia (Bier's block).</li>
+<li>Infected skin / acidic tissue — LA action poor (use distant approach).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>LA + β-blockers / Cimetidine</strong> → ↑ Lignocaine levels.</li>
+<li><strong>Bupivacaine + Class III antiarrhythmics (Amiodarone, Sotalol)</strong> → ↑ cardiotoxicity.</li>
+<li><strong>Sulfonamides / Phenytoin + Prilocaine</strong> → ↑ methaemoglobinaemia risk.</li>
+<li><strong>Cocaine + Adrenaline / α agonists</strong> → severe HTN, MI.</li>
+<li><strong>Ester LA + Sux</strong> → both compete for pseudocholinesterase → prolonged Sux.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Brachial plexus block performed with bupivacaine 0.5%; patient develops perioral tingling, then seizures + hypotension + ventricular arrhythmias. Treatment?<br><strong>Answer:</strong> <em>LAST (Local Anaesthetic Systemic Toxicity)</em>. Stop injection → secure airway → IV <em>20% Intralipid emulsion</em> 1.5 mL/kg bolus + infusion → BZD for seizures → supportive cardiac care.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Dentist applies lidocaine + adrenaline for digit injury suturing. Patient develops gangrene of fingertip days later.<br><strong>Answer:</strong> Adrenaline-induced vasoconstriction in end-artery → ischaemic necrosis. <em>NEVER use adrenaline-containing LA on digits, penis, nose, ear</em>.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 2-month-old infant given EMLA cream over large surface for IV access; becomes cyanotic with SpO2 85% (unresponsive to oxygen). Diagnosis?<br><strong>Answer:</strong> <em>Methaemoglobinaemia</em> due to prilocaine. Treat with <em>methylene blue</em> 1-2 mg/kg IV.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Amide LAs have TWO "i"s</strong> in name (Lignocaine, Bupivacaine, Ropivacaine, Mepivacaine, Prilocaine)</li>
+<li><strong>Esters have ONE "i"</strong> (Procaine, Cocaine, Tetracaine, Benzocaine, Chloroprocaine)</li>
+<li><strong>Fibre block order:</strong> Pain (Aδ + C) → Temperature → Touch → Pressure → Motor (recovery reverses)</li>
+<li><strong>Inflamed / abscess tissue</strong> is acidic → ionised LA → poor penetration → use field block away from infection</li>
+<li><strong>Adrenaline 1:200,000</strong> ↑ duration + ↓ systemic absorption + ↑ safety; AVOID on end-arteries (finger, penis, nose, ear)</li>
+<li><strong>Bupivacaine = worst cardiotoxicity</strong> — long Na⁺ channel binding; Ropivacaine + Levobupivacaine safer</li>
+<li><strong>Lignocaine</strong> is also Class IB IV antiarrhythmic — used for ventricular arrhythmias post-MI</li>
+<li><strong>EMLA cream</strong> (Eutectic Mixture of Lignocaine + Prilocaine) — apply 30-60 min before; risk of methaemoglobinaemia in infants</li>
+<li><strong>Cocaine</strong> = only LA with intrinsic vasoconstriction (blocks NE reuptake) — used ENT topical</li>
+<li><strong>LAST</strong> antidote = <em>20% Intralipid emulsion</em> (1.5 mL/kg bolus + 0.25 mL/kg/min); for systemic LA overdose</li>
+<li><strong>Methaemoglobinaemia</strong> with Prilocaine/Benzocaine — treat with <em>methylene blue</em>; AVOID in G6PD deficiency</li>
+<li><strong>Spinal anaesthesia</strong> with Bupivacaine 0.5% hyperbaric — onset rapid, duration 2-3 h</li>
+<li><strong>Bier's block (IV regional)</strong> — use lignocaine ONLY (NEVER bupivacaine — fatal if tourniquet fails)</li>
+<li><strong>Pseudocholinesterase deficiency</strong> → prolonged action of ester LAs AND Succinylcholine</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Liposomal Bupivacaine (Exparel)</strong> — single-dose surgical analgesia lasting 72-96 hours; expanding use post-op</li>
+<li><strong>Tetrodotoxin (TTX)</strong> — under investigation as ultra-long acting site-specific Na-channel blocker</li>
+<li><strong>Saxitoxin derivatives</strong> in preclinical trials for prolonged peripheral nerve block</li>
+<li><strong>Ultrasound-guided nerve blocks</strong> standard of care — ↓ dose, ↓ LAST risk, ↑ success rate</li>
+<li><strong>QX-314 + Capsaicin combination</strong> — selective C-fibre block (only nociception, no motor) under investigation</li>
+<li><strong>Continuous peripheral nerve catheters</strong> with disposable pumps for outpatient post-op analgesia</li>
+<li><strong>Long-acting EMLA alternatives</strong> — lidocaine 7% / tetracaine 7% combination patches (Synera, Pliaglis)</li>
+<li><strong>Bupivacaine + Meloxicam</strong> (Zynrelef) — first FDA approved fixed-dose post-op analgesic combination (2021)</li>
+<li><strong>Capsaicin 8% patch</strong> (Qutenza) — single application for post-herpetic neuralgia; lasts 3 months</li>
+<li><strong>Cocaine-free ENT topical alternatives</strong> — lignocaine + phenylephrine combinations replacing cocaine</li>
+<li><strong>Updated ASRA LAST guidelines (2020)</strong> — Intralipid 20% protocol standardised</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Local anaesthetics act by blocking — <em>Voltage-gated Na⁺ channels</em></li>
+<li><strong>INI-CET 2023</strong>: LA contraindicated for use with adrenaline on finger — <em>Use lignocaine alone</em></li>
+<li><strong>NEET PG 2024</strong>: Antidote of Local Anaesthetic Systemic Toxicity (LAST) — <em>20% Intralipid emulsion</em></li>
+<li><strong>INI-CET 2024</strong>: LA causing methaemoglobinaemia — <em>Prilocaine (or Benzocaine)</em></li>
+<li><strong>NEET PG 2024</strong>: Order of LA fibre block — <em>Pain → Temperature → Touch → Pressure → Motor</em></li>
+<li><strong>FMGE 2024</strong>: Most cardiotoxic LA — <em>Bupivacaine</em></li>
+<li><strong>NEET PG 2025</strong>: LA also used as IV antiarrhythmic (Class IB) — <em>Lignocaine</em></li>
+<li><strong>INI-CET 2024</strong>: LA producing intrinsic vasoconstriction — <em>Cocaine</em></li>
+<li><strong>NEET PG 2023</strong>: LA preferred for obstetric epidural analgesia (less motor block) — <em>Ropivacaine</em></li>
+<li><strong>NEET PG 2025</strong>: LA NOT to be used in IV regional (Bier's block) — <em>Bupivacaine</em></li>
+<li><strong>INI-CET 2024</strong>: Methylene blue treatment is contraindicated in — <em>G6PD deficiency</em></li>
+<li><strong>NEET PG 2024</strong>: Topical LA combination in EMLA cream — <em>Lignocaine + Prilocaine</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Local Anaesthetics — Esters vs Amides, Na⁺ Channel Block, Fibre Order, LAST &amp; Lipid Rescue</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Local Anaesthetics — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Lignocaine",c:"Amide LA",u:"Infiltration, nerve block, IV antiarrhythmic (Class IB)"},
-    {n:"Bupivacaine",c:"Amide LA",u:"Spinal/epidural; longest duration; cardiotoxic"},
-    {n:"Ropivacaine",c:"Amide LA",u:"Obstetric anaesthesia; less motor block; safer"},
-    {n:"Tetracaine",c:"Ester LA",u:"Topical; spinal anaesthesia"},
-    {n:"EMLA cream",c:"Lignocaine+Prilocaine",u:"Topical pre-IV cannulation, paediatric"},
-    {n:"Succinylcholine",c:"Depolarising NMB",u:"Rapid intubation; ECT"},
-    {n:"Vecuronium",c:"Non-depolarising NMB",u:"Intra-op muscle relaxation; cardiac-stable"},
-    {n:"Rocuronium",c:"Non-depolarising NMB",u:"Rapid sequence intubation alternative; sugammadex reversal"},
-    {n:"Atracurium",c:"Non-depolarising NMB",u:"Hofmann elimination – safe in liver/renal failure"},
-    {n:"Baclofen",c:"GABA-B agonist",u:"Spasticity – multiple sclerosis, spinal cord injury"},
-    {n:"Dantrolene",c:"RyR1 antagonist",u:"Malignant hyperthermia; NMS; spasticity"},
-    {n:"Sugammadex",c:"Selective relaxant binder",u:"Rapid reversal of rocuronium / vecuronium"}
+    // ── Sub-Topic 1: Skeletal Muscle Relaxants ──
+    {n:"Succinylcholine",c:"1️⃣ Depolarising NMB",u:"Rapid sequence intubation (fastest onset); ECT; AVOID in burns/crush/MH"},
+    {n:"Vecuronium",c:"1️⃣ Non-depolarising NMB (intermediate)",u:"Intra-op relaxation; cardiac stable; biliary excretion"},
+    {n:"Rocuronium",c:"1️⃣ Non-depolarising NMB (intermediate)",u:"Rapid sequence intubation alternative (Sugammadex reversal)"},
+    {n:"Atracurium",c:"1️⃣ Non-depolarising NMB",u:"Hofmann elimination — safe in renal/hepatic failure; histamine release"},
+    {n:"Cisatracurium",c:"1️⃣ Non-depolarising NMB",u:"Hofmann elimination; no histamine; ICU sustained paralysis"},
+    {n:"Pancuronium",c:"1️⃣ Non-depolarising NMB (long)",u:"Long-acting; vagolytic tachycardia"},
+    {n:"Mivacurium",c:"1️⃣ Non-depolarising NMB (short)",u:"Short-acting; pseudocholinesterase metabolism"},
+    {n:"Sugammadex",c:"1️⃣ Selective relaxant binder",u:"Rapid &amp; complete reversal of Rocuronium / Vecuronium"},
+    {n:"Neostigmine + Glycopyrrolate",c:"1️⃣ NMB reversal (AChE inhibitor)",u:"Reverse non-depolarising NMBs; glyco prevents bradycardia"},
+    {n:"Baclofen",c:"1️⃣ GABA-B agonist (central)",u:"Spasticity — MS, spinal cord injury; intrathecal pump for severe"},
+    {n:"Tizanidine",c:"1️⃣ α2 agonist (central)",u:"Spasticity; less sedation than baclofen"},
+    {n:"Dantrolene",c:"1️⃣ RyR1 antagonist (direct-acting)",u:"DOC for malignant hyperthermia + NMS"},
+    {n:"Botulinum toxin A",c:"1️⃣ ACh release inhibitor (presynaptic)",u:"Focal dystonia, blepharospasm, spasticity, hyperhidrosis, migraine"},
+    {n:"Cyclobenzaprine",c:"1️⃣ Centrally-acting (TCA-like)",u:"Acute musculoskeletal pain/spasm (short-term)"},
+    // ── Sub-Topic 2: Local Anaesthetics ──
+    {n:"Lignocaine (Lidocaine)",c:"2️⃣ Amide LA",u:"Infiltration, nerve block, topical, IV antiarrhythmic (Class IB)"},
+    {n:"Bupivacaine",c:"2️⃣ Amide LA (long-acting)",u:"Spinal/epidural; longest duration; most cardiotoxic"},
+    {n:"Ropivacaine",c:"2️⃣ Amide LA",u:"Obstetric epidural; less motor block; less cardiotoxic"},
+    {n:"Levobupivacaine",c:"2️⃣ Amide LA (S-enantiomer)",u:"Bupivacaine alternative — less cardiotoxic"},
+    {n:"Mepivacaine",c:"2️⃣ Amide LA",u:"Dental anaesthesia; no vasoconstriction needed"},
+    {n:"Prilocaine",c:"2️⃣ Amide LA",u:"EMLA cream; methaemoglobinaemia risk"},
+    {n:"Procaine",c:"2️⃣ Ester LA",u:"Historical; allergy testing (PABA)"},
+    {n:"Tetracaine",c:"2️⃣ Ester LA",u:"Topical (eye, throat); spinal anaesthesia"},
+    {n:"Benzocaine",c:"2️⃣ Ester LA (topical only)",u:"Throat sprays, lozenges; methaemoglobinaemia in infants"},
+    {n:"Cocaine",c:"2️⃣ Ester LA (vasoconstrictor)",u:"ENT topical; abuse potential; only LA with intrinsic vasoconstriction"},
+    {n:"EMLA cream",c:"2️⃣ Lignocaine + Prilocaine",u:"Pre-IV cannulation in children, paediatric procedures"},
+    {n:"Lignocaine 5% patch",c:"2️⃣ Topical amide",u:"Post-herpetic neuralgia"},
+    {n:"Liposomal Bupivacaine (Exparel)",c:"2️⃣ Sustained-release",u:"Post-op analgesia 72-96 h"},
+    {n:"Intralipid 20%",c:"2️⃣ LAST antidote",u:"Local anaesthetic systemic toxicity rescue (1.5 mL/kg bolus + infusion)"},
+    {n:"Methylene blue",c:"2️⃣ Methaemoglobinaemia antidote",u:"1-2 mg/kg IV; AVOID in G6PD deficiency"}
   ],
   ppt:[
     {t:"Local Anaesthetics – Pharmacology",p:["Esters vs amides","pKa & onset","Fibre block order","Adrenaline combination"]},
@@ -5825,14 +6407,43 @@ TOPICS.push({id:"pns",icon:"💉",title:"Peripheral Nervous System",
     {t:"Malignant Hyperthermia",p:["Triggers","Pathophysiology","Clinical features","Dantrolene"]}
   ],
   mcqs:[
-    {q:"Local anaesthetics act by blocking:",o:["K⁺ channels","Voltage-gated Na⁺ channels","Ca²⁺ channels","Cl⁻ channels"],a:"Voltage-gated Na⁺ channels",e:"LAs bind to the inner gate of voltage-gated Na+ channels in their inactivated state, preventing depolarisation and propagation of the action potential."},
-    {q:"LA contraindicated for use with adrenaline on finger:",o:["Use lignocaine alone","Use lignocaine + adrenaline","Use bupivacaine alone","Use prilocaine"],a:"Use lignocaine alone",e:"Adrenaline causes intense vasoconstriction → necrosis of end-arteries. Avoid on digits, penis, nose, ear, toes."},
-    {q:"DOC for malignant hyperthermia:",o:["Neostigmine","Dantrolene","Atropine","Methylene blue"],a:"Dantrolene",e:"Dantrolene blocks ryanodine receptor (RyR1) preventing Ca²⁺ release from SR. Stop trigger, give dantrolene 2.5 mg/kg IV, active cooling, treat hyperkalaemia."},
-    {q:"Drug of choice for rapid sequence intubation:",o:["Vecuronium","Atracurium","Succinylcholine","Pancuronium"],a:"Succinylcholine",e:"Succinylcholine has fastest onset (30 s) and shortest duration (5-10 min). Alternative: high-dose rocuronium with sugammadex reversal."},
-    {q:"Which LA causes methemoglobinaemia?",o:["Lignocaine","Bupivacaine","Prilocaine","Ropivacaine"],a:"Prilocaine",e:"Prilocaine metabolite o-toluidine oxidises Hb to MetHb. Also seen with benzocaine. Treat with methylene blue."},
-    {q:"Atracurium is preferred in renal failure because:",o:["Excreted unchanged in urine","Undergoes Hofmann elimination","Hepatic metabolism","Long duration"],a:"Undergoes Hofmann elimination",e:"Atracurium degrades spontaneously at body pH and temperature (Hofmann elimination) — independent of liver and kidney. Cisatracurium has even cleaner profile."}
+    // ═══════ 1️⃣ SKELETAL MUSCLE RELAXANTS (Q1-Q14) ═══════
+    {q:"[1️⃣ SMR] Drug of choice for malignant hyperthermia:",o:["Neostigmine","Dantrolene","Atropine","Methylene blue"],a:"Dantrolene",e:"Dantrolene blocks ryanodine receptor (RyR1) on sarcoplasmic reticulum → prevents Ca²⁺ release → muscle relaxation. Dose: 2.5 mg/kg IV (repeat to 10 mg/kg) + stop trigger + active cooling + treat hyperkalaemia."},
+    {q:"[1️⃣ SMR] DOC for rapid sequence intubation (RSI):",o:["Vecuronium","Atracurium","Succinylcholine","Pancuronium"],a:"Succinylcholine",e:"Succinylcholine — fastest onset (30 sec) and shortest duration (5-10 min). Alternative: high-dose Rocuronium (1.2 mg/kg) with Sugammadex on standby (if Sux is contraindicated)."},
+    {q:"[1️⃣ SMR] NMB safe in BOTH renal AND hepatic failure (Hofmann elimination):",o:["Vecuronium","Atracurium / Cisatracurium","Pancuronium","Rocuronium"],a:"Atracurium / Cisatracurium",e:"Atracurium and Cisatracurium undergo Hofmann elimination (spontaneous degradation at body pH/temperature) — independent of liver/kidney function. Cisatracurium has no histamine release (preferred for ICU)."},
+    {q:"[1️⃣ SMR] Sugammadex selectively binds and reverses:",o:["All non-depolarising NMBs","Succinylcholine","Rocuronium and Vecuronium (steroidal NMBs)","Atracurium and Cisatracurium"],a:"Rocuronium and Vecuronium (steroidal NMBs)",e:"Sugammadex — γ-cyclodextrin that encapsulates aminosteroid NMBs (Roc, Vec). Provides rapid, complete reversal. Does NOT reverse benzylisoquinolinium NMBs (Atra/Cisatra/Mivacurium)."},
+    {q:"[1️⃣ SMR] Succinylcholine causes prolonged apnoea due to:",o:["Hepatic failure","Renal failure","Pseudocholinesterase deficiency","Hyperkalaemia"],a:"Pseudocholinesterase deficiency",e:"Sux is metabolised by plasma pseudocholinesterase. In atypical / deficient pseudocholinesterase (~1:3000), prolonged apnoea lasting hours can occur — supportive ventilation until recovery."},
+    {q:"[1️⃣ SMR] Succinylcholine is contraindicated in all EXCEPT:",o:["Major burns (after 24-48 h)","Crush injury","Hyperkalaemia","Healthy adult for elective surgery"],a:"Healthy adult for elective surgery",e:"Sux avoid in: Burns, Crush, Denervation, Hyperkalaemia, MH history, Open eye injury, Duchenne MD, Pseudocholinesterase deficiency. Safe for healthy patients undergoing elective intubation."},
+    {q:"[1️⃣ SMR] GABA-B agonist used for spasticity (multiple sclerosis, spinal cord injury):",o:["Tizanidine","Baclofen","Diazepam","Dantrolene"],a:"Baclofen",e:"Baclofen — GABA-B receptor agonist; acts on spinal cord → ↓ excitatory transmission → ↓ stretch reflex. Available oral and intrathecal (pump for severe spasticity). NEVER stop abruptly — withdrawal mimics NMS."},
+    {q:"[1️⃣ SMR] Mechanism of botulinum toxin:",o:["Blocks Nm receptor at NMJ","Inhibits ACh release at presynaptic terminal (SNAP-25 cleavage)","Blocks ryanodine receptor","Inhibits AChE"],a:"Inhibits ACh release at presynaptic terminal (SNAP-25 cleavage)",e:"Botulinum toxin A (Botox) cleaves SNAP-25 → blocks ACh release at presynaptic NMJ → flaccid paralysis (lasts months). Used for cervical dystonia, blepharospasm, spasticity, hyperhidrosis, migraine prophylaxis, cosmesis."},
+    {q:"[1️⃣ SMR] Cisatracurium is preferred over Atracurium because:",o:["Faster onset","Cheaper","No histamine release","Reversed by Sugammadex"],a:"No histamine release",e:"Cisatracurium has minimal histamine release (vs Atracurium) → less bronchospasm, hypotension, flushing. Both undergo Hofmann elimination. Cisatracurium preferred for ICU sustained paralysis (PROSEVA trial)."},
+    {q:"[1️⃣ SMR] NMB with vagolytic tachycardia as ADR:",o:["Vecuronium","Atracurium","Pancuronium","Cisatracurium"],a:"Pancuronium",e:"Pancuronium has vagolytic effect (anti-muscarinic at SA node) → tachycardia. Useful in patients with bradycardia but avoid in CAD/HTN. Long-acting (60-90 min) — accumulates in renal failure."},
+    {q:"[1️⃣ SMR] Tizanidine is a:",o:["GABA-B agonist","α2-adrenergic agonist (central)","NMDA antagonist","Acetylcholinesterase inhibitor"],a:"α2-adrenergic agonist (central)",
+e:"Tizanidine — central α2 agonist (like Clonidine) → ↓ excitatory neurotransmitter release in spinal cord → muscle relaxation with minimal weakness. ADR: hypotension, dry mouth, hepatotoxicity."},
+    {q:"[1️⃣ SMR] Sugammadex + Hormonal contraceptives interaction requires:",o:["Reduce contraceptive dose","Additional contraception for 7 days","No interaction","Switch to non-hormonal method permanently"],a:"Additional contraception for 7 days",e:"Sugammadex can encapsulate progestogens → reduce contraceptive efficacy. Counsel patient to use additional barrier method for 7 days after Sugammadex administration."},
+    {q:"[1️⃣ SMR] Patient on Baclofen 80 mg/day suddenly stops. Develops hallucinations + rigidity + autonomic instability. Best action?",o:["Continue stopping","Start Bromocriptine","Resume Baclofen immediately + BZD","Give Dantrolene"],a:"Resume Baclofen immediately + BZD",e:"Baclofen withdrawal — mimics NMS; can be fatal. Resume Baclofen immediately + supportive care + Benzodiazepines for agitation. Avoid abrupt withdrawal — always taper."},
+    {q:"[1️⃣ SMR] Myasthenia gravis patients are MOST sensitive to:",o:["Succinylcholine (high dose)","Non-depolarising NMBs (extreme sensitivity)","Local anaesthetics","All NMBs equally"],a:"Non-depolarising NMBs (extreme sensitivity)",e:"In MG, fewer Nm receptors are functional → extreme sensitivity to competitive non-depolarising NMBs (start at 10% normal dose). Sugammadex can rapidly reverse if Roc/Vec used. Sux response is variable."},
+
+    // ═══════ 2️⃣ LOCAL ANAESTHETICS (Q15-Q27) ═══════
+    {q:"[2️⃣ LA] Local anaesthetics act by blocking:",o:["K⁺ channels","Voltage-gated Na⁺ channels","Ca²⁺ channels","Cl⁻ channels"],a:"Voltage-gated Na⁺ channels",e:"LAs bind to the inner gate of voltage-gated Na⁺ channels in their inactivated state → prevent depolarisation → prevent action potential propagation. LAs are weak bases; cation form (LA⁺) binds inside the channel."},
+    {q:"[2️⃣ LA] LA contraindicated WITH adrenaline on finger / digits:",o:["Use lignocaine WITH adrenaline","Use lignocaine alone (NO adrenaline)","Use bupivacaine + adrenaline","Use prilocaine + adrenaline"],a:"Use lignocaine alone (NO adrenaline)",e:"Adrenaline causes intense vasoconstriction → ischaemic necrosis of end-arteries. NEVER use adrenaline-containing LA on digits, toes, penis, nose, ear (end-artery zones)."},
+    {q:"[2️⃣ LA] LA most cardiotoxic (longest Na⁺ channel binding):",o:["Lignocaine","Bupivacaine","Procaine","Ropivacaine"],a:"Bupivacaine",e:"Bupivacaine binds cardiac Na⁺ channels tightly → severe cardiac arrhythmias and cardiac arrest. Ropivacaine and Levobupivacaine (S-enantiomer) are less cardiotoxic. Bupivacaine BANNED in IV regional (Bier's block)."},
+    {q:"[2️⃣ LA] LA causing methaemoglobinaemia:",o:["Lignocaine","Bupivacaine","Prilocaine (or Benzocaine)","Ropivacaine"],a:"Prilocaine (or Benzocaine)",e:"Prilocaine metabolite o-toluidine oxidises Hb (Fe²⁺) → MetHb (Fe³⁺). Also seen with Benzocaine. Treat with methylene blue 1-2 mg/kg IV (AVOID in G6PD deficiency)."},
+    {q:"[2️⃣ LA] Antidote of Local Anaesthetic Systemic Toxicity (LAST):",o:["Sodium bicarbonate","20% Intralipid emulsion","Methylene blue","Naloxone"],a:"20% Intralipid emulsion",e:"LAST treatment: STOP injection → ABC → 20% Intralipid 1.5 mL/kg bolus + 0.25 mL/kg/min infusion → BZD for seizures → supportive cardiac care. Lipid acts as 'lipid sink' for LA."},
+    {q:"[2️⃣ LA] Order of fibre block by local anaesthetic:",o:["Motor → Touch → Pain","Pain → Temperature → Touch → Pressure → Motor","Pressure → Touch → Pain","Touch → Pain → Motor"],a:"Pain → Temperature → Touch → Pressure → Motor",e:"Small/unmyelinated fibres blocked first: Aδ + C (pain, temperature) → Aγ + Aβ (touch, pressure, proprioception) → Aα (motor). Recovery reverses — motor returns first, pain last."},
+    {q:"[2️⃣ LA] LA poorly effective in inflamed/infected (acidic) tissue because:",o:["Enzymes destroy LA","Ionised form can't cross membrane","↑ blood flow washes out LA","Receptors are destroyed"],a:"Ionised form can't cross membrane",
+e:"Acidic infected tissue → LA stays in ionised (cation) form → cannot cross lipid membrane → poor penetration to Na⁺ channel. Use field block at distance from infection."},
+    {q:"[2️⃣ LA] LA also used as IV Class IB antiarrhythmic:",o:["Bupivacaine","Lignocaine","Procaine","Tetracaine"],a:"Lignocaine",e:"Lignocaine — IV bolus + infusion for ventricular arrhythmias post-MI. Blocks fast Na⁺ channels in ventricular cells. Also useful for ventricular tachycardia, ventricular fibrillation."},
+    {q:"[2️⃣ LA] LA preferred for obstetric epidural (less motor block):",o:["Lignocaine","Bupivacaine","Ropivacaine","Tetracaine"],a:"Ropivacaine",e:"Ropivacaine differentiates between sensory (Aδ) and motor (Aα) fibres better than Bupivacaine. Used 0.2% for labour epidural with Fentanyl. Mother can ambulate during labour."},
+    {q:"[2️⃣ LA] LA NEVER used for IV regional (Bier's block):",o:["Lignocaine","Bupivacaine","Procaine","Prilocaine"],a:"Bupivacaine",e:"Bupivacaine is banned in Bier's block — if tourniquet fails, systemic toxicity is fatal due to severe cardiotoxicity. Use Lignocaine 0.5% only for Bier's block."},
+    {q:"[2️⃣ LA] LA with intrinsic vasoconstrictor activity (blocks NE reuptake):",o:["Lignocaine","Procaine","Cocaine","Bupivacaine"],a:"Cocaine",e:"Cocaine — only LA with intrinsic vasoconstriction (inhibits noradrenaline reuptake). Used as topical ENT anaesthetic (4% solution). Abuse potential and cardiac toxicity limit use; replaced by lignocaine + phenylephrine in modern ENT."},
+    {q:"[2️⃣ LA] EMLA cream composition (eutectic mixture):",o:["Lignocaine + Bupivacaine","Lignocaine + Prilocaine","Procaine + Tetracaine","Lignocaine + Adrenaline"],a:"Lignocaine + Prilocaine",e:"EMLA = Eutectic Mixture of LA = Lignocaine 2.5% + Prilocaine 2.5%. Apply 30-60 min before. Used for pre-IV cannulation in children. Risk of methaemoglobinaemia with extensive use in infants."},
+    {q:"[2️⃣ LA] Methylene blue (for methaemoglobinaemia treatment) is contraindicated in:",o:["Pregnancy","G6PD deficiency","Hypertension","Asthma"],a:"G6PD deficiency",e:"Methylene blue in G6PD deficiency → severe haemolysis (acts as oxidising agent without functional reductase pathway). Alternative: ascorbic acid (Vitamin C), exchange transfusion in severe cases."}
   ],
-  mnemonic:`<strong>Amide LAs have 'i'</strong> – lignocaine, bupivacaine, ropivacaine, mepivacaine, prilocaine. <strong>Esters – single 'i'</strong> – procaine, cocaine, tetracaine. <strong>SCh avoid in</strong>: Burns, Crush, Denervation, Hyperkalaemia, MH, Eye injury.`
+  mnemonic:`<strong>📚 Peripheral Nervous System Drugs — Quick Concepts</strong><br>
+• <strong>Skeletal Muscle Relaxants</strong> = NMJ blockers (Sux + Curare class) · Centrally-acting (Baclofen, Tizanidine) · Dantrolene (RyR1) · Botulinum toxin.<br>
+• <strong>Local Anaesthetics</strong> = Block voltage-gated Na⁺ channels reversibly → loss of sensation without unconsciousness.<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 2 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
