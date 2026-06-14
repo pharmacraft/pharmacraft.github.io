@@ -3784,64 +3784,606 @@ TOPICS.push({id:"ans",icon:"🧠",title:"Autonomic Nervous System",
 });
 
 TOPICS.push({id:"autacoids",icon:"🌡️",title:"Autacoids & NSAIDs",
-  classification:`<h4>Histamine Antagonists</h4>
-<table><tr><th>Generation</th><th>Examples</th><th>Features</th></tr>
-<tr><td>1st gen H1</td><td>Chlorpheniramine, Promethazine, Diphenhydramine, Hydroxyzine</td><td>Sedating, anticholinergic</td></tr>
-<tr><td>2nd gen H1</td><td>Cetirizine, Loratadine, Fexofenadine</td><td>Non-sedating, no anti-M</td></tr>
-<tr><td>H2 blockers</td><td>Ranitidine, Famotidine, Cimetidine</td><td>Acid suppression</td></tr></table>
-<h4>NSAIDs (COX inhibitors)</h4>
-<table><tr><th>Class</th><th>Drug</th></tr>
-<tr><td>Non-selective</td><td>Aspirin, Ibuprofen, Diclofenac, Indomethacin, Naproxen, Ketorolac, Piroxicam</td></tr>
-<tr><td>Preferential COX-2</td><td>Nimesulide, Meloxicam, Etodolac</td></tr>
-<tr><td>Selective COX-2 (coxibs)</td><td>Celecoxib, Etoricoxib, Parecoxib</td></tr>
-<tr><td>Analgesic-antipyretic</td><td>Paracetamol</td></tr></table>
-<h4>Antigout</h4>
-<p>Acute: NSAIDs (Indomethacin), Colchicine, Steroids. Chronic: Allopurinol, Febuxostat (XO inhibitors); Probenecid (uricosuric); Rasburicase, Pegloticase.</p>
-<h4>5-HT Drugs</h4>
-<p>Triptans (Sumatriptan – 5HT1B/1D agonist) – migraine; Ondansetron (5HT3 antagonist) – chemotherapy emesis; Cyproheptadine, Pizotifen – serotonin antagonists; Ergotamine – migraine.</p>`,
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Antihistaminics",panelId:"antihist"},
+    {n:2,label:"Serotonin & Migraine",panelId:"serotonin"},
+    {n:3,label:"Eicosanoids (PG & LT)",panelId:"eicosan"},
+    {n:4,label:"NSAIDs",panelId:"nsaids"},
+    {n:5,label:"Gout & Rheumatoid Arthritis",panelId:"goutra"}
+  ],
+  classification:`<h4>Autacoids — Overview</h4>
+<p><strong>Definition:</strong> <em>"Autacoids"</em> (Greek: <em>autos</em> = self, <em>akos</em> = healing) are <strong>biologically active substances</strong> produced by various cells of the body that act <em>locally</em> at or near their site of synthesis. They are also called "<strong>local hormones</strong>." Unlike classical hormones, they are not secreted into the bloodstream for distant action.</p>
+<table>
+<tr><th>Category</th><th>Members</th><th>Key Therapeutic Class</th></tr>
+<tr><td><strong>Amine Autacoids</strong></td><td>Histamine, 5-HT (Serotonin)</td><td>Antihistamines, Triptans, 5-HT3 blockers</td></tr>
+<tr><td><strong>Lipid Autacoids (Eicosanoids)</strong></td><td>Prostaglandins, Thromboxanes, Leukotrienes, Prostacyclin</td><td>NSAIDs, Misoprostol, Montelukast</td></tr>
+<tr><td><strong>Peptide Autacoids</strong></td><td>Bradykinin, Angiotensin, Substance P, Neuropeptides</td><td>ACEi, ARBs, NK1 blockers</td></tr>
+<tr><td><strong>Purine &amp; Others</strong></td><td>Adenosine, Nitric Oxide (NO), PAF</td><td>Adenosine (SVT), Nitrates, PAF antagonists</td></tr>
+</table>
+<p style="margin-top:18px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>Sub-topic-specific content (receptors, drugs, mnemonics, NEET PG points) — please use the 5-button Sub-Topic Navigator above to open Antihistaminics, Serotonin &amp; Migraine, Eicosanoids, NSAIDs, or Gout &amp; RA panels.</em></p>`,
   moa:MOA.histamine,
-  pkpd:`<h4>Aspirin (Acetylsalicylic Acid)</h4>
+  extraPanels:[
+    /* ═══════════ SUB-TOPIC 1: ANTIHISTAMINICS ═══════════ */
+    {id:"antihist",content:`<span id="sub-antihist-autacoids" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🌸 1️⃣ ANTIHISTAMINICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that <em>antagonise the actions of histamine</em> at H1 receptors are called <strong>antihistamines</strong>. The term clinically refers to H1 antagonists (used for allergy). H2 antagonists (used for acid-peptic disease) are discussed in GIT chapter.</p>
+
+<h4>📋 Histamine — A Quick Recap</h4>
+<table>
+<tr><th>Receptor</th><th>G-protein</th><th>Site</th><th>Action</th></tr>
+<tr><td><strong>H1</strong></td><td>Gq → ↑IP3/DAG</td><td>Smooth muscle, endothelium, sensory nerves, CNS</td><td>Bronchoconstriction, vasodilation, pruritus, wakefulness</td></tr>
+<tr><td><strong>H2</strong></td><td>Gs → ↑cAMP</td><td>Gastric parietal cells, heart</td><td>↑ Gastric acid, ↑ HR, ↑ contractility</td></tr>
+<tr><td><strong>H3</strong></td><td>Gi → ↓cAMP</td><td>Presynaptic CNS</td><td>↓ Histamine, NA, ACh release (autoreceptor)</td></tr>
+<tr><td><strong>H4</strong></td><td>Gi → ↓cAMP</td><td>Eosinophils, mast cells, bone marrow</td><td>Chemotaxis, immunomodulation</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">📋 Classification of H1 Antihistamines</h4>
+<table>
+<tr><th>Generation</th><th>Drugs</th><th>Sedation</th><th>Anti-M effect</th><th>Duration</th></tr>
+<tr><td><strong>1st Gen (Classical)</strong></td><td>Chlorpheniramine, Diphenhydramine, Promethazine, Hydroxyzine, Pheniramine, Cyclizine, Cinnarizine, Meclizine, Cyproheptadine, Triprolidine, Doxylamine</td><td>++ to +++</td><td>+ to +++</td><td>4–8 h (most)</td></tr>
+<tr><td><strong>2nd Gen (Non-sedating)</strong></td><td>Cetirizine, Loratadine, Fexofenadine, Desloratadine, Levocetirizine, Bilastine, Ebastine, Rupatadine, Mizolastine, Acrivastine, Azelastine</td><td>0 / minimal</td><td>0</td><td>12–24 h</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🧠 Memory Aid — Antihistamines</h4>
+<div class="mnemonic"><p><strong>1st Gen "Old Phenergan Crew" — CDPHC:</strong> Chlorpheniramine · Diphenhydramine · Promethazine · Hydroxyzine · Cyclizine. <em>Causes sleep + dry mouth.</em><br><br>
+<strong>2nd Gen "Modern Allergy Squad" — CLF-DL:</strong> Cetirizine · Loratadine · Fexofenadine · Desloratadine · Levocetirizine. <em>"Non-sedating, non-anti-Muscarinic, non-α-blocking."</em></p></div>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action</h4>
 <ul>
-<li>Irreversibly acetylates COX-1 &amp; COX-2 → ↓TXA2 &amp; ↓PG</li>
-<li>Low dose (75–150 mg) – antiplatelet (COX-1 only in platelets, lasts 7–10 days)</li>
-<li>Analgesic dose 0.3–0.6 g; anti-inflammatory dose 4–6 g/day (rarely used)</li>
-<li>Salicylism – tinnitus, vertigo, hyperventilation, mixed acid-base disturbance</li>
+<li>H1 antihistamines are <strong>inverse agonists</strong> (not pure antagonists) — they shift active H1 receptors to inactive state.</li>
+<li>Reverse histamine-induced: capillary permeability, oedema, pruritus, smooth muscle contraction, sensory nerve stimulation.</li>
+<li>1st gen → cross BBB → sedation, anti-emesis (also block muscarinic, α-adrenergic &amp; serotonin receptors).</li>
+<li>2nd gen → polar / large molecules → minimal BBB penetration → no sedation.</li>
 </ul>
-<h4>Paracetamol</h4>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Key Points</h4>
+<table>
+<tr><th>Feature</th><th>1st Generation</th><th>2nd Generation</th></tr>
+<tr><td>Absorption</td><td>Rapid oral; high bioavailability</td><td>Rapid oral</td></tr>
+<tr><td>BBB penetration</td><td>Yes (lipophilic) → sedation</td><td>No / minimal</td></tr>
+<tr><td>Metabolism</td><td>Hepatic CYP450 (mostly)</td><td>Fexofenadine — NOT metabolised (renal); Loratadine → CYP3A4</td></tr>
+<tr><td>Half-life</td><td>4–6 h (short)</td><td>12–24 h (long)</td></tr>
+<tr><td>Tachyphylaxis</td><td>Yes (on prolonged use)</td><td>No</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice</th><th>Reason</th></tr>
+<tr><td><strong>Allergic rhinitis / urticaria</strong></td><td>Cetirizine, Loratadine, Fexofenadine</td><td>Non-sedating; once daily</td></tr>
+<tr><td><strong>Motion sickness — DOC</strong></td><td>Cinnarizine / Promethazine / Meclizine</td><td>Central anti-cholinergic + H1 block</td></tr>
+<tr><td><strong>Anaphylaxis — adjunct</strong></td><td>Chlorpheniramine / Diphenhydramine (IV)</td><td>Adrenaline IM remains the FIRST line</td></tr>
+<tr><td><strong>Vertigo, Ménière's disease</strong></td><td>Cinnarizine, Betahistine, Meclizine</td><td>Vestibular suppression</td></tr>
+<tr><td><strong>Insomnia (short-term)</strong></td><td>Diphenhydramine, Doxylamine</td><td>Sedating effect</td></tr>
+<tr><td><strong>Cold &amp; cough syrup combos</strong></td><td>Chlorpheniramine + decongestant</td><td>Drying secretions</td></tr>
+<tr><td><strong>Morning sickness (pregnancy)</strong></td><td>Doxylamine + Pyridoxine (Vitamin B6) — Category A combination</td><td>FDA approved (Diclegis)</td></tr>
+<tr><td><strong>Acute dystonia / EPS</strong></td><td>Promethazine, Diphenhydramine (IM)</td><td>Anti-cholinergic central</td></tr>
+<tr><td><strong>Pre-op sedation in children</strong></td><td>Promethazine</td><td>Sedation + anti-emesis</td></tr>
+<tr><td><strong>Pruritus / atopic dermatitis</strong></td><td>Hydroxyzine, Loratadine</td><td>Anti-itch, mild sedation</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
 <ul>
-<li>Central COX-3 inhibition; weak peripheral COX</li>
-<li>No anti-inflammatory effect, no antiplatelet</li>
-<li>Toxic metabolite – NAPQI; antidote – N-acetylcysteine within 8–10 h</li>
+<li><strong>1st gen:</strong> Sedation, dry mouth, blurred vision, urinary retention, constipation (anti-cholinergic), weight gain (Cyproheptadine — appetite stimulant).</li>
+<li><strong>Paradoxical excitation</strong> in children — restlessness, hallucinations, even convulsions.</li>
+<li><strong>2nd gen:</strong> Generally well-tolerated. Old <em>Terfenadine &amp; Astemizole</em> withdrawn (QT prolongation, torsades).</li>
+<li><strong>Fexofenadine</strong> — preferred in elderly, renal/hepatic disease.</li>
+<li>Overdose → CNS depression in adults; CNS excitation in children.</li>
 </ul>
-<h4>Allopurinol</h4>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
 <ul>
-<li>Xanthine oxidase inhibitor → ↓ uric acid synthesis</li>
-<li>Active metabolite – alloxanthine (oxypurinol) t½ ~ 18 h</li>
-<li>Avoid in tumour lysis without rasburicase; SJS risk – HLA-B*5801 (Han Chinese)</li>
-</ul>`,
-  adr:`<h4>NSAID ADRs</h4>
-<ul>
-<li><strong>GI</strong> – peptic ulcer, bleeding (worst – piroxicam, ketorolac; safest – ibuprofen)</li>
-<li><strong>Renal</strong> – analgesic nephropathy, papillary necrosis, AKI</li>
-<li><strong>CVS</strong> – ↑ MI/stroke (worst – diclofenac, rofecoxib; safest – naproxen)</li>
-<li><strong>Aspirin hypersensitivity</strong> – Samter triad: aspirin sensitivity + asthma + nasal polyps</li>
-<li><strong>Reye syndrome</strong> – aspirin in children with viral fever → hepatic encephalopathy</li>
+<li>Closed-angle glaucoma, BPH, severe hepatic failure (1st gen).</li>
+<li>Concomitant ketoconazole / erythromycin with Terfenadine, Astemizole (now withdrawn).</li>
+<li>Pregnancy — Loratadine &amp; Cetirizine = Category B (preferred). Avoid 1st gen in 3rd trimester.</li>
 </ul>
-<h4>Allopurinol ADRs</h4>
-<p>SJS / TEN (HLA-B*5801), hepatitis, marrow suppression, ↑ azathioprine toxicity (avoid combo or reduce dose).</p>`,
-  drugs:[
-    {n:"Aspirin",c:"Non-selective COX",u:"Antiplatelet (low dose), analgesic, Kawasaki, MI prevention"},
-    {n:"Diclofenac",c:"Preferential COX-2",u:"Analgesic, anti-inflammatory; ↑ CV risk"},
-    {n:"Ibuprofen",c:"Non-selective NSAID",u:"Safest among NSAIDs in pregnancy 1st & 2nd trim (avoid 3rd)"},
-    {n:"Indomethacin",c:"Non-selective NSAID",u:"Acute gout, PDA closure (preterm)"},
-    {n:"Celecoxib",c:"COX-2 selective",u:"OA, RA, ankylosing spondylitis; ↓ GI risk"},
-    {n:"Paracetamol",c:"Central COX-3",u:"Analgesic, antipyretic; OD – hepatotoxic (NAC antidote)"},
-    {n:"Colchicine",c:"Anti-mitotic",u:"Acute gout, FMF; binds tubulin → ↓ neutrophil migration"},
-    {n:"Allopurinol",c:"XO inhibitor",u:"Chronic gout, prevent tumour lysis"},
-    {n:"Sumatriptan",c:"5HT1B/1D agonist",u:"Acute migraine, cluster headache"},
-    {n:"Ondansetron",c:"5HT3 antagonist",u:"Chemotherapy/post-op emesis"},
-    {n:"Cetirizine",c:"2nd gen H1",u:"Allergic rhinitis, urticaria"},
-    {n:"Diphenhydramine",c:"1st gen H1",u:"Motion sickness, anaphylaxis, anti-PD (sedating)"}
+
+<h4 style="margin-top:14px;">🎯 NEET PG / INI-CET High-Yield Points</h4>
+<ul>
+<li>DOC <strong>motion sickness</strong> — Cinnarizine / Promethazine / Hyoscine (Scopolamine — best transdermal).</li>
+<li><strong>Cyproheptadine</strong> — antidote of <em>serotonin syndrome</em>; also used in carcinoid syndrome &amp; appetite stimulant in cachexia.</li>
+<li><strong>Diphenhydramine</strong> — sedating, also used in <em>Parkinson's disease</em> (anti-cholinergic).</li>
+<li><strong>Astemizole &amp; Terfenadine</strong> → withdrawn due to <em>QT prolongation</em> with CYP3A4 inhibitors (ketoconazole, erythromycin) → torsades.</li>
+<li><strong>Fexofenadine</strong> — active metabolite of Terfenadine, NOT metabolised, safer.</li>
+<li><strong>Doxylamine + Pyridoxine</strong> — FDA-approved for pregnancy nausea (Diclegis/Doxinate).</li>
+<li><strong>Bilastine</strong> — newest 2nd gen, no CYP metabolism, no QT prolongation.</li>
+<li>H1 blocker as <strong>local anaesthetic</strong> (when bupivacaine etc. unavailable) — Diphenhydramine.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> A 25-year-old IT professional with allergic rhinitis on Cetirizine 10 mg HS complains of <em>persistent mild morning drowsiness</em> affecting work. Best switch?<br><strong>Answer:</strong> <em>Fexofenadine 180 mg OD</em> — least sedating among 2nd gen; doesn't cross BBB even at high doses.</p></div>
+
+<div class="cblock"><p><strong>Case:</strong> Pregnant woman (8 weeks) with severe hyperemesis. Vitals stable, electrolytes normal. First-line drug?<br><strong>Answer:</strong> <em>Doxylamine + Pyridoxine</em> — only FDA Cat A approved combination for nausea in pregnancy.</p></div>`},
+
+    /* ═══════════ SUB-TOPIC 2: SEROTONIN & MIGRAINE ═══════════ */
+    {id:"serotonin",content:`<span id="sub-serotonin-autacoids" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧠 2️⃣ SEROTONIN (5-HT) &amp; DRUG TREATMENT OF MIGRAINE</h4>
+
+<p style="margin-top:14px;"><strong>Definition — Serotonin (5-Hydroxytryptamine, 5-HT):</strong> A monoamine autacoid synthesised from <em>tryptophan</em>. Approximately <strong>90%</strong> is found in enterochromaffin cells of the GIT, <strong>8%</strong> in platelets, and <strong>2%</strong> in CNS (raphe nuclei).</p>
+
+<h4>📋 5-HT Receptors — Synopsis</h4>
+<table>
+<tr><th>Receptor</th><th>G-protein</th><th>Action / Site</th><th>Drugs</th></tr>
+<tr><td><strong>5-HT1A</strong></td><td>Gi</td><td>Anxiety, mood (CNS)</td><td>Buspirone (partial agonist)</td></tr>
+<tr><td><strong>5-HT1B/1D</strong></td><td>Gi</td><td>Cerebral vasoconstriction</td><td>Triptans (Sumatriptan, Rizatriptan)</td></tr>
+<tr><td><strong>5-HT2A</strong></td><td>Gq</td><td>Vasoconstriction, platelet aggregation, smooth muscle</td><td>Cyproheptadine, Ketanserin, atypical antipsychotics</td></tr>
+<tr><td><strong>5-HT2C</strong></td><td>Gq</td><td>Appetite, mood (CNS)</td><td>Lorcaserin (anti-obesity — withdrawn 2020)</td></tr>
+<tr><td><strong>5-HT3</strong></td><td>Ligand-gated cation channel</td><td>CTZ &amp; vagal afferents — emesis</td><td>Ondansetron, Granisetron, Palonosetron</td></tr>
+<tr><td><strong>5-HT4</strong></td><td>Gs</td><td>GI motility</td><td>Tegaserod, Prucalopride, Cisapride (withdrawn)</td></tr>
+<tr><td><strong>5-HT6 / 7</strong></td><td>Gs</td><td>CNS — cognition, sleep</td><td>Investigational</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">📋 Classification — 5-HT Drugs</h4>
+<table>
+<tr><th>Category</th><th>Examples</th><th>Clinical Use</th></tr>
+<tr><td><strong>5-HT1B/1D agonists</strong></td><td>Sumatriptan, Rizatriptan, Zolmitriptan, Almotriptan, Eletriptan, Naratriptan, Frovatriptan</td><td>Acute migraine / cluster headache</td></tr>
+<tr><td><strong>5-HT1A partial agonist</strong></td><td>Buspirone</td><td>Generalised anxiety disorder (non-sedating)</td></tr>
+<tr><td><strong>5-HT2 antagonists</strong></td><td>Cyproheptadine, Ketanserin, Methysergide, Pizotifen</td><td>Migraine prophylaxis, carcinoid, serotonin syndrome</td></tr>
+<tr><td><strong>5-HT3 antagonists</strong></td><td>Ondansetron, Granisetron, Palonosetron, Tropisetron, Dolasetron</td><td>Chemo-induced &amp; post-op vomiting (CINV/PONV)</td></tr>
+<tr><td><strong>5-HT4 agonists</strong></td><td>Tegaserod, Prucalopride, Mosapride</td><td>Chronic constipation, IBS-C, gastroparesis</td></tr>
+<tr><td><strong>Ergot alkaloids</strong></td><td>Ergotamine, Dihydroergotamine (DHE), Methysergide</td><td>Acute migraine (Ergotamine), prophylaxis (Methysergide)</td></tr>
+<tr><td><strong>CGRP receptor antagonists ("-gepants")</strong></td><td>Ubrogepant, Rimegepant, Atogepant, Zavegepant (nasal)</td><td>Acute &amp; preventive migraine therapy</td></tr>
+<tr><td><strong>Anti-CGRP monoclonal antibodies</strong></td><td>Erenumab, Galcanezumab, Fremanezumab, Eptinezumab</td><td>Chronic migraine prophylaxis (monthly SC)</td></tr>
+<tr><td><strong>Ditans (5-HT1F agonists)</strong></td><td>Lasmiditan</td><td>Acute migraine — no vasoconstriction, safe in CAD</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🧠 Memory Aid — Migraine Acute Drugs</h4>
+<div class="mnemonic"><p><strong>"TEN-DC" for Acute Migraine:</strong><br>
+<strong>T</strong>riptans (1st line) → <strong>E</strong>rgotamine (2nd line) → <strong>N</strong>SAIDs (mild attack) → <strong>D</strong>itans (Lasmiditan — CAD safe) → <strong>C</strong>GRP gepants (Ubrogepant/Rimegepant).</p></div>
+
+<h4 style="margin-top:14px;">⚙️ MOA — Migraine Drugs</h4>
+<ul>
+<li><strong>Triptans:</strong> 5-HT1B/1D agonists → cranial vasoconstriction + ↓ neuropeptide (CGRP, substance P) release at trigeminal afferents.</li>
+<li><strong>Ergot alkaloids:</strong> Partial agonists at 5-HT1B/D, α-adrenergic, dopamine receptors → vasoconstriction. Non-selective → systemic vascular effects.</li>
+<li><strong>NSAIDs:</strong> Inhibit COX → ↓ PG → reduce neuroinflammation in dura.</li>
+<li><strong>Gepants:</strong> Block CGRP receptor → no vasoconstriction (safe in CAD).</li>
+<li><strong>Anti-CGRP mAbs:</strong> Sequester CGRP or its receptor → reduce migraine frequency long-term.</li>
+<li><strong>Lasmiditan:</strong> Selective 5-HT1F agonist → no cranial vasoconstriction; CNS-mediated effect.</li>
+</ul>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Triptans</h4>
+<table>
+<tr><th>Drug</th><th>Routes</th><th>Onset</th><th>t½</th><th>Special Feature</th></tr>
+<tr><td><strong>Sumatriptan</strong></td><td>Oral, SC, nasal, rectal</td><td>SC ~10 min</td><td>2 h</td><td>Prototype; SC fastest (cluster headache)</td></tr>
+<tr><td><strong>Rizatriptan</strong></td><td>Oral, ODT</td><td>30 min</td><td>2–3 h</td><td>Fast oral onset</td></tr>
+<tr><td><strong>Zolmitriptan</strong></td><td>Oral, ODT, nasal</td><td>30 min</td><td>3 h</td><td>Nasal — for fast onset</td></tr>
+<tr><td><strong>Almotriptan</strong></td><td>Oral</td><td>30 min</td><td>3–4 h</td><td>Best tolerability</td></tr>
+<tr><td><strong>Eletriptan</strong></td><td>Oral</td><td>30 min</td><td>4 h</td><td>Most efficacious oral</td></tr>
+<tr><td><strong>Naratriptan / Frovatriptan</strong></td><td>Oral</td><td>1–3 h</td><td>6 h / 26 h</td><td>Long-acting; menstrual migraine prophylaxis</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — Migraine Treatment</h4>
+<table>
+<tr><th>Phase</th><th>Drug Class</th><th>Examples</th></tr>
+<tr><td><strong>Mild attack</strong></td><td>NSAIDs ± antiemetic</td><td>Naproxen 550 mg, Ibuprofen 400 mg; add metoclopramide</td></tr>
+<tr><td><strong>Moderate–severe acute</strong></td><td>Triptan</td><td>Sumatriptan 50–100 mg PO / 6 mg SC</td></tr>
+<tr><td><strong>Triptan failure / CV risk</strong></td><td>Gepant / Ditan</td><td>Ubrogepant, Rimegepant, Lasmiditan</td></tr>
+<tr><td><strong>Status migrainosus</strong></td><td>IV DHE + metoclopramide + steroid</td><td>Hospital protocol</td></tr>
+<tr><td><strong>Prophylaxis — ≥4 attacks/month</strong></td><td>β-blocker (propranolol), TCA (amitriptyline), AED (topiramate, valproate), CCB (flunarizine), CGRP mAbs</td><td>Choose by comorbidity</td></tr>
+<tr><td><strong>Cluster headache acute</strong></td><td>100% O2 + SC Sumatriptan / Zolmitriptan nasal</td><td>O2 = first measure</td></tr>
+<tr><td><strong>Cluster prophylaxis</strong></td><td>Verapamil, Lithium, Steroids</td><td>Verapamil = DOC</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>Triptans:</strong> Chest tightness, paresthesia, dizziness, "triptan sensations." Rare — coronary vasospasm, MI.</li>
+<li><strong>Ergotamine:</strong> Nausea, vomiting, peripheral vasospasm (ergotism — gangrene), retroperitoneal fibrosis (chronic methysergide use).</li>
+<li><strong>Gepants:</strong> Generally well-tolerated; nausea, dry mouth.</li>
+<li><strong>CGRP mAbs:</strong> Injection-site reaction, constipation (Erenumab), URI.</li>
+<li><strong>Lasmiditan:</strong> Dizziness, sedation (avoid driving for 8 h).</li>
+<li><strong>Serotonin syndrome</strong> — SSRI/SNRI + Triptan + Linezolid / Tramadol → hyperthermia, clonus, autonomic instability.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li><strong>Triptans &amp; Ergots:</strong> Ischaemic heart disease, uncontrolled HTN, peripheral vascular disease, hemiplegic / basilar migraine, pregnancy.</li>
+<li><strong>Ergot + Macrolide / Azole</strong> → severe vasospasm.</li>
+<li><strong>MAOI + Triptan</strong> → serotonin syndrome.</li>
+<li>Patients on ≥5 acute migraine doses/month → risk of <em>medication overuse headache</em> (MOH).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🎯 NEET PG / INI-CET High-Yield Points</h4>
+<ul>
+<li>DOC for <strong>acute migraine</strong> — Sumatriptan (or any triptan).</li>
+<li>DOC for <strong>cluster headache</strong> — 100% O2 + SC Sumatriptan.</li>
+<li>DOC for <strong>cluster prophylaxis</strong> — <em>Verapamil</em>.</li>
+<li>DOC for <strong>menstrual migraine prophylaxis</strong> — <em>Frovatriptan</em> (long half-life).</li>
+<li>DOC for <strong>migraine + HTN</strong> — <em>Propranolol</em>.</li>
+<li>DOC for <strong>migraine + epilepsy</strong> — <em>Topiramate</em> / <em>Valproate</em>.</li>
+<li>DOC for <strong>migraine + depression</strong> — <em>Amitriptyline</em>.</li>
+<li><strong>Antidote of serotonin syndrome</strong> — <em>Cyproheptadine</em> (5-HT2 antagonist).</li>
+<li><strong>Ondansetron</strong> — DOC for chemotherapy-induced emesis. Best for ACUTE phase (vs Aprepitant for delayed).</li>
+<li><strong>Palonosetron</strong> — newer 5-HT3 blocker, long t½ (40 h), most effective for delayed CINV.</li>
+<li><strong>Carcinoid syndrome</strong> — Cyproheptadine + Octreotide.</li>
+<li><strong>Lasmiditan</strong> — only acute migraine drug safe in <em>ischemic heart disease</em>.</li>
+<li><strong>Gepants</strong> — both acute (Ubro/Rime) &amp; preventive (Atogepant, Rimegepant alternate-day) use.</li>
+<li><strong>Erenumab</strong> — first FDA-approved CGRP-receptor blocker mAb (2018).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 35-y-old female with frequent migraines (6/month) plus mild HTN. Best prophylactic agent?<br><strong>Answer:</strong> <em>Propranolol</em> — covers both migraine prophylaxis and HTN.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on SSRI develops new headaches and given a triptan. Hours later — agitation, hyperreflexia, clonus, hyperthermia. Diagnosis &amp; antidote?<br><strong>Answer:</strong> <em>Serotonin syndrome</em>; treat with <em>Cyproheptadine</em> + supportive measures + stop offending drugs.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 50-y-old male, known CAD, develops acute migraine. Triptan contraindicated. Which novel drug to use?<br><strong>Answer:</strong> <em>Lasmiditan</em> (5-HT1F agonist) or a <em>gepant</em> (Ubrogepant) — both safe in coronary disease.</p></div>`},
+
+    /* ═══════════ SUB-TOPIC 3: EICOSANOIDS ═══════════ */
+    {id:"eicosan",content:`<span id="sub-eicosan-autacoids" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧬 3️⃣ EICOSANOIDS — PROSTAGLANDINS &amp; LEUKOTRIENES</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Eicosanoids</em> (Greek: <em>eicosi</em> = 20) are biologically active lipid mediators derived from 20-carbon polyunsaturated fatty acids, primarily <strong>arachidonic acid</strong>. They are the most ubiquitous autacoids and the major target of anti-inflammatory drugs (NSAIDs and corticosteroids).</p>
+
+<h4>📋 Biosynthesis &amp; Classification</h4>
+<table>
+<tr><th>Pathway</th><th>Enzyme</th><th>Products</th><th>Key Action</th></tr>
+<tr><td><strong>Cyclo-oxygenase (COX-1, COX-2, COX-3)</strong></td><td>COX enzymes</td><td>PGE2, PGF2α, PGD2, PGI2 (prostacyclin), TXA2</td><td>Inflammation, GI protection, platelet aggregation</td></tr>
+<tr><td><strong>Lipoxygenase (5-LOX, 12-LOX, 15-LOX)</strong></td><td>LOX enzymes</td><td>LTA4 → LTB4, LTC4/D4/E4 (cysteinyl-LTs), HETEs, lipoxins</td><td>Bronchoconstriction, chemotaxis, ↑ vascular permeability</td></tr>
+<tr><td><strong>Epoxygenase (CYP450 ω-3)</strong></td><td>P450 enzymes</td><td>EETs (epoxyeicosatrienoic acids)</td><td>Vasodilation, anti-inflammatory</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">📋 COX Isoforms</h4>
+<table>
+<tr><th>Feature</th><th>COX-1</th><th>COX-2</th><th>COX-3</th></tr>
+<tr><td>Expression</td><td>Constitutive (all tissues)</td><td>Inducible (inflammation); constitutive in kidney, brain, endothelium</td><td>Variant in CNS</td></tr>
+<tr><td>Function</td><td>Housekeeping — gastric mucosa, renal, platelet TXA2</td><td>Inflammation, fever, pain; PGI2 (endothelium)</td><td>Central anti-pyretic (paracetamol target)</td></tr>
+<tr><td>Block consequence</td><td>Gastric &amp; renal toxicity, ↓ platelet aggregation</td><td>↑ CV risk (thrombosis), spare GI</td><td>Antipyresis without inflammation</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">📋 Major Prostaglandins &amp; Functions</h4>
+<table>
+<tr><th>Mediator</th><th>Source</th><th>Function</th><th>Clinical Use of Analogues</th></tr>
+<tr><td><strong>PGE2</strong></td><td>Most tissues</td><td>Vasodilation, fever, pain, GI protection, uterine contraction</td><td>Dinoprostone — labour induction; Misoprostol — PPH, peptic ulcer, abortion</td></tr>
+<tr><td><strong>PGF2α</strong></td><td>Uterus, eye</td><td>Uterine contraction, ↓ IOP</td><td>Carboprost — PPH; Latanoprost/Travoprost/Bimatoprost — glaucoma</td></tr>
+<tr><td><strong>PGD2</strong></td><td>Mast cells</td><td>Bronchoconstriction, vasodilation</td><td>—</td></tr>
+<tr><td><strong>PGI2 (Prostacyclin)</strong></td><td>Endothelium</td><td>Vasodilation, ↓ platelet aggregation</td><td>Epoprostenol, Iloprost, Treprostinil — pulmonary HTN</td></tr>
+<tr><td><strong>TXA2</strong></td><td>Platelets</td><td>Vasoconstriction, ↑ platelet aggregation</td><td>(Aspirin blocks → antiplatelet)</td></tr>
+<tr><td><strong>PGE1 analogue — Alprostadil</strong></td><td>Synthetic</td><td>Vasodilation</td><td>Maintain PDA (cyanotic CHD); erectile dysfunction</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">📋 Leukotrienes &amp; Antagonists</h4>
+<table>
+<tr><th>Mediator</th><th>Action</th><th>Antagonist / Inhibitor</th></tr>
+<tr><td><strong>LTB4</strong></td><td>Chemotaxis (neutrophils), pro-inflammatory</td><td>Indirect — corticosteroids ↓ AA release</td></tr>
+<tr><td><strong>LTC4 / D4 / E4 (cysteinyl-LTs)</strong></td><td>Bronchoconstriction (1000× histamine), ↑ vascular permeability, mucus secretion</td><td>Montelukast, Zafirlukast, Pranlukast (CysLT1 antagonists)</td></tr>
+<tr><td><strong>5-LOX inhibitor</strong></td><td>Blocks LT synthesis upstream</td><td>Zileuton</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🧠 Memory Aid — Eicosanoids</h4>
+<div class="mnemonic"><p><strong>"PG E for Erection &amp; Eye"</strong> — PGE1 (Alprostadil) for erection; PGE / PGF (latanoprost) for glaucoma.<br>
+<strong>"PG F for Fetus &amp; Fluid (Out)"</strong> — Carboprost (PGF2α) for PPH; Dinoprostone (PGE2) for labour induction.<br>
+<strong>"PGI keep Platelets In Line"</strong> — Prostacyclin opposes TXA2 (platelet inhibitor).<br>
+<strong>"TXA2 — Tightens (vessel) &amp; Aggregates (platelet)"</strong> — blocked by Aspirin → antiplatelet effect.<br>
+<strong>"Lukast for Lung"</strong> — Montelukast / Zafirlukast for asthma.</p></div>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism (Quick)</h4>
+<ul>
+<li><strong>Corticosteroids</strong> → inhibit phospholipase A2 (via lipocortin/annexin-1) → block AA release → block both COX &amp; LOX pathways.</li>
+<li><strong>NSAIDs</strong> → block COX → ↓ PG &amp; TXA2 only (LOX pathway intact → may divert to LTs → aspirin-exacerbated respiratory disease).</li>
+<li><strong>Montelukast</strong> → blocks CysLT1 receptor → bronchodilation.</li>
+<li><strong>Zileuton</strong> → 5-LOX inhibitor → blocks LT synthesis (hepatotoxic monitoring required).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses of PG &amp; LT Drugs</h4>
+<table>
+<tr><th>Drug</th><th>Indication</th></tr>
+<tr><td><strong>Misoprostol (PGE1)</strong></td><td>Gastric ulcer prevention (NSAID-induced), medical abortion (with mifepristone), labour induction, PPH</td></tr>
+<tr><td><strong>Dinoprostone (PGE2)</strong></td><td>Labour induction at term, cervical ripening</td></tr>
+<tr><td><strong>Carboprost (15-methyl PGF2α)</strong></td><td>PPH refractory to oxytocin/methergine</td></tr>
+<tr><td><strong>Alprostadil (PGE1)</strong></td><td>Maintain PDA in TGA / pulmonary atresia; erectile dysfunction (intracavernosal)</td></tr>
+<tr><td><strong>Latanoprost / Travoprost / Bimatoprost</strong></td><td>Open-angle glaucoma (1st line — once daily)</td></tr>
+<tr><td><strong>Epoprostenol / Iloprost / Treprostinil (PGI2)</strong></td><td>Pulmonary arterial hypertension</td></tr>
+<tr><td><strong>Selexipag</strong></td><td>Oral selective IP receptor agonist for PAH</td></tr>
+<tr><td><strong>Montelukast / Zafirlukast</strong></td><td>Chronic asthma (esp. exercise-induced, aspirin-sensitive), allergic rhinitis</td></tr>
+<tr><td><strong>Zileuton</strong></td><td>Chronic asthma (less preferred — hepatotoxic)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>Misoprostol:</strong> Abdominal cramps, diarrhoea, uterine contraction (avoid in pregnancy unless for abortion/PPH).</li>
+<li><strong>Latanoprost:</strong> Iris hyperpigmentation, eyelash darkening/lengthening (cosmetic — bimatoprost branded as Latisse).</li>
+<li><strong>Epoprostenol:</strong> Hypotension, jaw pain, IV infusion-related.</li>
+<li><strong>Montelukast:</strong> Neuropsychiatric ADRs — depression, suicidal ideation (FDA Black Box 2020).</li>
+<li><strong>Zileuton:</strong> Hepatotoxicity (monitor LFTs).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🎯 NEET PG / INI-CET High-Yield Points</h4>
+<ul>
+<li><strong>Mifepristone + Misoprostol</strong> — medical abortion regimen (FDA approved up to 70 days gestation).</li>
+<li><strong>Carboprost</strong> contraindicated in <em>asthma</em> (bronchoconstriction).</li>
+<li><strong>PGE1 (Alprostadil)</strong> → maintains <em>PDA</em> in cyanotic CHD (TGA, tetralogy, pulmonary atresia) awaiting surgery.</li>
+<li><strong>Indomethacin</strong> → closes PDA (opposite effect — inhibits PG synthesis).</li>
+<li><strong>Latanoprost</strong> — once daily, most potent IOP-lowering glaucoma drug.</li>
+<li><strong>Montelukast</strong> — DOC for <em>aspirin-induced asthma (Samter triad)</em>.</li>
+<li><strong>Zafirlukast &amp; Zileuton</strong> — CYP inhibitors → ↑ warfarin levels.</li>
+<li>Cysteinyl LTs are ~<em>1000× more potent</em> than histamine for bronchoconstriction.</li>
+<li><strong>Selexipag</strong> — first oral IP receptor agonist (PAH).</li>
+<li>Prostaglandin analogues (Latanoprost) reduce IOP by ↑ <em>uveoscleral outflow</em>.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Newborn with TGA, cyanosis. Awaiting cardiac surgery. Which drug keeps the patient alive?<br><strong>Answer:</strong> <em>Alprostadil (PGE1) IV infusion</em> — maintains PDA patency for mixing of blood until surgery.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Asthmatic patient develops attack after aspirin. Long-term controller?<br><strong>Answer:</strong> <em>Montelukast</em> + leukotriene antagonist; avoid aspirin permanently.</p></div>`},
+
+    /* ═══════════ SUB-TOPIC 4: NSAIDs ═══════════ */
+    {id:"nsaids",content:`<span id="sub-nsaids-autacoids" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💊 4️⃣ NSAIDs — NONSTEROIDAL ANTI-INFLAMMATORY DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> NSAIDs are a heterogeneous group of drugs that share <em>analgesic, antipyretic, and anti-inflammatory</em> properties (with the exception of Paracetamol, which lacks significant anti-inflammatory effect). Their action is mediated by inhibition of cyclo-oxygenase (COX) enzymes and subsequent reduction of prostaglandin synthesis.</p>
+
+<h4>📋 Classification (Comprehensive)</h4>
+<table>
+<tr><th>Group</th><th>Sub-class</th><th>Drugs</th></tr>
+<tr><td rowspan="6"><strong>A. Non-selective COX Inhibitors</strong></td><td>Salicylates</td><td>Aspirin, Diflunisal, Salsalate</td></tr>
+<tr><td>Propionic acid derivatives</td><td>Ibuprofen, Naproxen, Ketoprofen, Flurbiprofen, Fenoprofen, Oxaprozin</td></tr>
+<tr><td>Acetic acid (Aryl/Hetero)</td><td>Diclofenac, Aceclofenac, Indomethacin, Sulindac, Tolmetin, Ketorolac, Etodolac</td></tr>
+<tr><td>Enolic acid (Oxicams)</td><td>Piroxicam, Tenoxicam, Meloxicam (pref. COX-2), Lornoxicam</td></tr>
+<tr><td>Fenamates (Anthranilic)</td><td>Mefenamic acid, Flufenamic acid</td></tr>
+<tr><td>Pyrazolones</td><td>Phenylbutazone, Oxyphenbutazone (largely withdrawn)</td></tr>
+<tr><td><strong>B. Preferential COX-2</strong></td><td>—</td><td>Nimesulide, Meloxicam, Etodolac, Nabumetone</td></tr>
+<tr><td><strong>C. Selective COX-2 (Coxibs)</strong></td><td>—</td><td>Celecoxib, Etoricoxib, Parecoxib (IV pro-drug of Valdecoxib), Lumiracoxib (withdrawn), Rofecoxib (withdrawn — CV events)</td></tr>
+<tr><td><strong>D. Analgesic-Antipyretic (weak anti-inflammatory)</strong></td><td>—</td><td>Paracetamol (Acetaminophen), Metamizole (Dipyrone), Nefopam</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🧠 Memory Aid — NSAIDs</h4>
+<div class="mnemonic"><p><strong>"PINS-K Tear" (Non-selective):</strong> Piroxicam · Ibuprofen · Naproxen · Sulindac · Ketorolac · Tolmetin · Etodolac · Aspirin · Ratafia.<br><br>
+<strong>"CEPL" (Coxibs):</strong> Celecoxib · Etoricoxib · Parecoxib · Lumiracoxib.<br><br>
+<strong>"NMEN" (Preferential COX-2):</strong> Nimesulide · Meloxicam · Etodolac · Nabumetone.</p></div>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action</h4>
+<ul>
+<li><strong>NSAIDs</strong> reversibly inhibit COX → ↓ prostaglandin synthesis → ↓ pain, fever, inflammation.</li>
+<li><strong>Aspirin</strong> — <em>irreversibly acetylates Serine-530</em> of COX-1 and COX-2; effect on platelets lasts the platelet's lifespan (7–10 d) since platelets cannot synthesise new enzyme.</li>
+<li><strong>Paracetamol</strong> — central COX-3 inhibition; weak peripheral COX block; lacks anti-inflammatory effect.</li>
+<li><strong>Coxibs</strong> — selectively block COX-2 → spare gastric mucosa (preserved COX-1 protective PG) but inhibit endothelial PGI2 → ↑ thrombotic risk.</li>
+</ul>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Aspirin Key Points</h4>
+<ul>
+<li><strong>Low dose (75–150 mg/d)</strong> — antiplatelet (selective COX-1 in platelet).</li>
+<li><strong>Analgesic dose (0.3–0.6 g)</strong> — pain, fever.</li>
+<li><strong>Anti-inflammatory (4–6 g/d)</strong> — rare today.</li>
+<li><strong>Zero-order kinetics</strong> at toxic doses (saturable metabolism).</li>
+<li>Alkalinisation of urine ↑ aspirin excretion (sodium bicarbonate in OD).</li>
+</ul>
+
+<h4>💉 Pharmacokinetics — Paracetamol</h4>
+<ul>
+<li>Hepatic metabolism: 90% glucuronidation/sulfation, 10% CYP2E1 → <strong>NAPQI</strong>.</li>
+<li>NAPQI conjugated with glutathione (GSH). In overdose, GSH depletes → hepatic necrosis.</li>
+<li>Antidote: <strong>N-acetylcysteine (NAC)</strong> — best within 8–10 h of ingestion.</li>
+<li>Use <em>Rumack–Matthew nomogram</em> to determine NAC need.</li>
+<li>Max adult dose 4 g/day; 3 g if alcoholic or hepatic disease.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Use</th><th>Preferred NSAID</th></tr>
+<tr><td>Mild–moderate pain, fever</td><td>Paracetamol, Ibuprofen</td></tr>
+<tr><td>Antiplatelet (post-MI, post-stroke)</td><td>Low-dose Aspirin (75–150 mg)</td></tr>
+<tr><td>Acute MI early management</td><td>Aspirin 162–325 mg loading (chew)</td></tr>
+<tr><td>Acute gout</td><td>Indomethacin, Naproxen</td></tr>
+<tr><td>Dysmenorrhoea</td><td>Mefenamic acid, Naproxen</td></tr>
+<tr><td>Patent ductus closure (preterm)</td><td>Indomethacin, Ibuprofen</td></tr>
+<tr><td>Post-op pain (short-term, parenteral)</td><td>Ketorolac, Parecoxib</td></tr>
+<tr><td>RA, OA, ankylosing spondylitis</td><td>Naproxen, Celecoxib, Etoricoxib</td></tr>
+<tr><td>Kawasaki disease (children)</td><td>High-dose Aspirin (exception: aspirin OK)</td></tr>
+<tr><td>Colorectal cancer chemoprevention (FAP)</td><td>Aspirin, Celecoxib</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>GI:</strong> Peptic ulcer, dyspepsia, GI bleeding — worst with <em>Piroxicam, Ketorolac, Indomethacin</em>; safest <em>Ibuprofen</em>; least with <em>Celecoxib</em>.</li>
+<li><strong>Renal:</strong> Reversible ↓ GFR, sodium &amp; water retention, hyperkalaemia, analgesic nephropathy (chronic mixed-NSAID/paracetamol abuse), papillary necrosis, interstitial nephritis.</li>
+<li><strong>CV:</strong> ↑ MI/stroke risk (worst — <em>Diclofenac, Rofecoxib</em>; safest — <em>Naproxen</em>). All NSAIDs have black box CV warning except Aspirin.</li>
+<li><strong>Aspirin hypersensitivity / Samter triad:</strong> Aspirin sensitivity + Asthma + Nasal polyps.</li>
+<li><strong>Reye syndrome:</strong> Aspirin in children &lt; 16 y with viral fever → hepatic encephalopathy. Use paracetamol instead.</li>
+<li><strong>Salicylism:</strong> Tinnitus, vertigo, hyperventilation; mixed respiratory alkalosis + metabolic acidosis.</li>
+<li><strong>Hepatic:</strong> Paracetamol overdose, Diclofenac (rare).</li>
+<li><strong>Skin:</strong> SJS/TEN (Sulindac, Phenylbutazone).</li>
+<li><strong>Haematological:</strong> Aplastic anaemia (Phenylbutazone — withdrawn).</li>
+<li><strong>Pregnancy:</strong> Avoid in 3rd trimester — premature closure of ductus arteriosus, oligohydramnios, ↑ bleeding at delivery.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Active peptic ulcer, GI bleeding, severe CKD.</li>
+<li>Severe HF, uncontrolled HTN, recent CABG (avoid Coxibs).</li>
+<li>3rd trimester pregnancy.</li>
+<li>Aspirin: children &lt;16 y with viral illness (Reye); severe asthma with Samter triad.</li>
+<li>Glanzmann's thrombasthenia, severe bleeding disorders.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>NSAID + ACEi/ARB + Diuretic</strong> → "triple whammy" → acute kidney injury.</li>
+<li><strong>NSAID + Warfarin</strong> → ↑ bleeding risk (displaces protein-bound warfarin).</li>
+<li><strong>NSAID + Lithium / Methotrexate</strong> → ↑ levels (renal clearance ↓).</li>
+<li><strong>Aspirin + Probenecid</strong> → blocks uricosuric effect.</li>
+<li><strong>Ibuprofen + Aspirin</strong> → Ibuprofen blocks aspirin's antiplatelet effect (take aspirin 30 min before or 8 h after ibuprofen).</li>
+<li><strong>Paracetamol + chronic alcohol</strong> → ↑ NAPQI → hepatotoxicity at lower dose.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🎯 NEET PG / INI-CET High-Yield Points</h4>
+<ul>
+<li><strong>Safest NSAID in pregnancy (1st–2nd trim)</strong> — <em>Ibuprofen</em> short course; Paracetamol is best throughout.</li>
+<li><strong>Aspirin in low dose</strong> → irreversible COX-1 block in platelets → antiplatelet for 7–10 d.</li>
+<li><strong>Aspirin antidote (overdose)</strong> → activated charcoal + sodium bicarbonate (alkalinise urine) + hemodialysis (if &gt; 100 mg/dL salicylate).</li>
+<li><strong>Paracetamol antidote</strong> → N-acetylcysteine (best &lt; 8 h).</li>
+<li><strong>NSAID least GI toxicity</strong> → Celecoxib, Etoricoxib.</li>
+<li><strong>NSAID with worst CV risk</strong> → Diclofenac &amp; Rofecoxib.</li>
+<li><strong>NSAID with worst GI risk</strong> → Piroxicam, Ketorolac.</li>
+<li><strong>Ketorolac</strong> — only NSAID approved for parenteral analgesia (post-op). Max 5 days use.</li>
+<li><strong>Indomethacin</strong> — closes PDA in preterm; DOC for acute gout if no renal impairment.</li>
+<li><strong>Nimesulide</strong> banned in children &lt; 12 y (hepatotoxicity).</li>
+<li><strong>Sulindac</strong> — pro-drug, less renal toxicity.</li>
+<li><strong>Etoricoxib</strong> banned in many countries due to HTN risk.</li>
+<li><strong>Aspirin + Kawasaki disease</strong> — exception where aspirin is used in children.</li>
+<li><strong>Diclofenac</strong> — most commonly used NSAID worldwide; topical gel popular for OA.</li>
+<li><strong>Tramadol</strong> — opioid + SNRI activity, useful for moderate pain; risk of serotonin syndrome with SSRI.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 70-y-old on enalapril and furosemide for HF. Starts ibuprofen for backache. Develops oliguria, ↑ creatinine. Diagnosis?<br><strong>Answer:</strong> <em>"Triple whammy" AKI</em> — ACEi + diuretic + NSAID. Stop NSAID, hydrate, monitor.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 25-y-old after 30 g paracetamol ingestion arrives at 6 h. Plasma level confirms toxic range. Best step?<br><strong>Answer:</strong> Start <em>N-acetylcysteine</em> immediately (IV/oral). Activated charcoal if &lt; 1 h.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Pregnant lady 36 wk on diclofenac develops oligohydramnios &amp; foetal echo shows constricted DA. Cause?<br><strong>Answer:</strong> NSAID-induced PG inhibition in 3rd trimester. Stop drug.</p></div>`},
+
+    /* ═══════════ SUB-TOPIC 5: GOUT & RA ═══════════ */
+    {id:"goutra",content:`<span id="sub-goutra-autacoids" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🦶 5️⃣ DRUG TREATMENT OF GOUT &amp; RHEUMATOID ARTHRITIS</h4>
+
+<h4 style="margin-top:18px;">PART A — GOUT</h4>
+<p><strong>Definition:</strong> Gout is a metabolic disorder of <em>uric acid metabolism</em> characterised by hyperuricaemia, recurrent acute arthritis (monosodium urate crystal deposition), tophi formation, urate nephropathy, and renal stones.</p>
+
+<h4>📋 Classification of Antigout Drugs</h4>
+<table>
+<tr><th>Phase</th><th>Class</th><th>Drugs</th></tr>
+<tr><td rowspan="3"><strong>Acute Attack</strong></td><td>NSAIDs</td><td>Indomethacin, Naproxen, Etoricoxib</td></tr>
+<tr><td>Anti-mitotic</td><td>Colchicine (low-dose oral)</td></tr>
+<tr><td>Corticosteroids</td><td>Oral prednisolone / intra-articular triamcinolone</td></tr>
+<tr><td rowspan="3"><strong>Chronic (Urate-Lowering Therapy — ULT)</strong></td><td>Xanthine Oxidase Inhibitors</td><td>Allopurinol, Febuxostat, Topiroxostat</td></tr>
+<tr><td>Uricosurics</td><td>Probenecid, Sulfinpyrazone, Lesinurad, Benzbromarone</td></tr>
+<tr><td>Uricolytics</td><td>Rasburicase (recombinant urate-oxidase), Pegloticase</td></tr>
+<tr><td><strong>Newer biologics</strong></td><td>IL-1β blockers</td><td>Canakinumab, Anakinra, Rilonacept (resistant attacks)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🧠 Memory Aid — Gout Drugs</h4>
+<div class="mnemonic"><p><strong>"NCS" for Acute Gout:</strong> NSAIDs (Indomethacin) → Colchicine → Steroids.<br>
+<strong>"AFP" for Chronic Gout ULT:</strong> Allopurinol · Febuxostat · Probenecid.<br>
+<strong>"RPL" Newer:</strong> Rasburicase · Pegloticase · Lesinurad.</p></div>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action</h4>
+<ul>
+<li><strong>Colchicine</strong> — binds tubulin → inhibits microtubule polymerisation → ↓ neutrophil chemotaxis &amp; phagocytosis of urate crystals. Does NOT lower uric acid.</li>
+<li><strong>Allopurinol</strong> — purine analogue; competitive XO inhibitor → ↓ uric acid synthesis. Active metabolite: <em>alloxanthine (oxypurinol)</em> t½ ~ 18 h.</li>
+<li><strong>Febuxostat</strong> — non-purine XO inhibitor → more selective, no impact on other enzymes; usable in moderate renal impairment.</li>
+<li><strong>Probenecid</strong> — blocks renal tubular reabsorption of urate (URAT1 transporter) → ↑ excretion.</li>
+<li><strong>Rasburicase</strong> — recombinant urate oxidase → converts uric acid to allantoin (more soluble). Used in tumour lysis syndrome.</li>
+<li><strong>Pegloticase</strong> — pegylated mammalian uricase IV every 2 weeks for refractory tophaceous gout.</li>
+</ul>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Allopurinol</h4>
+<ul>
+<li>Oral, well absorbed; metabolised by XO itself to oxypurinol (active).</li>
+<li>Dose adjustment in renal impairment (CrCl &lt; 30 → 100 mg/day).</li>
+<li>Risk: <em>Allopurinol Hypersensitivity Syndrome (AHS)</em> — fever, rash, eosinophilia, hepatic &amp; renal toxicity; HLA-B*5801 (Han Chinese, Korean) screening recommended.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug</th></tr>
+<tr><td>Acute gout (renal OK)</td><td>Indomethacin / Naproxen / Etoricoxib (full dose)</td></tr>
+<tr><td>Acute gout + CKD</td><td>Low-dose Colchicine or intra-articular steroid</td></tr>
+<tr><td>Chronic gout — start ULT</td><td>Allopurinol (initiate 100 mg/d, titrate to target serum urate &lt; 6 mg/dL)</td></tr>
+<tr><td>Renal impairment</td><td>Febuxostat preferred</td></tr>
+<tr><td>Tumour lysis syndrome prevention</td><td>Allopurinol or Rasburicase + hydration + alkalinisation</td></tr>
+<tr><td>Refractory tophaceous gout</td><td>Pegloticase IV bi-weekly</td></tr>
+<tr><td>Mediterranean fever / Behçet's</td><td>Colchicine</td></tr>
+<tr><td>Pericarditis (recurrent)</td><td>Colchicine</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>Colchicine:</strong> GI — nausea, vomiting, diarrhoea (dose-limiting); bone marrow suppression; alopecia; myopathy (with statin).</li>
+<li><strong>Allopurinol:</strong> SJS/TEN (HLA-B*5801), DRESS, hepatitis, marrow suppression; ↑ Azathioprine/6-MP toxicity (inhibits their metabolism).</li>
+<li><strong>Febuxostat:</strong> Hepatic enzyme elevation; possible ↑ CV mortality in CAD patients (FDA warning).</li>
+<li><strong>Probenecid:</strong> Precipitate uric acid stones (avoid in stone formers); GI upset.</li>
+<li><strong>Rasburicase:</strong> Hypersensitivity, methaemoglobinaemia, haemolysis in G6PD deficiency.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Cautions</h4>
+<ul>
+<li><strong>Allopurinol + Azathioprine/6-MP</strong> → severe marrow suppression. Reduce thiopurine dose to 25%.</li>
+<li><strong>Probenecid</strong> in uric acid stone formers, CKD.</li>
+<li><strong>Rasburicase</strong> in G6PD deficiency (haemolysis).</li>
+<li><strong>Avoid starting ULT during acute attack</strong> — prophylax with low-dose colchicine 0.5 mg BD or NSAID for 3–6 months.</li>
+</ul>
+
+<h4 style="margin-top:18px;">PART B — RHEUMATOID ARTHRITIS</h4>
+<p><strong>Definition:</strong> RA is a chronic systemic autoimmune disorder of synovial joints — symmetric polyarthritis with bone &amp; cartilage destruction; anti-CCP &amp; RF positive.</p>
+
+<h4>📋 Classification — RA Drugs (DMARDs + Biologicals)</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Key Point</th></tr>
+<tr><td><strong>Conventional Synthetic DMARDs (csDMARDs)</strong></td><td>Methotrexate, Sulfasalazine, Hydroxychloroquine (HCQ), Leflunomide</td><td>MTX = anchor drug; HCQ for mild disease</td></tr>
+<tr><td><strong>Biologic DMARDs (bDMARDs) — TNF-α inhibitors</strong></td><td>Etanercept, Infliximab, Adalimumab, Golimumab, Certolizumab</td><td>Reactivation of latent TB — screen first</td></tr>
+<tr><td><strong>Other biologic targets</strong></td><td>Rituximab (anti-CD20), Abatacept (CTLA-4 Ig — T-cell co-stim block), Tocilizumab (anti-IL-6R), Sarilumab</td><td>Used in MTX failure / TNFi failure</td></tr>
+<tr><td><strong>Targeted Synthetic DMARDs (tsDMARDs) — JAK inhibitors</strong></td><td>Tofacitinib, Baricitinib, Upadacitinib, Filgotinib</td><td>Oral; BBW — CV death, thrombosis, malignancy (FDA 2021)</td></tr>
+<tr><td><strong>Adjunctive</strong></td><td>Low-dose glucocorticoids, NSAIDs</td><td>Symptom relief only</td></tr>
+<tr><td><strong>Older / Rare</strong></td><td>Gold salts (Aurothiomalate), Penicillamine, Cyclosporine, Azathioprine</td><td>Historical; rarely used</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🧠 Memory Aid — DMARDs</h4>
+<div class="mnemonic"><p><strong>"MS HL" csDMARDs:</strong> Methotrexate · Sulfasalazine · Hydroxychloroquine · Leflunomide.<br>
+<strong>"EIAGC" TNF-α blockers:</strong> Etanercept · Infliximab · Adalimumab · Golimumab · Certolizumab.<br>
+<strong>"RAT-S" Other biologics:</strong> Rituximab · Abatacept · Tocilizumab · Sarilumab.<br>
+<strong>"TBUF" JAK inhibitors:</strong> Tofacitinib · Baricitinib · Upadacitinib · Filgotinib.</p></div>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action (Selected)</h4>
+<ul>
+<li><strong>Methotrexate</strong> — folate antagonist (dihydrofolate reductase inhibitor) + adenosine release → immunosuppression. Low weekly dose (7.5–25 mg).</li>
+<li><strong>Sulfasalazine</strong> — bowel bacteria cleave into 5-ASA + sulfapyridine → anti-inflammatory.</li>
+<li><strong>Hydroxychloroquine</strong> — accumulates in lysosomes → ↑ pH → ↓ antigen processing.</li>
+<li><strong>Leflunomide</strong> — inhibits dihydroorotate dehydrogenase → ↓ pyrimidine → ↓ lymphocyte proliferation.</li>
+<li><strong>TNF inhibitors</strong> — bind &amp; neutralise TNF-α (cytokine driving RA).</li>
+<li><strong>Rituximab</strong> — anti-CD20 → B-cell depletion.</li>
+<li><strong>Abatacept</strong> — CTLA-4-Ig → blocks T-cell co-stimulation.</li>
+<li><strong>Tocilizumab</strong> — IL-6 receptor blocker.</li>
+<li><strong>JAK inhibitors</strong> — block Janus kinase → ↓ cytokine signalling.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Approach</h4>
+<ul>
+<li><strong>Step 1:</strong> Start MTX 7.5–15 mg/week + Folic acid 5 mg weekly (to reduce ADRs).</li>
+<li><strong>Step 2:</strong> If inadequate at 3–6 months → add HCQ + Sulfasalazine (triple therapy) OR add TNF-α inhibitor.</li>
+<li><strong>Step 3:</strong> TNFi failure → switch to another TNFi or move to Tocilizumab / Rituximab / Abatacept.</li>
+<li><strong>Step 4:</strong> Add JAK inhibitor (Tofacitinib) if biologics unsuitable or fail.</li>
+<li>Bridge therapy: short-course low-dose prednisolone during DMARD onset (2–3 months).</li>
+<li>Always screen for <strong>latent TB &amp; hepatitis B/C</strong> before biologics.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>Methotrexate:</strong> Hepatotoxicity, marrow suppression, pulmonary fibrosis, oral ulcers, teratogenic (Category X) — wait 3 months after stopping before conception.</li>
+<li><strong>Hydroxychloroquine:</strong> Retinopathy (annual ophthalmologic exam), QT prolongation.</li>
+<li><strong>Sulfasalazine:</strong> Reversible oligospermia, haemolysis (G6PD), photosensitivity.</li>
+<li><strong>Leflunomide:</strong> Hepatotoxic, teratogenic (Cholestyramine washout — long t½ via enterohepatic).</li>
+<li><strong>TNF inhibitors:</strong> Reactivation of TB &amp; Hep B, lymphoma risk, demyelination, lupus-like syndrome.</li>
+<li><strong>Tocilizumab:</strong> GI perforation (diverticulitis), ↑ lipids, neutropenia.</li>
+<li><strong>JAK inhibitors:</strong> BBW for serious infection, MI, malignancy, thromboembolism, GI perforation.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>MTX in pregnancy (Cat X), severe renal/hepatic failure, alcohol abuse.</li>
+<li>TNF inhibitors in active infection, decompensated HF, latent TB until treated.</li>
+<li>HCQ in pre-existing retinopathy.</li>
+<li>Live vaccines contraindicated with biologics &amp; JAKi.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🎯 NEET PG / INI-CET High-Yield Points</h4>
+<ul>
+<li><strong>DOC acute gout</strong> — Indomethacin (or Naproxen / Etoricoxib); Colchicine if NSAIDs C/I.</li>
+<li><strong>DOC chronic gout</strong> — Allopurinol.</li>
+<li><strong>Allopurinol + Azathioprine</strong> → marrow suppression (reduce AZA to 25%).</li>
+<li><strong>Allopurinol SJS</strong> — HLA-B*5801 (Han Chinese, Korean).</li>
+<li><strong>Rasburicase</strong> avoid in G6PD deficiency.</li>
+<li><strong>Anchor drug for RA</strong> — Methotrexate.</li>
+<li><strong>Mild RA</strong> — Hydroxychloroquine.</li>
+<li><strong>RA + pregnancy</strong> — Hydroxychloroquine, Sulfasalazine safe; AVOID MTX (Cat X).</li>
+<li><strong>TNF-α inhibitor with longest t½</strong> — Adalimumab (~14 d).</li>
+<li><strong>Etanercept</strong> — soluble TNF receptor fusion protein.</li>
+<li><strong>Infliximab</strong> — chimeric mAb; given IV; needs combination with MTX to reduce neutralising Ab.</li>
+<li><strong>Adalimumab</strong> — fully human mAb; SC.</li>
+<li><strong>Certolizumab</strong> — pegylated Fab fragment (no Fc); safe in pregnancy.</li>
+<li><strong>Tocilizumab</strong> — DOC for <em>cytokine release syndrome (CAR-T)</em> &amp; severe COVID-19.</li>
+<li><strong>Rituximab</strong> — RA resistant to TNFi, plus used in NHL, CLL, ITP, AAV.</li>
+<li><strong>Tofacitinib</strong> — first oral JAK1/3 inhibitor for RA.</li>
+<li>Pre-biologic checklist: <em>TB screen (Mantoux/IGRA, chest X-ray), HBV/HCV serology, baseline CBC, LFT, RFT</em>.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 55-y-old male, recurrent gout flares, serum urate 9 mg/dL, CKD-3, h/o renal stones. Best ULT?<br><strong>Answer:</strong> <em>Febuxostat</em> — safe in moderate CKD; avoid Probenecid (stones).</p></div>
+<div class="cblock"><p><strong>Case:</strong> 32-y-old female with newly diagnosed RA (anti-CCP positive, MTX started). Plans pregnancy in 6 months.<br><strong>Answer:</strong> Stop MTX, switch to <em>Hydroxychloroquine ± Sulfasalazine</em>; wait 3 months after MTX before conception.</p></div>
+<div class="cblock"><p><strong>Case:</strong> RA patient started on Adalimumab develops fever, weight loss, night sweats. CXR shows upper-lobe cavitation.<br><strong>Answer:</strong> Reactivation of latent TB — start anti-TB therapy, hold biologic.</p></div>`}
   ],
   ppt:[
     {t:"Autacoids – Introduction",p:["Histamine","5-HT","Prostaglandins","Bradykinin"]},
@@ -3860,7 +4402,10 @@ TOPICS.push({id:"autacoids",icon:"🌡️",title:"Autacoids & NSAIDs",
     {q:"Antidote of paracetamol poisoning:",o:["Vitamin K","Glucagon","N-acetylcysteine","Sodium bicarbonate"],a:"N-acetylcysteine",e:"NAC replenishes hepatic glutathione, conjugating the toxic metabolite NAPQI. Most effective if given within 8–10 hours of ingestion."},
     {q:"5-HT3 antagonist used in chemotherapy-induced emesis:",o:["Metoclopramide","Cyproheptadine","Ondansetron","Sumatriptan"],a:"Ondansetron",e:"Ondansetron blocks 5-HT3 receptors in CTZ and vagal afferents — most effective for acute (not delayed) chemotherapy emesis."}
   ],
-  mnemonic:`<strong>Aspirin uses</strong> – APPLE (Antiplatelet, Pain, PUD prevention?-no, Lipid? -no, Easy fever, &amp; Kawasaki). <strong>NSAIDs nephrotoxic</strong> – Indomethacin worst.`
+  mnemonic:`<strong>📚 Autacoids &amp; NSAIDs — Quick Concepts</strong><br>
+• <strong>Autacoids</strong> = local hormones (amines, eicosanoids, peptides, purines). <br>
+• Major therapeutic targets: H1, 5-HT, COX, LOX, CysLT receptors. <br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 5 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"respiratory",icon:"🫁",title:"Respiratory System Drugs",
@@ -4203,185 +4748,6 @@ TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
 });
 
 TOPICS.push({id:"cvs",icon:"❤️",title:"Cardiovascular System Drugs",
-  subtopics:[
-    {n:1,label:"RAAS Inhibitors",panelId:"raas"},
-    {n:2,label:"Heart Failure",panelId:"hf"},
-    {n:3,label:"Antiarrhythmics",panelId:"arrhythmia"},
-    {n:4,label:"Antiischaemic / Antianginal",panelId:"angina"},
-    {n:5,label:"Antihypertensives",panelId:"htn"}
-  ],
-  extraPanels:[
-    {id:"raas",content:`<span id="sub-raas-cvs" style="display:block;height:1px;"></span>
-<h4 style="margin-top:4px;">🧬 Renin–Angiotensin–Aldosterone System (RAAS) & Its Inhibitors</h4>
-<p>The RAAS is the master regulator of blood pressure, sodium balance and cardiovascular remodelling. Four drug classes interrupt this cascade at four sequential points — making RAAS one of the highest-yield areas in cardiovascular pharmacology for NEET PG, INI-CET and FMGE.</p>
-
-<div class="moa-stage">
-<div class="moa-title">⚙️ Animated MOA — The RAAS Cascade & Drug Block Points</div>
-<svg class="moa-svg anim-bind" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RAAS cascade animation">
-  <defs>
-    <marker id="raasArrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0b3d5c"/></marker>
-  </defs>
-  <!-- pathway boxes -->
-  <rect x="20" y="60" width="150" height="48" rx="8" fill="#e8f4f8" stroke="#0b3d5c" stroke-width="1.5"/>
-  <text x="95" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d5c">Angiotensinogen</text>
-  <text x="95" y="97" text-anchor="middle" font-size="10" fill="#0b3d5c">(liver)</text>
-
-  <rect x="375" y="60" width="150" height="48" rx="8" fill="#e8f4f8" stroke="#0b3d5c" stroke-width="1.5"/>
-  <text x="450" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d5c">Angiotensin I</text>
-  <text x="450" y="99" text-anchor="middle" font-size="10" fill="#0b3d5c">(inactive)</text>
-
-  <rect x="700" y="60" width="170" height="48" rx="8" fill="#fde9e7" stroke="#c0392b" stroke-width="1.8"/>
-  <text x="785" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">Angiotensin II</text>
-  <text x="785" y="99" text-anchor="middle" font-size="10" fill="#c0392b">(active)</text>
-
-  <!-- arrows + enzymes -->
-  <line x1="170" y1="84" x2="365" y2="84" stroke="#0b3d5c" stroke-width="2" marker-end="url(#raasArrow)"/>
-  <text x="262" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#147a85">Renin</text>
-  <line x1="525" y1="84" x2="690" y2="84" stroke="#0b3d5c" stroke-width="2" marker-end="url(#raasArrow)"/>
-  <text x="607" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#147a85">ACE</text>
-  <text x="607" y="120" text-anchor="middle" font-size="9" fill="#888">(lungs)</text>
-
-  <!-- flowing pulse dot along the cascade -->
-  <circle r="6" fill="#147a85">
-    <animate attributeName="cx" values="95;450;785" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="120;120;120" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;1;1;0" dur="4s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- AT1 receptor + downstream effects -->
-  <rect x="700" y="170" width="170" height="44" rx="8" fill="#fff3cd" stroke="#b8860b" stroke-width="1.5"/>
-  <text x="785" y="197" text-anchor="middle" font-size="12" font-weight="700" fill="#7a5c00">AT1 Receptor</text>
-  <line x1="785" y1="108" x2="785" y2="168" stroke="#c0392b" stroke-width="2" marker-end="url(#raasArrow)"/>
-
-  <text x="785" y="245" text-anchor="middle" font-size="11" fill="#444">Vasoconstriction · Aldosterone ↑</text>
-  <text x="785" y="262" text-anchor="middle" font-size="11" fill="#444">Na⁺/H₂O retention · Remodelling</text>
-  <line x1="785" y1="214" x2="785" y2="228" stroke="#b8860b" stroke-width="2" marker-end="url(#raasArrow)"/>
-
-  <!-- BLOCK MARKERS (blinking) -->
-  <g class="anim-bind">
-    <circle cx="262" cy="84" r="13" fill="none" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/></circle>
-    <line x1="253" y1="75" x2="271" y2="93" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/></line>
-    <text x="262" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">DRI</text>
-    <text x="262" y="53" text-anchor="middle" font-size="9" fill="#c0392b">Aliskiren</text>
-  </g>
-  <g class="anim-bind">
-    <circle cx="607" cy="84" r="13" fill="none" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <line x1="598" y1="75" x2="616" y2="93" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></line>
-    <text x="607" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">ACE inhibitor</text>
-    <text x="607" y="53" text-anchor="middle" font-size="9" fill="#c0392b">-pril</text>
-  </g>
-  <g class="anim-bind">
-    <circle cx="785" cy="140" r="13" fill="none" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.8s" repeatCount="indefinite"/></circle>
-    <line x1="776" y1="131" x2="794" y2="149" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.8s" repeatCount="indefinite"/></line>
-    <text x="675" y="144" text-anchor="end" font-size="11" font-weight="700" fill="#c0392b">ARB (-sartan)</text>
-  </g>
-
-  <!-- Bradykinin side arm -->
-  <rect x="375" y="270" width="150" height="42" rx="8" fill="#eafaf1" stroke="#1e8449" stroke-width="1.5"/>
-  <text x="450" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">Bradykinin</text>
-  <text x="450" y="305" text-anchor="middle" font-size="9" fill="#1e8449">↑ with ACE inhibitor</text>
-  <line x1="525" y1="100" x2="540" y2="270" stroke="#1e8449" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#raasArrow)"/>
-  <text x="600" y="300" font-size="10" fill="#1e8449">→ cough, angioedema, vasodilation</text>
-
-  <!-- legend -->
-  <g class="moa-legend">
-    <text x="20" y="340" font-size="10" fill="#666">🔴 = drug block point   |   🟢 pulse = active angiotensin flow   |   ACE also degrades bradykinin</text>
-  </g>
-</svg>
-<p style="font-size:13px;color:#555;margin-top:6px;"><strong>Read the animation:</strong> Angiotensinogen is cleaved by <strong>renin</strong> → Angiotensin I, then by <strong>ACE</strong> → Angiotensin II, which acts on the <strong>AT1 receptor</strong>. Each red marker is a drug block point: <strong>DRI</strong> at renin, <strong>ACE inhibitors</strong> at ACE, <strong>ARBs</strong> at AT1. Because ACE also breaks down bradykinin, ACE inhibitors raise bradykinin — explaining the classic dry cough and angioedema (ARBs do not).</p>
-</div>
-
-<h4>🗂️ Classification — Drugs Acting on RAAS</h4>
-<table>
-<tr><th>Class</th><th>Site of Action</th><th>Prototype / Examples</th></tr>
-<tr><td>Direct Renin Inhibitor (DRI)</td><td>Inhibits renin</td><td>Aliskiren</td></tr>
-<tr><td>ACE Inhibitors (ACEIs)</td><td>Inhibit ACE</td><td>Captopril, Enalapril, Lisinopril, Ramipril, Perindopril</td></tr>
-<tr><td>Angiotensin Receptor Blockers (ARBs / "sartans")</td><td>Block AT1 receptor</td><td>Losartan, Valsartan, Telmisartan, Candesartan, Olmesartan, Irbesartan</td></tr>
-<tr><td>Mineralocorticoid Receptor Antagonists (MRA)</td><td>Block aldosterone receptor</td><td>Spironolactone, Eplerenone, Finerenone</td></tr>
-<tr><td>ARNI (Angiotensin Receptor–Neprilysin Inhibitor)</td><td>AT1 block + neprilysin inhibition</td><td>Sacubitril/Valsartan</td></tr>
-</table>
-
-<h4>⚙️ Mechanism of Action — Class by Class</h4>
-<table>
-<tr><th>Class</th><th>Mechanism</th><th>Key Consequence</th></tr>
-<tr><td>DRI (Aliskiren)</td><td>Binds active site of renin → ↓ plasma renin activity → ↓ Angiotensin I & II</td><td>BP reduction; rarely used now</td></tr>
-<tr><td>ACE inhibitors</td><td>Inhibit ACE → ↓ Angiotensin II, ↓ aldosterone, ↑ bradykinin</td><td>Vasodilation, natriuresis; dilate <strong>efferent</strong> arteriole → renoprotection</td></tr>
-<tr><td>ARBs</td><td>Selectively block AT1 receptor; no effect on bradykinin</td><td>Same haemodynamics as ACEI but minimal cough/angioedema</td></tr>
-<tr><td>MRA</td><td>Competitively block aldosterone receptor in distal nephron + myocardium</td><td>K⁺-sparing diuresis + anti-remodelling</td></tr>
-<tr><td>ARNI</td><td>Sacubitril (neprilysin inhibitor) ↑ natriuretic peptides + Valsartan blocks AT1</td><td>Superior to ACEI in HFrEF (PARADIGM-HF)</td></tr>
-</table>
-
-<h4>💊 Pharmacokinetics — High-Yield Distinctions</h4>
-<table>
-<tr><th>Drug</th><th>PK Pearl</th></tr>
-<tr><td>Captopril</td><td>Contains <strong>sulfhydryl (–SH) group</strong> → taste disturbance & rash; short-acting (BD–TDS); active drug</td></tr>
-<tr><td>Enalapril</td><td>Prodrug → active <strong>enalaprilat</strong> (IV form available)</td></tr>
-<tr><td>Lisinopril</td><td><strong>Not a prodrug</strong>, not metabolised, renally excreted</td></tr>
-<tr><td>Ramipril / Perindopril</td><td>Long-acting, once daily, high tissue-ACE affinity</td></tr>
-<tr><td>Losartan</td><td>Prodrug → active <strong>E-3174</strong>; <strong>uricosuric</strong> (good in HTN + gout)</td></tr>
-<tr><td>Telmisartan</td><td><strong>Longest t½ (~24 h)</strong> among ARBs; partial PPAR-γ agonist</td></tr>
-<tr><td>Aliskiren</td><td>Very low oral bioavailability (~2.5%)</td></tr>
-</table>
-
-<h4>⚠️ Adverse Effects & Contraindications</h4>
-<table>
-<tr><th>Class</th><th>Adverse Effects</th></tr>
-<tr><td>ACE inhibitors</td><td>Dry <strong>cough</strong> (commonest cause of stopping), <strong>angioedema</strong>, hyperkalaemia, first-dose hypotension, AKI in <strong>bilateral renal artery stenosis</strong>, <strong>teratogenic</strong>, neutropenia</td></tr>
-<tr><td>ARBs</td><td>Minimal cough/angioedema, hyperkalaemia, teratogenic</td></tr>
-<tr><td>MRA</td><td>Hyperkalaemia; <strong>spironolactone → gynaecomastia</strong> (anti-androgen); eplerenone/finerenone more selective</td></tr>
-<tr><td>Aliskiren</td><td>Diarrhoea, hyperkalaemia, angioedema</td></tr>
-</table>
-<p><strong>Absolute contraindications:</strong> Pregnancy (all RAAS blockers — fetal renal damage, oligohydramnios), bilateral renal artery stenosis, history of angioedema, significant hyperkalaemia. <strong>Never triple-block</strong> (ACEI + ARB + DRI) — ALTITUDE & ONTARGET trials showed ↑ renal failure and hyperkalaemia.</p>
-
-<h4>🩺 Clinical Uses</h4>
-<p>Hypertension; <strong>heart failure with reduced EF</strong> (mortality benefit); post-myocardial infarction; <strong>diabetic nephropathy / CKD with proteinuria</strong> (renoprotection — first-line); scleroderma renal crisis (ACEI).</p>
-
-<div class="boxes-header">💡 Quick Reference Boxes — RAAS Inhibitors</div>
-
-<div class="mnemonic" style="margin-top:14px;">
-<h4>🧠 Memory Aids — RAAS</h4>
-<p><strong>ACE inhibitor adverse effects — "CAPTOPRIL"</strong>: <em>C</em>ough, <em>A</em>ngioedema, <em>P</em>otassium ↑ (hyperkalaemia), <em>T</em>aste disturbance, hyp<em>O</em>tension (first dose), <em>P</em>regnancy contraindicated, <em>R</em>enal failure (bilateral RAS), <em>I</em>ncreased renin, <em>L</em>eukopenia.</p>
-<p><strong>"-pril" = ACE inhibitor</strong> · <strong>"-sartan" = ARB</strong> · <strong>"-iren" (Aliskiren) = renin inhibitor</strong>.</p>
-<p><strong>Losartan is the Lucky one</strong> — it <em>L</em>owers urate (uricosuric), so it is preferred in hypertension with gout.</p>
-</div>
-
-<div class="info-box pearl-box">
-<h4>📌 Clinical Pearls</h4>
-<ul>
-<li>ACE inhibitors dilate the <strong>efferent</strong> glomerular arteriole → reduce intraglomerular pressure → <strong>renoprotective</strong> in diabetic nephropathy.</li>
-<li>If a patient develops an ACEI cough, <strong>switch to an ARB</strong> — same benefit, no bradykinin-mediated cough.</li>
-<li>A small early rise in serum creatinine (&lt;30%) after starting an ACEI/ARB is <strong>acceptable</strong> and reflects effective efferent dilation — do not stop the drug.</li>
-<li>Sacubitril/valsartan (ARNI) requires a <strong>36-hour washout</strong> from an ACE inhibitor to avoid angioedema.</li>
-</ul>
-</div>
-
-<div class="info-box recent-box">
-<h4>🆕 Recent Advances (2023–2025)</h4>
-<ul>
-<li><strong>Finerenone (Kerendia)</strong> — non-steroidal selective MRA; reduces CKD progression & CV events in type-2 diabetic kidney disease (FIDELIO-DKD / FIGARO-DKD), with less hyperkalaemia/gynaecomastia than spironolactone.</li>
-<li><strong>ARNI (Sacubitril/Valsartan)</strong> — now a first-line pillar of HFrEF therapy alongside beta-blockers, MRA and SGLT2 inhibitors ("four pillars").</li>
-<li><strong>Aliskiren</strong> has largely fallen out of favour after the ALTITUDE trial.</li>
-</ul>
-</div>
-
-<div class="info-box pyq-box">
-<h4>🔬 NEET PG / INI-CET / FMGE PYQs (2022–2025)</h4>
-<ul>
-<li><strong>NEET PG</strong>: ACE inhibitor cough is due to accumulation of <em>bradykinin & substance P</em>.</li>
-<li><strong>INI-CET</strong>: ARB with the longest duration of action → <em>Telmisartan</em>.</li>
-<li><strong>NEET PG</strong>: ARB preferred in hypertension with gout → <em>Losartan</em> (uricosuric).</li>
-<li><strong>FMGE</strong>: Drug of choice for diabetic nephropathy → <em>ACE inhibitor / ARB</em>.</li>
-<li><strong>INI-CET</strong>: Mechanism of sacubitril → <em>neprilysin inhibition</em> (↑ natriuretic peptides).</li>
-<li><strong>NEET PG</strong>: Antihypertensive absolutely contraindicated in pregnancy → <em>ACE inhibitors / ARBs</em>.</li>
-</ul>
-</div>
-`},
-    {id:"hf",content:`<span id="sub-hf-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">🫀 Drugs for Heart Failure</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>The four pillars of HFrEF: ARNI/ACEI/ARB, beta-blockers, MRA, SGLT2 inhibitors</li><li>Diuretics (loop) for congestion; digoxin for symptom control</li><li>Ivabradine, vericiguat; device & acute decompensated HF management</li></ul></div>`},
-    {id:"arrhythmia",content:`<span id="sub-arrhythmia-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">⚡ Antiarrhythmic Drugs</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>Vaughan-Williams classification (Class I–IV) with prototypes</li><li>Amiodarone — multiclass action and organ toxicities</li><li>Drugs for AF, SVT, VT and the role of adenosine</li></ul></div>`},
-    {id:"angina",content:`<span id="sub-angina-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">💔 Antiischaemic / Antianginal Drugs</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>Nitrates, beta-blockers and calcium channel blockers</li><li>Newer agents: ranolazine, nicorandil, ivabradine, trimetazidine</li><li>Stable vs unstable angina and acute coronary syndrome pharmacology</li></ul></div>`},
-    {id:"htn",content:`<span id="sub-htn-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">🩸 Antihypertensives (Integrated)</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>Stepped-care approach and first-line drug classes</li><li>Calcium channel blockers, thiazides, beta-blockers, central agents</li><li>Hypertensive emergency drugs and special populations</li></ul></div>`}
-  ],
-
   classification:`<h4>Antihypertensives</h4>
 <table><tr><th>Class</th><th>Examples</th></tr>
 <tr><td>ACE inhibitors</td><td>Enalapril, Ramipril, Lisinopril, Captopril, Perindopril</td></tr>
