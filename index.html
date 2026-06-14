@@ -5561,11 +5561,11 @@ function renderTopicAccordions(){
           ${!isHidden('pkpd')?`<div id="pkpd-${t.id}" class="sub-panel ${isFirstActive('pkpd')}"><div class="cblock">${t.pkpd}</div></div>`:`<div id="pkpd-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.pkpd||''}</div></div>`}
           ${t.pd?`<div id="pd-${t.id}" class="sub-panel" style="display:none;"><div class="cblock">${t.pd}</div></div>`:''}
           ${!isHidden('adr')?`<div id="adr-${t.id}" class="sub-panel ${isFirstActive('adr')}"><div class="high-yield"><h4>⚠️ Adverse Drug Reactions &amp; Toxicity</h4>${t.adr}</div></div>`:`<div id="adr-${t.id}" class="sub-panel" style="display:none;"><div class="high-yield">${t.adr||''}</div></div>`}
-          ${!isHidden('drugs')?`<div id="drugs-${t.id}" class="sub-panel ${isFirstActive('drugs')}"><div class="drug-grid">${t.drugs.map((d,di)=>renderDrugCard(d,t.id,di)).join('')}</div></div>`:''}
+          ${!isHidden('drugs')&&t.drugs?`<div id="drugs-${t.id}" class="sub-panel ${isFirstActive('drugs')}"><div class="drug-grid">${t.drugs.map((d,di)=>renderDrugCard(d,t.id,di)).join('')}</div></div>`:''}
           ${extraPanelsHTML}
           ${!isHidden('fc')?`<div id="fc-${t.id}" class="sub-panel ${isFirstActive('fc')}">${renderFlashcardSection(t)}</div>`:''}
-          ${!isHidden('ppt')?`<div id="ppt-${t.id}" class="sub-panel ${isFirstActive('ppt')}"><div class="ppt-grid">${t.ppt.map((s,i)=>`<div class="ppt-slide"><div class="ppt-num">SLIDE ${i+1}</div><div class="ppt-title">${s.t}</div><ul class="ppt-pts">${s.p.map(p=>`<li>${p}</li>`).join('')}</ul></div>`).join('')}</div></div>`:''}
-          ${!isHidden('mcq')?`<div id="mcq-${t.id}" class="sub-panel ${isFirstActive('mcq')}"><div class="mcq-list">${t.mcqs.map((m,i)=>renderMCQ(m,i,`${t.id}-mcq-${i}`)).join('')}</div></div>`:''}
+          ${!isHidden('ppt')&&t.ppt?`<div id="ppt-${t.id}" class="sub-panel ${isFirstActive('ppt')}"><div class="ppt-grid">${t.ppt.map((s,i)=>`<div class="ppt-slide"><div class="ppt-num">SLIDE ${i+1}</div><div class="ppt-title">${s.t}</div><ul class="ppt-pts">${s.p.map(p=>`<li>${p}</li>`).join('')}</ul></div>`).join('')}</div></div>`:''}
+          ${!isHidden('mcq')&&t.mcqs?`<div id="mcq-${t.id}" class="sub-panel ${isFirstActive('mcq')}"><div class="mcq-list">${t.mcqs.map((m,i)=>renderMCQ(m,i,`${t.id}-mcq-${i}`)).join('')}</div></div>`:''}
         </div>
       </div>`);
     root.appendChild(accordion);
@@ -5586,6 +5586,13 @@ function renderDrugCard(d,topicId,di){
 
 /* ── FLASHCARD RENDERER ─────────────────────── */
 function renderFlashcardSection(t){
+  // Defensive guard — handle topics without drugs array
+  if(!t.drugs || !t.drugs.length){
+    return `<div class="fc-wrap" id="fc-wrap-${t.id}" style="text-align:center;padding:40px 20px;">
+      <div style="font-size:48px;margin-bottom:14px;">🎴</div>
+      <p style="color:var(--muted);font-size:14px;">Flashcards will be available shortly for this topic.</p>
+    </div>`;
+  }
   return `<div class="fc-wrap" id="fc-wrap-${t.id}">
     <div class="fc-controls">
       <div class="fc-progress">Card <strong id="fc-cur-${t.id}">1</strong> of <strong>${t.drugs.length}</strong></div>
