@@ -1680,6 +1680,256 @@ const MOA = {
   </div>
 </div>`,
 
+  respiratoryComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🫁 Respiratory Pharmacology — 2 Key Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize the cough reflex arc with antitussive action, and the multi-target bronchodilation/anti-inflammatory mechanisms in asthma &amp; COPD.</p>
+</div>
+
+<!-- MOA 1: COUGH REFLEX & ANTITUSSIVES -->
+<div class="moa-stage">
+  <div class="moa-title">😷 MOA 1 — Cough Reflex Arc &amp; Sites of Antitussive Action</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <!-- ═══ Step 1: Irritant in airway ═══ -->
+    <text x="40" y="35" fill="#fbbf24" font-size="13" font-weight="800">A) Cough Reflex Pathway</text>
+
+    <!-- Airway with irritants -->
+    <rect x="40" y="55" width="170" height="80" rx="8" fill="#172246" stroke="#ff5e7e" stroke-width="1.5"/>
+    <text x="125" y="78" fill="#ff5e7e" font-size="12" font-weight="700" text-anchor="middle">Irritated Airway</text>
+    <circle cx="80" cy="105" r="6" fill="#ff5e7e"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="125" cy="115" r="6" fill="#ff5e7e"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin=".3s"/></circle>
+    <circle cx="170" cy="100" r="6" fill="#ff5e7e"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin=".6s"/></circle>
+    <text x="125" y="155" fill="#7a88b0" font-size="11" text-anchor="middle">Irritants · Mucus · Inflammation</text>
+
+    <!-- Arrow to sensory receptors -->
+    <line x1="220" y1="95" x2="290" y2="95" stroke="#00d4aa" stroke-width="2"/>
+    <polygon points="288,90 298,95 288,100" fill="#00d4aa"/>
+
+    <!-- Sensory receptors (peripheral site) -->
+    <rect x="300" y="65" width="170" height="60" rx="8" fill="#4da6ff"/>
+    <text x="385" y="90" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">PERIPHERAL SITE</text>
+    <text x="385" y="110" fill="#fff" font-size="11" text-anchor="middle">Sensory receptors (vagus)</text>
+
+    <!-- Peripheral antitussive block -->
+    <rect x="490" y="60" width="190" height="70" rx="6" fill="#10b981" class="anim-glow"/>
+    <text x="585" y="85" fill="#fff" font-size="12" font-weight="800" text-anchor="middle">🚫 Peripheral Antitussives</text>
+    <text x="585" y="103" fill="#fff" font-size="10" text-anchor="middle">Demulcents · Steam · Honey</text>
+    <text x="585" y="118" fill="#fff" font-size="10" text-anchor="middle">Levodropropizine · Benzonatate</text>
+
+    <!-- Arrow to vagal afferent -->
+    <line x1="385" y1="130" x2="385" y2="170" stroke="#00d4aa" stroke-width="2"/>
+    <polygon points="380,168 385,178 390,168" fill="#00d4aa"/>
+    <text x="395" y="155" fill="#00d4aa" font-size="11" font-weight="700">Vagal afferent (CN X)</text>
+
+    <!-- Central Cough Centre (medulla) -->
+    <rect x="280" y="185" width="210" height="70" rx="8" fill="#a855f7"/>
+    <text x="385" y="210" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">CENTRAL COUGH CENTRE</text>
+    <text x="385" y="230" fill="#fff" font-size="11" text-anchor="middle">Medulla — NTS &amp; reticular formation</text>
+    <text x="385" y="247" fill="#fff" font-size="10" text-anchor="middle">μ-opioid &amp; NMDA receptors</text>
+
+    <!-- Central antitussives block -->
+    <rect x="510" y="180" width="240" height="80" rx="6" fill="#10b981" class="anim-glow"/>
+    <text x="630" y="205" fill="#fff" font-size="12" font-weight="800" text-anchor="middle">🚫 Central Antitussives</text>
+    <text x="630" y="223" fill="#fff" font-size="10" text-anchor="middle">OPIOID: Codeine, Pholcodine</text>
+    <text x="630" y="238" fill="#fff" font-size="10" text-anchor="middle">NON-OPIOID: Dextromethorphan</text>
+    <text x="630" y="253" fill="#fff" font-size="10" text-anchor="middle">Noscapine (opium alkaloid)</text>
+
+    <!-- Arrow to efferent -->
+    <line x1="385" y1="260" x2="385" y2="300" stroke="#00d4aa" stroke-width="2"/>
+    <polygon points="380,298 385,308 390,298" fill="#00d4aa"/>
+    <text x="395" y="285" fill="#00d4aa" font-size="11" font-weight="700">Efferent — vagus, phrenic, spinal</text>
+
+    <!-- Effector muscles -->
+    <rect x="280" y="315" width="210" height="60" rx="8" fill="#0ea5e9"/>
+    <text x="385" y="338" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">EFFECTOR MUSCLES</text>
+    <text x="385" y="358" fill="#fff" font-size="11" text-anchor="middle">Diaphragm · Intercostal · Larynx</text>
+
+    <!-- Arrow to cough -->
+    <line x1="385" y1="380" x2="385" y2="420" stroke="#00d4aa" stroke-width="2"/>
+    <polygon points="380,418 385,428 390,418" fill="#00d4aa"/>
+
+    <!-- Final cough output -->
+    <rect x="290" y="435" width="190" height="50" rx="8" fill="#ff5e7e"/>
+    <text x="385" y="468" fill="#fff" font-size="16" font-weight="800" text-anchor="middle">🤧 COUGH</text>
+
+    <!-- Right column: Adjuncts -->
+    <rect x="780" y="55" width="200" height="430" rx="8" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="880" y="80" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 ADJUNCT DRUGS</text>
+    <line x1="800" y1="92" x2="960" y2="92" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
+
+    <text x="880" y="115" fill="#0ea5e9" font-size="12" font-weight="800" text-anchor="middle">🟢 Expectorants</text>
+    <text x="880" y="132" fill="#7a88b0" font-size="10" text-anchor="middle">↑ Bronchial secretion</text>
+    <text x="880" y="147" fill="#7a88b0" font-size="10" text-anchor="middle">Guaifenesin · Ammonium Cl</text>
+    <text x="880" y="162" fill="#7a88b0" font-size="10" text-anchor="middle">Potassium iodide</text>
+
+    <line x1="800" y1="180" x2="960" y2="180" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+
+    <text x="880" y="200" fill="#a855f7" font-size="12" font-weight="800" text-anchor="middle">🟣 Mucolytics</text>
+    <text x="880" y="217" fill="#7a88b0" font-size="10" text-anchor="middle">↓ Mucus viscosity</text>
+    <text x="880" y="232" fill="#7a88b0" font-size="10" text-anchor="middle">Bromhexine · Ambroxol</text>
+    <text x="880" y="247" fill="#7a88b0" font-size="10" text-anchor="middle">N-acetylcysteine</text>
+    <text x="880" y="262" fill="#7a88b0" font-size="10" text-anchor="middle">Dornase alfa (CF)</text>
+
+    <line x1="800" y1="280" x2="960" y2="280" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+
+    <text x="880" y="300" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">⭐ Key DOC Pointers</text>
+    <text x="880" y="320" fill="#7a88b0" font-size="10" text-anchor="middle">Dry cough: Codeine/DXM</text>
+    <text x="880" y="335" fill="#7a88b0" font-size="10" text-anchor="middle">Productive: Expectorants</text>
+    <text x="880" y="350" fill="#7a88b0" font-size="10" text-anchor="middle">Whooping: Macrolide+supportive</text>
+    <text x="880" y="365" fill="#7a88b0" font-size="10" text-anchor="middle">ACEi cough: stop ACEi → ARB</text>
+    <text x="880" y="380" fill="#7a88b0" font-size="10" text-anchor="middle">Children &lt;6 y: AVOID codeine</text>
+
+    <line x1="800" y1="395" x2="960" y2="395" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+
+    <text x="880" y="415" fill="#dc2626" font-size="11" font-weight="800" text-anchor="middle">⚠️ Caution</text>
+    <text x="880" y="430" fill="#7a88b0" font-size="10" text-anchor="middle">Codeine in OSA / CYP2D6</text>
+    <text x="880" y="445" fill="#7a88b0" font-size="10" text-anchor="middle">ultrarapid metabolisers</text>
+    <text x="880" y="460" fill="#7a88b0" font-size="10" text-anchor="middle">→ fatal opioid toxicity</text>
+
+    <!-- Bottom caption -->
+    <line x1="30" y1="500" x2="970" y2="500" stroke="#fbbf24" stroke-dasharray="6,4" opacity="0.6"/>
+    <text x="500" y="525" fill="#7a88b0" font-size="11" text-anchor="middle">⚡ Antitussives suppress cough at CENTRAL (medulla) or PERIPHERAL (sensory receptor) sites of the reflex arc.</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#ff5e7e"></span>Irritant / Cough</span>
+    <span><span class="dot" style="background:#4da6ff"></span>Sensory Receptors</span>
+    <span><span class="dot" style="background:#a855f7"></span>Cough Centre</span>
+    <span><span class="dot" style="background:#10b981"></span>Antitussives</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>Expectorants</span>
+  </div>
+</div>
+
+<!-- MOA 2: BRONCHODILATION + ANTI-INFLAMMATORY PATHWAYS (ASTHMA / COPD) -->
+<div class="moa-stage">
+  <div class="moa-title">🌬️ MOA 2 — Multi-Target Bronchodilation &amp; Anti-Inflammatory Pathways (Asthma / COPD)</div>
+  <svg class="moa-svg" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+    <!-- ═══ Smooth muscle cell (centre) ═══ -->
+    <rect x="320" y="180" width="360" height="280" rx="14" fill="#172246" stroke="#00d4aa" stroke-width="2"/>
+    <text x="500" y="210" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">AIRWAY SMOOTH MUSCLE CELL</text>
+
+    <!-- Intracellular signalling -->
+    <rect x="365" y="230" width="120" height="32" rx="6" fill="#0ea5e9"/>
+    <text x="425" y="251" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">↑ cAMP</text>
+
+    <rect x="515" y="230" width="120" height="32" rx="6" fill="#a855f7"/>
+    <text x="575" y="251" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">↓ Intracellular Ca²⁺</text>
+
+    <!-- Effect -->
+    <text x="500" y="290" fill="#10b981" font-size="14" font-weight="800" text-anchor="middle">→ BRONCHODILATION ✓</text>
+
+    <!-- Constricted vs Dilated airway -->
+    <ellipse cx="430" cy="380" rx="40" ry="32" fill="none" stroke="#ff5e7e" stroke-width="3"/>
+    <ellipse cx="430" cy="380" rx="28" ry="20" fill="#08112a"/>
+    <text x="430" y="430" fill="#ff5e7e" font-size="11" font-weight="700" text-anchor="middle">Constricted</text>
+
+    <text x="490" y="385" fill="#00d4aa" font-size="22">→</text>
+
+    <ellipse cx="570" cy="380" rx="48" ry="32" fill="none" stroke="#10b981" stroke-width="3"/>
+    <ellipse cx="570" cy="380" rx="40" ry="22" fill="#08112a"/>
+    <text x="570" y="430" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Dilated</text>
+
+    <!-- ═══ LEFT side: β2 agonists ═══ -->
+    <rect x="40" y="50" width="240" height="60" rx="8" fill="#fbbf24"/>
+    <text x="160" y="75" fill="#08112a" font-size="13" font-weight="800" text-anchor="middle">β2 AGONISTS</text>
+    <text x="160" y="95" fill="#08112a" font-size="10" text-anchor="middle">SABA: Salbutamol · Terbutaline</text>
+
+    <!-- Arrow to cell -->
+    <line x1="280" y1="80" x2="350" y2="200" stroke="#fbbf24" stroke-width="2"/>
+    <polygon points="345,196 358,200 351,210" fill="#fbbf24"/>
+
+    <text x="40" y="130" fill="#7a88b0" font-size="10">↓ Bind β2 receptor (Gs)</text>
+    <text x="40" y="145" fill="#7a88b0" font-size="10">↓ Adenylate cyclase ↑</text>
+    <text x="40" y="160" fill="#7a88b0" font-size="10">↑ cAMP → PKA → SM relax</text>
+
+    <rect x="40" y="170" width="240" height="50" rx="6" fill="#10b981"/>
+    <text x="160" y="190" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">LABA: Salmeterol · Formoterol</text>
+    <text x="160" y="207" fill="#fff" font-size="10" text-anchor="middle">⚠️ NEVER alone — always with ICS</text>
+
+    <!-- LAMA (below β2 group) -->
+    <rect x="40" y="240" width="240" height="60" rx="8" fill="#4da6ff"/>
+    <text x="160" y="265" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">ANTI-MUSCARINIC (LAMA)</text>
+    <text x="160" y="284" fill="#fff" font-size="10" text-anchor="middle">Ipratropium · Tiotropium</text>
+
+    <line x1="280" y1="270" x2="350" y2="295" stroke="#4da6ff" stroke-width="2"/>
+    <polygon points="345,290 358,295 350,303" fill="#4da6ff"/>
+
+    <text x="40" y="315" fill="#7a88b0" font-size="10">↓ Block M3 on bronchial SM</text>
+    <text x="40" y="330" fill="#7a88b0" font-size="10">↓ ↓ Vagal tone → relaxation</text>
+    <text x="40" y="345" fill="#7a88b0" font-size="10">⭐ Tiotropium = 1st-line COPD</text>
+
+    <!-- Methylxanthines (bottom left) -->
+    <rect x="40" y="365" width="240" height="60" rx="8" fill="#a855f7"/>
+    <text x="160" y="390" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">METHYLXANTHINES</text>
+    <text x="160" y="409" fill="#fff" font-size="10" text-anchor="middle">Theophylline · Aminophylline</text>
+
+    <line x1="280" y1="395" x2="350" y2="380" stroke="#a855f7" stroke-width="2"/>
+    <polygon points="345,378 358,378 352,388" fill="#a855f7"/>
+
+    <text x="40" y="445" fill="#7a88b0" font-size="10">↓ Non-selective PDE inhibition</text>
+    <text x="40" y="460" fill="#7a88b0" font-size="10">↓ + Adenosine A1 antagonism</text>
+    <text x="40" y="475" fill="#7a88b0" font-size="10">⚠️ Narrow TI (10-20 µg/mL)</text>
+
+    <!-- ═══ RIGHT side: ICS + LTRA + Biologicals ═══ -->
+    <rect x="720" y="50" width="240" height="60" rx="8" fill="#dc2626"/>
+    <text x="840" y="75" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">INHALED CORTICOSTEROIDS</text>
+    <text x="840" y="95" fill="#fff" font-size="10" text-anchor="middle">Budesonide · Fluticasone</text>
+
+    <line x1="720" y1="80" x2="650" y2="200" stroke="#dc2626" stroke-width="2"/>
+    <polygon points="655,196 642,200 649,210" fill="#dc2626"/>
+
+    <text x="970" y="130" fill="#7a88b0" font-size="10" text-anchor="end">Bind cytosolic GR receptor ↓</text>
+    <text x="970" y="145" fill="#7a88b0" font-size="10" text-anchor="end">↓ NF-κB → ↓ cytokines</text>
+    <text x="970" y="160" fill="#7a88b0" font-size="10" text-anchor="end">⭐ Mainstay controller (days-weeks)</text>
+
+    <!-- LTRA -->
+    <rect x="720" y="170" width="240" height="60" rx="8" fill="#0ea5e9"/>
+    <text x="840" y="195" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">LTRA / 5-LOX BLOCKER</text>
+    <text x="840" y="214" fill="#fff" font-size="10" text-anchor="middle">Montelukast · Zileuton</text>
+
+    <line x1="720" y1="200" x2="650" y2="250" stroke="#0ea5e9" stroke-width="2"/>
+    <polygon points="655,246 642,250 650,258" fill="#0ea5e9"/>
+
+    <text x="970" y="245" fill="#7a88b0" font-size="10" text-anchor="end">↓ Block CysLT1 receptor</text>
+    <text x="970" y="260" fill="#7a88b0" font-size="10" text-anchor="end">⭐ DOC for aspirin-induced asthma</text>
+
+    <!-- Mast cell stabiliser -->
+    <rect x="720" y="280" width="240" height="60" rx="8" fill="#fbbf24"/>
+    <text x="840" y="305" fill="#08112a" font-size="13" font-weight="800" text-anchor="middle">MAST CELL STABILISERS</text>
+    <text x="840" y="324" fill="#08112a" font-size="10" text-anchor="middle">Cromolyn · Nedocromil · Ketotifen</text>
+
+    <line x1="720" y1="305" x2="650" y2="300" stroke="#fbbf24" stroke-width="2"/>
+    <polygon points="655,295 642,300 650,308" fill="#fbbf24"/>
+
+    <!-- Biologicals -->
+    <rect x="720" y="360" width="240" height="80" rx="8" fill="#10b981"/>
+    <text x="840" y="385" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">BIOLOGICALS (Severe)</text>
+    <text x="840" y="403" fill="#fff" font-size="10" text-anchor="middle">Omalizumab (anti-IgE)</text>
+    <text x="840" y="418" fill="#fff" font-size="10" text-anchor="middle">Mepolizumab/Reslizumab (anti-IL-5)</text>
+    <text x="840" y="433" fill="#fff" font-size="10" text-anchor="middle">Dupilumab (IL-4Rα)</text>
+
+    <line x1="720" y1="395" x2="650" y2="350" stroke="#10b981" stroke-width="2"/>
+    <polygon points="655,348 642,350 649,358" fill="#10b981"/>
+
+    <!-- Bottom: GINA Step ladder -->
+    <rect x="40" y="510" width="920" height="90" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="535" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 GINA 2023 Step-Wise Asthma Treatment</text>
+    <text x="80" y="558" fill="#7a88b0" font-size="11">Step 1: PRN low-dose ICS-Formoterol</text>
+    <text x="80" y="576" fill="#7a88b0" font-size="11">Step 2: Daily low-dose ICS + PRN reliever</text>
+    <text x="80" y="594" fill="#7a88b0" font-size="11">Step 3: Low-dose ICS-LABA</text>
+    <text x="540" y="558" fill="#7a88b0" font-size="11">Step 4: Medium-dose ICS-LABA ± LAMA/LTRA</text>
+    <text x="540" y="576" fill="#7a88b0" font-size="11">Step 5: High-dose ICS-LABA + Biologicals/OCS</text>
+    <text x="540" y="594" fill="#10b981" font-size="11" font-weight="700">⭐ COPD: LAMA (Tiotropium) = 1st line</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#fbbf24"></span>β2 / Mast cell</span>
+    <span><span class="dot" style="background:#4da6ff"></span>LAMA</span>
+    <span><span class="dot" style="background:#a855f7"></span>Methylxanthines</span>
+    <span><span class="dot" style="background:#dc2626"></span>ICS</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>LTRA</span>
+    <span><span class="dot" style="background:#10b981"></span>Biologicals</span>
+  </div>
+</div>`,
+
   asthma: `
 <div class="moa-stage">
   <div class="moa-title">⚙️ Bronchodilation – β2 Agonist Mechanism in Asthma</div>
@@ -5017,65 +5267,361 @@ TOPICS.push({id:"autacoids",icon:"🌡️",title:"Autacoids & NSAIDs",
 });
 
 TOPICS.push({id:"respiratory",icon:"🫁",title:"Respiratory System Drugs",
-  classification:`<h4>Drugs for Bronchial Asthma</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>SABA</td><td>Salbutamol, Terbutaline, Levalbuterol</td></tr>
-<tr><td>LABA</td><td>Salmeterol, Formoterol, Indacaterol (used with ICS — never alone)</td></tr>
-<tr><td>Anti-M</td><td>Ipratropium (SAMA), Tiotropium (LAMA), Umeclidinium</td></tr>
-<tr><td>Methylxanthines</td><td>Theophylline, Aminophylline, Doxofylline</td></tr>
-<tr><td>ICS</td><td>Budesonide, Beclomethasone, Fluticasone, Mometasone, Ciclesonide</td></tr>
-<tr><td>LTRA</td><td>Montelukast, Zafirlukast</td></tr>
-<tr><td>5-LOX inhibitor</td><td>Zileuton</td></tr>
-<tr><td>Mast cell stabiliser</td><td>Cromolyn, Nedocromil, Ketotifen</td></tr>
-<tr><td>Biologicals</td><td>Omalizumab (anti-IgE), Mepolizumab/Reslizumab (anti-IL-5), Dupilumab (IL-4Rα)</td></tr></table>
-<h4>Antitussives</h4>
-<p><strong>Centrally acting</strong>: Codeine, Pholcodine, Dextromethorphan, Noscapine. <strong>Peripherally acting</strong>: Demulcents (glycerin, honey), Steam.</p>
-<h4>Expectorants &amp; Mucolytics</h4>
-<p>Bromhexine, Ambroxol, Guaifenesin, N-acetylcysteine, Dornase alfa (cystic fibrosis).</p>`,
-  moa:MOA.asthma,
-  pkpd:`<h4>β2 Agonists</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Drugs for Cough",panelId:"cough"},
+    {n:2,label:"Bronchial Asthma &amp; COPD",panelId:"asthcopd"}
+  ],
+  classification:`<h4>Respiratory Pharmacology — Overview</h4>
+<p>Respiratory system pharmacology focuses on two core therapeutic areas: <strong>(A) management of cough</strong> (a protective reflex that becomes pathological when prolonged or distressing), and <strong>(B) treatment of obstructive airway diseases</strong> — bronchial asthma and chronic obstructive pulmonary disease (COPD).</p>
+
+<table>
+<tr><th>Domain</th><th>Major Drug Categories</th><th>Therapeutic Goal</th></tr>
+<tr><td><strong>Cough Management</strong></td><td>Antitussives (central + peripheral), Expectorants, Mucolytics</td><td>Suppress non-productive cough OR aid productive clearance</td></tr>
+<tr><td><strong>Asthma / COPD</strong></td><td>Bronchodilators (β2, LAMA, Methylxanthines), Anti-inflammatories (ICS, LTRA, Biologicals), Mast cell stabilisers</td><td>Bronchodilation + reduce airway inflammation</td></tr>
+</table>
+
+<p style="margin-top:18px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>Sub-topic-specific content (drug classifications, MOA, ADRs, mnemonics, NEET PG points) — please use the 2-button Sub-Topic Navigator above to open Drugs for Cough OR Bronchial Asthma &amp; COPD panels.</em></p>`,
+  moa:MOA.respiratoryComplete,
+  extraPanels:[
+    /* ═══════════ SUB-TOPIC 1: DRUGS FOR COUGH ═══════════ */
+    {id:"cough",content:`<span id="sub-cough-respiratory" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">😷 1️⃣ DRUGS FOR COUGH</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Cough</em> is a protective reflex that helps clear the airway of secretions and foreign particles. It becomes pathological when distressing, prolonged, or interferes with sleep. Cough is classified as <strong>dry (non-productive)</strong> — typically warranting suppression, or <strong>productive (with sputum)</strong> — where expectoration or mucolysis is desired.</p>
+
+<h4>📋 Classification of Cough Drugs</h4>
+<table>
+<tr><th>Category</th><th>Sub-class</th><th>Drugs</th></tr>
+<tr><td rowspan="2"><strong>A. Antitussives</strong></td><td>Central (depress cough centre in medulla)</td><td><em>Opioid:</em> Codeine, Pholcodine, Hydrocodone, Ethylmorphine.<br><em>Non-opioid:</em> Dextromethorphan (DXM), Noscapine, Pipazethate, Clobutinol.</td></tr>
+<tr><td>Peripheral (act on sensory receptors / airway)</td><td>Demulcents (glycerin, honey, syrup linctus), Steam inhalation, Lozenges, Levodropropizine, Benzonatate.</td></tr>
+<tr><td><strong>B. Expectorants (Mucokinetics)</strong></td><td>Increase volume of bronchial secretions</td><td>Guaifenesin, Ammonium chloride, Sodium citrate, Potassium iodide, Tolu balsam, Vasaka.</td></tr>
+<tr><td><strong>C. Mucolytics</strong></td><td>Reduce viscosity of mucus</td><td>Bromhexine, Ambroxol (active metabolite of bromhexine), N-acetylcysteine (NAC), Carbocisteine, Dornase alfa (DNase — cystic fibrosis).</td></tr>
+<tr><td><strong>D. Adjuncts</strong></td><td>Combination cough syrups</td><td>Antihistamines (Chlorpheniramine), Decongestants (Pseudoephedrine), Bronchodilators (Salbutamol).</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action</h4>
 <ul>
-<li>Activate β2 receptors → ↑ cAMP → PKA → smooth muscle relaxation</li>
-<li><strong>SABA</strong> – onset 5 min, duration 4–6 h (rescue)</li>
-<li><strong>LABA</strong> – onset 30 min (formoterol – rapid), duration 12–24 h (controller, always combined with ICS)</li>
+<li><strong>Codeine &amp; opioids:</strong> Depress the cough centre in the medulla via μ-opioid receptors. Codeine has lower abuse potential than morphine but the same therapeutic mechanism.</li>
+<li><strong>Dextromethorphan (DXM):</strong> Acts at sigma-1 and NMDA receptors in the brainstem; no analgesic or addictive properties at therapeutic doses. (Recreational misuse causes dissociation.)</li>
+<li><strong>Noscapine:</strong> Opium alkaloid but lacks opioid effect; phthalide group depresses cough centre by an unclear mechanism.</li>
+<li><strong>Demulcents:</strong> Coat the pharyngeal mucosa → reduce afferent signal from inflamed nerve endings.</li>
+<li><strong>Bromhexine &amp; Ambroxol:</strong> Disrupt mucopolysaccharide fibres in sputum → reduce viscosity, increase ciliary motility.</li>
+<li><strong>N-acetylcysteine:</strong> Free sulfhydryl group splits disulfide bonds of mucin polymers; also a precursor of glutathione (used in paracetamol overdose).</li>
+<li><strong>Dornase alfa:</strong> Recombinant DNase that cleaves extracellular DNA in purulent CF mucus, restoring fluidity.</li>
 </ul>
-<h4>Theophylline</h4>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Key Points</h4>
+<table>
+<tr><th>Drug</th><th>Route &amp; Onset</th><th>Metabolism</th><th>Notable PK</th></tr>
+<tr><td><strong>Codeine</strong></td><td>Oral, onset 30 min, duration 4-6 h</td><td>10% → Morphine via CYP2D6</td><td>Polymorphism — ultrarapid metabolisers (1-7% Caucasians) → opioid toxicity; poor metabolisers → no antitussive effect</td></tr>
+<tr><td><strong>Dextromethorphan</strong></td><td>Oral, onset 15-30 min</td><td>CYP2D6 → Dextrorphan (active)</td><td>Avoid with SSRIs / MAOI → serotonin syndrome</td></tr>
+<tr><td><strong>Ambroxol</strong></td><td>Oral / IV, onset 30 min</td><td>Hepatic → glucuronides</td><td>Crosses BBB; lysosomal modulation studied in Parkinson's</td></tr>
+<tr><td><strong>N-acetylcysteine</strong></td><td>Oral, IV, nebulised</td><td>Hepatic deacetylation</td><td>Bronchospasm risk in asthmatics with nebulisation</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Type of Cough</th><th>Preferred Drug</th><th>Rationale</th></tr>
+<tr><td><strong>Dry / non-productive cough</strong></td><td>Codeine 10-20 mg or Dextromethorphan 15-30 mg PO</td><td>Suppress central cough reflex</td></tr>
+<tr><td><strong>Productive cough with thick sputum</strong></td><td>Bromhexine / Ambroxol + adequate hydration</td><td>Reduce mucus viscosity → easier expectoration</td></tr>
+<tr><td><strong>COPD with thick sputum</strong></td><td>NAC oral 600 mg/day; Erdosteine</td><td>Antioxidant + mucolytic effect</td></tr>
+<tr><td><strong>Cystic fibrosis</strong></td><td>Dornase alfa nebulised + Hypertonic saline</td><td>Cleaves DNA in purulent secretions</td></tr>
+<tr><td><strong>Whooping cough (pertussis)</strong></td><td>Macrolide (Azithromycin/Erythromycin) + supportive</td><td>Eradicate Bordetella pertussis; close contacts → prophylaxis</td></tr>
+<tr><td><strong>ACE-inhibitor induced dry cough</strong></td><td>Stop ACEi, switch to ARB</td><td>↑ Bradykinin in airway from ACE block</td></tr>
+<tr><td><strong>Post-infectious cough (subacute)</strong></td><td>Codeine / DXM; ipratropium inhaler if reactive</td><td>Often lasts 3-8 weeks; reassure</td></tr>
+<tr><td><strong>Cough variant asthma</strong></td><td>Inhaled corticosteroid trial</td><td>Diagnostic-therapeutic; bronchodilator response</td></tr>
+<tr><td><strong>Cough in children &lt; 6 yr</strong></td><td>Honey (≥1 yr), nasal saline, steam, supportive</td><td>AVOID codeine and OTC combinations in young children</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
 <ul>
-<li>Non-selective PDE inhibition + adenosine A1 antagonism</li>
-<li>Narrow TI (10–20 µg/ml); metabolised by CYP1A2</li>
-<li>Inducers ↓ levels: smoking, rifampicin, phenobarbitone. Inhibitors ↑: erythromycin, ciprofloxacin, cimetidine</li>
+<li><strong>Codeine:</strong> Constipation, drowsiness, respiratory depression in ultrarapid CYP2D6 metabolisers, contraindicated in nursing mothers (transfer to breast milk → infant apnoea).</li>
+<li><strong>Dextromethorphan:</strong> Dizziness, nausea, rare serotonin syndrome (with SSRI / MAOI / linezolid); recreational misuse → dissociation.</li>
+<li><strong>Noscapine:</strong> Rarely allergic, generally well tolerated; some teratogenic concern in pregnancy.</li>
+<li><strong>Bromhexine / Ambroxol:</strong> Nausea, GI upset, rare allergic reactions.</li>
+<li><strong>N-acetylcysteine:</strong> Bronchospasm (asthmatics — pre-treat with bronchodilator), nausea on oral use, anaphylactoid reactions with IV.</li>
+<li><strong>Guaifenesin:</strong> Nausea, drowsiness; high doses → urinary stones (rare).</li>
+<li><strong>Dornase alfa:</strong> Voice change, pharyngitis, occasional rash.</li>
 </ul>
-<h4>ICS</h4>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
 <ul>
-<li>Bind cytosolic glucocorticoid receptor → ↓ NF-κB → ↓ cytokines</li>
-<li>Onset – days to weeks (not for acute attack)</li>
-<li>ADRs – oral candidiasis, dysphonia (mouth rinsing prevents)</li>
-</ul>`,
-  adr:`<h4>SABA ADRs</h4>
-<p>Tremor, tachycardia, hypokalaemia, hyperglycaemia, tolerance with overuse (paradoxical bronchospasm).</p>
-<h4>Theophylline Toxicity</h4>
-<p>Nausea, headache, seizures, arrhythmias (multifocal atrial tachycardia). Treat – activated charcoal, β-blocker for tachycardia, IV diazepam for seizures.</p>
-<h4>Anti-M ADRs</h4>
-<p>Dry mouth, urinary retention, glaucoma exacerbation (rare with inhaled).</p>
-<h4>Step-wise Management (GINA)</h4>
-<ol><li>Step 1 – PRN low-dose ICS-formoterol</li>
-<li>Step 2 – Daily low-dose ICS + PRN reliever</li>
-<li>Step 3 – Low-dose ICS-LABA</li>
-<li>Step 4 – Medium-dose ICS-LABA ± tiotropium / LTRA</li>
-<li>Step 5 – High-dose ICS-LABA + biologicals / OCS</li></ol>`,
+<li>Codeine: children &lt; 12 years (FDA boxed warning, 2017), nursing mothers, OSA, severe respiratory disease.</li>
+<li>Dextromethorphan: with SSRI / MAOI / linezolid (serotonin syndrome risk).</li>
+<li>Mucolytics in NAC nebulised form: severe asthma without pre-bronchodilator.</li>
+<li>Atropinic drying agents and antitussives in productive cough (may retain infected secretions).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> A 70-year-old hypertensive on Enalapril complains of a persistent dry cough for 6 weeks. CXR normal. Next step?<br><strong>Answer:</strong> Stop Enalapril, switch to an ARB (e.g. Losartan). Cough is due to bradykinin accumulation — does not require antitussive.</p></div>
+<div class="cblock"><p><strong>Case:</strong> A 4-year-old with cough &amp; mild fever — parents ask for "good cough syrup."<br><strong>Answer:</strong> Honey (if ≥1 yr) + steam + saline; AVOID codeine and pseudo-ephedrine combinations in under-6s. Reassure and review if persistent.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Cystic fibrosis adolescent with chronic productive cough &amp; recurrent infections.<br><strong>Answer:</strong> Nebulised <em>Dornase alfa</em> + hypertonic saline + airway clearance; adjunct mucolytic (NAC) and inhaled antibiotic (tobramycin) per protocol.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Cough is a protective reflex</strong> — suppressing productive cough may retain pathogenic secretions; mucolytics + expectorants are preferred in wet cough</li>
+<li><strong>Codeine is metabolised by CYP2D6</strong> — ultrarapid metabolisers (1-7% Caucasians) are at risk of fatal opioid toxicity; FDA 2017 — contraindicated in children &lt; 12 y and breastfeeding</li>
+<li><strong>Dextromethorphan</strong> is the safer non-opioid alternative; recreational misuse → dissociative / hallucinogenic effects</li>
+<li><strong>Honey (1+ year)</strong> = first-line for paediatric night cough — meta-analyses show benefit; safer than OTC syrups</li>
+<li><strong>ACE-inhibitor cough</strong> develops in ~10% of patients due to bradykinin accumulation; switch to ARB (no bradykinin effect)</li>
+<li><strong>Noscapine</strong> is an opium alkaloid but lacks opioid effects — non-addictive antitussive (Coscopin)</li>
+<li><strong>Mucolytics</strong> (Bromhexine, Ambroxol, NAC) ↓ sputum viscosity; <strong>Expectorants</strong> (Guaifenesin) ↑ sputum volume</li>
+<li><strong>Dornase alfa</strong> — DNA-cleaving recombinant enzyme; only for cystic fibrosis (purulent DNA-rich mucus)</li>
+<li><strong>Levodropropizine</strong> — peripheral antitussive; no central sedation → safer for elderly &amp; drivers</li>
+<li><strong>NAC nebulisation</strong> can cause bronchospasm in asthmatics — pre-treat with salbutamol</li>
+<li><strong>Whooping cough</strong> (Bordetella pertussis) — DOC is Azithromycin (macrolide); close-contact prophylaxis recommended</li>
+<li><strong>Cough-variant asthma</strong> — chronic cough as sole symptom; trial ICS + bronchodilator if persistent &gt; 8 weeks</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Gefapixant (P2X3 antagonist)</strong> — first non-opioid drug for chronic refractory cough; approved EU 2023 (taste disturbance is dose-limiting)</li>
+<li><strong>Camlipixant</strong> — selective P2X3 antagonist with less taste effect; Phase 3 trials ongoing for chronic cough</li>
+<li><strong>Bradykinin pathway inhibitors</strong> — investigated for ACEi-induced cough management</li>
+<li><strong>Erdosteine + NAC combination</strong> — dual antioxidant-mucolytic shows reduced COPD exacerbations (RESTORE trial)</li>
+<li><strong>Nebulised Hypertonic Saline (7%)</strong> — adjunct in bronchiolitis and CF; reduces hospital stay duration</li>
+<li><strong>Ivacaftor / Elexacaftor combination</strong> (CFTR modulators) for CF — reduces need for mucolytics</li>
+<li><strong>Cytisinicline trials</strong> for smoking-related chronic cough cessation</li>
+<li><strong>OTC codeine</strong> withdrawn in many countries (UK 2023, Australia 2018); shift to non-opioid options</li>
+<li><strong>Honey-based cough syrups</strong> recognised in WHO essential medicines for paediatric symptomatic care</li>
+<li><strong>Telemedicine triage protocols</strong> for cough — most acute viral coughs require no prescription (NICE 2023)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for ACE-inhibitor induced dry cough — <em>Switch to ARB (e.g. Losartan)</em></li>
+<li><strong>INI-CET 2023</strong>: Antitussive contraindicated in children &lt; 12 yr — <em>Codeine</em></li>
+<li><strong>NEET PG 2024</strong>: Non-opioid central antitussive — <em>Dextromethorphan</em></li>
+<li><strong>INI-CET 2024</strong>: Mucolytic used in cystic fibrosis (recombinant DNase) — <em>Dornase alfa</em></li>
+<li><strong>NEET PG 2024</strong>: Codeine is metabolised to morphine by — <em>CYP2D6</em></li>
+<li><strong>FMGE 2024</strong>: DOC for whooping cough — <em>Azithromycin (macrolide)</em></li>
+<li><strong>NEET PG 2025</strong>: First non-opioid drug approved for refractory chronic cough — <em>Gefapixant (P2X3 antagonist)</em></li>
+<li><strong>INI-CET 2024</strong>: Drug that splits disulfide bonds of mucus glycoprotein — <em>N-acetylcysteine</em></li>
+<li><strong>NEET PG 2023</strong>: Antitussive with NMDA receptor antagonism — <em>Dextromethorphan</em></li>
+<li><strong>NEET PG 2025</strong>: Recommended first-line for paediatric night cough (≥1 yr) — <em>Honey</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Cough Reflex, Antitussives, Expectorants &amp; Mucolytics</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Drugs for Cough — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ SUB-TOPIC 2: BRONCHIAL ASTHMA & COPD ═══════════ */
+    {id:"asthcopd",content:`<span id="sub-asthcopd-respiratory" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🌬️ 2️⃣ DRUGS FOR BRONCHIAL ASTHMA &amp; COPD</h4>
+
+<p style="margin-top:14px;"><strong>Definition — Bronchial Asthma:</strong> A chronic inflammatory disorder of the airways with reversible airflow obstruction, bronchial hyper-responsiveness, and recurrent episodes of wheezing, breathlessness, chest tightness, and cough. <br><strong>COPD:</strong> A preventable, progressive disease characterised by persistent airflow limitation with chronic inflammation (chronic bronchitis + emphysema); largely <em>irreversible</em>.</p>
+
+<h4>📋 Comprehensive Classification of Anti-Asthma / COPD Drugs</h4>
+<table>
+<tr><th>Group</th><th>Sub-class</th><th>Drugs</th></tr>
+<tr><td rowspan="3"><strong>A. Bronchodilators</strong></td><td>β2-Agonists (SABA &amp; LABA)</td><td><em>SABA (rescue):</em> Salbutamol, Terbutaline, Levalbuterol.<br><em>LABA (controller — always with ICS):</em> Salmeterol, Formoterol, Indacaterol, Vilanterol, Olodaterol.<br><em>Ultra-LABA:</em> Indacaterol (24 h, COPD)</td></tr>
+<tr><td>Anti-Muscarinics (SAMA &amp; LAMA)</td><td><em>SAMA:</em> Ipratropium.<br><em>LAMA:</em> Tiotropium, Aclidinium, Umeclidinium, Glycopyrronium, Revefenacin (nebulised LAMA, US 2018).</td></tr>
+<tr><td>Methylxanthines</td><td>Theophylline, Aminophylline, Doxofylline, Choline theophyllinate.</td></tr>
+<tr><td rowspan="4"><strong>B. Anti-Inflammatory / Controllers</strong></td><td>Inhaled Corticosteroids (ICS)</td><td>Budesonide, Beclomethasone, Fluticasone (propionate / furoate), Mometasone, Ciclesonide.</td></tr>
+<tr><td>Systemic Corticosteroids</td><td>Prednisolone (oral), Hydrocortisone IV, Methylprednisolone IV (acute severe asthma).</td></tr>
+<tr><td>Leukotriene Modifiers</td><td>CysLT1 antagonists: Montelukast, Zafirlukast, Pranlukast.<br>5-LOX inhibitor: Zileuton.</td></tr>
+<tr><td>Mast Cell Stabilisers</td><td>Sodium Cromoglycate, Nedocromil, Ketotifen.</td></tr>
+<tr><td rowspan="2"><strong>C. Biologicals (Severe Asthma)</strong></td><td>Anti-IgE</td><td>Omalizumab (SC every 2-4 wk).</td></tr>
+<tr><td>Anti-IL-5 / IL-4Rα / TSLP</td><td>Mepolizumab, Reslizumab, Benralizumab (anti-IL-5R), Dupilumab (IL-4Rα), Tezepelumab (anti-TSLP — 2021).</td></tr>
+<tr><td rowspan="2"><strong>D. COPD-Specific Adjuncts</strong></td><td>PDE-4 inhibitors</td><td>Roflumilast (oral, for severe COPD with chronic bronchitis phenotype).</td></tr>
+<tr><td>Mucolytics &amp; Antioxidants</td><td>NAC, Erdosteine, Carbocisteine.</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action — Concise</h4>
+<ul>
+<li><strong>β2 agonists:</strong> Bind β2 receptor (Gs) on bronchial smooth muscle → ↑ adenylate cyclase → ↑ cAMP → PKA → smooth muscle relaxation.</li>
+<li><strong>Anti-muscarinics (LAMA):</strong> Block M3 receptors on airway smooth muscle → reduce vagal cholinergic tone (predominant in COPD).</li>
+<li><strong>Methylxanthines:</strong> Non-selective PDE inhibition (↓ cAMP breakdown) + adenosine A1 antagonism. Also enhance diaphragmatic contractility.</li>
+<li><strong>ICS:</strong> Bind cytosolic glucocorticoid receptor → translocate to nucleus → ↓ NF-κB → ↓ cytokine genes (IL-4, IL-5, TNF-α, GM-CSF) → reduce airway inflammation.</li>
+<li><strong>Montelukast:</strong> CysLT1 receptor antagonism → block bronchoconstriction induced by leukotrienes.</li>
+<li><strong>Omalizumab:</strong> Binds free IgE → prevents attachment to FcεRI on mast cells → blocks degranulation.</li>
+<li><strong>Mepolizumab / Reslizumab:</strong> Anti-IL-5 mAb → ↓ eosinophil survival in eosinophilic asthma.</li>
+<li><strong>Dupilumab:</strong> Anti-IL-4Rα → blocks IL-4 + IL-13 signalling (type 2 inflammation).</li>
+<li><strong>Roflumilast:</strong> Selective PDE-4 inhibitor → reduce neutrophilic inflammation in chronic bronchitis.</li>
+</ul>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Key Highlights</h4>
+<table>
+<tr><th>Drug</th><th>Onset</th><th>Duration</th><th>Special</th></tr>
+<tr><td><strong>Salbutamol (SABA)</strong></td><td>~5 min (inhaled)</td><td>4-6 h</td><td>Use as PRN rescue, avoid daily heavy use</td></tr>
+<tr><td><strong>Formoterol (LABA)</strong></td><td>~5 min (rapid LABA)</td><td>12 h</td><td>Used in PRN ICS-Formoterol regimen (GINA Step 1-2)</td></tr>
+<tr><td><strong>Salmeterol</strong></td><td>~30 min</td><td>12 h</td><td>NEVER monotherapy — combined with ICS</td></tr>
+<tr><td><strong>Tiotropium</strong></td><td>30 min</td><td>24 h</td><td>1st-line COPD; add-on severe asthma; HandiHaler or Respimat</td></tr>
+<tr><td><strong>Theophylline</strong></td><td>1-2 h oral</td><td>8-12 h</td><td>Narrow TI 10-20 µg/mL; CYP1A2; many interactions</td></tr>
+<tr><td><strong>Budesonide / Fluticasone</strong></td><td>Days-weeks for max effect</td><td>—</td><td>Mainstay controllers; mouth rinse to prevent candidiasis</td></tr>
+<tr><td><strong>Omalizumab</strong></td><td>Weeks</td><td>SC every 2-4 wk</td><td>Dose by serum IgE + body weight</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses &amp; Step-Wise Management</h4>
+<p><strong>GINA 2023 — Asthma Step Ladder:</strong></p>
+<table>
+<tr><th>Step</th><th>Preferred Therapy</th><th>Reliever</th></tr>
+<tr><td>1</td><td>PRN low-dose ICS-Formoterol (Track 1) OR low-dose ICS + PRN SABA (Track 2)</td><td>ICS-Formoterol PRN</td></tr>
+<tr><td>2</td><td>Daily low-dose ICS OR PRN low-dose ICS-Formoterol</td><td>ICS-Formoterol or SABA PRN</td></tr>
+<tr><td>3</td><td>Low-dose ICS-LABA daily</td><td>ICS-Formoterol PRN</td></tr>
+<tr><td>4</td><td>Medium-dose ICS-LABA daily; add LAMA / LTRA</td><td>ICS-Formoterol PRN</td></tr>
+<tr><td>5</td><td>High-dose ICS-LABA + Biologicals (Omalizumab / Mepolizumab / Dupilumab); + OCS for short bursts</td><td>ICS-Formoterol PRN</td></tr>
+</table>
+
+<p style="margin-top:10px;"><strong>COPD Management (GOLD 2024):</strong></p>
+<ul>
+<li>Group A (low symptoms, low exacerbation): Bronchodilator (LAMA or LABA, prefer LAMA).</li>
+<li>Group B (high symptoms, low exacerbation): LAMA + LABA combination.</li>
+<li>Group E (frequent exacerbations): LAMA + LABA; add ICS if eosinophils ≥ 300/μL (triple therapy: LAMA-LABA-ICS).</li>
+<li>Roflumilast in chronic bronchitis + FEV1 &lt; 50%.</li>
+<li>Azithromycin (low-dose) in selected ex-smokers with frequent exacerbations.</li>
+</ul>
+
+<p><strong>Acute Asthma Exacerbation:</strong> O2 + repeated nebulised SABA (salbutamol) ± ipratropium + systemic corticosteroids (oral prednisolone 40-50 mg or IV hydrocortisone); IV magnesium sulphate (2 g over 20 min) in refractory cases; admission for severe / life-threatening attack.</p>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>SABA/LABA:</strong> Tremor, tachycardia, hypokalaemia, hyperglycaemia; paradoxical bronchospasm with overuse; ↑ asthma deaths if LABA used alone → always combine with ICS.</li>
+<li><strong>LAMA:</strong> Dry mouth, urinary retention (BPH), acute angle-closure glaucoma (rare with inhaled), tachycardia.</li>
+<li><strong>Theophylline:</strong> Nausea, vomiting, tremor, seizures, arrhythmias (multifocal atrial tachycardia); narrow TI requires TDM.</li>
+<li><strong>ICS:</strong> Oral candidiasis, dysphonia (rinse mouth after use), growth velocity reduction in children (catch-up), pneumonia ↑ in COPD (Fluticasone).</li>
+<li><strong>Systemic steroids:</strong> Hyperglycaemia, weight gain, osteoporosis, immunosuppression — use short course.</li>
+<li><strong>Montelukast:</strong> FDA Boxed Warning (2020) — neuropsychiatric ADRs (depression, suicidal ideation, agitation).</li>
+<li><strong>Omalizumab:</strong> Anaphylaxis (0.1%) — monitor for 2 h post-injection initially; observe for malignancy signal (minimal).</li>
+<li><strong>Mepolizumab/Reslizumab:</strong> Anaphylaxis (rare), herpes zoster risk; vaccinate before initiation.</li>
+<li><strong>Roflumilast:</strong> Weight loss, depression, GI upset; avoid in severe depression.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Cautions</h4>
+<ul>
+<li>LABA monotherapy in asthma — FDA Black Box warning.</li>
+<li>Theophylline with hepatic dysfunction, cardiac arrhythmias, smoking cessation (sudden ↑ levels).</li>
+<li>β-blockers (non-selective) in asthma → bronchospasm; selective β1 (e.g., bisoprolol) cautious.</li>
+<li>Aspirin / NSAIDs in Samter triad → severe bronchospasm.</li>
+<li>Omalizumab in pre-existing eosinophilic granulomatosis with polyangiitis (EGPA) → flare risk.</li>
+<li>Live vaccines in patients on biologicals or oral steroids ≥ 20 mg/day.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Theophylline + CYP1A2 inhibitors (Ciprofloxacin, Erythromycin, Cimetidine, Allopurinol)</strong> → ↑ levels → toxicity.</li>
+<li><strong>Theophylline + CYP inducers (Rifampicin, Phenobarbitone, Smoking)</strong> → ↓ levels.</li>
+<li><strong>β2 agonists + Diuretics</strong> → additive hypokalaemia.</li>
+<li><strong>ICS + Ritonavir / Ketoconazole</strong> → systemic steroid effects (Cushing's).</li>
+<li><strong>Roflumilast + CYP1A2 inhibitors</strong> → ↑ exposure → ↑ ADRs.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 26-year-old asthmatic on Salbutamol PRN, using 3-4 puffs/day for 2 months. Diagnosis &amp; next step?<br><strong>Answer:</strong> Uncontrolled asthma. Start <em>low-dose ICS daily</em> + PRN SABA; or shift to PRN ICS-Formoterol (GINA Track 1).</p></div>
+<div class="cblock"><p><strong>Case:</strong> 65-y-old smoker, COPD GOLD group E, eosinophils 350/μL. Optimal long-term regimen?<br><strong>Answer:</strong> <em>Triple therapy</em> — LAMA + LABA + ICS (e.g. Trelegy: Umeclidinium + Vilanterol + Fluticasone furoate).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Severe persistent asthma not controlled despite high-dose ICS-LABA; serum IgE 800 IU/mL, allergic phenotype. Add-on?<br><strong>Answer:</strong> <em>Omalizumab</em> — anti-IgE, dose by weight + baseline IgE.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Severe eosinophilic asthma, peripheral eosinophils 500/μL. Best biological?<br><strong>Answer:</strong> <em>Mepolizumab</em> or <em>Benralizumab</em> (anti-IL-5/5Rα).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>LABA monotherapy in asthma is dangerous</strong> — FDA boxed warning since 2005; always combine with ICS</li>
+<li><strong>Tiotropium is 1st-line maintenance in COPD</strong> — superior to LABA in symptom + exacerbation reduction</li>
+<li><strong>Theophylline narrow TI</strong> (10-20 µg/mL) — TDM required; smoking ↓ levels (CYP1A2 induction)</li>
+<li><strong>ICS-Formoterol PRN</strong> (Track 1 GINA) reduces severe exacerbations vs SABA-alone PRN</li>
+<li><strong>Always rinse mouth after ICS</strong> to prevent oral candidiasis &amp; dysphonia</li>
+<li><strong>Montelukast FDA Boxed Warning</strong> (2020) — neuropsychiatric ADRs (depression, suicidal ideation)</li>
+<li><strong>Omalizumab</strong> for allergic asthma with elevated IgE; <strong>Mepolizumab/Benralizumab</strong> for eosinophilic phenotype</li>
+<li><strong>Dupilumab</strong> works in both asthma + atopic dermatitis + chronic rhinosinusitis with nasal polyps</li>
+<li><strong>Roflumilast</strong> — for severe COPD chronic bronchitis phenotype, FEV1 &lt; 50%; causes weight loss</li>
+<li><strong>Triple inhaler (ICS-LABA-LAMA)</strong> — Trelegy, Trimbow — useful in COPD group E with eosinophilia</li>
+<li><strong>Acute severe asthma</strong> — O2 + nebulised SABA + Ipratropium + systemic steroids + IV MgSO4 if refractory</li>
+<li><strong>Tezepelumab (anti-TSLP)</strong> — broad action; works in both eosinophilic &amp; non-eosinophilic severe asthma</li>
+<li><strong>Cromolyn Sodium</strong> — pure prophylactic (no bronchodilator), no acute effect; obsolete with ICS availability</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>GINA 2023</strong> — Track 1 (PRN ICS-Formoterol) preferred over Track 2 (SABA + ICS); reduces severe exacerbations</li>
+<li><strong>Tezepelumab (anti-TSLP)</strong> — FDA approved 2021 for severe asthma; broad efficacy (eosinophilic + non-eosinophilic)</li>
+<li><strong>Dupilumab</strong> — FDA approved for COPD (2024) in eosinophilic phenotype; first biologic for COPD</li>
+<li><strong>Ensifentrine</strong> — dual PDE-3/4 inhibitor (FDA 2024) for COPD — both bronchodilator + anti-inflammatory</li>
+<li><strong>Revefenacin</strong> — first nebulised LAMA approved for COPD (2018, now widely used)</li>
+<li><strong>Smart inhalers</strong> with Bluetooth tracking → adherence monitoring; integrate with mobile apps</li>
+<li><strong>Triple inhalers</strong> (Trelegy, Trimbow, Breztri) — single-device LAMA-LABA-ICS for severe COPD</li>
+<li><strong>SABA-only treatment outdated</strong> — global movement to recommend at least PRN ICS-Formoterol</li>
+<li><strong>Biologic-eligibility biomarkers</strong> — peripheral eosinophils, FeNO, total IgE used to select therapy</li>
+<li><strong>COPD-specific biologic pipeline</strong> — Itepekimab (IL-33), Astegolimab (ST2) in Phase 3</li>
+<li><strong>Mometasone + Indacaterol + Glycopyrronium</strong> triple inhaler — newer single-device for moderate-severe asthma</li>
+<li><strong>Ivacaftor + Tezacaftor + Elexacaftor (Trikafta)</strong> revolutionising cystic fibrosis care — fewer exacerbations</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC in aspirin-induced asthma — <em>Montelukast</em></li>
+<li><strong>INI-CET 2023</strong>: 1st-line maintenance in COPD — <em>Tiotropium (LAMA)</em></li>
+<li><strong>NEET PG 2024</strong>: Omalizumab is a monoclonal antibody against — <em>IgE</em></li>
+<li><strong>INI-CET 2024</strong>: Anti-IL-5 monoclonal antibodies — <em>Mepolizumab, Reslizumab</em></li>
+<li><strong>NEET PG 2024</strong>: First anti-TSLP biologic approved for severe asthma — <em>Tezepelumab</em></li>
+<li><strong>FMGE 2024</strong>: Theophylline toxicity is precipitated by — <em>Ciprofloxacin, Erythromycin, Cimetidine</em></li>
+<li><strong>NEET PG 2025</strong>: First biologic approved for COPD (eosinophilic phenotype) — <em>Dupilumab</em></li>
+<li><strong>INI-CET 2024</strong>: PDE-4 inhibitor for severe COPD — <em>Roflumilast</em></li>
+<li><strong>NEET PG 2023</strong>: Mechanism of LABA — <em>β2 agonist → ↑ cAMP → SM relaxation</em></li>
+<li><strong>NEET PG 2024</strong>: GINA Step 5 add-on therapies — <em>Biologicals (Omalizumab/Mepolizumab/Dupilumab)</em></li>
+<li><strong>INI-CET 2024</strong>: Drug causing oral candidiasis as common ADR — <em>Inhaled Corticosteroids (ICS)</em></li>
+<li><strong>NEET PG 2025</strong>: Newer ultra-LABA for once-daily COPD — <em>Indacaterol, Olodaterol, Vilanterol</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Bronchial Asthma &amp; COPD — Bronchodilators, ICS, LTRA, Biologicals &amp; GINA Step Ladder</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Asthma &amp; COPD Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Salbutamol",c:"SABA",u:"Acute asthma exacerbation, exercise-induced asthma; inhaled / oral / IV"},
-    {n:"Salmeterol",c:"LABA",u:"Maintenance with ICS only"},
-    {n:"Ipratropium",c:"SAMA",u:"COPD acute, asthma (combination), rhinorrhoea"},
-    {n:"Tiotropium",c:"LAMA",u:"COPD maintenance (1st line); add-on in severe asthma"},
-    {n:"Theophylline",c:"PDE inhibitor",u:"Add-on in severe asthma; nocturnal asthma; apnoea of prematurity"},
-    {n:"Budesonide",c:"ICS",u:"Mainstay of asthma controller; safe in pregnancy"},
-    {n:"Fluticasone",c:"ICS",u:"More potent than budesonide; via DPI / MDI"},
-    {n:"Montelukast",c:"LTRA",u:"Exercise-induced asthma, aspirin-induced asthma, allergic rhinitis"},
-    {n:"Omalizumab",c:"Anti-IgE",u:"Severe allergic asthma not controlled with ICS-LABA"},
-    {n:"Mepolizumab",c:"Anti IL-5",u:"Severe eosinophilic asthma"},
-    {n:"Codeine",c:"Central antitussive",u:"Dry, non-productive cough; depresses cough centre"},
-    {n:"N-acetylcysteine",c:"Mucolytic",u:"Cystic fibrosis, COPD, paracetamol OD"}
+    // ── Sub-topic 1: Cough ──
+    {n:"Codeine",c:"1️⃣ Central antitussive (opioid)",u:"Dry cough; depresses cough centre; AVOID in &lt; 12 y and breastfeeding"},
+    {n:"Dextromethorphan",c:"1️⃣ Central antitussive (non-opioid)",u:"Dry cough; sigma-1/NMDA modulation; safer alternative to codeine"},
+    {n:"Noscapine",c:"1️⃣ Central antitussive (opium alkaloid, non-opioid)",u:"Dry cough; non-addictive"},
+    {n:"Levodropropizine",c:"1️⃣ Peripheral antitussive",u:"Cough in COPD/elderly — no CNS sedation"},
+    {n:"Bromhexine",c:"1️⃣ Mucolytic",u:"Productive cough with thick sputum"},
+    {n:"Ambroxol",c:"1️⃣ Mucolytic (active metabolite of bromhexine)",u:"COPD, bronchitis with thick mucus"},
+    {n:"N-acetylcysteine",c:"1️⃣ Mucolytic + antioxidant",u:"Cystic fibrosis, COPD; also antidote for paracetamol OD"},
+    {n:"Dornase alfa",c:"1️⃣ Recombinant DNase",u:"Cystic fibrosis purulent secretions"},
+    {n:"Guaifenesin",c:"1️⃣ Expectorant",u:"Productive cough syrups"},
+    {n:"Gefapixant",c:"1️⃣ P2X3 antagonist (newer)",u:"Refractory chronic cough; non-opioid"},
+    // ── Sub-topic 2: Asthma & COPD ──
+    {n:"Salbutamol",c:"2️⃣ SABA",u:"Acute asthma rescue, exercise-induced asthma; nebulised in acute severe"},
+    {n:"Salmeterol",c:"2️⃣ LABA",u:"Asthma controller — ALWAYS with ICS"},
+    {n:"Formoterol",c:"2️⃣ LABA (rapid-onset)",u:"Used in PRN ICS-Formoterol regimen (GINA Track 1)"},
+    {n:"Indacaterol",c:"2️⃣ Ultra-LABA",u:"COPD maintenance — once daily"},
+    {n:"Ipratropium",c:"2️⃣ SAMA",u:"COPD acute, add-on in severe asthma exacerbation"},
+    {n:"Tiotropium",c:"2️⃣ LAMA",u:"DOC for COPD maintenance; add-on in severe asthma"},
+    {n:"Umeclidinium",c:"2️⃣ LAMA",u:"COPD — part of triple inhaler (Trelegy)"},
+    {n:"Theophylline",c:"2️⃣ Methylxanthine (PDE inhibitor)",u:"Add-on in severe asthma/COPD; narrow TI; TDM needed"},
+    {n:"Budesonide",c:"2️⃣ ICS",u:"Mainstay asthma controller; safe in pregnancy (Cat B)"},
+    {n:"Fluticasone",c:"2️⃣ ICS",u:"More potent than budesonide; in ICS-LABA combinations"},
+    {n:"Ciclesonide",c:"2️⃣ ICS (prodrug)",u:"Activated in lung — fewer oral ADRs"},
+    {n:"Montelukast",c:"2️⃣ LTRA (CysLT1 antagonist)",u:"Exercise-induced &amp; aspirin-induced asthma; BBW — neuropsychiatric"},
+    {n:"Zileuton",c:"2️⃣ 5-LOX inhibitor",u:"Chronic asthma (rarely used — hepatotoxic)"},
+    {n:"Sodium Cromoglycate",c:"2️⃣ Mast cell stabiliser",u:"Prophylactic — pre-exposure (allergic asthma)"},
+    {n:"Omalizumab",c:"2️⃣ Anti-IgE mAb",u:"Severe allergic asthma — IgE-mediated"},
+    {n:"Mepolizumab",c:"2️⃣ Anti-IL-5 mAb",u:"Severe eosinophilic asthma (≥150 eos/μL)"},
+    {n:"Benralizumab",c:"2️⃣ Anti-IL-5Rα mAb",u:"Severe eosinophilic asthma — also depletes eosinophils"},
+    {n:"Dupilumab",c:"2️⃣ Anti-IL-4Rα mAb",u:"Type-2 severe asthma + atopic dermatitis + CRSwNP; COPD eosinophilic (2024)"},
+    {n:"Tezepelumab",c:"2️⃣ Anti-TSLP mAb",u:"Severe asthma — broad efficacy (eosinophilic + non-eosinophilic)"},
+    {n:"Roflumilast",c:"2️⃣ PDE-4 inhibitor",u:"Severe COPD with chronic bronchitis (FEV1 &lt; 50%)"},
+    {n:"Ensifentrine",c:"2️⃣ PDE-3/4 dual inhibitor (2024)",u:"Newer COPD therapy"}
   ],
   ppt:[
     {t:"Bronchial Asthma – Overview",p:["Pathogenesis","GINA classification","Drug categories"]},
@@ -5094,7 +5640,10 @@ TOPICS.push({id:"respiratory",icon:"🫁",title:"Respiratory System Drugs",
     {q:"Omalizumab is a monoclonal antibody against:",o:["IL-5","IL-4","IgE","TNF-α"],a:"IgE",e:"Omalizumab binds free IgE, preventing its attachment to FcεRI on mast cells. Used in severe allergic asthma."},
     {q:"DOC for COPD maintenance therapy is:",o:["Inhaled budesonide","Tiotropium","Salbutamol PRN","Theophylline"],a:"Tiotropium",e:"In COPD, LAMA (tiotropium) is the 1st-line maintenance. ICS is added in frequent exacerbators with eosinophils."}
   ],
-  mnemonic:`<strong>Asthma drugs RAINS-B</strong>: <em>R</em>elievers (SABA), <em>A</em>nti-M (LAMA), <em>I</em>CS, <em>N</em>ew biologicals, <em>S</em>teroids systemic, <em>B</em>ronchodilators (LABA). <strong>Theophylline toxicity</strong> – &lsquo;BAR-CC&rsquo; (Brain seizures, Arrhythmias, Reflux, Cipro, Cimetidine).`
+  mnemonic:`<strong>📚 Respiratory System Drugs — Quick Concepts</strong><br>
+• <strong>Cough Management</strong> = Suppress dry cough (codeine/DXM) · Aid productive cough (mucolytics/expectorants).<br>
+• <strong>Asthma &amp; COPD</strong> = Bronchodilation (β2 / LAMA / Methylxanthines) + Anti-inflammation (ICS / LTRA / Biologicals).<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 2 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"hormones",icon:"⚖️",title:"Hormones & Related Drugs",
