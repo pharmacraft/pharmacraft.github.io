@@ -4203,6 +4203,185 @@ TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
 });
 
 TOPICS.push({id:"cvs",icon:"❤️",title:"Cardiovascular System Drugs",
+  subtopics:[
+    {n:1,label:"RAAS Inhibitors",panelId:"raas"},
+    {n:2,label:"Heart Failure",panelId:"hf"},
+    {n:3,label:"Antiarrhythmics",panelId:"arrhythmia"},
+    {n:4,label:"Antiischaemic / Antianginal",panelId:"angina"},
+    {n:5,label:"Antihypertensives",panelId:"htn"}
+  ],
+  extraPanels:[
+    {id:"raas",content:`<span id="sub-raas-cvs" style="display:block;height:1px;"></span>
+<h4 style="margin-top:4px;">🧬 Renin–Angiotensin–Aldosterone System (RAAS) & Its Inhibitors</h4>
+<p>The RAAS is the master regulator of blood pressure, sodium balance and cardiovascular remodelling. Four drug classes interrupt this cascade at four sequential points — making RAAS one of the highest-yield areas in cardiovascular pharmacology for NEET PG, INI-CET and FMGE.</p>
+
+<div class="moa-stage">
+<div class="moa-title">⚙️ Animated MOA — The RAAS Cascade & Drug Block Points</div>
+<svg class="moa-svg anim-bind" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RAAS cascade animation">
+  <defs>
+    <marker id="raasArrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0b3d5c"/></marker>
+  </defs>
+  <!-- pathway boxes -->
+  <rect x="20" y="60" width="150" height="48" rx="8" fill="#e8f4f8" stroke="#0b3d5c" stroke-width="1.5"/>
+  <text x="95" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d5c">Angiotensinogen</text>
+  <text x="95" y="97" text-anchor="middle" font-size="10" fill="#0b3d5c">(liver)</text>
+
+  <rect x="375" y="60" width="150" height="48" rx="8" fill="#e8f4f8" stroke="#0b3d5c" stroke-width="1.5"/>
+  <text x="450" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d5c">Angiotensin I</text>
+  <text x="450" y="99" text-anchor="middle" font-size="10" fill="#0b3d5c">(inactive)</text>
+
+  <rect x="700" y="60" width="170" height="48" rx="8" fill="#fde9e7" stroke="#c0392b" stroke-width="1.8"/>
+  <text x="785" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">Angiotensin II</text>
+  <text x="785" y="99" text-anchor="middle" font-size="10" fill="#c0392b">(active)</text>
+
+  <!-- arrows + enzymes -->
+  <line x1="170" y1="84" x2="365" y2="84" stroke="#0b3d5c" stroke-width="2" marker-end="url(#raasArrow)"/>
+  <text x="262" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#147a85">Renin</text>
+  <line x1="525" y1="84" x2="690" y2="84" stroke="#0b3d5c" stroke-width="2" marker-end="url(#raasArrow)"/>
+  <text x="607" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#147a85">ACE</text>
+  <text x="607" y="120" text-anchor="middle" font-size="9" fill="#888">(lungs)</text>
+
+  <!-- flowing pulse dot along the cascade -->
+  <circle r="6" fill="#147a85">
+    <animate attributeName="cx" values="95;450;785" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="120;120;120" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- AT1 receptor + downstream effects -->
+  <rect x="700" y="170" width="170" height="44" rx="8" fill="#fff3cd" stroke="#b8860b" stroke-width="1.5"/>
+  <text x="785" y="197" text-anchor="middle" font-size="12" font-weight="700" fill="#7a5c00">AT1 Receptor</text>
+  <line x1="785" y1="108" x2="785" y2="168" stroke="#c0392b" stroke-width="2" marker-end="url(#raasArrow)"/>
+
+  <text x="785" y="245" text-anchor="middle" font-size="11" fill="#444">Vasoconstriction · Aldosterone ↑</text>
+  <text x="785" y="262" text-anchor="middle" font-size="11" fill="#444">Na⁺/H₂O retention · Remodelling</text>
+  <line x1="785" y1="214" x2="785" y2="228" stroke="#b8860b" stroke-width="2" marker-end="url(#raasArrow)"/>
+
+  <!-- BLOCK MARKERS (blinking) -->
+  <g class="anim-bind">
+    <circle cx="262" cy="84" r="13" fill="none" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/></circle>
+    <line x1="253" y1="75" x2="271" y2="93" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/></line>
+    <text x="262" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">DRI</text>
+    <text x="262" y="53" text-anchor="middle" font-size="9" fill="#c0392b">Aliskiren</text>
+  </g>
+  <g class="anim-bind">
+    <circle cx="607" cy="84" r="13" fill="none" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <line x1="598" y1="75" x2="616" y2="93" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></line>
+    <text x="607" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">ACE inhibitor</text>
+    <text x="607" y="53" text-anchor="middle" font-size="9" fill="#c0392b">-pril</text>
+  </g>
+  <g class="anim-bind">
+    <circle cx="785" cy="140" r="13" fill="none" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <line x1="776" y1="131" x2="794" y2="149" stroke="#c0392b" stroke-width="2.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="0.8s" repeatCount="indefinite"/></line>
+    <text x="675" y="144" text-anchor="end" font-size="11" font-weight="700" fill="#c0392b">ARB (-sartan)</text>
+  </g>
+
+  <!-- Bradykinin side arm -->
+  <rect x="375" y="270" width="150" height="42" rx="8" fill="#eafaf1" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="450" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">Bradykinin</text>
+  <text x="450" y="305" text-anchor="middle" font-size="9" fill="#1e8449">↑ with ACE inhibitor</text>
+  <line x1="525" y1="100" x2="540" y2="270" stroke="#1e8449" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#raasArrow)"/>
+  <text x="600" y="300" font-size="10" fill="#1e8449">→ cough, angioedema, vasodilation</text>
+
+  <!-- legend -->
+  <g class="moa-legend">
+    <text x="20" y="340" font-size="10" fill="#666">🔴 = drug block point   |   🟢 pulse = active angiotensin flow   |   ACE also degrades bradykinin</text>
+  </g>
+</svg>
+<p style="font-size:13px;color:#555;margin-top:6px;"><strong>Read the animation:</strong> Angiotensinogen is cleaved by <strong>renin</strong> → Angiotensin I, then by <strong>ACE</strong> → Angiotensin II, which acts on the <strong>AT1 receptor</strong>. Each red marker is a drug block point: <strong>DRI</strong> at renin, <strong>ACE inhibitors</strong> at ACE, <strong>ARBs</strong> at AT1. Because ACE also breaks down bradykinin, ACE inhibitors raise bradykinin — explaining the classic dry cough and angioedema (ARBs do not).</p>
+</div>
+
+<h4>🗂️ Classification — Drugs Acting on RAAS</h4>
+<table>
+<tr><th>Class</th><th>Site of Action</th><th>Prototype / Examples</th></tr>
+<tr><td>Direct Renin Inhibitor (DRI)</td><td>Inhibits renin</td><td>Aliskiren</td></tr>
+<tr><td>ACE Inhibitors (ACEIs)</td><td>Inhibit ACE</td><td>Captopril, Enalapril, Lisinopril, Ramipril, Perindopril</td></tr>
+<tr><td>Angiotensin Receptor Blockers (ARBs / "sartans")</td><td>Block AT1 receptor</td><td>Losartan, Valsartan, Telmisartan, Candesartan, Olmesartan, Irbesartan</td></tr>
+<tr><td>Mineralocorticoid Receptor Antagonists (MRA)</td><td>Block aldosterone receptor</td><td>Spironolactone, Eplerenone, Finerenone</td></tr>
+<tr><td>ARNI (Angiotensin Receptor–Neprilysin Inhibitor)</td><td>AT1 block + neprilysin inhibition</td><td>Sacubitril/Valsartan</td></tr>
+</table>
+
+<h4>⚙️ Mechanism of Action — Class by Class</h4>
+<table>
+<tr><th>Class</th><th>Mechanism</th><th>Key Consequence</th></tr>
+<tr><td>DRI (Aliskiren)</td><td>Binds active site of renin → ↓ plasma renin activity → ↓ Angiotensin I & II</td><td>BP reduction; rarely used now</td></tr>
+<tr><td>ACE inhibitors</td><td>Inhibit ACE → ↓ Angiotensin II, ↓ aldosterone, ↑ bradykinin</td><td>Vasodilation, natriuresis; dilate <strong>efferent</strong> arteriole → renoprotection</td></tr>
+<tr><td>ARBs</td><td>Selectively block AT1 receptor; no effect on bradykinin</td><td>Same haemodynamics as ACEI but minimal cough/angioedema</td></tr>
+<tr><td>MRA</td><td>Competitively block aldosterone receptor in distal nephron + myocardium</td><td>K⁺-sparing diuresis + anti-remodelling</td></tr>
+<tr><td>ARNI</td><td>Sacubitril (neprilysin inhibitor) ↑ natriuretic peptides + Valsartan blocks AT1</td><td>Superior to ACEI in HFrEF (PARADIGM-HF)</td></tr>
+</table>
+
+<h4>💊 Pharmacokinetics — High-Yield Distinctions</h4>
+<table>
+<tr><th>Drug</th><th>PK Pearl</th></tr>
+<tr><td>Captopril</td><td>Contains <strong>sulfhydryl (–SH) group</strong> → taste disturbance & rash; short-acting (BD–TDS); active drug</td></tr>
+<tr><td>Enalapril</td><td>Prodrug → active <strong>enalaprilat</strong> (IV form available)</td></tr>
+<tr><td>Lisinopril</td><td><strong>Not a prodrug</strong>, not metabolised, renally excreted</td></tr>
+<tr><td>Ramipril / Perindopril</td><td>Long-acting, once daily, high tissue-ACE affinity</td></tr>
+<tr><td>Losartan</td><td>Prodrug → active <strong>E-3174</strong>; <strong>uricosuric</strong> (good in HTN + gout)</td></tr>
+<tr><td>Telmisartan</td><td><strong>Longest t½ (~24 h)</strong> among ARBs; partial PPAR-γ agonist</td></tr>
+<tr><td>Aliskiren</td><td>Very low oral bioavailability (~2.5%)</td></tr>
+</table>
+
+<h4>⚠️ Adverse Effects & Contraindications</h4>
+<table>
+<tr><th>Class</th><th>Adverse Effects</th></tr>
+<tr><td>ACE inhibitors</td><td>Dry <strong>cough</strong> (commonest cause of stopping), <strong>angioedema</strong>, hyperkalaemia, first-dose hypotension, AKI in <strong>bilateral renal artery stenosis</strong>, <strong>teratogenic</strong>, neutropenia</td></tr>
+<tr><td>ARBs</td><td>Minimal cough/angioedema, hyperkalaemia, teratogenic</td></tr>
+<tr><td>MRA</td><td>Hyperkalaemia; <strong>spironolactone → gynaecomastia</strong> (anti-androgen); eplerenone/finerenone more selective</td></tr>
+<tr><td>Aliskiren</td><td>Diarrhoea, hyperkalaemia, angioedema</td></tr>
+</table>
+<p><strong>Absolute contraindications:</strong> Pregnancy (all RAAS blockers — fetal renal damage, oligohydramnios), bilateral renal artery stenosis, history of angioedema, significant hyperkalaemia. <strong>Never triple-block</strong> (ACEI + ARB + DRI) — ALTITUDE & ONTARGET trials showed ↑ renal failure and hyperkalaemia.</p>
+
+<h4>🩺 Clinical Uses</h4>
+<p>Hypertension; <strong>heart failure with reduced EF</strong> (mortality benefit); post-myocardial infarction; <strong>diabetic nephropathy / CKD with proteinuria</strong> (renoprotection — first-line); scleroderma renal crisis (ACEI).</p>
+
+<div class="boxes-header">💡 Quick Reference Boxes — RAAS Inhibitors</div>
+
+<div class="mnemonic" style="margin-top:14px;">
+<h4>🧠 Memory Aids — RAAS</h4>
+<p><strong>ACE inhibitor adverse effects — "CAPTOPRIL"</strong>: <em>C</em>ough, <em>A</em>ngioedema, <em>P</em>otassium ↑ (hyperkalaemia), <em>T</em>aste disturbance, hyp<em>O</em>tension (first dose), <em>P</em>regnancy contraindicated, <em>R</em>enal failure (bilateral RAS), <em>I</em>ncreased renin, <em>L</em>eukopenia.</p>
+<p><strong>"-pril" = ACE inhibitor</strong> · <strong>"-sartan" = ARB</strong> · <strong>"-iren" (Aliskiren) = renin inhibitor</strong>.</p>
+<p><strong>Losartan is the Lucky one</strong> — it <em>L</em>owers urate (uricosuric), so it is preferred in hypertension with gout.</p>
+</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li>ACE inhibitors dilate the <strong>efferent</strong> glomerular arteriole → reduce intraglomerular pressure → <strong>renoprotective</strong> in diabetic nephropathy.</li>
+<li>If a patient develops an ACEI cough, <strong>switch to an ARB</strong> — same benefit, no bradykinin-mediated cough.</li>
+<li>A small early rise in serum creatinine (&lt;30%) after starting an ACEI/ARB is <strong>acceptable</strong> and reflects effective efferent dilation — do not stop the drug.</li>
+<li>Sacubitril/valsartan (ARNI) requires a <strong>36-hour washout</strong> from an ACE inhibitor to avoid angioedema.</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Finerenone (Kerendia)</strong> — non-steroidal selective MRA; reduces CKD progression & CV events in type-2 diabetic kidney disease (FIDELIO-DKD / FIGARO-DKD), with less hyperkalaemia/gynaecomastia than spironolactone.</li>
+<li><strong>ARNI (Sacubitril/Valsartan)</strong> — now a first-line pillar of HFrEF therapy alongside beta-blockers, MRA and SGLT2 inhibitors ("four pillars").</li>
+<li><strong>Aliskiren</strong> has largely fallen out of favour after the ALTITUDE trial.</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET / FMGE PYQs (2022–2025)</h4>
+<ul>
+<li><strong>NEET PG</strong>: ACE inhibitor cough is due to accumulation of <em>bradykinin & substance P</em>.</li>
+<li><strong>INI-CET</strong>: ARB with the longest duration of action → <em>Telmisartan</em>.</li>
+<li><strong>NEET PG</strong>: ARB preferred in hypertension with gout → <em>Losartan</em> (uricosuric).</li>
+<li><strong>FMGE</strong>: Drug of choice for diabetic nephropathy → <em>ACE inhibitor / ARB</em>.</li>
+<li><strong>INI-CET</strong>: Mechanism of sacubitril → <em>neprilysin inhibition</em> (↑ natriuretic peptides).</li>
+<li><strong>NEET PG</strong>: Antihypertensive absolutely contraindicated in pregnancy → <em>ACE inhibitors / ARBs</em>.</li>
+</ul>
+</div>
+`},
+    {id:"hf",content:`<span id="sub-hf-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">🫀 Drugs for Heart Failure</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>The four pillars of HFrEF: ARNI/ACEI/ARB, beta-blockers, MRA, SGLT2 inhibitors</li><li>Diuretics (loop) for congestion; digoxin for symptom control</li><li>Ivabradine, vericiguat; device & acute decompensated HF management</li></ul></div>`},
+    {id:"arrhythmia",content:`<span id="sub-arrhythmia-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">⚡ Antiarrhythmic Drugs</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>Vaughan-Williams classification (Class I–IV) with prototypes</li><li>Amiodarone — multiclass action and organ toxicities</li><li>Drugs for AF, SVT, VT and the role of adenosine</li></ul></div>`},
+    {id:"angina",content:`<span id="sub-angina-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">💔 Antiischaemic / Antianginal Drugs</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>Nitrates, beta-blockers and calcium channel blockers</li><li>Newer agents: ranolazine, nicorandil, ivabradine, trimetazidine</li><li>Stable vs unstable angina and acute coronary syndrome pharmacology</li></ul></div>`},
+    {id:"htn",content:`<span id="sub-htn-cvs" style="display:block;height:1px;"></span><h4 style="margin-top:4px;">🩸 Antihypertensives (Integrated)</h4><div class="info-box recent-box"><h4>🚧 In Development</h4><p>This sub-topic is being built to the same depth as <strong>RAAS Inhibitors</strong> — classification, animated mechanism, pharmacokinetics, adverse effects, drug profiles, clinical pearls, recent advances and exam PYQs. Planned coverage:</p><ul><li>Stepped-care approach and first-line drug classes</li><li>Calcium channel blockers, thiazides, beta-blockers, central agents</li><li>Hypertensive emergency drugs and special populations</li></ul></div>`}
+  ],
+
   classification:`<h4>Antihypertensives</h4>
 <table><tr><th>Class</th><th>Examples</th></tr>
 <tr><td>ACE inhibitors</td><td>Enalapril, Ramipril, Lisinopril, Captopril, Perindopril</td></tr>
