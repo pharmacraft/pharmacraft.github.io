@@ -662,13 +662,13 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
     <div class="topic-card" onclick="openTopic('ans')"><div class="topic-num">TOPIC 02</div><div class="topic-icon">🧠</div><div class="topic-title">Autonomic Nervous System</div><div class="topic-desc">Cholinergic & adrenergic drugs, antagonists</div><div class="topic-meta"><span class="topic-pill">Animated</span><span class="topic-pill">Receptors</span></div></div>
     <div class="topic-card" onclick="openTopic('autacoids')"><div class="topic-num">TOPIC 03</div><div class="topic-icon">🌡️</div><div class="topic-title">Autacoids</div><div class="topic-desc">Histamine, 5-HT, prostaglandins, NSAIDs</div><div class="topic-meta"><span class="topic-pill">NSAIDs</span><span class="topic-pill">Gout</span></div></div>
     <div class="topic-card" onclick="openTopic('respiratory')"><div class="topic-num">TOPIC 04</div><div class="topic-icon">🫁</div><div class="topic-title">Respiratory System</div><div class="topic-desc">Asthma, COPD, antitussives, expectorants</div><div class="topic-meta"><span class="topic-pill">Asthma</span><span class="topic-pill">COPD</span></div></div>
-    <div class="topic-card" onclick="openTopic('hormones')"><div class="topic-num">TOPIC 05</div><div class="topic-icon">⚖️</div><div class="topic-title">Hormones & Related Drugs</div><div class="topic-desc">Thyroid, insulin, steroids, sex hormones</div><div class="topic-meta"><span class="topic-pill">Insulin</span><span class="topic-pill">Thyroid</span></div></div>
+    <div class="topic-card" onclick="openTopic('gi')"><div class="topic-num">TOPIC 05</div><div class="topic-icon">🍽️</div><div class="topic-title">Gastrointestinal Drugs</div><div class="topic-desc">PPIs, antiemetics, laxatives, prokinetics</div><div class="topic-meta"><span class="topic-pill">PPI</span><span class="topic-pill">IBD</span></div></div>
     <div class="topic-card" onclick="openTopic('pns')"><div class="topic-num">TOPIC 06</div><div class="topic-icon">💉</div><div class="topic-title">Peripheral Nervous System</div><div class="topic-desc">Local anaesthetics, skeletal muscle relaxants</div><div class="topic-meta"><span class="topic-pill">LA</span><span class="topic-pill">NMJ</span></div></div>
     <div class="topic-card" onclick="openTopic('cns')"><div class="topic-num">TOPIC 07</div><div class="topic-icon">🧬</div><div class="topic-title">Central Nervous System</div><div class="topic-desc">GA, sedatives, antiepileptics, antipsychotics</div><div class="topic-meta"><span class="topic-pill">Epilepsy</span><span class="topic-pill">PD</span></div></div>
     <div class="topic-card" onclick="openTopic('cvs')"><div class="topic-num">TOPIC 08</div><div class="topic-icon">❤️</div><div class="topic-title">Cardiovascular Drugs</div><div class="topic-desc">HTN, CHF, angina, anti-arrhythmics, lipids</div><div class="topic-meta"><span class="topic-pill">HTN</span><span class="topic-pill">CHF</span></div></div>
     <div class="topic-card" onclick="openTopic('kidney')"><div class="topic-num">TOPIC 09</div><div class="topic-icon">💧</div><div class="topic-title">Drugs Acting on Kidney</div><div class="topic-desc">Diuretics, ADH, electrolyte balance</div><div class="topic-meta"><span class="topic-pill">Diuretics</span></div></div>
     <div class="topic-card" onclick="openTopic('blood')"><div class="topic-num">TOPIC 10</div><div class="topic-icon">🩸</div><div class="topic-title">Drugs Affecting Blood</div><div class="topic-desc">Anticoagulants, antiplatelets, fibrinolytics</div><div class="topic-meta"><span class="topic-pill">Heparin</span><span class="topic-pill">DOAC</span></div></div>
-    <div class="topic-card" onclick="openTopic('gi')"><div class="topic-num">TOPIC 11</div><div class="topic-icon">🍽️</div><div class="topic-title">Gastrointestinal Drugs</div><div class="topic-desc">PPIs, antiemetics, laxatives, prokinetics</div><div class="topic-meta"><span class="topic-pill">PPI</span><span class="topic-pill">IBD</span></div></div>
+    <div class="topic-card" onclick="openTopic('hormones')"><div class="topic-num">TOPIC 11</div><div class="topic-icon">⚖️</div><div class="topic-title">Hormones & Related Drugs</div><div class="topic-desc">Thyroid, insulin, steroids, sex hormones</div><div class="topic-meta"><span class="topic-pill">Insulin</span><span class="topic-pill">Thyroid</span></div></div>
     <div class="topic-card" onclick="openTopic('amd')"><div class="topic-num">TOPIC 12</div><div class="topic-icon">🦠</div><div class="topic-title">Antimicrobial Drugs</div><div class="topic-desc">Antibiotics, antivirals, antifungals, antiTB</div><div class="topic-meta"><span class="topic-pill">β-lactams</span><span class="topic-pill">ATT</span></div></div>
     <div class="topic-card" onclick="openTopic('cancer')"><div class="topic-num">TOPIC 13</div><div class="topic-icon">🧫</div><div class="topic-title">Anticancer Drugs</div><div class="topic-desc">Cytotoxics, targeted therapy, immunotherapy</div><div class="topic-meta"><span class="topic-pill">Targeted</span></div></div>
     <div class="topic-card" onclick="openTopic('misc')"><div class="topic-num">TOPIC 14</div><div class="topic-icon">🔬</div><div class="topic-title">Miscellaneous Drugs</div><div class="topic-desc">Immunosuppressants, vitamins, chelators, vaccines</div><div class="topic-meta"><span class="topic-pill">Vitamins</span></div></div>
@@ -6178,93 +6178,100 @@ TOPICS.push({id:"respiratory",icon:"🫁",title:"Respiratory System Drugs",
 • <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 2 sub-topic navigation buttons above.</em>`
 });
 
-TOPICS.push({id:"hormones",icon:"⚖️",title:"Hormones & Related Drugs",
-  classification:`<h4>Antidiabetic Drugs</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>Biguanides</td><td>Metformin</td></tr>
-<tr><td>Sulfonylureas</td><td>Glipizide, Gliclazide, Glimepiride, Glibenclamide</td></tr>
-<tr><td>Meglitinides</td><td>Repaglinide, Nateglinide</td></tr>
-<tr><td>TZDs</td><td>Pioglitazone, Rosiglitazone</td></tr>
-<tr><td>α-Glucosidase inhibitors</td><td>Acarbose, Miglitol, Voglibose</td></tr>
-<tr><td>DPP-4 inhibitors</td><td>Sitagliptin, Vildagliptin, Saxagliptin, Linagliptin</td></tr>
-<tr><td>GLP-1 analogues</td><td>Exenatide, Liraglutide, Semaglutide, Dulaglutide</td></tr>
-<tr><td>SGLT-2 inhibitors</td><td>Empagliflozin, Dapagliflozin, Canagliflozin</td></tr>
-<tr><td>Insulins</td><td>Rapid: Lispro, Aspart, Glulisine | Short: Regular | Intermediate: NPH | Long: Glargine, Detemir, Degludec</td></tr></table>
-<h4>Thyroid Drugs</h4>
-<p><strong>Hypothyroidism</strong>: Levothyroxine (T4), Liothyronine (T3). <strong>Hyperthyroidism</strong>: Carbimazole, Methimazole, Propylthiouracil (PTU), Radioactive iodine I-131, β-blockers, Lugol&rsquo;s iodine.</p>
-<h4>Glucocorticoids</h4>
-<p>Short-acting: Hydrocortisone, Cortisone. Intermediate: Prednisolone, Methylprednisolone, Triamcinolone. Long-acting: Dexamethasone, Betamethasone. Mineralocorticoid: Fludrocortisone.</p>
-<h4>Sex Hormones</h4>
-<p><strong>Oestrogens</strong>: Ethinyl estradiol, Mestranol, conjugated equine oestrogens. <strong>Progestins</strong>: Levonorgestrel, Desogestrel, Drospirenone, Medroxyprogesterone. <strong>SERMs</strong>: Tamoxifen, Raloxifene, Clomiphene, Ospemifene. <strong>Androgens</strong>: Testosterone, Methyltestosterone. <strong>5α-reductase inhibitors</strong>: Finasteride, Dutasteride.</p>`,
-  moa:MOA.insulin,
-  pkpd:`<h4>Metformin</h4>
+TOPICS.push({id:"gi",icon:"🍽️",title:"Gastrointestinal Drugs",
+  classification:`<h4>Acid-Peptic Disease</h4>
+<table><tr><th>Class</th><th>Drugs</th></tr>
+<tr><td>PPIs</td><td>Omeprazole, Esomeprazole, Pantoprazole, Rabeprazole, Lansoprazole, Dexlansoprazole</td></tr>
+<tr><td>P-CAB</td><td>Vonoprazan (potassium-competitive acid blocker)</td></tr>
+<tr><td>H2 blockers</td><td>Ranitidine (withdrawn), Famotidine, Cimetidine, Nizatidine</td></tr>
+<tr><td>Antacids</td><td>Al(OH)3, Mg(OH)2, CaCO3, NaHCO3</td></tr>
+<tr><td>Mucoprotectives</td><td>Sucralfate, Bismuth subsalicylate, Misoprostol</td></tr>
+<tr><td>H. pylori regimen</td><td>PPI + Clarithromycin + Amoxicillin (or Metronidazole) × 14 d; Quadruple if resistant</td></tr></table>
+<h4>Antiemetics</h4>
+<p>5HT3 antagonists (Ondansetron, Granisetron, Palonosetron); NK1 antagonists (Aprepitant, Fosaprepitant); D2 antagonists (Metoclopramide, Domperidone, Prochlorperazine); H1 antihistamines (Doxylamine, Promethazine, Cinnarizine, Cyclizine); Anti-cholinergic (Hyoscine); Cannabinoids (Dronabinol, Nabilone); Corticosteroids (Dexamethasone).</p>
+<h4>Prokinetics</h4>
+<p>Metoclopramide, Domperidone, Cisapride (withdrawn QT), Mosapride, Prucalopride (5HT4 agonist).</p>
+<h4>Laxatives</h4>
+<table><tr><th>Type</th><th>Examples</th></tr>
+<tr><td>Bulk forming</td><td>Ispaghula, Methylcellulose, Psyllium</td></tr>
+<tr><td>Stool softener</td><td>Docusate, Liquid paraffin</td></tr>
+<tr><td>Osmotic</td><td>Lactulose, PEG, Mg salts, Sorbitol</td></tr>
+<tr><td>Stimulant</td><td>Senna, Bisacodyl, Castor oil, SPS</td></tr>
+<tr><td>Newer</td><td>Lubiprostone, Linaclotide, Plecanatide, Methylnaltrexone</td></tr></table>
+<h4>Antidiarrhoeals</h4>
+<p>Loperamide, Diphenoxylate-atropine, Racecadotril (encephalin), Octreotide. ORS, Zinc.</p>
+<h4>IBD</h4>
+<p>5-ASA (Mesalamine, Sulfasalazine, Balsalazide); Steroids (Budesonide); Immunomodulators (Azathioprine, 6-MP, Methotrexate); Biologicals (Infliximab, Adalimumab, Vedolizumab, Ustekinumab); JAK inhibitor (Tofacitinib).</p>`,
+  moa:MOA.ppi,
+  pkpd:`<h4>PPI Pharmacology</h4>
 <ul>
-<li>↑ AMP-kinase → ↓ hepatic gluconeogenesis, ↑ peripheral glucose uptake</li>
-<li>No hypoglycaemia (anti-hyperglycaemic), modest weight loss</li>
-<li>Eliminated unchanged in urine — avoid if eGFR &lt; 30</li>
-<li>1st line in T2DM; risk – B12 deficiency, lactic acidosis</li>
+<li>Prodrug → activated in acidic canaliculus of parietal cell → forms sulfenamide → irreversibly inhibits H+/K+ ATPase</li>
+<li>Take 30-60 min before meals (active proton pumps needed)</li>
+<li>Maximum effect after 3-5 days (steady state)</li>
+<li>Metabolised by CYP2C19 → clopidogrel interaction (worst with omeprazole; least with pantoprazole)</li>
 </ul>
-<h4>SGLT-2 Inhibitors</h4>
+<h4>Sucralfate</h4>
 <ul>
-<li>Block SGLT2 in PCT → ↑ urinary glucose loss</li>
-<li>Cardio &amp; reno-protective (empagliflozin – EMPA-REG)</li>
-<li>ADRs – euglycaemic DKA, UTI, mycotic infections, Fournier&rsquo;s gangrene</li>
+<li>Aluminium hydroxide + sulfated sucrose</li>
+<li>Polymerises in acid pH → coats ulcer base</li>
+<li>Needs acidic environment → do not give with PPI/H2 blocker simultaneously</li>
 </ul>
-<h4>Levothyroxine</h4>
+<h4>Ondansetron</h4>
 <ul>
-<li>t½ 7 days → once-daily; empty stomach (food ↓ absorption)</li>
-<li>Avoid antacids, calcium, iron within 4 h</li>
-<li>Pregnancy – dose ↑ by 30–50%</li>
+<li>Selective 5-HT3 antagonist at CTZ and vagal afferents</li>
+<li>Most effective for acute chemotherapy-induced nausea (cisplatin)</li>
+<li>QT prolongation; constipation; headache</li>
+</ul>`,
+  adr:`<h4>Long-term PPI ADRs</h4>
+<ul>
+<li>Vitamin B12 deficiency (↓ acid needed for absorption)</li>
+<li>Hypomagnesaemia</li>
+<li>↑ fracture risk (hip, spine)</li>
+<li>↑ C. difficile colitis, community-acquired pneumonia</li>
+<li>Acute interstitial nephritis</li>
+<li>Rebound acid hypersecretion on stoppage</li>
 </ul>
-<h4>Carbimazole vs PTU</h4>
-<table><tr><th>Feature</th><th>Carbimazole</th><th>PTU</th></tr>
-<tr><td>MOA</td><td>Inhibit TPO</td><td>Inhibit TPO + peripheral T4→T3</td></tr>
-<tr><td>Pregnancy 1st trim</td><td>Avoid (aplasia cutis)</td><td>Preferred</td></tr>
-<tr><td>Thyroid storm</td><td>2nd line</td><td>DOC</td></tr>
-<tr><td>Hepatotoxicity</td><td>Less</td><td>More</td></tr></table>`,
-  adr:`<h4>Insulin ADRs</h4>
-<ul><li>Hypoglycaemia (most common, most serious)</li>
-<li>Lipodystrophy at injection site</li>
-<li>Weight gain</li>
-<li>Hypokalaemia (drives K⁺ intracellular)</li>
-<li>Insulin resistance / allergy (rare with human/analogue insulin)</li></ul>
-<h4>Sulfonylurea ADRs</h4>
-<p>Hypoglycaemia (worst with glibenclamide – avoid in elderly), weight gain, disulfiram-like reaction (1st gen), cholestasis.</p>
-<h4>Glucocorticoid ADRs (Long-term)</h4>
-<p>&ldquo;CUSHING&rsquo;S&rdquo; – Cataract, Ulcer, Striae &amp; skin atrophy, HTN, Infections, ↑ glucose, ↓ Ca/osteoporosis, Suppression of HPA axis. Sudden withdrawal → adrenal crisis.</p>`,
+<h4>Metoclopramide</h4>
+<p>Extrapyramidal symptoms (dystonia, akathisia), hyperprolactinaemia/galactorrhoea, tardive dyskinesia on prolonged use, NMS rarely. Domperidone has fewer CNS effects (does not cross BBB) but QT prolongation.</p>
+<h4>Loperamide</h4>
+<p>Constipation, ileus; high-dose – cardiac arrhythmias; do not use in acute dysentery or pseudomembranous colitis.</p>`,
   drugs:[
-    {n:"Metformin",c:"Biguanide",u:"1st line T2DM; PCOS; pre-diabetes"},
-    {n:"Glimepiride",c:"Sulfonylurea (3rd gen)",u:"T2DM; once daily; renal safe"},
-    {n:"Pioglitazone",c:"TZD",u:"T2DM with insulin resistance; ADR – CHF, fractures, bladder Ca"},
-    {n:"Sitagliptin",c:"DPP-4 inhibitor",u:"T2DM add-on; weight neutral; renal dose adjust"},
-    {n:"Liraglutide",c:"GLP-1 analogue",u:"T2DM + obesity; CV benefit; ↓ HbA1c 1-1.5%"},
-    {n:"Empagliflozin",c:"SGLT-2 inhibitor",u:"T2DM + HFrEF/HFpEF + CKD"},
-    {n:"Insulin Glargine",c:"Long-acting analogue",u:"Basal insulin; 24-h duration; no peak"},
-    {n:"Levothyroxine",c:"T4",u:"Hypothyroidism; empty stomach"},
-    {n:"Carbimazole",c:"Thioamide",u:"Graves – 1st line non-pregnant"},
-    {n:"Prednisolone",c:"Glucocorticoid",u:"Autoimmune, allergic, inflammatory; 5 mg = physiological"},
-    {n:"Finasteride",c:"5α-reductase",u:"BPH, male pattern baldness; teratogenic"},
-    {n:"Tamoxifen",c:"SERM",u:"ER+ breast Ca premenopausal; ovulation induction; ↑ endometrial Ca"}
+    {n:"Omeprazole",c:"PPI",u:"GERD, PUD, ZE syndrome; ↓ clopidogrel activation"},
+    {n:"Pantoprazole",c:"PPI",u:"GERD; least CYP interaction → safer with clopidogrel"},
+    {n:"Vonoprazan",c:"P-CAB",u:"GERD, H. pylori; faster onset than PPI; acid-stable"},
+    {n:"Famotidine",c:"H2 blocker",u:"Mild GERD, stress ulcer prophylaxis"},
+    {n:"Sucralfate",c:"Mucoprotective",u:"Stress ulcer prophylaxis ICU; reflux oesophagitis"},
+    {n:"Misoprostol",c:"PGE1 analogue",u:"NSAID-induced ulcer prevention; abortion (with mifepristone); PPH"},
+    {n:"Ondansetron",c:"5HT3 antagonist",u:"CINV, post-op nausea, pregnancy nausea"},
+    {n:"Aprepitant",c:"NK1 antagonist",u:"Delayed chemotherapy nausea; combined with 5HT3 + dexa"},
+    {n:"Metoclopramide",c:"D2 antagonist + 5HT4",u:"Gastroparesis; antiemetic; EPS risk"},
+    {n:"Domperidone",c:"Peripheral D2",u:"Antiemetic; prokinetic; QT risk"},
+    {n:"Lactulose",c:"Osmotic laxative",u:"Constipation; hepatic encephalopathy"},
+    {n:"Polyethylene Glycol",c:"Osmotic",u:"Chronic constipation; colonoscopy prep"},
+    {n:"Loperamide",c:"μ-opioid (peripheral)",u:"Acute non-infectious diarrhoea; IBS-D"},
+    {n:"Mesalamine",c:"5-ASA",u:"Mild-moderate UC; ↓ topical inflammation"},
+    {n:"Infliximab",c:"Anti-TNF",u:"Severe IBD, RA, psoriasis; screen TB before"},
+    {n:"Ursodeoxycholic acid",c:"Hydrophilic bile acid",u:"Primary biliary cholangitis, gallstone dissolution"}
   ],
   ppt:[
-    {t:"Insulin – Types & Use",p:["Rapid, short, intermediate, long","Insulin regimens","Hypoglycaemia","Pump therapy"]},
-    {t:"Oral Antidiabetics",p:["Metformin – 1st line","Sulfonylureas","DPP-4 / GLP-1","SGLT-2 inhibitors"]},
-    {t:"Thyroid Drugs",p:["Levothyroxine","Thioamides","Radioactive iodine","Thyroid storm"]},
-    {t:"Corticosteroids",p:["Classification","Comparative potency","Tapering","ADR profile"]},
-    {t:"Sex Hormones",p:["Oestrogen","Progestin","OCPs","HRT"]},
-    {t:"SERMs & Anti-androgens",p:["Tamoxifen","Raloxifene","Clomiphene","Finasteride"]},
-    {t:"Hypothalamic-Pituitary Drugs",p:["GnRH agonist/antagonist","Octreotide","Cabergoline","Desmopressin"]},
-    {t:"Calcium Homeostasis",p:["Bisphosphonates","Denosumab","Calcitonin","Teriparatide"]}
+    {t:"Acid-Peptic Disease Pharmacology",p:["Physiology of acid secretion","PPI MOA","Comparison of PPIs","P-CABs"]},
+    {t:"H. pylori Eradication",p:["Triple therapy","Quadruple therapy","Newer regimens","Resistance"]},
+    {t:"Antiemetics – Mechanism Based",p:["CTZ pharmacology","5HT3, NK1, D2","CINV protocols","Pregnancy nausea"]},
+    {t:"Prokinetics",p:["Metoclopramide","Domperidone","Mosapride","Prucalopride"]},
+    {t:"Laxatives",p:["Bulk","Osmotic","Stimulant","Newer"]},
+    {t:"Antidiarrhoeals",p:["Loperamide","Racecadotril","ORS – WHO formula","Zinc"]},
+    {t:"IBD Drugs",p:["5-ASA","Steroids","Immunomodulators","Biologicals"]},
+    {t:"Hepatobiliary Drugs",p:["UDCA","Lactulose","Rifaximin","Spironolactone in ascites"]}
   ],
   mcqs:[
-    {q:"Drug of choice for type 2 diabetes mellitus is:",o:["Glibenclamide","Metformin","Insulin","Pioglitazone"],a:"Metformin",e:"Metformin is 1st-line in T2DM (ADA guidelines) — no hypoglycaemia, weight loss/neutral, CV benefit, cheap, well tolerated. Add-on therapy depends on comorbidities."},
-    {q:"Empagliflozin's primary site of action is:",o:["Pancreatic β-cell","Hepatic gluconeogenesis","Proximal convoluted tubule","Skeletal muscle GLUT-4"],a:"Proximal convoluted tubule",e:"SGLT-2 inhibitors block sodium-glucose co-transporter 2 in PCT → glucosuria, natriuresis. Independent of insulin secretion."},
-    {q:"Drug of choice for thyroid storm is:",o:["Carbimazole","PTU","Radioactive iodine","Levothyroxine"],a:"PTU",e:"PTU inhibits TPO AND peripheral T4→T3 conversion. Onset of effect within 1-2 hours. Carbimazole is preferred for routine Graves but PTU is preferred in thyroid storm and pregnancy 1st trimester."},
-    {q:"Which insulin has the longest duration of action?",o:["Lispro","Regular","NPH","Degludec"],a:"Degludec",e:"Insulin degludec – t½ ~25h, duration > 42 h. Glargine ~24h, detemir 12-24h."},
-    {q:"Tamoxifen acts as:",o:["Estrogen agonist in breast, antagonist in uterus","Estrogen agonist in uterus, antagonist in breast","Pure estrogen antagonist","Pure estrogen agonist"],a:"Estrogen agonist in uterus, antagonist in breast",e:"Tamoxifen is a SERM — antagonist at breast (used in ER+ breast Ca) but agonist at endometrium (↑ endometrial Ca risk) and bone (preserves BMD)."},
-    {q:"Which drug is contraindicated in pregnancy?",o:["Levothyroxine","Metformin","Insulin","Finasteride"],a:"Finasteride",e:"Finasteride is a Category X drug — feminisation of male foetus (5α-reductase inhibitor). Even handling broken tablets by pregnant women is prohibited."}
+    {q:"PPIs should be administered:",o:["After meals","On empty stomach","With antacid","At bedtime"],a:"On empty stomach",e:"PPIs are prodrugs activated in active acid-secreting parietal cells. Take 30-60 min before meals (when pumps are most active) for maximum efficacy."},
+    {q:"DOC for acute chemotherapy-induced vomiting:",o:["Metoclopramide","Domperidone","Ondansetron","Diphenhydramine"],a:"Ondansetron",e:"5-HT3 antagonists are first-line for acute CINV. High-emetogenic regimens use triple combo: 5HT3 + NK1 (aprepitant) + dexamethasone."},
+    {q:"Misoprostol is used in all EXCEPT:",o:["NSAID ulcer prevention","Cervical ripening","Medical abortion","Diarrhoea"],a:"Diarrhoea",e:"Misoprostol is a PGE1 analogue. It actually CAUSES diarrhoea as a major ADR. Uses: prevent NSAID ulcer, MTP (with mifepristone), labour induction, PPH."},
+    {q:"Drug of choice for hepatic encephalopathy:",o:["Loperamide","Lactulose","Rifaximin","Both Lactulose &amp; Rifaximin"],a:"Both Lactulose &amp; Rifaximin",e:"Lactulose → osmotic laxative, traps NH4+ in bowel. Rifaximin → poorly absorbed antibiotic, ↓ ammonia-producing bacteria. Used together in moderate-severe HE."},
+    {q:"Sulfasalazine in ulcerative colitis is broken down into:",o:["5-ASA + Sulfapyridine","6-MP + sulfa","Methotrexate","Mesalamine + nitric oxide"],a:"5-ASA + Sulfapyridine",e:"Colonic bacteria cleave azo bond → releases 5-ASA (active) + sulfapyridine (causes most ADRs – haemolysis, oligospermia, hypersensitivity)."},
+    {q:"Methylnaltrexone is used in:",o:["Opioid overdose","Alcohol dependence","Opioid-induced constipation","Chronic diarrhoea"],a:"Opioid-induced constipation",e:"Methylnaltrexone is a peripheral μ-opioid antagonist that does NOT cross BBB → reverses constipation without antagonising analgesia. Used in palliative care."}
   ],
-  mnemonic:`<strong>Steroid ADRs CUSHINGOID</strong>: Cataract, Ulcer, Striae, Hypertension/Hirsutism, Infections, Necrosis (avascular), Glucose↑, Osteoporosis, Immunosuppression, Diabetes. <strong>Insulin order</strong> (onset): Lispro &gt; Regular &gt; NPH &gt; Glargine &gt; Degludec.`
+  mnemonic:`<strong>H. pylori triple therapy</strong> – PAC/PAM (PPI + Amoxicillin + Clarithromycin or Metronidazole) × 14 d. <strong>5HT3 antagonists end in -setron</strong>. <strong>Antiemetic for motion sickness</strong> – Hyoscine (scopolamine) patch.`
 });
 
 TOPICS.push({id:"pns",icon:"💉",title:"Peripheral Nervous System",
@@ -7041,100 +7048,93 @@ TOPICS.push({id:"blood",icon:"🩸",title:"Drugs Affecting Blood",
   mnemonic:`<strong>Warfarin factors</strong> – 1972 (II, VII, IX, X). <strong>Vitamin K dependent</strong> – also Protein C, S. <strong>HIT</strong> – think when platelet count drops &gt; 50% on 5th-10th day of heparin.`
 });
 
-TOPICS.push({id:"gi",icon:"🍽️",title:"Gastrointestinal Drugs",
-  classification:`<h4>Acid-Peptic Disease</h4>
-<table><tr><th>Class</th><th>Drugs</th></tr>
-<tr><td>PPIs</td><td>Omeprazole, Esomeprazole, Pantoprazole, Rabeprazole, Lansoprazole, Dexlansoprazole</td></tr>
-<tr><td>P-CAB</td><td>Vonoprazan (potassium-competitive acid blocker)</td></tr>
-<tr><td>H2 blockers</td><td>Ranitidine (withdrawn), Famotidine, Cimetidine, Nizatidine</td></tr>
-<tr><td>Antacids</td><td>Al(OH)3, Mg(OH)2, CaCO3, NaHCO3</td></tr>
-<tr><td>Mucoprotectives</td><td>Sucralfate, Bismuth subsalicylate, Misoprostol</td></tr>
-<tr><td>H. pylori regimen</td><td>PPI + Clarithromycin + Amoxicillin (or Metronidazole) × 14 d; Quadruple if resistant</td></tr></table>
-<h4>Antiemetics</h4>
-<p>5HT3 antagonists (Ondansetron, Granisetron, Palonosetron); NK1 antagonists (Aprepitant, Fosaprepitant); D2 antagonists (Metoclopramide, Domperidone, Prochlorperazine); H1 antihistamines (Doxylamine, Promethazine, Cinnarizine, Cyclizine); Anti-cholinergic (Hyoscine); Cannabinoids (Dronabinol, Nabilone); Corticosteroids (Dexamethasone).</p>
-<h4>Prokinetics</h4>
-<p>Metoclopramide, Domperidone, Cisapride (withdrawn QT), Mosapride, Prucalopride (5HT4 agonist).</p>
-<h4>Laxatives</h4>
-<table><tr><th>Type</th><th>Examples</th></tr>
-<tr><td>Bulk forming</td><td>Ispaghula, Methylcellulose, Psyllium</td></tr>
-<tr><td>Stool softener</td><td>Docusate, Liquid paraffin</td></tr>
-<tr><td>Osmotic</td><td>Lactulose, PEG, Mg salts, Sorbitol</td></tr>
-<tr><td>Stimulant</td><td>Senna, Bisacodyl, Castor oil, SPS</td></tr>
-<tr><td>Newer</td><td>Lubiprostone, Linaclotide, Plecanatide, Methylnaltrexone</td></tr></table>
-<h4>Antidiarrhoeals</h4>
-<p>Loperamide, Diphenoxylate-atropine, Racecadotril (encephalin), Octreotide. ORS, Zinc.</p>
-<h4>IBD</h4>
-<p>5-ASA (Mesalamine, Sulfasalazine, Balsalazide); Steroids (Budesonide); Immunomodulators (Azathioprine, 6-MP, Methotrexate); Biologicals (Infliximab, Adalimumab, Vedolizumab, Ustekinumab); JAK inhibitor (Tofacitinib).</p>`,
-  moa:MOA.ppi,
-  pkpd:`<h4>PPI Pharmacology</h4>
+TOPICS.push({id:"hormones",icon:"⚖️",title:"Hormones & Related Drugs",
+  classification:`<h4>Antidiabetic Drugs</h4>
+<table><tr><th>Class</th><th>Examples</th></tr>
+<tr><td>Biguanides</td><td>Metformin</td></tr>
+<tr><td>Sulfonylureas</td><td>Glipizide, Gliclazide, Glimepiride, Glibenclamide</td></tr>
+<tr><td>Meglitinides</td><td>Repaglinide, Nateglinide</td></tr>
+<tr><td>TZDs</td><td>Pioglitazone, Rosiglitazone</td></tr>
+<tr><td>α-Glucosidase inhibitors</td><td>Acarbose, Miglitol, Voglibose</td></tr>
+<tr><td>DPP-4 inhibitors</td><td>Sitagliptin, Vildagliptin, Saxagliptin, Linagliptin</td></tr>
+<tr><td>GLP-1 analogues</td><td>Exenatide, Liraglutide, Semaglutide, Dulaglutide</td></tr>
+<tr><td>SGLT-2 inhibitors</td><td>Empagliflozin, Dapagliflozin, Canagliflozin</td></tr>
+<tr><td>Insulins</td><td>Rapid: Lispro, Aspart, Glulisine | Short: Regular | Intermediate: NPH | Long: Glargine, Detemir, Degludec</td></tr></table>
+<h4>Thyroid Drugs</h4>
+<p><strong>Hypothyroidism</strong>: Levothyroxine (T4), Liothyronine (T3). <strong>Hyperthyroidism</strong>: Carbimazole, Methimazole, Propylthiouracil (PTU), Radioactive iodine I-131, β-blockers, Lugol&rsquo;s iodine.</p>
+<h4>Glucocorticoids</h4>
+<p>Short-acting: Hydrocortisone, Cortisone. Intermediate: Prednisolone, Methylprednisolone, Triamcinolone. Long-acting: Dexamethasone, Betamethasone. Mineralocorticoid: Fludrocortisone.</p>
+<h4>Sex Hormones</h4>
+<p><strong>Oestrogens</strong>: Ethinyl estradiol, Mestranol, conjugated equine oestrogens. <strong>Progestins</strong>: Levonorgestrel, Desogestrel, Drospirenone, Medroxyprogesterone. <strong>SERMs</strong>: Tamoxifen, Raloxifene, Clomiphene, Ospemifene. <strong>Androgens</strong>: Testosterone, Methyltestosterone. <strong>5α-reductase inhibitors</strong>: Finasteride, Dutasteride.</p>`,
+  moa:MOA.insulin,
+  pkpd:`<h4>Metformin</h4>
 <ul>
-<li>Prodrug → activated in acidic canaliculus of parietal cell → forms sulfenamide → irreversibly inhibits H+/K+ ATPase</li>
-<li>Take 30-60 min before meals (active proton pumps needed)</li>
-<li>Maximum effect after 3-5 days (steady state)</li>
-<li>Metabolised by CYP2C19 → clopidogrel interaction (worst with omeprazole; least with pantoprazole)</li>
+<li>↑ AMP-kinase → ↓ hepatic gluconeogenesis, ↑ peripheral glucose uptake</li>
+<li>No hypoglycaemia (anti-hyperglycaemic), modest weight loss</li>
+<li>Eliminated unchanged in urine — avoid if eGFR &lt; 30</li>
+<li>1st line in T2DM; risk – B12 deficiency, lactic acidosis</li>
 </ul>
-<h4>Sucralfate</h4>
+<h4>SGLT-2 Inhibitors</h4>
 <ul>
-<li>Aluminium hydroxide + sulfated sucrose</li>
-<li>Polymerises in acid pH → coats ulcer base</li>
-<li>Needs acidic environment → do not give with PPI/H2 blocker simultaneously</li>
+<li>Block SGLT2 in PCT → ↑ urinary glucose loss</li>
+<li>Cardio &amp; reno-protective (empagliflozin – EMPA-REG)</li>
+<li>ADRs – euglycaemic DKA, UTI, mycotic infections, Fournier&rsquo;s gangrene</li>
 </ul>
-<h4>Ondansetron</h4>
+<h4>Levothyroxine</h4>
 <ul>
-<li>Selective 5-HT3 antagonist at CTZ and vagal afferents</li>
-<li>Most effective for acute chemotherapy-induced nausea (cisplatin)</li>
-<li>QT prolongation; constipation; headache</li>
-</ul>`,
-  adr:`<h4>Long-term PPI ADRs</h4>
-<ul>
-<li>Vitamin B12 deficiency (↓ acid needed for absorption)</li>
-<li>Hypomagnesaemia</li>
-<li>↑ fracture risk (hip, spine)</li>
-<li>↑ C. difficile colitis, community-acquired pneumonia</li>
-<li>Acute interstitial nephritis</li>
-<li>Rebound acid hypersecretion on stoppage</li>
+<li>t½ 7 days → once-daily; empty stomach (food ↓ absorption)</li>
+<li>Avoid antacids, calcium, iron within 4 h</li>
+<li>Pregnancy – dose ↑ by 30–50%</li>
 </ul>
-<h4>Metoclopramide</h4>
-<p>Extrapyramidal symptoms (dystonia, akathisia), hyperprolactinaemia/galactorrhoea, tardive dyskinesia on prolonged use, NMS rarely. Domperidone has fewer CNS effects (does not cross BBB) but QT prolongation.</p>
-<h4>Loperamide</h4>
-<p>Constipation, ileus; high-dose – cardiac arrhythmias; do not use in acute dysentery or pseudomembranous colitis.</p>`,
+<h4>Carbimazole vs PTU</h4>
+<table><tr><th>Feature</th><th>Carbimazole</th><th>PTU</th></tr>
+<tr><td>MOA</td><td>Inhibit TPO</td><td>Inhibit TPO + peripheral T4→T3</td></tr>
+<tr><td>Pregnancy 1st trim</td><td>Avoid (aplasia cutis)</td><td>Preferred</td></tr>
+<tr><td>Thyroid storm</td><td>2nd line</td><td>DOC</td></tr>
+<tr><td>Hepatotoxicity</td><td>Less</td><td>More</td></tr></table>`,
+  adr:`<h4>Insulin ADRs</h4>
+<ul><li>Hypoglycaemia (most common, most serious)</li>
+<li>Lipodystrophy at injection site</li>
+<li>Weight gain</li>
+<li>Hypokalaemia (drives K⁺ intracellular)</li>
+<li>Insulin resistance / allergy (rare with human/analogue insulin)</li></ul>
+<h4>Sulfonylurea ADRs</h4>
+<p>Hypoglycaemia (worst with glibenclamide – avoid in elderly), weight gain, disulfiram-like reaction (1st gen), cholestasis.</p>
+<h4>Glucocorticoid ADRs (Long-term)</h4>
+<p>&ldquo;CUSHING&rsquo;S&rdquo; – Cataract, Ulcer, Striae &amp; skin atrophy, HTN, Infections, ↑ glucose, ↓ Ca/osteoporosis, Suppression of HPA axis. Sudden withdrawal → adrenal crisis.</p>`,
   drugs:[
-    {n:"Omeprazole",c:"PPI",u:"GERD, PUD, ZE syndrome; ↓ clopidogrel activation"},
-    {n:"Pantoprazole",c:"PPI",u:"GERD; least CYP interaction → safer with clopidogrel"},
-    {n:"Vonoprazan",c:"P-CAB",u:"GERD, H. pylori; faster onset than PPI; acid-stable"},
-    {n:"Famotidine",c:"H2 blocker",u:"Mild GERD, stress ulcer prophylaxis"},
-    {n:"Sucralfate",c:"Mucoprotective",u:"Stress ulcer prophylaxis ICU; reflux oesophagitis"},
-    {n:"Misoprostol",c:"PGE1 analogue",u:"NSAID-induced ulcer prevention; abortion (with mifepristone); PPH"},
-    {n:"Ondansetron",c:"5HT3 antagonist",u:"CINV, post-op nausea, pregnancy nausea"},
-    {n:"Aprepitant",c:"NK1 antagonist",u:"Delayed chemotherapy nausea; combined with 5HT3 + dexa"},
-    {n:"Metoclopramide",c:"D2 antagonist + 5HT4",u:"Gastroparesis; antiemetic; EPS risk"},
-    {n:"Domperidone",c:"Peripheral D2",u:"Antiemetic; prokinetic; QT risk"},
-    {n:"Lactulose",c:"Osmotic laxative",u:"Constipation; hepatic encephalopathy"},
-    {n:"Polyethylene Glycol",c:"Osmotic",u:"Chronic constipation; colonoscopy prep"},
-    {n:"Loperamide",c:"μ-opioid (peripheral)",u:"Acute non-infectious diarrhoea; IBS-D"},
-    {n:"Mesalamine",c:"5-ASA",u:"Mild-moderate UC; ↓ topical inflammation"},
-    {n:"Infliximab",c:"Anti-TNF",u:"Severe IBD, RA, psoriasis; screen TB before"},
-    {n:"Ursodeoxycholic acid",c:"Hydrophilic bile acid",u:"Primary biliary cholangitis, gallstone dissolution"}
+    {n:"Metformin",c:"Biguanide",u:"1st line T2DM; PCOS; pre-diabetes"},
+    {n:"Glimepiride",c:"Sulfonylurea (3rd gen)",u:"T2DM; once daily; renal safe"},
+    {n:"Pioglitazone",c:"TZD",u:"T2DM with insulin resistance; ADR – CHF, fractures, bladder Ca"},
+    {n:"Sitagliptin",c:"DPP-4 inhibitor",u:"T2DM add-on; weight neutral; renal dose adjust"},
+    {n:"Liraglutide",c:"GLP-1 analogue",u:"T2DM + obesity; CV benefit; ↓ HbA1c 1-1.5%"},
+    {n:"Empagliflozin",c:"SGLT-2 inhibitor",u:"T2DM + HFrEF/HFpEF + CKD"},
+    {n:"Insulin Glargine",c:"Long-acting analogue",u:"Basal insulin; 24-h duration; no peak"},
+    {n:"Levothyroxine",c:"T4",u:"Hypothyroidism; empty stomach"},
+    {n:"Carbimazole",c:"Thioamide",u:"Graves – 1st line non-pregnant"},
+    {n:"Prednisolone",c:"Glucocorticoid",u:"Autoimmune, allergic, inflammatory; 5 mg = physiological"},
+    {n:"Finasteride",c:"5α-reductase",u:"BPH, male pattern baldness; teratogenic"},
+    {n:"Tamoxifen",c:"SERM",u:"ER+ breast Ca premenopausal; ovulation induction; ↑ endometrial Ca"}
   ],
   ppt:[
-    {t:"Acid-Peptic Disease Pharmacology",p:["Physiology of acid secretion","PPI MOA","Comparison of PPIs","P-CABs"]},
-    {t:"H. pylori Eradication",p:["Triple therapy","Quadruple therapy","Newer regimens","Resistance"]},
-    {t:"Antiemetics – Mechanism Based",p:["CTZ pharmacology","5HT3, NK1, D2","CINV protocols","Pregnancy nausea"]},
-    {t:"Prokinetics",p:["Metoclopramide","Domperidone","Mosapride","Prucalopride"]},
-    {t:"Laxatives",p:["Bulk","Osmotic","Stimulant","Newer"]},
-    {t:"Antidiarrhoeals",p:["Loperamide","Racecadotril","ORS – WHO formula","Zinc"]},
-    {t:"IBD Drugs",p:["5-ASA","Steroids","Immunomodulators","Biologicals"]},
-    {t:"Hepatobiliary Drugs",p:["UDCA","Lactulose","Rifaximin","Spironolactone in ascites"]}
+    {t:"Insulin – Types & Use",p:["Rapid, short, intermediate, long","Insulin regimens","Hypoglycaemia","Pump therapy"]},
+    {t:"Oral Antidiabetics",p:["Metformin – 1st line","Sulfonylureas","DPP-4 / GLP-1","SGLT-2 inhibitors"]},
+    {t:"Thyroid Drugs",p:["Levothyroxine","Thioamides","Radioactive iodine","Thyroid storm"]},
+    {t:"Corticosteroids",p:["Classification","Comparative potency","Tapering","ADR profile"]},
+    {t:"Sex Hormones",p:["Oestrogen","Progestin","OCPs","HRT"]},
+    {t:"SERMs & Anti-androgens",p:["Tamoxifen","Raloxifene","Clomiphene","Finasteride"]},
+    {t:"Hypothalamic-Pituitary Drugs",p:["GnRH agonist/antagonist","Octreotide","Cabergoline","Desmopressin"]},
+    {t:"Calcium Homeostasis",p:["Bisphosphonates","Denosumab","Calcitonin","Teriparatide"]}
   ],
   mcqs:[
-    {q:"PPIs should be administered:",o:["After meals","On empty stomach","With antacid","At bedtime"],a:"On empty stomach",e:"PPIs are prodrugs activated in active acid-secreting parietal cells. Take 30-60 min before meals (when pumps are most active) for maximum efficacy."},
-    {q:"DOC for acute chemotherapy-induced vomiting:",o:["Metoclopramide","Domperidone","Ondansetron","Diphenhydramine"],a:"Ondansetron",e:"5-HT3 antagonists are first-line for acute CINV. High-emetogenic regimens use triple combo: 5HT3 + NK1 (aprepitant) + dexamethasone."},
-    {q:"Misoprostol is used in all EXCEPT:",o:["NSAID ulcer prevention","Cervical ripening","Medical abortion","Diarrhoea"],a:"Diarrhoea",e:"Misoprostol is a PGE1 analogue. It actually CAUSES diarrhoea as a major ADR. Uses: prevent NSAID ulcer, MTP (with mifepristone), labour induction, PPH."},
-    {q:"Drug of choice for hepatic encephalopathy:",o:["Loperamide","Lactulose","Rifaximin","Both Lactulose &amp; Rifaximin"],a:"Both Lactulose &amp; Rifaximin",e:"Lactulose → osmotic laxative, traps NH4+ in bowel. Rifaximin → poorly absorbed antibiotic, ↓ ammonia-producing bacteria. Used together in moderate-severe HE."},
-    {q:"Sulfasalazine in ulcerative colitis is broken down into:",o:["5-ASA + Sulfapyridine","6-MP + sulfa","Methotrexate","Mesalamine + nitric oxide"],a:"5-ASA + Sulfapyridine",e:"Colonic bacteria cleave azo bond → releases 5-ASA (active) + sulfapyridine (causes most ADRs – haemolysis, oligospermia, hypersensitivity)."},
-    {q:"Methylnaltrexone is used in:",o:["Opioid overdose","Alcohol dependence","Opioid-induced constipation","Chronic diarrhoea"],a:"Opioid-induced constipation",e:"Methylnaltrexone is a peripheral μ-opioid antagonist that does NOT cross BBB → reverses constipation without antagonising analgesia. Used in palliative care."}
+    {q:"Drug of choice for type 2 diabetes mellitus is:",o:["Glibenclamide","Metformin","Insulin","Pioglitazone"],a:"Metformin",e:"Metformin is 1st-line in T2DM (ADA guidelines) — no hypoglycaemia, weight loss/neutral, CV benefit, cheap, well tolerated. Add-on therapy depends on comorbidities."},
+    {q:"Empagliflozin's primary site of action is:",o:["Pancreatic β-cell","Hepatic gluconeogenesis","Proximal convoluted tubule","Skeletal muscle GLUT-4"],a:"Proximal convoluted tubule",e:"SGLT-2 inhibitors block sodium-glucose co-transporter 2 in PCT → glucosuria, natriuresis. Independent of insulin secretion."},
+    {q:"Drug of choice for thyroid storm is:",o:["Carbimazole","PTU","Radioactive iodine","Levothyroxine"],a:"PTU",e:"PTU inhibits TPO AND peripheral T4→T3 conversion. Onset of effect within 1-2 hours. Carbimazole is preferred for routine Graves but PTU is preferred in thyroid storm and pregnancy 1st trimester."},
+    {q:"Which insulin has the longest duration of action?",o:["Lispro","Regular","NPH","Degludec"],a:"Degludec",e:"Insulin degludec – t½ ~25h, duration > 42 h. Glargine ~24h, detemir 12-24h."},
+    {q:"Tamoxifen acts as:",o:["Estrogen agonist in breast, antagonist in uterus","Estrogen agonist in uterus, antagonist in breast","Pure estrogen antagonist","Pure estrogen agonist"],a:"Estrogen agonist in uterus, antagonist in breast",e:"Tamoxifen is a SERM — antagonist at breast (used in ER+ breast Ca) but agonist at endometrium (↑ endometrial Ca risk) and bone (preserves BMD)."},
+    {q:"Which drug is contraindicated in pregnancy?",o:["Levothyroxine","Metformin","Insulin","Finasteride"],a:"Finasteride",e:"Finasteride is a Category X drug — feminisation of male foetus (5α-reductase inhibitor). Even handling broken tablets by pregnant women is prohibited."}
   ],
-  mnemonic:`<strong>H. pylori triple therapy</strong> – PAC/PAM (PPI + Amoxicillin + Clarithromycin or Metronidazole) × 14 d. <strong>5HT3 antagonists end in -setron</strong>. <strong>Antiemetic for motion sickness</strong> – Hyoscine (scopolamine) patch.`
+  mnemonic:`<strong>Steroid ADRs CUSHINGOID</strong>: Cataract, Ulcer, Striae, Hypertension/Hirsutism, Infections, Necrosis (avascular), Glucose↑, Osteoporosis, Immunosuppression, Diabetes. <strong>Insulin order</strong> (onset): Lispro &gt; Regular &gt; NPH &gt; Glargine &gt; Degludec.`
 });
 
 TOPICS.push({id:"amd",icon:"🦠",title:"Antimicrobial Drugs",
