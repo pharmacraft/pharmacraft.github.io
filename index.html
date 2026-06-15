@@ -7855,17 +7855,37 @@ function openTopic(id){
   setTimeout(()=>toggleTopic(id),300);
 }
 
-/* ── SVG Animation Kick-Starter (fixes Chrome SMIL freeze when injected via innerHTML) ── */
+/* ── SVG Animation Kick-Starter + Manual Timeline Driver ──
+   Fix for Chrome SMIL freeze when SVG is injected via innerHTML.
+   Even after unpauseAnimations() + setCurrentTime(), Chrome may not
+   advance the SVG document timeline automatically. We drive it
+   ourselves with requestAnimationFrame. ── */
+const _svgDriverStarted = new WeakSet();
+
+function startSVGTimeDriver(svg){
+  if(_svgDriverStarted.has(svg)) return;
+  _svgDriverStarted.add(svg);
+  let lastTs = performance.now();
+  function tick(){
+    const now = performance.now();
+    const dt = (now - lastTs)/1000;
+    lastTs = now;
+    try{
+      const cur = svg.getCurrentTime();
+      svg.setCurrentTime(cur + dt);
+    }catch(e){}
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
 function kickStartSVGAnimations(container){
   if(!container) return;
   container.querySelectorAll('svg').forEach(svg=>{
     try{
       svg.unpauseAnimations();
       svg.setCurrentTime(0);
-      // Force restart by setting a small initial time
-      requestAnimationFrame(()=>{
-        svg.setCurrentTime(0.01);
-      });
+      startSVGTimeDriver(svg);
     }catch(e){/* ignore errors on older browsers */}
   });
 }
@@ -8006,11 +8026,13 @@ document.addEventListener('DOMContentLoaded',()=>{
   renderBookmarksPanel();
 
   // Kick-start ALL SVG animations across the page (fixes SMIL freeze when injected via innerHTML)
+  // Use requestAnimationFrame driver to manually advance the timeline.
   setTimeout(()=>{
     document.querySelectorAll('svg').forEach(svg=>{
       try{
         svg.unpauseAnimations();
-        svg.setCurrentTime(0.01);
+        svg.setCurrentTime(0);
+        if(typeof startSVGTimeDriver==='function') startSVGTimeDriver(svg);
       }catch(e){}
     });
   },300);
