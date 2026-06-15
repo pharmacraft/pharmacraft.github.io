@@ -7841,7 +7841,13 @@ function toggleTopic(id){
   const node = document.getElementById('topic-'+id);
   document.querySelectorAll('.topic-detail').forEach(d=>{ if(d!==node) d.classList.remove('open'); });
   node.classList.toggle('open');
-  if(node.classList.contains('open')) node.scrollIntoView({behavior:'smooth',block:'start'});
+  if(node.classList.contains('open')){
+    node.scrollIntoView({behavior:'smooth',block:'start'});
+    // Kick-start SVG animations in any visible sub-panels
+    setTimeout(()=>{
+      node.querySelectorAll('.sub-panel.active').forEach(p=>kickStartSVGAnimations(p));
+    },350);
+  }
 }
 
 function openTopic(id){
@@ -7849,12 +7855,30 @@ function openTopic(id){
   setTimeout(()=>toggleTopic(id),300);
 }
 
+/* ── SVG Animation Kick-Starter (fixes Chrome SMIL freeze when injected via innerHTML) ── */
+function kickStartSVGAnimations(container){
+  if(!container) return;
+  container.querySelectorAll('svg').forEach(svg=>{
+    try{
+      svg.unpauseAnimations();
+      svg.setCurrentTime(0);
+      // Force restart by setting a small initial time
+      requestAnimationFrame(()=>{
+        svg.setCurrentTime(0.01);
+      });
+    }catch(e){/* ignore errors on older browsers */}
+  });
+}
+
 function switchSub(btn,panelId){
   const parent = btn.closest('.topic-detail-body');
   parent.querySelectorAll('.sub-tab').forEach(b=>b.classList.remove('active'));
   parent.querySelectorAll('.sub-panel').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById(panelId).classList.add('active');
+  const panel = document.getElementById(panelId);
+  panel.classList.add('active');
+  // Kick-start any SVG animations inside the newly visible panel
+  kickStartSVGAnimations(panel);
 }
 
 function goSubtopic(topicId,panelKey,anchor){
@@ -7874,6 +7898,8 @@ function goSubtopic(topicId,panelKey,anchor){
   if(targetPanel){
     targetPanel.classList.add('active');
     targetPanel.style.display='block';
+    // Kick-start any SVG animations inside the newly visible panel
+    kickStartSVGAnimations(targetPanel);
   }
   // Scroll to anchor if given, else to topic top
   setTimeout(()=>{
@@ -7978,6 +8004,16 @@ document.addEventListener('DOMContentLoaded',()=>{
   buildSearchIndex();
   renderDailyMCQ();
   renderBookmarksPanel();
+
+  // Kick-start ALL SVG animations across the page (fixes SMIL freeze when injected via innerHTML)
+  setTimeout(()=>{
+    document.querySelectorAll('svg').forEach(svg=>{
+      try{
+        svg.unpauseAnimations();
+        svg.setCurrentTime(0.01);
+      }catch(e){}
+    });
+  },300);
 
   const navLinks = document.querySelectorAll('.nav a');
   document.querySelectorAll('.nav a').forEach(a=>{
