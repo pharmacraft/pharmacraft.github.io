@@ -1680,6 +1680,361 @@ const MOA = {
   </div>
 </div>`,
 
+  giComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🍽️ Gastrointestinal Pharmacology — 3 Live Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize parietal cell acid secretion + PPI blockade · CTZ-mediated emesis &amp; antiemetic targets · Constipation vs Diarrhoea pharmacology with bowel water/ion fluxes.</p>
+</div>
+
+<!-- MOA 1: PPI BLOCKS H+/K+ ATPASE IN PARIETAL CELL -->
+<div class="moa-stage">
+  <div class="moa-title">💊 MOA 1 — Parietal Cell Acid Secretion &amp; PPI / H2 Blocker / P-CAB Targets</div>
+  <svg class="moa-svg" viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="hIon" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fef3c7"/><stop offset="100%" stop-color="#f59e0b"/></radialGradient>
+      <radialGradient id="kIon" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#bbf7d0"/><stop offset="100%" stop-color="#10b981"/></radialGradient>
+      <radialGradient id="ppiDrug" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fecaca"/><stop offset="100%" stop-color="#dc2626"/></radialGradient>
+    </defs>
+
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Parietal Cell — Acid Secretion Targets</text>
+
+    <!-- Parietal cell shape -->
+    <ellipse cx="500" cy="280" rx="350" ry="200" fill="#172246" stroke="#4da6ff" stroke-width="2"/>
+    <text x="500" y="65" fill="#4da6ff" font-size="12" font-weight="700" text-anchor="middle">PARIETAL CELL</text>
+
+    <!-- Receptors on basolateral side: Histamine H2, Gastrin CCK2, ACh M3 -->
+    <!-- H2 Receptor (left) -->
+    <rect x="80" y="200" width="60" height="40" rx="6" fill="#0ea5e9"/>
+    <text x="110" y="225" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">H2-R</text>
+    <text x="110" y="270" fill="#0ea5e9" font-size="10" text-anchor="middle">Histamine</text>
+    <!-- Histamine ligand bouncing -->
+    <circle cx="50" cy="210" r="8" fill="#0ea5e9"><animate attributeName="cx" values="40;75;40" dur="2s" repeatCount="indefinite"/><animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="50" y="194" fill="#0ea5e9" font-size="9" text-anchor="middle">H</text>
+    <!-- H2 Blocker (Famotidine) -->
+    <rect x="155" y="208" width="20" height="24" rx="3" fill="#dc2626"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></rect>
+    <text x="165" y="248" fill="#dc2626" font-size="10" font-weight="700" text-anchor="middle">H2 blocker</text>
+    <text x="165" y="195" fill="#dc2626" font-size="9" text-anchor="middle">Famotidine</text>
+
+    <!-- CCK2 (Gastrin) Receptor (middle) -->
+    <rect x="280" y="160" width="60" height="40" rx="6" fill="#a855f7"/>
+    <text x="310" y="185" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">CCK2</text>
+    <text x="310" y="230" fill="#a855f7" font-size="10" text-anchor="middle">Gastrin</text>
+    <circle cx="250" cy="170" r="8" fill="#a855f7"><animate attributeName="cx" values="240;275;240" dur="1.8s" repeatCount="indefinite"/><animate attributeName="r" values="7;10;7" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="250" y="155" fill="#a855f7" font-size="9" text-anchor="middle">G</text>
+
+    <!-- M3 Receptor (right side basolateral) -->
+    <rect x="200" y="350" width="60" height="40" rx="6" fill="#fbbf24"/>
+    <text x="230" y="375" fill="#08112a" font-size="11" font-weight="800" text-anchor="middle">M3</text>
+    <text x="230" y="410" fill="#fbbf24" font-size="10" text-anchor="middle">ACh (vagus)</text>
+    <circle cx="170" cy="360" r="8" fill="#fbbf24"><animate attributeName="cx" values="160;195;160" dur="2.2s" repeatCount="indefinite"/><animate attributeName="r" values="7;10;7" dur="2.2s" repeatCount="indefinite"/></circle>
+    <text x="170" y="345" fill="#fbbf24" font-size="9" text-anchor="middle">ACh</text>
+
+    <!-- Internal signal pathways converging on H+/K+ ATPase -->
+    <line x1="140" y1="220" x2="380" y2="280" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4,3"/>
+    <line x1="340" y1="180" x2="380" y2="260" stroke="#a855f7" stroke-width="2" stroke-dasharray="4,3"/>
+    <line x1="260" y1="370" x2="380" y2="295" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="240" y="295" fill="#7a88b0" font-size="10" font-style="italic">↑ cAMP / ↑ Ca²⁺</text>
+
+    <!-- H+/K+ ATPase pump (apical side - canaliculus) -->
+    <rect x="400" y="240" width="100" height="80" rx="8" fill="#10b981" stroke="#fff" stroke-width="2"/>
+    <text x="450" y="270" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">H⁺/K⁺</text>
+    <text x="450" y="288" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">ATPase</text>
+    <text x="450" y="307" fill="#fff" font-size="9" text-anchor="middle">"Proton Pump"</text>
+
+    <!-- H+ ions being pumped out (animated upward flow into stomach lumen) -->
+    <circle r="6" fill="url(#hIon)"><animate attributeName="cy" values="240;130;130" keyTimes="0;0.7;1" dur="1.5s" repeatCount="indefinite"/><animate attributeName="cx" values="420;420;420" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <text x="420" y="245" fill="#fff" font-size="9" font-weight="800" text-anchor="middle">H⁺</text>
+    <circle r="6" fill="url(#hIon)"><animate attributeName="cy" values="240;130;130" keyTimes="0;0.7;1" dur="1.5s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="cx" values="450;450;450" dur="1.5s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.5s" repeatCount="indefinite" begin="0.4s"/></circle>
+    <circle r="6" fill="url(#hIon)"><animate attributeName="cy" values="240;130;130" keyTimes="0;0.7;1" dur="1.5s" repeatCount="indefinite" begin="0.8s"/><animate attributeName="cx" values="480;480;480" dur="1.5s" repeatCount="indefinite" begin="0.8s"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.5s" repeatCount="indefinite" begin="0.8s"/></circle>
+
+    <!-- K+ ions flowing back down -->
+    <circle r="5" fill="url(#kIon)"><animate attributeName="cy" values="160;320;320" keyTimes="0;0.7;1" dur="1.8s" repeatCount="indefinite"/><animate attributeName="cx" values="490;490;490" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.8s" repeatCount="indefinite"/></circle>
+
+    <!-- PPI binds irreversibly -->
+    <circle cx="450" cy="280" r="14" fill="url(#ppiDrug)"><animate attributeName="r" values="13;17;13" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="450" y="284" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">PPI</text>
+    <text x="450" y="340" fill="#dc2626" font-size="11" font-weight="800" text-anchor="middle">🚫 Irreversibly blocks</text>
+
+    <!-- P-CAB (Vonoprazan) above pump -->
+    <rect x="530" y="245" width="60" height="20" rx="4" fill="#7c3aed"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></rect>
+    <text x="560" y="259" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">P-CAB</text>
+    <text x="560" y="278" fill="#7c3aed" font-size="9" text-anchor="middle">Vonoprazan (K⁺ site)</text>
+
+    <!-- Stomach lumen indication -->
+    <text x="500" y="100" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">↑ Stomach Lumen — Acidic (pH 1-2)</text>
+    <text x="500" y="120" fill="#7a88b0" font-size="10" text-anchor="middle">H⁺ + Cl⁻ → HCl (gastric acid)</text>
+
+    <!-- Right side: H. pylori panel -->
+    <rect x="640" y="180" width="200" height="220" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="740" y="205" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">🦠 H. pylori Triple Therapy</text>
+    <text x="740" y="230" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">🚫 P + A + C × 14 days</text>
+    <text x="660" y="252" fill="#7a88b0" font-size="11">• PPI (BID)</text>
+    <text x="660" y="270" fill="#7a88b0" font-size="11">• Amoxicillin 1g BID</text>
+    <text x="660" y="288" fill="#7a88b0" font-size="11">• Clarithromycin 500mg BID</text>
+    <text x="660" y="306" fill="#7a88b0" font-size="11">  (Metronidazole if PEN allergic)</text>
+
+    <text x="740" y="332" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Quadruple (resistant)</text>
+    <text x="660" y="350" fill="#7a88b0" font-size="10">• PPI + Bismuth + Tetracycline</text>
+    <text x="660" y="365" fill="#7a88b0" font-size="10">  + Metronidazole × 14 d</text>
+    <text x="660" y="385" fill="#10b981" font-size="11" font-weight="700">Vonoprazan-based regimen</text>
+
+    <!-- Bottom: Mucosal Defence -->
+    <rect x="40" y="440" width="920" height="120" rx="10" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="500" y="465" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">🛡️ Mucosal Defence Drugs (Mucoprotectives)</text>
+    <text x="80" y="490" fill="#fbbf24" font-size="11" font-weight="700">Sucralfate</text>
+    <text x="80" y="506" fill="#7a88b0" font-size="10">Al(OH)₃ + sulfated sucrose</text>
+    <text x="80" y="521" fill="#7a88b0" font-size="10">Polymerises in acid → coats ulcer</text>
+    <text x="80" y="540" fill="#dc2626" font-size="10" font-weight="700">⚠️ Needs acid — NOT with PPI</text>
+
+    <text x="360" y="490" fill="#fbbf24" font-size="11" font-weight="700">Misoprostol (PGE1)</text>
+    <text x="360" y="506" fill="#7a88b0" font-size="10">↓ Acid + ↑ Mucus + Bicarb</text>
+    <text x="360" y="521" fill="#7a88b0" font-size="10">NSAID ulcer prevention</text>
+    <text x="360" y="540" fill="#dc2626" font-size="10" font-weight="700">⚠️ Avoid in pregnancy (abortion)</text>
+
+    <text x="640" y="490" fill="#fbbf24" font-size="11" font-weight="700">Bismuth subsalicylate</text>
+    <text x="640" y="506" fill="#7a88b0" font-size="10">Coats ulcer base + anti-H. pylori</text>
+    <text x="640" y="521" fill="#7a88b0" font-size="10">Used in quadruple therapy</text>
+    <text x="640" y="540" fill="#fbbf24" font-size="10">Black stools (harmless)</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#f59e0b"></span>H⁺ ions</span>
+    <span><span class="dot" style="background:#10b981"></span>K⁺ / Pump</span>
+    <span><span class="dot" style="background:#dc2626"></span>PPI / Blockers</span>
+    <span><span class="dot" style="background:#7c3aed"></span>P-CAB</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>H2 / Histamine</span>
+  </div>
+</div>
+
+<!-- MOA 2: ANTIEMETIC TARGETS — CTZ + VOMITING CENTRE -->
+<div class="moa-stage">
+  <div class="moa-title">🤢 MOA 2 — Vomiting Reflex, CTZ &amp; Antiemetic / Prokinetic Drug Targets</div>
+  <svg class="moa-svg" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Vomiting Reflex Pathway &amp; Drug Sites of Action</text>
+
+    <!-- Brain regions: CTZ + VC -->
+    <ellipse cx="500" cy="160" rx="240" ry="110" fill="#172246" stroke="#a855f7" stroke-width="2"/>
+    <text x="500" y="90" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">BRAIN — Area Postrema (CTZ) + Vomiting Centre</text>
+
+    <!-- CTZ (left brain) -->
+    <ellipse cx="380" cy="170" rx="80" ry="50" fill="#7c1d3a" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="380" y="155" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">CTZ</text>
+    <text x="380" y="172" fill="#7a88b0" font-size="10" text-anchor="middle">Chemoreceptor</text>
+    <text x="380" y="187" fill="#7a88b0" font-size="10" text-anchor="middle">Trigger Zone</text>
+
+    <!-- Receptors on CTZ: D2, 5-HT3, NK1, H1, M -->
+    <circle cx="335" cy="135" r="10" fill="#0ea5e9"><animate attributeName="r" values="9;13;9" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="335" y="139" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">D2</text>
+    <circle cx="380" cy="120" r="10" fill="#10b981"><animate attributeName="r" values="9;13;9" dur="1.8s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <text x="380" y="124" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">5HT3</text>
+    <circle cx="425" cy="135" r="10" fill="#fbbf24"><animate attributeName="r" values="9;13;9" dur="1.8s" repeatCount="indefinite" begin="0.6s"/></circle>
+    <text x="425" y="139" fill="#08112a" font-size="8" font-weight="800" text-anchor="middle">NK1</text>
+
+    <!-- VC (right brain) -->
+    <ellipse cx="620" cy="170" rx="80" ry="50" fill="#7c1d3a" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="620" y="160" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Vomiting</text>
+    <text x="620" y="178" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Centre (VC)</text>
+    <text x="620" y="196" fill="#7a88b0" font-size="10" text-anchor="middle">Nucleus tractus solitarius</text>
+
+    <!-- Receptors on VC: H1, M, 5HT2 -->
+    <circle cx="580" cy="135" r="10" fill="#a855f7"><animate attributeName="r" values="9;13;9" dur="1.8s" repeatCount="indefinite" begin="0.2s"/></circle>
+    <text x="580" y="139" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">H1</text>
+    <circle cx="620" cy="120" r="10" fill="#dc2626"><animate attributeName="r" values="9;13;9" dur="1.8s" repeatCount="indefinite" begin="0.4s"/></circle>
+    <text x="620" y="124" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">M</text>
+    <circle cx="660" cy="135" r="10" fill="#10b981"><animate attributeName="r" values="9;13;9" dur="1.8s" repeatCount="indefinite" begin="0.6s"/></circle>
+    <text x="660" y="139" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">5HT2</text>
+
+    <!-- Stimuli inputs from below (animated) -->
+    <text x="100" y="320" fill="#fbbf24" font-size="11" font-weight="700">📥 STIMULI</text>
+    <!-- Drugs/toxins from blood -->
+    <text x="100" y="345" fill="#7a88b0" font-size="10">• Drugs (chemo, opioids)</text>
+    <text x="100" y="362" fill="#7a88b0" font-size="10">• Toxins (uraemia, DM)</text>
+    <text x="100" y="380" fill="#7a88b0" font-size="10">• Vestibular (motion)</text>
+    <text x="100" y="397" fill="#7a88b0" font-size="10">• Cortical (anxiety, smell)</text>
+    <text x="100" y="414" fill="#7a88b0" font-size="10">• Gut (vagal afferents)</text>
+
+    <!-- Arrows from stimuli to CTZ -->
+    <line x1="220" y1="345" x2="320" y2="170" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+    <circle r="5" fill="#fbbf24"><animate attributeName="cx" values="240;310" dur="2s" repeatCount="indefinite"/><animate attributeName="cy" values="345;180" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/></circle>
+
+    <!-- Arrow from CTZ to VC -->
+    <line x1="460" y1="170" x2="540" y2="170" stroke="#dc2626" stroke-width="2"/>
+    <polygon points="540,165 555,170 540,175" fill="#dc2626"/>
+
+    <!-- Arrow from VC down to muscles -->
+    <line x1="620" y1="220" x2="620" y2="320" stroke="#dc2626" stroke-width="2.5"/>
+    <polygon points="615,318 620,330 625,318" fill="#dc2626"/>
+
+    <!-- Effector muscles -->
+    <rect x="540" y="340" width="160" height="50" rx="6" fill="#dc2626"/>
+    <text x="620" y="362" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">DIAPHRAGM + ABDO M.</text>
+    <text x="620" y="378" fill="#fff" font-size="10" text-anchor="middle">→ Forceful expulsion</text>
+    <text x="620" y="410" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">🤮 VOMITING</text>
+
+    <!-- Drug Targets List (right side) -->
+    <rect x="780" y="290" width="200" height="320" rx="10" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="880" y="313" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">💊 ANTIEMETIC TARGETS</text>
+
+    <text x="800" y="338" fill="#10b981" font-size="11" font-weight="700">🟢 5-HT3 antagonists</text>
+    <text x="800" y="354" fill="#7a88b0" font-size="10">Ondansetron · Granisetron</text>
+    <text x="800" y="368" fill="#7a88b0" font-size="10">Palonosetron · CINV DOC</text>
+
+    <text x="800" y="390" fill="#fbbf24" font-size="11" font-weight="700">🟡 NK1 antagonists</text>
+    <text x="800" y="406" fill="#7a88b0" font-size="10">Aprepitant · Fosaprepitant</text>
+    <text x="800" y="420" fill="#7a88b0" font-size="10">Delayed CINV (+5HT3 + dexa)</text>
+
+    <text x="800" y="442" fill="#0ea5e9" font-size="11" font-weight="700">🔵 D2 antagonists</text>
+    <text x="800" y="458" fill="#7a88b0" font-size="10">Metoclopramide (EPS!)</text>
+    <text x="800" y="472" fill="#7a88b0" font-size="10">Domperidone (QT)</text>
+    <text x="800" y="486" fill="#7a88b0" font-size="10">Prochlorperazine</text>
+
+    <text x="800" y="508" fill="#a855f7" font-size="11" font-weight="700">🟣 H1 + M antagonists</text>
+    <text x="800" y="524" fill="#7a88b0" font-size="10">Promethazine · Hyoscine</text>
+    <text x="800" y="538" fill="#7a88b0" font-size="10">Cinnarizine — motion sickness</text>
+
+    <text x="800" y="560" fill="#dc2626" font-size="11" font-weight="700">🔴 Pregnancy nausea</text>
+    <text x="800" y="576" fill="#7a88b0" font-size="10">Doxylamine + Pyridoxine</text>
+    <text x="800" y="590" fill="#7a88b0" font-size="10">(Diclegis — FDA Cat A)</text>
+
+    <!-- Prokinetics info (bottom left) -->
+    <rect x="40" y="450" width="460" height="150" rx="10" fill="#172246" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="270" y="473" fill="#0ea5e9" font-size="12" font-weight="800" text-anchor="middle">⚡ PROKINETICS (↑ GI Motility)</text>
+
+    <text x="60" y="498" fill="#fbbf24" font-size="11" font-weight="700">Metoclopramide:</text>
+    <text x="60" y="513" fill="#7a88b0" font-size="10">D2 antagonist + 5HT4 agonist + 5HT3 antag</text>
+    <text x="60" y="527" fill="#dc2626" font-size="10" font-weight="700">EPS · Tardive dyskinesia · Galactorrhea</text>
+
+    <text x="60" y="550" fill="#fbbf24" font-size="11" font-weight="700">Domperidone:</text>
+    <text x="60" y="565" fill="#7a88b0" font-size="10">Peripheral D2 antagonist (no BBB)</text>
+    <text x="60" y="579" fill="#dc2626" font-size="10" font-weight="700">QT prolongation</text>
+
+    <text x="280" y="498" fill="#fbbf24" font-size="11" font-weight="700">Mosapride:</text>
+    <text x="280" y="513" fill="#7a88b0" font-size="10">Selective 5HT4 agonist (safer)</text>
+
+    <text x="280" y="535" fill="#fbbf24" font-size="11" font-weight="700">Prucalopride:</text>
+    <text x="280" y="550" fill="#7a88b0" font-size="10">Selective 5HT4 → chronic constipation</text>
+
+    <text x="280" y="572" fill="#7a88b0" font-size="10" font-style="italic">Cisapride withdrawn (QT/TdP)</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#0ea5e9"></span>D2</span>
+    <span><span class="dot" style="background:#10b981"></span>5HT3/5HT2</span>
+    <span><span class="dot" style="background:#fbbf24"></span>NK1</span>
+    <span><span class="dot" style="background:#a855f7"></span>H1</span>
+    <span><span class="dot" style="background:#dc2626"></span>M / VC</span>
+  </div>
+</div>
+
+<!-- MOA 3: CONSTIPATION vs DIARRHOEA — BOWEL WATER FLUX -->
+<div class="moa-stage">
+  <div class="moa-title">🚽 MOA 3 — Constipation &amp; Diarrhoea Pharmacology — Bowel Water Flux Targets</div>
+  <svg class="moa-svg" viewBox="0 0 1100 620" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="waterDrop" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#0ea5e9"/></radialGradient>
+    </defs>
+
+    <text x="550" y="28" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Bowel Physiology — Water/Ion Movement &amp; Drug Targets</text>
+
+    <!-- ═════ LEFT: CONSTIPATION (slow gut) ═════ -->
+    <text x="270" y="60" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">A) CONSTIPATION — Dry, hard stool · slow transit</text>
+
+    <!-- Colon visualization (left) -->
+    <rect x="50" y="80" width="440" height="120" rx="20" fill="#7c1d3a" stroke="#dc2626" stroke-width="2"/>
+    <text x="270" y="105" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Colon — ↓ Water in lumen → hard stool</text>
+
+    <!-- Small water drops (showing low water) -->
+    <circle cx="100" cy="150" r="5" fill="url(#waterDrop)"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="160" r="5" fill="url(#waterDrop)"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="0.5s"/></circle>
+    <circle cx="320" cy="150" r="5" fill="url(#waterDrop)"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="1s"/></circle>
+    <circle cx="430" cy="160" r="5" fill="url(#waterDrop)"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="1.5s"/></circle>
+
+    <!-- Hard stool shapes -->
+    <rect x="130" y="145" width="35" height="25" rx="3" fill="#7c2d12"><animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/></rect>
+    <rect x="240" y="145" width="35" height="25" rx="3" fill="#7c2d12"><animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" begin="0.5s"/></rect>
+    <rect x="360" y="145" width="35" height="25" rx="3" fill="#7c2d12"><animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" begin="1s"/></rect>
+
+    <!-- Treatment drugs panel -->
+    <rect x="50" y="220" width="440" height="180" rx="10" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="270" y="243" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">💊 LAXATIVE CLASSES</text>
+
+    <text x="70" y="265" fill="#fbbf24" font-size="11" font-weight="700">1️⃣ Bulk-forming (1st line):</text>
+    <text x="70" y="280" fill="#7a88b0" font-size="10">Ispaghula · Methylcellulose · Psyllium · ↑ fibre</text>
+
+    <text x="70" y="300" fill="#fbbf24" font-size="11" font-weight="700">2️⃣ Osmotic (acute):</text>
+    <text x="70" y="315" fill="#7a88b0" font-size="10">Lactulose · PEG · Mg salts · Sorbitol</text>
+    <text x="70" y="328" fill="#10b981" font-size="10" font-weight="700">Lactulose → hepatic encephalopathy DOC</text>
+
+    <text x="70" y="348" fill="#fbbf24" font-size="11" font-weight="700">3️⃣ Stimulant:</text>
+    <text x="70" y="363" fill="#7a88b0" font-size="10">Senna · Bisacodyl · Castor oil · short-term</text>
+
+    <text x="70" y="383" fill="#fbbf24" font-size="11" font-weight="700">4️⃣ Newer:</text>
+    <text x="70" y="398" fill="#7a88b0" font-size="10">Lubiprostone · Linaclotide · Plecanatide · Methylnaltrexone (opioid-induced)</text>
+
+    <!-- ═════ RIGHT: DIARRHOEA (fast gut) ═════ -->
+    <text x="830" y="60" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">B) DIARRHOEA — Watery, frequent · fast transit</text>
+
+    <!-- Colon visualization (right) -->
+    <rect x="610" y="80" width="440" height="120" rx="20" fill="#1e3a5f" stroke="#0ea5e9" stroke-width="2"/>
+    <text x="830" y="105" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Colon — ↑ Water in lumen → loose stool</text>
+
+    <!-- Many water drops (showing high water + falling motion) -->
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite"/><animate attributeName="cx" values="650;650;650" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite" begin="0.2s"/><animate attributeName="cx" values="700;700;700" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="cx" values="760;760;760" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="cx" values="820;820;820" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite" begin="0.8s"/><animate attributeName="cx" values="880;880;880" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite" begin="1s"/><animate attributeName="cx" values="940;940;940" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#waterDrop)"><animate attributeName="cy" values="120;180;120" dur="1.5s" repeatCount="indefinite" begin="1.2s"/><animate attributeName="cx" values="1000;1000;1000" dur="1.5s" repeatCount="indefinite"/></circle>
+
+    <!-- Treatment drugs panel -->
+    <rect x="610" y="220" width="440" height="180" rx="10" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="830" y="243" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">💊 ANTIDIARRHOEAL CLASSES</text>
+
+    <text x="630" y="265" fill="#fbbf24" font-size="11" font-weight="700">1️⃣ ORS + Zinc — universal (WHO):</text>
+    <text x="630" y="280" fill="#7a88b0" font-size="10">Reduced osmolarity ORS (245 mOsm/L)</text>
+    <text x="630" y="293" fill="#10b981" font-size="10" font-weight="700">Zinc 20mg × 14 days (children)</text>
+
+    <text x="630" y="313" fill="#fbbf24" font-size="11" font-weight="700">2️⃣ Opioid agonists (μ peripheral):</text>
+    <text x="630" y="328" fill="#7a88b0" font-size="10">Loperamide · Diphenoxylate-atropine</text>
+    <text x="630" y="341" fill="#dc2626" font-size="10" font-weight="700">AVOID in dysentery / pseudomembranous</text>
+
+    <text x="630" y="361" fill="#fbbf24" font-size="11" font-weight="700">3️⃣ Encephalinase inhibitor:</text>
+    <text x="630" y="376" fill="#7a88b0" font-size="10">Racecadotril · safe in children</text>
+
+    <text x="630" y="396" fill="#fbbf24" font-size="11" font-weight="700">4️⃣ Specific:</text>
+    <text x="630" y="411" fill="#7a88b0" font-size="10">Octreotide · Rifaximin · Probiotics · Bismuth</text>
+
+    <!-- BOTTOM: IBD panel (full width) -->
+    <rect x="50" y="430" width="1000" height="170" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="550" y="455" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">⚡ IBD (UC + Crohn's) Step-Up Therapy</text>
+
+    <text x="80" y="480" fill="#10b981" font-size="11" font-weight="700">Step 1: 5-ASA (mild-moderate UC)</text>
+    <text x="80" y="496" fill="#7a88b0" font-size="10">Mesalamine · Sulfasalazine · Balsalazide</text>
+    <text x="80" y="510" fill="#dc2626" font-size="10">Sulfasalazine ADRs: oligospermia, haemolysis (G6PD)</text>
+
+    <text x="80" y="535" fill="#10b981" font-size="11" font-weight="700">Step 2: Steroids (flare)</text>
+    <text x="80" y="551" fill="#7a88b0" font-size="10">Budesonide (oral · ileocolonic UC/Crohn's) · Prednisolone</text>
+
+    <text x="80" y="576" fill="#10b981" font-size="11" font-weight="700">Step 3: Immunomodulators</text>
+    <text x="80" y="592" fill="#7a88b0" font-size="10">Azathioprine · 6-MP · MTX (+ folic acid)</text>
+
+    <text x="580" y="480" fill="#10b981" font-size="11" font-weight="700">Step 4: Biologicals (severe)</text>
+    <text x="580" y="496" fill="#7a88b0" font-size="10">TNF: Infliximab · Adalimumab · Golimumab</text>
+    <text x="580" y="510" fill="#7a88b0" font-size="10">Anti-integrin: Vedolizumab (gut-selective)</text>
+    <text x="580" y="524" fill="#7a88b0" font-size="10">Anti-IL12/23: Ustekinumab · Risankizumab</text>
+
+    <text x="580" y="551" fill="#10b981" font-size="11" font-weight="700">Step 5: Targeted small molecules</text>
+    <text x="580" y="567" fill="#7a88b0" font-size="10">JAK inhibitors: Tofacitinib · Upadacitinib (UC)</text>
+    <text x="580" y="581" fill="#7a88b0" font-size="10">S1P modulator: Ozanimod (UC, 2021)</text>
+    <text x="580" y="595" fill="#dc2626" font-size="10" font-weight="700">⚠️ Screen TB · HBV · HCV before biologics</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#0ea5e9"></span>Water</span>
+    <span><span class="dot" style="background:#dc2626"></span>Constipation panel</span>
+    <span><span class="dot" style="background:#10b981"></span>Diarrhoea/IBD drugs</span>
+    <span><span class="dot" style="background:#7c2d12"></span>Stool</span>
+  </div>
+</div>`,
+
   pnsComplete: `
 <div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
   <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">💉 Peripheral Nervous System — Live Animated Mechanisms</h4>
@@ -6179,79 +6534,554 @@ TOPICS.push({id:"respiratory",icon:"🫁",title:"Respiratory System Drugs",
 });
 
 TOPICS.push({id:"gi",icon:"🍽️",title:"Gastrointestinal Drugs",
-  classification:`<h4>Acid-Peptic Disease</h4>
-<table><tr><th>Class</th><th>Drugs</th></tr>
-<tr><td>PPIs</td><td>Omeprazole, Esomeprazole, Pantoprazole, Rabeprazole, Lansoprazole, Dexlansoprazole</td></tr>
-<tr><td>P-CAB</td><td>Vonoprazan (potassium-competitive acid blocker)</td></tr>
-<tr><td>H2 blockers</td><td>Ranitidine (withdrawn), Famotidine, Cimetidine, Nizatidine</td></tr>
-<tr><td>Antacids</td><td>Al(OH)3, Mg(OH)2, CaCO3, NaHCO3</td></tr>
-<tr><td>Mucoprotectives</td><td>Sucralfate, Bismuth subsalicylate, Misoprostol</td></tr>
-<tr><td>H. pylori regimen</td><td>PPI + Clarithromycin + Amoxicillin (or Metronidazole) × 14 d; Quadruple if resistant</td></tr></table>
-<h4>Antiemetics</h4>
-<p>5HT3 antagonists (Ondansetron, Granisetron, Palonosetron); NK1 antagonists (Aprepitant, Fosaprepitant); D2 antagonists (Metoclopramide, Domperidone, Prochlorperazine); H1 antihistamines (Doxylamine, Promethazine, Cinnarizine, Cyclizine); Anti-cholinergic (Hyoscine); Cannabinoids (Dronabinol, Nabilone); Corticosteroids (Dexamethasone).</p>
-<h4>Prokinetics</h4>
-<p>Metoclopramide, Domperidone, Cisapride (withdrawn QT), Mosapride, Prucalopride (5HT4 agonist).</p>
-<h4>Laxatives</h4>
-<table><tr><th>Type</th><th>Examples</th></tr>
-<tr><td>Bulk forming</td><td>Ispaghula, Methylcellulose, Psyllium</td></tr>
-<tr><td>Stool softener</td><td>Docusate, Liquid paraffin</td></tr>
-<tr><td>Osmotic</td><td>Lactulose, PEG, Mg salts, Sorbitol</td></tr>
-<tr><td>Stimulant</td><td>Senna, Bisacodyl, Castor oil, SPS</td></tr>
-<tr><td>Newer</td><td>Lubiprostone, Linaclotide, Plecanatide, Methylnaltrexone</td></tr></table>
-<h4>Antidiarrhoeals</h4>
-<p>Loperamide, Diphenoxylate-atropine, Racecadotril (encephalin), Octreotide. ORS, Zinc.</p>
-<h4>IBD</h4>
-<p>5-ASA (Mesalamine, Sulfasalazine, Balsalazide); Steroids (Budesonide); Immunomodulators (Azathioprine, 6-MP, Methotrexate); Biologicals (Infliximab, Adalimumab, Vedolizumab, Ustekinumab); JAK inhibitor (Tofacitinib).</p>`,
-  moa:MOA.ppi,
-  pkpd:`<h4>PPI Pharmacology</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Drugs for Peptic Ulcer Disease",panelId:"pud"},
+    {n:2,label:"Antiemetic &amp; Prokinetic Drugs",panelId:"emesis"},
+    {n:3,label:"Constipation &amp; Diarrhoea",panelId:"constdiar"}
+  ],
+  classification:`<h4>Gastrointestinal Pharmacology — Overview</h4>
+<p>Gastrointestinal pharmacology covers three central clinical problems: <strong>(A) acid-peptic disease</strong> (PUD, GERD, H. pylori) — addressed by acid-suppressors, mucoprotectives, and antibiotics; <strong>(B) nausea, vomiting and disordered gastric motility</strong> — managed with antiemetics and prokinetics; and <strong>(C) altered bowel habit</strong> — constipation, diarrhoea, and inflammatory bowel disease (IBD).</p>
+
+<table>
+<tr><th>Clinical Domain</th><th>Major Drug Categories</th><th>Therapeutic Goal</th></tr>
+<tr><td><strong>Peptic Ulcer Disease &amp; GERD</strong></td><td>PPIs, P-CABs, H2 blockers, Antacids, Mucoprotectives, H. pylori regimens</td><td>↓ Acid · Heal mucosa · Eradicate infection</td></tr>
+<tr><td><strong>Antiemetic &amp; Prokinetic</strong></td><td>5-HT3, NK1, D2, H1, M antagonists; 5-HT4 agonists</td><td>Stop nausea/vomiting · Restore gastric emptying</td></tr>
+<tr><td><strong>Constipation &amp; Diarrhoea (incl. IBD)</strong></td><td>Laxatives (bulk/osmotic/stimulant), Antidiarrhoeals, 5-ASA, Steroids, Biologicals</td><td>Normalise bowel habit · Reduce inflammation</td></tr>
+</table>
+
+<p style="margin-top:18px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>Sub-topic-specific content (classification, MOA, ADRs, mnemonics, NEET PG points) — please use the 3-button Sub-Topic Navigator above.</em></p>`,
+  moa:MOA.giComplete,
+  extraPanels:[
+    /* ═══════════ SUB-TOPIC 1: PEPTIC ULCER DISEASE ═══════════ */
+    {id:"pud",content:`<span id="sub-pud-gi" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💊 1️⃣ DRUGS FOR PEPTIC ULCER DISEASE</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Peptic Ulcer Disease (PUD)</em> refers to mucosal breaks &gt; 5 mm in the stomach (gastric ulcer) or duodenum (duodenal ulcer) caused by an imbalance between aggressive factors (acid, pepsin, H. pylori, NSAIDs) and defensive factors (mucus, bicarbonate, prostaglandins, blood flow, epithelial regeneration). Related conditions include GERD, Zollinger-Ellison syndrome, and stress ulcers.</p>
+
+<h4>📋 Comprehensive Classification</h4>
+<table>
+<tr><th>Category</th><th>Sub-class</th><th>Drugs</th></tr>
+<tr><td rowspan="4"><strong>A. Acid Suppressors</strong></td><td>Proton Pump Inhibitors (PPIs)</td><td>Omeprazole, Esomeprazole (S-isomer), Pantoprazole, Rabeprazole, Lansoprazole, Dexlansoprazole, Ilaprazole.</td></tr>
+<tr><td>P-CABs (newer)</td><td>Vonoprazan, Tegoprazan, Fexuprazan — potassium-competitive acid blockers.</td></tr>
+<tr><td>H2 Receptor Antagonists</td><td>Famotidine, Cimetidine, Nizatidine, Roxatidine (Ranitidine withdrawn — NDMA contamination 2020).</td></tr>
+<tr><td>Antacids (neutralisers)</td><td>Aluminium hydroxide, Magnesium hydroxide/trisilicate, Calcium carbonate, Sodium bicarbonate, Hydrotalcite.</td></tr>
+<tr><td><strong>B. Mucoprotectives</strong></td><td>—</td><td>Sucralfate · Bismuth subsalicylate/subcitrate · Misoprostol (PGE1 analogue) · Carbenoxolone (rarely used).</td></tr>
+<tr><td rowspan="3"><strong>C. Anti-H. pylori Regimens</strong></td><td>Standard Triple</td><td>PPI + Clarithromycin 500 mg + Amoxicillin 1 g (BID × 14 d). Replace Amoxicillin with Metronidazole if PEN allergic.</td></tr>
+<tr><td>Bismuth Quadruple (resistance)</td><td>PPI + Bismuth + Tetracycline + Metronidazole × 14 d (DOC in high clarithromycin resistance).</td></tr>
+<tr><td>Vonoprazan-based</td><td>VPZ + Amoxicillin ± Clarithromycin — newer, superior in Asia.</td></tr>
+<tr><td><strong>D. Adjuncts</strong></td><td>—</td><td>Lifestyle (avoid NSAIDs, alcohol, smoking) · Stress ulcer prophylaxis in ICU (PPI / Sucralfate).</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action — Detailed</h4>
 <ul>
-<li>Prodrug → activated in acidic canaliculus of parietal cell → forms sulfenamide → irreversibly inhibits H+/K+ ATPase</li>
-<li>Take 30-60 min before meals (active proton pumps needed)</li>
-<li>Maximum effect after 3-5 days (steady state)</li>
-<li>Metabolised by CYP2C19 → clopidogrel interaction (worst with omeprazole; least with pantoprazole)</li>
+<li><strong>PPIs:</strong> Lipophilic prodrugs absorbed in proximal intestine → accumulate in acidic canaliculus of parietal cell → activated to sulfenamide → <em>covalently &amp; irreversibly</em> inhibit H⁺/K⁺-ATPase (proton pump) cysteine residues. Effect lasts until new pump synthesised (~24-48 h).</li>
+<li><strong>P-CABs:</strong> Reversibly compete with K⁺ at the proton pump (no acid activation needed) → faster onset, longer duration, stable in acid; effective from first dose.</li>
+<li><strong>H2 Blockers:</strong> Reversibly antagonise histamine at H2 receptor on parietal cell basolateral membrane → ↓ cAMP → ↓ acid (but vagal &amp; gastrin stimuli still partial).</li>
+<li><strong>Antacids:</strong> Chemically neutralise HCl in gastric lumen — pure symptomatic relief, no mucosal healing.</li>
+<li><strong>Sucralfate:</strong> Aluminium hydroxide + sulfated sucrose → polymerises in acid (pH &lt; 4) → viscous gel adheres to ulcer base → physical barrier + stimulates PG &amp; bicarb.</li>
+<li><strong>Misoprostol:</strong> PGE1 analogue → ↓ acid (parietal cell EP3 receptor) + ↑ mucus + ↑ bicarbonate + ↑ mucosal blood flow → restores defence.</li>
+<li><strong>Bismuth:</strong> Coats ulcer base; antibacterial against H. pylori (releases bactericidal radicals).</li>
 </ul>
-<h4>Sucralfate</h4>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Comparative</h4>
+<table>
+<tr><th>Drug</th><th>Onset / Duration</th><th>Metabolism</th><th>Key PK Notes</th></tr>
+<tr><td><strong>Omeprazole</strong></td><td>1-2 h / 24-72 h</td><td>CYP2C19 → CYP3A4</td><td>Significant clopidogrel inactivation; take 30-60 min before meals</td></tr>
+<tr><td><strong>Esomeprazole</strong></td><td>1-2 h / 24-72 h</td><td>CYP2C19 (less)</td><td>S-isomer of omeprazole; better bioavailability</td></tr>
+<tr><td><strong>Pantoprazole</strong></td><td>1-2 h / 24 h</td><td>CYP2C19 + sulfotransferase</td><td>Least drug interactions — safer with clopidogrel; available IV</td></tr>
+<tr><td><strong>Rabeprazole</strong></td><td>1-2 h / 24 h</td><td>Non-enzymatic + minor CYP2C19</td><td>Less affected by CYP2C19 polymorphism</td></tr>
+<tr><td><strong>Vonoprazan</strong></td><td>1-2 h / 24+ h</td><td>CYP3A4 (mainly)</td><td>Acid-stable, no need to time with meals, effective from day 1</td></tr>
+<tr><td><strong>Famotidine</strong></td><td>30-60 min / 8-12 h</td><td>Renal (mostly unchanged)</td><td>Most potent H2 blocker; safe in pregnancy</td></tr>
+<tr><td><strong>Cimetidine</strong></td><td>30 min / 6 h</td><td>Hepatic CYP — pan-inhibitor</td><td>Many drug interactions; anti-androgenic (gynecomastia)</td></tr>
+<tr><td><strong>Sucralfate</strong></td><td>1 h / 6 h</td><td>Minimal absorption</td><td>Take on empty stomach; separate from PPI by 2 h</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice / Regimen</th></tr>
+<tr><td><strong>GERD / Reflux oesophagitis</strong></td><td>PPI (Omeprazole 20-40 mg OD) × 4-8 weeks; step-down after healing</td></tr>
+<tr><td><strong>Peptic Ulcer Disease (NSAID-related)</strong></td><td>PPI × 4-8 weeks + stop NSAID; if NSAID required → add Misoprostol or use Coxib + PPI</td></tr>
+<tr><td><strong>H. pylori eradication</strong></td><td>Standard Triple (PPI + Amox + Clarithro) × 14 d; Quadruple if resistance / failure</td></tr>
+<tr><td><strong>Zollinger-Ellison Syndrome</strong></td><td>High-dose PPI (Omeprazole 60-120 mg/day); octreotide for gastrinoma</td></tr>
+<tr><td><strong>Stress ulcer prophylaxis (ICU)</strong></td><td>PPI IV (Pantoprazole 40 mg) or Sucralfate</td></tr>
+<tr><td><strong>NSAID gastritis prevention</strong></td><td>Misoprostol 200 µg QID; PPI alternative (more tolerable)</td></tr>
+<tr><td><strong>Mild dyspepsia / heartburn</strong></td><td>Antacid PRN; H2 blocker for short-term</td></tr>
+<tr><td><strong>Refractory GERD / nocturnal acid breakthrough</strong></td><td>BID PPI; consider P-CAB (Vonoprazan)</td></tr>
+<tr><td><strong>Acute upper GI bleed</strong></td><td>IV PPI bolus 80 mg + 8 mg/hr infusion × 72 h + endoscopic therapy</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
 <ul>
-<li>Aluminium hydroxide + sulfated sucrose</li>
-<li>Polymerises in acid pH → coats ulcer base</li>
-<li>Needs acidic environment → do not give with PPI/H2 blocker simultaneously</li>
+<li><strong>PPIs (long-term ≥ 1 year):</strong> Hypomagnesaemia, B12 deficiency, hypocalcaemia/osteoporosis-related fractures (hip, spine), ↑ C. difficile colitis &amp; community-acquired pneumonia, acute interstitial nephritis, chronic kidney disease, gastric polyps (fundic gland), rebound acid hypersecretion on stoppage.</li>
+<li><strong>Cimetidine:</strong> Anti-androgenic effects (gynecomastia, impotence), confusion in elderly, multiple CYP interactions (warfarin, phenytoin, theophylline).</li>
+<li><strong>Antacids:</strong> Aluminium → constipation; Magnesium → diarrhoea (often combined to balance); milk-alkali syndrome (CaCO3 + milk); rebound acid (NaHCO3).</li>
+<li><strong>Sucralfate:</strong> Constipation, dry mouth, aluminium accumulation in renal failure.</li>
+<li><strong>Misoprostol:</strong> Diarrhoea (most common — dose limiting), abdominal cramps, uterine contractions → <em>abortifacient (contraindicated in pregnancy)</em>.</li>
+<li><strong>Bismuth:</strong> Black tongue &amp; stool (harmless), neurotoxicity at high dose.</li>
 </ul>
-<h4>Ondansetron</h4>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Cautions</h4>
 <ul>
-<li>Selective 5-HT3 antagonist at CTZ and vagal afferents</li>
-<li>Most effective for acute chemotherapy-induced nausea (cisplatin)</li>
-<li>QT prolongation; constipation; headache</li>
-</ul>`,
-  adr:`<h4>Long-term PPI ADRs</h4>
-<ul>
-<li>Vitamin B12 deficiency (↓ acid needed for absorption)</li>
-<li>Hypomagnesaemia</li>
-<li>↑ fracture risk (hip, spine)</li>
-<li>↑ C. difficile colitis, community-acquired pneumonia</li>
-<li>Acute interstitial nephritis</li>
-<li>Rebound acid hypersecretion on stoppage</li>
+<li>Misoprostol — pregnancy (Category X — except for MTP/PPH use); women of child-bearing age need pregnancy test.</li>
+<li>PPIs with clopidogrel — use Pantoprazole or P-CAB (least CYP2C19 effect).</li>
+<li>Sucralfate in renal failure — aluminium toxicity.</li>
+<li>NaHCO3 antacid in HTN, CKD, heart failure (sodium load).</li>
+<li>Magnesium-containing antacids in renal failure (hypermagnesaemia).</li>
 </ul>
-<h4>Metoclopramide</h4>
-<p>Extrapyramidal symptoms (dystonia, akathisia), hyperprolactinaemia/galactorrhoea, tardive dyskinesia on prolonged use, NMS rarely. Domperidone has fewer CNS effects (does not cross BBB) but QT prolongation.</p>
-<h4>Loperamide</h4>
-<p>Constipation, ileus; high-dose – cardiac arrhythmias; do not use in acute dysentery or pseudomembranous colitis.</p>`,
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>PPI + Clopidogrel</strong> → ↓ Active metabolite formation (worst — Omeprazole; safer — Pantoprazole, Rabeprazole, Vonoprazan).</li>
+<li><strong>PPI + Drugs needing acid for absorption</strong> (Ketoconazole, Itraconazole, Iron, Atazanavir) → ↓ absorption.</li>
+<li><strong>Cimetidine</strong> inhibits CYP1A2, 2C9, 2C19, 2D6, 3A4 → ↑ Warfarin, Phenytoin, Theophylline, Lidocaine, β-blockers, BZD.</li>
+<li><strong>Antacids + Tetracycline / FQs / Iron</strong> → chelation → ↓ absorption (separate by 2 h).</li>
+<li><strong>Sucralfate + many drugs</strong> → ↓ absorption; separate by 2 h.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 50-y-old with chronic NSAID-related ulcer plus chronic CAD on clopidogrel. Best gastroprotective PPI?<br><strong>Answer:</strong> <em>Pantoprazole</em> (or Rabeprazole) — minimal CYP2C19 interaction → won't blunt clopidogrel anti-platelet effect.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient diagnosed with H. pylori after PUD bleed in clarithromycin-high-resistance area. Best regimen?<br><strong>Answer:</strong> <em>Bismuth Quadruple Therapy</em> — PPI + Bismuth + Tetracycline + Metronidazole × 14 days. Avoid clarithromycin-based regimen.</p></div>
+<div class="cblock"><p><strong>Case:</strong> ICU patient on mechanical ventilation, INR 1.8, platelets 80k. Stress ulcer prophylaxis?<br><strong>Answer:</strong> <em>IV Pantoprazole 40 mg OD</em> — superior to Sucralfate in high-risk patients (ventilation &gt; 48 h, coagulopathy).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>PPIs are PRODRUGS</strong> activated only in acidic parietal cell canaliculus → take 30-60 min before meals for maximum acid suppression</li>
+<li><strong>Pantoprazole</strong> = least CYP interaction → safest PPI with clopidogrel</li>
+<li><strong>Vonoprazan (P-CAB)</strong> = acid-stable, no meal timing, effective from first dose; superior for H. pylori eradication</li>
+<li><strong>Ranitidine WITHDRAWN globally (2020)</strong> — NDMA contamination → carcinogenic concern</li>
+<li><strong>Cimetidine</strong> = anti-androgenic (gynecomastia, impotence) + pan-CYP inhibitor — avoid in elderly</li>
+<li><strong>Sucralfate</strong> needs acid to polymerise → NEVER combine with PPI/H2 blocker simultaneously; separate by 2 h</li>
+<li><strong>Misoprostol</strong> for NSAID ulcer prevention; ABSOLUTE C/I in pregnancy (abortifacient)</li>
+<li><strong>Aluminium antacids → Constipation</strong>; <strong>Magnesium → Diarrhoea</strong> → usually combined (Maalox)</li>
+<li><strong>H. pylori treatment = 14 days</strong> standard (longer = better cure; vs 7-10 d older)</li>
+<li><strong>Long-term PPI ADRs</strong> — Hypomagnesaemia, B12 def., osteoporosis, C. diff, AIN, ↑ pneumonia risk → reassess need annually</li>
+<li><strong>Acute PUD bleed</strong> → IV PPI 80 mg bolus + 8 mg/hr × 72 h + endoscopy ± clipping/banding</li>
+<li><strong>NSAID + low-dose Aspirin co-therapy</strong> = greatest ulcer risk → PPI prophylaxis mandatory</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Vonoprazan</strong> (P-CAB) — FDA approved 2022 for H. pylori (with amoxicillin ± clarithromycin); superior eradication rates</li>
+<li><strong>Tegoprazan</strong> (Korea, India) — newer P-CAB, even longer half-life</li>
+<li><strong>Fexuprazan</strong> — under investigation; longest acid suppression</li>
+<li><strong>Personalised CYP2C19 testing</strong> for PPI dosing — extensive vs poor metabolisers</li>
+<li><strong>Magnesium isotopic ratios</strong> as marker for PPI-induced hypomagnesaemia</li>
+<li><strong>Rifabutin-based H. pylori regimen</strong> — rescue therapy after multiple failures</li>
+<li><strong>Berberine, probiotics</strong> as adjuncts to enhance H. pylori eradication</li>
+<li><strong>P-CAB + Penicillin-only dual therapy</strong> — emerging research showing high eradication rates with less antibiotic resistance</li>
+<li><strong>Reflux Hypersensitivity</strong> emerging as new GERD phenotype — neuromodulators (TCAs) tried</li>
+<li><strong>Acoramidis</strong> — newer mucoprotective in trials</li>
+<li><strong>FDA Black Box on PPI long-term use</strong> — call for tapering &amp; deprescribing protocols</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: PPIs should be administered — <em>On empty stomach (30-60 min before meals)</em></li>
+<li><strong>INI-CET 2023</strong>: PPI with LEAST clopidogrel interaction — <em>Pantoprazole</em></li>
+<li><strong>NEET PG 2024</strong>: First potassium-competitive acid blocker (P-CAB) — <em>Vonoprazan</em></li>
+<li><strong>INI-CET 2024</strong>: H. pylori standard triple therapy components — <em>PPI + Amoxicillin + Clarithromycin × 14 d</em></li>
+<li><strong>NEET PG 2024</strong>: H2 blocker withdrawn due to NDMA — <em>Ranitidine</em></li>
+<li><strong>FMGE 2024</strong>: Misoprostol uses include all EXCEPT — <em>Diarrhoea treatment (it causes diarrhoea)</em></li>
+<li><strong>NEET PG 2025</strong>: Anti-androgenic ADR of which H2 blocker — <em>Cimetidine</em></li>
+<li><strong>INI-CET 2024</strong>: PPI long-term ADRs include — <em>Hypomagnesaemia, B12 deficiency, ↑ fracture risk</em></li>
+<li><strong>NEET PG 2023</strong>: Sucralfate requires what for action — <em>Acidic gastric environment</em></li>
+<li><strong>NEET PG 2025</strong>: DOC for stress ulcer prophylaxis in ICU — <em>IV PPI (Pantoprazole)</em></li>
+<li><strong>INI-CET 2024</strong>: Quadruple therapy for H. pylori includes — <em>PPI + Bismuth + Tetracycline + Metronidazole</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Acid-Peptic Disease — PPIs, P-CABs, H2 Blockers, Mucoprotectives &amp; H. pylori Treatment</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Drugs for Peptic Ulcer Disease — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ SUB-TOPIC 2: ANTIEMETIC & PROKINETIC ═══════════ */
+    {id:"emesis",content:`<span id="sub-emesis-gi" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🤢 2️⃣ ANTIEMETIC &amp; PROKINETIC DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Antiemetics</em> are drugs that prevent or relieve nausea and vomiting by acting at central (chemoreceptor trigger zone — CTZ, vomiting centre, vestibular nuclei) or peripheral (gut, vagal afferents) sites. <em>Prokinetics</em> enhance coordinated GI motility to promote gastric emptying and intestinal transit.</p>
+
+<h4>📋 Comprehensive Classification</h4>
+<table>
+<tr><th>Group</th><th>Sub-class (Receptor target)</th><th>Drugs</th></tr>
+<tr><td rowspan="7"><strong>A. Antiemetics</strong></td><td>5-HT3 antagonists (CTZ + vagal)</td><td>Ondansetron, Granisetron, Palonosetron (long t½), Tropisetron, Dolasetron, Ramosetron.</td></tr>
+<tr><td>NK1 antagonists (delayed CINV)</td><td>Aprepitant, Fosaprepitant (IV), Rolapitant, Netupitant (combined with palonosetron — Akynzeo).</td></tr>
+<tr><td>D2 antagonists</td><td>Metoclopramide (central + peripheral), Domperidone (peripheral), Prochlorperazine, Chlorpromazine, Haloperidol, Olanzapine (CINV).</td></tr>
+<tr><td>H1 antihistamines</td><td>Doxylamine, Promethazine, Cyclizine, Cinnarizine, Meclizine, Diphenhydramine.</td></tr>
+<tr><td>Anti-muscarinic (vestibular)</td><td>Hyoscine (Scopolamine — transdermal patch).</td></tr>
+<tr><td>Corticosteroids (CINV)</td><td>Dexamethasone — adjunct in CINV/PONV.</td></tr>
+<tr><td>Cannabinoids / BZD</td><td>Dronabinol, Nabilone, Lorazepam (anticipatory).</td></tr>
+<tr><td rowspan="4"><strong>B. Prokinetics</strong></td><td>D2 antagonist + 5HT4 agonist + 5HT3 antagonist</td><td>Metoclopramide — broadest action; oral, IV.</td></tr>
+<tr><td>Peripheral D2 antagonist</td><td>Domperidone — does NOT cross BBB → no EPS; QT prolongation.</td></tr>
+<tr><td>Selective 5HT4 agonist</td><td>Mosapride, Prucalopride (chronic constipation), Tegaserod (re-approved 2019 women &lt;65 IBS-C).</td></tr>
+<tr><td>Motilin agonist</td><td>Erythromycin (off-label gastroparesis — small doses).</td></tr>
+<tr><td><strong>C. Pregnancy Nausea</strong></td><td>FDA Category A</td><td>Doxylamine + Pyridoxine (Diclegis) — first-line.</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action</h4>
+<ul>
+<li><strong>5-HT3 antagonists</strong> — block serotonin receptors at the CTZ and vagal afferents from the gut → MOST effective for acute CINV; less for delayed.</li>
+<li><strong>NK1 antagonists</strong> — block substance P at NK1 receptors centrally → especially effective for DELAYED chemotherapy nausea.</li>
+<li><strong>Metoclopramide</strong> — central D2 block at CTZ + peripheral D2 block on gut (↑ tone) + 5HT4 agonism (↑ ACh release at myenteric plexus) + 5HT3 block (high doses).</li>
+<li><strong>Domperidone</strong> — peripheral D2 block on gut + on CTZ (which is OUTSIDE BBB) but spares CNS → no EPS.</li>
+<li><strong>Hyoscine</strong> — central M block at vestibular nuclei → preferred for motion sickness.</li>
+<li><strong>Promethazine / Cinnarizine</strong> — H1 + anti-M block → motion sickness + vestibular vertigo.</li>
+<li><strong>Dexamethasone</strong> — anti-inflammatory + uncertain mechanism for emesis (possibly via mediator suppression).</li>
+<li><strong>Prucalopride</strong> — selective 5HT4 agonist → ↑ colonic propulsive motility → chronic constipation.</li>
+<li><strong>Erythromycin</strong> — motilin agonist → induces phase III migrating motor complexes → ↑ gastric emptying.</li>
+</ul>
+
+<h4 style="margin-top:14px;">💉 Pharmacokinetics — Key Highlights</h4>
+<table>
+<tr><th>Drug</th><th>Route &amp; Dose</th><th>t½</th><th>Notes</th></tr>
+<tr><td><strong>Ondansetron</strong></td><td>Oral / IV / sublingual, 8 mg pre-chemo</td><td>3-4 h</td><td>QT prolongation — caution with macrolides, methadone</td></tr>
+<tr><td><strong>Palonosetron</strong></td><td>IV 0.25 mg single dose</td><td>~40 h</td><td>Best for delayed CINV — single dose covers 5 days</td></tr>
+<tr><td><strong>Aprepitant</strong></td><td>Oral D1: 125 mg, D2-3: 80 mg</td><td>9-13 h</td><td>CYP3A4 inhibitor → dexamethasone dose halved</td></tr>
+<tr><td><strong>Metoclopramide</strong></td><td>Oral / IM / IV 10 mg TID</td><td>5-6 h</td><td>Crosses BBB → EPS risk; max 12 weeks chronic use (FDA 2009)</td></tr>
+<tr><td><strong>Domperidone</strong></td><td>Oral 10 mg TID</td><td>7-8 h</td><td>Does NOT cross BBB → no EPS; QT prolongation risk</td></tr>
+<tr><td><strong>Prucalopride</strong></td><td>Oral 2 mg OD</td><td>24 h</td><td>Renal excretion; safe long-term</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — Indication-Drug Matching</h4>
+<table>
+<tr><th>Clinical Setting</th><th>Drug of Choice</th></tr>
+<tr><td><strong>Acute CINV (highly emetogenic chemo)</strong></td><td>Triple combo: 5HT3 (Palonosetron) + NK1 (Aprepitant) + Dexamethasone</td></tr>
+<tr><td><strong>Delayed CINV (24-120 h)</strong></td><td>NK1 (Aprepitant) + Dexamethasone ± Palonosetron</td></tr>
+<tr><td><strong>Anticipatory nausea</strong></td><td>BZD (Lorazepam) + behavioural therapy</td></tr>
+<tr><td><strong>Post-op nausea/vomiting (PONV)</strong></td><td>Ondansetron + Dexamethasone (prophylaxis); add Droperidol/Metoclopramide if persistent</td></tr>
+<tr><td><strong>Pregnancy nausea (hyperemesis)</strong></td><td>Doxylamine + Pyridoxine (Diclegis — Cat A); Ondansetron 2nd line</td></tr>
+<tr><td><strong>Motion sickness</strong></td><td>Hyoscine patch (best) OR Cinnarizine / Promethazine</td></tr>
+<tr><td><strong>Vertigo (Ménière's)</strong></td><td>Cinnarizine, Betahistine (H1 + H3 modulation)</td></tr>
+<tr><td><strong>Gastroparesis (diabetic)</strong></td><td>Metoclopramide (short-term); Domperidone (if available); Erythromycin (transient)</td></tr>
+<tr><td><strong>GERD with prokinesis need</strong></td><td>Domperidone + PPI</td></tr>
+<tr><td><strong>Chronic constipation</strong></td><td>Prucalopride 2 mg OD (after laxatives fail)</td></tr>
+<tr><td><strong>IBS-C in women &lt; 65 y</strong></td><td>Tegaserod (re-approved 2019)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>5-HT3 antagonists:</strong> Headache, constipation, QT prolongation, transient ↑ liver enzymes.</li>
+<li><strong>NK1 antagonists (Aprepitant):</strong> Fatigue, hiccups, ↑ AST/ALT; CYP3A4 inhibitor → many interactions.</li>
+<li><strong>Metoclopramide:</strong> EPS (acute dystonia, akathisia, parkinsonism, tardive dyskinesia after &gt; 12 wk), hyperprolactinaemia (galactorrhoea, gynaecomastia), NMS (rare).</li>
+<li><strong>Domperidone:</strong> QT prolongation, sudden cardiac death (rare); hyperprolactinaemia; not approved in US.</li>
+<li><strong>Promethazine:</strong> Sedation, anticholinergic ADRs, paradoxical excitation in children, IV use → severe phlebitis/gangrene if extravasated.</li>
+<li><strong>Hyoscine:</strong> Dry mouth, urinary retention, glaucoma, hallucinations.</li>
+<li><strong>Dexamethasone:</strong> Hyperglycaemia (caution diabetics), insomnia, perineal burning on IV bolus.</li>
+<li><strong>Prucalopride:</strong> Headache, nausea, abdominal pain.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Metoclopramide — GI obstruction, perforation, haemorrhage, Parkinson's disease, pheochromocytoma; pregnancy generally avoid (FDA Cat B short term).</li>
+<li>Domperidone — significant QT prolongation, cardiac disease.</li>
+<li>5-HT3 antagonists in long QT syndrome or with QT-prolonging drugs.</li>
+<li>Hyoscine in glaucoma, BPH, prostatic hypertrophy.</li>
+<li>Cisapride WITHDRAWN globally (torsades).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Aprepitant + Dexamethasone</strong> → ↑ dexa AUC 2-3× → halve dose.</li>
+<li><strong>Aprepitant + Warfarin</strong> → ↓ INR (monitor).</li>
+<li><strong>Aprepitant + OCP</strong> → ↓ efficacy.</li>
+<li><strong>Ondansetron + Macrolides / Methadone</strong> → additive QT prolongation.</li>
+<li><strong>Metoclopramide + Levodopa / DA agonists</strong> → antagonism.</li>
+<li><strong>Domperidone + CYP3A4 inhibitors (Ketoconazole, Macrolides)</strong> → ↑ levels → QT risk.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 55-y-old on cisplatin chemotherapy (highly emetogenic). What's the prophylactic regimen?<br><strong>Answer:</strong> <em>Triple therapy</em> — Palonosetron 0.25 mg IV + Aprepitant 125 mg PO day 1 (80 mg D2-3) + Dexamethasone 12 mg D1 (8 mg D2-4). Olanzapine 10 mg may be added.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Pregnant woman, 9 weeks, severe morning sickness. Cannot tolerate food.<br><strong>Answer:</strong> First-line — <em>Doxylamine 10 mg + Pyridoxine 10 mg</em> (Diclegis) at bedtime; titrate up. Ondansetron is second-line (controversial cardiac data).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Diabetic with delayed gastric emptying, post-prandial nausea, bloating. Treatment?<br><strong>Answer:</strong> <em>Metoclopramide 10 mg before meals × short course</em> (max 12 weeks per FDA) OR Domperidone where available. Try Erythromycin 250 mg before meals if persistent.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Ondansetron</strong> = best for ACUTE chemotherapy emesis; <strong>Aprepitant</strong> = best for DELAYED phase</li>
+<li><strong>Palonosetron</strong> has t½ ~40 h — single dose covers both acute and delayed CINV</li>
+<li><strong>Triple regimen for high-emetogenic chemo</strong> — 5HT3 + NK1 + Dexamethasone</li>
+<li><strong>Metoclopramide max 12 weeks (FDA Black Box 2009)</strong> — tardive dyskinesia risk on chronic use</li>
+<li><strong>Domperidone</strong> doesn't cross BBB → no EPS, no Parkinsonism risk; QT prolongation risk → ECG before</li>
+<li><strong>DOC for motion sickness</strong> — Hyoscine (Scopolamine) transdermal patch (72 h duration)</li>
+<li><strong>Pregnancy nausea DOC</strong> — Doxylamine + Pyridoxine (Diclegis — Category A)</li>
+<li><strong>Cisapride WITHDRAWN globally</strong> — QT/torsades de pointes</li>
+<li><strong>Aprepitant</strong> is a CYP3A4 inhibitor → halve Dexamethasone dose; reduces OCP efficacy</li>
+<li><strong>Olanzapine 10 mg</strong> — increasingly used as adjunct in CINV (M-CHASE trial)</li>
+<li><strong>Prucalopride</strong> = selective 5HT4 agonist for chronic idiopathic constipation</li>
+<li><strong>Tegaserod re-approved 2019</strong> — only for women &lt; 65 y with IBS-C</li>
+<li><strong>Erythromycin</strong> as prokinetic — short-term only (tachyphylaxis &amp; QT issue)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Netupitant + Palonosetron (Akynzeo)</strong> — single oral capsule covers acute + delayed CINV</li>
+<li><strong>Rolapitant</strong> — long-acting NK1 antagonist (t½ ~180 h) — single dose D1 covers 5 days</li>
+<li><strong>Olanzapine</strong> in NCCN 2024 guidelines as preferred 4th drug in highly emetogenic chemo</li>
+<li><strong>Doxylamine + Pyridoxine + Metoclopramide</strong> studied in hyperemesis gravidarum</li>
+<li><strong>Tegaserod re-approval (2019)</strong> — for women &lt; 65 yrs with IBS-C; restricted due to CV concerns</li>
+<li><strong>Vibegron</strong> — β3 agonist; also reduces OAB-related nocturia (cross-utility)</li>
+<li><strong>Acotiamide</strong> — newer prokinetic in Japan for functional dyspepsia</li>
+<li><strong>Ghrelin agonists (Relamorelin)</strong> — trials for diabetic gastroparesis</li>
+<li><strong>Cannabinoid agonists (Nabilone, Dronabinol)</strong> — refractory CINV, AIDS-related anorexia</li>
+<li><strong>Smart pump-controlled epidural antiemetics</strong> for cancer patients</li>
+<li><strong>Ondansetron in pregnancy</strong> — recent meta-analyses suggest no significant cardiac malformation risk</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for acute chemotherapy-induced vomiting — <em>Ondansetron (5HT3 antagonist)</em></li>
+<li><strong>INI-CET 2023</strong>: 5HT3 antagonist with longest t½ for delayed CINV — <em>Palonosetron</em></li>
+<li><strong>NEET PG 2024</strong>: NK1 antagonist used in chemotherapy emesis — <em>Aprepitant</em></li>
+<li><strong>INI-CET 2024</strong>: Peripheral D2 antagonist with prokinetic action — <em>Domperidone</em></li>
+<li><strong>NEET PG 2024</strong>: Mechanism of Metoclopramide — <em>D2 antagonist + 5HT4 agonist + 5HT3 antagonist</em></li>
+<li><strong>FMGE 2024</strong>: DOC for motion sickness — <em>Hyoscine (Scopolamine) patch</em></li>
+<li><strong>NEET PG 2025</strong>: Pregnancy nausea DOC (FDA Cat A) — <em>Doxylamine + Pyridoxine</em></li>
+<li><strong>INI-CET 2024</strong>: Withdrawn prokinetic due to QT prolongation — <em>Cisapride</em></li>
+<li><strong>NEET PG 2023</strong>: Selective 5HT4 agonist for chronic constipation — <em>Prucalopride</em></li>
+<li><strong>NEET PG 2025</strong>: Metoclopramide ADRs include — <em>Extrapyramidal symptoms, tardive dyskinesia, galactorrhoea</em></li>
+<li><strong>INI-CET 2024</strong>: Triple regimen for highly emetogenic chemotherapy — <em>5HT3 + NK1 + Dexamethasone</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antiemetic &amp; Prokinetic Drugs — CTZ Pharmacology, CINV Regimens, Pregnancy Nausea &amp; Gastroparesis</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiemetic and Prokinetic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ SUB-TOPIC 3: CONSTIPATION & DIARRHOEA ═══════════ */
+    {id:"constdiar",content:`<span id="sub-constdiar-gi" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🚽 3️⃣ DRUG TREATMENT OF CONSTIPATION &amp; DIARRHOEA</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> <em>Constipation</em> = ≤ 3 bowel movements per week with hard, lumpy stool or excessive straining. <em>Diarrhoea</em> = ≥ 3 loose / watery stools per day or stool weight &gt; 200 g/day. Both can be acute or chronic; treatment depends on cause, severity, and patient-specific factors.</p>
+
+<h4>📋 Comprehensive Classification</h4>
+<table>
+<tr><th>Category</th><th>Sub-class</th><th>Drugs</th></tr>
+<tr><td rowspan="5"><strong>A. Laxatives (Constipation)</strong></td><td>Bulk-forming</td><td>Ispaghula husk (Psyllium), Methylcellulose, Polycarbophil — 1st line</td></tr>
+<tr><td>Stool softeners (emollients)</td><td>Docusate sodium, Liquid paraffin (mineral oil)</td></tr>
+<tr><td>Osmotic</td><td>Lactulose, Polyethylene glycol (PEG/Macrogol), Magnesium hydroxide/sulfate, Sorbitol, Glycerin suppository</td></tr>
+<tr><td>Stimulant</td><td>Senna (anthraquinone), Bisacodyl, Sodium picosulfate, Castor oil</td></tr>
+<tr><td>Newer / Targeted</td><td>Lubiprostone (CLC-2 activator), Linaclotide / Plecanatide (GCC agonists), Methylnaltrexone / Naloxegol / Naldemedine (PAMORAs — opioid-induced), Prucalopride (5HT4 agonist), Elobixibat (IBAT inhibitor)</td></tr>
+<tr><td rowspan="4"><strong>B. Antidiarrhoeals</strong></td><td>Specific Cause-directed</td><td>Antibiotics (ORS first; Ciprofloxacin, Azithromycin, Doxycycline based on pathogen)</td></tr>
+<tr><td>Non-specific (Symptomatic)</td><td>Loperamide (peripheral μ-opioid), Diphenoxylate + Atropine (Lomotil), Racecadotril (encephalinase inhibitor), Bismuth subsalicylate</td></tr>
+<tr><td>Rehydration / Electrolyte</td><td>WHO low-osmolarity ORS (245 mOsm/L); IV fluids if severe; Zinc 20 mg × 14 d (children)</td></tr>
+<tr><td>Specific Indications</td><td>Octreotide (carcinoid, dumping syndrome), Rifaximin (IBS-D, traveller's diarrhoea, hepatic encephalopathy), Probiotics (Saccharomyces boulardii, Lactobacillus)</td></tr>
+<tr><td rowspan="5"><strong>C. IBD Drugs</strong></td><td>5-Aminosalicylates (5-ASA)</td><td>Mesalamine, Sulfasalazine, Olsalazine, Balsalazide</td></tr>
+<tr><td>Corticosteroids</td><td>Budesonide (oral — ileocolonic), Prednisolone, Hydrocortisone (rectal foam/enema)</td></tr>
+<tr><td>Immunomodulators</td><td>Azathioprine, 6-MP, Methotrexate, Cyclosporine (acute severe UC)</td></tr>
+<tr><td>Biologicals</td><td>Anti-TNF (Infliximab, Adalimumab, Golimumab, Certolizumab); Anti-integrin (Vedolizumab — gut-selective, Natalizumab); Anti-IL-12/23 (Ustekinumab, Risankizumab); Anti-IL-23 (Mirikizumab)</td></tr>
+<tr><td>Targeted small molecules</td><td>JAK inhibitors (Tofacitinib, Upadacitinib — UC); S1P modulators (Ozanimod, Etrasimod — UC, 2024)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action — Key Drugs</h4>
+<ul>
+<li><strong>Bulk laxatives</strong> — non-digestible fibre absorbs water → ↑ stool volume → distends colon → reflex peristalsis. Slow onset (12-72 h).</li>
+<li><strong>Lactulose</strong> — non-absorbable disaccharide → fermented by colon bacteria → ↑ osmotic load + ↓ pH → traps NH₄⁺ (used in hepatic encephalopathy).</li>
+<li><strong>PEG (Macrogol)</strong> — high-MW polymer retains water in colon → softens stool; preferred for chronic constipation and colonoscopy prep.</li>
+<li><strong>Senna / Bisacodyl</strong> — hydrolysed by colonic bacteria → active metabolites → stimulate myenteric plexus → ↑ peristalsis + ↓ water absorption.</li>
+<li><strong>Linaclotide / Plecanatide</strong> — guanylate cyclase-C (GCC) agonists → ↑ cGMP → activate CFTR → secrete Cl⁻ &amp; water into lumen.</li>
+<li><strong>Lubiprostone</strong> — activates type-2 chloride channels (CLC-2) → ↑ intestinal fluid.</li>
+<li><strong>Methylnaltrexone / Naloxegol</strong> — peripheral μ-opioid antagonists (don't cross BBB) → reverse opioid constipation without losing central analgesia.</li>
+<li><strong>Loperamide</strong> — peripheral μ-opioid agonist on myenteric plexus → ↓ motility + ↑ water absorption; no CNS effects.</li>
+<li><strong>Racecadotril</strong> — inhibits enkephalinase → ↑ endogenous opioids → ↓ intestinal secretion (does NOT affect motility — safer in children).</li>
+<li><strong>5-ASA</strong> — local anti-inflammatory action on colonic epithelium; ↓ leukotriene synthesis, ↓ free radicals.</li>
+<li><strong>Sulfasalazine</strong> — colonic bacteria cleave azo bond → 5-ASA (active) + sulfapyridine (causes most ADRs).</li>
+<li><strong>Vedolizumab</strong> — anti-α4β7 integrin → blocks lymphocyte trafficking to gut (gut-selective immunosuppression).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice / Strategy</th></tr>
+<tr><td><strong>Chronic functional constipation</strong></td><td>Lifestyle + Bulk laxative → PEG → Lubiprostone/Linaclotide → Prucalopride</td></tr>
+<tr><td><strong>Opioid-induced constipation</strong></td><td>Methylnaltrexone / Naloxegol / Naldemedine (PAMORAs)</td></tr>
+<tr><td><strong>Hepatic encephalopathy</strong></td><td>Lactulose + Rifaximin (combined in moderate-severe HE)</td></tr>
+<tr><td><strong>Acute infectious diarrhoea (no fever, no blood)</strong></td><td>ORS + Zinc; Loperamide (adults, &gt; 3 yrs); avoid antibiotics</td></tr>
+<tr><td><strong>Bloody diarrhoea / Fever / Toxic appearance</strong></td><td>Empiric antibiotic (Cipro, Azithromycin) + stool culture; AVOID Loperamide</td></tr>
+<tr><td><strong>Traveller's diarrhoea</strong></td><td>Loperamide + Rifaximin or Azithromycin; ORS</td></tr>
+<tr><td><strong>Carcinoid / VIPoma / Dumping</strong></td><td>Octreotide</td></tr>
+<tr><td><strong>IBS-C (Constipation predominant)</strong></td><td>Linaclotide / Plecanatide / Tegaserod (women &lt; 65); Lubiprostone</td></tr>
+<tr><td><strong>IBS-D (Diarrhoea predominant)</strong></td><td>Loperamide PRN + Rifaximin; Eluxadoline (μ-agonist + δ-antagonist); Alosetron (women only)</td></tr>
+<tr><td><strong>Mild-Moderate UC</strong></td><td>5-ASA (Mesalamine oral + topical) → step-up Budesonide → biologicals</td></tr>
+<tr><td><strong>Severe UC / hospitalised</strong></td><td>IV Methylprednisolone → if no response 3-5 d → Infliximab or Cyclosporine → colectomy</td></tr>
+<tr><td><strong>Crohn's disease</strong></td><td>Budesonide / Prednisolone (induction) → MTX/AZA (maintenance) → Anti-TNF / Vedolizumab / Ustekinumab</td></tr>
+<tr><td><strong>Colonoscopy prep</strong></td><td>PEG-based bowel prep (split-dose night before + morning of)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Adverse Drug Reactions</h4>
+<ul>
+<li><strong>Bulk laxatives:</strong> Bloating, flatulence, oesophageal obstruction if inadequate water; rare hypersensitivity.</li>
+<li><strong>Stimulant laxatives:</strong> Cramps, electrolyte loss (K⁺), melanosis coli (chronic Senna — reversible), atonic colon (myth — controversial).</li>
+<li><strong>Lactulose:</strong> Flatulence, bloating, hypernatraemia in elderly.</li>
+<li><strong>Mineral oil (Liquid paraffin):</strong> Lipid pneumonia if aspirated, ↓ fat-soluble vitamin absorption, anal seepage.</li>
+<li><strong>Loperamide:</strong> Constipation, ileus, abdominal cramps, paradoxical megacolon in IBD; high-dose abuse → cardiac arrhythmias (QT, torsades).</li>
+<li><strong>Diphenoxylate-atropine:</strong> Anti-cholinergic effects, drowsiness, dependence (atropine added to discourage abuse).</li>
+<li><strong>Sulfasalazine:</strong> Headache, nausea, oligospermia (reversible), G6PD-related haemolysis, photosensitivity, methaemoglobinaemia (sulfapyridine).</li>
+<li><strong>Mesalamine:</strong> Acute interstitial nephritis (annual creatinine check), pancreatitis, hepatitis.</li>
+<li><strong>Anti-TNF biologicals:</strong> Reactivation of TB / HBV, infusion reactions, lymphoma risk, demyelination.</li>
+<li><strong>JAK inhibitors:</strong> Serious infection, MI, malignancy, thrombosis (FDA BBW 2021).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Loperamide / Diphenoxylate — in acute dysentery, pseudomembranous colitis, bloody diarrhoea, children &lt; 2 y.</li>
+<li>Magnesium-based laxatives in renal failure (hypermagnesaemia).</li>
+<li>Liquid paraffin in elderly / dysphagic / bedridden (aspiration risk).</li>
+<li>Tegaserod in age &gt; 65 y, CV disease, smokers, diabetics.</li>
+<li>Anti-TNF in active TB, untreated HBV, active malignancy, severe heart failure.</li>
+<li>Sulfasalazine in salicylate hypersensitivity, G6PD deficiency.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Laxatives + Digoxin / Lithium</strong> → ↓ absorption.</li>
+<li><strong>Mineral oil + Fat-soluble vitamins (A, D, E, K)</strong> → ↓ absorption.</li>
+<li><strong>Sulfasalazine + Folate antagonists</strong> → ↓ folate → megaloblastic anaemia (give folic acid supplement).</li>
+<li><strong>5-ASA + Azathioprine/6-MP</strong> → ↑ marrow suppression.</li>
+<li><strong>Loperamide + CYP3A4/P-gp inhibitors</strong> → ↑ levels → CNS effects.</li>
+<li><strong>Rifaximin minimally absorbed</strong> → few systemic interactions.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 65-y-old with cirrhosis develops asterixis &amp; confusion. Stage 2 HE. Treatment?<br><strong>Answer:</strong> <em>Lactulose 30 ml TID PO</em> (target 2-3 soft stools/day) + <em>Rifaximin 550 mg BID</em>. Plus identify precipitant (GI bleed, infection, electrolyte imbalance).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Pancreatic cancer on morphine, severe constipation despite Senna + PEG. Next step?<br><strong>Answer:</strong> <em>Methylnaltrexone SC / Naloxegol oral / Naldemedine PO</em> — peripheral μ-opioid antagonists. Reverse constipation without affecting analgesia.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 24-y-old, severe UC (frequent bloody diarrhoea, anaemia, ESR 85). Failed IV steroids day 4. Next?<br><strong>Answer:</strong> <em>Infliximab 5 mg/kg IV</em> (induction at 0, 2, 6 wk) OR <em>Cyclosporine 2 mg/kg/day IV</em>. If no response → colectomy.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Traveller from Asia returns with watery diarrhoea, no blood, no fever. Treatment?<br><strong>Answer:</strong> <em>ORS + Loperamide</em> for symptom relief + <em>Rifaximin 200 mg TID × 3 days</em> (or Azithromycin if invasive bacteria suspected).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Lactulose DOC for hepatic encephalopathy</strong> — combined with Rifaximin in moderate-severe HE</li>
+<li><strong>PEG (Macrogol)</strong> = preferred chronic constipation laxative — well tolerated, predictable; also colonoscopy prep</li>
+<li><strong>Bulk laxatives FIRST LINE</strong> for chronic constipation; need adequate water intake (avoid in dysphagia/bowel obstruction)</li>
+<li><strong>Linaclotide / Plecanatide</strong> = GC-C agonists → ↑ cGMP → secrete Cl⁻ &amp; water → chronic IBS-C</li>
+<li><strong>Lubiprostone</strong> = CLC-2 chloride channel activator → ↑ intestinal fluid; ADR — nausea</li>
+<li><strong>Methylnaltrexone / Naloxegol / Naldemedine (PAMORAs)</strong> = peripheral μ-opioid antagonists for opioid-induced constipation; don't reverse analgesia</li>
+<li><strong>Loperamide</strong> — peripheral μ-opioid agonist; AVOID in dysentery, pseudomembranous colitis, IBD severe flare</li>
+<li><strong>Racecadotril</strong> — enkephalinase inhibitor; preferred in children (no motility effect)</li>
+<li><strong>ORS + Zinc</strong> for paediatric diarrhoea — WHO universal recommendation; Zinc 20 mg × 14 days</li>
+<li><strong>5-ASA</strong> for mild-moderate UC; topical (suppository/enema) for distal disease, oral + topical for extensive</li>
+<li><strong>Sulfasalazine</strong> — ADRs from sulfapyridine moiety (haemolysis G6PD, oligospermia, photosensitivity)</li>
+<li><strong>Vedolizumab</strong> = anti-α4β7 integrin → gut-selective immunosuppression; safest IBD biologic for infections</li>
+<li><strong>JAK inhibitors</strong> (Tofacitinib, Upadacitinib) for refractory UC; BBW for serious infections, MI, malignancy</li>
+<li><strong>Bismuth subsalicylate</strong> — for mild traveller's diarrhoea; causes black stools (harmless)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Etrasimod (S1P receptor modulator)</strong> — FDA approved 2023 for moderate-severe UC</li>
+<li><strong>Mirikizumab</strong> (anti-IL-23 p19) — FDA approved 2023 for UC</li>
+<li><strong>Risankizumab</strong> — FDA approved 2022 for Crohn's disease</li>
+<li><strong>Upadacitinib</strong> — FDA approved 2022 for UC; also Crohn's 2023</li>
+<li><strong>Naldemedine</strong> — newer once-daily oral PAMORA for opioid-induced constipation</li>
+<li><strong>Elobixibat</strong> — ileal bile acid transporter (IBAT) inhibitor for chronic constipation (Japan, India)</li>
+<li><strong>Faecal Microbiota Transplant (FMT)</strong> — standard care for recurrent C. difficile; trials for UC and IBS</li>
+<li><strong>Vibegron, Tegaserod</strong> — re-approved/restricted use in IBS</li>
+<li><strong>Fexofenadine for IBS-D</strong> — investigated for mast cell-mediated diarrhoea</li>
+<li><strong>Rifaximin-alpha (newer formulation)</strong> — IBS-D, hepatic encephalopathy</li>
+<li><strong>ACG 2023 Guidelines</strong> — favour PEG over lactulose for chronic constipation (better tolerability)</li>
+<li><strong>Bowel ultrasound</strong> &amp; biomarkers (FCP, CRP, anti-TNF levels) to guide IBD therapy escalation</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for hepatic encephalopathy — <em>Lactulose + Rifaximin</em></li>
+<li><strong>INI-CET 2023</strong>: Sulfasalazine in UC is broken down into — <em>5-ASA + Sulfapyridine</em></li>
+<li><strong>NEET PG 2024</strong>: Drug for opioid-induced constipation (peripheral μ-antagonist) — <em>Methylnaltrexone / Naloxegol / Naldemedine</em></li>
+<li><strong>INI-CET 2024</strong>: Anti-α4β7 integrin biologic for IBD — <em>Vedolizumab</em></li>
+<li><strong>NEET PG 2024</strong>: First-line laxative for chronic functional constipation — <em>PEG (Macrogol)</em></li>
+<li><strong>FMGE 2024</strong>: Antidiarrhoeal SAFE in children (no motility effect) — <em>Racecadotril</em></li>
+<li><strong>NEET PG 2025</strong>: First S1P modulator approved for UC (2023) — <em>Ozanimod / Etrasimod</em></li>
+<li><strong>INI-CET 2024</strong>: Linaclotide mechanism — <em>Guanylate cyclase-C agonist → ↑ cGMP → ↑ Cl⁻ secretion</em></li>
+<li><strong>NEET PG 2023</strong>: Loperamide is — <em>Peripheral μ-opioid agonist (does NOT cross BBB)</em></li>
+<li><strong>NEET PG 2025</strong>: Drug used in carcinoid syndrome diarrhoea — <em>Octreotide</em></li>
+<li><strong>INI-CET 2024</strong>: Sulfasalazine ADRs include all EXCEPT — <em>Constipation (causes oligospermia, haemolysis G6PD, photosensitivity)</em></li>
+<li><strong>NEET PG 2024</strong>: WHO low-osmolarity ORS osmolarity — <em>245 mOsm/L</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Constipation, Diarrhoea &amp; IBD Drug Treatment — Laxatives, Antidiarrhoeals, 5-ASA, Biologicals &amp; JAK Inhibitors</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Constipation Diarrhoea IBD — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Omeprazole",c:"PPI",u:"GERD, PUD, ZE syndrome; ↓ clopidogrel activation"},
-    {n:"Pantoprazole",c:"PPI",u:"GERD; least CYP interaction → safer with clopidogrel"},
-    {n:"Vonoprazan",c:"P-CAB",u:"GERD, H. pylori; faster onset than PPI; acid-stable"},
-    {n:"Famotidine",c:"H2 blocker",u:"Mild GERD, stress ulcer prophylaxis"},
-    {n:"Sucralfate",c:"Mucoprotective",u:"Stress ulcer prophylaxis ICU; reflux oesophagitis"},
-    {n:"Misoprostol",c:"PGE1 analogue",u:"NSAID-induced ulcer prevention; abortion (with mifepristone); PPH"},
-    {n:"Ondansetron",c:"5HT3 antagonist",u:"CINV, post-op nausea, pregnancy nausea"},
-    {n:"Aprepitant",c:"NK1 antagonist",u:"Delayed chemotherapy nausea; combined with 5HT3 + dexa"},
-    {n:"Metoclopramide",c:"D2 antagonist + 5HT4",u:"Gastroparesis; antiemetic; EPS risk"},
-    {n:"Domperidone",c:"Peripheral D2",u:"Antiemetic; prokinetic; QT risk"},
-    {n:"Lactulose",c:"Osmotic laxative",u:"Constipation; hepatic encephalopathy"},
-    {n:"Polyethylene Glycol",c:"Osmotic",u:"Chronic constipation; colonoscopy prep"},
-    {n:"Loperamide",c:"μ-opioid (peripheral)",u:"Acute non-infectious diarrhoea; IBS-D"},
-    {n:"Mesalamine",c:"5-ASA",u:"Mild-moderate UC; ↓ topical inflammation"},
-    {n:"Infliximab",c:"Anti-TNF",u:"Severe IBD, RA, psoriasis; screen TB before"},
-    {n:"Ursodeoxycholic acid",c:"Hydrophilic bile acid",u:"Primary biliary cholangitis, gallstone dissolution"}
+    // ── 1. Peptic Ulcer Disease ──
+    {n:"Omeprazole",c:"1️⃣ PPI",u:"GERD, PUD, ZE syndrome; ↓ clopidogrel activation"},
+    {n:"Esomeprazole",c:"1️⃣ PPI (S-isomer)",u:"GERD; better bioavailability"},
+    {n:"Pantoprazole",c:"1️⃣ PPI",u:"Safest with clopidogrel; IV available; least CYP interaction"},
+    {n:"Rabeprazole",c:"1️⃣ PPI",u:"GERD; less CYP2C19 dependence"},
+    {n:"Vonoprazan",c:"1️⃣ P-CAB",u:"GERD, H. pylori; faster onset; acid-stable; no meal timing"},
+    {n:"Famotidine",c:"1️⃣ H2 blocker",u:"Mild GERD, stress ulcer prophylaxis; safe in pregnancy"},
+    {n:"Cimetidine",c:"1️⃣ H2 blocker",u:"GERD (older); anti-androgenic; pan-CYP inhibitor"},
+    {n:"Sucralfate",c:"1️⃣ Mucoprotective",u:"Stress ulcer prophylaxis ICU; needs acid environment"},
+    {n:"Misoprostol",c:"1️⃣ PGE1 analogue",u:"NSAID-induced ulcer prevention; MTP; PPH (avoid in pregnancy)"},
+    {n:"Bismuth subsalicylate",c:"1️⃣ Mucoprotective + anti-H.pylori",u:"Quadruple therapy; black stools"},
+    {n:"Antacid (Al+Mg)",c:"1️⃣ Neutraliser",u:"Symptomatic relief of dyspepsia"},
+    // ── 2. Antiemetic & Prokinetic ──
+    {n:"Ondansetron",c:"2️⃣ 5-HT3 antagonist",u:"Acute CINV, post-op nausea; QT prolongation"},
+    {n:"Palonosetron",c:"2️⃣ 5-HT3 antagonist (long t½)",u:"Delayed CINV — single dose covers 5 days"},
+    {n:"Aprepitant",c:"2️⃣ NK1 antagonist",u:"Delayed CINV (with 5HT3 + dexa); CYP3A4 inhibitor"},
+    {n:"Metoclopramide",c:"2️⃣ D2 antagonist + 5HT4 agonist",u:"Antiemetic, prokinetic; EPS risk; max 12 weeks"},
+    {n:"Domperidone",c:"2️⃣ Peripheral D2 antagonist",u:"Antiemetic, prokinetic; QT risk; not in US"},
+    {n:"Prochlorperazine",c:"2️⃣ Phenothiazine D2 antagonist",u:"Vertigo, migraine emesis"},
+    {n:"Promethazine",c:"2️⃣ H1 + D2 antagonist",u:"Pre-op sedation, motion sickness, allergic rhinitis"},
+    {n:"Hyoscine (Scopolamine)",c:"2️⃣ Anti-M (vestibular)",u:"DOC for motion sickness (TD patch)"},
+    {n:"Doxylamine + Pyridoxine",c:"2️⃣ H1 + B6",u:"Pregnancy nausea (Diclegis — FDA Cat A)"},
+    {n:"Dexamethasone",c:"2️⃣ Corticosteroid",u:"CINV adjunct; PONV; brain tumour"},
+    {n:"Mosapride",c:"2️⃣ 5-HT4 agonist",u:"Functional dyspepsia, GERD adjunct (safer)"},
+    {n:"Prucalopride",c:"2️⃣ Selective 5-HT4 agonist",u:"Chronic constipation; safer than tegaserod"},
+    {n:"Erythromycin (low dose)",c:"2️⃣ Motilin agonist",u:"Diabetic gastroparesis — short term"},
+    // ── 3. Constipation & Diarrhoea ──
+    {n:"Ispaghula (Psyllium)",c:"3️⃣ Bulk laxative",u:"1st line chronic constipation; IBS"},
+    {n:"Lactulose",c:"3️⃣ Osmotic laxative",u:"Constipation; DOC for hepatic encephalopathy"},
+    {n:"Polyethylene Glycol",c:"3️⃣ Osmotic",u:"Chronic constipation; colonoscopy prep (1st line)"},
+    {n:"Senna",c:"3️⃣ Stimulant laxative",u:"Short-term constipation; chronic use → melanosis coli"},
+    {n:"Bisacodyl",c:"3️⃣ Stimulant",u:"Constipation; tablets or suppository"},
+    {n:"Lubiprostone",c:"3️⃣ CLC-2 activator",u:"Chronic constipation; IBS-C"},
+    {n:"Linaclotide",c:"3️⃣ GC-C agonist",u:"Chronic constipation; IBS-C"},
+    {n:"Methylnaltrexone",c:"3️⃣ Peripheral μ-antagonist (PAMORA)",u:"Opioid-induced constipation (palliative)"},
+    {n:"Naloxegol",c:"3️⃣ PAMORA (oral)",u:"Opioid-induced constipation"},
+    {n:"Loperamide",c:"3️⃣ Peripheral μ-opioid agonist",u:"Acute non-infectious diarrhoea; IBS-D; AVOID in dysentery"},
+    {n:"Diphenoxylate + Atropine",c:"3️⃣ μ-opioid + anti-M",u:"Diarrhoea (Lomotil); atropine deters abuse"},
+    {n:"Racecadotril",c:"3️⃣ Enkephalinase inhibitor",u:"Children's diarrhoea (no motility effect)"},
+    {n:"Octreotide",c:"3️⃣ Somatostatin analogue",u:"Carcinoid syndrome, VIPoma, refractory diarrhoea"},
+    {n:"Rifaximin",c:"3️⃣ Non-absorbable rifamycin",u:"Hepatic encephalopathy, IBS-D, traveller's diarrhoea"},
+    {n:"Mesalamine (5-ASA)",c:"3️⃣ Topical anti-inflammatory",u:"Mild-moderate UC, Crohn's; oral + topical"},
+    {n:"Sulfasalazine",c:"3️⃣ 5-ASA prodrug + sulfa",u:"UC, RA; ADRs from sulfapyridine"},
+    {n:"Budesonide",c:"3️⃣ Steroid (topical action)",u:"Ileocolonic Crohn's, microscopic colitis, UC"},
+    {n:"Infliximab",c:"3️⃣ Anti-TNF mAb",u:"Severe UC/Crohn's; screen TB/HBV before"},
+    {n:"Adalimumab",c:"3️⃣ Anti-TNF mAb",u:"Crohn's, UC; SC"},
+    {n:"Vedolizumab",c:"3️⃣ Anti-α4β7 integrin",u:"UC, Crohn's; gut-selective; safer for infections"},
+    {n:"Ustekinumab",c:"3️⃣ Anti-IL-12/23",u:"Crohn's, UC; psoriasis"},
+    {n:"Tofacitinib",c:"3️⃣ JAK1/3 inhibitor",u:"UC; BBW — serious infections, MI"},
+    {n:"Ozanimod",c:"3️⃣ S1P modulator",u:"Moderate-severe UC (2021)"},
+    {n:"Etrasimod",c:"3️⃣ S1P modulator (2023)",u:"Moderate-severe UC"}
   ],
   ppt:[
     {t:"Acid-Peptic Disease Pharmacology",p:["Physiology of acid secretion","PPI MOA","Comparison of PPIs","P-CABs"]},
@@ -6264,14 +7094,49 @@ TOPICS.push({id:"gi",icon:"🍽️",title:"Gastrointestinal Drugs",
     {t:"Hepatobiliary Drugs",p:["UDCA","Lactulose","Rifaximin","Spironolactone in ascites"]}
   ],
   mcqs:[
-    {q:"PPIs should be administered:",o:["After meals","On empty stomach","With antacid","At bedtime"],a:"On empty stomach",e:"PPIs are prodrugs activated in active acid-secreting parietal cells. Take 30-60 min before meals (when pumps are most active) for maximum efficacy."},
-    {q:"DOC for acute chemotherapy-induced vomiting:",o:["Metoclopramide","Domperidone","Ondansetron","Diphenhydramine"],a:"Ondansetron",e:"5-HT3 antagonists are first-line for acute CINV. High-emetogenic regimens use triple combo: 5HT3 + NK1 (aprepitant) + dexamethasone."},
-    {q:"Misoprostol is used in all EXCEPT:",o:["NSAID ulcer prevention","Cervical ripening","Medical abortion","Diarrhoea"],a:"Diarrhoea",e:"Misoprostol is a PGE1 analogue. It actually CAUSES diarrhoea as a major ADR. Uses: prevent NSAID ulcer, MTP (with mifepristone), labour induction, PPH."},
-    {q:"Drug of choice for hepatic encephalopathy:",o:["Loperamide","Lactulose","Rifaximin","Both Lactulose &amp; Rifaximin"],a:"Both Lactulose &amp; Rifaximin",e:"Lactulose → osmotic laxative, traps NH4+ in bowel. Rifaximin → poorly absorbed antibiotic, ↓ ammonia-producing bacteria. Used together in moderate-severe HE."},
-    {q:"Sulfasalazine in ulcerative colitis is broken down into:",o:["5-ASA + Sulfapyridine","6-MP + sulfa","Methotrexate","Mesalamine + nitric oxide"],a:"5-ASA + Sulfapyridine",e:"Colonic bacteria cleave azo bond → releases 5-ASA (active) + sulfapyridine (causes most ADRs – haemolysis, oligospermia, hypersensitivity)."},
-    {q:"Methylnaltrexone is used in:",o:["Opioid overdose","Alcohol dependence","Opioid-induced constipation","Chronic diarrhoea"],a:"Opioid-induced constipation",e:"Methylnaltrexone is a peripheral μ-opioid antagonist that does NOT cross BBB → reverses constipation without antagonising analgesia. Used in palliative care."}
+    // ═══════ 1️⃣ PEPTIC ULCER DISEASE (Q1-Q12) ═══════
+    {q:"[1️⃣ PUD] PPIs should be administered:",o:["After meals","On empty stomach (30-60 min before meals)","With antacid","At bedtime"],a:"On empty stomach (30-60 min before meals)",e:"PPIs are prodrugs activated in active acid-secreting parietal cells. Take 30-60 min before meals (when pumps are most active) for maximum efficacy."},
+    {q:"[1️⃣ PUD] PPI with LEAST clopidogrel interaction (preferred in CAD patients):",o:["Omeprazole","Esomeprazole","Pantoprazole / Rabeprazole","Lansoprazole"],a:"Pantoprazole / Rabeprazole",e:"Pantoprazole and Rabeprazole have minimal CYP2C19 interaction — preferred when clopidogrel co-administration is needed. Omeprazole worst — reduces clopidogrel's active metabolite formation."},
+    {q:"[1️⃣ PUD] First potassium-competitive acid blocker (P-CAB) — newer alternative to PPI:",o:["Famotidine","Vonoprazan","Sucralfate","Misoprostol"],a:"Vonoprazan",e:"Vonoprazan reversibly competes with K⁺ at the proton pump — acid-stable, no meal timing, effective from day 1. Superior in H. pylori eradication (esp. in Asia)."},
+    {q:"[1️⃣ PUD] H2 blocker WITHDRAWN globally in 2020 due to NDMA contamination:",o:["Famotidine","Cimetidine","Ranitidine","Nizatidine"],a:"Ranitidine",e:"Ranitidine globally withdrawn (2020) — contaminated with N-Nitrosodimethylamine (NDMA), a probable human carcinogen. Replaced by Famotidine."},
+    {q:"[1️⃣ PUD] Anti-androgenic ADR (gynecomastia, impotence) is seen with:",o:["Pantoprazole","Cimetidine","Famotidine","Ranitidine"],a:"Cimetidine",e:"Cimetidine — anti-androgenic effects (gynecomastia, impotence in men, galactorrhoea in women). Also pan-CYP inhibitor → many drug interactions. Avoid in elderly."},
+    {q:"[1️⃣ PUD] Long-term PPI use causes all EXCEPT:",o:["Hypomagnesaemia","Vitamin B12 deficiency","↑ Fracture risk","Hypokalaemia"],a:"Hypokalaemia",e:"Long-term PPI ADRs: Hypomagnesaemia, B12 deficiency, ↑ fracture risk (hip/spine), C. difficile colitis, pneumonia, AIN, gastric polyps, rebound acid hypersecretion. NOT hypokalaemia."},
+    {q:"[1️⃣ PUD] H. pylori standard triple therapy duration:",o:["7 days","10 days","14 days","21 days"],a:"14 days",e:"14-day standard triple therapy: PPI + Clarithromycin 500 mg + Amoxicillin 1 g BID. Longer duration improves eradication rates over older 7-10 day regimens."},
+    {q:"[1️⃣ PUD] Quadruple therapy for H. pylori (resistance) consists of:",o:["PPI + Bismuth + Tetracycline + Metronidazole","PPI + Amoxicillin + Doxycycline + Levofloxacin","PPI + Bismuth + Amoxicillin + Clarithromycin","H2 blocker + 3 antibiotics"],a:"PPI + Bismuth + Tetracycline + Metronidazole",e:"Quadruple therapy: PPI + Bismuth + Tetracycline + Metronidazole × 14 d. Used in clarithromycin-high-resistance areas or after triple failure."},
+    {q:"[1️⃣ PUD] Misoprostol uses include ALL EXCEPT:",o:["NSAID ulcer prevention","Cervical ripening / labour induction","Medical abortion (with mifepristone)","Treatment of diarrhoea"],a:"Treatment of diarrhoea",e:"Misoprostol is PGE1 analogue — CAUSES diarrhoea as major ADR. Uses: NSAID ulcer prevention, MTP, labour induction, PPH. Contraindicated in pregnancy (abortifacient)."},
+    {q:"[1️⃣ PUD] Sucralfate mechanism requires:",o:["Alkaline pH","Acidic pH (polymerises in acid)","Neutral pH","No pH dependence"],a:"Acidic pH (polymerises in acid)",e:"Sucralfate (Al hydroxide + sulfated sucrose) polymerises in acidic pH → forms viscous gel coating ulcer base. Do NOT combine with PPI/H2 blocker; separate by 2 hours."},
+    {q:"[1️⃣ PUD] Stress ulcer prophylaxis in ICU (mechanical ventilation, coagulopathy):",o:["Oral antacids","IV PPI (Pantoprazole 40 mg)","Misoprostol","Cimetidine"],a:"IV PPI (Pantoprazole 40 mg)",e:"IV PPI (Pantoprazole) is preferred in high-risk ICU patients (ventilation &gt; 48 h, coagulopathy). Sucralfate is alternative. PPI superior in reducing clinically significant bleeding."},
+    {q:"[1️⃣ PUD] Acute upper GI bleed (peptic ulcer source) initial pharmacotherapy:",o:["Oral PPI","IV PPI bolus 80 mg + 8 mg/hr × 72 h","Octreotide","Vasopressin"],a:"IV PPI bolus 80 mg + 8 mg/hr × 72 h",e:"IV PPI bolus (80 mg) + infusion (8 mg/hr × 72 h) — reduces re-bleeding rates and mortality in active ulcer bleed. Combined with endoscopic therapy (clipping, banding)."},
+
+    // ═══════ 2️⃣ ANTIEMETIC &amp; PROKINETIC (Q13-Q22) ═══════
+    {q:"[2️⃣ Antiemetic] DOC for acute chemotherapy-induced vomiting:",o:["Metoclopramide","Domperidone","Ondansetron (5-HT3 antagonist)","Diphenhydramine"],a:"Ondansetron (5-HT3 antagonist)",e:"5-HT3 antagonists (Ondansetron, Granisetron, Palonosetron) are 1st line for ACUTE CINV. Highly emetogenic chemo → triple combo: 5HT3 + NK1 (Aprepitant) + Dexamethasone."},
+    {q:"[2️⃣ Antiemetic] 5-HT3 antagonist with LONGEST t½ (~40 h) — best for delayed CINV:",o:["Ondansetron","Granisetron","Palonosetron","Dolasetron"],a:"Palonosetron",e:"Palonosetron t½ ~40 h; single dose covers acute AND delayed phases of CINV. Most potent of -setrons."},
+    {q:"[2️⃣ Antiemetic] NK1 antagonist used in delayed chemotherapy nausea:",o:["Ondansetron","Aprepitant","Domperidone","Metoclopramide"],a:"Aprepitant",e:"Aprepitant blocks NK1 (substance P) receptor centrally → effective for DELAYED CINV (24-120 h). CYP3A4 inhibitor → halves Dexamethasone dose."},
+    {q:"[2️⃣ Antiemetic] Peripheral D2 antagonist (does NOT cross BBB) with prokinetic action:",o:["Metoclopramide","Domperidone","Haloperidol","Chlorpromazine"],a:"Domperidone",e:"Domperidone — peripheral D2 antagonist (doesn't cross BBB) → no EPS, no Parkinsonism worsening. Used for gastroparesis, GERD. ADR: QT prolongation (ECG before initiation)."},
+    {q:"[2️⃣ Antiemetic] Metoclopramide mechanism (multiple actions):",o:["Pure D2 antagonist","D2 antagonist + 5HT4 agonist + 5HT3 antagonist","5HT3 only","H1 antagonist"],a:"D2 antagonist + 5HT4 agonist + 5HT3 antagonist",e:"Metoclopramide — central D2 antagonist + peripheral D2 antagonist + 5HT4 agonist (↑ ACh) + 5HT3 antagonist (high doses). Broad action; EPS risk → max 12 weeks (FDA Black Box)."},
+    {q:"[2️⃣ Antiemetic] DOC for motion sickness (transdermal patch — 72 h duration):",o:["Atropine","Hyoscine (Scopolamine)","Promethazine","Ondansetron"],a:"Hyoscine (Scopolamine)",e:"Hyoscine (Scopolamine) transdermal patch — applied behind ear, 72 h duration. Acts centrally on vestibular nuclei. Cinnarizine, Promethazine are oral alternatives."},
+    {q:"[2️⃣ Antiemetic] Pregnancy nausea DOC (FDA Category A combination):",o:["Ondansetron","Doxylamine + Pyridoxine (Diclegis)","Metoclopramide","Promethazine"],a:"Doxylamine + Pyridoxine (Diclegis)",e:"Doxylamine + Pyridoxine (Diclegis/Doxinate) — FDA Category A, first-line for nausea/vomiting in pregnancy. Ondansetron is 2nd line (controversial cardiac data)."},
+    {q:"[2️⃣ Antiemetic] Prokinetic WITHDRAWN globally due to QT prolongation / torsades:",o:["Metoclopramide","Domperidone","Cisapride","Mosapride"],a:"Cisapride",e:"Cisapride — 5HT4 agonist withdrawn globally due to QT prolongation and torsades de pointes (especially with CYP3A4 inhibitors). Mosapride and Prucalopride are safer 5HT4 agonists."},
+    {q:"[2️⃣ Antiemetic] Selective 5HT4 agonist for chronic idiopathic constipation:",o:["Mosapride","Cisapride","Prucalopride","Tegaserod"],a:"Prucalopride",e:"Prucalopride — selective 5HT4 agonist for chronic constipation (after laxatives fail). Safer than older agents. Tegaserod re-approved 2019 only for women &lt; 65 with IBS-C."},
+    {q:"[2️⃣ Antiemetic] Triple regimen for highly emetogenic chemotherapy (cisplatin):",o:["Ondansetron + Metoclopramide + Dexamethasone","5HT3 + NK1 + Dexamethasone","Promethazine + Hyoscine + Ondansetron","Aprepitant only"],a:"5HT3 + NK1 + Dexamethasone",e:"Triple regimen: 5HT3 (Palonosetron) + NK1 (Aprepitant) + Dexamethasone. Olanzapine 10 mg may be added as 4th drug (M-CHASE trial)."},
+
+    // ═══════ 3️⃣ CONSTIPATION &amp; DIARRHOEA (Q23-Q32) ═══════
+    {q:"[3️⃣ Const/Diar] DOC for hepatic encephalopathy (moderate-severe):",o:["Loperamide alone","Lactulose alone","Lactulose + Rifaximin","Rifaximin alone"],a:"Lactulose + Rifaximin",e:"Lactulose (osmotic) traps NH4+ in bowel + Rifaximin (non-absorbable) ↓ ammonia-producing bacteria. Combined therapy in moderate-severe HE. Lactulose target — 2-3 soft stools/day."},
+    {q:"[3️⃣ Const/Diar] Sulfasalazine in ulcerative colitis is broken down by colonic bacteria into:",o:["5-ASA + Sulfapyridine","6-MP + Sulfa","Mesalamine + Folate","Methotrexate"],a:"5-ASA + Sulfapyridine",e:"Colonic bacteria cleave azo bond → 5-ASA (active anti-inflammatory) + Sulfapyridine (causes most ADRs — haemolysis G6PD, oligospermia, photosensitivity, methemoglobinaemia)."},
+    {q:"[3️⃣ Const/Diar] Peripheral μ-opioid antagonist for opioid-induced constipation:",o:["Naloxone","Naltrexone","Methylnaltrexone / Naloxegol / Naldemedine","Loperamide"],a:"Methylnaltrexone / Naloxegol / Naldemedine",e:"PAMORAs (peripheral μ-opioid antagonists) don't cross BBB → reverse constipation WITHOUT antagonising central analgesia. Used in palliative cancer patients on chronic opioids."},
+    {q:"[3️⃣ Const/Diar] First-line laxative for CHRONIC functional constipation:",o:["Senna (stimulant)","Magnesium hydroxide","Polyethylene Glycol (PEG/Macrogol)","Mineral oil"],a:"Polyethylene Glycol (PEG/Macrogol)",e:"PEG (Macrogol) — preferred for chronic constipation; well tolerated, predictable, safe long-term. Bulk laxatives 1st line if patient can tolerate fibre. Also used for colonoscopy prep."},
+    {q:"[3️⃣ Const/Diar] Linaclotide mechanism:",o:["Guanylate cyclase-C (GC-C) agonist → ↑ cGMP → ↑ Cl⁻ + water","μ-opioid agonist","CYP inhibitor","Bulk forming"],a:"Guanylate cyclase-C (GC-C) agonist → ↑ cGMP → ↑ Cl⁻ + water",e:"Linaclotide and Plecanatide — GC-C agonists; activate CFTR via cGMP → secrete Cl⁻ and water into lumen → softens stool. Used in chronic constipation and IBS-C."},
+    {q:"[3️⃣ Const/Diar] Loperamide mechanism:",o:["Central μ-opioid agonist","Peripheral μ-opioid agonist (does NOT cross BBB)","κ-opioid agonist","Anti-cholinergic only"],a:"Peripheral μ-opioid agonist (does NOT cross BBB)",e:"Loperamide — peripheral μ-opioid agonist; slows motility &amp; ↑ water absorption WITHOUT CNS effects. AVOID in dysentery, pseudomembranous colitis, IBD severe flare."},
+    {q:"[3️⃣ Const/Diar] Antidiarrhoeal that is safe in children (no motility effect):",o:["Loperamide","Diphenoxylate-atropine","Racecadotril","Codeine"],a:"Racecadotril",e:"Racecadotril — encephalinase inhibitor; ↑ endogenous opioids → ↓ intestinal secretion without affecting motility. Safer than loperamide in children. Used with ORS."},
+    {q:"[3️⃣ Const/Diar] WHO low-osmolarity ORS osmolarity:",o:["165 mOsm/L","245 mOsm/L","311 mOsm/L","380 mOsm/L"],a:"245 mOsm/L",e:"WHO low-osmolarity ORS (245 mOsm/L) — Na 75, glucose 75 mmol/L. Reduces stool volume + duration vs old (311 mOsm/L) formulation. Zinc 20 mg × 14 days adjunct in paediatric diarrhoea."},
+    {q:"[3️⃣ Const/Diar] Anti-α4β7 integrin biologic for IBD (gut-selective):",o:["Infliximab","Vedolizumab","Ustekinumab","Tofacitinib"],a:"Vedolizumab",e:"Vedolizumab — blocks α4β7 integrin → prevents lymphocyte trafficking to gut. Gut-selective immunosuppression → safer for systemic infections. Used in UC and Crohn's."},
+    {q:"[3️⃣ Const/Diar] First S1P receptor modulator FDA-approved for ulcerative colitis:",o:["Ozanimod","Etrasimod","Fingolimod","Both A &amp; B"],a:"Both A &amp; B",e:"Ozanimod (2021) and Etrasimod (2023) — sphingosine-1-phosphate (S1P) receptor modulators for moderate-severe UC. Cause functional lymphocyte sequestration in lymph nodes."}
   ],
-  mnemonic:`<strong>H. pylori triple therapy</strong> – PAC/PAM (PPI + Amoxicillin + Clarithromycin or Metronidazole) × 14 d. <strong>5HT3 antagonists end in -setron</strong>. <strong>Antiemetic for motion sickness</strong> – Hyoscine (scopolamine) patch.`
+  mnemonic:`<strong>📚 Gastrointestinal Drugs — Quick Concepts</strong><br>
+• <strong>PUD/GERD</strong> = Acid suppressors (PPI · P-CAB · H2 blocker) + Mucoprotectives + H. pylori regimen.<br>
+• <strong>Antiemetic/Prokinetic</strong> = Block 5-HT3, NK1, D2, H1, M (CTZ/VC); Stimulate 5-HT4 (motility).<br>
+• <strong>Constipation/Diarrhoea</strong> = Bulk → Osmotic → Stimulant → Targeted; ORS + Zinc; IBD step-up therapy.<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 3 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"pns",icon:"💉",title:"Peripheral Nervous System",
