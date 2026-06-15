@@ -1682,257 +1682,480 @@ const MOA = {
 
   pnsComplete: `
 <div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
-  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">💉 Peripheral Nervous System Pharmacology — 2 Key Animated Mechanisms</h4>
-  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize the neuromuscular junction with depolarising/non-depolarising blockade, and local anaesthetic Na-channel inhibition with fibre-size-dependent block order.</p>
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">💉 Peripheral Nervous System — Live Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Watch real-time animations of neuromuscular junction blockade and local anaesthetic Na-channel inhibition. Click the panels below — every drug, ion, and channel is in motion.</p>
 </div>
 
-<!-- MOA 1: NMJ BLOCKADE - DEPOLARISING vs NON-DEPOLARISING -->
+<!-- MOA 1: NMJ BLOCKADE — LIVE ANIMATED -->
 <div class="moa-stage">
-  <div class="moa-title">💪 MOA 1 — Skeletal Muscle Relaxants at the Neuromuscular Junction</div>
-  <svg class="moa-svg" viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg">
-    <!-- Title -->
-    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Neuromuscular Junction (NMJ) — Nm Nicotinic Receptor</text>
+  <div class="moa-title">💪 MOA 1 — Skeletal Muscle Relaxants — Live NMJ Animation</div>
+  <svg class="moa-svg" viewBox="0 0 1100 720" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="achGrad" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fef3c7"/><stop offset="100%" stop-color="#f5c518"/></radialGradient>
+      <radialGradient id="suxGrad" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fecaca"/><stop offset="100%" stop-color="#dc2626"/></radialGradient>
+      <radialGradient id="vecGrad" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#bbf7d0"/><stop offset="100%" stop-color="#10b981"/></radialGradient>
+      <linearGradient id="nerveGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="100%" stop-color="#0f1f3a"/></linearGradient>
+      <linearGradient id="muscleGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#7c1d3a"/><stop offset="100%" stop-color="#4a0f24"/></linearGradient>
+    </defs>
 
-    <!-- ═══ LEFT PANEL: Normal NMJ ═══ -->
-    <text x="170" y="65" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) NORMAL NMJ</text>
+    <text x="550" y="28" fill="#fbbf24" font-size="15" font-weight="800" text-anchor="middle">Neuromuscular Junction (NMJ) — Watch How ACh, Sux, and Non-Depolarising NMBs Work</text>
 
-    <!-- Motor nerve terminal -->
-    <rect x="40" y="80" width="260" height="60" rx="8" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
-    <text x="170" y="105" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">Motor Nerve Terminal</text>
-    <circle cx="100" cy="125" r="6" fill="#f5c518"/>
-    <circle cx="135" cy="125" r="6" fill="#f5c518"/>
-    <circle cx="170" cy="125" r="6" fill="#f5c518"/>
-    <circle cx="205" cy="125" r="6" fill="#f5c518"/>
-    <circle cx="240" cy="125" r="6" fill="#f5c518"/>
-    <text x="170" y="158" fill="#f5c518" font-size="10" text-anchor="middle">ACh vesicles</text>
+    <!-- ═══════ PANEL A: NORMAL NMJ ═══════ -->
+    <text x="183" y="58" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) NORMAL — ACh activates Nm</text>
 
-    <!-- ACh release animation -->
-    <g>
-      <circle cx="150" cy="160" r="5" fill="#f5c518"><animate attributeName="cy" values="160;195;160" dur="2s" repeatCount="indefinite"/></circle>
-      <circle cx="170" cy="160" r="5" fill="#f5c518"><animate attributeName="cy" values="160;195;160" dur="2.2s" repeatCount="indefinite" begin=".3s"/></circle>
-      <circle cx="190" cy="160" r="5" fill="#f5c518"><animate attributeName="cy" values="160;195;160" dur="2.1s" repeatCount="indefinite" begin=".5s"/></circle>
+    <!-- Nerve terminal -->
+    <rect x="30" y="75" width="310" height="90" rx="14" fill="url(#nerveGrad)" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="183" y="98" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">Pre-synaptic Motor Nerve Terminal</text>
+
+    <!-- ACh storage vesicles - pulsing -->
+    <circle cx="80" cy="135" r="9" fill="url(#achGrad)"><animate attributeName="r" values="9;11;9" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="140" r="9" fill="url(#achGrad)"><animate attributeName="r" values="9;11;9" dur="1.5s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <circle cx="160" cy="135" r="9" fill="url(#achGrad)"><animate attributeName="r" values="9;11;9" dur="1.5s" repeatCount="indefinite" begin="0.6s"/></circle>
+    <circle cx="200" cy="142" r="9" fill="url(#achGrad)"><animate attributeName="r" values="9;11;9" dur="1.5s" repeatCount="indefinite" begin="0.9s"/></circle>
+    <circle cx="240" cy="135" r="9" fill="url(#achGrad)"><animate attributeName="r" values="9;11;9" dur="1.5s" repeatCount="indefinite" begin="1.2s"/></circle>
+    <circle cx="280" cy="140" r="9" fill="url(#achGrad)"><animate attributeName="r" values="9;11;9" dur="1.5s" repeatCount="indefinite" begin="1.5s"/></circle>
+
+    <!-- Synaptic cleft label -->
+    <text x="183" y="183" fill="#7a88b0" font-size="10" text-anchor="middle">Synaptic Cleft</text>
+
+    <!-- ACh moving from terminal to receptor (continuous fall) -->
+    <circle r="7" fill="url(#achGrad)"><animate attributeName="cy" values="165;220" dur="1.2s" repeatCount="indefinite"/><animate attributeName="cx" values="120;120" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.7;1" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle r="7" fill="url(#achGrad)"><animate attributeName="cy" values="165;220" dur="1.4s" repeatCount="indefinite" begin="0.3s"/><animate attributeName="cx" values="180;180" dur="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.7;1" dur="1.4s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <circle r="7" fill="url(#achGrad)"><animate attributeName="cy" values="165;220" dur="1.3s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="cx" values="240;240" dur="1.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.7;1" dur="1.3s" repeatCount="indefinite" begin="0.6s"/></circle>
+
+    <!-- Muscle membrane (post-synaptic) -->
+    <rect x="30" y="225" width="310" height="100" rx="14" fill="url(#muscleGrad)" stroke="#ff5e7e" stroke-width="1.5"/>
+
+    <!-- Nm receptors animated — open/close -->
+    <g transform="translate(60,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"><animate attributeName="fill" values="#4da6ff;#10b981;#4da6ff" dur="1.2s" repeatCount="indefinite"/></rect>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
+    </g>
+    <g transform="translate(120,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"><animate attributeName="fill" values="#4da6ff;#10b981;#4da6ff" dur="1.2s" repeatCount="indefinite" begin="0.3s"/></rect>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
+    </g>
+    <g transform="translate(180,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"><animate attributeName="fill" values="#4da6ff;#10b981;#4da6ff" dur="1.2s" repeatCount="indefinite" begin="0.6s"/></rect>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
+    </g>
+    <g transform="translate(240,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"><animate attributeName="fill" values="#4da6ff;#10b981;#4da6ff" dur="1.2s" repeatCount="indefinite" begin="0.9s"/></rect>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
     </g>
 
-    <!-- Synaptic cleft -->
-    <text x="40" y="185" fill="#7a88b0" font-size="10">Cleft</text>
+    <!-- Na+/Ca2+ ions flowing in -->
+    <text x="183" y="305" fill="#7dd3fc" font-size="10" text-anchor="middle">↓ Na⁺ / Ca²⁺ influx</text>
+    <circle cx="100" cy="290" r="4" fill="#7dd3fc"><animate attributeName="cy" values="280;325" dur="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="290" r="4" fill="#7dd3fc"><animate attributeName="cy" values="280;325" dur="0.9s" repeatCount="indefinite" begin="0.2s"/></circle>
+    <circle cx="220" cy="290" r="4" fill="#7dd3fc"><animate attributeName="cy" values="280;325" dur="0.85s" repeatCount="indefinite" begin="0.4s"/></circle>
 
-    <!-- Muscle membrane with Nm receptors -->
-    <rect x="40" y="200" width="260" height="80" rx="8" fill="#172246" stroke="#ff5e7e" stroke-width="1.5"/>
-    <rect x="80" y="205" width="20" height="25" fill="#4da6ff"/>
-    <rect x="125" y="205" width="20" height="25" fill="#4da6ff"/>
-    <rect x="170" y="205" width="20" height="25" fill="#4da6ff"/>
-    <rect x="215" y="205" width="20" height="25" fill="#4da6ff"/>
-    <rect x="260" y="205" width="20" height="25" fill="#4da6ff"/>
-    <text x="170" y="252" fill="#4da6ff" font-size="11" font-weight="700" text-anchor="middle">Nm Receptors (open)</text>
-    <text x="170" y="270" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">→ Depolarisation → Muscle Contraction ✓</text>
+    <!-- Action potential wave -->
+    <text x="183" y="350" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">Action Potential ⚡</text>
+    <path d="M40 370 L60 370 L65 355 L70 385 L75 370 L320 370" stroke="#fbbf24" stroke-width="2" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,280;280,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="183" y="395" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">→ MUSCLE CONTRACTION ✓</text>
 
-    <!-- ═══ MIDDLE PANEL: Depolarising Block ═══ -->
-    <text x="500" y="65" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">B) DEPOLARISING BLOCK</text>
-    <text x="500" y="85" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Succinylcholine (Sux)</text>
+    <!-- ═══════ PANEL B: SUX BLOCK ═══════ -->
+    <text x="550" y="58" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">B) DEPOLARISING — Succinylcholine</text>
 
-    <rect x="370" y="100" width="260" height="60" rx="8" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
-    <text x="500" y="125" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">Sux binds Nm — persistent activation</text>
+    <rect x="397" y="75" width="310" height="90" rx="14" fill="url(#nerveGrad)" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="550" y="98" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">Sux floods cleft (2× ACh structure)</text>
 
-    <!-- Sux molecules binding Nm -->
-    <g>
-      <circle cx="430" cy="180" r="9" fill="#fbbf24" class="anim-glow"/>
-      <text x="425" y="184" fill="#08112a" font-size="10" font-weight="800">S</text>
-      <circle cx="500" cy="180" r="9" fill="#fbbf24" class="anim-glow"/>
-      <text x="495" y="184" fill="#08112a" font-size="10" font-weight="800">S</text>
-      <circle cx="570" cy="180" r="9" fill="#fbbf24" class="anim-glow"/>
-      <text x="565" y="184" fill="#08112a" font-size="10" font-weight="800">S</text>
+    <!-- Sux molecules (cross/dumbbell) -->
+    <g transform="translate(440,130)">
+      <ellipse rx="6" ry="6" fill="url(#suxGrad)"><animate attributeName="ry" values="6;7;6" dur="1s" repeatCount="indefinite"/></ellipse>
+      <text x="0" y="3" fill="#fff" font-size="9" text-anchor="middle" font-weight="800">S</text>
+    </g>
+    <g transform="translate(490,138)">
+      <ellipse rx="6" ry="6" fill="url(#suxGrad)"><animate attributeName="ry" values="6;7;6" dur="1s" repeatCount="indefinite" begin="0.2s"/></ellipse>
+      <text x="0" y="3" fill="#fff" font-size="9" text-anchor="middle" font-weight="800">S</text>
+    </g>
+    <g transform="translate(550,130)">
+      <ellipse rx="6" ry="6" fill="url(#suxGrad)"><animate attributeName="ry" values="6;7;6" dur="1s" repeatCount="indefinite" begin="0.4s"/></ellipse>
+      <text x="0" y="3" fill="#fff" font-size="9" text-anchor="middle" font-weight="800">S</text>
+    </g>
+    <g transform="translate(610,140)">
+      <ellipse rx="6" ry="6" fill="url(#suxGrad)"><animate attributeName="ry" values="6;7;6" dur="1s" repeatCount="indefinite" begin="0.6s"/></ellipse>
+      <text x="0" y="3" fill="#fff" font-size="9" text-anchor="middle" font-weight="800">S</text>
+    </g>
+    <g transform="translate(670,135)">
+      <ellipse rx="6" ry="6" fill="url(#suxGrad)"><animate attributeName="ry" values="6;7;6" dur="1s" repeatCount="indefinite" begin="0.8s"/></ellipse>
+      <text x="0" y="3" fill="#fff" font-size="9" text-anchor="middle" font-weight="800">S</text>
     </g>
 
-    <rect x="370" y="200" width="260" height="80" rx="8" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
-    <rect x="410" y="205" width="20" height="25" fill="#dc2626"/>
-    <rect x="455" y="205" width="20" height="25" fill="#dc2626"/>
-    <rect x="500" y="205" width="20" height="25" fill="#dc2626"/>
-    <rect x="545" y="205" width="20" height="25" fill="#dc2626"/>
-    <rect x="590" y="205" width="20" height="25" fill="#dc2626"/>
-    <text x="500" y="252" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">Nm desensitised</text>
-    <text x="500" y="270" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">→ Fasciculation → Flaccid Paralysis</text>
+    <text x="550" y="183" fill="#7a88b0" font-size="10" text-anchor="middle">Sux moves to Nm</text>
 
-    <!-- ═══ RIGHT PANEL: Non-depolarising Block ═══ -->
-    <text x="830" y="65" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">C) NON-DEPOLARISING BLOCK</text>
-    <text x="830" y="85" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Vec / Roc / Atra / Cis (-curium / -uronium)</text>
+    <!-- Sux molecules falling to bind Nm -->
+    <circle r="6" fill="url(#suxGrad)"><animate attributeName="cy" values="165;220;220" keyTimes="0;0.7;1" dur="2s" repeatCount="indefinite"/><animate attributeName="cx" values="490;490;490" dur="2s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#suxGrad)"><animate attributeName="cy" values="165;220;220" keyTimes="0;0.7;1" dur="2.2s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="cx" values="550;550;550" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#suxGrad)"><animate attributeName="cy" values="165;220;220" keyTimes="0;0.7;1" dur="2.1s" repeatCount="indefinite" begin="1s"/><animate attributeName="cx" values="610;610;610" dur="2.1s" repeatCount="indefinite"/></circle>
 
-    <rect x="700" y="100" width="260" height="60" rx="8" fill="#172246" stroke="#00d4aa" stroke-width="1.5"/>
-    <text x="830" y="125" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">ACh still released normally</text>
-    <circle cx="780" cy="135" r="5" fill="#f5c518"/>
-    <circle cx="830" cy="135" r="5" fill="#f5c518"/>
-    <circle cx="880" cy="135" r="5" fill="#f5c518"/>
+    <!-- Muscle membrane -->
+    <rect x="397" y="225" width="310" height="100" rx="14" fill="url(#muscleGrad)" stroke="#dc2626" stroke-width="1.5"/>
 
-    <!-- Curare blocking Nm competitively -->
-    <g>
-      <rect x="775" y="175" width="14" height="14" rx="2" fill="#10b981" class="anim-bind"/>
-      <text x="775" y="186" fill="#fff" font-size="9" font-weight="800">V</text>
-      <rect x="825" y="175" width="14" height="14" rx="2" fill="#10b981" class="anim-bind"/>
-      <text x="825" y="186" fill="#fff" font-size="9" font-weight="800">V</text>
-      <rect x="875" y="175" width="14" height="14" rx="2" fill="#10b981" class="anim-bind"/>
-      <text x="875" y="186" fill="#fff" font-size="9" font-weight="800">V</text>
+    <!-- Nm receptors permanently activated then desensitised -->
+    <g transform="translate(427,235)">
+      <rect width="28" height="40" rx="5" fill="#dc2626"><animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite"/></rect>
+      <circle cx="14" cy="20" r="6" fill="url(#suxGrad)"/>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
     </g>
-    <text x="830" y="160" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Compete with ACh at Nm</text>
+    <g transform="translate(487,235)">
+      <rect width="28" height="40" rx="5" fill="#dc2626"><animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite" begin="0.3s"/></rect>
+      <circle cx="14" cy="20" r="6" fill="url(#suxGrad)"/>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
+    </g>
+    <g transform="translate(547,235)">
+      <rect width="28" height="40" rx="5" fill="#dc2626"><animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite" begin="0.6s"/></rect>
+      <circle cx="14" cy="20" r="6" fill="url(#suxGrad)"/>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
+    </g>
+    <g transform="translate(607,235)">
+      <rect width="28" height="40" rx="5" fill="#dc2626"><animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite" begin="0.9s"/></rect>
+      <circle cx="14" cy="20" r="6" fill="url(#suxGrad)"/>
+      <text x="14" y="55" fill="#fff" font-size="9" text-anchor="middle" font-weight="700">Nm</text>
+    </g>
 
-    <rect x="700" y="200" width="260" height="80" rx="8" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
-    <rect x="740" y="205" width="20" height="25" fill="#10b981"/>
-    <rect x="785" y="205" width="20" height="25" fill="#10b981"/>
-    <rect x="830" y="205" width="20" height="25" fill="#10b981"/>
-    <rect x="875" y="205" width="20" height="25" fill="#10b981"/>
-    <rect x="920" y="205" width="20" height="25" fill="#10b981"/>
-    <text x="830" y="252" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Nm receptor — NOT activated</text>
-    <text x="830" y="270" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">→ NO Depolarisation → Flaccid Paralysis</text>
+    <!-- Persistent depolarisation -->
+    <text x="550" y="305" fill="#fbbf24" font-size="10" text-anchor="middle">Persistent depolarisation → Desensitisation</text>
 
-    <!-- ═══ BOTTOM: Comparison Table ═══ -->
-    <rect x="40" y="310" width="920" height="190" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
-    <text x="500" y="335" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 Comparison — Depolarising vs Non-Depolarising</text>
+    <!-- Fasciculation wave then flatline -->
+    <path d="M407 370 L420 370 L425 355 L430 385 L435 370 L445 355 L450 385 L455 370 L470 370 L475 360 L480 380 L485 370 L690 370" stroke="#dc2626" stroke-width="2" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,280;280,0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <text x="550" y="345" fill="#dc2626" font-size="11" font-weight="800" text-anchor="middle">Initial Fasciculation</text>
+    <text x="550" y="395" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">→ FLACCID PARALYSIS ✕</text>
 
-    <!-- Headers -->
-    <line x1="60" y1="345" x2="940" y2="345" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
-    <text x="200" y="365" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Feature</text>
-    <text x="500" y="365" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">Depolarising (Sux)</text>
-    <text x="800" y="365" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Non-depolarising (Vec/Roc/Atra)</text>
-    <line x1="60" y1="373" x2="940" y2="373" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+    <!-- ═══════ PANEL C: NON-DEPOLARISING ═══════ -->
+    <text x="917" y="58" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">C) NON-DEPOLARISING — Vec/Roc</text>
 
-    <text x="60" y="392" fill="#7a88b0" font-size="10">Fasciculation</text>
-    <text x="500" y="392" fill="#7a88b0" font-size="10" text-anchor="middle">✓ Present</text>
-    <text x="800" y="392" fill="#7a88b0" font-size="10" text-anchor="middle">✕ Absent</text>
+    <rect x="764" y="75" width="310" height="90" rx="14" fill="url(#nerveGrad)" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="917" y="98" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">ACh released BUT NMB competes at Nm</text>
 
-    <text x="60" y="410" fill="#7a88b0" font-size="10">Neostigmine reversal</text>
-    <text x="500" y="410" fill="#7a88b0" font-size="10" text-anchor="middle">Worsens Phase I block</text>
-    <text x="800" y="410" fill="#7a88b0" font-size="10" text-anchor="middle">✓ Reverses (with glycopyrrolate)</text>
+    <!-- ACh + NMB mix -->
+    <circle cx="810" cy="130" r="6" fill="url(#achGrad)"><animate attributeName="r" values="6;7;6" dur="1s" repeatCount="indefinite"/></circle>
+    <rect x="848" y="124" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.6;1" dur="1s" repeatCount="indefinite"/></rect>
+    <circle cx="890" cy="135" r="6" fill="url(#achGrad)"><animate attributeName="r" values="6;7;6" dur="1s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <rect x="918" y="129" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.6;1" dur="1s" repeatCount="indefinite" begin="0.3s"/></rect>
+    <circle cx="960" cy="130" r="6" fill="url(#achGrad)"><animate attributeName="r" values="6;7;6" dur="1s" repeatCount="indefinite" begin="0.6s"/></circle>
+    <rect x="998" y="124" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.6;1" dur="1s" repeatCount="indefinite" begin="0.6s"/></rect>
+    <rect x="1038" y="129" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.6;1" dur="1s" repeatCount="indefinite" begin="0.9s"/></rect>
 
-    <text x="60" y="428" fill="#7a88b0" font-size="10">Sugammadex reversal</text>
-    <text x="500" y="428" fill="#7a88b0" font-size="10" text-anchor="middle">✕ No</text>
-    <text x="800" y="428" fill="#7a88b0" font-size="10" text-anchor="middle">✓ For Roc/Vec only (rapid)</text>
+    <text x="917" y="183" fill="#7a88b0" font-size="10" text-anchor="middle">NMB races ACh to Nm</text>
 
-    <text x="60" y="446" fill="#7a88b0" font-size="10">Onset / Duration</text>
-    <text x="500" y="446" fill="#7a88b0" font-size="10" text-anchor="middle">30 s / 5-10 min</text>
-    <text x="800" y="446" fill="#7a88b0" font-size="10" text-anchor="middle">2-3 min / 30-60 min</text>
+    <!-- NMB blocks Nm — animated falling -->
+    <rect width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="y" values="165;220;220" keyTimes="0;0.7;1" dur="1.8s" repeatCount="indefinite"/><animate attributeName="x" values="855;855;855" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="y" values="165;220;220" keyTimes="0;0.7;1" dur="2s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="x" values="918;918;918" dur="2s" repeatCount="indefinite"/></rect>
+    <rect width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="y" values="165;220;220" keyTimes="0;0.7;1" dur="1.9s" repeatCount="indefinite" begin="1s"/><animate attributeName="x" values="978;978;978" dur="1.9s" repeatCount="indefinite"/></rect>
 
-    <text x="60" y="464" fill="#7a88b0" font-size="10">Adverse Effects</text>
-    <text x="500" y="464" fill="#7a88b0" font-size="10" text-anchor="middle">Hyperkalaemia · MH trigger · Myalgia</text>
-    <text x="800" y="464" fill="#7a88b0" font-size="10" text-anchor="middle">Histamine release (atracurium)</text>
+    <!-- Muscle membrane — blocked Nm -->
+    <rect x="764" y="225" width="310" height="100" rx="14" fill="url(#muscleGrad)" stroke="#10b981" stroke-width="1.5"/>
 
-    <text x="60" y="482" fill="#7a88b0" font-size="10">Atracurium special</text>
-    <text x="500" y="482" fill="#7a88b0" font-size="10" text-anchor="middle">—</text>
-    <text x="800" y="482" fill="#7a88b0" font-size="10" text-anchor="middle">Hofmann elimination — safe in liver/renal failure</text>
+    <g transform="translate(794,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"/>
+      <rect x="8" y="14" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/></rect>
+      <text x="14" y="55" fill="#10b981" font-size="9" text-anchor="middle" font-weight="700">Blocked</text>
+    </g>
+    <g transform="translate(854,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"/>
+      <rect x="8" y="14" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite" begin="0.3s"/></rect>
+      <text x="14" y="55" fill="#10b981" font-size="9" text-anchor="middle" font-weight="700">Blocked</text>
+    </g>
+    <g transform="translate(914,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"/>
+      <rect x="8" y="14" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite" begin="0.6s"/></rect>
+      <text x="14" y="55" fill="#10b981" font-size="9" text-anchor="middle" font-weight="700">Blocked</text>
+    </g>
+    <g transform="translate(974,235)">
+      <rect width="28" height="40" rx="5" fill="#4da6ff"/>
+      <rect x="8" y="14" width="12" height="12" rx="2" fill="url(#vecGrad)"><animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite" begin="0.9s"/></rect>
+      <text x="14" y="55" fill="#10b981" font-size="9" text-anchor="middle" font-weight="700">Blocked</text>
+    </g>
 
-    <!-- Bottom: Malignant Hyperthermia caption -->
-    <text x="500" y="540" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">⚠️ Malignant Hyperthermia — triggered by Succinylcholine + Halothane → ↑ Ca²⁺ from SR → Antidote: Dantrolene (RyR1 blocker)</text>
-    <text x="500" y="560" fill="#7a88b0" font-size="10" text-anchor="middle">Sux avoid in: Burns · Crush injury · Denervation · Hyperkalaemia · Open eye injury · MH history</text>
+    <!-- No ion flow indicator -->
+    <text x="917" y="305" fill="#10b981" font-size="10" text-anchor="middle">No Na⁺ entry — channels stay closed</text>
+
+    <!-- Flatline EMG -->
+    <line x1="774" y1="370" x2="1064" y2="370" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <text x="917" y="345" fill="#10b981" font-size="11" font-weight="800" text-anchor="middle">No fasciculation</text>
+    <text x="917" y="395" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">→ FLACCID PARALYSIS ✕</text>
+
+    <!-- ═══════ REVERSAL BOX ═══════ -->
+    <rect x="40" y="425" width="1020" height="100" rx="14" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="550" y="450" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">💉 REVERSAL OF NON-DEPOLARISING BLOCK</text>
+
+    <!-- Neostigmine -->
+    <text x="220" y="478" fill="#10b981" font-size="11" font-weight="700">Neostigmine + Glycopyrrolate</text>
+    <text x="220" y="496" fill="#7a88b0" font-size="10">Inhibits AChE → ↑ ACh → out-competes NMB</text>
+    <text x="220" y="512" fill="#7a88b0" font-size="10">Slower onset · Risk of bradycardia (use glyco)</text>
+    <circle cx="80" cy="490" r="11" fill="#fbbf24"><animate attributeName="r" values="11;13;11" dur="1.2s" repeatCount="indefinite"/></circle>
+    <text x="80" y="494" fill="#08112a" font-size="10" font-weight="800" text-anchor="middle">N</text>
+
+    <!-- Sugammadex -->
+    <text x="700" y="478" fill="#10b981" font-size="11" font-weight="700">Sugammadex (γ-cyclodextrin)</text>
+    <text x="700" y="496" fill="#7a88b0" font-size="10">Encapsulates Rocuronium/Vecuronium → rapid removal</text>
+    <text x="700" y="512" fill="#7a88b0" font-size="10">2-3 min onset · No bradycardia · Game changer for RSI</text>
+    <!-- Sugammadex (cyclic ring) -->
+    <g>
+      <circle cx="600" cy="490" r="15" fill="none" stroke="#10b981" stroke-width="2"><animate attributeName="r" values="15;17;15" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="600" cy="490" r="6" fill="url(#vecGrad)"/>
+      <text x="600" y="494" fill="#fff" font-size="9" font-weight="800" text-anchor="middle">R</text>
+    </g>
+
+    <!-- ═══════ MALIGNANT HYPERTHERMIA BOX ═══════ -->
+    <rect x="40" y="540" width="1020" height="170" rx="14" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="550" y="565" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">⚠️ MALIGNANT HYPERTHERMIA (MH) — Trigger by Succinylcholine + Volatile Anaesthetic</text>
+
+    <!-- Sarcoplasmic reticulum animated -->
+    <ellipse cx="200" cy="630" rx="80" ry="40" fill="#7c1d3a" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="200" y="615" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Sarcoplasmic Reticulum</text>
+    <text x="200" y="675" fill="#7a88b0" font-size="10" text-anchor="middle">RyR1 receptor (channel)</text>
+
+    <!-- Ca2+ leaking out -->
+    <circle cx="240" cy="620" r="5" fill="#7dd3fc"><animate attributeName="cy" values="620;590;620" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.3" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="625" r="5" fill="#7dd3fc"><animate attributeName="cy" values="625;590;625" dur="1.3s" repeatCount="indefinite" begin="0.3s"/><animate attributeName="opacity" values="1;0.3" dur="1.3s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <circle cx="280" cy="622" r="5" fill="#7dd3fc"><animate attributeName="cy" values="622;590;622" dur="1.4s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="opacity" values="1;0.3" dur="1.4s" repeatCount="indefinite" begin="0.6s"/></circle>
+    <text x="265" y="585" fill="#7dd3fc" font-size="10" font-weight="700">↑ Ca²⁺</text>
+
+    <!-- Dantrolene blocks RyR1 -->
+    <line x1="350" y1="630" x2="430" y2="630" stroke="#10b981" stroke-width="3" stroke-dasharray="6,4">
+      <animate attributeName="stroke-dashoffset" values="0;-10" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+    <text x="390" y="620" fill="#10b981" font-size="11" font-weight="800" text-anchor="middle">🚫 DANTROLENE</text>
+    <text x="390" y="645" fill="#7a88b0" font-size="10" text-anchor="middle">2.5 mg/kg IV → 10 mg/kg</text>
+
+    <!-- Pathophysiology arrow -->
+    <text x="600" y="595" fill="#fbbf24" font-size="11" font-weight="700">RyR1 mutation → unchecked Ca²⁺ → muscle rigidity</text>
+    <text x="600" y="615" fill="#fbbf24" font-size="11" font-weight="700">+ ↑ metabolism + heat + acidosis + hyperK⁺</text>
+    <text x="600" y="640" fill="#dc2626" font-size="11" font-weight="800">Hyperthermia &gt; 41 °C — mortality 70% if untreated</text>
+    <text x="600" y="665" fill="#7a88b0" font-size="10">Treat: STOP trigger + 100% O₂ + Dantrolene + cooling + treat K⁺</text>
+
+    <!-- Caution list -->
+    <text x="600" y="695" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">⚠️ Sux AVOID in: Burns · Crush · Denervation · Hyperkalaemia · MH history · Open eye injury · Duchenne MD</text>
   </svg>
   <div class="moa-legend">
     <span><span class="dot" style="background:#f5c518"></span>ACh</span>
-    <span><span class="dot" style="background:#4da6ff"></span>Normal Nm</span>
-    <span><span class="dot" style="background:#dc2626"></span>Sux / Desensitised</span>
+    <span><span class="dot" style="background:#4da6ff"></span>Nm Receptor (open)</span>
+    <span><span class="dot" style="background:#dc2626"></span>Succinylcholine</span>
     <span><span class="dot" style="background:#10b981"></span>Non-depolarising NMB</span>
+    <span><span class="dot" style="background:#7dd3fc"></span>Na⁺ / Ca²⁺</span>
   </div>
 </div>
 
-<!-- MOA 2: LOCAL ANAESTHETIC Na-CHANNEL BLOCKADE -->
+<!-- MOA 2: LA Na-CHANNEL BLOCK — LIVE ANIMATED -->
 <div class="moa-stage">
-  <div class="moa-title">💊 MOA 2 — Local Anaesthetic Action: Na⁺ Channel Blockade &amp; Fibre Block Order</div>
-  <svg class="moa-svg" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
-    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Local Anaesthetic — Voltage-Gated Na⁺ Channel Inhibition</text>
+  <div class="moa-title">💊 MOA 2 — Local Anaesthetic — Live Na⁺ Channel Blockade Animation</div>
+  <svg class="moa-svg" viewBox="0 0 1100 760" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="naIonGrad" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#0ea5e9"/></radialGradient>
+      <radialGradient id="laGrad" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fecaca"/><stop offset="100%" stop-color="#dc2626"/></radialGradient>
+      <linearGradient id="axonGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="50%" stop-color="#2d4f7d"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient>
+    </defs>
 
-    <!-- ═══ LEFT: Nerve Cell with Na+ Channel ═══ -->
-    <text x="200" y="60" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) Mechanism — Na⁺ Channel Block</text>
+    <text x="550" y="28" fill="#fbbf24" font-size="15" font-weight="800" text-anchor="middle">Local Anaesthetic — Voltage-Gated Na⁺ Channel Inhibition (Live View)</text>
+
+    <!-- ═══════ PANEL A: NORMAL Na+ FLOW ═══════ -->
+    <text x="275" y="58" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) NORMAL — Na⁺ flows in → AP propagates</text>
+
+    <!-- Extracellular fluid -->
+    <text x="80" y="80" fill="#7a88b0" font-size="10">Extracellular (Na⁺ high)</text>
+
+    <!-- Na+ ions outside (animated bouncing) -->
+    <circle cx="80" cy="100" r="6" fill="url(#naIonGrad)"><animate attributeName="cy" values="100;90;100" dur="1.4s" repeatCount="indefinite"/></circle>
+    <text x="80" y="104" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">Na⁺</text>
+    <circle cx="140" cy="105" r="6" fill="url(#naIonGrad)"><animate attributeName="cy" values="105;95;105" dur="1.3s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <text x="140" y="109" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">Na⁺</text>
+    <circle cx="200" cy="100" r="6" fill="url(#naIonGrad)"><animate attributeName="cy" values="100;90;100" dur="1.5s" repeatCount="indefinite" begin="0.5s"/></circle>
+    <text x="200" y="104" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">Na⁺</text>
+    <circle cx="380" cy="105" r="6" fill="url(#naIonGrad)"><animate attributeName="cy" values="105;95;105" dur="1.4s" repeatCount="indefinite" begin="0.7s"/></circle>
+    <text x="380" y="109" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">Na⁺</text>
+    <circle cx="440" cy="100" r="6" fill="url(#naIonGrad)"><animate attributeName="cy" values="100;90;100" dur="1.3s" repeatCount="indefinite" begin="0.9s"/></circle>
+    <text x="440" y="104" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">Na⁺</text>
+
+    <!-- Axon membrane with Na channels (open) -->
+    <rect x="30" y="130" width="490" height="80" rx="10" fill="url(#axonGrad)" stroke="#4da6ff" stroke-width="1.5"/>
+
+    <!-- Open Na+ channels showing ion flow -->
+    <g transform="translate(80,130)">
+      <rect width="40" height="80" fill="#0ea5e9" opacity="0.3"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+      <text x="20" y="50" fill="#fff" font-size="10" text-anchor="middle" font-weight="800">Open</text>
+      <!-- Na+ ion flowing through -->
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.2s" repeatCount="indefinite"/><animate attributeName="cx" values="20;20" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.2s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="cx" values="20;20" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.2s" repeatCount="indefinite" begin="0.8s"/><animate attributeName="cx" values="20;20" dur="1.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <g transform="translate(220,130)">
+      <rect width="40" height="80" fill="#0ea5e9" opacity="0.3"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+      <text x="20" y="50" fill="#fff" font-size="10" text-anchor="middle" font-weight="800">Open</text>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.3s" repeatCount="indefinite" begin="0.2s"/><animate attributeName="cx" values="20;20" dur="1.3s" repeatCount="indefinite"/></circle>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.3s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="cx" values="20;20" dur="1.3s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <g transform="translate(360,130)">
+      <rect width="40" height="80" fill="#0ea5e9" opacity="0.3"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+      <text x="20" y="50" fill="#fff" font-size="10" text-anchor="middle" font-weight="800">Open</text>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.2s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="cx" values="20;20" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;90" dur="1.2s" repeatCount="indefinite" begin="0.9s"/><animate attributeName="cx" values="20;20" dur="1.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Intracellular -->
+    <text x="80" y="240" fill="#7a88b0" font-size="10">Intracellular (depolarising)</text>
+
+    <!-- Action potential wave propagating -->
+    <text x="275" y="263" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Action Potential ⚡ — propagating along axon</text>
+    <path d="M40 285 L80 285 L90 265 L100 305 L110 285 L520 285" stroke="#fbbf24" stroke-width="2.5" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <text x="275" y="318" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">→ Pain / Sensation transmitted ✓</text>
+
+    <!-- ═══════ PANEL B: LA BLOCK Na+ CHANNEL ═══════ -->
+    <text x="825" y="58" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">B) LA BLOCK — Na⁺ channel inhibited</text>
+
+    <!-- LA molecules (unionised free-base form) - outside -->
+    <text x="600" y="80" fill="#7a88b0" font-size="10">Extracellular — LA crosses as free base</text>
+
+    <!-- LA arriving (free base form) -->
+    <circle r="8" fill="url(#laGrad)" opacity="0.6"><animate attributeName="cy" values="95;130;130" keyTimes="0;0.5;1" dur="2.5s" repeatCount="indefinite"/><animate attributeName="cx" values="620;620;620" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle r="8" fill="url(#laGrad)" opacity="0.6"><animate attributeName="cy" values="95;130;130" keyTimes="0;0.5;1" dur="2.5s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="cx" values="730;730;730" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle r="8" fill="url(#laGrad)" opacity="0.6"><animate attributeName="cy" values="95;130;130" keyTimes="0;0.5;1" dur="2.5s" repeatCount="indefinite" begin="1s"/><animate attributeName="cx" values="870;870;870" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle r="8" fill="url(#laGrad)" opacity="0.6"><animate attributeName="cy" values="95;130;130" keyTimes="0;0.5;1" dur="2.5s" repeatCount="indefinite" begin="1.5s"/><animate attributeName="cx" values="1010;1010;1010" dur="2.5s" repeatCount="indefinite"/></circle>
 
     <!-- Axon membrane -->
-    <rect x="40" y="80" width="320" height="100" rx="10" fill="#172246" stroke="#4da6ff" stroke-width="1.5"/>
-    <text x="200" y="100" fill="#4da6ff" font-size="11" font-weight="700" text-anchor="middle">Nerve Axon Membrane</text>
+    <rect x="560" y="130" width="510" height="80" rx="10" fill="url(#axonGrad)" stroke="#4da6ff" stroke-width="1.5"/>
 
-    <!-- Na+ channel structure -->
-    <rect x="170" y="115" width="60" height="55" fill="#0ea5e9" stroke="#fff" stroke-width="1.5"/>
-    <text x="200" y="140" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">Na⁺</text>
-    <text x="200" y="160" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">channel</text>
+    <!-- BLOCKED Na+ channels with LA inside (cation form) -->
+    <g transform="translate(610,130)">
+      <rect width="40" height="80" fill="#dc2626" opacity="0.25"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#dc2626" stroke-width="2"/>
+      <!-- LA+ cation inside -->
+      <circle cx="20" cy="40" r="9" fill="url(#laGrad)"><animate attributeName="r" values="9;11;9" dur="1.4s" repeatCount="indefinite"/></circle>
+      <text x="20" y="44" fill="#fff" font-size="8" text-anchor="middle" font-weight="800">LA⁺</text>
+      <text x="20" y="74" fill="#dc2626" font-size="9" text-anchor="middle" font-weight="800">BLOCKED</text>
+      <!-- Na+ trying to enter — bouncing back -->
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;15;-5" dur="1s" repeatCount="indefinite"/><animate attributeName="cx" values="20;20;20" dur="1s" repeatCount="indefinite"/></circle>
+    </g>
 
-    <!-- LA cation form binding inside -->
-    <circle cx="200" cy="142" r="9" fill="#dc2626" class="anim-bind"/>
-    <text x="195" y="146" fill="#fff" font-size="9" font-weight="800">LA⁺</text>
+    <g transform="translate(720,130)">
+      <rect width="40" height="80" fill="#dc2626" opacity="0.25"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#dc2626" stroke-width="2"/>
+      <circle cx="20" cy="40" r="9" fill="url(#laGrad)"><animate attributeName="r" values="9;11;9" dur="1.4s" repeatCount="indefinite" begin="0.4s"/></circle>
+      <text x="20" y="44" fill="#fff" font-size="8" text-anchor="middle" font-weight="800">LA⁺</text>
+      <text x="20" y="74" fill="#dc2626" font-size="9" text-anchor="middle" font-weight="800">BLOCKED</text>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;15;-5" dur="1s" repeatCount="indefinite" begin="0.2s"/><animate attributeName="cx" values="20;20;20" dur="1s" repeatCount="indefinite"/></circle>
+    </g>
 
-    <text x="200" y="200" fill="#7a88b0" font-size="10" text-anchor="middle">LA⁺ (ionised cation) blocks the inner channel pore</text>
-    <text x="200" y="215" fill="#7a88b0" font-size="10" text-anchor="middle">→ No depolarisation → No action potential</text>
+    <g transform="translate(860,130)">
+      <rect width="40" height="80" fill="#dc2626" opacity="0.25"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#dc2626" stroke-width="2"/>
+      <circle cx="20" cy="40" r="9" fill="url(#laGrad)"><animate attributeName="r" values="9;11;9" dur="1.4s" repeatCount="indefinite" begin="0.7s"/></circle>
+      <text x="20" y="44" fill="#fff" font-size="8" text-anchor="middle" font-weight="800">LA⁺</text>
+      <text x="20" y="74" fill="#dc2626" font-size="9" text-anchor="middle" font-weight="800">BLOCKED</text>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;15;-5" dur="1s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="cx" values="20;20;20" dur="1s" repeatCount="indefinite"/></circle>
+    </g>
 
-    <!-- pH dependence note -->
-    <rect x="40" y="240" width="320" height="120" rx="8" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
-    <text x="200" y="262" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">⚡ Key: LA = Weak Base</text>
-    <text x="60" y="284" fill="#7a88b0" font-size="10">• LA cross membrane in <strong>unionised</strong> form (lipid-soluble)</text>
-    <text x="60" y="302" fill="#7a88b0" font-size="10">• Bind channel in <strong>ionised</strong> form (LA⁺ cation) at acidic intracellular pH</text>
-    <text x="60" y="320" fill="#7a88b0" font-size="10">• <strong>Acidic tissue (abscess)</strong> → ↑ ionised form → can't cross → poor action</text>
-    <text x="60" y="338" fill="#7a88b0" font-size="10">• <strong>Adrenaline</strong> 1:200,000 → ↓ absorption → ↑ duration + ↓ toxicity</text>
-    <text x="60" y="355" fill="#dc2626" font-size="10" font-weight="700">⚠️ NEVER use adrenaline on digits/penis/nose/ear → end-artery necrosis</text>
+    <g transform="translate(1000,130)">
+      <rect width="40" height="80" fill="#dc2626" opacity="0.25"/>
+      <rect x="3" y="0" width="34" height="80" fill="none" stroke="#dc2626" stroke-width="2"/>
+      <circle cx="20" cy="40" r="9" fill="url(#laGrad)"><animate attributeName="r" values="9;11;9" dur="1.4s" repeatCount="indefinite" begin="1s"/></circle>
+      <text x="20" y="44" fill="#fff" font-size="8" text-anchor="middle" font-weight="800">LA⁺</text>
+      <text x="20" y="74" fill="#dc2626" font-size="9" text-anchor="middle" font-weight="800">BLOCKED</text>
+      <circle r="5" fill="url(#naIonGrad)"><animate attributeName="cy" values="-5;15;-5" dur="1s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="cx" values="20;20;20" dur="1s" repeatCount="indefinite"/></circle>
+    </g>
 
-    <!-- ═══ RIGHT: Fibre Block Order ═══ -->
-    <text x="700" y="60" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">B) Order of Fibre Blockade (small → large)</text>
+    <!-- Intracellular -->
+    <text x="600" y="240" fill="#7a88b0" font-size="10">Intracellular — LA ionises in low pH</text>
 
-    <!-- Fibre size bars -->
-    <rect x="430" y="90" width="540" height="270" rx="8" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
-    <text x="700" y="115" fill="#a855f7" font-size="11" font-weight="700" text-anchor="middle">Smaller / Less myelinated → Blocked FIRST</text>
+    <!-- Flatline — no AP -->
+    <text x="825" y="263" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">Action Potential BLOCKED</text>
+    <line x1="570" y1="285" x2="1070" y2="285" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,4">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <text x="825" y="318" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">→ Sensation ABOLISHED ✕</text>
 
-    <!-- Block sequence -->
-    <text x="460" y="145" fill="#fbbf24" font-size="11" font-weight="800">1. Pain (Aδ + C fibres)</text>
-    <rect x="700" y="135" width="80" height="15" fill="#10b981"/>
-    <text x="800" y="146" fill="#10b981" font-size="10" font-weight="700">Blocked FIRST</text>
+    <!-- ═══════ PH DEPENDENCE BOX ═══════ -->
+    <rect x="30" y="345" width="1040" height="100" rx="14" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="550" y="368" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">⚡ LA = Weak Base → pH-Dependent Action</text>
 
-    <text x="460" y="175" fill="#fbbf24" font-size="11" font-weight="800">2. Temperature</text>
-    <rect x="700" y="165" width="110" height="15" fill="#10b981"/>
-    <text x="830" y="176" fill="#10b981" font-size="10">↓</text>
+    <text x="50" y="392" fill="#10b981" font-size="11" font-weight="700">✓ Healthy tissue (pH 7.4):</text>
+    <text x="50" y="408" fill="#7a88b0" font-size="10">Equilibrium of free-base (lipid-soluble — crosses)</text>
+    <text x="50" y="424" fill="#7a88b0" font-size="10">+ ionised cation (binds Na⁺ channel inside)</text>
 
-    <text x="460" y="205" fill="#fbbf24" font-size="11" font-weight="800">3. Touch</text>
-    <rect x="700" y="195" width="140" height="15" fill="#4da6ff"/>
-    <text x="860" y="206" fill="#4da6ff" font-size="10">↓</text>
+    <text x="380" y="392" fill="#dc2626" font-size="11" font-weight="700">✕ Acidic tissue (abscess, pH ~6.5):</text>
+    <text x="380" y="408" fill="#7a88b0" font-size="10">Most LA is ionised → can't cross membrane</text>
+    <text x="380" y="424" fill="#7a88b0" font-size="10">→ Poor anaesthesia in infected tissue</text>
 
-    <text x="460" y="235" fill="#fbbf24" font-size="11" font-weight="800">4. Pressure / Proprioception</text>
-    <rect x="700" y="225" width="170" height="15" fill="#4da6ff"/>
-    <text x="890" y="236" fill="#4da6ff" font-size="10">↓</text>
+    <text x="730" y="392" fill="#10b981" font-size="11" font-weight="700">+ Adrenaline 1:200,000:</text>
+    <text x="730" y="408" fill="#7a88b0" font-size="10">↓ Systemic absorption · ↑ Duration · Safer</text>
+    <text x="730" y="424" fill="#dc2626" font-size="10" font-weight="700">⚠️ NEVER on digits / penis / nose / ear</text>
 
-    <text x="460" y="265" fill="#fbbf24" font-size="11" font-weight="800">5. Motor (large Aα)</text>
-    <rect x="700" y="255" width="220" height="15" fill="#dc2626"/>
-    <text x="930" y="266" fill="#dc2626" font-size="10" font-weight="700">Last</text>
+    <!-- ═══════ FIBRE BLOCK ORDER ANIMATED ═══════ -->
+    <rect x="30" y="465" width="1040" height="180" rx="14" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="550" y="490" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">🧬 Order of Fibre Blockade — Smaller fibres blocked FIRST</text>
 
-    <text x="700" y="305" fill="#7a88b0" font-size="10" text-anchor="middle">Recovery occurs in reverse order — motor returns first, pain last</text>
-    <text x="700" y="325" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Mnemonic: Pain → Temperature → Touch → Pressure → Motor</text>
-    <text x="700" y="345" fill="#fbbf24" font-size="10" text-anchor="middle">(or "P-T-T-P-M" / "Patient Tells Truth Properly: Motor last")</text>
+    <!-- Fibre 1: C (smallest) - blocked first -->
+    <text x="50" y="515" fill="#10b981" font-size="11" font-weight="700">1️⃣ Pain (Aδ + C)</text>
+    <line x1="200" y1="513" x2="280" y2="513" stroke="#10b981" stroke-width="2"/>
+    <rect x="290" y="505" width="700" height="16" rx="2" fill="#10b981" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="1000" y="517" fill="#10b981" font-size="11" font-weight="700">FIRST</text>
 
-    <!-- ═══ BOTTOM: Comparison Table ═══ -->
-    <rect x="40" y="385" width="930" height="180" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
-    <text x="500" y="410" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 LA Classification — Esters vs Amides</text>
+    <text x="50" y="540" fill="#10b981" font-size="11" font-weight="700">2️⃣ Temperature</text>
+    <line x1="200" y1="538" x2="270" y2="538" stroke="#10b981" stroke-width="3"/>
+    <rect x="290" y="530" width="640" height="16" rx="2" fill="#10b981" opacity="0.55">
+      <animate attributeName="opacity" values="0.55;0.8;0.55" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+    </rect>
 
-    <line x1="60" y1="420" x2="940" y2="420" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
-    <text x="180" y="440" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Feature</text>
-    <text x="500" y="440" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Esters (single "i")</text>
-    <text x="820" y="440" fill="#0ea5e9" font-size="11" font-weight="700" text-anchor="middle">Amides (two "i"s)</text>
-    <line x1="60" y1="448" x2="940" y2="448" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+    <text x="50" y="565" fill="#4da6ff" font-size="11" font-weight="700">3️⃣ Touch</text>
+    <line x1="200" y1="563" x2="260" y2="563" stroke="#4da6ff" stroke-width="4"/>
+    <rect x="290" y="555" width="540" height="16" rx="2" fill="#4da6ff" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
+    </rect>
 
-    <text x="60" y="468" fill="#7a88b0" font-size="10">Examples</text>
-    <text x="500" y="468" fill="#7a88b0" font-size="10" text-anchor="middle">Procaine · Cocaine · Tetracaine · Benzocaine</text>
-    <text x="820" y="468" fill="#7a88b0" font-size="10" text-anchor="middle">Lignocaine · Bupivacaine · Ropivacaine · Prilocaine</text>
+    <text x="50" y="590" fill="#4da6ff" font-size="11" font-weight="700">4️⃣ Pressure</text>
+    <line x1="200" y1="588" x2="250" y2="588" stroke="#4da6ff" stroke-width="5"/>
+    <rect x="290" y="580" width="420" height="16" rx="2" fill="#4da6ff" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="1.5s" repeatCount="indefinite" begin="0.9s"/>
+    </rect>
 
-    <text x="60" y="488" fill="#7a88b0" font-size="10">Metabolism</text>
-    <text x="500" y="488" fill="#7a88b0" font-size="10" text-anchor="middle">Plasma pseudocholinesterase</text>
-    <text x="820" y="488" fill="#7a88b0" font-size="10" text-anchor="middle">Hepatic CYP — slower</text>
+    <text x="50" y="615" fill="#dc2626" font-size="11" font-weight="700">5️⃣ Motor (Aα)</text>
+    <line x1="200" y1="613" x2="240" y2="613" stroke="#dc2626" stroke-width="7"/>
+    <rect x="290" y="605" width="260" height="16" rx="2" fill="#dc2626" opacity="0.35">
+      <animate attributeName="opacity" values="0.35;0.5;0.35" dur="1.5s" repeatCount="indefinite" begin="1.2s"/>
+    </rect>
+    <text x="570" y="617" fill="#dc2626" font-size="11" font-weight="700">LAST</text>
 
-    <text x="60" y="508" fill="#7a88b0" font-size="10">Allergy risk</text>
-    <text x="500" y="508" fill="#7a88b0" font-size="10" text-anchor="middle">Higher (PABA metabolite)</text>
-    <text x="820" y="508" fill="#7a88b0" font-size="10" text-anchor="middle">Lower</text>
+    <text x="550" y="635" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Mnemonic: Pain → Temperature → Touch → Pressure → Motor (recovery reverses)</text>
 
-    <text x="60" y="528" fill="#7a88b0" font-size="10">Cardiotoxicity</text>
-    <text x="500" y="528" fill="#7a88b0" font-size="10" text-anchor="middle">Low (except cocaine)</text>
-    <text x="820" y="528" fill="#7a88b0" font-size="10" text-anchor="middle">Bupivacaine WORST · Ropivacaine safer</text>
+    <!-- ═══════ TOXICITY (LAST) BOX ═══════ -->
+    <rect x="30" y="660" width="1040" height="90" rx="14" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="550" y="685" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">⚠️ LAST — Local Anaesthetic Systemic Toxicity</text>
 
-    <text x="60" y="548" fill="#7a88b0" font-size="10">Special</text>
-    <text x="500" y="548" fill="#7a88b0" font-size="10" text-anchor="middle">Prilocaine → methaemoglobinaemia</text>
-    <text x="820" y="548" fill="#7a88b0" font-size="10" text-anchor="middle">Lignocaine — also IV Class IB antiarrhythmic</text>
+    <text x="80" y="710" fill="#fbbf24" font-size="11" font-weight="700">CNS first:</text>
+    <text x="80" y="725" fill="#7a88b0" font-size="10">Perioral numbness · tinnitus · seizures → coma</text>
 
-    <!-- Bottom Toxicity caption -->
-    <text x="500" y="585" fill="#dc2626" font-size="11" font-weight="800" text-anchor="middle">⚠️ LAST (Local Anaesthetic Systemic Toxicity) — CNS seizures + CV collapse → Antidote: 20% Intralipid emulsion</text>
+    <text x="420" y="710" fill="#fbbf24" font-size="11" font-weight="700">CVS later (Bupivacaine WORST):</text>
+    <text x="420" y="725" fill="#7a88b0" font-size="10">Arrhythmia · hypotension · cardiac arrest</text>
+
+    <text x="780" y="710" fill="#10b981" font-size="11" font-weight="700">Antidote:</text>
+    <text x="780" y="725" fill="#10b981" font-size="10" font-weight="700">20% Intralipid 1.5 mL/kg + infusion</text>
+    <text x="780" y="740" fill="#7a88b0" font-size="9">+ BZD for seizures + supportive care</text>
+
+    <text x="80" y="744" fill="#7a88b0" font-size="9">Prilocaine / Benzocaine → methaemoglobinaemia → Methylene blue (avoid G6PD)</text>
   </svg>
   <div class="moa-legend">
     <span><span class="dot" style="background:#0ea5e9"></span>Na⁺ Channel</span>
+    <span><span class="dot" style="background:#bae6fd"></span>Na⁺ Ion</span>
     <span><span class="dot" style="background:#dc2626"></span>LA⁺ Cation (Bound)</span>
-    <span><span class="dot" style="background:#10b981"></span>Esters / Pain block</span>
-    <span><span class="dot" style="background:#a855f7"></span>Fibre size</span>
+    <span><span class="dot" style="background:#fbbf24"></span>Action Potential</span>
+    <span><span class="dot" style="background:#a855f7"></span>Fibre Block Order</span>
   </div>
 </div>`,
 
