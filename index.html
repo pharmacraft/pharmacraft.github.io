@@ -1761,6 +1761,516 @@ const MOA = {
   </div>
 </div>`,
 
+  cnsComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🧬 CNS Pharmacology — 5 Live Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize GABA-A modulation · Antiepileptic targets · Dopamine pathways (PD/Psychosis) · Monoamine sites (SSRI/SNRI/TCA/MAOI) · Opioid receptors &amp; GA mechanism.</p>
+</div>
+
+<!-- MOA 1: GABA-A RECEPTOR MODULATION -->
+<div class="moa-stage">
+  <div class="moa-title">💤 MOA 1 — GABA-A Receptor: Sedative-Hypnotic / Antianxiety / Antiepileptic Sites</div>
+  <svg class="moa-svg" viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="clIon" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#0ea5e9"/></radialGradient>
+      <radialGradient id="gabaMol" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fef3c7"/><stop offset="100%" stop-color="#f59e0b"/></radialGradient>
+    </defs>
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">GABA-A Receptor — Chloride Channel + Multiple Binding Sites</text>
+
+    <!-- GABA-A pentameric receptor -->
+    <ellipse cx="500" cy="270" rx="200" ry="120" fill="#172246" stroke="#4da6ff" stroke-width="2"/>
+    <text x="500" y="160" fill="#4da6ff" font-size="12" font-weight="700" text-anchor="middle">GABA-A Pentamer (α2β2γ)</text>
+
+    <!-- 5 binding sites with drug labels -->
+    <!-- GABA site -->
+    <circle cx="400" cy="220" r="14" fill="url(#gabaMol)"><animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="400" y="225" fill="#08112a" font-size="9" font-weight="800" text-anchor="middle">GABA</text>
+    <text x="320" y="200" fill="#fbbf24" font-size="10" font-weight="700">Native ligand</text>
+
+    <!-- BZD site -->
+    <rect x="475" y="180" width="50" height="22" rx="5" fill="#10b981"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></rect>
+    <text x="500" y="195" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">BZD site</text>
+    <text x="475" y="170" fill="#10b981" font-size="10">↑ frequency of opening</text>
+
+    <!-- Barbiturate site -->
+    <rect x="570" y="220" width="60" height="22" rx="5" fill="#dc2626"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" begin="0.3s"/></rect>
+    <text x="600" y="235" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">Barbiturate</text>
+    <text x="570" y="263" fill="#dc2626" font-size="10">↑ duration of opening</text>
+
+    <!-- Alcohol/Anesthetic site -->
+    <rect x="475" y="290" width="50" height="22" rx="5" fill="#a855f7"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" begin="0.6s"/></rect>
+    <text x="500" y="305" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">Alcohol</text>
+    <text x="475" y="328" fill="#a855f7" font-size="10">Direct potentiation</text>
+
+    <!-- Picrotoxin (antagonist) site (channel pore) -->
+    <rect x="490" y="245" width="20" height="20" fill="#fbbf24" stroke="#fff" stroke-width="1.5"/>
+    <text x="500" y="259" fill="#08112a" font-size="9" font-weight="800" text-anchor="middle">Cl⁻</text>
+
+    <!-- Cl- ions flowing through (when activated) -->
+    <circle r="6" fill="url(#clIon)"><animate attributeName="cy" values="170;370" dur="1.5s" repeatCount="indefinite"/><animate attributeName="cx" values="500;500" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#clIon)"><animate attributeName="cy" values="170;370" dur="1.5s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="cx" values="500;500" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="url(#clIon)"><animate attributeName="cy" values="170;370" dur="1.5s" repeatCount="indefinite" begin="1s"/><animate attributeName="cx" values="500;500" dur="1.5s" repeatCount="indefinite"/></circle>
+
+    <text x="500" y="390" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">→ Cl⁻ Influx → Hyperpolarisation → CNS Depression</text>
+
+    <!-- Left side drug list -->
+    <rect x="40" y="80" width="200" height="380" rx="10" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="140" y="105" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">🟢 BZD Site</text>
+    <text x="60" y="128" fill="#7a88b0" font-size="11">• Diazepam (long t½)</text>
+    <text x="60" y="146" fill="#7a88b0" font-size="11">• Lorazepam (short-int)</text>
+    <text x="60" y="164" fill="#7a88b0" font-size="11">• Alprazolam (panic)</text>
+    <text x="60" y="182" fill="#7a88b0" font-size="11">• Midazolam (anaesth)</text>
+    <text x="60" y="200" fill="#7a88b0" font-size="11">• Clonazepam (epil)</text>
+
+    <text x="140" y="225" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">⭐ Z-drugs (BZD site)</text>
+    <text x="60" y="245" fill="#7a88b0" font-size="11">• Zolpidem · Zaleplon</text>
+    <text x="60" y="262" fill="#7a88b0" font-size="11">• Zopiclone</text>
+
+    <text x="140" y="290" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">Flumazenil (antidote)</text>
+    <text x="60" y="307" fill="#7a88b0" font-size="11">Competitive BZD antagonist</text>
+
+    <text x="140" y="335" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">📚 Action Comparison</text>
+    <text x="60" y="355" fill="#7a88b0" font-size="10">BZD: ↑ frequency of opening</text>
+    <text x="60" y="370" fill="#7a88b0" font-size="10">Barbiturates: ↑ duration of opening</text>
+    <text x="60" y="385" fill="#7a88b0" font-size="10">High-dose Barb: opens Cl⁻ channel alone</text>
+    <text x="60" y="402" fill="#7a88b0" font-size="10">(no ceiling — higher mortality)</text>
+
+    <text x="140" y="430" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">⚠️ Withdrawal seizures</text>
+    <text x="60" y="447" fill="#7a88b0" font-size="10">Long-term BZD/EtOH → taper</text>
+
+    <!-- Right side drug list -->
+    <rect x="760" y="80" width="200" height="380" rx="10" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="860" y="105" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">🔴 Barbiturate Site</text>
+    <text x="780" y="128" fill="#7a88b0" font-size="11">• Phenobarbital (epil)</text>
+    <text x="780" y="146" fill="#7a88b0" font-size="11">• Thiopental (anaesth)</text>
+    <text x="780" y="164" fill="#7a88b0" font-size="11">• Pentobarbital</text>
+
+    <text x="860" y="195" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">🟣 Alcohol</text>
+    <text x="780" y="215" fill="#7a88b0" font-size="11">Direct potentiation</text>
+    <text x="780" y="232" fill="#7a88b0" font-size="11">+ NMDA antagonism</text>
+    <text x="780" y="249" fill="#7a88b0" font-size="11">Cross tolerance with BZD</text>
+
+    <text x="860" y="275" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">⭐ Newer Hypnotics</text>
+    <text x="780" y="295" fill="#7a88b0" font-size="11">Ramelteon (MT1/MT2 agonist)</text>
+    <text x="780" y="312" fill="#7a88b0" font-size="11">Suvorexant (orexin antag)</text>
+    <text x="780" y="329" fill="#7a88b0" font-size="11">Daridorexant (newer DORA)</text>
+
+    <text x="860" y="358" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">Antiepileptic Use</text>
+    <text x="780" y="376" fill="#7a88b0" font-size="11">Lorazepam IV — SE 1st line</text>
+    <text x="780" y="392" fill="#7a88b0" font-size="11">Diazepam IV — alternative</text>
+    <text x="780" y="408" fill="#7a88b0" font-size="11">Clonazepam — myoclonic</text>
+
+    <text x="860" y="435" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Antianxiety DOC</text>
+    <text x="780" y="450" fill="#7a88b0" font-size="10">Acute: BZD · Chronic: SSRI</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#f59e0b"></span>GABA</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>Cl⁻ Ion</span>
+    <span><span class="dot" style="background:#10b981"></span>BZD / Z-drugs</span>
+    <span><span class="dot" style="background:#dc2626"></span>Barbiturate</span>
+    <span><span class="dot" style="background:#a855f7"></span>Alcohol / Anaesthetic</span>
+  </div>
+</div>
+
+<!-- MOA 2: ANTIEPILEPTIC MECHANISM TARGETS -->
+<div class="moa-stage">
+  <div class="moa-title">⚡ MOA 2 — Antiepileptic Drug Targets — Na⁺ / Ca²⁺ / GABA / Glutamate / SV2A</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Neuronal Synapse — AED Mechanism Map</text>
+
+    <!-- Pre-synaptic neuron -->
+    <rect x="50" y="70" width="320" height="140" rx="14" fill="#172246" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="210" y="95" fill="#0ea5e9" font-size="12" font-weight="700" text-anchor="middle">Pre-synaptic Neuron</text>
+
+    <!-- Na+ channel (drug target) -->
+    <rect x="80" y="110" width="60" height="30" rx="4" fill="#dc2626"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></rect>
+    <text x="110" y="130" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">Na⁺</text>
+    <text x="110" y="158" fill="#dc2626" font-size="10" font-weight="700">🚫 Phenytoin</text>
+    <text x="110" y="172" fill="#dc2626" font-size="10" font-weight="700">Carbamazepine</text>
+    <text x="110" y="186" fill="#dc2626" font-size="10" font-weight="700">Lamotrigine · Lacosamide</text>
+
+    <!-- Ca++ channel -->
+    <rect x="180" y="110" width="60" height="30" rx="4" fill="#a855f7"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" begin="0.4s"/></rect>
+    <text x="210" y="130" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">Ca²⁺</text>
+    <text x="210" y="158" fill="#a855f7" font-size="10" font-weight="700">🚫 Ethosuximide</text>
+    <text x="210" y="172" fill="#a855f7" font-size="10" font-weight="700">(T-type — absence)</text>
+    <text x="210" y="186" fill="#a855f7" font-size="10" font-weight="700">Gabapentin · Pregabalin</text>
+
+    <!-- SV2A vesicle -->
+    <circle cx="310" cy="125" r="20" fill="#fbbf24"><animate attributeName="r" values="18;24;18" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="310" y="129" fill="#08112a" font-size="9" font-weight="800" text-anchor="middle">SV2A</text>
+    <text x="310" y="158" fill="#fbbf24" font-size="10" font-weight="700">🚫 Levetiracetam</text>
+    <text x="310" y="172" fill="#fbbf24" font-size="10" font-weight="700">Brivaracetam</text>
+    <text x="310" y="186" fill="#fbbf24" font-size="10" font-weight="700">(modulates NT release)</text>
+
+    <!-- Synaptic cleft - glutamate &amp; GABA vesicles releasing -->
+    <text x="500" y="240" fill="#7a88b0" font-size="11" text-anchor="middle">Synaptic Cleft</text>
+    <!-- Glutamate vesicles falling -->
+    <circle r="6" fill="#dc2626"><animate attributeName="cy" values="210;270" dur="1.5s" repeatCount="indefinite"/><animate attributeName="cx" values="200;200" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="6" fill="#dc2626"><animate attributeName="cy" values="210;270" dur="1.5s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="cx" values="240;240" dur="1.5s" repeatCount="indefinite"/></circle>
+    <!-- GABA vesicles -->
+    <circle r="6" fill="#10b981"><animate attributeName="cy" values="210;270" dur="1.5s" repeatCount="indefinite" begin="0.2s"/><animate attributeName="cx" values="100;100" dur="1.5s" repeatCount="indefinite"/></circle>
+
+    <!-- Post-synaptic neuron -->
+    <rect x="50" y="280" width="900" height="140" rx="14" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="500" y="305" fill="#a855f7" font-size="12" font-weight="700" text-anchor="middle">Post-synaptic Neuron — Receptors</text>
+
+    <!-- GABA-A receptor -->
+    <rect x="80" y="320" width="80" height="40" rx="6" fill="#10b981"/>
+    <text x="120" y="345" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">GABA-A</text>
+    <text x="80" y="380" fill="#10b981" font-size="10" font-weight="700">✓ Enhance GABA:</text>
+    <text x="80" y="395" fill="#10b981" font-size="10">Phenobarbital · BZD</text>
+    <text x="80" y="408" fill="#10b981" font-size="10">Vigabatrin · Tiagabine</text>
+
+    <!-- NMDA / AMPA -->
+    <rect x="280" y="320" width="90" height="40" rx="6" fill="#dc2626"/>
+    <text x="325" y="345" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">NMDA/AMPA</text>
+    <text x="280" y="380" fill="#dc2626" font-size="10" font-weight="700">🚫 Block glutamate:</text>
+    <text x="280" y="395" fill="#dc2626" font-size="10">Topiramate · Felbamate</text>
+    <text x="280" y="408" fill="#dc2626" font-size="10">Perampanel (AMPA)</text>
+
+    <!-- GABA Transaminase -->
+    <rect x="490" y="320" width="100" height="40" rx="6" fill="#0ea5e9"/>
+    <text x="540" y="345" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">GABA-T</text>
+    <text x="490" y="380" fill="#0ea5e9" font-size="10" font-weight="700">🚫 Vigabatrin</text>
+    <text x="490" y="395" fill="#0ea5e9" font-size="10">↑ GABA in synapse</text>
+    <text x="490" y="408" fill="#0ea5e9" font-size="10">(visual field defects ADR)</text>
+
+    <!-- Multi-mechanism -->
+    <rect x="640" y="320" width="120" height="40" rx="6" fill="#fbbf24"/>
+    <text x="700" y="345" fill="#08112a" font-size="11" font-weight="800" text-anchor="middle">Multi-mechanism</text>
+    <text x="640" y="380" fill="#fbbf24" font-size="10" font-weight="700">⭐ Valproate (broad):</text>
+    <text x="640" y="395" fill="#fbbf24" font-size="10">Na blocker + ↑GABA + Ca</text>
+    <text x="640" y="408" fill="#fbbf24" font-size="10">Topiramate (4-way)</text>
+
+    <!-- Newer -->
+    <rect x="810" y="320" width="120" height="40" rx="6" fill="#7c3aed"/>
+    <text x="870" y="345" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">Newer</text>
+    <text x="810" y="380" fill="#7c3aed" font-size="10" font-weight="700">Cenobamate</text>
+    <text x="810" y="395" fill="#7c3aed" font-size="10">Lacosamide (slow Na)</text>
+    <text x="810" y="408" fill="#7c3aed" font-size="10">Rufinamide · Brivaracetam</text>
+
+    <!-- DOC summary at bottom -->
+    <rect x="50" y="440" width="900" height="80" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="463" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 Seizure Type — DOC</text>
+    <text x="70" y="485" fill="#7a88b0" font-size="11">GTCS: Valproate / Lamotrigine / Levetiracetam</text>
+    <text x="450" y="485" fill="#7a88b0" font-size="11">Absence: Ethosuximide (pure) / Valproate (+GTCS)</text>
+    <text x="70" y="503" fill="#7a88b0" font-size="11">Focal: Carbamazepine / Lamotrigine / Levetiracetam</text>
+    <text x="450" y="503" fill="#7a88b0" font-size="11">Status Epilepticus: IV Lorazepam → Fosphenytoin → Phenobarb</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#dc2626"></span>Na/Glutamate</span>
+    <span><span class="dot" style="background:#a855f7"></span>Ca²⁺</span>
+    <span><span class="dot" style="background:#10b981"></span>GABA</span>
+    <span><span class="dot" style="background:#fbbf24"></span>SV2A/Multi</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>GABA-T</span>
+  </div>
+</div>
+
+<!-- MOA 3: DOPAMINE PATHWAYS — PARKINSON + ANTIPSYCHOTIC -->
+<div class="moa-stage">
+  <div class="moa-title">🧠 MOA 3 — Dopamine Pathways: Parkinson's (↑DA) vs Antipsychotics (↓D2 block)</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Dopaminergic Synapse — 4 Brain Pathways &amp; Drug Targets</text>
+
+    <!-- 4 dopamine pathways panel -->
+    <rect x="40" y="55" width="920" height="100" rx="12" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="78" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 4 Dopamine Pathways</text>
+    <text x="60" y="98" fill="#10b981" font-size="11" font-weight="700">1️⃣ Nigrostriatal:</text>
+    <text x="60" y="113" fill="#7a88b0" font-size="10">SN → Striatum · ↓ in PD · Block → EPS</text>
+    <text x="60" y="128" fill="#7a88b0" font-size="10">Target of antipsychotics → EPS side effect</text>
+
+    <text x="280" y="98" fill="#dc2626" font-size="11" font-weight="700">2️⃣ Mesolimbic:</text>
+    <text x="280" y="113" fill="#7a88b0" font-size="10">VTA → Limbic · ↑ in psychosis</text>
+    <text x="280" y="128" fill="#7a88b0" font-size="10">D2 block → ↓ positive symptoms</text>
+
+    <text x="510" y="98" fill="#a855f7" font-size="11" font-weight="700">3️⃣ Mesocortical:</text>
+    <text x="510" y="113" fill="#7a88b0" font-size="10">VTA → PFC · ↓ in neg. symp.</text>
+    <text x="510" y="128" fill="#7a88b0" font-size="10">Atypical: 5-HT2A block → ↑ DA here</text>
+
+    <text x="740" y="98" fill="#0ea5e9" font-size="11" font-weight="700">4️⃣ Tubero-infundibular:</text>
+    <text x="740" y="113" fill="#7a88b0" font-size="10">Hypothalamus → Pituitary</text>
+    <text x="740" y="128" fill="#7a88b0" font-size="10">DA inhibits prolactin → Block → ↑Prl</text>
+
+    <!-- ═══ LEFT: PARKINSON SIDE ═══ -->
+    <text x="270" y="180" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">A) PARKINSON DISEASE — ↑ DA strategies</text>
+
+    <!-- Pre-synaptic DA neuron -->
+    <rect x="50" y="200" width="200" height="100" rx="12" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="150" y="220" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">DA Neuron (degenerating)</text>
+
+    <!-- L-DOPA pathway -->
+    <text x="65" y="245" fill="#fbbf24" font-size="11" font-weight="700">L-DOPA → DA</text>
+    <text x="65" y="262" fill="#7a88b0" font-size="10">+ Carbidopa (peripheral)</text>
+    <text x="65" y="278" fill="#7a88b0" font-size="10">+ Entacapone (COMT)</text>
+    <text x="65" y="294" fill="#7a88b0" font-size="10">+ Selegiline (MAO-B)</text>
+
+    <!-- DA vesicles releasing (animated) -->
+    <circle r="7" fill="#fbbf24"><animate attributeName="cy" values="295;345" dur="1.5s" repeatCount="indefinite"/><animate attributeName="cx" values="150;150" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="7" fill="#fbbf24"><animate attributeName="cy" values="295;345" dur="1.5s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="cx" values="180;180" dur="1.5s" repeatCount="indefinite"/></circle>
+
+    <!-- Post-synaptic with D2 -->
+    <rect x="50" y="355" width="200" height="120" rx="12" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="150" y="380" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Striatal Neuron</text>
+    <rect x="80" y="395" width="40" height="20" fill="#a855f7"/>
+    <text x="100" y="409" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">D2</text>
+    <text x="65" y="440" fill="#fbbf24" font-size="11" font-weight="700">Direct DA agonists:</text>
+    <text x="65" y="456" fill="#7a88b0" font-size="10">Pramipexole · Ropinirole</text>
+    <text x="65" y="470" fill="#7a88b0" font-size="10">Bromocriptine · Apomorphine</text>
+
+    <!-- Amantadine arrow -->
+    <text x="65" y="495" fill="#0ea5e9" font-size="10" font-weight="700">+ Amantadine (NMDA antag)</text>
+
+    <!-- ═══ RIGHT: ANTIPSYCHOTIC SIDE ═══ -->
+    <text x="720" y="180" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">B) PSYCHOSIS — ↓ DA (D2 block)</text>
+
+    <!-- Pre-synaptic DA neuron with high activity -->
+    <rect x="600" y="200" width="200" height="100" rx="12" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="700" y="220" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">Hyperactive DA Neuron</text>
+    <text x="620" y="245" fill="#dc2626" font-size="11" font-weight="700">↑↑ DA release</text>
+    <text x="620" y="262" fill="#7a88b0" font-size="10">Mesolimbic excess</text>
+    <text x="620" y="278" fill="#7a88b0" font-size="10">→ Psychosis</text>
+
+    <!-- DA vesicles released (more) -->
+    <circle r="7" fill="#fbbf24"><animate attributeName="cy" values="295;345" dur="1s" repeatCount="indefinite"/><animate attributeName="cx" values="650;650" dur="1s" repeatCount="indefinite"/></circle>
+    <circle r="7" fill="#fbbf24"><animate attributeName="cy" values="295;345" dur="1s" repeatCount="indefinite" begin="0.3s"/><animate attributeName="cx" values="700;700" dur="1s" repeatCount="indefinite"/></circle>
+    <circle r="7" fill="#fbbf24"><animate attributeName="cy" values="295;345" dur="1s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="cx" values="750;750" dur="1s" repeatCount="indefinite"/></circle>
+
+    <!-- Post-synaptic with D2 blocked -->
+    <rect x="600" y="355" width="200" height="120" rx="12" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="700" y="380" fill="#dc2626" font-size="11" font-weight="700" text-anchor="middle">Limbic Neuron — Blocked D2</text>
+    <rect x="640" y="395" width="40" height="20" fill="#a855f7"/>
+    <rect x="641" y="400" width="38" height="10" fill="#dc2626"/>
+    <text x="660" y="409" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">D2🚫</text>
+
+    <text x="615" y="438" fill="#fbbf24" font-size="11" font-weight="700">Typical (high EPS):</text>
+    <text x="615" y="453" fill="#7a88b0" font-size="10">Haloperidol · Chlorpromazine</text>
+
+    <text x="615" y="473" fill="#fbbf24" font-size="11" font-weight="700">Atypical (low EPS):</text>
+    <text x="615" y="488" fill="#7a88b0" font-size="10">5HT2A + D2: Clozapine</text>
+    <text x="615" y="500" fill="#7a88b0" font-size="10">Olanzapine · Risperidone</text>
+    <text x="615" y="512" fill="#7a88b0" font-size="10">Aripiprazole (partial D2)</text>
+
+    <!-- Central comparison box -->
+    <rect x="290" y="320" width="290" height="160" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="435" y="343" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">⚠️ Side Effects</text>
+    <text x="310" y="365" fill="#dc2626" font-size="11" font-weight="700">Antipsychotic ADRs:</text>
+    <text x="310" y="380" fill="#7a88b0" font-size="10">EPS (acute dystonia, akathisia)</text>
+    <text x="310" y="394" fill="#7a88b0" font-size="10">Tardive dyskinesia (irreversible)</text>
+    <text x="310" y="408" fill="#7a88b0" font-size="10">NMS (rigidity, hyperthermia)</text>
+    <text x="310" y="422" fill="#7a88b0" font-size="10">Hyperprolactinaemia</text>
+    <text x="310" y="436" fill="#7a88b0" font-size="10">Metabolic (atypicals)</text>
+
+    <text x="310" y="458" fill="#10b981" font-size="11" font-weight="700">L-DOPA ADRs:</text>
+    <text x="310" y="473" fill="#7a88b0" font-size="10">On-off · Wearing-off · Dyskinesias</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#fbbf24"></span>Dopamine</span>
+    <span><span class="dot" style="background:#a855f7"></span>D2 Receptor</span>
+    <span><span class="dot" style="background:#10b981"></span>L-DOPA / Agonist</span>
+    <span><span class="dot" style="background:#dc2626"></span>D2 Blocker</span>
+  </div>
+</div>
+
+<!-- MOA 4: MONOAMINE - SSRI/SNRI/TCA/MAOI -->
+<div class="moa-stage">
+  <div class="moa-title">💊 MOA 4 — Monoamine Theory of Depression: SSRI / SNRI / TCA / MAOI Sites</div>
+  <svg class="moa-svg" viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Serotonin / Noradrenaline Synapse — Antidepressant Action Sites</text>
+
+    <!-- Pre-synaptic neuron -->
+    <rect x="50" y="70" width="900" height="160" rx="14" fill="#172246" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="500" y="95" fill="#0ea5e9" font-size="12" font-weight="700" text-anchor="middle">Pre-synaptic Neuron (5-HT &amp; NA)</text>
+
+    <!-- MAO inside pre-synaptic -->
+    <rect x="100" y="115" width="100" height="35" rx="6" fill="#a855f7"/>
+    <text x="150" y="138" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">MAO-A/B</text>
+    <text x="100" y="170" fill="#a855f7" font-size="10" font-weight="700">🚫 MAOI: Phenelzine</text>
+    <text x="100" y="185" fill="#a855f7" font-size="10" font-weight="700">Tranylcypromine · Moclobemide</text>
+    <text x="100" y="200" fill="#dc2626" font-size="10" font-weight="700">⚠️ Tyramine cheese reaction</text>
+
+    <!-- 5HT / NA vesicles (animated release) -->
+    <circle cx="300" cy="125" r="8" fill="#10b981"><animate attributeName="r" values="7;11;7" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="300" y="129" fill="#fff" font-size="9" font-weight="800" text-anchor="middle">5HT</text>
+    <circle cx="400" cy="125" r="8" fill="#fbbf24"><animate attributeName="r" values="7;11;7" dur="2s" repeatCount="indefinite" begin="0.5s"/></circle>
+    <text x="400" y="129" fill="#08112a" font-size="9" font-weight="800" text-anchor="middle">NA</text>
+
+    <!-- SERT &amp; NET (reuptake) -->
+    <rect x="500" y="110" width="50" height="40" rx="5" fill="#10b981"/>
+    <text x="525" y="135" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">SERT</text>
+    <text x="500" y="170" fill="#10b981" font-size="10" font-weight="700">🚫 SSRI:</text>
+    <text x="500" y="185" fill="#10b981" font-size="10">Fluoxetine · Sertraline</text>
+    <text x="500" y="200" fill="#10b981" font-size="10">Escitalopram · Paroxetine</text>
+
+    <rect x="600" y="110" width="50" height="40" rx="5" fill="#fbbf24"/>
+    <text x="625" y="135" fill="#08112a" font-size="11" font-weight="800" text-anchor="middle">NET</text>
+    <text x="600" y="170" fill="#fbbf24" font-size="10" font-weight="700">🚫 NRI:</text>
+    <text x="600" y="185" fill="#7a88b0" font-size="10">Atomoxetine · Reboxetine</text>
+
+    <text x="700" y="125" fill="#dc2626" font-size="11" font-weight="700">SNRI (both):</text>
+    <text x="700" y="142" fill="#7a88b0" font-size="10">Venlafaxine · Duloxetine</text>
+    <text x="700" y="157" fill="#7a88b0" font-size="10">Desvenlafaxine · Milnacipran</text>
+
+    <text x="700" y="180" fill="#a855f7" font-size="11" font-weight="700">TCA (NA &gt; 5HT):</text>
+    <text x="700" y="197" fill="#7a88b0" font-size="10">Amitriptyline · Imipramine</text>
+    <text x="700" y="213" fill="#7a88b0" font-size="10">Nortriptyline · Clomipramine</text>
+
+    <!-- Synaptic cleft (animated NT) -->
+    <text x="500" y="255" fill="#7a88b0" font-size="11" text-anchor="middle">Synaptic Cleft — ↑ NT levels</text>
+
+    <!-- NT bouncing in cleft -->
+    <circle r="5" fill="#10b981"><animate attributeName="cy" values="240;280;240" dur="1.2s" repeatCount="indefinite"/><animate attributeName="cx" values="350;350;350" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#10b981"><animate attributeName="cy" values="240;280;240" dur="1.2s" repeatCount="indefinite" begin="0.3s"/><animate attributeName="cx" values="450;450;450" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#fbbf24"><animate attributeName="cy" values="240;280;240" dur="1.2s" repeatCount="indefinite" begin="0.6s"/><animate attributeName="cx" values="550;550;550" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#fbbf24"><animate attributeName="cy" values="240;280;240" dur="1.2s" repeatCount="indefinite" begin="0.9s"/><animate attributeName="cx" values="650;650;650" dur="1.2s" repeatCount="indefinite"/></circle>
+
+    <!-- Post-synaptic neuron -->
+    <rect x="50" y="300" width="900" height="120" rx="14" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="500" y="325" fill="#a855f7" font-size="12" font-weight="700" text-anchor="middle">Post-synaptic Receptors — Therapeutic Effect after 2-4 weeks</text>
+
+    <!-- 5HT1A receptor -->
+    <rect x="120" y="345" width="50" height="40" fill="#10b981"/>
+    <text x="145" y="370" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">5HT1A</text>
+    <text x="120" y="398" fill="#10b981" font-size="10">Buspirone (anxiety)</text>
+
+    <!-- 5HT2 (atypical antidep) -->
+    <rect x="270" y="345" width="50" height="40" fill="#dc2626"/>
+    <text x="295" y="370" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">5HT2</text>
+    <text x="270" y="398" fill="#dc2626" font-size="10">Trazodone block</text>
+
+    <!-- α2 autoreceptor -->
+    <rect x="420" y="345" width="50" height="40" fill="#fbbf24"/>
+    <text x="445" y="370" fill="#08112a" font-size="10" font-weight="800" text-anchor="middle">α2</text>
+    <text x="420" y="398" fill="#fbbf24" font-size="10">Mirtazapine block</text>
+
+    <!-- Bupropion target (DA/NA) -->
+    <rect x="570" y="345" width="80" height="40" fill="#7c3aed"/>
+    <text x="610" y="370" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">DA/NA</text>
+    <text x="570" y="398" fill="#7c3aed" font-size="10">Bupropion (NDRI)</text>
+
+    <!-- Newer -->
+    <rect x="700" y="345" width="120" height="40" fill="#0ea5e9"/>
+    <text x="760" y="370" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">Newer (Multimodal)</text>
+    <text x="700" y="398" fill="#0ea5e9" font-size="10">Vortioxetine · Vilazodone</text>
+
+    <!-- Ketamine -->
+    <rect x="840" y="345" width="80" height="40" fill="#a44a3c"/>
+    <text x="880" y="370" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">NMDA</text>
+    <text x="840" y="398" fill="#a44a3c" font-size="10">Ketamine/Esketamine</text>
+
+    <text x="500" y="450" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">⚠️ Serotonin Syndrome: SSRI + MAOI/Tramadol/Linezolid/Triptan → Cyproheptadine</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#10b981"></span>5-HT (Serotonin)</span>
+    <span><span class="dot" style="background:#fbbf24"></span>NA (Noradrenaline)</span>
+    <span><span class="dot" style="background:#a855f7"></span>MAO</span>
+    <span><span class="dot" style="background:#dc2626"></span>SNRI / TCA</span>
+    <span><span class="dot" style="background:#7c3aed"></span>NDRI / Atypical</span>
+  </div>
+</div>
+
+<!-- MOA 5: OPIOID RECEPTORS + GA -->
+<div class="moa-stage">
+  <div class="moa-title">💉 MOA 5 — Opioid Receptors (μ/κ/δ) &amp; General Anaesthetic Mechanisms</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Opioid + GA Pharmacology Summary</text>
+
+    <!-- Top: Opioid receptors -->
+    <rect x="40" y="55" width="920" height="220" rx="12" fill="#172246" stroke="#a44a3c" stroke-width="1.5"/>
+    <text x="500" y="78" fill="#a44a3c" font-size="13" font-weight="800" text-anchor="middle">🩹 OPIOID RECEPTORS</text>
+
+    <!-- μ receptor -->
+    <rect x="80" y="100" width="240" height="160" rx="10" fill="#7c1d3a" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="200" y="123" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">μ (mu)</text>
+    <text x="200" y="142" fill="#7a88b0" font-size="10" text-anchor="middle">Analgesia · Euphoria</text>
+    <text x="200" y="156" fill="#7a88b0" font-size="10" text-anchor="middle">Respiratory depression</text>
+    <text x="200" y="170" fill="#7a88b0" font-size="10" text-anchor="middle">Miosis · Constipation</text>
+    <text x="200" y="184" fill="#7a88b0" font-size="10" text-anchor="middle">Dependence · Bradycardia</text>
+
+    <text x="200" y="208" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Agonists:</text>
+    <text x="200" y="223" fill="#7a88b0" font-size="10" text-anchor="middle">Morphine · Fentanyl</text>
+    <text x="200" y="237" fill="#7a88b0" font-size="10" text-anchor="middle">Methadone · Pethidine</text>
+    <text x="200" y="251" fill="#10b981" font-size="10" text-anchor="middle">Partial: Buprenorphine</text>
+
+    <!-- κ receptor -->
+    <rect x="380" y="100" width="240" height="160" rx="10" fill="#7c1d3a" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="500" y="123" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">κ (kappa)</text>
+    <text x="500" y="142" fill="#7a88b0" font-size="10" text-anchor="middle">Analgesia (spinal)</text>
+    <text x="500" y="156" fill="#7a88b0" font-size="10" text-anchor="middle">Sedation · Miosis</text>
+    <text x="500" y="170" fill="#7a88b0" font-size="10" text-anchor="middle">Dysphoria · Diuresis</text>
+
+    <text x="500" y="200" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Drugs:</text>
+    <text x="500" y="215" fill="#7a88b0" font-size="10" text-anchor="middle">Pentazocine (mixed)</text>
+    <text x="500" y="229" fill="#7a88b0" font-size="10" text-anchor="middle">Butorphanol · Nalbuphine</text>
+
+    <!-- δ receptor -->
+    <rect x="680" y="100" width="240" height="160" rx="10" fill="#7c1d3a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="800" y="123" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">δ (delta)</text>
+    <text x="800" y="142" fill="#7a88b0" font-size="10" text-anchor="middle">Analgesia (spinal)</text>
+    <text x="800" y="156" fill="#7a88b0" font-size="10" text-anchor="middle">Modulates μ effects</text>
+    <text x="800" y="170" fill="#7a88b0" font-size="10" text-anchor="middle">Mood effects</text>
+
+    <text x="800" y="200" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">Mostly research interest</text>
+
+    <text x="500" y="295" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">🚫 Antagonist (DOC for overdose): Naloxone (IV) · Naltrexone (oral)</text>
+
+    <!-- Bottom: General Anaesthetic -->
+    <rect x="40" y="310" width="920" height="220" rx="12" fill="#172246" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="500" y="333" fill="#0ea5e9" font-size="13" font-weight="800" text-anchor="middle">😴 GENERAL ANAESTHETIC MECHANISMS</text>
+
+    <!-- IV anaesthetics column -->
+    <rect x="60" y="355" width="280" height="160" rx="10" fill="#7c1d3a" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="200" y="378" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">IV Anaesthetics</text>
+
+    <text x="80" y="400" fill="#10b981" font-size="11" font-weight="700">Propofol (GABA-A enhance)</text>
+    <text x="80" y="415" fill="#7a88b0" font-size="10">↓ BP · Pain on inj · ICU sed</text>
+
+    <text x="80" y="437" fill="#10b981" font-size="11" font-weight="700">Thiopental (Barbiturate)</text>
+    <text x="80" y="452" fill="#7a88b0" font-size="10">Rapid onset · short duration</text>
+
+    <text x="80" y="473" fill="#10b981" font-size="11" font-weight="700">Etomidate (GABA-A)</text>
+    <text x="80" y="488" fill="#7a88b0" font-size="10">Stable BP · adrenal suppression</text>
+
+    <text x="80" y="508" fill="#dc2626" font-size="11" font-weight="700">Ketamine (NMDA antag)</text>
+
+    <!-- Inhalational column -->
+    <rect x="360" y="355" width="280" height="160" rx="10" fill="#7c1d3a" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="378" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">Inhalational</text>
+
+    <text x="380" y="400" fill="#10b981" font-size="11" font-weight="700">Sevoflurane (paeds DOC)</text>
+    <text x="380" y="415" fill="#7a88b0" font-size="10">Smooth · ↓ Compound A nephrotox</text>
+
+    <text x="380" y="437" fill="#10b981" font-size="11" font-weight="700">Desflurane (low blood-gas)</text>
+    <text x="380" y="452" fill="#7a88b0" font-size="10">Fastest induction · airway irritant</text>
+
+    <text x="380" y="473" fill="#10b981" font-size="11" font-weight="700">Isoflurane (older)</text>
+    <text x="380" y="488" fill="#7a88b0" font-size="10">Maintenance · stable CV</text>
+
+    <text x="380" y="508" fill="#0ea5e9" font-size="11" font-weight="700">N2O (analgesia · adjunct)</text>
+
+    <!-- Mechanism column -->
+    <rect x="660" y="355" width="280" height="160" rx="10" fill="#7c1d3a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="800" y="378" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">📋 Concepts</text>
+
+    <text x="680" y="400" fill="#fbbf24" font-size="11" font-weight="700">MAC = potency</text>
+    <text x="680" y="415" fill="#7a88b0" font-size="10">Lower MAC = more potent</text>
+
+    <text x="680" y="437" fill="#fbbf24" font-size="11" font-weight="700">Blood-gas coefficient</text>
+    <text x="680" y="452" fill="#7a88b0" font-size="10">Lower = faster on/off</text>
+    <text x="680" y="466" fill="#7a88b0" font-size="10">Des (0.42) &gt; Sevo &gt; Iso</text>
+
+    <text x="680" y="490" fill="#dc2626" font-size="11" font-weight="700">Halothane: hepatotoxic</text>
+    <text x="680" y="505" fill="#dc2626" font-size="11" font-weight="700">MH risk: Sux + Volatile</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#fbbf24"></span>μ Receptor</span>
+    <span><span class="dot" style="background:#a855f7"></span>κ Receptor</span>
+    <span><span class="dot" style="background:#10b981"></span>δ Receptor / GABA-A</span>
+    <span><span class="dot" style="background:#dc2626"></span>NMDA Antagonist</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>Inhalational</span>
+  </div>
+</div>`,
+
   giComplete: `
 <div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
   <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">🍽️ Gastrointestinal Pharmacology — 3 Live Animated Mechanisms</h4>
@@ -7651,77 +8161,1405 @@ e:"Acidic infected tissue → LA stays in ionised (cation) form → cannot cross
 });
 
 TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
-  classification:`<h4>General Anaesthetics</h4>
-<table><tr><th>Type</th><th>Examples</th></tr>
-<tr><td>Inhalational</td><td>Nitrous oxide, Halothane, Isoflurane, Sevoflurane, Desflurane</td></tr>
-<tr><td>IV induction</td><td>Thiopentone, Propofol, Etomidate, Ketamine, Midazolam, Fentanyl</td></tr></table>
-<h4>Sedative-Hypnotics</h4>
-<p><strong>Benzodiazepines</strong> – Diazepam, Lorazepam, Midazolam, Alprazolam, Clonazepam. <strong>Z-drugs</strong> – Zolpidem, Zaleplon, Zopiclone. <strong>Barbiturates</strong> – Thiopentone, Phenobarbital. <strong>Melatonin agonist</strong> – Ramelteon. <strong>Orexin antagonist</strong> – Suvorexant.</p>
-<h4>Antiepileptics</h4>
-<table><tr><th>Mechanism</th><th>Drugs</th></tr>
-<tr><td>Na⁺ channel block</td><td>Phenytoin, Carbamazepine, Oxcarbazepine, Lamotrigine, Lacosamide</td></tr>
-<tr><td>GABA enhancement</td><td>Phenobarbital, Diazepam, Clobazam, Vigabatrin, Tiagabine</td></tr>
-<tr><td>Ca²⁺ channel block</td><td>Ethosuximide (T-type), Gabapentin, Pregabalin</td></tr>
-<tr><td>Glutamate antagonist</td><td>Topiramate, Felbamate, Perampanel</td></tr>
-<tr><td>Multiple actions</td><td>Sodium Valproate, Levetiracetam, Topiramate</td></tr></table>
-<h4>Antiparkinsonian Drugs</h4>
-<p>Levodopa + Carbidopa, Dopamine agonists (Pramipexole, Ropinirole, Bromocriptine), MAO-B inhibitors (Selegiline, Rasagiline), COMT inhibitors (Entacapone, Tolcapone), Amantadine, Anticholinergics (Trihexyphenidyl, Benztropine).</p>
-<h4>Antipsychotics</h4>
-<p><strong>Typical</strong>: Chlorpromazine, Haloperidol, Fluphenazine, Thioridazine. <strong>Atypical</strong>: Clozapine, Olanzapine, Risperidone, Quetiapine, Aripiprazole, Ziprasidone.</p>
-<h4>Antidepressants</h4>
-<p>SSRIs (Fluoxetine, Sertraline, Escitalopram), SNRIs (Venlafaxine, Duloxetine), TCAs (Amitriptyline, Imipramine), MAOIs (Phenelzine, Tranylcypromine), Atypicals (Mirtazapine, Bupropion, Trazodone).</p>
-<h4>Opioid Analgesics</h4>
-<p>Strong: Morphine, Fentanyl, Methadone, Pethidine. Weak: Codeine, Tramadol. Antagonist: Naloxone, Naltrexone.</p>`,
-  moa:MOA.cns,
-  pkpd:`<h4>Inhalational Anaesthetics</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Sedative Hypnotics",panelId:"sedhyp"},
+    {n:2,label:"Antiepileptic Drugs",panelId:"aed"},
+    {n:3,label:"Antiparkinsonian Drugs",panelId:"apd"},
+    {n:4,label:"Antidepressant Drugs",panelId:"add"},
+    {n:5,label:"Antipsychotic Drugs",panelId:"apsy"},
+    {n:6,label:"Antimanic Drugs",panelId:"amanic"},
+    {n:7,label:"Antianxiety Drugs",panelId:"aax"},
+    {n:8,label:"Opioids",panelId:"opi"},
+    {n:9,label:"Alcohols",panelId:"alc"},
+    {n:10,label:"General Anaesthetics",panelId:"ga"}
+  ],
+  classification:`<h4>Central Nervous System (CNS) Pharmacology — Overview</h4>
+<p>CNS drugs target the brain &amp; spinal cord to relieve sleep, anxiety, epilepsy, mood disorders, psychosis, pain, addiction, and to produce general anaesthesia. They act on receptors (GABA-A, Dopamine, Serotonin, μ-Opioid, NMDA) and on ion channels (Na⁺, Ca²⁺, K⁺) — often with narrow therapeutic windows and complex side-effect profiles.</p>
+
+<table>
+<tr><th>Clinical Domain</th><th>Major Drug Categories</th><th>Key Targets</th></tr>
+<tr><td><strong>Sedative-Hypnotic / Antianxiety</strong></td><td>BZD, Z-drugs, Barbiturates, Melatonin agonist, Orexin antagonists, Buspirone</td><td>GABA-A · MT1/MT2 · OX1/OX2</td></tr>
+<tr><td><strong>Antiepileptic</strong></td><td>Na⁺ blockers, Ca²⁺ blockers, GABA enhancers, Glutamate antagonists, SV2A modulators</td><td>Voltage-gated Na/Ca · GABA-A · NMDA/AMPA · SV2A</td></tr>
+<tr><td><strong>Antiparkinsonian</strong></td><td>L-DOPA, DA agonists, MAO-B/COMT inhibitors, Amantadine, Anticholinergics</td><td>↑ DA in nigrostriatum</td></tr>
+<tr><td><strong>Antidepressant</strong></td><td>SSRI · SNRI · TCA · MAOI · Atypicals · Ketamine</td><td>SERT · NET · MAO · 5HT/NA receptors · NMDA</td></tr>
+<tr><td><strong>Antipsychotic</strong></td><td>Typical (high EPS) · Atypical (5HT2A+D2)</td><td>D2 (mesolimbic) · 5-HT2A · Multireceptor</td></tr>
+<tr><td><strong>Antimanic / Mood Stabilisers</strong></td><td>Lithium · Valproate · Carbamazepine · Lamotrigine · Atypical Antipsychotics</td><td>IP3/Na/Ca/Glutamate</td></tr>
+<tr><td><strong>Opioids</strong></td><td>Strong · Weak · Partial · Antagonists · PAMORAs</td><td>μ · κ · δ receptors</td></tr>
+<tr><td><strong>Alcohols</strong></td><td>Ethanol — also Disulfiram, Naltrexone, Acamprosate, Methanol/Ethylene glycol poisoning</td><td>GABA-A · NMDA · ADH/ALDH</td></tr>
+<tr><td><strong>General Anaesthetics</strong></td><td>IV (Propofol, Thiopental, Etomidate, Ketamine) · Inhalational (Sevoflurane, Desflurane, Isoflurane, N₂O)</td><td>GABA-A · NMDA · MAC concept</td></tr>
+</table>
+
+<p style="margin-top:18px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>Sub-topic-specific content (classification, MOA, ADRs, mnemonics, NEET PG points) — please use the 10-button Sub-Topic Navigator above.</em></p>`,
+  moa:MOA.cnsComplete,
+  extraPanels:[
+    /* ═══════════ 1. SEDATIVE HYPNOTICS ═══════════ */
+    {id:"sedhyp",content:`<span id="sub-sedhyp-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💤 1️⃣ SEDATIVE HYPNOTICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that produce <em>sedation</em> (↓ activity, calmness) and <em>hypnosis</em> (induce drowsiness &amp; promote sleep). At higher doses produce anaesthesia &amp; coma. Most act by enhancing GABA-A receptor function.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Key Feature</th></tr>
+<tr><td><strong>Benzodiazepines (BZDs)</strong></td><td>Long: Diazepam, Clonazepam, Flurazepam · Intermediate: Lorazepam, Alprazolam, Temazepam · Short: Midazolam, Triazolam, Oxazepam</td><td>↑ Frequency of GABA-A Cl⁻ channel opening; CEILING EFFECT</td></tr>
+<tr><td><strong>Z-drugs (Non-BZD BZ-receptor)</strong></td><td>Zolpidem, Zaleplon, Zopiclone, Eszopiclone</td><td>α1 BZ subunit selective → ↓ tolerance/dependence</td></tr>
+<tr><td><strong>Barbiturates</strong></td><td>Long: Phenobarbital · Short: Pentobarbital, Secobarbital · Ultra-short: Thiopental, Methohexital</td><td>↑ Duration of GABA opening; NO ceiling → high-dose opens Cl⁻ directly</td></tr>
+<tr><td><strong>Melatonin Receptor Agonists</strong></td><td>Ramelteon, Tasimelteon, Agomelatine</td><td>MT1/MT2 agonist; no abuse potential</td></tr>
+<tr><td><strong>Orexin Antagonists (DORAs)</strong></td><td>Suvorexant, Lemborexant, Daridorexant</td><td>Block OX1/OX2 → ↓ wakefulness</td></tr>
+<tr><td><strong>Antihistamine</strong></td><td>Diphenhydramine, Doxylamine</td><td>OTC; H1 + anticholinergic</td></tr>
+<tr><td><strong>Other</strong></td><td>Chloral hydrate, Buspirone (anxiolytic)</td><td>—</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ MOA &amp; Pharmacokinetics</h4>
 <ul>
-<li><strong>MAC</strong> – min alveolar conc at which 50% don&rsquo;t move on incision (potency indicator)</li>
-<li><strong>Blood-gas coefficient</strong> – low = faster induction/recovery (desflurane 0.42)</li>
-<li>Halothane – hepatitis; sevoflurane – preferred for paediatric induction</li>
+<li><strong>BZDs:</strong> Bind α/γ interface of GABA-A → ↑ frequency of Cl⁻ channel opening (needs endogenous GABA) → CNS depression. Ceiling effect → safer than barbiturates.</li>
+<li><strong>Barbiturates:</strong> Bind β subunit → ↑ duration of Cl⁻ opening; at high dose open channel directly without GABA → fatal respiratory depression.</li>
+<li><strong>Z-drugs:</strong> Selectively bind α1 subunit (sedative) → hypnotic without significant anxiolytic/anticonvulsant effect.</li>
+<li><strong>Ramelteon:</strong> MT1/MT2 agonist at SCN → resets sleep-wake cycle; no abuse.</li>
+<li><strong>Suvorexant:</strong> Blocks both orexin receptors → reduces "alertness drive" → promotes sleep.</li>
+<li><strong>PK pearls:</strong> Lorazepam, Oxazepam, Temazepam (LOT) — glucuronidation only → safe in liver disease. Long-acting Diazepam has active metabolites → accumulates in elderly.</li>
 </ul>
-<h4>Levodopa</h4>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice</th></tr>
+<tr><td>Acute anxiety</td><td>BZD (Alprazolam, Lorazepam)</td></tr>
+<tr><td>Insomnia (short-term)</td><td>Z-drug (Zolpidem) or Ramelteon</td></tr>
+<tr><td>Status epilepticus (1st-line)</td><td>IV Lorazepam</td></tr>
+<tr><td>Pre-anaesthetic medication</td><td>Midazolam</td></tr>
+<tr><td>Alcohol withdrawal</td><td>Long-acting BZD (Chlordiazepoxide, Diazepam)</td></tr>
+<tr><td>Conscious sedation (endoscopy)</td><td>Midazolam ± Fentanyl</td></tr>
+<tr><td>Muscle spasm</td><td>Diazepam</td></tr>
+<tr><td>Chronic insomnia (elderly)</td><td>Suvorexant (less fall risk)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs &amp; Toxicity</h4>
 <ul>
-<li>Crosses BBB → converted to dopamine in nigrostriatal neurons</li>
-<li>Combined with carbidopa (peripheral DDC inhibitor) → ↓ dose, ↓ peripheral effects</li>
-<li>Long-term ADRs – on-off, wearing-off, dyskinesias</li>
+<li><strong>BZD:</strong> Drowsiness, ataxia, anterograde amnesia, paradoxical disinhibition (elderly &amp; children), respiratory depression (esp. with opioids/alcohol), dependence, withdrawal seizures.</li>
+<li><strong>BZD overdose antidote:</strong> <em>Flumazenil</em> (caution — may precipitate withdrawal seizures in chronic users).</li>
+<li><strong>Z-drugs:</strong> Sleepwalking, sleep-driving (FDA Black Box 2019), complex sleep behaviours, next-day drowsiness.</li>
+<li><strong>Barbiturates:</strong> Severe respiratory depression in overdose (no ceiling), induce CYP450 → many drug interactions, porphyria attack.</li>
+<li><strong>Withdrawal:</strong> Insomnia, anxiety, tremor, seizures (Long BZD = milder/delayed; Short BZD/Alprazolam = severe).</li>
 </ul>
-<h4>Opioid Receptors</h4>
-<table><tr><th>Receptor</th><th>Effects</th></tr>
-<tr><td>μ (mu)</td><td>Analgesia, euphoria, respiratory depression, constipation, miosis, dependence</td></tr>
-<tr><td>κ (kappa)</td><td>Analgesia (spinal), sedation, dysphoria, miosis</td></tr>
-<tr><td>δ (delta)</td><td>Analgesia, modulate μ effects</td></tr></table>`,
-  adr:`<h4>Phenytoin ADRs</h4>
-<p>Gingival hyperplasia, hirsutism, megaloblastic anaemia (↓ folate), osteomalacia, ataxia, nystagmus, SJS, cerebellar atrophy, fetal hydantoin syndrome.</p>
-<h4>Valproate</h4>
-<p>Hepatotoxicity, pancreatitis, weight gain, alopecia, tremor, neural tube defects (avoid in pregnancy), thrombocytopenia.</p>
-<h4>Antipsychotics – EPS Spectrum</h4>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Cautions</h4>
 <ul>
-<li>Acute dystonia (hours) – Treat: IM benztropine / diphenhydramine</li>
-<li>Akathisia (days)</li>
-<li>Parkinsonism (weeks)</li>
-<li>Tardive dyskinesia (months–years) – usually irreversible</li>
-<li>NMS – muscle rigidity, hyperthermia, autonomic instability → Dantrolene + bromocriptine</li>
+<li>Severe respiratory disease (sleep apnoea, COPD with CO₂ retention).</li>
+<li>Pregnancy 1st trimester (cleft palate risk with diazepam) &amp; lactation.</li>
+<li>Active alcohol/opioid use (synergistic respiratory depression).</li>
+<li>Myasthenia gravis (BZD relax muscles).</li>
+<li>Acute angle-closure glaucoma (BZD).</li>
 </ul>
-<h4>Serotonin Syndrome</h4>
-<p>Triad – autonomic instability, neuromuscular excitability, altered mental status. Cause – SSRI + MAOI / Tramadol / Linezolid / Triptans. Treat – stop trigger, cyproheptadine.</p>`,
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 28-y-old presents in status epilepticus. First-line drug?<br><strong>Answer:</strong> <em>IV Lorazepam 4 mg</em> (longer CNS duration than diazepam). If seizures persist → Fosphenytoin/Phenytoin → Phenobarbital → general anaesthesia (Midazolam/Propofol infusion).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Alprazolam 4 mg/day × 6 months wants to stop. Best approach?<br><strong>Answer:</strong> <em>Gradual taper</em> over 4-8 weeks; consider switching to long-acting Diazepam, then taper. Abrupt withdrawal → severe rebound anxiety, seizures.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>BZD ceiling effect</strong> on respiratory depression → safer than barbiturates in overdose</li>
+<li><strong>"LOT" rule</strong> — Lorazepam, Oxazepam, Temazepam: only glucuronidation → safe in liver disease &amp; elderly</li>
+<li><strong>Midazolam = anaesthetic BZD</strong> (water-soluble at acidic pH, lipid-soluble at body pH)</li>
+<li><strong>Flumazenil = BZD overdose antidote</strong> (caution — may precipitate seizures in chronic users)</li>
+<li><strong>Z-drugs (FDA Black Box 2019)</strong> — complex sleep behaviours (sleep-driving, eating, sex)</li>
+<li><strong>Barbiturates = potent CYP450 inducers</strong> → many drug interactions (warfarin, OCP, AEDs)</li>
+<li><strong>Alcohol withdrawal DOC</strong> = long-acting BZD (Chlordiazepoxide, Diazepam) for prophylaxis of DT &amp; seizures</li>
+<li><strong>Ramelteon</strong> = melatonin agonist; useful in elderly; no abuse/withdrawal</li>
+<li><strong>Suvorexant/Lemborexant</strong> — orexin antagonists; useful for chronic insomnia; daytime sleepiness ADR</li>
+<li><strong>Diazepam IM avoid</strong> — erratic absorption; use IV or rectal for emergencies</li>
+<li><strong>Pregnancy</strong> — BZD 1st trimester → cleft palate risk; lactation → lethargy in infant</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Daridorexant</strong> — FDA 2022; newer DORA with shorter half-life &amp; less next-day drowsiness</li>
+<li><strong>Remimazolam</strong> — ultra-short-acting BZD for procedural sedation (esterase metabolism, no CYP)</li>
+<li><strong>Lemborexant</strong> — non-CYP3A4 DORA; safer in polypharmacy</li>
+<li><strong>Z-drug FDA boxed warning 2019</strong> — sleep-related complex behaviours</li>
+<li><strong>Brexanolone</strong> — neuroactive steroid for postpartum depression (modulates GABA-A)</li>
+<li><strong>Zuranolone</strong> — first oral neurosteroid for postpartum depression (FDA 2023)</li>
+<li><strong>Cognitive Behavioural Therapy for Insomnia (CBT-I)</strong> emerging as first-line per ACP 2024 guidelines</li>
+<li><strong>Long-term BZD use</strong> linked to cognitive decline (controversial — Bredesen, Lancet 2023 review)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for status epilepticus 1st line — <em>IV Lorazepam</em></li>
+<li><strong>INI-CET 2023</strong>: BZD overdose antidote — <em>Flumazenil</em></li>
+<li><strong>NEET PG 2024</strong>: BZDs metabolised by glucuronidation only (LOT) — <em>Lorazepam, Oxazepam, Temazepam</em></li>
+<li><strong>INI-CET 2024</strong>: Mechanism of BZD — <em>↑ Frequency of GABA-A Cl⁻ channel opening</em></li>
+<li><strong>NEET PG 2024</strong>: Z-drugs selective for which BZ receptor subunit — <em>α1 (sedative)</em></li>
+<li><strong>FMGE 2024</strong>: Orexin receptor antagonist for insomnia — <em>Suvorexant</em></li>
+<li><strong>NEET PG 2025</strong>: Ultra-short-acting BZD with esterase metabolism — <em>Remimazolam</em></li>
+<li><strong>INI-CET 2024</strong>: Drug for alcohol withdrawal prophylaxis — <em>Chlordiazepoxide / Diazepam</em></li>
+<li><strong>NEET PG 2023</strong>: Melatonin receptor agonist — <em>Ramelteon</em></li>
+<li><strong>NEET PG 2025</strong>: First oral neurosteroid for postpartum depression — <em>Zuranolone</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Sedative-Hypnotics — BZDs, Z-drugs, Barbiturates, Orexin Antagonists</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Sedative Hypnotics — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 2. ANTIEPILEPTIC DRUGS ═══════════ */
+    {id:"aed",content:`<span id="sub-aed-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚡ 2️⃣ ANTIEPILEPTIC DRUGS (AEDs)</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that suppress abnormal neuronal hyperexcitability in epilepsy — by ↓ Na⁺/Ca²⁺ influx, ↑ GABA inhibition, ↓ glutamate excitation, or modulating synaptic vesicle release.</p>
+
+<h4>📋 Mechanism-Based Classification</h4>
+<table>
+<tr><th>Mechanism</th><th>Drugs</th><th>Key Use</th></tr>
+<tr><td><strong>Na⁺ channel block</strong></td><td>Phenytoin, Carbamazepine, Oxcarbazepine, Lamotrigine, Lacosamide, Eslicarbazepine, Zonisamide</td><td>Focal · GTCS</td></tr>
+<tr><td><strong>Ca²⁺ channel block</strong></td><td>Ethosuximide (T-type), Gabapentin, Pregabalin (α2δ), Zonisamide</td><td>Absence · Neuropathic pain</td></tr>
+<tr><td><strong>GABA enhancement</strong></td><td>Phenobarbital, BZD (Diazepam, Lorazepam, Clobazam), Vigabatrin (GABA-T inhibitor), Tiagabine (GAT-1)</td><td>SE · Refractory</td></tr>
+<tr><td><strong>Glutamate antagonist</strong></td><td>Topiramate, Felbamate, Perampanel (AMPA antag)</td><td>Refractory focal</td></tr>
+<tr><td><strong>SV2A modulator</strong></td><td>Levetiracetam, Brivaracetam</td><td>Broad spectrum, safe pregnancy</td></tr>
+<tr><td><strong>Multi-mechanism</strong></td><td>Valproate (Na + GABA-T + Ca), Topiramate (Na + GABA + AMPA + CA-inhibitor)</td><td>Broad spectrum</td></tr>
+<tr><td><strong>Newer 2020+</strong></td><td>Cenobamate, Cannabidiol, Fenfluramine, Ganaxolone</td><td>Resistant / Dravet / LGS</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Drug of Choice by Seizure Type</h4>
+<table>
+<tr><th>Seizure</th><th>DOC</th><th>Alternative</th></tr>
+<tr><td>Generalised Tonic-Clonic (GTCS)</td><td>Valproate · Lamotrigine · Levetiracetam</td><td>Topiramate · Phenytoin</td></tr>
+<tr><td>Absence (pure)</td><td>Ethosuximide</td><td>Valproate (if GTCS coexist)</td></tr>
+<tr><td>Myoclonic</td><td>Valproate · Levetiracetam</td><td>Clonazepam</td></tr>
+<tr><td>Atonic / Lennox-Gastaut</td><td>Valproate + Lamotrigine</td><td>Cannabidiol · Felbamate</td></tr>
+<tr><td>Focal (partial)</td><td>Carbamazepine · Lamotrigine · Levetiracetam</td><td>Oxcarbazepine · Lacosamide</td></tr>
+<tr><td>Status epilepticus (1st)</td><td>IV Lorazepam (or Diazepam)</td><td>—</td></tr>
+<tr><td>Status (2nd line)</td><td>IV Fosphenytoin / Phenytoin</td><td>Valproate · Levetiracetam IV</td></tr>
+<tr><td>Status (refractory)</td><td>Midazolam infusion · Propofol · Phenobarbital</td><td>—</td></tr>
+<tr><td>Infantile spasms</td><td>ACTH · Vigabatrin</td><td>—</td></tr>
+<tr><td>Neuropathic pain</td><td>Gabapentin · Pregabalin · Carbamazepine (TN)</td><td>—</td></tr>
+<tr><td>Trigeminal neuralgia</td><td>Carbamazepine</td><td>Oxcarbazepine</td></tr>
+<tr><td>AEDs SAFEST in pregnancy</td><td>Levetiracetam · Lamotrigine</td><td>(AVOID Valproate — NTD)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Major ADRs (high-yield)</h4>
+<ul>
+<li><strong>Phenytoin (PHENYTOIN):</strong> P450 inducer, Hirsutism, Enlarged gums, Nystagmus, Yellow-brown skin, Teratogenic (foetal hydantoin), Osteomalacia, Interference with folate, Neuropathies. Zero-order kinetics at therapeutic doses.</li>
+<li><strong>Carbamazepine:</strong> Diplopia, ataxia, SIADH/hyponatraemia, agranulocytosis, aplastic anaemia, SJS/TEN (HLA-B*1502 — Asians screen), autoinduction.</li>
+<li><strong>Valproate:</strong> Hepatotoxicity, pancreatitis, weight gain, alopecia, tremor, NEURAL TUBE DEFECTS (avoid pregnancy), thrombocytopenia, hyperammonaemia.</li>
+<li><strong>Lamotrigine:</strong> SJS/TEN (esp. with valproate co-administration or rapid titration) — start LOW &amp; go SLOW.</li>
+<li><strong>Topiramate:</strong> Weight loss, paraesthesia, renal stones, glaucoma, cognitive dysfunction ("Dopamax"), metabolic acidosis.</li>
+<li><strong>Levetiracetam:</strong> Irritability, behavioural changes, depression (less ADRs overall — preferred).</li>
+<li><strong>Vigabatrin:</strong> Visual field defects (irreversible) — REMS programme.</li>
+<li><strong>Phenobarbital:</strong> Sedation, cognitive dulling, induced CYP, paradoxical hyperactivity in children.</li>
+<li><strong>Ethosuximide:</strong> GI upset, headache, rare aplastic anaemia.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions (critical)</h4>
+<ul>
+<li><strong>Carbamazepine / Phenytoin / Phenobarbital / Primidone</strong> — strong CYP inducers → ↓ OCP, warfarin, immunosuppressants, other AEDs.</li>
+<li><strong>Valproate</strong> — CYP inhibitor → ↑ Lamotrigine, Phenobarbital → SJS &amp; toxicity.</li>
+<li><strong>Lamotrigine + Valproate</strong> → use HALF lamotrigine starting dose.</li>
+<li><strong>Topiramate + OCP</strong> → ↓ OCP efficacy.</li>
+<li><strong>Levetiracetam, Gabapentin, Pregabalin</strong> — no significant CYP interactions (preferred in polypharmacy).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 25-y-old woman with GTCS plans pregnancy. Best AED?<br><strong>Answer:</strong> <em>Lamotrigine or Levetiracetam monotherapy</em> + Folic acid 5 mg/day. AVOID Valproate (NTD risk).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Asian patient with focal seizures — what to screen before Carbamazepine?<br><strong>Answer:</strong> <em>HLA-B*1502</em> — positive → severe SJS/TEN risk. Use alternative (Levetiracetam).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Child with absence epilepsy + occasional GTCS. AED?<br><strong>Answer:</strong> <em>Valproate</em> (broad spectrum). Ethosuximide doesn't cover GTCS.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Status epilepticus algorithm</strong> = IV Lorazepam (5-10 min) → Fosphenytoin/Phenytoin (20 min) → Phenobarbital/Levetiracetam/Valproate → GA (Midazolam/Propofol)</li>
+<li><strong>Valproate</strong> = broadest spectrum AED; AVOID in pregnancy &amp; women of reproductive age</li>
+<li><strong>Ethosuximide</strong> = pure absence (T-type Ca²⁺ block in thalamus)</li>
+<li><strong>Carbamazepine</strong> + HLA-B*1502 (Asian) → SJS risk; screen before starting</li>
+<li><strong>Lamotrigine + Valproate</strong> = HALF the lamotrigine starting dose; titrate slowly to avoid SJS</li>
+<li><strong>Phenytoin zero-order kinetics</strong> — small dose ↑ → toxicity; therapeutic 10-20 µg/mL</li>
+<li><strong>Levetiracetam &amp; Gabapentin</strong> = renal excretion, no CYP → preferred polypharmacy</li>
+<li><strong>Vigabatrin REMS</strong> — visual field testing required (irreversible loss)</li>
+<li><strong>Phenytoin extravasation</strong> → "purple glove syndrome" — use Fosphenytoin instead</li>
+<li><strong>Cenobamate</strong> (2020) — newest AED for focal seizures; high efficacy</li>
+<li><strong>Cannabidiol</strong> approved for Dravet, Lennox-Gastaut, Tuberous Sclerosis</li>
+<li><strong>Phenytoin fetal hydantoin syndrome</strong> = microcephaly, cleft lip/palate, finger nail hypoplasia</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Cenobamate</strong> — FDA 2019; superior efficacy in focal seizures; risk of DRESS</li>
+<li><strong>Cannabidiol (Epidiolex)</strong> — FDA approved for Dravet, LGS, Tuberous Sclerosis</li>
+<li><strong>Fenfluramine</strong> — re-approved (2020) for Dravet syndrome; cardiac monitoring</li>
+<li><strong>Ganaxolone</strong> — neurosteroid for CDKL5 deficiency disorder seizures (FDA 2022)</li>
+<li><strong>Brivaracetam</strong> — newer SV2A modulator; faster onset; oral &amp; IV available</li>
+<li><strong>Sudden Unexpected Death in Epilepsy (SUDEP)</strong> — increased awareness, all AEDs reduce risk</li>
+<li><strong>Levetiracetam in pregnancy</strong> — confirmed safer profile (Cochrane 2023 update)</li>
+<li><strong>Polygenic prediction</strong> of SJS risk emerging (multiple HLA alleles)</li>
+<li><strong>Ketogenic diet</strong> + AED — efficacy boost in refractory epilepsy</li>
+<li><strong>Anti-seizure medication terminology</strong> preferred over "antiepileptic" (Engel 2023)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC absence seizures (pure) — <em>Ethosuximide</em></li>
+<li><strong>INI-CET 2023</strong>: AED contraindicated in pregnancy (NTD) — <em>Valproate</em></li>
+<li><strong>NEET PG 2024</strong>: Carbamazepine + Asian → screen for — <em>HLA-B*1502</em></li>
+<li><strong>INI-CET 2024</strong>: SV2A modulator antiepileptic — <em>Levetiracetam / Brivaracetam</em></li>
+<li><strong>NEET PG 2024</strong>: Phenytoin shows what kinetics at therapeutic dose — <em>Zero-order</em></li>
+<li><strong>FMGE 2024</strong>: Vigabatrin major ADR — <em>Visual field defects</em></li>
+<li><strong>NEET PG 2025</strong>: Newest AED for focal seizures (2019/2020) — <em>Cenobamate</em></li>
+<li><strong>INI-CET 2024</strong>: AED with T-type Ca²⁺ channel block in thalamus — <em>Ethosuximide</em></li>
+<li><strong>NEET PG 2023</strong>: Status epilepticus 1st-line — <em>IV Lorazepam</em></li>
+<li><strong>NEET PG 2025</strong>: Cannabidiol approved for — <em>Dravet, Lennox-Gastaut, Tuberous Sclerosis</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antiepileptic Drugs — Mechanism, Seizure-Type DOC, Pregnancy, SE Algorithm</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiepileptic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 3. ANTIPARKINSONIAN DRUGS ═══════════ */
+    {id:"apd",content:`<span id="sub-apd-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧠 3️⃣ ANTIPARKINSONIAN DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Parkinson Disease (PD) is a progressive neurodegenerative disorder due to dopamine deficiency in nigrostriatum (≥ 70% loss). Cardinal features: <em>TRAP</em> — Tremor (resting), Rigidity, Akinesia/Bradykinesia, Postural instability. Goal: restore DA tone &amp; manage non-motor symptoms.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Mechanism</th></tr>
+<tr><td><strong>Dopamine precursor</strong></td><td>Levodopa (always with Carbidopa or Benserazide)</td><td>Crosses BBB → DA in nigrostriatum</td></tr>
+<tr><td><strong>DDC inhibitors</strong></td><td>Carbidopa, Benserazide</td><td>Peripheral DDC block → ↓ peripheral DA side effects</td></tr>
+<tr><td><strong>Dopamine agonists</strong></td><td>Pramipexole, Ropinirole, Rotigotine (patch), Apomorphine (rescue), Bromocriptine, Cabergoline, Piribedil</td><td>Direct D2/D3 receptor agonism</td></tr>
+<tr><td><strong>MAO-B inhibitors</strong></td><td>Selegiline, Rasagiline, Safinamide</td><td>↓ DA breakdown</td></tr>
+<tr><td><strong>COMT inhibitors</strong></td><td>Entacapone (peripheral), Tolcapone (central + peripheral), Opicapone</td><td>↓ L-DOPA breakdown</td></tr>
+<tr><td><strong>NMDA antagonist</strong></td><td>Amantadine</td><td>↑ DA release + NMDA block → ↓ dyskinesia</td></tr>
+<tr><td><strong>Anticholinergics</strong></td><td>Trihexyphenidyl, Benztropine, Procyclidine, Biperiden</td><td>Restore ACh-DA balance; best for TREMOR</td></tr>
+<tr><td><strong>Adenosine A2A antagonist</strong></td><td>Istradefylline</td><td>Adjunct for "off" episodes</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Treatment Strategy</h4>
+<ul>
+<li><strong>Young patients</strong> (&lt; 65 y) → DA agonist first (Pramipexole / Ropinirole) — delay L-DOPA dyskinesias.</li>
+<li><strong>Older patients / functional disability</strong> → L-DOPA + Carbidopa first (best efficacy, least delay).</li>
+<li><strong>Wearing-off</strong> → add COMT inhibitor (Entacapone) or MAO-B (Rasagiline); fractionate L-DOPA doses.</li>
+<li><strong>Dyskinesias</strong> → reduce L-DOPA, add Amantadine (best evidence), ER dopamine agonist.</li>
+<li><strong>Sudden "off" rescue</strong> → Apomorphine SC injection.</li>
+<li><strong>Tremor-predominant</strong> → Anticholinergic (Trihexyphenidyl) — but AVOID in elderly (cognitive ADRs).</li>
+<li><strong>Advanced PD</strong> → DBS (deep brain stimulation), levodopa intestinal gel infusion (Duodopa).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⚠️ ADRs</h4>
+<ul>
+<li><strong>L-DOPA early:</strong> Nausea, postural hypotension, hallucinations, dyskinesia (peak-dose chorea), "on-off" phenomenon, end-of-dose deterioration.</li>
+<li><strong>L-DOPA + DA agonists:</strong> Impulse control disorders (gambling, hypersexuality, binge eating, shopping).</li>
+<li><strong>Pergolide, Cabergoline (ergot DA agonists)</strong> — cardiac valve fibrosis → withdrawn/restricted.</li>
+<li><strong>Apomorphine:</strong> Severe nausea — pre-treat with trimethobenzamide; AVOID Ondansetron (severe hypotension).</li>
+<li><strong>MAO-B inhibitors:</strong> Insomnia, jitteriness; serotonin syndrome with SSRI/Tramadol.</li>
+<li><strong>Entacapone:</strong> Orange urine; diarrhoea; CV stable.</li>
+<li><strong>Tolcapone:</strong> Hepatotoxicity → liver monitoring required.</li>
+<li><strong>Amantadine:</strong> Livedo reticularis, peripheral oedema, confusion in elderly.</li>
+<li><strong>Anticholinergics:</strong> Memory impairment, urinary retention, glaucoma — AVOID elderly.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>L-DOPA in narrow-angle glaucoma, malignant melanoma.</li>
+<li>MAO-B inhibitors + SSRI/Tramadol/Linezolid → serotonin syndrome.</li>
+<li>Anticholinergics in glaucoma, BPH, cognitive impairment.</li>
+<li>Pyridoxine (B6) reduces L-DOPA efficacy if Carbidopa not added.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 55-y-old with mild PD, very active job. Best first drug?<br><strong>Answer:</strong> <em>Dopamine agonist</em> (Pramipexole or Ropinirole) — delays L-DOPA dyskinesias; suitable for younger active patients.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Long-term L-DOPA patient with peak-dose dyskinesias. Adjunct?<br><strong>Answer:</strong> Add <em>Amantadine 100-300 mg/day</em> (best anti-dyskinetic evidence); fractionate L-DOPA doses.</p></div>
+<div class="cblock"><p><strong>Case:</strong> PD patient develops sudden gambling addiction after starting drug. Likely cause?<br><strong>Answer:</strong> <em>Dopamine agonist-induced impulse control disorder</em> — reduce/withdraw DA agonist; substitute with L-DOPA.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>L-DOPA always with Carbidopa</strong> (10:100 or 25:250) to ↓ peripheral DA effects (nausea, hypotension)</li>
+<li><strong>L-DOPA = MOST EFFECTIVE PD drug</strong>; eventually all patients need it</li>
+<li><strong>Carbidopa doesn't cross BBB</strong> — only peripheral DDC inhibition; central DA still produced</li>
+<li><strong>DA agonists</strong> = first choice in young patients (&lt; 65) — delay dyskinesias</li>
+<li><strong>Impulse control disorders</strong> (gambling, hypersexuality) — class effect of DA agonists; screen + counsel</li>
+<li><strong>Apomorphine SC</strong> = rescue for "off" episodes; pre-treat with anti-emetic (NOT Ondansetron)</li>
+<li><strong>Amantadine</strong> = best anti-dyskinetic; also early monotherapy in mild PD; NMDA antagonist</li>
+<li><strong>Selegiline</strong> = irreversible MAO-B inhibitor; at low dose selective (avoid tyramine reaction); Rasagiline = newer</li>
+<li><strong>Entacapone (peripheral COMT)</strong> = orange urine; safe vs Tolcapone (hepatotoxic)</li>
+<li><strong>Anticholinergics for TREMOR</strong> — AVOID in elderly (memory)</li>
+<li><strong>Drug-induced parkinsonism</strong> (antipsychotics, metoclopramide) — withdraw offending agent; anticholinergic short-term</li>
+<li><strong>Pyridoxine (B6)</strong> ↓ efficacy of L-DOPA alone (peripheral conversion) — Carbidopa blocks this</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Istradefylline</strong> — first adenosine A2A antagonist FDA approved (2019) for "off" episodes</li>
+<li><strong>Opicapone</strong> — once-daily COMT inhibitor; better tolerated than Entacapone</li>
+<li><strong>Safinamide</strong> — dual MAO-B/glutamate; adjunct for "off" episodes</li>
+<li><strong>Foslevodopa/foscarbidopa</strong> — 24h SC infusion approved (2023)</li>
+<li><strong>Levodopa Intestinal Gel (Duodopa)</strong> — continuous jejunal infusion for advanced PD</li>
+<li><strong>Sublingual Apomorphine</strong> (Kynmobi) — convenient on-demand rescue</li>
+<li><strong>Deep Brain Stimulation (DBS)</strong> — outcomes refined; younger patient candidates</li>
+<li><strong>Tavapadon</strong> (D1/D5 selective partial agonist) in Phase 3 trials</li>
+<li><strong>Prasinezumab</strong> — anti-α-synuclein mAb under trial (disease modifying)</li>
+<li><strong>Stem cell-derived DA neurons</strong> in clinical trials (Japan, US)</li>
+<li><strong>GLP-1 agonists (Exenatide)</strong> showing neuroprotective signal in PD (PD STAT trial)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: L-DOPA combined with — <em>Carbidopa (peripheral DDC inhibitor)</em></li>
+<li><strong>INI-CET 2023</strong>: PD drug causing impulse control disorders — <em>Dopamine agonists (Pramipexole, Ropinirole)</em></li>
+<li><strong>NEET PG 2024</strong>: Selegiline mechanism — <em>Irreversible MAO-B inhibitor</em></li>
+<li><strong>INI-CET 2024</strong>: COMT inhibitor with hepatotoxicity — <em>Tolcapone</em></li>
+<li><strong>NEET PG 2024</strong>: Best anti-dyskinetic in PD — <em>Amantadine</em></li>
+<li><strong>FMGE 2024</strong>: First adenosine A2A antagonist for PD — <em>Istradefylline</em></li>
+<li><strong>NEET PG 2025</strong>: Apomorphine for rescue therapy avoid co-admin with — <em>Ondansetron</em></li>
+<li><strong>INI-CET 2024</strong>: Anticholinergic preferred in PD tremor — <em>Trihexyphenidyl</em></li>
+<li><strong>NEET PG 2023</strong>: TRAP features of PD — <em>Tremor, Rigidity, Akinesia, Postural instability</em></li>
+<li><strong>NEET PG 2025</strong>: Sublingual rescue drug for "off" episode — <em>Apomorphine</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antiparkinsonian Drugs — L-DOPA, DA Agonists, MAO-B, COMT, Amantadine</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiparkinsonian Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 4. ANTIDEPRESSANT DRUGS ═══════════ */
+    {id:"add",content:`<span id="sub-add-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">😔 4️⃣ ANTIDEPRESSANT DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that relieve depression by increasing monoamine (serotonin, noradrenaline, dopamine) neurotransmission. <strong>Monoamine hypothesis:</strong> depression results from deficiency of 5-HT and/or NA at synapses. Therapeutic onset = 2-4 weeks.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Key Note</th></tr>
+<tr><td><strong>SSRIs (1st line)</strong></td><td>Fluoxetine, Sertraline, Paroxetine, Escitalopram, Citalopram, Fluvoxamine</td><td>Fewest ADRs; suicidality BBW (young)</td></tr>
+<tr><td><strong>SNRIs</strong></td><td>Venlafaxine, Desvenlafaxine, Duloxetine, Milnacipran, Levomilnacipran</td><td>Also for neuropathic pain, fibromyalgia</td></tr>
+<tr><td><strong>TCAs (older)</strong></td><td>Amitriptyline, Imipramine, Nortriptyline, Clomipramine, Doxepin, Desipramine</td><td>Lethal in OD; anticholinergic</td></tr>
+<tr><td><strong>MAOIs</strong></td><td>Phenelzine, Tranylcypromine, Isocarboxazid (irreversible); Moclobemide (reversible RIMA); Selegiline patch</td><td>Tyramine reaction; serotonin syndrome</td></tr>
+<tr><td><strong>Atypical / Other</strong></td><td>Mirtazapine (α2 + 5HT2/3 block), Bupropion (NDRI), Trazodone, Nefazodone, Vilazodone, Vortioxetine, Tianeptine</td><td>Varied mechanisms</td></tr>
+<tr><td><strong>NMDA antagonists (rapid)</strong></td><td>Ketamine (IV), Esketamine (nasal — Spravato), Auvelity (Dextromethorphan + Bupropion)</td><td>Treatment-resistant depression</td></tr>
+<tr><td><strong>Neuroactive Steroids</strong></td><td>Brexanolone (IV), Zuranolone (oral)</td><td>Post-partum depression</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK Highlights</h4>
+<ul>
+<li><strong>SSRIs</strong> block SERT → ↑ 5-HT in synapse; therapeutic effect after 2-4 weeks (receptor downregulation).</li>
+<li><strong>SNRIs</strong> block both SERT + NET; useful for neuropathic pain.</li>
+<li><strong>TCAs</strong> block SERT + NET + H1 + α1 + M → many ADRs; cardiotoxic (QRS widening); lethal in OD.</li>
+<li><strong>MAOIs</strong> irreversibly inhibit MAO-A (5-HT/NA) + MAO-B (DA); tyramine cheese reaction (hypertensive crisis); 2-week washout before/after.</li>
+<li><strong>Fluoxetine</strong> longest t½ (4-6 days); active metabolite (norfluoxetine, weeks).</li>
+<li><strong>Bupropion</strong> = NDRI (dopamine + NE); useful for smoking cessation; LOWERS seizure threshold.</li>
+<li><strong>Mirtazapine</strong> = α2 + 5HT2/3 block → ↑ NE + 5-HT; sedation + weight gain; useful in elderly.</li>
+<li><strong>Esketamine intranasal</strong> = rapid onset (hours) for treatment-resistant depression; supervised dosing.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Indications</h4>
+<table>
+<tr><th>Condition</th><th>1st Line</th><th>Alternatives</th></tr>
+<tr><td>Major Depression</td><td>SSRI (Escitalopram, Sertraline)</td><td>SNRI · Mirtazapine</td></tr>
+<tr><td>Treatment-resistant depression</td><td>Esketamine IN · Auvelity · Augment with Atypical antipsychotic / Lithium</td><td>ECT</td></tr>
+<tr><td>Post-partum depression</td><td>Zuranolone (oral, 2-week course)</td><td>SSRI · CBT</td></tr>
+<tr><td>OCD</td><td>SSRI (high doses) · Clomipramine</td><td>—</td></tr>
+<tr><td>Panic / GAD</td><td>SSRI / SNRI</td><td>BZD (acute)</td></tr>
+<tr><td>PTSD</td><td>Sertraline · Paroxetine (FDA approved)</td><td>Prazosin (nightmares)</td></tr>
+<tr><td>Neuropathic pain</td><td>Duloxetine · Amitriptyline · Gabapentin / Pregabalin</td><td>—</td></tr>
+<tr><td>Smoking cessation</td><td>Bupropion · Varenicline · NRT</td><td>—</td></tr>
+<tr><td>Insomnia + Depression</td><td>Mirtazapine · Trazodone (low dose)</td><td>—</td></tr>
+<tr><td>Nocturnal enuresis (child)</td><td>Imipramine</td><td>Desmopressin</td></tr>
+<tr><td>Fibromyalgia</td><td>Duloxetine · Milnacipran · Pregabalin</td><td>—</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs &amp; Toxicity</h4>
+<ul>
+<li><strong>SSRIs:</strong> Nausea (early), sexual dysfunction (60%), insomnia, anxiety initially, hyponatraemia (SIADH in elderly), QT prolongation (Citalopram &gt; 40 mg), platelet dysfunction (↑ GI bleed); suicidality BBW age &lt; 25 y.</li>
+<li><strong>SNRIs:</strong> Similar to SSRIs + sweating, HTN (Venlafaxine high dose).</li>
+<li><strong>TCAs:</strong> Anticholinergic (dry mouth, constipation, urinary retention, confusion), orthostatic hypotension, cardiotoxicity (QRS widening), sedation, weight gain, lowered seizure threshold; <em>OD: Treat with sodium bicarbonate</em>.</li>
+<li><strong>MAOIs:</strong> Tyramine cheese reaction → hypertensive crisis (avoid aged cheese, wine, fermented foods); serotonin syndrome with SSRI/Tramadol/Linezolid.</li>
+<li><strong>Bupropion:</strong> Seizures (dose-dep), psychosis; AVOID in bulimia/anorexia.</li>
+<li><strong>Mirtazapine:</strong> Sedation, weight gain, dry mouth, rare agranulocytosis.</li>
+<li><strong>Trazodone:</strong> Priapism (rare emergency), orthostatic hypotension.</li>
+<li><strong>Serotonin syndrome triad:</strong> autonomic instability + neuromuscular excitability + altered mental status → STOP trigger + Cyproheptadine.</li>
+<li><strong>Discontinuation syndrome</strong> (esp. Paroxetine, Venlafaxine): flu-like, dizziness, electric-shock sensations.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions (critical)</h4>
+<ul>
+<li><strong>SSRI + MAOI / Tramadol / Linezolid / Triptans / St. John's Wort</strong> → serotonin syndrome (2-week washout for MAOI).</li>
+<li><strong>SSRI + Warfarin / NSAID</strong> → ↑ bleeding risk.</li>
+<li><strong>Fluoxetine, Paroxetine</strong> = strong CYP2D6 inhibitors → ↑ TCAs, β-blockers, Tamoxifen reduced efficacy.</li>
+<li><strong>MAOI + sympathomimetics/decongestants</strong> → hypertensive crisis.</li>
+<li><strong>Lithium + SSRI</strong> → serotonin syndrome risk; ↑ lithium levels.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Adolescent with first major depression + SI. Treatment?<br><strong>Answer:</strong> <em>Fluoxetine</em> (FDA approved &lt; 18 y) + CBT + close monitoring for SI; Black Box warning for suicidality young patients.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Sertraline started Tramadol; develops fever, clonus, agitation. Diagnosis?<br><strong>Answer:</strong> <em>Serotonin syndrome</em> — STOP both drugs + Cyproheptadine + supportive (cooling, BZD for agitation).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Postpartum depression in lactating mother — best new drug?<br><strong>Answer:</strong> <em>Zuranolone</em> (Zurzuvae) — oral, 2-week course; FDA 2023 for postpartum depression.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>SSRIs = 1st line for MDD</strong> (best tolerability, safe in OD vs TCAs)</li>
+<li><strong>Therapeutic effect takes 2-4 weeks</strong> — counsel patient + monitor early for SI</li>
+<li><strong>Fluoxetine longest t½</strong> (4-6 d + active metabolite weeks) — less withdrawal; safe to switch to MAOI after 5 weeks</li>
+<li><strong>Citalopram &gt; 40 mg</strong> = QT risk → max 20 mg in elderly &amp; CYP2C19 PM</li>
+<li><strong>Bupropion</strong> = NDRI; useful in smoking cessation; lowers seizure threshold (avoid bulimia/anorexia)</li>
+<li><strong>Mirtazapine</strong> = α2 block → ↑ NE/5HT; sedation + weight gain → useful in elderly insomnia/anorexia</li>
+<li><strong>TCA overdose</strong> → ECG QRS widening; treat with <em>Sodium Bicarbonate</em></li>
+<li><strong>MAOI tyramine reaction</strong> = hypertensive crisis (aged cheese, wine, cured meats)</li>
+<li><strong>Serotonin syndrome antidote</strong> = Cyproheptadine (5-HT2A antagonist)</li>
+<li><strong>Duloxetine</strong> = diabetic neuropathy, fibromyalgia, stress incontinence</li>
+<li><strong>Discontinuation syndrome</strong> — Paroxetine + Venlafaxine worst; Fluoxetine mildest</li>
+<li><strong>Imipramine</strong> = nocturnal enuresis in children &gt; 6 y</li>
+<li><strong>Esketamine (Spravato)</strong> = nasal spray for treatment-resistant depression; supervised dosing</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Zuranolone</strong> — first oral neurosteroid for postpartum depression (FDA Aug 2023)</li>
+<li><strong>Auvelity</strong> (Dextromethorphan + Bupropion) — FDA approved 2022 for rapid MDD action</li>
+<li><strong>Esketamine intranasal (Spravato)</strong> — FDA 2019; supervised 2 h post-dose</li>
+<li><strong>Psilocybin</strong> — FDA Breakthrough Designation for treatment-resistant depression</li>
+<li><strong>Vortioxetine</strong> — multimodal SSRI + 5-HT receptor modulator; cognitive benefits</li>
+<li><strong>Repetitive Transcranial Magnetic Stimulation (rTMS)</strong> — expanded indications</li>
+<li><strong>Deep TMS, theta-burst</strong> — newer accelerated protocols (SAINT, 1-week treatment)</li>
+<li><strong>MDMA-assisted therapy</strong> in Phase 3 for PTSD (likely FDA approval 2024-25)</li>
+<li><strong>GLP-1 agonists</strong> showing mood improvement signal in trials</li>
+<li><strong>Genetic testing</strong> (CYP2D6, CYP2C19) — precision antidepressant selection</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: 1st line for MDD — <em>SSRI (Escitalopram/Sertraline)</em></li>
+<li><strong>INI-CET 2023</strong>: TCA overdose treatment — <em>Sodium bicarbonate</em></li>
+<li><strong>NEET PG 2024</strong>: Antidepressant + smoking cessation — <em>Bupropion (NDRI)</em></li>
+<li><strong>INI-CET 2024</strong>: Drug for treatment-resistant depression (nasal spray, 2019 approved) — <em>Esketamine</em></li>
+<li><strong>NEET PG 2024</strong>: Serotonin syndrome antidote — <em>Cyproheptadine</em></li>
+<li><strong>FMGE 2024</strong>: Antidepressant for postpartum depression (FDA 2023 oral) — <em>Zuranolone</em></li>
+<li><strong>NEET PG 2025</strong>: SSRI with longest half-life — <em>Fluoxetine</em></li>
+<li><strong>INI-CET 2024</strong>: MAOI causes tyramine reaction with — <em>Aged cheese, fermented foods, wine</em></li>
+<li><strong>NEET PG 2023</strong>: Antidepressant for diabetic neuropathy + fibromyalgia — <em>Duloxetine</em></li>
+<li><strong>NEET PG 2025</strong>: Combination FDA approved 2022 for rapid antidepressant — <em>Auvelity (Dextromethorphan + Bupropion)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antidepressants — SSRI, SNRI, TCA, MAOI, Atypical, Esketamine</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antidepressant Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 5. ANTIPSYCHOTIC DRUGS ═══════════ */
+    {id:"apsy",content:`<span id="sub-apsy-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧩 5️⃣ ANTIPSYCHOTIC DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs used in schizophrenia, schizoaffective disorder, acute mania, psychotic depression, agitation, Tourette's, and chemotherapy-induced emesis. Act primarily by blocking D2 receptors in the mesolimbic pathway; atypicals also block 5-HT2A.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>EPS Risk</th></tr>
+<tr><td rowspan="3"><strong>Typical (1st gen)</strong></td><td>Phenothiazines: Chlorpromazine, Fluphenazine, Thioridazine, Trifluoperazine, Promethazine</td><td>High</td></tr>
+<tr><td>Butyrophenones: Haloperidol, Droperidol</td><td>Very high (potent D2)</td></tr>
+<tr><td>Thioxanthenes: Thiothixene; Diphenylbutylpiperidines: Pimozide</td><td>High</td></tr>
+<tr><td rowspan="3"><strong>Atypical (2nd gen)</strong></td><td>Clozapine (gold standard refractory)</td><td>Lowest EPS; agranulocytosis</td></tr>
+<tr><td>Olanzapine, Risperidone, Quetiapine, Ziprasidone, Paliperidone, Asenapine, Lurasidone, Iloperidone, Sertindole</td><td>Low-moderate</td></tr>
+<tr><td>Partial D2 agonists: Aripiprazole, Brexpiprazole, Cariprazine</td><td>Very low EPS; akathisia</td></tr>
+<tr><td><strong>Depot (long-acting)</strong></td><td>Haloperidol decanoate, Fluphenazine decanoate, Risperidone Consta, Olanzapine pamoate, Paliperidone palmitate (1m/3m/6m), Aripiprazole lauroxil</td><td>—</td></tr>
+<tr><td><strong>3rd gen / Newer</strong></td><td>Lumateperone (5HT2A/D2/D1), Pimavanserin (5HT2A inverse agonist; PD psychosis), Xanomeline-Trospium (M1/M4 agonist — FDA 2024)</td><td>Novel mechanisms</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice</th></tr>
+<tr><td>Acute psychosis / agitation</td><td>Haloperidol IM or Olanzapine IM</td></tr>
+<tr><td>Schizophrenia (1st episode)</td><td>Risperidone, Olanzapine (atypical preferred)</td></tr>
+<tr><td>Treatment-resistant schizophrenia</td><td>Clozapine (after 2 atypicals fail)</td></tr>
+<tr><td>Bipolar mania</td><td>Olanzapine · Risperidone · Quetiapine · Aripiprazole</td></tr>
+<tr><td>Tourette syndrome</td><td>Haloperidol · Pimozide · Aripiprazole · Risperidone</td></tr>
+<tr><td>Parkinson disease psychosis</td><td>Pimavanserin · Quetiapine (low dose) · Clozapine</td></tr>
+<tr><td>Delirium (elderly)</td><td>Haloperidol low-dose (cautious)</td></tr>
+<tr><td>Severe nausea/vomiting (chemo)</td><td>Olanzapine · Prochlorperazine</td></tr>
+<tr><td>Augmentation in depression</td><td>Aripiprazole · Brexpiprazole · Quetiapine</td></tr>
+<tr><td>Hiccups (intractable)</td><td>Chlorpromazine</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ EPS Spectrum (high-yield)</h4>
+<ul>
+<li><strong>Acute dystonia (hours-days):</strong> Oculogyric crisis, torticollis, laryngospasm → IM Benztropine 1-2 mg or IM Diphenhydramine 50 mg.</li>
+<li><strong>Akathisia (days-weeks):</strong> Inner restlessness, inability to sit still → Propranolol, Benztropine, BZD; reduce dose.</li>
+<li><strong>Parkinsonism (weeks):</strong> Bradykinesia, rigidity, tremor → Anticholinergic, ↓ dose, switch to atypical.</li>
+<li><strong>Tardive Dyskinesia (months-years):</strong> Involuntary orofacial movements; usually IRREVERSIBLE → Switch to Clozapine; VMAT2 inhibitors (Valbenazine, Deutetrabenazine).</li>
+<li><strong>Neuroleptic Malignant Syndrome (NMS):</strong> Hyperthermia + muscle rigidity + autonomic instability + altered mental status + ↑ CK + leukocytosis → STOP antipsychotic + IV fluids + Dantrolene + Bromocriptine.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⚠️ Other ADRs</h4>
+<ul>
+<li><strong>Metabolic syndrome (atypicals):</strong> Weight gain, dyslipidaemia, diabetes — worst with Olanzapine &amp; Clozapine; least with Aripiprazole &amp; Ziprasidone.</li>
+<li><strong>Hyperprolactinaemia:</strong> Risperidone &amp; Paliperidone worst — galactorrhoea, gynecomastia, amenorrhoea.</li>
+<li><strong>QT prolongation:</strong> Ziprasidone, Thioridazine, Haloperidol, IV Droperidol — torsades risk.</li>
+<li><strong>Clozapine:</strong> Agranulocytosis (REMS — weekly CBC × 6 mo, then biweekly, then monthly), myocarditis, seizures (dose-related), constipation/ileus, sialorrhoea.</li>
+<li><strong>Orthostatic hypotension:</strong> α1 block — Chlorpromazine, Clozapine, Quetiapine.</li>
+<li><strong>Anticholinergic:</strong> Chlorpromazine, Clozapine, Olanzapine — dry mouth, constipation.</li>
+<li><strong>Cataracts:</strong> Quetiapine (eye exams every 6 mo).</li>
+<li><strong>Retinal pigmentation:</strong> Thioridazine (high dose).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Schizophrenia patient on 2 atypicals × 6 months — persistent symptoms. Next step?<br><strong>Answer:</strong> <em>Clozapine</em> (gold standard for treatment-resistant); enrol in REMS for weekly CBC monitoring × 6 months.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Haloperidol develops sudden involuntary neck twisting (torticollis). Treatment?<br><strong>Answer:</strong> <em>IM Benztropine 1-2 mg</em> or IM Diphenhydramine 50 mg — acute dystonia; immediate relief.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Psychiatric patient develops hyperthermia, rigidity, ↑ CK 8000. Diagnosis &amp; treatment?<br><strong>Answer:</strong> <em>Neuroleptic Malignant Syndrome (NMS)</em> — STOP antipsychotic + cooling + IV fluids + <em>Dantrolene + Bromocriptine</em>; ICU.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Atypicals 1st line</strong> for schizophrenia — lower EPS, better adherence; but worse metabolic profile</li>
+<li><strong>Clozapine = treatment-resistant gold standard</strong> — after 2 atypicals fail; REMS for agranulocytosis</li>
+<li><strong>EPS time course</strong> — Acute dystonia (hrs-days) → Akathisia (days-weeks) → Parkinsonism (weeks) → TD (months-yrs)</li>
+<li><strong>Acute dystonia DOC</strong> = IM Benztropine or Diphenhydramine</li>
+<li><strong>Akathisia DOC</strong> = Propranolol</li>
+<li><strong>Tardive dyskinesia treatment</strong> = VMAT2 inhibitors (Valbenazine, Deutetrabenazine); switch to Clozapine</li>
+<li><strong>NMS treatment</strong> = STOP antipsychotic + Dantrolene + Bromocriptine + supportive (cooling, fluids)</li>
+<li><strong>Metabolic syndrome ADR</strong> — Olanzapine + Clozapine worst; Aripiprazole least</li>
+<li><strong>Risperidone</strong> = highest hyperprolactinaemia (galactorrhoea, gynecomastia)</li>
+<li><strong>QT prolongation worst</strong> = Ziprasidone, Thioridazine, IV Haloperidol (ECG monitoring)</li>
+<li><strong>Aripiprazole</strong> = partial D2 agonist; "dopamine stabiliser"; least metabolic ADRs</li>
+<li><strong>Pimavanserin (5HT2A inverse agonist)</strong> = first FDA drug for PD psychosis (2016)</li>
+<li><strong>Xanomeline-Trospium (FDA 2024)</strong> = first non-D2 antipsychotic; M1/M4 muscarinic agonist</li>
+<li><strong>Depot antipsychotics</strong> for poor adherence — Paliperidone palmitate up to 6-month</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Xanomeline-Trospium (KarXT)</strong> — FDA Sept 2024; first M1/M4 muscarinic agonist antipsychotic (Cobenfy)</li>
+<li><strong>Lumateperone (Caplyta)</strong> — 5HT2A/D2/D1; approved for schizophrenia &amp; bipolar depression (2019, 2021)</li>
+<li><strong>Paliperidone palmitate 6-month formulation</strong> — newest depot (2021)</li>
+<li><strong>Pimavanserin</strong> — also under trial for Alzheimer's psychosis &amp; depression</li>
+<li><strong>VMAT2 inhibitors (Valbenazine, Deutetrabenazine)</strong> — FDA approved for tardive dyskinesia</li>
+<li><strong>Brexpiprazole</strong> — FDA 2023 expanded for Alzheimer's agitation</li>
+<li><strong>Psilocybin</strong> trials for treatment-resistant schizophrenia</li>
+<li><strong>Trace amine-associated receptor (TAAR1) agonists (Ulotaront)</strong> — Phase 3</li>
+<li><strong>Long-acting injectables</strong> — 6-monthly Risperidone (Uzedy)</li>
+<li><strong>Genetic testing</strong> for CYP2D6 — guides Risperidone dosing</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Drug for refractory schizophrenia — <em>Clozapine</em></li>
+<li><strong>INI-CET 2023</strong>: Acute dystonia DOC — <em>IM Benztropine / Diphenhydramine</em></li>
+<li><strong>NEET PG 2024</strong>: NMS treatment — <em>Dantrolene + Bromocriptine</em></li>
+<li><strong>INI-CET 2024</strong>: Clozapine major ADR requiring weekly CBC — <em>Agranulocytosis</em></li>
+<li><strong>NEET PG 2024</strong>: Antipsychotic with highest hyperprolactinaemia — <em>Risperidone / Paliperidone</em></li>
+<li><strong>FMGE 2024</strong>: First FDA non-D2 antipsychotic (M1/M4) 2024 — <em>Xanomeline-Trospium</em></li>
+<li><strong>NEET PG 2025</strong>: VMAT2 inhibitor for tardive dyskinesia — <em>Valbenazine / Deutetrabenazine</em></li>
+<li><strong>INI-CET 2024</strong>: Partial D2 agonist antipsychotic — <em>Aripiprazole</em></li>
+<li><strong>NEET PG 2023</strong>: Antipsychotic for PD psychosis (5HT2A inverse agonist) — <em>Pimavanserin</em></li>
+<li><strong>NEET PG 2025</strong>: Akathisia DOC — <em>Propranolol</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antipsychotics — Typical vs Atypical, EPS Spectrum, NMS, Clozapine</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antipsychotic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 6. ANTIMANIC DRUGS ═══════════ */
+    {id:"amanic",content:`<span id="sub-amanic-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🌊 6️⃣ ANTIMANIC / MOOD STABILISER DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that treat or prevent acute mania and maintain euthymic state in bipolar disorder. Bipolar I = mania + depression episodes; Bipolar II = hypomania + depression. <strong>Goal:</strong> control acute episode + prevent recurrence + minimise mood swings.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Use</th></tr>
+<tr><td><strong>Mood Stabiliser (classic)</strong></td><td>Lithium carbonate</td><td>Acute mania + maintenance + ↓ suicide</td></tr>
+<tr><td><strong>Anticonvulsants</strong></td><td>Valproate, Carbamazepine, Lamotrigine (bipolar depression DOC)</td><td>Acute mania, maintenance, bipolar dep</td></tr>
+<tr><td><strong>Atypical Antipsychotics</strong></td><td>Olanzapine, Risperidone, Quetiapine, Aripiprazole, Cariprazine, Lurasidone, Ziprasidone, Asenapine</td><td>Acute mania, mixed, bipolar dep, maintenance</td></tr>
+<tr><td><strong>Adjuncts</strong></td><td>BZD (Lorazepam — acute agitation); ECT (severe/pregnant)</td><td>Acute symptoms</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK — Lithium (focus)</h4>
+<ul>
+<li><strong>MOA:</strong> Inhibits inositol monophosphatase → ↓ IP3/DAG; modulates Na⁺/Ca²⁺ flux; affects glycogen synthase kinase-3 (GSK-3); modulates dopamine &amp; serotonin signalling.</li>
+<li><strong>PK:</strong> 100% oral bioavailability; not protein bound; renal excretion (handled like Na⁺); t½ ~24 h; therapeutic 0.6-1.2 mEq/L; toxic &gt; 1.5 mEq/L; severe &gt; 2.5 mEq/L (haemodialysis).</li>
+<li><strong>Narrow therapeutic index</strong> — TDM mandatory; check levels 12 h post-dose, weekly initially, then 3-monthly.</li>
+<li><strong>Latency:</strong> 1-3 weeks for full effect on mania.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Indications &amp; DOC</h4>
+<table>
+<tr><th>Phase</th><th>Drug of Choice</th></tr>
+<tr><td>Acute mania (classic euphoric)</td><td>Lithium · Valproate · Olanzapine</td></tr>
+<tr><td>Acute mania (mixed/dysphoric)</td><td>Valproate · Atypical antipsychotic</td></tr>
+<tr><td>Bipolar depression</td><td>Quetiapine · Lurasidone · Lamotrigine · Cariprazine · Olanzapine-Fluoxetine combo (Symbyax)</td></tr>
+<tr><td>Rapid cycling</td><td>Valproate · Carbamazepine</td></tr>
+<tr><td>Maintenance therapy</td><td>Lithium (best for suicide prevention)</td></tr>
+<tr><td>Bipolar in pregnancy</td><td>1st choice = Lamotrigine; 2nd = Olanzapine (avoid Valproate → NTD; Lithium → Ebstein's anomaly 1st trimester)</td></tr>
+<tr><td>Acute severe mania (psychotic)</td><td>Atypical antipsychotic ± Lithium; ECT if needed</td></tr>
+<tr><td>Pregnancy + severe mania</td><td>ECT (safest in pregnancy)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Lithium ADRs &amp; Toxicity</h4>
+<ul>
+<li><strong>Early:</strong> Tremor (fine), nausea, vomiting, diarrhoea, polyuria, polydipsia, metallic taste.</li>
+<li><strong>Long-term:</strong> Nephrogenic Diabetes Insipidus (40%), hypothyroidism (20%), hyperparathyroidism, weight gain, acne, leukocytosis, T-wave flattening, cognitive dulling.</li>
+<li><strong>Lithium toxicity (level &gt; 1.5 mEq/L):</strong> Coarse tremor, ataxia, confusion, dysarthria, seizures, arrhythmia, coma.</li>
+<li><strong>Mechanism of toxicity:</strong> Lithium handled like sodium by kidney; dehydration, diuretics, low-Na diet, NSAIDs, ACEi → ↓ excretion → toxicity.</li>
+<li><strong>Pregnancy:</strong> Ebstein's anomaly (1st trimester — 0.05-0.1% absolute risk) → avoid; if essential, consider after week 12.</li>
+<li><strong>Severe toxicity:</strong> Haemodialysis (level &gt; 2.5 mEq/L or severe symptoms).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⚠️ Valproate / Carbamazepine / Lamotrigine ADRs</h4>
+<ul>
+<li><strong>Valproate:</strong> Hepatotoxicity, pancreatitis, weight gain, alopecia, NTD (avoid pregnancy), PCOS in women, thrombocytopenia.</li>
+<li><strong>Carbamazepine:</strong> SIADH, agranulocytosis, SJS (HLA-B*1502), CYP inducer, aplastic anaemia (rare).</li>
+<li><strong>Lamotrigine:</strong> SJS/TEN (slow titration mandatory; HALF dose with Valproate co-administration).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions (critical)</h4>
+<ul>
+<li><strong>Lithium + Thiazides / ACEi / ARBs / NSAIDs</strong> → ↓ Lithium excretion → toxicity.</li>
+<li><strong>Lithium + Loop diuretics</strong> → less effect on lithium levels (but still monitor).</li>
+<li><strong>Lithium + Antipsychotics</strong> → ↑ neurotoxicity (esp. Haloperidol).</li>
+<li><strong>Lithium + SSRI</strong> → serotonin syndrome risk.</li>
+<li><strong>Carbamazepine</strong> auto-induces own metabolism + induces other AEDs/OCP.</li>
+<li><strong>Valproate + Lamotrigine</strong> → use HALF lamotrigine dose.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 30-y-old with Bipolar I, just had euphoric manic episode. Best long-term?<br><strong>Answer:</strong> <em>Lithium</em> — best for suicide prevention &amp; classic mania; baseline TFT, RFT, ECG, BMI; start 600-900 mg/day; target 0.6-0.8 mEq/L maintenance.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Lithium develops tremor + ataxia after starting Lisinopril. Diagnosis?<br><strong>Answer:</strong> <em>Lithium toxicity</em> — ACEi ↓ renal Na+ excretion → Li retained; check level &amp; symptoms; reduce dose or switch ACEi.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Bipolar depression patient — best monotherapy?<br><strong>Answer:</strong> <em>Quetiapine</em> or <em>Lurasidone</em> (FDA approved) or <em>Lamotrigine</em> (maintenance). AVOID SSRI monotherapy (manic switch risk).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Lithium = best for SUICIDE PREVENTION</strong> in bipolar disorder (unique benefit)</li>
+<li><strong>Narrow therapeutic index</strong> — 0.6-1.2 mEq/L therapeutic; &gt; 1.5 toxic; check level 12 h post-dose</li>
+<li><strong>Lithium handled like Na⁺ by kidney</strong> — anything that ↓ Na excretion (dehydration, NSAIDs, ACEi, thiazides) → toxicity</li>
+<li><strong>Lithium ADRs mnemonic "LiTHIUM"</strong> — Leukocytosis, Tremor (fine), Hypothyroidism, Insipidus (DI), Use in mania, Memory dulling</li>
+<li><strong>Lithium pregnancy</strong> — Ebstein's anomaly (1st trimester); breast milk safe-controversial</li>
+<li><strong>Severe Lithium toxicity</strong> (&gt; 2.5 mEq/L) → Haemodialysis</li>
+<li><strong>Valproate = best for MIXED EPISODES &amp; RAPID CYCLING</strong></li>
+<li><strong>Lamotrigine = DOC bipolar depression maintenance</strong>; titrate slowly</li>
+<li><strong>Lurasidone &amp; Quetiapine</strong> = FDA approved for bipolar depression monotherapy</li>
+<li><strong>Cariprazine</strong> — newer; approved for all 3 phases of bipolar</li>
+<li><strong>Olanzapine + Fluoxetine (Symbyax)</strong> = FDA approved for bipolar depression</li>
+<li><strong>ECT</strong> = treatment of choice for severe mania in PREGNANCY</li>
+<li><strong>Antidepressant monotherapy</strong> in bipolar depression → manic switch risk → AVOID</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Cariprazine</strong> — FDA approved for bipolar mania, mixed, depression &amp; maintenance (broadest)</li>
+<li><strong>Lurasidone in adolescents</strong> — approved for bipolar depression age 10-17</li>
+<li><strong>Ketamine/Esketamine</strong> showing benefit in bipolar depression trials</li>
+<li><strong>Pharmacogenetic testing</strong> (HLA-B*1502 for CBZ; CYP2D6 for risperidone) increasingly used</li>
+<li><strong>Lumateperone</strong> — FDA 2021 for bipolar depression (monotherapy and adjunct)</li>
+<li><strong>Long-acting injectables in bipolar</strong> — Aripiprazole lauroxil, Risperidone Consta</li>
+<li><strong>Ozanimod, Trazodone, Mirtazapine</strong> emerging adjunct evidence in bipolar depression</li>
+<li><strong>Digital therapeutics</strong> + medication compliance apps</li>
+<li><strong>CANMAT 2023 guidelines</strong> — favour 2nd gen antipsychotic monotherapy for acute mania over Lithium first</li>
+<li><strong>ISBD recommendations 2024</strong> — focus on long-term safety, weight gain, metabolic monitoring</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Best drug for suicide prevention in bipolar — <em>Lithium</em></li>
+<li><strong>INI-CET 2023</strong>: Lithium therapeutic level — <em>0.6-1.2 mEq/L</em></li>
+<li><strong>NEET PG 2024</strong>: Lithium toxicity precipitated by — <em>NSAIDs, ACEi, Thiazides, dehydration</em></li>
+<li><strong>INI-CET 2024</strong>: Bipolar depression DOC monotherapy — <em>Quetiapine / Lurasidone / Lamotrigine</em></li>
+<li><strong>NEET PG 2024</strong>: Lithium teratogenicity — <em>Ebstein's anomaly</em></li>
+<li><strong>FMGE 2024</strong>: Mood stabiliser causing PCOS in women — <em>Valproate</em></li>
+<li><strong>NEET PG 2025</strong>: Severe Lithium toxicity treatment — <em>Haemodialysis</em></li>
+<li><strong>INI-CET 2024</strong>: ECT preferred for severe mania in — <em>Pregnancy</em></li>
+<li><strong>NEET PG 2023</strong>: Carbamazepine ADR in elderly — <em>SIADH / hyponatraemia</em></li>
+<li><strong>NEET PG 2025</strong>: Antipsychotic approved for all 3 phases of bipolar — <em>Cariprazine</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Mood Stabilisers — Lithium, Valproate, Lamotrigine, Atypical Antipsychotics</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antimanic Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 7. ANTIANXIETY DRUGS ═══════════ */
+    {id:"aax",content:`<span id="sub-aax-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">😰 7️⃣ ANTIANXIETY DRUGS (ANXIOLYTICS)</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that relieve symptoms of anxiety — generalised anxiety disorder (GAD), panic disorder, social anxiety, OCD, PTSD, specific phobias — without significant sedation at therapeutic doses. Modern approach favours SSRIs/SNRIs for long-term, BZDs for short-term acute use.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Use Case</th></tr>
+<tr><td><strong>SSRIs (1st line chronic)</strong></td><td>Escitalopram, Sertraline, Paroxetine, Fluoxetine</td><td>GAD, panic, OCD, PTSD, SAD</td></tr>
+<tr><td><strong>SNRIs</strong></td><td>Venlafaxine, Duloxetine</td><td>GAD, panic</td></tr>
+<tr><td><strong>BZD (acute, short-term)</strong></td><td>Alprazolam, Lorazepam, Clonazepam, Diazepam, Oxazepam</td><td>Acute anxiety, panic attacks</td></tr>
+<tr><td><strong>5-HT1A partial agonist</strong></td><td>Buspirone, Tandospirone</td><td>GAD (non-sedating, no dependence)</td></tr>
+<tr><td><strong>β-blockers</strong></td><td>Propranolol</td><td>Performance anxiety, situational</td></tr>
+<tr><td><strong>α2 agonist</strong></td><td>Clonidine, Guanfacine</td><td>PTSD, ADHD-related anxiety, withdrawal</td></tr>
+<tr><td><strong>Gabapentinoids</strong></td><td>Pregabalin, Gabapentin</td><td>GAD, SAD (3rd line)</td></tr>
+<tr><td><strong>Hydroxyzine</strong></td><td>—</td><td>Anxiety + insomnia; H1 antag</td></tr>
+<tr><td><strong>Atypical antipsychotics (adjunct)</strong></td><td>Quetiapine, Olanzapine, Aripiprazole</td><td>Refractory anxiety</td></tr>
+<tr><td><strong>Newer</strong></td><td>Vilazodone, Vortioxetine (multimodal)</td><td>Mixed anxiety-depression</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism — Key Drugs</h4>
+<ul>
+<li><strong>Buspirone</strong> = 5-HT1A partial agonist; non-sedating, no dependence; takes 2-4 weeks (similar latency to SSRI); useful for chronic GAD without abuse risk.</li>
+<li><strong>Propranolol</strong> blocks β-adrenergic (peripheral) → controls tremor, tachycardia, sweating; situational use (public speaking, exams, performance).</li>
+<li><strong>Pregabalin</strong> = α2δ subunit of voltage-gated Ca²⁺ channel → ↓ glutamate release; rapid onset; abuse potential.</li>
+<li><strong>Hydroxyzine</strong> = H1 antagonist (1st gen) with anxiolytic effect; useful for acute anxiety + insomnia.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Drug of Choice per Condition</h4>
+<table>
+<tr><th>Condition</th><th>DOC</th></tr>
+<tr><td>Generalised Anxiety Disorder (GAD)</td><td>SSRI (Escitalopram, Sertraline) or SNRI (Venlafaxine, Duloxetine)</td></tr>
+<tr><td>Panic Disorder</td><td>SSRI · SNRI · acute attack: BZD (Lorazepam, Alprazolam)</td></tr>
+<tr><td>Social Anxiety Disorder (SAD)</td><td>SSRI (Paroxetine, Sertraline); performance type → Propranolol</td></tr>
+<tr><td>OCD</td><td>SSRI high dose · Clomipramine (TCA, also 5-HT)</td></tr>
+<tr><td>PTSD</td><td>Sertraline, Paroxetine (FDA approved); Prazosin (nightmares)</td></tr>
+<tr><td>Performance anxiety</td><td>Propranolol 10-40 mg before event</td></tr>
+<tr><td>GAD with abuse risk / elderly</td><td>Buspirone</td></tr>
+<tr><td>Adjustment disorder / brief anxiety</td><td>BZD short course (2-4 weeks)</td></tr>
+<tr><td>Alcohol withdrawal-induced anxiety</td><td>Chlordiazepoxide / Diazepam</td></tr>
+<tr><td>Children with anxiety</td><td>SSRI (Fluoxetine, Sertraline) + CBT</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs Summary</h4>
+<ul>
+<li><strong>BZD:</strong> Sedation, ataxia, anterograde amnesia, dependence, withdrawal seizures, paradoxical disinhibition in elderly.</li>
+<li><strong>SSRI/SNRI:</strong> Initial worsening of anxiety, GI upset, sexual dysfunction, hyponatraemia in elderly.</li>
+<li><strong>Buspirone:</strong> Dizziness, headache, nausea; no sedation/dependence.</li>
+<li><strong>Propranolol:</strong> Fatigue, bradycardia, bronchospasm (avoid in asthma), masks hypoglycaemia symptoms.</li>
+<li><strong>Pregabalin/Gabapentin:</strong> Sedation, ataxia, peripheral oedema, abuse/withdrawal recently recognized.</li>
+<li><strong>Hydroxyzine:</strong> Sedation, anticholinergic, QT prolongation.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Pianist with severe pre-concert tachycardia &amp; tremor. Best drug?<br><strong>Answer:</strong> <em>Propranolol 20-40 mg 1 hour before performance</em> — controls somatic symptoms without sedation or impaired cognition.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient with GAD + h/o alcoholism. Best chronic anxiolytic?<br><strong>Answer:</strong> <em>Buspirone</em> 15-30 mg/day — no dependence, no abuse potential, no cross-tolerance with alcohol; latency 2-4 weeks (counsel).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Veteran with PTSD, severe nightmares. Best adjunct?<br><strong>Answer:</strong> <em>Prazosin</em> (α1 blocker) 2-10 mg HS — reduces nightmares + sleep disturbance; combine with SSRI/Sertraline + trauma-focused therapy.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>SSRIs/SNRIs = 1st line for CHRONIC anxiety</strong> (GAD, panic, OCD, PTSD, SAD)</li>
+<li><strong>BZDs = SHORT-TERM acute</strong> only (2-4 weeks); risk of dependence</li>
+<li><strong>Buspirone</strong> = non-sedating, no dependence; latency 2-4 weeks; useful in chronic GAD + alcohol h/o</li>
+<li><strong>Propranolol</strong> = performance anxiety (controls peripheral symptoms); take 1 h before</li>
+<li><strong>OCD</strong> requires <em>higher</em> SSRI doses than depression; consider Clomipramine if SSRI fails</li>
+<li><strong>PTSD nightmares DOC</strong> = Prazosin (α1 blocker)</li>
+<li><strong>Pregabalin</strong> = 3rd line for GAD; rapid onset; abuse potential rising</li>
+<li><strong>Hydroxyzine</strong> = anxiety + insomnia; H1 antagonist; QT risk</li>
+<li><strong>SSRIs initially worsen anxiety</strong> in 1st 1-2 weeks → start low, go slow; counsel patient</li>
+<li><strong>Children anxiety</strong> → Fluoxetine (FDA approved) + CBT</li>
+<li><strong>Refractory anxiety</strong> → augment with atypical antipsychotic (Quetiapine, Aripiprazole)</li>
+<li><strong>Pregnancy</strong> → CBT first; if needed, Sertraline preferred SSRI; Paroxetine avoid (Cat D)</li>
+<li><strong>BZD discontinuation</strong> → taper over 4-8 weeks; switch to long-acting first if needed</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Vortioxetine, Vilazodone</strong> — multimodal SSRI + 5-HT modulators for mixed anxiety-depression</li>
+<li><strong>Pimavanserin</strong> in trials for anxiety in PD</li>
+<li><strong>Ketamine / Esketamine</strong> emerging for treatment-resistant anxiety</li>
+<li><strong>Psilocybin</strong> in trials for end-of-life anxiety (cancer)</li>
+<li><strong>MDMA-assisted therapy</strong> Phase 3 for PTSD (likely FDA approval 2024-25)</li>
+<li><strong>Cannabidiol (CBD)</strong> — anxiolytic evidence growing (single-dose human trials positive)</li>
+<li><strong>Digital therapeutics</strong> for anxiety (FDA-cleared apps) — CBT-based</li>
+<li><strong>Brain stimulation</strong> (TMS, deep brain stim) — refractory OCD, GAD trials</li>
+<li><strong>Newer 5-HT1A agonists</strong> in pipeline (no sedation, no dependence)</li>
+<li><strong>Anxiety risk genetic profiling</strong> — pharmacogenomic guides emerging</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: 1st-line for GAD chronic — <em>SSRI / SNRI</em></li>
+<li><strong>INI-CET 2023</strong>: 5-HT1A partial agonist anxiolytic (no dependence) — <em>Buspirone</em></li>
+<li><strong>NEET PG 2024</strong>: Performance anxiety DOC — <em>Propranolol</em></li>
+<li><strong>INI-CET 2024</strong>: PTSD nightmares DOC — <em>Prazosin</em></li>
+<li><strong>NEET PG 2024</strong>: OCD DOC — <em>SSRI (high dose) / Clomipramine</em></li>
+<li><strong>FMGE 2024</strong>: Anxiety with alcohol abuse history — best chronic — <em>Buspirone</em></li>
+<li><strong>NEET PG 2025</strong>: SSRI FDA approved for child anxiety — <em>Fluoxetine</em></li>
+<li><strong>INI-CET 2024</strong>: Pregabalin mechanism — <em>α2δ subunit of Ca²⁺ channel</em></li>
+<li><strong>NEET PG 2023</strong>: PTSD FDA approved 1st line — <em>Sertraline / Paroxetine</em></li>
+<li><strong>NEET PG 2025</strong>: Buspirone latency for effect — <em>2-4 weeks</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antianxiety Drugs — SSRI, BZD, Buspirone, Propranolol, Newer Agents</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antianxiety Drugs — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 8. OPIOIDS ═══════════ */
+    {id:"opi",content:`<span id="sub-opi-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💉 8️⃣ OPIOID ANALGESICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that produce analgesia by binding to opioid receptors (μ, κ, δ) in CNS and periphery. <em>Endogenous opioids</em> = endorphins, enkephalins, dynorphins. Opioids remain the cornerstone of severe acute &amp; cancer pain management, despite addiction crisis concerns.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Receptor Profile</th></tr>
+<tr><td rowspan="3"><strong>Strong Agonists (μ)</strong></td><td>Morphine, Hydromorphone, Oxymorphone</td><td>μ &gt;&gt; δ &gt; κ</td></tr>
+<tr><td>Fentanyl, Sufentanil, Alfentanil, Remifentanil (anaesthesia)</td><td>μ (100× morphine)</td></tr>
+<tr><td>Methadone, Levorphanol, Pethidine (Meperidine), Hydromorphone, Oxycodone, Heroin (diamorphine)</td><td>μ + NMDA antag (Methadone)</td></tr>
+<tr><td><strong>Moderate (μ)</strong></td><td>Codeine, Tramadol, Tapentadol, Hydrocodone, Dextropropoxyphene</td><td>μ + SNRI (Tramadol)</td></tr>
+<tr><td><strong>Partial agonist (μ)</strong></td><td>Buprenorphine, Pentazocine (partial μ, κ agonist)</td><td>Partial μ; high affinity</td></tr>
+<tr><td><strong>Mixed agonist-antagonist</strong></td><td>Nalbuphine, Butorphanol, Pentazocine</td><td>κ agonist, μ antagonist/partial</td></tr>
+<tr><td><strong>Antagonists</strong></td><td>Naloxone (IV/IM/IN — overdose), Naltrexone (oral — addiction), Nalmefene (alcohol use disorder)</td><td>Pure μ antagonist</td></tr>
+<tr><td><strong>PAMORAs (peripheral)</strong></td><td>Methylnaltrexone, Naloxegol, Naldemedine, Alvimopan</td><td>Peripheral μ → opioid-induced constipation</td></tr>
+<tr><td><strong>Atypical</strong></td><td>Tramadol (μ + SNRI), Tapentadol (μ + NRI), Buprenorphine (partial μ + κ antag)</td><td>Multi-mechanism</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Opioid Receptor Effects</h4>
+<table>
+<tr><th>Receptor</th><th>Effects</th></tr>
+<tr><td><strong>μ (mu)</strong></td><td>Analgesia (supraspinal), euphoria, respiratory depression, miosis, constipation, dependence, sedation, bradycardia, ↑ tone of biliary &amp; urinary sphincters, decrease GI motility</td></tr>
+<tr><td><strong>κ (kappa)</strong></td><td>Analgesia (spinal), sedation, dysphoria, hallucinations, miosis, diuresis</td></tr>
+<tr><td><strong>δ (delta)</strong></td><td>Analgesia, modulate μ effects, mood effects (research interest)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Drug of Choice</th></tr>
+<tr><td>Severe acute pain (post-op, MI, trauma)</td><td>Morphine IV/IM; Fentanyl (rapid)</td></tr>
+<tr><td>Cancer pain (WHO step 3)</td><td>Morphine PO/SC; Fentanyl patch (chronic)</td></tr>
+<tr><td>Acute coronary syndrome</td><td>Morphine IV (BBW caution with clopidogrel — delays absorption)</td></tr>
+<tr><td>Acute LVF / Pulmonary oedema</td><td>Morphine IV (relieves anxiety + ↓ preload)</td></tr>
+<tr><td>Chronic neuropathic pain</td><td>Tramadol · Tapentadol · combine with TCA/Gabapentinoid</td></tr>
+<tr><td>Patient-Controlled Analgesia (PCA)</td><td>Morphine · Fentanyl · Hydromorphone</td></tr>
+<tr><td>Epidural / Spinal analgesia (labour)</td><td>Fentanyl + Bupivacaine</td></tr>
+<tr><td>Anaesthesia adjunct (intraop)</td><td>Fentanyl · Remifentanil · Sufentanil</td></tr>
+<tr><td>Cough suppression (dry)</td><td>Codeine · Dextromethorphan (non-opioid)</td></tr>
+<tr><td>Diarrhoea (non-infectious)</td><td>Loperamide · Diphenoxylate-atropine</td></tr>
+<tr><td>Opioid use disorder (maintenance)</td><td>Methadone · Buprenorphine ± Naloxone (Suboxone)</td></tr>
+<tr><td>Opioid overdose</td><td>Naloxone IV/IM/IN 0.4-2 mg</td></tr>
+<tr><td>Opioid-induced constipation</td><td>Methylnaltrexone · Naloxegol · Naldemedine</td></tr>
+<tr><td>Restless leg syndrome</td><td>Methadone · Oxycodone (after Pramipexole fails)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs (high-yield)</h4>
+<ul>
+<li><strong>Acute:</strong> Respiratory depression (most dangerous), sedation, nausea, vomiting, constipation, urinary retention, miosis, pruritus, biliary spasm, histamine release (morphine).</li>
+<li><strong>Chronic:</strong> Tolerance (to analgesia, respiratory depression, euphoria); physical dependence; addiction; hyperalgesia; hypogonadism; immune suppression.</li>
+<li><strong>Overdose triad:</strong> Respiratory depression + Pinpoint pupils (miosis) + Coma → Treat with <em>Naloxone</em>.</li>
+<li><strong>Withdrawal:</strong> Anxiety, lacrimation, rhinorrhoea, yawning (early); mydriasis, piloerection, sweating, restlessness, myalgia, diarrhoea, vomiting, abdominal cramps (later). NOT life-threatening in healthy adults.</li>
+<li><strong>Special:</strong>
+<ul>
+<li>Morphine: histamine release → hypotension, bronchospasm.</li>
+<li>Pethidine (Meperidine): metabolite normeperidine → seizures (avoid in renal failure).</li>
+<li>Tramadol: lowers seizure threshold; serotonin syndrome with SSRI/MAOI.</li>
+<li>Methadone: QT prolongation (ECG monitoring); long t½ → accumulation risk.</li>
+<li>Codeine: CYP2D6 → morphine; FDA boxed warning in &lt; 12 y and breastfeeding (ultrarapid metaboliser → fatal toxicity).</li>
+<li>Fentanyl patch: heat ↑ absorption → overdose; not for opioid-naive patients.</li>
+<li>Buprenorphine: ceiling effect on respiratory depression — safer; high affinity → precipitates withdrawal if given after full agonist.</li>
+</ul>
+</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Cautions</h4>
+<ul>
+<li>Severe respiratory disease (sleep apnoea, COPD CO₂ retention).</li>
+<li>Head injury (↑ ICP, masks pupil exam).</li>
+<li>Acute abdomen (masks signs).</li>
+<li>Hepatic encephalopathy.</li>
+<li>Concurrent BZD/alcohol (synergistic respiratory depression — BBW).</li>
+<li>Pethidine in renal failure, MAOI use (severe hypertensive/serotonin reaction).</li>
+<li>Codeine: child &lt; 12, breastfeeding, post-tonsillectomy.</li>
+<li>Pregnancy near term (neonatal abstinence syndrome).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Opioid + BZD / Alcohol / Z-drug / Barbiturate</strong> → additive respiratory depression (FDA BBW).</li>
+<li><strong>Tramadol + SSRI / SNRI / MAOI</strong> → serotonin syndrome + seizures.</li>
+<li><strong>Methadone + QT prolonging drugs</strong> (Macrolides, Antipsychotics) → torsades.</li>
+<li><strong>Pethidine + MAOI</strong> → severe HTN crisis or serotonin syndrome.</li>
+<li><strong>Codeine + CYP2D6 inhibitors</strong> (Fluoxetine, Paroxetine) → ↓ analgesia.</li>
+<li><strong>Naloxone + opioid addict</strong> → precipitates acute withdrawal.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Heroin overdose — pinpoint pupils, RR 6/min, coma. Treatment?<br><strong>Answer:</strong> <em>Naloxone 0.4-2 mg IV/IM/IN</em>; titrate to maintain ventilation (not full reversal — avoids withdrawal); may need repeat doses or infusion (short t½ ~30 min).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Cancer patient on Morphine 60 mg/day — severe constipation despite Senna + PEG. Next?<br><strong>Answer:</strong> <em>Methylnaltrexone</em> SC or <em>Naloxegol</em> PO (PAMORAs) — peripheral μ-antagonists; don't reverse analgesia.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Opioid use disorder patient — best maintenance?<br><strong>Answer:</strong> <em>Buprenorphine-Naloxone (Suboxone) SL</em> — partial μ agonist, ceiling effect, lower abuse potential; Methadone alternative (clinic-based).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Opioid OD triad</strong> = Respiratory depression + Miosis + Coma → <em>Naloxone</em></li>
+<li><strong>Naloxone short t½ (~30 min)</strong> → may need repeat doses or infusion in long-acting opioid (Methadone, Fentanyl patch)</li>
+<li><strong>Buprenorphine = partial μ agonist</strong>, ceiling effect → safer in OD; high affinity → precipitates withdrawal if given after full agonist</li>
+<li><strong>Methadone = full μ agonist + NMDA antagonist + long t½</strong>; opioid maintenance; QT prolongation (ECG)</li>
+<li><strong>Pethidine</strong> → normeperidine metabolite causes seizures; AVOID renal failure, MAOI co-use</li>
+<li><strong>Codeine BBW</strong> in &lt; 12 y, breastfeeding, post-tonsillectomy (CYP2D6 ultrarapid → fatal toxicity)</li>
+<li><strong>Tramadol</strong> → lowers seizure threshold; serotonin syndrome with SSRI</li>
+<li><strong>Fentanyl patch</strong> ONLY for opioid-tolerant patients; heat ↑ absorption → caution fever, hot environment</li>
+<li><strong>Morphine releases histamine</strong> → urticaria, bronchospasm, hypotension</li>
+<li><strong>WHO analgesic ladder</strong> — Step 1 NSAIDs/Paracetamol → Step 2 weak opioid (Codeine, Tramadol) → Step 3 strong opioid (Morphine, Fentanyl) + adjuvants throughout</li>
+<li><strong>Opioid-induced constipation DOC</strong> = PAMORAs (Methylnaltrexone, Naloxegol, Naldemedine)</li>
+<li><strong>Loperamide</strong> = peripheral μ-agonist; no analgesic effect; doesn't cross BBB</li>
+<li><strong>Diphenoxylate-Atropine (Lomotil)</strong> = atropine added to deter abuse</li>
+<li><strong>Tolerance develops</strong> to analgesia, sedation, euphoria, respiratory depression; NOT to miosis &amp; constipation</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Nalmefene</strong> — long-acting opioid antagonist for alcohol use disorder &amp; OD</li>
+<li><strong>Suzetrigine (VX-548)</strong> — selective Nav 1.8 blocker; non-opioid analgesic (Phase 3 — FDA review 2024)</li>
+<li><strong>Oliceridine (Olinvyk)</strong> — biased μ agonist; ↓ respiratory depression vs morphine (FDA 2020)</li>
+<li><strong>Cebranopadol</strong> — opioid + nociceptin agonist; lower abuse potential (Phase 3)</li>
+<li><strong>FDA-approved Naloxone OTC</strong> (Narcan nasal spray, 2023)</li>
+<li><strong>Methadone alternatives</strong> for opioid maintenance — Buprenorphine extended-release (Sublocade)</li>
+<li><strong>Bridge device (Drug Relief)</strong> — electrical nerve stim for opioid withdrawal</li>
+<li><strong>Long-acting Buprenorphine implants (Probuphine)</strong> for chronic maintenance</li>
+<li><strong>Methadone dispensing relaxed</strong> by SAMHSA (2024) — telemedicine, more pharmacy access</li>
+<li><strong>Fentanyl test strips</strong> widely distributed for harm reduction</li>
+<li><strong>Genetic testing (OPRM1, CYP2D6)</strong> guides opioid dose &amp; choice</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Opioid overdose DOC — <em>Naloxone</em></li>
+<li><strong>INI-CET 2023</strong>: Pethidine metabolite causing seizures — <em>Normeperidine</em></li>
+<li><strong>NEET PG 2024</strong>: Opioid-induced constipation DOC — <em>Methylnaltrexone / Naloxegol / Naldemedine</em></li>
+<li><strong>INI-CET 2024</strong>: Partial μ agonist with ceiling effect — <em>Buprenorphine</em></li>
+<li><strong>NEET PG 2024</strong>: Codeine ultrarapid metaboliser (CYP2D6) risk — <em>Children &lt; 12 / breastfeeding (BBW)</em></li>
+<li><strong>FMGE 2024</strong>: Opioid maintenance combination — <em>Buprenorphine-Naloxone (Suboxone)</em></li>
+<li><strong>NEET PG 2025</strong>: First biased μ agonist with lower respiratory depression — <em>Oliceridine</em></li>
+<li><strong>INI-CET 2024</strong>: Tramadol mechanism — <em>μ agonist + SNRI</em></li>
+<li><strong>NEET PG 2023</strong>: Methadone unique property vs morphine — <em>NMDA antagonist + long t½</em></li>
+<li><strong>NEET PG 2025</strong>: Selective Nav 1.8 blocker non-opioid analgesic — <em>Suzetrigine</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Opioid Pharmacology — Receptors, Morphine, Fentanyl, Buprenorphine, Naloxone</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Opioids — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 9. ALCOHOLS ═══════════ */
+    {id:"alc",content:`<span id="sub-alc-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🍷 9️⃣ ALCOHOLS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Alcohols affecting humans include <em>Ethanol</em> (recreational/medical), <em>Methanol</em> (toxic — fuel/industrial), <em>Ethylene glycol</em> (antifreeze), and <em>Isopropanol</em> (rubbing alcohol). Ethanol = CNS depressant; methanol &amp; ethylene glycol cause severe toxicity via metabolites.</p>
+
+<h4>📋 Classification &amp; Pharmacology</h4>
+<table>
+<tr><th>Alcohol</th><th>Sources / Use</th><th>Key Toxicity</th></tr>
+<tr><td><strong>Ethanol (Ethyl alcohol)</strong></td><td>Beverages; ICU drug for delirium tremens (rarely); methanol/ethylene glycol antidote</td><td>CNS depression, dependence, withdrawal</td></tr>
+<tr><td><strong>Methanol (Methyl alcohol)</strong></td><td>Industrial, illicit liquor</td><td>Blindness (optic neuritis), metabolic acidosis</td></tr>
+<tr><td><strong>Ethylene Glycol</strong></td><td>Antifreeze, brake fluid</td><td>Calcium oxalate crystals → renal failure</td></tr>
+<tr><td><strong>Isopropanol</strong></td><td>Rubbing alcohol, hand sanitiser</td><td>Sedation, gastritis (not severe acidosis)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Ethanol Pharmacology</h4>
+<ul>
+<li><strong>MOA:</strong> Enhances GABA-A; antagonises NMDA (glutamate); ↑ DA in reward pathway; ↑ endogenous opioids; chronic use → upregulation of NMDA &amp; downregulation of GABA-A → withdrawal hyperexcitability.</li>
+<li><strong>Absorption:</strong> Stomach (small) + intestine (main); food slows absorption; carbonated drinks accelerate.</li>
+<li><strong>Metabolism:</strong> Liver — Zero-order kinetics; Alcohol Dehydrogenase (ADH) → Acetaldehyde; Aldehyde Dehydrogenase (ALDH) → Acetate. Rate ~7-10 g/hr (1 drink/hr).</li>
+<li><strong>BAC effects:</strong> 0.05% impaired judgement · 0.1% legal intoxication · 0.3% stupor · 0.5% coma · &gt; 0.6% death.</li>
+<li><strong>Chronic effects:</strong> Hepatic steatosis → alcoholic hepatitis → cirrhosis · cardiomyopathy · Wernicke-Korsakoff syndrome (B1) · peripheral neuropathy · pancreatitis · cancer (oral, oesophagus, liver, breast) · macrocytic anaemia.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Drug Treatment of Alcohol Use Disorder (AUD)</h4>
+<table>
+<tr><th>Indication</th><th>Drug</th><th>Mechanism</th></tr>
+<tr><td>Acute withdrawal / DT prophylaxis</td><td>Chlordiazepoxide / Diazepam · Lorazepam (liver disease)</td><td>Long-acting BZD</td></tr>
+<tr><td>Wernicke encephalopathy</td><td>Thiamine (B1) IV/IM 500 mg × 3-5 d</td><td>Replace deficient cofactor (BEFORE glucose)</td></tr>
+<tr><td>Maintenance (anti-craving)</td><td>Naltrexone PO / extended-release IM</td><td>μ-opioid antagonist → ↓ reward</td></tr>
+<tr><td>Maintenance (anti-craving)</td><td>Acamprosate</td><td>NMDA modulator → ↓ craving</td></tr>
+<tr><td>Aversion therapy</td><td>Disulfiram</td><td>Irreversible ALDH inhibitor → acetaldehyde build-up → flushing, nausea, hypotension</td></tr>
+<tr><td>Refractory</td><td>Topiramate · Baclofen · Gabapentin · Ondansetron (off-label)</td><td>Various</td></tr>
+<tr><td>Newer</td><td>Nalmefene (μ antag + κ partial agonist) — EU only</td><td>↓ Heavy drinking</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Alcohol Withdrawal Syndrome</h4>
+<ul>
+<li><strong>6-12 hours:</strong> Tremor, anxiety, nausea, insomnia.</li>
+<li><strong>12-48 hours:</strong> Alcoholic hallucinosis, seizures (rum fits).</li>
+<li><strong>48-96 hours:</strong> <em>Delirium Tremens (DT)</em> — confusion, agitation, hallucinations, hyperthermia, autonomic instability; 5-15% mortality if untreated.</li>
+<li><strong>Treatment:</strong> Long-acting BZD (Chlordiazepoxide 25-50 mg q6h taper) + Thiamine + Folate + Glucose; ICU for DT.</li>
+<li><strong>CIWA-Ar score</strong> guides BZD dosing.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⚠️ Methanol &amp; Ethylene Glycol Poisoning</h4>
+<table>
+<tr><th>Feature</th><th>Methanol</th><th>Ethylene Glycol</th></tr>
+<tr><td>Toxic metabolite</td><td>Formic acid (formaldehyde → formate)</td><td>Oxalate, glycolate</td></tr>
+<tr><td>Specific damage</td><td>Optic nerve → blindness (snowstorm vision)</td><td>Renal tubular necrosis (Ca-oxalate crystals)</td></tr>
+<tr><td>Common features</td><td colspan="2">↑ Anion gap metabolic acidosis · ↑ Osmolar gap · drowsiness, coma, abdominal pain</td></tr>
+<tr><td>Antidote (1st line)</td><td colspan="2">Fomepizole IV (4-MP) — ADH inhibitor</td></tr>
+<tr><td>Antidote (older)</td><td colspan="2">Ethanol IV (competes with toxic alcohol for ADH)</td></tr>
+<tr><td>Adjunct</td><td>Folinic acid (formate to CO₂)</td><td>Pyridoxine + Thiamine (glycolate detox)</td></tr>
+<tr><td>Severe</td><td colspan="2">Haemodialysis (level &gt; 50 mg/dL or severe acidosis)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Chronic alcoholic in ED — confused, ataxia, ophthalmoplegia. Treatment order?<br><strong>Answer:</strong> <em>Wernicke encephalopathy</em> — <em>Thiamine BEFORE glucose</em> (glucose alone can precipitate Wernicke). Thiamine 500 mg IV × 3-5 days.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient drank from "country liquor" — vomiting, abdominal pain, "snowstorm" vision, severe acidosis. Toxin &amp; treatment?<br><strong>Answer:</strong> <em>Methanol poisoning</em> → <em>Fomepizole IV</em> (or ethanol if fomepizole unavailable) + Folinic acid + Sodium bicarbonate; haemodialysis if severe.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Alcoholic discharged, wants help to stay sober. Best long-term option?<br><strong>Answer:</strong> <em>Naltrexone</em> (oral or monthly IM Vivitrol) — reduces craving + heavy drinking; Acamprosate alternative; AA counselling + CBT.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Ethanol = zero-order kinetics</strong> at all blood levels (saturable ADH)</li>
+<li><strong>Wernicke encephalopathy</strong> = triad of confusion + ataxia + ophthalmoplegia → <em>Thiamine BEFORE glucose</em></li>
+<li><strong>Korsakoff psychosis</strong> = anterograde amnesia + confabulation; often irreversible</li>
+<li><strong>Alcohol withdrawal timeline</strong> — 6-12h tremor → 12-48h seizures → 48-96h DT</li>
+<li><strong>DT mortality 5-15%</strong> if untreated → ICU + long-acting BZD</li>
+<li><strong>Alcohol withdrawal DOC</strong> = Chlordiazepoxide or Diazepam; Lorazepam in liver disease</li>
+<li><strong>Methanol → formate</strong> → optic neuritis → blindness; "snowstorm" vision</li>
+<li><strong>Ethylene glycol → oxalate</strong> → Ca-oxalate crystals → acute renal failure</li>
+<li><strong>Methanol/EG antidote DOC</strong> = Fomepizole (4-methylpyrazole) IV — competitive ADH inhibitor</li>
+<li><strong>Ethanol IV</strong> = older antidote (competes for ADH); more difficult to titrate</li>
+<li><strong>Anti-craving AUD</strong> — Naltrexone (μ-antagonist) or Acamprosate (NMDA modulator)</li>
+<li><strong>Disulfiram</strong> = irreversible ALDH inhibitor → flushing, nausea with alcohol; aversion therapy; counsel re: hidden alcohol in mouthwash/cough syrups</li>
+<li><strong>Disulfiram-like reaction</strong> with Metronidazole, Cefoperazone, Chlorpropamide, Procarbazine, Griseofulvin (MCCPG)</li>
+<li><strong>Chronic alcoholism CYP induction</strong> → ↑ paracetamol hepatotoxicity (smaller dose) + ↑ warfarin metabolism</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Nalmefene</strong> — newer μ antagonist for reducing heavy drinking (EU 2014, US approval discussion)</li>
+<li><strong>Naltrexone monthly IM (Vivitrol)</strong> — improves adherence</li>
+<li><strong>Ondansetron</strong> in early-onset AUD (Type B) — pharmacogenetic guidance (SLC6A4)</li>
+<li><strong>Topiramate &amp; Gabapentin</strong> — increasing off-label AUD use</li>
+<li><strong>Baclofen</strong> for AUD — preferred in cirrhotic patients (not hepatically metabolised)</li>
+<li><strong>Psilocybin-assisted therapy</strong> for AUD — Phase 3 trials promising</li>
+<li><strong>Semaglutide (GLP-1)</strong> shows craving reduction signal</li>
+<li><strong>Genetic test for ALDH2 deficiency</strong> — common in East Asians (facial flushing); ↑ aldehyde → ↑ cancer risk if drinking continued</li>
+<li><strong>Aversive imagery + transcranial DC stimulation</strong> emerging for AUD</li>
+<li><strong>Drug + Behavioural therapy + Mutual aid</strong> = best outcomes</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for alcohol withdrawal / DT prophylaxis — <em>Chlordiazepoxide / Diazepam</em></li>
+<li><strong>INI-CET 2023</strong>: Methanol toxic metabolite — <em>Formic acid → optic damage</em></li>
+<li><strong>NEET PG 2024</strong>: Methanol &amp; Ethylene glycol antidote DOC — <em>Fomepizole IV</em></li>
+<li><strong>INI-CET 2024</strong>: Wernicke encephalopathy treatment order — <em>Thiamine BEFORE glucose</em></li>
+<li><strong>NEET PG 2024</strong>: Disulfiram mechanism — <em>Irreversible ALDH inhibitor → acetaldehyde build-up</em></li>
+<li><strong>FMGE 2024</strong>: AUD anti-craving DOC — <em>Naltrexone / Acamprosate</em></li>
+<li><strong>NEET PG 2025</strong>: Anti-craving in cirrhotic alcohol patient — <em>Baclofen (not hepatically metabolised)</em></li>
+<li><strong>INI-CET 2024</strong>: Ethanol metabolism kinetics — <em>Zero-order</em></li>
+<li><strong>NEET PG 2023</strong>: Ethylene glycol specific damage — <em>Ca-oxalate crystals → renal failure</em></li>
+<li><strong>NEET PG 2025</strong>: Triad of Wernicke encephalopathy — <em>Confusion + Ataxia + Ophthalmoplegia</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Alcohols — Ethanol, Methanol, Ethylene Glycol, AUD Treatment, Fomepizole</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Alcohols — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 10. GENERAL ANAESTHETICS ═══════════ */
+    {id:"ga",content:`<span id="sub-ga-cns" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">😴 🔟 GENERAL ANAESTHETICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that produce reversible loss of consciousness, analgesia, amnesia, suppression of reflexes, and skeletal muscle relaxation. Used in surgery, ICU sedation, intubation. Combined approach (balanced anaesthesia) achieves best outcomes.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Key Feature</th></tr>
+<tr><td rowspan="2"><strong>Inhalational</strong></td><td>Volatile liquids: <em>Sevoflurane</em>, <em>Desflurane</em>, <em>Isoflurane</em>, Halothane (largely replaced), Enflurane</td><td>Maintenance; MAC concept</td></tr>
+<tr><td>Gas: Nitrous Oxide (N₂O), Xenon (rare)</td><td>Analgesia; weak anaesthetic</td></tr>
+<tr><td rowspan="2"><strong>IV Induction</strong></td><td><em>Propofol</em>, Thiopental, Etomidate, Midazolam, Methohexital</td><td>Rapid onset; potentiate GABA-A</td></tr>
+<tr><td><em>Ketamine</em> (NMDA antagonist) — dissociative anaesthesia</td><td>↑ HR, BP; bronchodilator; emergence delirium</td></tr>
+<tr><td><strong>Opioid (adjunct)</strong></td><td>Fentanyl, Sufentanil, Remifentanil (esterase metabolism)</td><td>Analgesia; respiratory depression</td></tr>
+<tr><td><strong>NMB (adjunct)</strong></td><td>Succinylcholine (depolarising), Rocuronium, Vecuronium, Atracurium, Cisatracurium</td><td>Skeletal muscle relaxation</td></tr>
+<tr><td><strong>Reversal</strong></td><td>Sugammadex (Roc/Vec), Neostigmine + Glycopyrrolate (non-depolarising)</td><td>Reverse NMB</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Key Concepts</h4>
+<ul>
+<li><strong>MAC (Minimum Alveolar Concentration):</strong> Alveolar concentration at which 50% of patients don't move on incision; potency indicator (lower MAC = more potent). Halothane = 0.75% · Iso = 1.15% · Sevo = 2% · Des = 6% · N₂O = 104% (very weak).</li>
+<li><strong>Blood-Gas Coefficient:</strong> Lower = faster onset/offset (faster equilibration). Des (0.42) &gt; Sevo (0.65) &gt; Iso (1.4) &gt; Halo (2.3).</li>
+<li><strong>Oil-Gas Coefficient:</strong> Higher = more potent (correlates with MAC).</li>
+<li><strong>Second gas effect:</strong> N₂O speeds uptake of co-administered volatile anaesthetic.</li>
+<li><strong>Diffusion hypoxia:</strong> Stopping N₂O → rapid efflux dilutes alveolar O₂ → give 100% O₂ for 5-10 min after stopping.</li>
+<li><strong>Stages of anaesthesia (Guedel):</strong> I Analgesia → II Excitement → III Surgical anaesthesia (plane 1-4) → IV Medullary paralysis (death).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 IV Anaesthetic Profiles</h4>
+<table>
+<tr><th>Drug</th><th>Key Use &amp; Properties</th></tr>
+<tr><td><strong>Propofol</strong></td><td>Induction + ICU sedation + procedural · Rapid onset (30-45 s) · Rapid recovery · ↓ BP, ↓ HR · Pain on injection (lidocaine pre) · Anti-emetic property · Propofol Infusion Syndrome (PRIS) — metabolic acidosis, rhabdomyolysis, cardiac failure (long high-dose ICU use, esp. children)</td></tr>
+<tr><td><strong>Thiopental</strong></td><td>Ultra-short barbiturate · Rapid induction · No analgesia · Anti-convulsant · Avoid in porphyria · ↓ BP, respiratory depression</td></tr>
+<tr><td><strong>Etomidate</strong></td><td>Stable haemodynamics → preferred for cardiac patients · Adrenal suppression (single dose OK; avoid infusion) · Myoclonus on induction · No analgesia</td></tr>
+<tr><td><strong>Ketamine</strong></td><td>NMDA antagonist · Dissociative anaesthesia · ↑ HR, BP (good in shock) · Bronchodilator (good in asthma) · Emergence delirium (pretreat BZD) · Sympathomimetic · Analgesia · Useful in trauma, paediatrics, burns, ICU sedation · ↑ ICP (relative contraindication)</td></tr>
+<tr><td><strong>Midazolam</strong></td><td>BZD induction; anterograde amnesia · Conscious sedation · Pre-op</td></tr>
+<tr><td><strong>Fentanyl / Remifentanil</strong></td><td>Intraop analgesia · Remifentanil esterase metabolism → short t½ (4 min)</td></tr>
+<tr><td><strong>Dexmedetomidine</strong></td><td>α2 agonist · ICU sedation · "Cooperative sedation" (patient arousable) · No respiratory depression · Bradycardia</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Inhalational Anaesthetic Profiles</h4>
+<table>
+<tr><th>Drug</th><th>Key Properties</th></tr>
+<tr><td><strong>Sevoflurane</strong></td><td>DOC for paediatric induction (sweet smell, smooth) · Low blood-gas → fast on/off · Compound A nephrotoxicity (with low-flow CO₂ absorbers) · Bronchodilator</td></tr>
+<tr><td><strong>Desflurane</strong></td><td>Fastest induction/recovery (lowest blood-gas) · Pungent → airway irritation, not for induction · Tachycardia · Sympathetic stimulation · Bariatric surgery preferred</td></tr>
+<tr><td><strong>Isoflurane</strong></td><td>Maintenance · Stable CV · Cheaper · Slow onset compared to Des/Sevo</td></tr>
+<tr><td><strong>Halothane</strong></td><td>Largely replaced · Hepatitis (mortal — repeated exposures) · Arrhythmias with adrenaline · Bradycardia</td></tr>
+<tr><td><strong>Nitrous Oxide (N₂O)</strong></td><td>Analgesia + adjunct · MAC 104% → not used alone · Diffusion hypoxia · Megaloblastic anaemia (chronic) · Avoid pneumothorax, bowel obstruction (expands gas spaces)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Major Adverse Events</h4>
+<ul>
+<li><strong>Malignant Hyperthermia (MH):</strong> Triggered by halogenated volatiles + Succinylcholine; ↑ Ca²⁺ release from SR (RyR1 mutation) → hyperthermia, rigidity, tachycardia, hypercapnia, acidosis. <em>Treatment: STOP triggers + Dantrolene IV 2.5 mg/kg + active cooling + ICU.</em></li>
+<li><strong>Propofol Infusion Syndrome (PRIS):</strong> Metabolic acidosis, rhabdomyolysis, hyperK, cardiac failure — long high-dose ICU sedation, esp. children.</li>
+<li><strong>Halothane Hepatitis:</strong> Repeated exposure → fulminant hepatitis (1:35,000); avoid re-exposure within 3 months.</li>
+<li><strong>Post-Operative Nausea/Vomiting (PONV):</strong> Common; reduced by Propofol; ↑ by Nitrous Oxide, Opioids, volatile agents → prophylaxis with Ondansetron + Dexamethasone.</li>
+<li><strong>Emergence Delirium:</strong> Ketamine — pre-treat with BZD; common in paediatric Sevoflurane recovery.</li>
+<li><strong>Diffusion Hypoxia:</strong> Post-N₂O — give 100% O₂.</li>
+<li><strong>Aspiration:</strong> Mendelson syndrome — fasting required (NPO).</li>
+<li><strong>Awareness under anaesthesia:</strong> 0.1-0.2%; ↑ with paralytic + light anaesthesia.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Paediatric patient for elective tonsillectomy. Best inhalational induction?<br><strong>Answer:</strong> <em>Sevoflurane</em> — sweet smell, smooth induction, well tolerated by children; low blood-gas → fast on/off; bronchodilator.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Trauma patient in shock needs RSI. Best IV induction?<br><strong>Answer:</strong> <em>Etomidate</em> (stable haemodynamics) or <em>Ketamine</em> (↑ BP, bronchodilator). Avoid Propofol (↓ BP).</p></div>
+<div class="cblock"><p><strong>Case:</strong> During general anaesthesia, patient develops sudden ↑ EtCO₂, ↑ HR, rigidity, hyperthermia 40°C. Diagnosis &amp; treatment?<br><strong>Answer:</strong> <em>Malignant Hyperthermia</em> — STOP triggers (volatile + Sux) + hyperventilate 100% O₂ + <em>Dantrolene 2.5 mg/kg IV (repeat to 10 mg/kg)</em> + cooling + ICU.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>MAC = potency</strong> (lower = more potent); Des 6% &gt; Sevo 2% &gt; Iso 1.15% &gt; Halothane 0.75% &gt; N₂O 104%</li>
+<li><strong>Blood-gas coefficient ↓ = faster onset/offset</strong>; Des (0.42) fastest among modern</li>
+<li><strong>Sevoflurane = paediatric induction DOC</strong> (sweet, smooth)</li>
+<li><strong>Desflurane = airway irritant</strong> — not for induction; preferred bariatric surgery (fast offset)</li>
+<li><strong>Propofol</strong> = fastest induction; anti-emetic; PRIS in long high-dose ICU sedation</li>
+<li><strong>Ketamine</strong> = NMDA antagonist; ↑ BP/HR (shock), bronchodilator (asthma), emergence delirium (BZD pretreat)</li>
+<li><strong>Etomidate</strong> = best for cardiac patients (stable haemodynamics); adrenal suppression with infusion</li>
+<li><strong>Malignant Hyperthermia</strong> — trigger by Sux + Volatile; DOC = Dantrolene 2.5 mg/kg IV</li>
+<li><strong>Halothane hepatitis</strong> — avoid re-exposure within 3 months</li>
+<li><strong>N₂O</strong> — expands closed gas spaces (avoid pneumothorax, bowel obstruction); diffusion hypoxia (give 100% O₂)</li>
+<li><strong>Remifentanil</strong> — esterase metabolism; t½ 4 min; ideal for fast-track surgery</li>
+<li><strong>Sugammadex</strong> = rapid reversal of Rocuronium/Vecuronium (Roc-Sux-Sugammadex new RSI option)</li>
+<li><strong>Dexmedetomidine</strong> (α2 agonist) — ICU "cooperative sedation"; no respiratory depression</li>
+<li><strong>4 Stages of Anaesthesia (Guedel)</strong> — Analgesia → Excitement → Surgical → Medullary paralysis</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Remimazolam</strong> — ultra-short BZD; esterase metabolism; FDA 2020 for procedural sedation</li>
+<li><strong>Suzetrigine (VX-548)</strong> — Nav 1.8 blocker; non-opioid acute pain (Phase 3)</li>
+<li><strong>Sugammadex broader use</strong> — RSI failure rescue; reduces residual paralysis</li>
+<li><strong>HPMC + dexmedetomidine</strong> for procedural sedation in awake interventions</li>
+<li><strong>Closed-loop anaesthesia delivery (TIVA)</strong> — propofol + remifentanil with BIS monitoring</li>
+<li><strong>Xenon</strong> — neuroprotective, expensive; limited clinical use</li>
+<li><strong>Volatile-anaesthetic-sparing protocols</strong> for ↓ environmental footprint</li>
+<li><strong>Anaesthesia-induced neurotoxicity</strong> in young children (FDA 2017 warning) — limit repeated exposures &lt; 3 y</li>
+<li><strong>Enhanced Recovery After Surgery (ERAS)</strong> — multimodal opioid-sparing approach</li>
+<li><strong>Regional anaesthesia + General</strong> — ultrasound-guided blocks for opioid-sparing</li>
+<li><strong>Ketamine renaissance</strong> — depression, chronic pain, asthma indications</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Paediatric induction inhalational DOC — <em>Sevoflurane</em></li>
+<li><strong>INI-CET 2023</strong>: Fastest induction/recovery inhalational — <em>Desflurane (low blood-gas)</em></li>
+<li><strong>NEET PG 2024</strong>: MAC concept indicates — <em>Potency (lower = more potent)</em></li>
+<li><strong>INI-CET 2024</strong>: Malignant Hyperthermia DOC — <em>Dantrolene IV 2.5 mg/kg</em></li>
+<li><strong>NEET PG 2024</strong>: IV induction agent with stable haemodynamics — <em>Etomidate</em></li>
+<li><strong>FMGE 2024</strong>: Ketamine mechanism — <em>NMDA receptor antagonist</em></li>
+<li><strong>NEET PG 2025</strong>: Ultra-short BZD for procedural sedation (esterase metabolism) — <em>Remimazolam</em></li>
+<li><strong>INI-CET 2024</strong>: Propofol Infusion Syndrome features — <em>Metabolic acidosis, rhabdomyolysis, cardiac failure</em></li>
+<li><strong>NEET PG 2023</strong>: Halothane risk on repeat exposure — <em>Hepatitis</em></li>
+<li><strong>NEET PG 2025</strong>: Diffusion hypoxia caused by — <em>Stopping N₂O without 100% O₂</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>General Anaesthetics — Inhalational, IV, MAC, Malignant Hyperthermia, NMBs</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"General Anaesthetics — Pharmacology by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Propofol",c:"IV anaesthetic",u:"Induction, ICU sedation; pain on injection; ↓ BP"},
-    {n:"Ketamine",c:"NMDA antagonist",u:"Dissociative anaesthesia; emergence delirium; bronchodilator"},
-    {n:"Sevoflurane",c:"Inhalational",u:"Paediatric induction; preferred in asthma"},
-    {n:"Diazepam",c:"BZD",u:"Status epilepticus, anxiety, alcohol withdrawal; long t½"},
-    {n:"Midazolam",c:"BZD",u:"Conscious sedation; pre-anaesthesia; short t½"},
-    {n:"Phenytoin",c:"Na⁺ blocker",u:"GTCS, partial; zero-order kinetics; many ADRs"},
-    {n:"Sodium Valproate",c:"Broad spectrum AED",u:"All seizure types — DOC absence + GTCS combo; avoid in pregnancy"},
-    {n:"Levetiracetam",c:"SV2A modulator",u:"Partial, GTCS; safe in pregnancy; few interactions"},
-    {n:"Lamotrigine",c:"Na⁺ blocker",u:"Absence, GTCS, bipolar; SJS – slow titration"},
-    {n:"Levodopa + Carbidopa",c:"Dopamine precursor",u:"Mainstay of PD"},
-    {n:"Haloperidol",c:"Typical antipsychotic",u:"Acute psychosis, mania, Tourette&rsquo;s; ↑ EPS"},
-    {n:"Clozapine",c:"Atypical (D4)",u:"Refractory schizophrenia; agranulocytosis (CBC monitor)"},
-    {n:"Fluoxetine",c:"SSRI",u:"Depression, OCD; longest t½ SSRI"},
-    {n:"Lithium",c:"Mood stabiliser",u:"Bipolar; narrow TI; nephrogenic DI, hypothyroid, Ebstein"},
-    {n:"Morphine",c:"μ-agonist",u:"Severe pain, MI, acute LVF, palliative"},
-    {n:"Tramadol",c:"Weak opioid + SNRI",u:"Moderate pain; seizure risk; serotonin syndrome with SSRI"},
-    {n:"Naloxone",c:"μ-antagonist",u:"Opioid overdose; t½ short → repeat doses"}
+    // 1. Sedative Hypnotics
+    {n:"Diazepam",c:"1️⃣ BZD (long)",u:"SE, anxiety, alcohol withdrawal, muscle spasm; long t½"},
+    {n:"Lorazepam",c:"1️⃣ BZD (intermediate)",u:"DOC for status epilepticus; LOT — safe in liver"},
+    {n:"Midazolam",c:"1️⃣ BZD (short)",u:"Procedural sedation, anaesthesia; amnesia"},
+    {n:"Alprazolam",c:"1️⃣ BZD (panic)",u:"Panic disorder, anxiety; high dependence"},
+    {n:"Zolpidem",c:"1️⃣ Z-drug (α1 selective)",u:"Insomnia; complex sleep behaviours BBW"},
+    {n:"Eszopiclone",c:"1️⃣ Z-drug",u:"Chronic insomnia"},
+    {n:"Phenobarbital",c:"1️⃣ Barbiturate (long)",u:"Epilepsy; CYP inducer; porphyria risk"},
+    {n:"Thiopental",c:"1️⃣ Barbiturate (ultra-short)",u:"IV induction; anti-convulsant"},
+    {n:"Ramelteon",c:"1️⃣ MT1/MT2 agonist",u:"Insomnia; no dependence; sleep onset"},
+    {n:"Suvorexant",c:"1️⃣ Orexin antagonist (DORA)",u:"Chronic insomnia"},
+    {n:"Flumazenil",c:"1️⃣ BZD antagonist",u:"BZD overdose; caution withdrawal seizures"},
+    // 2. Antiepileptic
+    {n:"Phenytoin",c:"2️⃣ Na⁺ blocker",u:"GTCS, focal; zero-order kinetics; PHENYTOIN ADRs"},
+    {n:"Fosphenytoin",c:"2️⃣ Phenytoin prodrug",u:"IV/IM safer in SE"},
+    {n:"Carbamazepine",c:"2️⃣ Na⁺ blocker",u:"Focal, GTCS, TN, bipolar; HLA-B*1502 SJS"},
+    {n:"Oxcarbazepine",c:"2️⃣ Na⁺ blocker",u:"Focal; less hepatic induction"},
+    {n:"Lamotrigine",c:"2️⃣ Na⁺ blocker",u:"GTCS, absence, bipolar dep; SJS — slow titration"},
+    {n:"Sodium Valproate",c:"2️⃣ Broad spectrum",u:"All seizures + bipolar; AVOID pregnancy"},
+    {n:"Levetiracetam",c:"2️⃣ SV2A modulator",u:"Focal, GTCS, myoclonic; safe in pregnancy"},
+    {n:"Ethosuximide",c:"2️⃣ T-type Ca²⁺ block",u:"Pure absence DOC"},
+    {n:"Topiramate",c:"2️⃣ Multi-mechanism",u:"Focal, migraine prophylaxis, weight loss"},
+    {n:"Gabapentin",c:"2️⃣ α2δ Ca²⁺",u:"Neuropathic pain, partial seizures"},
+    {n:"Pregabalin",c:"2️⃣ α2δ Ca²⁺",u:"Fibromyalgia, neuropathic pain, GAD"},
+    {n:"Vigabatrin",c:"2️⃣ GABA-T inhibitor",u:"Infantile spasms; visual field defects"},
+    {n:"Cannabidiol",c:"2️⃣ Multi-mechanism",u:"Dravet, LGS, TS"},
+    // 3. Antiparkinsonian
+    {n:"Levodopa + Carbidopa",c:"3️⃣ DA precursor",u:"Mainstay PD; dyskinesias long term"},
+    {n:"Pramipexole",c:"3️⃣ DA agonist (D2/D3)",u:"PD; ICD risk"},
+    {n:"Ropinirole",c:"3️⃣ DA agonist",u:"PD, RLS"},
+    {n:"Apomorphine",c:"3️⃣ DA agonist (rescue)",u:"Sudden 'off' SC; avoid Ondansetron"},
+    {n:"Selegiline",c:"3️⃣ MAO-B inhibitor",u:"Early PD; adjunct to L-DOPA"},
+    {n:"Entacapone",c:"3️⃣ COMT inhibitor (peripheral)",u:"Wearing-off; orange urine"},
+    {n:"Amantadine",c:"3️⃣ NMDA antagonist",u:"Anti-dyskinetic; influenza A"},
+    {n:"Trihexyphenidyl",c:"3️⃣ Anticholinergic",u:"Tremor-dominant PD; AVOID elderly"},
+    {n:"Istradefylline",c:"3️⃣ Adenosine A2A antag",u:"'Off' episodes adjunct"},
+    // 4. Antidepressant
+    {n:"Fluoxetine",c:"4️⃣ SSRI",u:"MDD, OCD, panic; longest t½ SSRI"},
+    {n:"Sertraline",c:"4️⃣ SSRI",u:"MDD, PTSD, OCD; safer pregnancy"},
+    {n:"Escitalopram",c:"4️⃣ SSRI",u:"MDD, GAD; favourable PK"},
+    {n:"Venlafaxine",c:"4️⃣ SNRI",u:"MDD, GAD, neuropathic"},
+    {n:"Duloxetine",c:"4️⃣ SNRI",u:"MDD, fibromyalgia, DPN"},
+    {n:"Amitriptyline",c:"4️⃣ TCA",u:"Depression, migraine prophylaxis, neuropathic pain"},
+    {n:"Imipramine",c:"4️⃣ TCA",u:"Depression, panic, enuresis"},
+    {n:"Phenelzine",c:"4️⃣ MAOI (irreversible)",u:"Atypical depression; tyramine reaction"},
+    {n:"Mirtazapine",c:"4️⃣ α2 + 5HT2/3 block",u:"Sedation + weight gain (elderly insomnia)"},
+    {n:"Bupropion",c:"4️⃣ NDRI",u:"Depression, smoking cessation; ↓ seizure threshold"},
+    {n:"Trazodone",c:"4️⃣ SARI",u:"Depression + insomnia; priapism"},
+    {n:"Esketamine",c:"4️⃣ NMDA antag (nasal)",u:"Treatment-resistant depression (Spravato)"},
+    {n:"Zuranolone",c:"4️⃣ Neuroactive steroid (oral)",u:"Postpartum depression (2023)"},
+    // 5. Antipsychotic
+    {n:"Haloperidol",c:"5️⃣ Typical (high potency)",u:"Acute psychosis, mania, Tourette's; ↑ EPS"},
+    {n:"Chlorpromazine",c:"5️⃣ Typical (low potency)",u:"Schizophrenia, intractable hiccups; sedation, α1 block"},
+    {n:"Clozapine",c:"5️⃣ Atypical",u:"Refractory schizo; agranulocytosis REMS"},
+    {n:"Olanzapine",c:"5️⃣ Atypical",u:"Schizo, bipolar mania; metabolic syndrome"},
+    {n:"Risperidone",c:"5️⃣ Atypical",u:"Schizo; hyperprolactinaemia"},
+    {n:"Quetiapine",c:"5️⃣ Atypical",u:"Schizo, bipolar dep, insomnia; cataracts"},
+    {n:"Aripiprazole",c:"5️⃣ Partial D2 agonist",u:"Schizo, bipolar, augment in MDD; less EPS"},
+    {n:"Pimavanserin",c:"5️⃣ 5HT2A inverse agonist",u:"PD psychosis DOC"},
+    {n:"Lurasidone",c:"5️⃣ Atypical",u:"Schizo, bipolar dep"},
+    {n:"Cariprazine",c:"5️⃣ Atypical (broad bipolar)",u:"Schizo, all bipolar phases"},
+    {n:"Xanomeline-Trospium",c:"5️⃣ M1/M4 muscarinic agonist (2024)",u:"Schizophrenia (Cobenfy)"},
+    {n:"Valbenazine",c:"5️⃣ VMAT2 inhibitor",u:"Tardive dyskinesia"},
+    // 6. Antimanic
+    {n:"Lithium",c:"6️⃣ Mood stabiliser",u:"Bipolar; suicide prevention; narrow TI"},
+    {n:"Carbamazepine",c:"6️⃣ Mood stabiliser",u:"Bipolar mania, rapid cycling"},
+    // 7. Antianxiety
+    {n:"Buspirone",c:"7️⃣ 5-HT1A partial agonist",u:"GAD; no dependence; latency 2-4 wk"},
+    {n:"Propranolol",c:"7️⃣ β-blocker",u:"Performance anxiety, situational"},
+    {n:"Hydroxyzine",c:"7️⃣ H1 antagonist",u:"Anxiety + insomnia"},
+    {n:"Prazosin",c:"7️⃣ α1 blocker",u:"PTSD nightmares"},
+    // 8. Opioids
+    {n:"Morphine",c:"8️⃣ Strong μ agonist",u:"Severe pain, MI, LVF; histamine release"},
+    {n:"Fentanyl",c:"8️⃣ Strong μ (100× morphine)",u:"Anaesthesia, patch chronic pain"},
+    {n:"Methadone",c:"8️⃣ μ + NMDA (long t½)",u:"OUD maintenance; QT prolongation"},
+    {n:"Pethidine (Meperidine)",c:"8️⃣ μ agonist",u:"Pain (declining); normeperidine → seizures"},
+    {n:"Tramadol",c:"8️⃣ Weak opioid + SNRI",u:"Moderate pain; ↓ seizure threshold"},
+    {n:"Tapentadol",c:"8️⃣ μ + NRI",u:"Neuropathic pain"},
+    {n:"Codeine",c:"8️⃣ Weak μ (CYP2D6)",u:"Mild pain, cough; BBW &lt; 12 y"},
+    {n:"Buprenorphine",c:"8️⃣ Partial μ agonist",u:"OUD maintenance; ceiling effect (safer)"},
+    {n:"Naloxone",c:"8️⃣ μ antagonist (IV/IN)",u:"Opioid overdose; nasal Narcan OTC"},
+    {n:"Naltrexone",c:"8️⃣ μ antagonist (oral/IM)",u:"OUD, AUD maintenance"},
+    {n:"Methylnaltrexone",c:"8️⃣ Peripheral μ antag",u:"Opioid-induced constipation"},
+    {n:"Oliceridine",c:"8️⃣ Biased μ agonist (2020)",u:"Acute pain; ↓ resp depression"},
+    // 9. Alcohols
+    {n:"Disulfiram",c:"9️⃣ ALDH inhibitor",u:"AUD aversion; acetaldehyde build-up"},
+    {n:"Acamprosate",c:"9️⃣ NMDA modulator",u:"AUD anti-craving"},
+    {n:"Fomepizole",c:"9️⃣ ADH inhibitor",u:"Methanol &amp; ethylene glycol toxicity"},
+    {n:"Baclofen",c:"9️⃣ GABA-B agonist",u:"AUD in cirrhotic patients"},
+    // 10. General Anaesthetics
+    {n:"Propofol",c:"🔟 IV induction",u:"Rapid; PRIS; antiemetic"},
+    {n:"Etomidate",c:"🔟 IV (stable haemodynamics)",u:"Cardiac patients; adrenal suppression"},
+    {n:"Ketamine",c:"🔟 NMDA antagonist",u:"Dissociative; ↑ HR/BP; bronchodilator"},
+    {n:"Sevoflurane",c:"🔟 Inhalational",u:"Paediatric induction DOC"},
+    {n:"Desflurane",c:"🔟 Inhalational",u:"Fast on/off; airway irritant"},
+    {n:"Isoflurane",c:"🔟 Inhalational",u:"Maintenance; stable CV"},
+    {n:"Nitrous Oxide",c:"🔟 Gas (analgesia adjunct)",u:"MAC 104%; diffusion hypoxia"},
+    {n:"Remifentanil",c:"🔟 Opioid (esterase)",u:"Intraop; t½ 4 min"},
+    {n:"Dexmedetomidine",c:"🔟 α2 agonist",u:"ICU sedation; no respiratory depression"},
+    {n:"Dantrolene",c:"🔟 RyR1 antagonist",u:"Malignant hyperthermia DOC + NMS"},
+    {n:"Remimazolam",c:"🔟 Ultra-short BZD (esterase)",u:"Procedural sedation (2020)"},
+    {n:"Sugammadex",c:"🔟 Cyclodextrin",u:"Reversal of Rocuronium/Vecuronium"}
   ],
   ppt:[
     {t:"General Anaesthetics",p:["Stages of anaesthesia","MAC concept","Inhaled vs IV","Balanced anaesthesia"]},
@@ -7734,14 +9572,102 @@ TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
     {t:"Opioid Analgesics",p:["Receptor pharmacology","Morphine","Fentanyl","Antagonists"]}
   ],
   mcqs:[
-    {q:"DOC for status epilepticus is:",o:["Phenytoin","IV Lorazepam","Valproate","Levetiracetam"],a:"IV Lorazepam",e:"IV lorazepam (0.1 mg/kg) is preferred over diazepam due to longer duration of CNS action. Followed by phenytoin/fosphenytoin if seizures persist."},
-    {q:"DOC for absence (petit mal) seizures:",o:["Phenytoin","Carbamazepine","Ethosuximide","Phenobarbital"],a:"Ethosuximide",e:"Ethosuximide blocks T-type Ca²⁺ channels in thalamus. DOC for pure absence. If GTCS coexists – valproate is preferred."},
-    {q:"Clozapine is unique because:",o:["Causes most EPS","Causes agranulocytosis","Has highest dose","Is taken IM"],a:"Causes agranulocytosis",e:"Clozapine is the most effective antipsychotic for refractory schizophrenia but causes agranulocytosis (1-2%). Mandatory weekly CBC for first 6 months."},
-    {q:"DOC for malignant hyperthermia is:",o:["Neostigmine","Dantrolene","Atropine","Bromocriptine"],a:"Dantrolene",e:"Dantrolene blocks RyR1 → ↓ Ca release from SR. Also used in NMS and spasticity."},
-    {q:"Carbamazepine is metabolised by:",o:["CYP3A4","Glucuronidation","Renal","CYP2D6"],a:"CYP3A4",e:"Carbamazepine is a strong CYP3A4 inducer and is itself metabolised by CYP3A4. Causes autoinduction with chronic use."},
-    {q:"Drug of choice for opioid overdose:",o:["Flumazenil","Naloxone","Atropine","Physostigmine"],a:"Naloxone",e:"Naloxone is a competitive μ-antagonist. Short t½ (~30 min) → may need repeat doses or infusion as opioid effect outlasts naloxone."}
+    // 1. Sedative Hypnotics
+    {q:"[1️⃣ SH] DOC for status epilepticus 1st-line:",o:["Phenytoin","IV Lorazepam","Valproate","Levetiracetam"],a:"IV Lorazepam",e:"IV lorazepam (0.1 mg/kg) preferred over diazepam due to longer CNS duration. Sequence: BZD → Phenytoin/Fosphenytoin → Phenobarbital → general anaesthesia (Midazolam/Propofol)."},
+    {q:"[1️⃣ SH] BZD overdose antidote:",o:["Naloxone","Flumazenil","Atropine","Physostigmine"],a:"Flumazenil",e:"Flumazenil = competitive BZD-site antagonist. Caution: may precipitate seizures in chronic users."},
+    {q:"[1️⃣ SH] BZDs metabolised by glucuronidation ONLY (safe in liver disease):",o:["Diazepam","Lorazepam, Oxazepam, Temazepam (LOT)","Alprazolam","Midazolam"],a:"Lorazepam, Oxazepam, Temazepam (LOT)",e:"LOT BZDs skip Phase I oxidation → directly conjugated → safe in elderly &amp; liver disease."},
+    {q:"[1️⃣ SH] BZD mechanism:",o:["Direct GABA-A agonist","↑ frequency of Cl⁻ channel opening","↑ duration of Cl⁻ opening","NMDA antagonist"],a:"↑ frequency of Cl⁻ channel opening",e:"BZDs require endogenous GABA; ↑ frequency (BZD) vs ↑ duration (Barbiturates) of Cl⁻ channel opening."},
+    {q:"[1️⃣ SH] Z-drugs selective for which BZ subunit:",o:["α1","α2","α3","γ"],a:"α1",e:"Z-drugs (Zolpidem, Zaleplon, Zopiclone) bind α1 subunit → sedative without anticonvulsant/anxiolytic action."},
+    {q:"[1️⃣ SH] Orexin receptor antagonist for insomnia:",o:["Ramelteon","Suvorexant","Zolpidem","Buspirone"],a:"Suvorexant",e:"Suvorexant (and Lemborexant, Daridorexant) block OX1/OX2 → ↓ wakefulness."},
+
+    // 2. Antiepileptic
+    {q:"[2️⃣ AED] DOC for ABSENCE seizures (pure):",o:["Phenytoin","Carbamazepine","Ethosuximide","Phenobarbital"],a:"Ethosuximide",e:"Ethosuximide blocks T-type Ca²⁺ channels in thalamus. DOC for pure absence; Valproate preferred if GTCS coexists."},
+    {q:"[2️⃣ AED] AED contraindicated in pregnancy (NTD risk):",o:["Lamotrigine","Levetiracetam","Valproate","Topiramate"],a:"Valproate",e:"Valproate → neural tube defects (1-2%); also cognitive effects in offspring. Lamotrigine and Levetiracetam = safest in pregnancy."},
+    {q:"[2️⃣ AED] Phenytoin shows what kinetics at therapeutic dose:",o:["First-order","Zero-order","Mixed","Saturable Phase II"],a:"Zero-order",e:"Phenytoin metabolism saturable → zero-order at therapeutic levels (10-20 µg/mL); small dose ↑ → toxicity."},
+    {q:"[2️⃣ AED] HLA-B*1502 screening recommended before:",o:["Phenytoin","Carbamazepine","Valproate","Lamotrigine"],a:"Carbamazepine",e:"HLA-B*1502 + Carbamazepine → SJS/TEN in Asian population. Screen before initiation."},
+    {q:"[2️⃣ AED] SV2A modulator AED with safe pregnancy profile:",o:["Phenytoin","Carbamazepine","Levetiracetam","Topiramate"],a:"Levetiracetam",e:"Levetiracetam — SV2A modulation; no significant CYP interactions; safest AED in pregnancy alongside Lamotrigine."},
+    {q:"[2️⃣ AED] Vigabatrin major ADR (REMS-required monitoring):",o:["Hepatotoxicity","Visual field defects","SJS","Bone marrow suppression"],a:"Visual field defects",e:"Vigabatrin causes IRREVERSIBLE visual field constriction; mandatory periodic field testing (REMS programme)."},
+    {q:"[2️⃣ AED] Newest AED (2019) for refractory focal seizures:",o:["Brivaracetam","Cenobamate","Lacosamide","Eslicarbazepine"],a:"Cenobamate",e:"Cenobamate FDA 2019 for focal seizures; very high efficacy; risk of DRESS — slow titration."},
+
+    // 3. Antiparkinsonian
+    {q:"[3️⃣ APD] L-DOPA combined with Carbidopa to:",o:["↑ CNS conversion","↓ peripheral side effects","↑ duration","Pass BBB"],a:"↓ peripheral side effects",e:"Carbidopa (peripheral DDC inhibitor) doesn't cross BBB; blocks peripheral L-DOPA → DA conversion → ↓ nausea, hypotension; allows ↑ central DA."},
+    {q:"[3️⃣ APD] PD drug class causing impulse control disorders:",o:["L-DOPA","Dopamine agonists","Selegiline","Amantadine"],a:"Dopamine agonists",e:"Pramipexole/Ropinirole → gambling, hypersexuality, binge eating, shopping; counsel + screen patients."},
+    {q:"[3️⃣ APD] Selegiline mechanism:",o:["Irreversible MAO-A inhibitor","Irreversible MAO-B inhibitor","COMT inhibitor","DA precursor"],a:"Irreversible MAO-B inhibitor",e:"Selegiline (and Rasagiline) — irreversible MAO-B inhibitors; at low dose selective for B; spares tyramine reaction."},
+    {q:"[3️⃣ APD] COMT inhibitor with hepatotoxicity warning:",o:["Entacapone","Tolcapone","Opicapone","Selegiline"],a:"Tolcapone",e:"Tolcapone crosses BBB but causes hepatotoxicity → requires LFT monitoring. Entacapone (peripheral) is safer."},
+    {q:"[3️⃣ APD] Best anti-dyskinetic drug in PD:",o:["Pramipexole","Selegiline","Amantadine","Entacapone"],a:"Amantadine",e:"Amantadine (NMDA antagonist + ↑ DA release) — best evidence for reducing L-DOPA-induced dyskinesias."},
+    {q:"[3️⃣ APD] Apomorphine SC rescue — avoid co-administration with:",o:["Metoclopramide","Domperidone","Ondansetron","Promethazine"],a:"Ondansetron",e:"Apomorphine + Ondansetron → severe hypotension. Pre-treat with Trimethobenzamide or Domperidone."},
+
+    // 4. Antidepressant
+    {q:"[4️⃣ AD] 1st-line for MDD:",o:["TCA","SSRI","MAOI","BZD"],a:"SSRI",e:"SSRIs (Escitalopram, Sertraline) — best tolerability, safer in OD than TCAs."},
+    {q:"[4️⃣ AD] TCA overdose treatment:",o:["Atropine","Sodium bicarbonate","Naloxone","Cyproheptadine"],a:"Sodium bicarbonate",e:"TCA overdose → QRS widening, arrhythmias, hypotension. IV Sodium bicarbonate alkalinises plasma → ↓ Na channel blockade."},
+    {q:"[4️⃣ AD] Antidepressant + smoking cessation:",o:["Fluoxetine","Bupropion","Mirtazapine","Trazodone"],a:"Bupropion",e:"Bupropion (NDRI) — approved for smoking cessation (Zyban); ↓ seizure threshold; AVOID in bulimia/anorexia."},
+    {q:"[4️⃣ AD] Serotonin syndrome antidote:",o:["Cyproheptadine","Flumazenil","Dantrolene","Naloxone"],a:"Cyproheptadine",e:"Cyproheptadine = 5-HT2A antagonist; supportive care (cooling, BZD); stop trigger drugs."},
+    {q:"[4️⃣ AD] Treatment-resistant depression — first FDA nasal spray (2019):",o:["Ketamine","Esketamine","Zuranolone","Vortioxetine"],a:"Esketamine",e:"Esketamine intranasal (Spravato) FDA 2019; supervised dosing 2 h post-dose; NMDA receptor antagonism."},
+    {q:"[4️⃣ AD] First oral neurosteroid for postpartum depression (FDA 2023):",o:["Brexanolone","Zuranolone","Vilazodone","Vortioxetine"],a:"Zuranolone",e:"Zuranolone (Zurzuvae) FDA Aug 2023; 2-week oral course for postpartum depression."},
+    {q:"[4️⃣ AD] SSRI with longest half-life:",o:["Sertraline","Fluoxetine","Paroxetine","Citalopram"],a:"Fluoxetine",e:"Fluoxetine t½ 4-6 days + active metabolite (norfluoxetine, weeks) → less discontinuation syndrome."},
+
+    // 5. Antipsychotic
+    {q:"[5️⃣ APS] Drug for refractory schizophrenia (after 2 atypicals fail):",o:["Haloperidol","Risperidone","Clozapine","Olanzapine"],a:"Clozapine",e:"Clozapine = gold standard for treatment-resistant schizophrenia; requires REMS (weekly CBC × 6 months for agranulocytosis)."},
+    {q:"[5️⃣ APS] Acute dystonia from antipsychotic — DOC:",o:["Atropine","IM Benztropine / Diphenhydramine","Dantrolene","Bromocriptine"],a:"IM Benztropine / Diphenhydramine",e:"Acute dystonia (oculogyric crisis, torticollis) → IM Benztropine 1-2 mg or IM Diphenhydramine 50 mg."},
+    {q:"[5️⃣ APS] NMS treatment:",o:["Dantrolene + Bromocriptine","Naloxone","Cyproheptadine","Flumazenil"],a:"Dantrolene + Bromocriptine",e:"NMS (rigidity + hyperthermia + autonomic instability) — STOP antipsychotic + Dantrolene + Bromocriptine + ICU."},
+    {q:"[5️⃣ APS] Antipsychotic with highest hyperprolactinaemia:",o:["Aripiprazole","Risperidone / Paliperidone","Clozapine","Olanzapine"],a:"Risperidone / Paliperidone",e:"Risperidone/Paliperidone strongly elevate prolactin → galactorrhoea, gynecomastia, amenorrhoea."},
+    {q:"[5️⃣ APS] First non-D2 antipsychotic (M1/M4 muscarinic agonist) FDA 2024:",o:["Pimavanserin","Xanomeline-Trospium","Lumateperone","Cariprazine"],a:"Xanomeline-Trospium",e:"Xanomeline-Trospium (Cobenfy) — first M1/M4 muscarinic agonist; novel non-dopaminergic mechanism for schizophrenia."},
+    {q:"[5️⃣ APS] VMAT2 inhibitor for tardive dyskinesia:",o:["Tetrabenazine","Valbenazine / Deutetrabenazine","Pimavanserin","Olanzapine"],a:"Valbenazine / Deutetrabenazine",e:"FDA-approved VMAT2 inhibitors specifically for TD — reduce involuntary movements."},
+    {q:"[5️⃣ APS] Akathisia DOC:",o:["Benztropine","Propranolol","Cyproheptadine","Diphenhydramine"],a:"Propranolol",e:"Propranolol = first-line for akathisia; alternatives Benztropine, low-dose BZD."},
+
+    // 6. Antimanic
+    {q:"[6️⃣ AM] Best drug for SUICIDE prevention in bipolar:",o:["Valproate","Lithium","Olanzapine","Lamotrigine"],a:"Lithium",e:"Lithium uniquely reduces suicide risk in bipolar disorder (independent of mood-stabilising effect)."},
+    {q:"[6️⃣ AM] Lithium therapeutic level:",o:["0.2-0.6","0.6-1.2 mEq/L","1.5-2.5","Below 0.2"],a:"0.6-1.2 mEq/L",e:"Therapeutic 0.6-1.2; maintenance 0.6-0.8; toxic &gt; 1.5; severe &gt; 2.5 (haemodialysis)."},
+    {q:"[6️⃣ AM] Lithium toxicity precipitated by:",o:["Loop diuretics only","NSAIDs, ACEi, Thiazides, dehydration","High-Na diet","Vitamin B6"],a:"NSAIDs, ACEi, Thiazides, dehydration",e:"Lithium handled like Na⁺ by kidney; anything ↓ Na excretion → Li retention → toxicity."},
+    {q:"[6️⃣ AM] Bipolar depression monotherapy DOC:",o:["Olanzapine","Quetiapine / Lurasidone / Lamotrigine","Risperidone","Carbamazepine"],a:"Quetiapine / Lurasidone / Lamotrigine",e:"Quetiapine, Lurasidone — FDA approved; Lamotrigine for maintenance. SSRI monotherapy avoided (manic switch)."},
+    {q:"[6️⃣ AM] Lithium teratogenicity (1st trimester):",o:["NTD","Ebstein's anomaly","Cleft palate","Phocomelia"],a:"Ebstein's anomaly",e:"Lithium 1st trimester → Ebstein's anomaly (0.05-0.1% absolute risk)."},
+    {q:"[6️⃣ AM] Mood stabiliser causing PCOS in women:",o:["Lithium","Lamotrigine","Valproate","Carbamazepine"],a:"Valproate",e:"Valproate → PCOS, weight gain, hyperandrogenism in women — additional reason to avoid in young women."},
+    {q:"[6️⃣ AM] Severe Lithium toxicity (level &gt; 2.5 mEq/L) treatment:",o:["Activated charcoal","Haemodialysis","Sodium bicarbonate","Naloxone"],a:"Haemodialysis",e:"Severe Li toxicity → haemodialysis; supportive care; correct fluid &amp; electrolyte balance."},
+
+    // 7. Antianxiety
+    {q:"[7️⃣ AAX] 1st-line for chronic GAD:",o:["BZD","SSRI / SNRI","Buspirone","Hydroxyzine"],a:"SSRI / SNRI",e:"SSRIs (Escitalopram) and SNRIs (Venlafaxine, Duloxetine) — first-line for chronic anxiety disorders."},
+    {q:"[7️⃣ AAX] 5-HT1A partial agonist (no dependence, no sedation):",o:["Hydroxyzine","Buspirone","Propranolol","Pregabalin"],a:"Buspirone",e:"Buspirone = partial 5-HT1A agonist; latency 2-4 weeks; useful in chronic GAD esp. with substance abuse history."},
+    {q:"[7️⃣ AAX] Performance anxiety DOC:",o:["BZD","Buspirone","Propranolol","Sertraline"],a:"Propranolol",e:"Propranolol (10-40 mg 1h before event) — controls peripheral somatic symptoms (tremor, tachycardia) without sedation."},
+    {q:"[7️⃣ AAX] PTSD nightmares DOC:",o:["Sertraline","Prazosin","BZD","Mirtazapine"],a:"Prazosin",e:"Prazosin (α1 blocker) — best evidence for reducing PTSD nightmares; combine with SSRI + trauma therapy."},
+
+    // 8. Opioids
+    {q:"[8️⃣ OPI] Opioid overdose DOC:",o:["Flumazenil","Naloxone","Atropine","Physostigmine"],a:"Naloxone",e:"Naloxone — competitive μ-antagonist IV/IM/IN; short t½ (~30 min) → repeat doses or infusion for long-acting opioids."},
+    {q:"[8️⃣ OPI] Pethidine metabolite causing seizures (avoid in renal failure):",o:["Morphine","Normeperidine","Hydromorphone","Codeine"],a:"Normeperidine",e:"Normeperidine accumulates in renal failure → CNS toxicity, seizures. AVOID Pethidine + MAOI (serotonin syndrome)."},
+    {q:"[8️⃣ OPI] Opioid-induced constipation DOC (peripheral μ-antagonist):",o:["Loperamide","Methylnaltrexone / Naloxegol / Naldemedine","Senna","PEG"],a:"Methylnaltrexone / Naloxegol / Naldemedine",e:"PAMORAs don't cross BBB → reverse constipation without antagonising central analgesia."},
+    {q:"[8️⃣ OPI] Partial μ agonist with ceiling effect (safer in OD):",o:["Morphine","Fentanyl","Buprenorphine","Methadone"],a:"Buprenorphine",e:"Buprenorphine = partial μ agonist; ceiling effect on respiratory depression; high affinity → precipitates withdrawal if given after full agonist."},
+    {q:"[8️⃣ OPI] OUD maintenance combination (with naloxone to deter IV abuse):",o:["Methadone","Buprenorphine-Naloxone (Suboxone)","Naltrexone","Tramadol"],a:"Buprenorphine-Naloxone (Suboxone)",e:"Suboxone — naloxone activates only if injected IV (poor SL bioavailability); helps prevent diversion to IV abuse."},
+    {q:"[8️⃣ OPI] First biased μ agonist (FDA 2020) with ↓ respiratory depression:",o:["Tapentadol","Oliceridine","Tramadol","Codeine"],a:"Oliceridine",e:"Oliceridine (Olinvyk) — biased μ agonist; activates G-protein pathway preferentially over β-arrestin → less respiratory depression."},
+    {q:"[8️⃣ OPI] Codeine BBW contraindication in:",o:["Adults","Children &lt; 12 y &amp; breastfeeding","Elderly","Athletes"],a:"Children &lt; 12 y &amp; breastfeeding",e:"FDA 2017 BBW — CYP2D6 ultrarapid metabolisers → fatal opioid toxicity in children + nursing infants."},
+
+    // 9. Alcohols
+    {q:"[9️⃣ ALC] DOC for alcohol withdrawal / DT prophylaxis:",o:["Naloxone","Chlordiazepoxide / Diazepam","Lithium","Atenolol"],a:"Chlordiazepoxide / Diazepam",e:"Long-acting BZDs prevent DT &amp; seizures; Lorazepam preferred in liver disease (no Phase I metabolism)."},
+    {q:"[9️⃣ ALC] Methanol toxic metabolite:",o:["Acetaldehyde","Formic acid","Oxalate","Acetate"],a:"Formic acid",e:"Methanol → Formaldehyde → Formic acid → optic neuritis (blindness) + metabolic acidosis."},
+    {q:"[9️⃣ ALC] Methanol &amp; Ethylene glycol antidote DOC:",o:["Naloxone","Fomepizole (4-MP) IV","Atropine","Pralidoxime"],a:"Fomepizole (4-MP) IV",e:"Fomepizole = competitive ADH inhibitor; prevents formation of toxic metabolites. Ethanol IV is older alternative."},
+    {q:"[9️⃣ ALC] Wernicke encephalopathy treatment order:",o:["Glucose then thiamine","Thiamine BEFORE glucose","Both together","Glucose only"],a:"Thiamine BEFORE glucose",e:"Glucose alone in thiamine-deficient patient → precipitates Wernicke. Give Thiamine 500 mg IV FIRST × 3-5 d."},
+    {q:"[9️⃣ ALC] Disulfiram mechanism:",o:["μ-antagonist","Irreversible ALDH inhibitor","ADH inhibitor","GABA agonist"],a:"Irreversible ALDH inhibitor",e:"Disulfiram → acetaldehyde build-up → flushing, headache, nausea, hypotension. Aversive conditioning."},
+    {q:"[9️⃣ ALC] AUD anti-craving DOC:",o:["Naltrexone / Acamprosate","Disulfiram","Lorazepam","Buspirone"],a:"Naltrexone / Acamprosate",e:"Naltrexone (μ antagonist) and Acamprosate (NMDA modulator) — FDA approved for AUD anti-craving."},
+
+    // 10. General Anaesthetics
+    {q:"[🔟 GA] Paediatric inhalational induction DOC:",o:["Isoflurane","Sevoflurane","Desflurane","Halothane"],a:"Sevoflurane",e:"Sevoflurane — sweet smell, smooth induction, well tolerated by children; bronchodilator; low blood-gas → fast on/off."},
+    {q:"[🔟 GA] Fastest induction/recovery inhalational (lowest blood-gas):",o:["Isoflurane","Sevoflurane","Desflurane","Halothane"],a:"Desflurane",e:"Desflurane blood-gas 0.42 (lowest) → fastest on/off. But pungent → airway irritation → not for induction."},
+    {q:"[🔟 GA] MAC concept indicates:",o:["Solubility","Potency (lower = more potent)","Speed of onset","Toxicity"],a:"Potency (lower = more potent)",e:"MAC = alveolar conc preventing movement in 50% of patients on incision. Lower MAC = more potent (Sevo 2%, Iso 1.15%, Des 6%)."},
+    {q:"[🔟 GA] Malignant Hyperthermia DOC:",o:["Dantrolene 2.5 mg/kg IV","Bromocriptine","Cyproheptadine","Naloxone"],a:"Dantrolene 2.5 mg/kg IV",e:"MH (Sux + Volatile) → ↑ RyR1 Ca²⁺ release → hyperthermia. STOP triggers + Dantrolene 2.5 mg/kg (repeat to 10 mg/kg) + cooling + ICU."},
+    {q:"[🔟 GA] IV induction agent best for haemodynamically unstable patient:",o:["Propofol","Thiopental","Etomidate","Ketamine"],a:"Etomidate",e:"Etomidate — stable BP; preferred in cardiac patients. Ketamine alternative (↑ HR/BP) but contraindicated in head trauma."},
+    {q:"[🔟 GA] Ketamine mechanism:",o:["GABA-A enhancer","NMDA antagonist","μ agonist","Na channel blocker"],a:"NMDA antagonist",e:"Ketamine — NMDA receptor antagonist; dissociative anaesthesia; ↑ HR/BP; bronchodilator; emergence delirium (pretreat BZD)."},
+    {q:"[🔟 GA] Ultra-short BZD with esterase metabolism (FDA 2020):",o:["Midazolam","Remimazolam","Lorazepam","Diazepam"],a:"Remimazolam",e:"Remimazolam — esterase metabolism (like remifentanil); no CYP; rapid offset; ideal for procedural sedation."},
+    {q:"[🔟 GA] Propofol Infusion Syndrome (PRIS) features:",o:["Hypertension only","Metabolic acidosis + rhabdomyolysis + cardiac failure","Cushing's-like","Hepatic encephalopathy"],a:"Metabolic acidosis + rhabdomyolysis + cardiac failure",e:"PRIS — high-dose long propofol ICU sedation, esp. paediatric → metabolic acidosis, rhabdomyolysis, hyperK, cardiac failure."},
+    {q:"[🔟 GA] N₂O risks include all EXCEPT:",o:["Diffusion hypoxia","Expansion of closed gas spaces","Megaloblastic anaemia (chronic)","Malignant hyperthermia"],a:"Malignant hyperthermia",e:"N₂O does NOT trigger MH; concern with halogenated volatiles + Sux. N₂O — diffusion hypoxia, expands closed spaces, B12 inactivation chronic exposure."}
   ],
-  mnemonic:`<strong>Phenytoin ADRs - PHENYTOIN</strong>: P-450 induction, Hirsutism, Enlarged gums, Nystagmus, Yellow-brown skin, Teratogenic, Osteomalacia, Interference (folate), Neuropathies. <strong>Lithium toxicity</strong> – Tremor, Thyroid issue, Teratogenicity (Ebstein), Tubular DI.`
+  mnemonic:`<strong>📚 CNS Drugs — Quick Concepts</strong><br>
+• <strong>GABA enhancers</strong> (Sedative-Hypnotic/AED): BZD ↑freq · Barbiturate ↑duration · Z-drugs (α1) · Alcohol (direct).<br>
+• <strong>AED targets</strong>: Na (Phenytoin, CBZ, Lamotrigine) · Ca (Ethosuximide, Gabapentin) · GABA (Phenobarb, BZD, Vigabatrin) · Glutamate (Topiramate, Perampanel) · SV2A (Levetiracetam).<br>
+• <strong>PD = ↑DA</strong> (L-DOPA, agonists, MAO-B, COMT, Amantadine); <strong>Psychosis = ↓D2</strong> block.<br>
+• <strong>Depression = ↑Monoamines</strong> (SSRI/SNRI/TCA/MAOI); rapid action = Esketamine, Zuranolone.<br>
+• <strong>Bipolar</strong>: Lithium (suicide prevention) · Valproate (mixed/rapid) · Lamotrigine (depression).<br>
+• <strong>Opioids</strong>: μ (analgesia + resp depression + miosis) · Naloxone overdose · Buprenorphine partial.<br>
+• <strong>Alcohol</strong>: Wernicke → Thiamine BEFORE glucose · Fomepizole for methanol/EG.<br>
+• <strong>GA</strong>: MAC=potency · Sevoflurane paediatric · Desflurane fastest · Dantrolene = MH DOC.<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 10 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"cvs",icon:"❤️",title:"Cardiovascular System Drugs",
