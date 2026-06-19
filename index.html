@@ -81,6 +81,57 @@ html[data-theme="cream"] .youtube-box h4{color:#a13030;}
   color:var(--text);transition:.25s;display:inline-flex;align-items:center;gap:6px;margin-right:8px;}
 .theme-toggle:hover{background:var(--soft);transform:translateY(-1px);}
 .theme-toggle svg{width:14px;height:14px;}
+/* ═══════════ PROGRESS TRACKING ═══════════ */
+.progress-dashboard{background:linear-gradient(135deg,var(--card),var(--card2));border:1.5px solid var(--border);
+  border-radius:16px;padding:18px 22px;margin:20px auto;max-width:920px;display:flex;align-items:center;gap:18px;
+  flex-wrap:wrap;justify-content:space-between;box-shadow:var(--shadow);}
+.progress-dash-left{flex:1;min-width:240px;}
+.progress-dash-title{font-size:14px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.progress-bar-track{height:12px;background:rgba(15,40,71,0.08);border-radius:7px;overflow:hidden;position:relative;}
+.progress-bar-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--gold));border-radius:7px;
+  transition:width .5s cubic-bezier(.4,1.6,.5,1);}
+.progress-dash-stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--muted);}
+.progress-dash-stat{display:flex;align-items:center;gap:5px;}
+.progress-dash-stat strong{color:var(--navy);font-weight:700;}
+.progress-reset-btn{background:transparent;border:1.5px solid var(--border);border-radius:18px;padding:6px 14px;
+  cursor:pointer;font-family:'Sora',sans-serif;font-size:11px;font-weight:600;color:var(--muted);transition:.25s;}
+.progress-reset-btn:hover{background:rgba(239,68,68,0.08);border-color:#ef4444;color:#ef4444;}
+.topic-badge{position:absolute;top:14px;right:14px;display:flex;align-items:center;gap:6px;padding:5px 10px;
+  border-radius:16px;font-size:11px;font-weight:700;background:rgba(255,255,255,0.6);backdrop-filter:blur(8px);
+  border:1.5px solid rgba(0,0,0,0.06);color:var(--navy);z-index:2;}
+.topic-badge.bronze{background:linear-gradient(135deg,#cd7f32,#b8732e);color:#fff;border-color:transparent;}
+.topic-badge.silver{background:linear-gradient(135deg,#c0c0c0,#a8a8a8);color:#0a1f33;border-color:transparent;}
+.topic-badge.gold{background:linear-gradient(135deg,#ffd700,#e0b800);color:#1a1a1a;border-color:transparent;}
+.topic-badge.master{background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;border-color:transparent;
+  box-shadow:0 0 14px rgba(124,58,237,0.5);}
+.topic-progress-ring{width:40px;height:40px;position:relative;flex-shrink:0;}
+.topic-progress-ring svg{transform:rotate(-90deg);}
+.topic-progress-ring circle{fill:none;stroke-width:4;}
+.topic-progress-ring .bg{stroke:rgba(15,40,71,0.1);}
+.topic-progress-ring .fg{stroke:var(--teal);stroke-linecap:round;transition:stroke-dashoffset .6s ease;}
+.topic-progress-ring .pct{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:10px;font-weight:800;color:var(--navy);}
+.topic-card{position:relative;}
+.topic-detail-head{position:relative;}
+.topic-card-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:14px;font-size:10px;
+  font-weight:700;margin-top:8px;background:rgba(20,160,133,0.12);color:var(--teal2);}
+.topic-card-badge.gold{background:linear-gradient(135deg,#ffd700,#e0b800);color:#1a1a1a;}
+.topic-card-badge.silver{background:linear-gradient(135deg,#c0c0c0,#a8a8a8);color:#0a1f33;}
+.topic-card-badge.bronze{background:linear-gradient(135deg,#cd7f32,#b8732e);color:#fff;}
+.topic-card-badge.master{background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;}
+/* Achievement toast */
+.achievement-toast{position:fixed;top:80px;right:24px;background:linear-gradient(135deg,#fbbf24,#f59e0b);
+  color:#1a1a1a;padding:14px 22px;border-radius:14px;font-family:'Sora',sans-serif;font-weight:700;
+  font-size:13px;box-shadow:0 8px 32px rgba(245,158,11,0.4);display:none;align-items:center;gap:10px;
+  z-index:10000;animation:fi .4s ease;max-width:340px;}
+.achievement-toast.show{display:flex;}
+.achievement-toast .ach-icon{font-size:24px;}
+.achievement-toast .ach-text{display:flex;flex-direction:column;line-height:1.3;}
+.achievement-toast .ach-title{font-size:11px;opacity:0.7;}
+.achievement-toast .ach-name{font-size:14px;font-weight:800;}
+html[data-theme="cream"] .progress-dashboard{background:linear-gradient(135deg,#fdf8ea,#f0e4cc);border-color:rgba(122,88,50,0.22);}
+html[data-theme="cream"] .progress-bar-track{background:rgba(122,88,50,0.12);}
+html[data-theme="cream"] .progress-bar-fill{background:linear-gradient(90deg,#0d7a64,#b8862b);}
+
 /* Floating PWA install banner */
 .pwa-install{position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,var(--navy),var(--teal));
   color:#fff;padding:14px 22px;border-radius:14px;font-family:'Sora',sans-serif;font-weight:600;
@@ -737,6 +788,9 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
     <h2>14 Core Pharmacology Topics</h2>
     <p>Each topic contains Classification, Mechanism of Action (animated), Pharmacokinetics, Pharmacodynamics, Adverse Drug Reactions, Individual Drug Profiles, PPT Outline and NEET PG MCQs.</p>
   </div>
+
+  <!-- Progress Dashboard — populated by renderProgressDashboard() -->
+  <div class="progress-dashboard" id="progress-dashboard"></div>
 
   <div class="topic-grid">
     <div class="topic-card" onclick="openTopic('general')"><div class="topic-num">TOPIC 01</div><div class="topic-icon">🧪</div><div class="topic-title">General Pharmacology</div><div class="topic-desc">Receptors, PK, PD, dose-response, drug development</div><div class="topic-meta"><span class="topic-pill">MOA</span><span class="topic-pill">PK/PD</span><span class="topic-pill">MCQs</span></div></div>
@@ -1758,6 +1812,473 @@ const MOA = {
     <span><span class="dot" style="background:#a855f7"></span>Folates</span>
     <span><span class="dot" style="background:#10b981"></span>Inhibitor (Drug)</span>
     <span><span class="dot" style="background:#dc2626"></span>Pathological end-product</span>
+  </div>
+</div>`,
+
+  cvsComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);font-size:14px;text-align:center;margin-bottom:6px;">❤️ Cardiovascular Pharmacology — 5 Live Animated Mechanisms</h4>
+  <p style="font-size:12px;text-align:center;color:var(--muted);">Visualize RAAS cascade · HF 4-pillar GDMT · Antianginal mechanisms · Vaughan-Williams classes · Antihypertensive step-up.</p>
+</div>
+
+<!-- MOA 1: RAAS CASCADE -->
+<div class="moa-stage">
+  <div class="moa-title">⚡ MOA 1 — Renin-Angiotensin-Aldosterone System (RAAS) &amp; Drug Targets</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">RAAS Cascade — 7 Drug Targets</text>
+
+    <!-- Liver -->
+    <rect x="40" y="70" width="180" height="60" rx="8" fill="#7c1d3a" stroke="#fff" stroke-width="1.5"/>
+    <text x="130" y="95" fill="#fff" font-size="12" font-weight="800" text-anchor="middle">🫀 LIVER</text>
+    <text x="130" y="118" fill="#fbbf24" font-size="11" text-anchor="middle">Angiotensinogen</text>
+
+    <!-- Arrow with renin -->
+    <line x1="220" y1="100" x2="290" y2="100" stroke="#00d4aa" stroke-width="2"/>
+    <polygon points="288,95 298,100 288,105" fill="#00d4aa"/>
+    <text x="255" y="90" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">RENIN</text>
+    <text x="255" y="120" fill="#dc2626" font-size="10" font-weight="700" text-anchor="middle">🚫 Aliskiren</text>
+
+    <!-- Angiotensin I -->
+    <rect x="300" y="70" width="180" height="60" rx="8" fill="#172246" stroke="#4da6ff" stroke-width="1.5"/>
+    <text x="390" y="105" fill="#4da6ff" font-size="12" font-weight="800" text-anchor="middle">Angiotensin I</text>
+
+    <!-- Arrow with ACE -->
+    <line x1="480" y1="100" x2="550" y2="100" stroke="#00d4aa" stroke-width="2"/>
+    <polygon points="548,95 558,100 548,105" fill="#00d4aa"/>
+    <text x="515" y="90" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">ACE</text>
+    <text x="515" y="120" fill="#dc2626" font-size="10" font-weight="700" text-anchor="middle">🚫 ACEi (-pril)</text>
+
+    <!-- Angiotensin II -->
+    <rect x="560" y="60" width="200" height="80" rx="8" fill="#7c1d3a" stroke="#dc2626" stroke-width="2"/>
+    <text x="660" y="90" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">Angiotensin II</text>
+    <text x="660" y="110" fill="#dc2626" font-size="10" text-anchor="middle">Powerful vasoconstrictor</text>
+    <text x="660" y="124" fill="#dc2626" font-size="10" text-anchor="middle">↑ Aldosterone, ADH, thirst</text>
+
+    <!-- AT1 receptor with ARB -->
+    <rect x="800" y="65" width="150" height="35" rx="6" fill="#a855f7"/>
+    <text x="875" y="88" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">AT1 Receptor</text>
+    <text x="800" y="115" fill="#dc2626" font-size="10" font-weight="700">🚫 ARB (-sartan)</text>
+    <line x1="760" y1="85" x2="800" y2="85" stroke="#a855f7" stroke-width="2"/>
+
+    <!-- Effects -->
+    <!-- 1. Vasoconstriction -->
+    <rect x="40" y="180" width="220" height="80" rx="8" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="150" y="205" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">1️⃣ Vasoconstriction</text>
+    <ellipse cx="80" cy="235" rx="30" ry="14" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <ellipse cx="220" cy="235" rx="18" ry="10" fill="none" stroke="#10b981" stroke-width="2"/>
+    <text x="150" y="240" fill="#fbbf24" font-size="20" font-weight="800" text-anchor="middle">→</text>
+    <text x="150" y="252" fill="#7a88b0" font-size="9" text-anchor="middle">↑ Peripheral resistance</text>
+
+    <!-- Renin release (pulse from kidney) -->
+    <text x="40" y="305" fill="#10b981" font-size="11" font-weight="700">📍 Macula Densa →</text>
+    <circle cx="180" cy="300" r="9" fill="#10b981"><animate attributeName="r" values="7;12;7" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="180" y="304" fill="#fff" font-size="8" font-weight="800" text-anchor="middle">R</text>
+    <text x="40" y="325" fill="#7a88b0" font-size="10">Stimuli: ↓ BP, ↓ Na, ↑ β1</text>
+
+    <!-- 2. Aldosterone -->
+    <rect x="290" y="180" width="220" height="80" rx="8" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="400" y="205" fill="#a855f7" font-size="12" font-weight="800" text-anchor="middle">2️⃣ Aldosterone ↑</text>
+    <text x="310" y="225" fill="#7a88b0" font-size="10">From zona glomerulosa</text>
+    <text x="310" y="240" fill="#7a88b0" font-size="10">↑ Na + water retention</text>
+    <text x="310" y="253" fill="#dc2626" font-size="10" font-weight="700">🚫 MRA (Spironolactone)</text>
+
+    <!-- 3. Sympathetic activation -->
+    <rect x="540" y="180" width="220" height="80" rx="8" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="650" y="205" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">3️⃣ ↑ Sympathetic</text>
+    <text x="560" y="225" fill="#7a88b0" font-size="10">NE release facilitation</text>
+    <text x="560" y="240" fill="#7a88b0" font-size="10">↑ HR, ↑ contractility</text>
+    <text x="560" y="253" fill="#dc2626" font-size="10" font-weight="700">🚫 β-blockers</text>
+
+    <!-- 4. Bradykinin -->
+    <rect x="790" y="180" width="170" height="80" rx="8" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="875" y="205" fill="#10b981" font-size="12" font-weight="800" text-anchor="middle">4️⃣ ↑ Bradykinin</text>
+    <text x="800" y="225" fill="#7a88b0" font-size="10">(by ACEi inhibition)</text>
+    <text x="800" y="240" fill="#dc2626" font-size="10">→ Cough (10%)</text>
+    <text x="800" y="253" fill="#dc2626" font-size="10">→ Angioedema</text>
+
+    <!-- ARNI Special box -->
+    <rect x="40" y="295" width="430" height="80" rx="10" fill="#172246" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="255" y="318" fill="#7c3aed" font-size="13" font-weight="800" text-anchor="middle">⭐ ARNI = Sacubitril + Valsartan</text>
+    <text x="60" y="340" fill="#7a88b0" font-size="11">Sacubitril → Neprilysin inhibitor → ↑ BNP/ANP → vasodilation, natriuresis</text>
+    <text x="60" y="356" fill="#7a88b0" font-size="11">Valsartan → ARB</text>
+    <text x="60" y="370" fill="#10b981" font-size="11" font-weight="700">📚 PARADIGM-HF: 20% ↓ mortality vs Enalapril</text>
+
+    <!-- Side effects -->
+    <rect x="490" y="295" width="470" height="80" rx="10" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="725" y="318" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">⚠️ Class ADRs (CAPTOPRIL)</text>
+    <text x="510" y="340" fill="#7a88b0" font-size="10"><strong>C</strong>ough · <strong>A</strong>ngioedema · <strong>P</strong>roteinuria · <strong>T</strong>aste loss · <strong>O</strong>rthostatic hypotension</text>
+    <text x="510" y="356" fill="#7a88b0" font-size="10"><strong>P</strong>regnancy contra · <strong>R</strong>ash · <strong>I</strong>ncreased K⁺ · <strong>L</strong>ower BP · <strong>L</strong>iver toxicity</text>
+    <text x="510" y="372" fill="#fbbf24" font-size="10" font-weight="700">ARB: No cough; otherwise similar</text>
+
+    <!-- Indications -->
+    <rect x="40" y="395" width="920" height="120" rx="10" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="500" y="420" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">📋 RAAS Inhibitor Indications</text>
+    <text x="60" y="442" fill="#fbbf24" font-size="11" font-weight="700">✅ HTN</text>
+    <text x="60" y="458" fill="#7a88b0" font-size="10">1st line for most</text>
+    <text x="60" y="474" fill="#7a88b0" font-size="10">esp. DM, CKD, post-MI, HF</text>
+
+    <text x="280" y="442" fill="#fbbf24" font-size="11" font-weight="700">✅ HFrEF (4-Pillar GDMT)</text>
+    <text x="280" y="458" fill="#7a88b0" font-size="10">ARNI preferred over ACEi</text>
+    <text x="280" y="474" fill="#7a88b0" font-size="10">+ β-blocker + MRA + SGLT2i</text>
+
+    <text x="540" y="442" fill="#fbbf24" font-size="11" font-weight="700">✅ Diabetic Nephropathy</text>
+    <text x="540" y="458" fill="#7a88b0" font-size="10">↓ Proteinuria</text>
+    <text x="540" y="474" fill="#7a88b0" font-size="10">Slows progression</text>
+
+    <text x="780" y="442" fill="#dc2626" font-size="11" font-weight="700">⛔ AVOID</text>
+    <text x="780" y="458" fill="#7a88b0" font-size="10">Pregnancy (teratogenic)</text>
+    <text x="780" y="474" fill="#7a88b0" font-size="10">Bilateral RAS, K⁺ &gt; 5.5</text>
+
+    <text x="500" y="500" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">⚠️ Triple whammy = ACEi/ARB + Diuretic + NSAID → AKI</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#10b981"></span>Renin</span>
+    <span><span class="dot" style="background:#4da6ff"></span>Ang I</span>
+    <span><span class="dot" style="background:#dc2626"></span>Ang II / ADRs</span>
+    <span><span class="dot" style="background:#a855f7"></span>AT1 / Aldosterone</span>
+    <span><span class="dot" style="background:#7c3aed"></span>ARNI</span>
+  </div>
+</div>
+
+<!-- MOA 2: HF 4-PILLAR GDMT -->
+<div class="moa-stage">
+  <div class="moa-title">💪 MOA 2 — Heart Failure (HFrEF) — 4-Pillar Guideline-Directed Medical Therapy (GDMT)</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">HFrEF — 4 Pillars + Adjuncts</text>
+
+    <!-- Central heart -->
+    <text x="500" y="65" fill="#dc2626" font-size="48" text-anchor="middle">🫀</text>
+    <text x="500" y="125" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">HFrEF (EF &lt; 40%)</text>
+    <text x="500" y="142" fill="#7a88b0" font-size="11" text-anchor="middle">Mortality benefit drugs only</text>
+
+    <!-- Pillar 1: ARNI/ACEi -->
+    <rect x="40" y="180" width="220" height="120" rx="12" fill="#7c1d3a" stroke="#7c3aed" stroke-width="2"/>
+    <text x="150" y="205" fill="#7c3aed" font-size="13" font-weight="800" text-anchor="middle">1️⃣ ARNI / ACEi / ARB</text>
+    <text x="60" y="228" fill="#fbbf24" font-size="11" font-weight="700">Preferred:</text>
+    <text x="60" y="244" fill="#7a88b0" font-size="10">Sacubitril-Valsartan (ARNI)</text>
+    <text x="60" y="258" fill="#7a88b0" font-size="10">Enalapril, Ramipril (ACEi)</text>
+    <text x="60" y="272" fill="#7a88b0" font-size="10">Losartan (ARB if cough)</text>
+    <text x="60" y="290" fill="#10b981" font-size="10" font-weight="700">✓ PARADIGM-HF, CONSENSUS</text>
+
+    <!-- Pillar 2: β-blocker -->
+    <rect x="280" y="180" width="220" height="120" rx="12" fill="#7c1d3a" stroke="#fbbf24" stroke-width="2"/>
+    <text x="390" y="205" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">2️⃣ β-Blocker (BCM)</text>
+    <text x="300" y="228" fill="#fbbf24" font-size="11" font-weight="700">Only 3 mortality benefit:</text>
+    <text x="300" y="244" fill="#7a88b0" font-size="10">Bisoprolol (CIBIS-II)</text>
+    <text x="300" y="258" fill="#7a88b0" font-size="10">Carvedilol (COPERNICUS)</text>
+    <text x="300" y="272" fill="#7a88b0" font-size="10">Metoprolol succinate (MERIT-HF)</text>
+    <text x="300" y="290" fill="#dc2626" font-size="10" font-weight="700">⚠️ Start LOW, go SLOW</text>
+
+    <!-- Pillar 3: MRA -->
+    <rect x="520" y="180" width="220" height="120" rx="12" fill="#7c1d3a" stroke="#a855f7" stroke-width="2"/>
+    <text x="630" y="205" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">3️⃣ MRA</text>
+    <text x="540" y="228" fill="#fbbf24" font-size="11" font-weight="700">Mineralocorticoid antag:</text>
+    <text x="540" y="244" fill="#7a88b0" font-size="10">Spironolactone (RALES)</text>
+    <text x="540" y="258" fill="#7a88b0" font-size="10">Eplerenone (EPHESUS)</text>
+    <text x="540" y="272" fill="#7a88b0" font-size="10">Finerenone (FIDELIO-DKD)</text>
+    <text x="540" y="290" fill="#dc2626" font-size="10" font-weight="700">⚠️ Hyperkalaemia, gynecomastia</text>
+
+    <!-- Pillar 4: SGLT2i -->
+    <rect x="760" y="180" width="200" height="120" rx="12" fill="#7c1d3a" stroke="#10b981" stroke-width="2"/>
+    <text x="860" y="205" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">4️⃣ SGLT-2i</text>
+    <text x="780" y="228" fill="#fbbf24" font-size="11" font-weight="700">Works in DM + non-DM:</text>
+    <text x="780" y="244" fill="#7a88b0" font-size="10">Dapagliflozin (DAPA-HF)</text>
+    <text x="780" y="258" fill="#7a88b0" font-size="10">Empagliflozin (EMPEROR)</text>
+    <text x="780" y="276" fill="#10b981" font-size="10" font-weight="700">✓ Both HFrEF + HFpEF</text>
+
+    <!-- Adjuncts row -->
+    <rect x="40" y="325" width="920" height="80" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="348" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">➕ Adjuncts (symptom &amp; rhythm control)</text>
+    <text x="60" y="370" fill="#10b981" font-size="11" font-weight="700">💧 Loop Diuretic</text>
+    <text x="60" y="386" fill="#7a88b0" font-size="10">Furosemide, Torsemide</text>
+    <text x="60" y="400" fill="#7a88b0" font-size="10">Symptom relief, no mortality benefit</text>
+
+    <text x="270" y="370" fill="#10b981" font-size="11" font-weight="700">⚡ Ivabradine</text>
+    <text x="270" y="386" fill="#7a88b0" font-size="10">If channel blocker</text>
+    <text x="270" y="400" fill="#7a88b0" font-size="10">If HR &gt; 70 on β-blocker</text>
+
+    <text x="450" y="370" fill="#10b981" font-size="11" font-weight="700">💊 Digoxin</text>
+    <text x="450" y="386" fill="#7a88b0" font-size="10">Refractory + AF</text>
+    <text x="450" y="400" fill="#7a88b0" font-size="10">Narrow TI; toxicity if K⁺ ↓</text>
+
+    <text x="620" y="370" fill="#10b981" font-size="11" font-weight="700">💊 H-ISDN</text>
+    <text x="620" y="386" fill="#7a88b0" font-size="10">Hydralazine + Isosorbide</text>
+    <text x="620" y="400" fill="#7a88b0" font-size="10">African ancestry (A-HeFT)</text>
+
+    <text x="790" y="370" fill="#10b981" font-size="11" font-weight="700">⭐ Vericiguat</text>
+    <text x="790" y="386" fill="#7a88b0" font-size="10">sGC stimulator</text>
+    <text x="790" y="400" fill="#7a88b0" font-size="10">Worsening HF (VICTORIA)</text>
+
+    <!-- HFpEF box -->
+    <rect x="40" y="425" width="920" height="90" rx="10" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="500" y="448" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">📋 HFpEF (EF ≥ 50%) — Newer Approach</text>
+    <text x="60" y="470" fill="#fbbf24" font-size="11" font-weight="700">SGLT-2i</text>
+    <text x="60" y="486" fill="#7a88b0" font-size="10">Dapagliflozin/Empagliflozin</text>
+    <text x="60" y="500" fill="#10b981" font-size="10" font-weight="700">DELIVER, EMPEROR-Preserved</text>
+
+    <text x="260" y="470" fill="#fbbf24" font-size="11" font-weight="700">MRA (Spironolactone)</text>
+    <text x="260" y="486" fill="#7a88b0" font-size="10">TOPCAT (subgroup)</text>
+    <text x="260" y="500" fill="#7a88b0" font-size="10">Especially if obese</text>
+
+    <text x="460" y="470" fill="#fbbf24" font-size="11" font-weight="700">ARNI</text>
+    <text x="460" y="486" fill="#7a88b0" font-size="10">PARAGON-HF (subgroup)</text>
+    <text x="460" y="500" fill="#7a88b0" font-size="10">Limited benefit</text>
+
+    <text x="650" y="470" fill="#dc2626" font-size="11" font-weight="700">Comorbidities</text>
+    <text x="650" y="486" fill="#7a88b0" font-size="10">Treat HTN, DM, AF</text>
+    <text x="650" y="500" fill="#7a88b0" font-size="10">Diuretic for symptoms</text>
+
+    <text x="830" y="470" fill="#fbbf24" font-size="11" font-weight="700">⭐ NEW</text>
+    <text x="830" y="486" fill="#7a88b0" font-size="10">Tirzepatide (SUMMIT 2024)</text>
+    <text x="830" y="500" fill="#7a88b0" font-size="10">Obesity-related HFpEF</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#7c3aed"></span>ARNI/ACEi/ARB</span>
+    <span><span class="dot" style="background:#fbbf24"></span>β-Blocker</span>
+    <span><span class="dot" style="background:#a855f7"></span>MRA</span>
+    <span><span class="dot" style="background:#10b981"></span>SGLT2i / Adjunct</span>
+  </div>
+</div>
+
+<!-- MOA 3: ANTIANGINAL MECHANISMS -->
+<div class="moa-stage">
+  <div class="moa-title">🩺 MOA 3 — Antianginal Drugs — ↓ O₂ Demand vs ↑ O₂ Supply</div>
+  <svg class="moa-svg" viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Myocardial O₂ Supply vs Demand</text>
+
+    <!-- Heart icon center -->
+    <text x="500" y="100" fill="#dc2626" font-size="40" text-anchor="middle">🫀</text>
+
+    <!-- LEFT: ↓ Demand -->
+    <rect x="40" y="140" width="440" height="160" rx="12" fill="#7c1d3a" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="260" y="165" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">⬇️ Decrease O₂ Demand</text>
+
+    <text x="60" y="190" fill="#fbbf24" font-size="11" font-weight="700">💊 β-Blockers</text>
+    <text x="60" y="206" fill="#7a88b0" font-size="10">↓ HR, ↓ contractility, ↓ BP</text>
+    <text x="60" y="220" fill="#7a88b0" font-size="10">Metoprolol, Atenolol, Bisoprolol</text>
+
+    <text x="60" y="245" fill="#fbbf24" font-size="11" font-weight="700">💊 Non-DHP CCBs</text>
+    <text x="60" y="261" fill="#7a88b0" font-size="10">↓ HR, ↓ contractility</text>
+    <text x="60" y="275" fill="#7a88b0" font-size="10">Verapamil, Diltiazem</text>
+
+    <text x="280" y="190" fill="#fbbf24" font-size="11" font-weight="700">💊 Ivabradine</text>
+    <text x="280" y="206" fill="#7a88b0" font-size="10">If channel block</text>
+    <text x="280" y="220" fill="#7a88b0" font-size="10">↓ HR only (no inotropy)</text>
+
+    <text x="280" y="245" fill="#fbbf24" font-size="11" font-weight="700">💊 Trimetazidine</text>
+    <text x="280" y="261" fill="#7a88b0" font-size="10">Metabolic modulator</text>
+    <text x="280" y="275" fill="#7a88b0" font-size="10">Shifts FA → glucose oxidation</text>
+
+    <!-- RIGHT: ↑ Supply -->
+    <rect x="520" y="140" width="440" height="160" rx="12" fill="#1e3a5f" stroke="#10b981" stroke-width="1.5"/>
+    <text x="740" y="165" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">⬆️ Increase O₂ Supply</text>
+
+    <text x="540" y="190" fill="#fbbf24" font-size="11" font-weight="700">💊 Nitrates</text>
+    <text x="540" y="206" fill="#7a88b0" font-size="10">↑ NO → cGMP → vasodilation</text>
+    <text x="540" y="220" fill="#7a88b0" font-size="10">Venodilation > arterial</text>
+    <text x="540" y="234" fill="#7a88b0" font-size="10">GTN, ISDN, ISMN</text>
+    <text x="540" y="248" fill="#dc2626" font-size="10" font-weight="700">⚠️ Tolerance — need 8 h free</text>
+
+    <text x="760" y="190" fill="#fbbf24" font-size="11" font-weight="700">💊 DHP CCBs</text>
+    <text x="760" y="206" fill="#7a88b0" font-size="10">Arterial vasodilation</text>
+    <text x="760" y="220" fill="#7a88b0" font-size="10">Amlodipine, Nifedipine</text>
+
+    <text x="760" y="245" fill="#fbbf24" font-size="11" font-weight="700">💊 Nicorandil</text>
+    <text x="760" y="261" fill="#7a88b0" font-size="10">K-ATP channel opener</text>
+    <text x="760" y="275" fill="#7a88b0" font-size="10">+ NO donor</text>
+
+    <!-- Ranolazine (special) -->
+    <rect x="40" y="320" width="430" height="80" rx="10" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="255" y="343" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">⭐ Ranolazine</text>
+    <text x="60" y="365" fill="#fbbf24" font-size="11" font-weight="700">Late Na⁺ channel blocker</text>
+    <text x="60" y="380" fill="#7a88b0" font-size="10">↓ Late Na⁺ → ↓ Ca overload → ↓ wall tension</text>
+    <text x="60" y="394" fill="#10b981" font-size="11" font-weight="700">✓ No HR/BP effect; useful in stable angina with LV dysfunction</text>
+
+    <!-- Drug of Choice summary -->
+    <rect x="490" y="320" width="470" height="80" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="725" y="343" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 DOC by Angina Type</text>
+    <text x="510" y="365" fill="#fbbf24" font-size="11" font-weight="700">Stable angina:</text>
+    <text x="510" y="380" fill="#7a88b0" font-size="10">β-blocker (1st line) → add Nitrate / CCB</text>
+
+    <text x="510" y="396" fill="#fbbf24" font-size="11" font-weight="700">Variant (Prinzmetal):</text>
+    <text x="510" y="410" fill="#7a88b0" font-size="10">CCB ± Nitrate; AVOID β-blocker (vasospasm)</text>
+
+    <!-- ACS treatment -->
+    <rect x="40" y="415" width="920" height="55" rx="10" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="500" y="438" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">🚨 Acute Coronary Syndrome — "MONA-B"</text>
+    <text x="500" y="458" fill="#7a88b0" font-size="11" text-anchor="middle">Morphine · Oxygen · Nitrates · Aspirin (chewable 162-325 mg) · β-blocker · + Antiplatelet (P2Y12 inhibitor) + Statin + ACEi + Reperfusion</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#dc2626"></span>↓ Demand</span>
+    <span><span class="dot" style="background:#10b981"></span>↑ Supply</span>
+    <span><span class="dot" style="background:#a855f7"></span>Ranolazine</span>
+    <span><span class="dot" style="background:#fbbf24"></span>DOC summary</span>
+  </div>
+</div>
+
+<!-- MOA 4: VAUGHAN-WILLIAMS ANTIARRHYTHMIC -->
+<div class="moa-stage">
+  <div class="moa-title">⚡ MOA 4 — Vaughan-Williams Classification of Antiarrhythmic Drugs</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">Cardiac Action Potential &amp; Drug Targets</text>
+
+    <!-- Action potential curve -->
+    <path d="M50 270 L150 270 L160 80 L200 100 L210 250 L350 250 L380 270 L450 270" stroke="#fbbf24" stroke-width="3" fill="none">
+      <animate attributeName="stroke-dasharray" values="0,600;600,0" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="295" fill="#7a88b0" font-size="10">Phase: 0 (Na↑) → 1 → 2 (plateau Ca) → 3 (K↑) → 4</text>
+
+    <!-- Class IA -->
+    <rect x="500" y="60" width="450" height="60" rx="10" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="520" y="83" fill="#dc2626" font-size="12" font-weight="800">Class IA — Na⁺ block (moderate) + ↑ APD</text>
+    <text x="520" y="100" fill="#7a88b0" font-size="11">Quinidine, Procainamide, Disopyramide</text>
+    <text x="520" y="114" fill="#dc2626" font-size="10" font-weight="700">⚠️ Torsades (↑ QT); Lupus (Procainamide); Cinchonism (Quinidine)</text>
+
+    <!-- Class IB -->
+    <rect x="500" y="130" width="450" height="60" rx="10" fill="#172246" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="520" y="153" fill="#0ea5e9" font-size="12" font-weight="800">Class IB — Na⁺ block (weak) + ↓ APD</text>
+    <text x="520" y="170" fill="#7a88b0" font-size="11">Lignocaine (IV — VT post-MI DOC), Mexiletine, Phenytoin</text>
+    <text x="520" y="184" fill="#10b981" font-size="10" font-weight="700">✅ DOC for digitalis-induced arrhythmias</text>
+
+    <!-- Class IC -->
+    <rect x="500" y="200" width="450" height="60" rx="10" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="520" y="223" fill="#a855f7" font-size="12" font-weight="800">Class IC — Na⁺ block (strong) · no APD effect</text>
+    <text x="520" y="240" fill="#7a88b0" font-size="11">Flecainide, Propafenone</text>
+    <text x="520" y="254" fill="#dc2626" font-size="10" font-weight="700">⚠️ AVOID in structural heart disease (CAST trial — ↑ mortality)</text>
+
+    <!-- Class II -->
+    <rect x="500" y="270" width="450" height="55" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="520" y="293" fill="#fbbf24" font-size="12" font-weight="800">Class II — β-Blockers (Phase 4 ↓)</text>
+    <text x="520" y="310" fill="#7a88b0" font-size="11">Metoprolol, Esmolol (IV short t½), Bisoprolol, Atenolol</text>
+    <text x="520" y="322" fill="#10b981" font-size="10" font-weight="700">✅ Rate control AF · Post-MI · HF</text>
+
+    <!-- Class III -->
+    <rect x="500" y="335" width="450" height="65" rx="10" fill="#172246" stroke="#10b981" stroke-width="1.5"/>
+    <text x="520" y="358" fill="#10b981" font-size="12" font-weight="800">Class III — K⁺ block (Phase 3 ↑ APD)</text>
+    <text x="520" y="375" fill="#7a88b0" font-size="11">Amiodarone (broad — I+II+III+IV) · Sotalol (also β) · Dronedarone · Ibutilide · Dofetilide</text>
+    <text x="520" y="390" fill="#dc2626" font-size="10" font-weight="700">⚠️ Amiodarone: Lung, Liver, Thyroid, Skin (slate), Cornea</text>
+
+    <!-- Class IV -->
+    <rect x="500" y="410" width="450" height="55" rx="10" fill="#172246" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="520" y="433" fill="#7c3aed" font-size="12" font-weight="800">Class IV — Non-DHP CCBs (Ca²⁺ Phase 2)</text>
+    <text x="520" y="450" fill="#7a88b0" font-size="11">Verapamil, Diltiazem</text>
+    <text x="520" y="462" fill="#10b981" font-size="10" font-weight="700">✅ Rate control AF · SVT prevention</text>
+
+    <!-- Other -->
+    <rect x="40" y="335" width="430" height="130" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="255" y="358" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 Other / DOC by Arrhythmia</text>
+    <text x="60" y="380" fill="#10b981" font-size="11" font-weight="700">⭐ Adenosine — DOC PSVT</text>
+    <text x="60" y="394" fill="#7a88b0" font-size="10">6 mg → 12 mg IV bolus; t½ &lt; 10 s</text>
+
+    <text x="60" y="412" fill="#10b981" font-size="11" font-weight="700">⭐ Digoxin</text>
+    <text x="60" y="426" fill="#7a88b0" font-size="10">AF + HF rate control (older option)</text>
+
+    <text x="60" y="444" fill="#10b981" font-size="11" font-weight="700">⭐ Magnesium</text>
+    <text x="60" y="458" fill="#7a88b0" font-size="10">DOC for Torsades de pointes</text>
+
+    <text x="500" y="495" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">⭐ VT post-MI DOC = IV Lignocaine</text>
+    <text x="500" y="515" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">⭐ AF rate control = β-blocker/Non-DHP CCB; Rhythm = Amiodarone</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#dc2626"></span>Class IA / III ADR</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>Class IB</span>
+    <span><span class="dot" style="background:#a855f7"></span>Class IC</span>
+    <span><span class="dot" style="background:#fbbf24"></span>Class II / Other</span>
+    <span><span class="dot" style="background:#10b981"></span>Class III / Adenosine</span>
+    <span><span class="dot" style="background:#7c3aed"></span>Class IV</span>
+  </div>
+</div>
+
+<!-- MOA 5: ANTIHYPERTENSIVE STEP-UP -->
+<div class="moa-stage">
+  <div class="moa-title">📈 MOA 5 — Antihypertensive Drugs — ACC/AHA Step-Up Therapy</div>
+  <svg class="moa-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg">
+    <text x="500" y="30" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">A · C · D · K — 4 Pillars + Special Situations</text>
+
+    <!-- 4-pillar boxes -->
+    <rect x="40" y="60" width="220" height="100" rx="10" fill="#7c1d3a" stroke="#7c3aed" stroke-width="2"/>
+    <text x="150" y="82" fill="#7c3aed" font-size="13" font-weight="800" text-anchor="middle">A — RAAS (1st)</text>
+    <text x="60" y="105" fill="#7a88b0" font-size="11">ACEi: Enalapril, Ramipril</text>
+    <text x="60" y="120" fill="#7a88b0" font-size="11">ARB: Losartan, Telmisartan</text>
+    <text x="60" y="135" fill="#10b981" font-size="10" font-weight="700">✓ Preferred: DM, CKD, HF, post-MI</text>
+    <text x="60" y="150" fill="#dc2626" font-size="10" font-weight="700">⛔ Pregnancy, bilateral RAS</text>
+
+    <rect x="280" y="60" width="220" height="100" rx="10" fill="#7c1d3a" stroke="#fbbf24" stroke-width="2"/>
+    <text x="390" y="82" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">C — CCB (2nd)</text>
+    <text x="300" y="105" fill="#7a88b0" font-size="11">DHP: Amlodipine, Nifedipine</text>
+    <text x="300" y="120" fill="#7a88b0" font-size="11">Non-DHP: Verapamil, Diltiazem</text>
+    <text x="300" y="135" fill="#10b981" font-size="10" font-weight="700">✓ Elderly, African ancestry</text>
+    <text x="300" y="150" fill="#dc2626" font-size="10" font-weight="700">⚠️ Pedal oedema (DHP)</text>
+
+    <rect x="520" y="60" width="220" height="100" rx="10" fill="#7c1d3a" stroke="#10b981" stroke-width="2"/>
+    <text x="630" y="82" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">D — Diuretic (2nd)</text>
+    <text x="540" y="105" fill="#7a88b0" font-size="11">Thiazides: HCTZ, Chlorthalidone</text>
+    <text x="540" y="120" fill="#7a88b0" font-size="11">(Indapamide preferred)</text>
+    <text x="540" y="135" fill="#10b981" font-size="10" font-weight="700">✓ Elderly, isolated systolic HTN</text>
+    <text x="540" y="150" fill="#dc2626" font-size="10" font-weight="700">⚠️ Hypokalaemia, hyperglycaemia</text>
+
+    <rect x="760" y="60" width="200" height="100" rx="10" fill="#7c1d3a" stroke="#0ea5e9" stroke-width="2"/>
+    <text x="860" y="82" fill="#0ea5e9" font-size="13" font-weight="800" text-anchor="middle">K — β-Blocker</text>
+    <text x="780" y="105" fill="#7a88b0" font-size="11">Bisoprolol, Metoprolol</text>
+    <text x="780" y="120" fill="#7a88b0" font-size="11">Carvedilol (HF+HTN)</text>
+    <text x="780" y="135" fill="#10b981" font-size="10" font-weight="700">✓ Young, post-MI, HF, AF</text>
+    <text x="780" y="150" fill="#dc2626" font-size="10" font-weight="700">⛔ Asthma, heart block</text>
+
+    <!-- Step-up algorithm -->
+    <rect x="40" y="180" width="920" height="120" rx="10" fill="#172246" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="500" y="205" fill="#fbbf24" font-size="13" font-weight="800" text-anchor="middle">📋 Step-Up Algorithm (ACC/AHA 2017)</text>
+    <text x="60" y="228" fill="#fbbf24" font-size="11" font-weight="700">Stage 1 HTN (≥ 130/80):</text>
+    <text x="60" y="244" fill="#7a88b0" font-size="11">Lifestyle ± single agent if ASCVD/DM/CKD</text>
+
+    <text x="60" y="265" fill="#fbbf24" font-size="11" font-weight="700">Stage 2 HTN (≥ 140/90):</text>
+    <text x="60" y="281" fill="#7a88b0" font-size="11">2-drug combination preferred (A+C or A+D)</text>
+
+    <text x="500" y="228" fill="#fbbf24" font-size="11" font-weight="700">If uncontrolled → Step 2:</text>
+    <text x="500" y="244" fill="#7a88b0" font-size="11">Add 2nd drug (different mechanism)</text>
+
+    <text x="500" y="265" fill="#fbbf24" font-size="11" font-weight="700">Resistant HTN (3 drugs incl. diuretic):</text>
+    <text x="500" y="281" fill="#7a88b0" font-size="11">Add Spironolactone / α-blocker / β-blocker</text>
+
+    <text x="500" y="293" fill="#10b981" font-size="11" font-weight="700">⭐ Aprocitentan (2024) — newest for resistant HTN</text>
+
+    <!-- Special situations -->
+    <rect x="40" y="320" width="450" height="180" rx="10" fill="#172246" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="265" y="343" fill="#a855f7" font-size="13" font-weight="800" text-anchor="middle">🩺 Special Situations</text>
+
+    <text x="60" y="368" fill="#fbbf24" font-size="11" font-weight="700">Pregnancy:</text>
+    <text x="60" y="383" fill="#7a88b0" font-size="11">Methyldopa &gt; Labetalol &gt; Nifedipine</text>
+
+    <text x="60" y="403" fill="#fbbf24" font-size="11" font-weight="700">DM with proteinuria:</text>
+    <text x="60" y="418" fill="#7a88b0" font-size="11">ACEi/ARB (renoprotective)</text>
+
+    <text x="60" y="438" fill="#fbbf24" font-size="11" font-weight="700">HF:</text>
+    <text x="60" y="453" fill="#7a88b0" font-size="11">ARNI + β-blocker (BCM) + MRA + SGLT2i</text>
+
+    <text x="60" y="473" fill="#fbbf24" font-size="11" font-weight="700">Pheochromocytoma:</text>
+    <text x="60" y="488" fill="#7a88b0" font-size="11">α-block FIRST (Phenoxybenzamine) → then β</text>
+
+    <!-- Hypertensive emergency -->
+    <rect x="510" y="320" width="450" height="180" rx="10" fill="#172246" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="735" y="343" fill="#dc2626" font-size="13" font-weight="800" text-anchor="middle">🚨 Hypertensive Emergency</text>
+
+    <text x="530" y="368" fill="#fbbf24" font-size="11" font-weight="700">Sodium Nitroprusside</text>
+    <text x="530" y="383" fill="#7a88b0" font-size="11">IV; arteriovenous dilator; cyanide toxicity risk</text>
+
+    <text x="530" y="403" fill="#fbbf24" font-size="11" font-weight="700">Labetalol IV</text>
+    <text x="530" y="418" fill="#7a88b0" font-size="11">Pregnancy-induced HTN; aortic dissection</text>
+
+    <text x="530" y="438" fill="#fbbf24" font-size="11" font-weight="700">Nicardipine / Clevidipine</text>
+    <text x="530" y="453" fill="#7a88b0" font-size="11">IV CCBs; titratable</text>
+
+    <text x="530" y="473" fill="#fbbf24" font-size="11" font-weight="700">Phentolamine (Pheo crisis)</text>
+    <text x="530" y="488" fill="#7a88b0" font-size="11">Esmolol IV (rapid β-blockade — aortic dissection)</text>
+  </svg>
+  <div class="moa-legend">
+    <span><span class="dot" style="background:#7c3aed"></span>A — RAAS</span>
+    <span><span class="dot" style="background:#fbbf24"></span>C — CCB</span>
+    <span><span class="dot" style="background:#10b981"></span>D — Diuretic</span>
+    <span><span class="dot" style="background:#0ea5e9"></span>K — β-Blocker</span>
+    <span><span class="dot" style="background:#dc2626"></span>Emergency</span>
   </div>
 </div>`,
 
@@ -9562,14 +10083,39 @@ TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
     {n:"Sugammadex",c:"🔟 Cyclodextrin",u:"Reversal of Rocuronium/Vecuronium"}
   ],
   ppt:[
-    {t:"General Anaesthetics",p:["Stages of anaesthesia","MAC concept","Inhaled vs IV","Balanced anaesthesia"]},
-    {t:"Sedative-Hypnotics",p:["BZD vs barbiturate","Z-drugs","Flumazenil","Dependence"]},
-    {t:"Antiepileptics",p:["Mechanism-based classification","DOC for each seizure type","Status epilepticus","AEDs in pregnancy"]},
-    {t:"Parkinson Disease",p:["Levodopa","Dopamine agonists","MAO-B inhibitors","COMT inhibitors"]},
-    {t:"Antipsychotics",p:["Typical vs atypical","EPS","NMS","Clozapine specials"]},
-    {t:"Antidepressants",p:["SSRI 1st line","SNRI","TCA","MAOI – tyramine reaction"]},
-    {t:"Mood Stabilisers",p:["Lithium","Valproate","Lamotrigine","Atypical antipsychotics"]},
-    {t:"Opioid Analgesics",p:["Receptor pharmacology","Morphine","Fentanyl","Antagonists"]}
+    // 1. Sedative Hypnotics
+    {t:"1️⃣ Sedative-Hypnotics — Overview",p:["GABA-A receptor pharmacology","BZD vs Barbiturate (frequency vs duration)","Z-drugs (α1 selective)","Newer: Ramelteon, Suvorexant, Daridorexant"]},
+    {t:"1️⃣ BZD Pharmacology — Clinical Use",p:["LOT rule (Lorazepam, Oxazepam, Temazepam)","Status epilepticus DOC = IV Lorazepam","Alcohol withdrawal = Chlordiazepoxide","Flumazenil = BZD overdose antidote"]},
+    // 2. Antiepileptic
+    {t:"2️⃣ AED — Mechanism-Based Classification",p:["Na⁺ blockers: Phenytoin, CBZ, Lamotrigine, Lacosamide","Ca²⁺ blockers: Ethosuximide (T-type), Gabapentin","GABA enhancers: BZD, Phenobarb, Vigabatrin","SV2A: Levetiracetam"]},
+    {t:"2️⃣ AED — Seizure-Type DOC",p:["GTCS = Valproate/Lamotrigine/Levetiracetam","Absence = Ethosuximide","Focal = Carbamazepine/Lamotrigine","Status SE algorithm: BZD → Phenytoin → Phenobarbital"]},
+    {t:"2️⃣ AED — Pregnancy &amp; Special",p:["Safest = Levetiracetam, Lamotrigine","AVOID = Valproate (NTD)","HLA-B*1502 + CBZ = SJS in Asians","Newer: Cenobamate, Cannabidiol, Ganaxolone"]},
+    // 3. Antiparkinsonian
+    {t:"3️⃣ Antiparkinsonian Drugs",p:["L-DOPA + Carbidopa = mainstay","DA agonists: Pramipexole, Ropinirole — ICD risk","MAO-B: Selegiline, Rasagiline","COMT: Entacapone (safe), Tolcapone (hepatic)"]},
+    {t:"3️⃣ PD — Strategy &amp; Newer",p:["Amantadine = anti-dyskinetic DOC","Apomorphine = rescue (AVOID Ondansetron)","Anticholinergics for tremor","Istradefylline (A2A antagonist 2019)"]},
+    // 4. Antidepressant
+    {t:"4️⃣ Antidepressants — Classes",p:["SSRI 1st line: Escitalopram, Sertraline","SNRI: Venlafaxine, Duloxetine","TCA: Amitriptyline (OD treatment = NaHCO₃)","MAOI: Tyramine cheese reaction"]},
+    {t:"4️⃣ Antidepressants — Atypical &amp; Newer",p:["Bupropion (smoking cessation)","Mirtazapine (sedation + weight gain)","Esketamine intranasal (TRD)","Zuranolone (postpartum 2023)"]},
+    // 5. Antipsychotic
+    {t:"5️⃣ Antipsychotics — Typical vs Atypical",p:["Typical (Haloperidol) — high EPS, ↑ prolactin","Atypical (Olanzapine, Risperidone) — metabolic","Clozapine = refractory + agranulocytosis","Aripiprazole = partial D2 agonist"]},
+    {t:"5️⃣ Antipsychotics — EPS &amp; NMS",p:["Acute dystonia → IM Benztropine","Akathisia → Propranolol","Tardive Dyskinesia → VMAT2 (Valbenazine)","NMS → Dantrolene + Bromocriptine"]},
+    {t:"5️⃣ Newer Antipsychotics",p:["Xanomeline-Trospium (M1/M4 agonist 2024)","Lumateperone","Pimavanserin (PD psychosis)","6-monthly Paliperidone palmitate"]},
+    // 6. Antimanic
+    {t:"6️⃣ Antimanic / Mood Stabilisers",p:["Lithium = suicide prevention (narrow TI 0.6-1.2)","Lithium tox: NSAIDs, ACEi, dehydration","Valproate (mixed/rapid cycling)","Lamotrigine (bipolar depression maintenance)"]},
+    // 7. Antianxiety
+    {t:"7️⃣ Antianxiety Drugs",p:["SSRI/SNRI 1st line chronic","BZD short-term acute","Buspirone (5-HT1A partial agonist, no dependence)","Propranolol — performance anxiety"]},
+    {t:"7️⃣ Anxiety — Special",p:["OCD = SSRI high dose / Clomipramine","PTSD nightmares = Prazosin","SAD = Sertraline/Paroxetine","Pregabalin (3rd line GAD)"]},
+    // 8. Opioids
+    {t:"8️⃣ Opioids — Receptor Pharmacology",p:["μ (analgesia, respiratory depression, miosis, constipation)","κ (spinal analgesia, dysphoria, miosis)","δ (modulates μ)","Endogenous: endorphins, enkephalins"]},
+    {t:"8️⃣ Opioid Drugs",p:["Strong μ: Morphine, Fentanyl, Methadone","Partial μ: Buprenorphine (ceiling effect)","Mixed: Tramadol (μ + SNRI)","Naloxone (overdose) · Naltrexone (maintenance)"]},
+    {t:"8️⃣ Opioid Use Disorder",p:["Methadone clinic-based","Buprenorphine-Naloxone (Suboxone) office-based","Naltrexone for relapse prevention","Methylnaltrexone for opioid-induced constipation"]},
+    // 9. Alcohols
+    {t:"9️⃣ Alcohols — Ethanol",p:["Withdrawal: 6h tremor → 12-48h seizures → 48-96h DT","Wernicke encephalopathy: Thiamine BEFORE glucose","AUD anti-craving: Naltrexone / Acamprosate","Aversion: Disulfiram (ALDH inhibitor)"]},
+    {t:"9️⃣ Alcohols — Methanol &amp; EG",p:["Methanol → formate → blindness","EG → oxalate → renal failure","Antidote DOC: Fomepizole IV","Severe → Haemodialysis"]},
+    // 10. General Anaesthetics
+    {t:"🔟 General Anaesthetics — Inhalational",p:["Sevoflurane (paediatric DOC)","Desflurane (fastest on/off)","Isoflurane (maintenance)","N₂O (analgesia adjunct — diffusion hypoxia)"]},
+    {t:"🔟 General Anaesthetics — IV",p:["Propofol (rapid; PRIS in long ICU)","Etomidate (cardiac stable)","Ketamine (NMDA antag; ↑ BP; bronchodilator)","Remimazolam (esterase metabolism 2020)"]},
+    {t:"🔟 Anaesthesia — MAC, MH",p:["MAC = potency (lower = stronger)","Blood-gas ↓ = faster on/off","MH = Sux + Volatile → Dantrolene 2.5 mg/kg","Sugammadex reverses Roc/Vec"]}
   ],
   mcqs:[
     // 1. Sedative Hypnotics
@@ -9671,96 +10217,824 @@ TOPICS.push({id:"cns",icon:"🧬",title:"Central Nervous System Drugs",
 });
 
 TOPICS.push({id:"cvs",icon:"❤️",title:"Cardiovascular System Drugs",
-  classification:`<h4>Antihypertensives</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>ACE inhibitors</td><td>Enalapril, Ramipril, Lisinopril, Captopril, Perindopril</td></tr>
-<tr><td>ARBs</td><td>Losartan, Telmisartan, Valsartan, Olmesartan, Irbesartan</td></tr>
-<tr><td>ARNI</td><td>Sacubitril + Valsartan</td></tr>
-<tr><td>CCBs (DHP)</td><td>Amlodipine, Nifedipine, Felodipine, Clevidipine, Nicardipine</td></tr>
-<tr><td>CCBs (non-DHP)</td><td>Verapamil, Diltiazem</td></tr>
-<tr><td>Diuretics</td><td>HCTZ, Chlorthalidone, Indapamide; Furosemide; Spironolactone</td></tr>
-<tr><td>β-blockers</td><td>Metoprolol, Atenolol, Bisoprolol, Nebivolol, Carvedilol</td></tr>
-<tr><td>α-blockers</td><td>Prazosin, Terazosin, Doxazosin</td></tr>
-<tr><td>Central α2 agonists</td><td>Clonidine, Methyldopa (DOC in pregnancy)</td></tr>
-<tr><td>Direct vasodilators</td><td>Hydralazine, Minoxidil, Sodium Nitroprusside</td></tr>
-<tr><td>Renin inhibitor</td><td>Aliskiren</td></tr></table>
-<h4>Heart Failure Drugs</h4>
-<p>RAAS – ACEi/ARB/ARNI; β-blockers (bisoprolol, carvedilol, metoprolol-XL); MRA (spironolactone, eplerenone); SGLT-2i (dapagliflozin, empagliflozin); Loop diuretics; Digoxin; Ivabradine; Hydralazine + Isosorbide dinitrate (Black/African ancestry).</p>
-<h4>Antianginals</h4>
-<p>Nitrates (GTN, ISDN, ISMN), β-blockers, CCBs, Ranolazine, Nicorandil, Ivabradine, Trimetazidine.</p>
-<h4>Antiarrhythmics (Vaughan-Williams)</h4>
-<table><tr><th>Class</th><th>MOA</th><th>Drugs</th></tr>
-<tr><td>IA</td><td>Na⁺ block, ↑ APD</td><td>Quinidine, Procainamide, Disopyramide</td></tr>
-<tr><td>IB</td><td>Na⁺ block, ↓ APD</td><td>Lignocaine, Mexiletine, Phenytoin</td></tr>
-<tr><td>IC</td><td>Strong Na⁺ block</td><td>Flecainide, Propafenone</td></tr>
-<tr><td>II</td><td>β-blockers</td><td>Esmolol, Metoprolol</td></tr>
-<tr><td>III</td><td>K⁺ block</td><td>Amiodarone, Dronedarone, Sotalol, Ibutilide, Dofetilide</td></tr>
-<tr><td>IV</td><td>Ca²⁺ block</td><td>Verapamil, Diltiazem</td></tr>
-<tr><td>Other</td><td>—</td><td>Adenosine (SVT), Digoxin, Mg, Ivabradine</td></tr></table>
-<h4>Lipid-lowering Drugs</h4>
-<p>Statins (Atorvastatin, Rosuvastatin), Ezetimibe, Fibrates (Fenofibrate), Niacin, Bile acid sequestrants (Cholestyramine), PCSK9 inhibitors (Evolocumab, Alirocumab), Bempedoic acid, Inclisiran, Fish oil (Omega-3).</p>`,
-  moa:MOA.cvs,
-  pkpd:`<h4>ACE Inhibitors</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Renin Angiotensin Aldosterone System (RAAS)",panelId:"raas"},
+    {n:2,label:"Drugs for Heart Failure",panelId:"hf"},
+    {n:3,label:"Antiischaemic Drugs",panelId:"aisch"},
+    {n:4,label:"Antiarrhythmic Drugs",panelId:"aarr"},
+    {n:5,label:"Antihypertensive Drugs",panelId:"ahtn"}
+  ],
+  classification:`<h4>Cardiovascular Pharmacology — Overview</h4>
+<p>CVS drugs are among the most prescribed agents globally and target hypertension, heart failure, ischaemic heart disease, arrhythmias, and dyslipidaemia. Their actions are unified by 4 main physiological levers: <strong>RAAS modulation · sympathetic blockade · ion-channel/electrophysiology · vasodilation/inotropy</strong>.</p>
+
+<table>
+<tr><th>Clinical Domain</th><th>Major Drug Categories</th><th>Key Targets</th></tr>
+<tr><td><strong>RAAS Modulators</strong></td><td>ACEi · ARB · ARNI · MRA · Renin inhibitor</td><td>ACE · AT1 · Aldosterone receptor · Neprilysin</td></tr>
+<tr><td><strong>Heart Failure</strong></td><td>4-Pillar GDMT: ARNI · β-blocker · MRA · SGLT2i + adjuncts</td><td>Multiple — mortality benefit</td></tr>
+<tr><td><strong>Antiischaemic / Antianginal</strong></td><td>Nitrates · β-blockers · CCBs · Ranolazine · Nicorandil · Ivabradine</td><td>↓ O₂ demand vs ↑ O₂ supply</td></tr>
+<tr><td><strong>Antiarrhythmics</strong></td><td>Vaughan-Williams Classes I-IV + Adenosine + Digoxin + Mg</td><td>Na · K · Ca channels · β receptors</td></tr>
+<tr><td><strong>Antihypertensives</strong></td><td>A (RAAS) · C (CCB) · D (Diuretic) · K (β-blocker) + special</td><td>Multi-target</td></tr>
+<tr><td><strong>Lipid Lowering (briefly)</strong></td><td>Statins · Ezetimibe · PCSK9i · Bempedoic acid · Inclisiran · Fibrates</td><td>HMG-CoA reductase · NPC1L1 · PCSK9</td></tr>
+</table>
+
+<p style="margin-top:18px;text-align:center;font-size:13px;color:var(--muted);">👆 <em>Sub-topic-specific content (classification, MOA, ADRs, mnemonics, NEET PG points) — please use the 5-button Sub-Topic Navigator above.</em></p>`,
+  moa:MOA.cvsComplete,
+  extraPanels:[
+    /* ═══════════ 1. RAAS ═══════════ */
+    {id:"raas",content:`<span id="sub-raas-cvs" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚡ 1️⃣ RENIN-ANGIOTENSIN-ALDOSTERONE SYSTEM (RAAS)</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> RAAS is a hormonal cascade regulating blood pressure, fluid &amp; electrolyte balance, and cardiac/renal remodelling. Pharmacological inhibition at multiple steps is foundational in treating <em>hypertension, heart failure, diabetic nephropathy, and post-MI</em> patients.</p>
+
+<h4>📋 Classification — RAAS Modulators</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Key Note</th></tr>
+<tr><td><strong>ACE Inhibitors (-pril)</strong></td><td>Enalapril, Ramipril, Lisinopril, Captopril, Perindopril, Quinapril, Benazepril, Trandolapril, Fosinopril</td><td>↑ Bradykinin → cough (10%)</td></tr>
+<tr><td><strong>ARBs (-sartan)</strong></td><td>Losartan, Valsartan, Telmisartan (longest t½), Irbesartan, Olmesartan, Candesartan, Eprosartan, Azilsartan</td><td>No cough; ↓ angioedema</td></tr>
+<tr><td><strong>ARNI</strong></td><td>Sacubitril + Valsartan (Entresto)</td><td>Wash out ACEi 36 h before</td></tr>
+<tr><td><strong>Direct Renin Inhibitor</strong></td><td>Aliskiren</td><td>Limited use; avoid with ACEi/ARB</td></tr>
+<tr><td><strong>MRA (Aldosterone)</strong></td><td>Spironolactone (non-selective), Eplerenone (selective), Finerenone (non-steroidal)</td><td>Hyperkalaemia risk; gynecomastia with Spironolactone</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK</h4>
 <ul>
-<li>Block angiotensin-converting enzyme → ↓ AngII → vasodilation; ↑ bradykinin → cough</li>
-<li>↓ aldosterone → ↓ Na/water retention</li>
-<li>Renal protection in DM (proteinuria reduction)</li>
-<li>Avoid: bilateral renal artery stenosis, pregnancy, hyperkalaemia, angioedema</li>
+<li><strong>ACEi:</strong> Block ACE → ↓ Ang II + ↑ Bradykinin. ↓ Vasoconstriction, ↓ aldosterone, renal protection.</li>
+<li><strong>ARB:</strong> Block AT1 → same effect on Ang II without ↑ bradykinin (no cough); no angioedema risk reduction guaranteed.</li>
+<li><strong>ARNI:</strong> Sacubitril inhibits neprilysin → ↑ BNP/ANP → vasodilation + natriuresis. Valsartan blocks AT1.</li>
+<li><strong>Aliskiren:</strong> Directly inhibits renin → ↓ Ang I → ↓ Ang II. Hyperkalaemia risk; avoid with ACEi/ARB (ALTITUDE trial).</li>
+<li><strong>MRA:</strong> Block aldosterone receptor in distal tubule → K⁺-sparing, Na⁺-excretion. Finerenone — non-steroidal, less gynecomastia, FDA approved for DKD.</li>
+<li><strong>Captopril vs Enalapril:</strong> Captopril short t½ (need TID); Enalapril is a prodrug → enalaprilat.</li>
 </ul>
-<h4>Beta-blockers in HF</h4>
-<p>Only 3 evidence-based – Bisoprolol, Carvedilol, Metoprolol succinate (BCM). Start low, titrate slowly. Decrease mortality.</p>
-<h4>Digoxin</h4>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses</h4>
+<table>
+<tr><th>Indication</th><th>Preferred Agent</th></tr>
+<tr><td>HTN (1st-line in DM, CKD, post-MI, HF)</td><td>ACEi / ARB</td></tr>
+<tr><td>HFrEF</td><td>ARNI &gt; ACEi/ARB + β-blocker + MRA + SGLT2i</td></tr>
+<tr><td>HFpEF</td><td>SGLT2i + Spironolactone (TOPCAT subgroup); ARNI limited</td></tr>
+<tr><td>Diabetic nephropathy / Proteinuria</td><td>ACEi/ARB (↓ proteinuria, slow progression)</td></tr>
+<tr><td>Post-MI with LV dysfunction</td><td>ACEi/ARB (SAVE, VALIANT)</td></tr>
+<tr><td>Primary hyperaldosteronism</td><td>Spironolactone (Conn's syndrome)</td></tr>
+<tr><td>Resistant HTN (4th drug)</td><td>Spironolactone (PATHWAY-2 trial)</td></tr>
+<tr><td>Chronic kidney disease with DM (Finerenone)</td><td>Finerenone (FIDELIO-DKD, FIGARO-DKD)</td></tr>
+<tr><td>Ascites / Cirrhosis</td><td>Spironolactone + Furosemide</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs ("CAPTOPRIL")</h4>
 <ul>
-<li>Inhibits Na/K ATPase → ↑ intracellular Ca → +ve inotropy; vagal stimulation → ↓ HR</li>
-<li>Narrow TI; toxic at &gt; 2 ng/ml</li>
-<li>Toxicity ↑ by hypokalaemia, hypomagnesaemia, hypercalcaemia, renal failure</li>
-<li>Antidote – Digoxin-specific Fab antibodies (Digibind)</li>
-</ul>`,
-  adr:`<h4>ACE inhibitor – CAPTOPRIL</h4>
-<p><strong>C</strong>ough, <strong>A</strong>ngioedema, <strong>P</strong>roteinuria, <strong>T</strong>aste loss, <strong>O</strong>rthostatic hypotension, <strong>P</strong>regnancy contra, <strong>R</strong>ash, <strong>I</strong>ncreased renin/K⁺, <strong>L</strong>ower BP, <strong>L</strong>iver toxicity.</p>
-<h4>Amiodarone Toxicity</h4>
-<p>Pulmonary fibrosis, hepatotoxicity, thyroid dysfunction (both hypo/hyper), corneal microdeposits, blue-grey skin (slate), peripheral neuropathy, photosensitivity, prolonged QT.</p>
-<h4>Statin ADRs</h4>
-<p>Myopathy (↑ CK), rhabdomyolysis (especially with fibrates, macrolides, azoles), hepatitis, ↑ HbA1c, headache. Lovastatin/simvastatin – ↑ interaction with CYP3A4 inhibitors.</p>
-<h4>Nitrate tolerance</h4>
-<p>Develops within 24 h continuous use → nitrate-free interval of 8 h needed daily.</p>`,
+<li><strong>C</strong>ough (10%) — Bradykinin-mediated; ARB has no cough.</li>
+<li><strong>A</strong>ngioedema (rare but fatal) — STOP ACEi; do NOT switch to ARB unconditionally.</li>
+<li><strong>P</strong>roteinuria (rare paradox); usually renoprotective.</li>
+<li><strong>T</strong>aste loss (dysgeusia — Captopril SH group).</li>
+<li><strong>O</strong>rthostatic hypotension (1st dose, esp. dehydrated).</li>
+<li><strong>P</strong>regnancy CONTRAINDICATED — foetal renal failure, hypocalvaria, oligohydramnios.</li>
+<li><strong>R</strong>ash, neutropenia (Captopril SH group).</li>
+<li><strong>I</strong>ncreased K⁺ (Hyperkalaemia) — esp. with MRA, K⁺ sparing.</li>
+<li><strong>L</strong>ower BP &amp; renal failure (esp. in bilateral renal artery stenosis).</li>
+<li><strong>L</strong>iver toxicity (rare).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Pregnancy (all trimesters — Cat D/X).</li>
+<li>Bilateral renal artery stenosis (or unilateral with solitary kidney).</li>
+<li>Hyperkalaemia (K⁺ &gt; 5.5).</li>
+<li>Angioedema history.</li>
+<li>Severe aortic stenosis.</li>
+<li>ARNI + ACEi together → DOUBLE bradykinin → angioedema.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Triple Whammy AKI:</strong> ACEi/ARB + NSAID + Diuretic → ↓ GFR → AKI.</li>
+<li><strong>ACEi/ARB + K⁺ sparing</strong> (Spironolactone, Eplerenone) → hyperkalaemia.</li>
+<li><strong>ACEi/ARB + Lithium</strong> → ↑ Lithium levels.</li>
+<li><strong>NSAIDs</strong> blunt antihypertensive effect.</li>
+<li><strong>ARNI</strong> washout from ACEi 36 h before; do not co-administer.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> Diabetic with proteinuria 2 g/day &amp; HTN. Best 1st-line?<br><strong>Answer:</strong> <em>ACEi (Enalapril/Ramipril)</em> — controls BP + reduces proteinuria + slows DKD progression.</p></div>
+<div class="cblock"><p><strong>Case:</strong> HFrEF patient on Enalapril, considering switch to Sacubitril-Valsartan. What's required?<br><strong>Answer:</strong> <em>Wash out Enalapril × 36 hours</em> before starting ARNI — prevents fatal angioedema (double bradykinin).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Resistant HTN on A+C+D failing. Next?<br><strong>Answer:</strong> Add <em>Spironolactone 25 mg</em> (4th drug — PATHWAY-2); monitor K⁺.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>"-pril" = ACEi</strong>; "-sartan" = ARB</li>
+<li><strong>Bradykinin cough</strong> in ACEi → switch to ARB (no cough; lower angioedema risk)</li>
+<li><strong>ACEi/ARB AKI</strong> = "Triple whammy" with NSAID + Diuretic</li>
+<li><strong>Pregnancy contraindicated</strong> — switch to Methyldopa, Labetalol, Nifedipine</li>
+<li><strong>Hyperkalaemia risk</strong> ↑ with CKD, DM, NSAID, K⁺ sparing — monitor</li>
+<li><strong>Captopril unique ADRs</strong> = SH group → dysgeusia, neutropenia, rash</li>
+<li><strong>Telmisartan</strong> = longest t½ ARB (24 h); good for adherence; also PPARγ agonism</li>
+<li><strong>Losartan</strong> = uricosuric (modest) — useful in HTN + gout</li>
+<li><strong>ARNI &gt; ACEi in HFrEF</strong> — PARADIGM-HF 20% mortality reduction</li>
+<li><strong>Spironolactone</strong> ADRs = hyperK + gynecomastia/menstrual issues (non-selective); Eplerenone more selective</li>
+<li><strong>Finerenone</strong> = non-steroidal MRA; FDA for DKD; less endocrine ADR</li>
+<li><strong>Aliskiren + ACEi/ARB</strong> contraindicated (↑ AKI in ALTITUDE)</li>
+<li><strong>Conn's (1° hyperaldo)</strong> screening = Aldosterone:Renin ratio; treat with Spironolactone or adrenalectomy</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Finerenone</strong> — non-steroidal MRA; FIDELIO-DKD, FIGARO-DKD trials; FDA 2021 for DKD</li>
+<li><strong>Sacubitril-Valsartan</strong> expanded use in HFpEF (PARAGON-HF subgroup); pre-discharge initiation in acute HF (PIONEER-HF)</li>
+<li><strong>Aprocitentan</strong> (dual endothelin antagonist) — FDA 2024 for resistant HTN (PRECISION trial)</li>
+<li><strong>Zilebesiran</strong> (siRNA against angiotensinogen) — once-yearly antihypertensive (Phase 2)</li>
+<li><strong>Patiromer, Sodium Zirconium Cyclosilicate</strong> — newer K⁺ binders enabling RAASi continuation in CKD</li>
+<li><strong>SGLT2i synergy</strong> with RAASi → renal &amp; cardio benefits in CKD/HF</li>
+<li><strong>ESC 2024</strong> guidelines: SBP target &lt; 130 mmHg if tolerated; combination 1st line</li>
+<li><strong>NICE 2024 update</strong> — A/C/D step-up still preferred; consider lifestyle + telehealth</li>
+<li><strong>Renal denervation</strong> (catheter ablation) FDA approved 2023 for resistant HTN</li>
+<li><strong>Continuous ambulatory monitoring</strong> + AI-assisted HTN management emerging</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: 1st line antihypertensive in DM with proteinuria — <em>ACEi/ARB</em></li>
+<li><strong>INI-CET 2023</strong>: ACEi cough mechanism — <em>↑ Bradykinin</em></li>
+<li><strong>NEET PG 2024</strong>: ARNI = Sacubitril + — <em>Valsartan</em></li>
+<li><strong>INI-CET 2024</strong>: Pregnancy contraindicated RAAS drug — <em>ACEi, ARB, Aliskiren</em></li>
+<li><strong>NEET PG 2024</strong>: HFrEF mortality reduction trial of ARNI vs Enalapril — <em>PARADIGM-HF</em></li>
+<li><strong>FMGE 2024</strong>: K⁺ sparing diuretic for HF/cirrhosis — <em>Spironolactone</em></li>
+<li><strong>NEET PG 2025</strong>: Non-steroidal MRA for diabetic kidney disease — <em>Finerenone</em></li>
+<li><strong>INI-CET 2024</strong>: ARB with longest half-life — <em>Telmisartan (24 h)</em></li>
+<li><strong>NEET PG 2023</strong>: Captopril unique ADR — <em>Dysgeusia (SH group)</em></li>
+<li><strong>NEET PG 2025</strong>: Dual endothelin antagonist for resistant HTN (FDA 2024) — <em>Aprocitentan</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>RAAS Pharmacology — ACEi, ARB, ARNI, MRA, Aliskiren</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"RAAS Pharmacology — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 2. HEART FAILURE ═══════════ */
+    {id:"hf",content:`<span id="sub-hf-cvs" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💪 2️⃣ DRUGS FOR HEART FAILURE</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Heart Failure (HF) is a syndrome of impaired cardiac output due to structural or functional cardiac abnormality. Classified by EF: <em>HFrEF (EF &lt; 40%) · HFmrEF (40-49%) · HFpEF (≥ 50%)</em>. Modern therapy focuses on the <strong>4-pillar GDMT</strong> targeting RAAS, sympathetic, mineralocorticoid, and metabolic pathways.</p>
+
+<h4>📋 Classification — Drugs Used in HF</h4>
+<table>
+<tr><th>Pillar</th><th>Drugs</th><th>Trial Evidence</th></tr>
+<tr><td><strong>1️⃣ RAAS inhibition</strong></td><td>ARNI (Sacubitril-Valsartan) &gt; ACEi (Enalapril, Ramipril) &gt; ARB (Valsartan, Losartan)</td><td>PARADIGM-HF, CONSENSUS, SOLVD</td></tr>
+<tr><td><strong>2️⃣ β-blocker (BCM)</strong></td><td>Bisoprolol · Carvedilol · Metoprolol succinate · Nebivolol (less evidence)</td><td>CIBIS-II, COPERNICUS, MERIT-HF</td></tr>
+<tr><td><strong>3️⃣ MRA</strong></td><td>Spironolactone · Eplerenone · Finerenone</td><td>RALES, EPHESUS, FIDELIO-DKD</td></tr>
+<tr><td><strong>4️⃣ SGLT2 inhibitors</strong></td><td>Dapagliflozin · Empagliflozin · Sotagliflozin</td><td>DAPA-HF, EMPEROR-Reduced, EMPEROR-Preserved, DELIVER</td></tr>
+<tr><td><strong>Adjuncts</strong></td><td>Loop diuretic (Furosemide, Torsemide), Ivabradine, Digoxin, H-ISDN, Vericiguat, Omecamtiv mecarbil</td><td>SHIFT, A-HeFT, VICTORIA</td></tr>
+<tr><td><strong>Acute HF</strong></td><td>IV Furosemide, Vasodilators (NTG, Nitroprusside), Inotropes (Dobutamine, Milrinone, Levosimendan)</td><td>—</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism of Action — Key Drugs</h4>
+<ul>
+<li><strong>ARNI:</strong> Sacubitril = neprilysin inhibitor → ↑ BNP/ANP/CNP → vasodilation, natriuresis, anti-fibrosis. Valsartan = AT1 block. Better than ACEi alone.</li>
+<li><strong>β-blockers (BCM only):</strong> Block sympathetic over-activation → ↓ HR, ↓ contractility short-term BUT long-term reverse remodelling. <em>Start LOW, go SLOW</em> — start when euvolemic.</li>
+<li><strong>MRA:</strong> Block aldosterone receptor → ↑ K⁺/Mg, ↓ Na, ↓ fibrosis. Spironolactone non-selective (gynecomastia); Eplerenone &amp; Finerenone selective.</li>
+<li><strong>SGLT2i:</strong> Inhibit SGLT2 in proximal tubule → glycosuria + natriuresis + osmotic diuresis + ↓ preload/afterload + cardiac metabolism shift to ketones + anti-inflammatory. Benefit in HFrEF and HFpEF, with or without DM.</li>
+<li><strong>Loop Diuretics:</strong> Block Na/K/2Cl in TAL → potent natriuresis → relieves congestion (symptom only, no mortality benefit).</li>
+<li><strong>Ivabradine:</strong> Selective If channel block in SAN → ↓ HR only (no inotropy). Add if HR &gt; 70 despite β-blocker (SHIFT trial).</li>
+<li><strong>Digoxin:</strong> Na/K-ATPase inhibitor → ↑ intracellular Ca → ↑ inotropy + ↑ vagal tone → ↓ HR. Narrow TI, no mortality benefit (DIG trial).</li>
+<li><strong>H-ISDN:</strong> Hydralazine = arterial vasodilator + ISDN = venous → balanced unload. Benefit in African ancestry (A-HeFT) or as add-on if ACEi/ARB intolerance.</li>
+<li><strong>Vericiguat:</strong> sGC stimulator → ↑ cGMP → vasodilation; worsening HF (VICTORIA 2020).</li>
+<li><strong>Omecamtiv mecarbil:</strong> Cardiac myosin activator (GALACTIC-HF 2020); less clear benefit.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Step-Wise Approach</h4>
+<table>
+<tr><th>Phase</th><th>Drugs / Action</th></tr>
+<tr><td><strong>NYHA II-IV HFrEF</strong></td><td>ALL 4 pillars (ARNI + β-blocker + MRA + SGLT2i) — best survival</td></tr>
+<tr><td><strong>Symptomatic congestion</strong></td><td>Add Loop diuretic (Furosemide IV in acute)</td></tr>
+<tr><td><strong>HR &gt; 70 on β-blocker</strong></td><td>Add Ivabradine</td></tr>
+<tr><td><strong>African ancestry / ACEi intolerant</strong></td><td>H-ISDN (Hydralazine + Isosorbide dinitrate)</td></tr>
+<tr><td><strong>Refractory HFrEF</strong></td><td>Vericiguat (Worsening HF — VICTORIA); inotropes; LVAD; transplant</td></tr>
+<tr><td><strong>HFpEF</strong></td><td>SGLT2i (DAPA, EMPEROR-Preserved) + Spironolactone (TOPCAT subgroup) + treat comorbidities</td></tr>
+<tr><td><strong>Acute HF (ADHF)</strong></td><td>IV Furosemide ± NTG/Nitroprusside; Dobutamine if cardiogenic shock</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs &amp; Cautions</h4>
+<ul>
+<li><strong>ARNI:</strong> Hypotension, hyperK, angioedema (rare), renal dysfunction.</li>
+<li><strong>β-blockers:</strong> Bradycardia, hypotension, fatigue; AVOID in decompensated HF (initiate when euvolemic).</li>
+<li><strong>MRA:</strong> Hyperkalaemia (esp. with ACEi), gynecomastia (Spironolactone).</li>
+<li><strong>SGLT2i:</strong> Euglycaemic DKA (rare), genital mycotic infection (Candida), UTIs, dehydration, normoglycaemic hypoglycaemia rare, Fournier's gangrene (rare).</li>
+<li><strong>Loop diuretics:</strong> Hypokalaemia, hyponatraemia, ototoxicity (esp. IV bolus), gout, dehydration.</li>
+<li><strong>Digoxin:</strong> Yellow-green halo vision, nausea, arrhythmia (esp. with hypoK, hypoMg, hyperCa, renal failure). Antidote = <em>Digoxin-specific Fab</em>.</li>
+<li><strong>Ivabradine:</strong> Visual disturbance (luminous phenomena), bradycardia, AF risk.</li>
+<li><strong>H-ISDN:</strong> Hypotension, drug-induced SLE (Hydralazine), headache.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>β-blocker in decompensated HF (initiate when stable).</li>
+<li>MRA if K⁺ &gt; 5.0 or eGFR &lt; 30.</li>
+<li>SGLT2i if eGFR &lt; 20 (Dapa); caution in T1DM &amp; recurrent DKA.</li>
+<li>ARNI + ACEi (angioedema risk); separate by 36 h washout.</li>
+<li>Verapamil/Diltiazem in HFrEF (negative inotropy).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> NYHA III HFrEF (EF 25%) on Enalapril, Carvedilol, Spironolactone. Next step?<br><strong>Answer:</strong> Add <em>Dapagliflozin or Empagliflozin</em> (SGLT2i) + consider switching Enalapril → ARNI (Sacubitril-Valsartan) after 36 h washout — 4-pillar GDMT.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Diabetic with HFpEF (EF 55%). Best agent?<br><strong>Answer:</strong> <em>SGLT2i (Dapa or Empa)</em> — only class with evidence in HFpEF (DELIVER, EMPEROR-Preserved).</p></div>
+<div class="cblock"><p><strong>Case:</strong> HFrEF patient with HR 88 bpm on max β-blocker. Add what?<br><strong>Answer:</strong> <em>Ivabradine</em> (5-7.5 mg BID) — reduces HR &amp; cardiac events (SHIFT trial; HR &gt; 70).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>4-Pillar GDMT HFrEF</strong> = ARNI + β-blocker (BCM) + MRA + SGLT2i — initiate all 4 quickly</li>
+<li><strong>BCM β-blockers ONLY</strong> in HF — Bisoprolol, Carvedilol, Metoprolol succinate</li>
+<li><strong>Start β-blocker when EUVOLEMIC</strong>, not in decompensation; titrate slowly</li>
+<li><strong>SGLT2i works in HFpEF too</strong> — DELIVER, EMPEROR-Preserved (only class with evidence)</li>
+<li><strong>ARNI vs ACEi</strong> — PARADIGM-HF: 20% mortality reduction; 36 h washout from ACEi</li>
+<li><strong>Loop diuretic</strong> = symptoms only; no mortality benefit; not part of GDMT</li>
+<li><strong>Digoxin</strong> antidote = <em>Digoxin Fab (Digibind)</em>; narrow TI 0.5-2 ng/mL; toxic &gt; 2</li>
+<li><strong>Hypokalaemia</strong> potentiates digoxin toxicity → correct K⁺ before more digoxin</li>
+<li><strong>Spironolactone vs Eplerenone</strong> — Eplerenone has less endocrine effects (selective)</li>
+<li><strong>Finerenone</strong> = non-steroidal MRA; minimal gynecomastia; FDA for DKD</li>
+<li><strong>Ivabradine</strong> add-on if HR &gt; 70 on β-blocker (SHIFT)</li>
+<li><strong>H-ISDN</strong> for African ancestry or ACEi intolerant (A-HeFT)</li>
+<li><strong>Cardiogenic shock</strong> = Dobutamine ± Milrinone (PDE-3 inh); Levosimendan (Ca-sensitiser)</li>
+<li><strong>Acute HF</strong> = IV Furosemide + NTG/Nitroprusside; positioning + O₂ + diuresis</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>ESC 2023 HF guidelines</strong> emphasise rapid 4-pillar GDMT initiation (within weeks)</li>
+<li><strong>Empagliflozin in HFpEF</strong> (EMPEROR-Preserved 2021) + Dapagliflozin (DELIVER 2022)</li>
+<li><strong>Vericiguat</strong> (FDA 2021) for worsening HF — sGC stimulator</li>
+<li><strong>Mavacamten</strong> for HCM (FDA 2022); first cardiac myosin inhibitor</li>
+<li><strong>Tirzepatide in HFpEF</strong> with obesity (SUMMIT 2024) — significant benefit</li>
+<li><strong>Patiromer / SZC</strong> potassium binders enable RAASi continuation</li>
+<li><strong>Levosimendan</strong> intermittent infusion in advanced HF (LION-HEART)</li>
+<li><strong>Omecamtiv mecarbil</strong> (GALACTIC-HF) — modest benefit; not approved</li>
+<li><strong>Wearable monitoring + AI</strong> guides HF management remotely</li>
+<li><strong>Sotagliflozin</strong> (dual SGLT1/2) — FDA 2023 for HF with DM (SOLOIST-WHF)</li>
+<li><strong>STEP-HFpEF</strong> trial — Semaglutide improves symptoms in obese HFpEF</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: 4-pillar GDMT HFrEF — <em>ARNI + β-blocker + MRA + SGLT2i</em></li>
+<li><strong>INI-CET 2023</strong>: 3 mortality-benefit β-blockers in HF (BCM) — <em>Bisoprolol, Carvedilol, Metoprolol succinate</em></li>
+<li><strong>NEET PG 2024</strong>: SGLT2i mechanism in HF — <em>Glycosuria + natriuresis + osmotic diuresis + ↓ preload</em></li>
+<li><strong>INI-CET 2024</strong>: Digoxin antidote — <em>Digoxin-specific Fab antibodies</em></li>
+<li><strong>NEET PG 2024</strong>: Ivabradine mechanism — <em>If (funny current) channel blocker at SAN</em></li>
+<li><strong>FMGE 2024</strong>: African ancestry HFrEF — <em>Add Hydralazine + ISDN (H-ISDN)</em></li>
+<li><strong>NEET PG 2025</strong>: SGLT2i first to show HFpEF benefit — <em>Empagliflozin (EMPEROR-Preserved)</em></li>
+<li><strong>INI-CET 2024</strong>: HFrEF + ↓ EF + worsening — add — <em>Vericiguat</em></li>
+<li><strong>NEET PG 2023</strong>: Cardiogenic shock inotrope DOC — <em>Dobutamine (β1 agonist)</em></li>
+<li><strong>NEET PG 2025</strong>: Tirzepatide indication in CV — <em>HFpEF with obesity (SUMMIT)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>HF Pharmacology — ARNI, β-blocker, MRA, SGLT2i, Adjuncts</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Drugs for Heart Failure — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 3. ANTI-ISCHAEMIC ═══════════ */
+    {id:"aisch",content:`<span id="sub-aisch-cvs" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🩺 3️⃣ ANTI-ISCHAEMIC / ANTI-ANGINAL DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that relieve and prevent myocardial ischaemia (angina) by either <em>reducing O₂ demand</em> (↓ HR, ↓ contractility, ↓ wall tension) or <em>increasing O₂ supply</em> (vasodilation of coronaries). Types of angina: <strong>Stable · Unstable · Variant (Prinzmetal) · Microvascular (Cardiac syndrome X)</strong>.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Action</th></tr>
+<tr><td><strong>Nitrates (Organic Nitrates)</strong></td><td>Glyceryl Trinitrate (GTN — SL, IV, patch), Isosorbide Dinitrate (ISDN), Isosorbide Mononitrate (ISMN — once daily)</td><td>NO donor → ↑ cGMP → venous &gt; arterial dilation</td></tr>
+<tr><td><strong>β-Blockers</strong></td><td>Metoprolol, Atenolol, Bisoprolol, Nebivolol, Esmolol (IV); Non-selective: Propranolol, Carvedilol</td><td>↓ HR, ↓ contractility, ↓ BP</td></tr>
+<tr><td><strong>CCBs</strong></td><td>DHP (vascular): Amlodipine, Nifedipine, Felodipine; Non-DHP (cardiac): Verapamil, Diltiazem</td><td>Vasodilation ± ↓ HR/contractility</td></tr>
+<tr><td><strong>Late Na⁺ channel blocker</strong></td><td>Ranolazine</td><td>↓ Ca overload, no HR/BP effect</td></tr>
+<tr><td><strong>K-ATP opener + NO donor</strong></td><td>Nicorandil</td><td>Coronary vasodilation; oral ulcers ADR</td></tr>
+<tr><td><strong>Metabolic modulator</strong></td><td>Trimetazidine</td><td>Shifts FA → glucose oxidation; parkinsonism ADR</td></tr>
+<tr><td><strong>If channel blocker</strong></td><td>Ivabradine</td><td>↓ HR only (no inotropy)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism</h4>
+<ul>
+<li><strong>Nitrates:</strong> Released NO → activates guanylate cyclase → ↑ cGMP → vasodilation. Predominantly venous → ↓ preload → ↓ wall tension → ↓ O₂ demand.</li>
+<li><strong>β-blockers:</strong> Block β1 → ↓ HR, ↓ contractility, ↓ BP → ↓ O₂ demand. Bisoprolol, Metoprolol = cardioselective.</li>
+<li><strong>DHP CCBs:</strong> Block L-type Ca²⁺ in vessels → arterial vasodilation → ↓ afterload.</li>
+<li><strong>Non-DHP CCBs:</strong> Block L-type in heart → ↓ HR, ↓ contractility (similar to β-blocker action). Verapamil &gt; Diltiazem for cardiac depression.</li>
+<li><strong>Ranolazine:</strong> Blocks late Na⁺ current → ↓ Na/Ca exchange → ↓ Ca overload → ↓ wall tension. No effect on HR/BP. Good for refractory angina, esp. with LV dysfunction.</li>
+<li><strong>Nicorandil:</strong> Opens K-ATP channel (vasodilation) + NO donor (coronary vasodilation).</li>
+<li><strong>Trimetazidine:</strong> Inhibits long-chain 3-ketoacyl thiolase → shifts cardiac metabolism from fatty acid β-oxidation to glucose oxidation → ↑ O₂ efficiency.</li>
+<li><strong>Ivabradine:</strong> Selective blocker of If channel in SAN → ↓ HR without affecting contractility/BP.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Drug of Choice by Indication</h4>
+<table>
+<tr><th>Setting</th><th>DOC</th></tr>
+<tr><td>Acute angina attack</td><td>SL Glyceryl Trinitrate (GTN) 0.4 mg — repeat 5 min × 3, then call 911</td></tr>
+<tr><td>Stable angina prophylaxis (1st-line)</td><td>β-blocker (Metoprolol, Bisoprolol)</td></tr>
+<tr><td>Stable angina (β-blocker contraindicated)</td><td>CCB (Amlodipine, Diltiazem)</td></tr>
+<tr><td>Variant (Prinzmetal) angina</td><td>CCB (Amlodipine, Nifedipine) ± Nitrate; AVOID β-blocker (unopposed α — vasospasm)</td></tr>
+<tr><td>Refractory stable angina</td><td>Add Ranolazine · Ivabradine · Trimetazidine · Nicorandil</td></tr>
+<tr><td>NSTEMI / Unstable angina</td><td>MONA-B + dual antiplatelet (Aspirin + P2Y12) + Anticoagulation + Statin + ACEi</td></tr>
+<tr><td>STEMI</td><td>Reperfusion (PCI &lt; 90 min OR Thrombolytic &lt; 30 min — Tenecteplase/Reteplase/Alteplase) + DAPT + statin + β-blocker + ACEi</td></tr>
+<tr><td>Microvascular angina</td><td>β-blocker · Ranolazine · ACEi</td></tr>
+<tr><td>Vasospastic + ASCVD</td><td>CCB (Amlodipine) + Nitrate; AVOID β-blocker</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs</h4>
+<ul>
+<li><strong>Nitrates:</strong> Headache (50% — Bayer wagon), hypotension, reflex tachycardia, tolerance (24 h continuous → need 8 h nitrate-free interval), methaemoglobinaemia (high dose).</li>
+<li><strong>β-blockers:</strong> Bradycardia, AV block, bronchospasm (non-selective), fatigue, depression, cold extremities, mask hypoglycaemia signs, sexual dysfunction.</li>
+<li><strong>DHP CCBs:</strong> Reflex tachycardia, pedal oedema (esp. Amlodipine), headache, flushing, gingival hyperplasia.</li>
+<li><strong>Non-DHP CCBs:</strong> Bradycardia, AV block, constipation (Verapamil), heart failure (-ve inotropy — avoid in HFrEF).</li>
+<li><strong>Ranolazine:</strong> QT prolongation, constipation, dizziness; CYP3A4 substrate; AVOID with strong CYP3A4 inhibitors.</li>
+<li><strong>Nicorandil:</strong> Headache, hypotension, oral/genital ulcers (rare but severe).</li>
+<li><strong>Trimetazidine:</strong> Parkinsonism, dyskinesias (esp. elderly); EMA restricts use.</li>
+<li><strong>Ivabradine:</strong> Bradycardia, visual disturbances (luminous phenomena/phosphenes), AF risk.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Nitrates + PDE5 inhibitor (Sildenafil) → severe hypotension within 24 h.</li>
+<li>Nitrates in severe hypotension, raised ICP, HOCM (worsens obstruction).</li>
+<li>β-blocker in variant angina (vasospasm), uncontrolled HF, severe asthma, AV block.</li>
+<li>Non-DHP CCB in HFrEF (negative inotropy).</li>
+<li>Ranolazine with strong CYP3A4 inhibitors (ketoconazole, clarithromycin).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 65-y-old chronic stable angina on Metoprolol 100 mg/d, still symptomatic. Next?<br><strong>Answer:</strong> Add <em>Amlodipine</em> (DHP CCB) for vascular dilation; alternative — Nitrate (ISMN long-acting); or Ranolazine if LV dysfunction.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Female with chest pain at rest, ST elevation transient, coronaries normal. Diagnosis &amp; DOC?<br><strong>Answer:</strong> <em>Variant (Prinzmetal) angina</em>; DOC = CCB (Diltiazem, Amlodipine) ± Nitrate. AVOID β-blocker.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Acute MI presenting at 5 hours. Treatment?<br><strong>Answer:</strong> <em>STEMI</em> — Primary PCI (if &lt; 120 min). If not available — thrombolytic (Tenecteplase). + DAPT (Aspirin + Ticagrelor/Clopidogrel) + Anticoagulation (Heparin) + β-blocker + Statin + ACEi.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Acute angina DOC</strong> = SL GTN 0.4 mg (3 doses, 5 min apart)</li>
+<li><strong>Nitrate tolerance</strong> develops within 24 h continuous → need 8-12 h nitrate-free interval</li>
+<li><strong>Nitrates + Sildenafil/Tadalafil</strong> = fatal hypotension (avoid within 24-48 h)</li>
+<li><strong>β-blockers 1st line stable angina</strong> — Bisoprolol, Metoprolol succinate</li>
+<li><strong>Variant angina</strong> = CCB + Nitrate; AVOID β-blocker (vasospasm)</li>
+<li><strong>Ranolazine</strong> = no HR/BP change; useful refractory angina + LV dysfunction; QT prolongation</li>
+<li><strong>Trimetazidine</strong> may cause parkinsonism in elderly → restricted use in EU</li>
+<li><strong>Amlodipine</strong> = long t½ (30-50 h); good for once-daily; ankle oedema common</li>
+<li><strong>Verapamil + Digoxin</strong> = ↑ digoxin levels (additive AV block)</li>
+<li><strong>STEMI</strong> = Primary PCI &lt; 90 min (door-to-balloon); Thrombolysis &lt; 30 min if PCI unavailable</li>
+<li><strong>MONA-B</strong> in ACS = Morphine, Oxygen (if SpO₂ &lt; 90), Nitrate, Aspirin (162-325 mg chew), β-blocker</li>
+<li><strong>Aspirin chew &amp; swallow</strong> in ACS — faster absorption</li>
+<li><strong>Ivabradine</strong> adds to β-blocker for HR control without inotropy</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>ESC 2024 guidelines</strong> for chronic coronary syndromes — earlier invasive strategy</li>
+<li><strong>Inclisiran</strong> (siRNA against PCSK9) — twice-yearly LDL lowering</li>
+<li><strong>Bempedoic acid</strong> (CLEAR Outcomes 2023) — non-statin LDL reduction</li>
+<li><strong>Colchicine</strong> in stable CAD (LoDoCo2 trial) — reduces CV events</li>
+<li><strong>Icosapent ethyl (Vascepa)</strong> — REDUCE-IT CV risk reduction with elevated TG</li>
+<li><strong>Aprocitentan</strong> for resistant HTN (FDA 2024)</li>
+<li><strong>Empagliflozin in acute MI</strong> (EMPACT-MI 2023) — disappointing</li>
+<li><strong>Mavacamten</strong> for obstructive HCM-related angina</li>
+<li><strong>Wireless implantable haemodynamic monitors</strong> (CardioMEMS) guide therapy</li>
+<li><strong>Aspirin primary prevention</strong> de-emphasised in low-risk patients (ACC/AHA 2022)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Acute angina DOC — <em>SL Glyceryl Trinitrate</em></li>
+<li><strong>INI-CET 2023</strong>: Drug to AVOID in variant angina — <em>β-blocker (vasospasm risk)</em></li>
+<li><strong>NEET PG 2024</strong>: Nitrate tolerance prevention — <em>8-12 hour nitrate-free interval</em></li>
+<li><strong>INI-CET 2024</strong>: Ranolazine mechanism — <em>Late Na⁺ channel blocker</em></li>
+<li><strong>NEET PG 2024</strong>: Stable angina 1st-line prophylaxis — <em>β-blocker</em></li>
+<li><strong>FMGE 2024</strong>: ACS mnemonic includes — <em>MONA-B (Morphine, O₂, Nitrate, Aspirin, β-blocker)</em></li>
+<li><strong>NEET PG 2025</strong>: Trimetazidine ADR (elderly) — <em>Parkinsonism</em></li>
+<li><strong>INI-CET 2024</strong>: Door-to-balloon target for primary PCI in STEMI — <em>&lt; 90 minutes</em></li>
+<li><strong>NEET PG 2023</strong>: Nicorandil ADR — <em>Oral/genital ulcers</em></li>
+<li><strong>NEET PG 2025</strong>: Inclisiran mechanism — <em>siRNA against PCSK9 (twice-yearly dosing)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antianginal Drugs — Nitrates, β-blockers, CCBs, Ranolazine, Nicorandil</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiischaemic Drugs — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 4. ANTIARRHYTHMIC ═══════════ */
+    {id:"aarr",content:`<span id="sub-aarr-cvs" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚡ 4️⃣ ANTIARRHYTHMIC DRUGS (Vaughan-Williams)</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that suppress abnormal cardiac rhythms by targeting Na⁺/K⁺/Ca²⁺ ion channels, β-adrenergic receptors, or autonomic balance. Vaughan-Williams classified them into 4 classes; modern adjuncts include Adenosine, Digoxin, Magnesium, Ivabradine.</p>
+
+<h4>📋 Vaughan-Williams Classification</h4>
+<table>
+<tr><th>Class</th><th>Action</th><th>Drugs</th></tr>
+<tr><td><strong>IA</strong> (Na⁺ block, ↑ APD)</td><td>Phase 0 ↓; refractoriness ↑</td><td>Quinidine · Procainamide · Disopyramide</td></tr>
+<tr><td><strong>IB</strong> (Na⁺ block, ↓ APD)</td><td>Phase 0 mild ↓; ↓ APD</td><td>Lignocaine (IV) · Mexiletine · Phenytoin</td></tr>
+<tr><td><strong>IC</strong> (Na⁺ block, no APD effect)</td><td>Strong Phase 0 ↓</td><td>Flecainide · Propafenone</td></tr>
+<tr><td><strong>II</strong> (β-Blockers)</td><td>↓ Phase 4; ↓ HR &amp; AV conduction</td><td>Metoprolol · Esmolol (IV) · Bisoprolol · Atenolol</td></tr>
+<tr><td><strong>III</strong> (K⁺ block, ↑ APD)</td><td>Phase 3 prolonged → ↑ refractoriness</td><td>Amiodarone · Sotalol (also II) · Dronedarone · Ibutilide · Dofetilide</td></tr>
+<tr><td><strong>IV</strong> (Non-DHP CCB)</td><td>↓ Phase 2; ↓ SA/AV nodal conduction</td><td>Verapamil · Diltiazem</td></tr>
+<tr><td><strong>Other</strong></td><td>Various</td><td>Adenosine (DOC PSVT) · Digoxin (rate AF) · Magnesium (Torsades) · Ivabradine</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Drug of Choice by Arrhythmia</h4>
+<table>
+<tr><th>Arrhythmia</th><th>DOC / Strategy</th></tr>
+<tr><td>Paroxysmal Supraventricular Tachycardia (PSVT)</td><td>Vagal manoeuvre → IV Adenosine 6 mg → 12 mg → Verapamil/Diltiazem</td></tr>
+<tr><td>Atrial Fibrillation — Rate control</td><td>β-blocker · Non-DHP CCB (Verapamil, Diltiazem) · Digoxin (HF)</td></tr>
+<tr><td>Atrial Fibrillation — Rhythm control</td><td>Flecainide/Propafenone (no SHD) · Amiodarone · Dofetilide · Sotalol; Cardioversion if hemodynamically unstable</td></tr>
+<tr><td>Ventricular Tachycardia post-MI</td><td>IV Lignocaine (Class IB) · Amiodarone</td></tr>
+<tr><td>Ventricular Fibrillation</td><td>Defibrillation + Adrenaline + Amiodarone (300 mg IV bolus per ACLS)</td></tr>
+<tr><td>Torsades de Pointes</td><td>IV Magnesium Sulphate 2 g + correct K/Mg + stop offending drug</td></tr>
+<tr><td>Digoxin-induced arrhythmias</td><td>Phenytoin · Lignocaine; Digoxin Fab antibodies if severe</td></tr>
+<tr><td>WPW syndrome with AF</td><td>Procainamide IV; AVOID AV nodal blockers (digoxin, CCB, β-blocker) — accelerate AV conduction via accessory pathway</td></tr>
+<tr><td>Long QT congenital</td><td>β-blockers (Nadolol, Propranolol) ± ICD</td></tr>
+<tr><td>Refractory AF (rhythm)</td><td>Catheter ablation (pulmonary vein isolation)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Key ADRs (high-yield)</h4>
+<ul>
+<li><strong>Class IA (Quinidine, Procainamide, Disopyramide):</strong> QT prolongation → Torsades; Procainamide → drug-induced SLE (anti-histone Ab); Quinidine → cinchonism (tinnitus, headache).</li>
+<li><strong>Class IB (Lignocaine, Mexiletine):</strong> CNS — confusion, seizures, tremor.</li>
+<li><strong>Class IC (Flecainide, Propafenone):</strong> Pro-arrhythmic; AVOID in structural heart disease (CAST trial — ↑ mortality post-MI).</li>
+<li><strong>Class II (β-blockers):</strong> Bradycardia, AV block, bronchospasm, masked hypoglycaemia.</li>
+<li><strong>Amiodarone:</strong> Pulmonary fibrosis, hepatitis, thyroid dysfunction (both hypo &amp; hyper), corneal microdeposits, blue-grey skin (slate), peripheral neuropathy, photosensitivity, QT prolongation (rarely causes Torsades). Half-life ~58 days; CYP inhibitor.</li>
+<li><strong>Sotalol:</strong> QT prolongation, torsades.</li>
+<li><strong>Dronedarone:</strong> ↑ mortality in permanent AF or severe HF (PALLAS trial); used in paroxysmal/persistent AF.</li>
+<li><strong>Ibutilide / Dofetilide:</strong> Torsades risk → hospital initiation.</li>
+<li><strong>Class IV (Verapamil, Diltiazem):</strong> Bradycardia, AV block, constipation (Verapamil), HF exacerbation (-ve inotropy).</li>
+<li><strong>Adenosine:</strong> Transient asystole, flushing, chest discomfort, bronchospasm; t½ &lt; 10 s; effects ↑ with Dipyridamole.</li>
+<li><strong>Digoxin:</strong> Yellow-green halo vision, GI upset, arrhythmias; toxicity worsened by hypoK, hypoMg, hyperCa, renal failure.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Amiodarone</strong> = pan-CYP inhibitor → ↑ Warfarin, Digoxin (halve doses), Statins.</li>
+<li><strong>Quinidine + Digoxin</strong> → ↑ Digoxin levels.</li>
+<li><strong>Verapamil + β-blocker</strong> → severe bradycardia/AV block.</li>
+<li><strong>Adenosine + Theophylline/Caffeine</strong> → antagonised.</li>
+<li><strong>Adenosine + Dipyridamole</strong> → potentiation.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 30-y-old with palpitations, HR 180, narrow QRS, hemodynamically stable. Treatment?<br><strong>Answer:</strong> <em>PSVT</em> — Vagal manoeuvres (Valsalva, carotid massage) → IV Adenosine 6 mg → 12 mg if needed.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient with AF + WPW. Best rate control?<br><strong>Answer:</strong> AVOID AV nodal blockers (Digoxin/CCB/β-blocker) — they may accelerate accessory pathway conduction → VF. Use <em>IV Procainamide</em> or DC cardioversion.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Amiodarone × 6 mo — develops cough, dyspnoea, bilateral interstitial infiltrates. Diagnosis?<br><strong>Answer:</strong> <em>Amiodarone-induced pulmonary toxicity</em> (interstitial pneumonitis/fibrosis). Stop Amiodarone + corticosteroids; baseline + 3-6 monthly PFTs + CXR.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>PSVT DOC</strong> = IV Adenosine 6 mg rapid bolus → 12 mg if no response; t½ &lt; 10 s</li>
+<li><strong>VT post-MI DOC</strong> = IV Lignocaine (or Amiodarone)</li>
+<li><strong>VF</strong> = Defibrillation + Adrenaline + Amiodarone 300 mg</li>
+<li><strong>Torsades de pointes DOC</strong> = IV Magnesium Sulphate 2 g</li>
+<li><strong>AF + WPW</strong> → AVOID AV nodal blockers (CCB, β-blocker, Digoxin); use Procainamide or DC cardioversion</li>
+<li><strong>Amiodarone</strong> = broadest antiarrhythmic (Class I+II+III+IV); pan-CYP inhibitor; long t½ (~58 days)</li>
+<li><strong>Amiodarone toxicity (LiverLungThyroidSkinCornea)</strong> — monitor LFT, TFT, PFT, ophthal yearly</li>
+<li><strong>Procainamide</strong> = drug-induced SLE (anti-histone Ab+)</li>
+<li><strong>Flecainide/Propafenone</strong> AVOID in structural heart disease (CAST trial)</li>
+<li><strong>Digoxin toxicity</strong> worsened by hypoK, hypoMg, hyperCa, renal failure; antidote = <em>Digoxin Fab (Digibind)</em></li>
+<li><strong>Quinidine + Digoxin</strong> → ↑ Digoxin levels (displaces from tissue)</li>
+<li><strong>Sotalol</strong> = Class II + III (β-blocker + K⁺ block); avoid in renal failure (QT prolongation)</li>
+<li><strong>Dronedarone</strong> contraindicated in permanent AF + advanced HF (PALLAS)</li>
+<li><strong>AF anticoagulation</strong> per CHA₂DS₂-VASc score; DOACs preferred over Warfarin in non-valvular AF</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>ESC 2024 AF guidelines</strong> — Rhythm control earlier (EAST-AFNET 4); ablation considered upfront for paroxysmal AF</li>
+<li><strong>Catheter ablation</strong> in early HF/AF (CASTLE-AF, RAFT-AF) — better than meds</li>
+<li><strong>Pulsed field ablation</strong> — newer non-thermal ablation technique (2024)</li>
+<li><strong>Left Atrial Appendage Closure (Watchman)</strong> for AF with bleeding contraindication to DOAC</li>
+<li><strong>DOACs (Apixaban, Rivaroxaban, Dabigatran, Edoxaban)</strong> preferred over Warfarin in non-valvular AF</li>
+<li><strong>Idarucizumab</strong> (Dabigatran reversal), <strong>Andexanet alfa</strong> (Factor Xa reversal)</li>
+<li><strong>Vernakalant IV</strong> — atrial-selective antiarrhythmic for AF cardioversion</li>
+<li><strong>Wearable arrhythmia detection</strong> — Apple Watch, KardiaMobile FDA-cleared</li>
+<li><strong>Subcutaneous ICD (S-ICD)</strong> — refined in 2023; safer than transvenous</li>
+<li><strong>Sotagliflozin</strong> showed AF prevention signal (recent meta-analysis)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for PSVT — <em>IV Adenosine bolus 6 mg</em></li>
+<li><strong>INI-CET 2023</strong>: VT post-MI DOC — <em>IV Lignocaine (Class IB)</em></li>
+<li><strong>NEET PG 2024</strong>: Torsades de pointes DOC — <em>IV Magnesium sulphate</em></li>
+<li><strong>INI-CET 2024</strong>: Amiodarone class &amp; toxicity — <em>Class III (K⁺ block) + Lung, Liver, Thyroid, Skin, Cornea</em></li>
+<li><strong>NEET PG 2024</strong>: Procainamide ADR — <em>Drug-induced SLE (anti-histone Ab)</em></li>
+<li><strong>FMGE 2024</strong>: AF + WPW — AVOID — <em>AV nodal blockers (CCB, β-blocker, Digoxin)</em></li>
+<li><strong>NEET PG 2025</strong>: Digoxin antidote — <em>Digoxin-specific Fab antibodies (Digibind)</em></li>
+<li><strong>INI-CET 2024</strong>: Adenosine t½ — <em>&lt; 10 seconds</em></li>
+<li><strong>NEET PG 2023</strong>: Class IC AED contraindicated in structural heart disease — <em>Flecainide (CAST trial)</em></li>
+<li><strong>NEET PG 2025</strong>: DOAC for AF reversal (factor Xa inhibitor) — <em>Andexanet alfa</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antiarrhythmic Drugs — Vaughan-Williams Classes, Amiodarone, Adenosine</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antiarrhythmic Drugs — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 5. ANTIHYPERTENSIVE ═══════════ */
+    {id:"ahtn",content:`<span id="sub-ahtn-cvs" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🩸 5️⃣ ANTIHYPERTENSIVE DRUGS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs used to lower blood pressure in hypertension (HTN — BP ≥ 130/80 per ACC/AHA 2017 or ≥ 140/90 per ESC). Goal: prevent target organ damage (CVD, stroke, CKD, retinopathy, HF). Stepwise A·C·D·K therapy with combinations early.</p>
+
+<h4>📋 Comprehensive Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Notes</th></tr>
+<tr><td><strong>A — RAAS</strong></td><td>ACEi: Enalapril, Ramipril, Lisinopril, Perindopril; ARB: Losartan, Telmisartan, Olmesartan, Valsartan; ARNI: Sacubitril-Valsartan; DRI: Aliskiren</td><td>1st line; renoprotective</td></tr>
+<tr><td><strong>C — CCB</strong></td><td>DHP: Amlodipine, Nifedipine, Felodipine, Lercanidipine, Clevidipine (IV); Non-DHP: Verapamil, Diltiazem</td><td>Elderly, ISH, ↓ central BP</td></tr>
+<tr><td><strong>D — Diuretic</strong></td><td>Thiazide: HCTZ, Chlorthalidone, Indapamide; Loop: Furosemide, Bumetanide; K⁺ sparing: Spironolactone, Amiloride</td><td>Chlorthalidone &gt; HCTZ (ALLHAT)</td></tr>
+<tr><td><strong>K — β-Blocker</strong></td><td>β1 selective: Metoprolol, Atenolol, Bisoprolol, Nebivolol; α+β: Carvedilol, Labetalol; ISA: Pindolol</td><td>Young, post-MI, HF, AF</td></tr>
+<tr><td><strong>α1-Blockers</strong></td><td>Prazosin, Terazosin, Doxazosin</td><td>BPH + HTN; orthostatic hypotension</td></tr>
+<tr><td><strong>Central α2 Agonists</strong></td><td>Clonidine, Methyldopa (pregnancy DOC), Guanfacine</td><td>Rebound HTN (Clonidine)</td></tr>
+<tr><td><strong>Direct Vasodilators</strong></td><td>Hydralazine, Minoxidil, Sodium Nitroprusside (IV)</td><td>Hypertensive emergency</td></tr>
+<tr><td><strong>Endothelin Antagonist (new)</strong></td><td>Aprocitentan (2024)</td><td>Resistant HTN (PRECISION trial)</td></tr>
+<tr><td><strong>Newer</strong></td><td>Zilebesiran (siRNA against angiotensinogen — yearly)</td><td>Phase 2/3</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Stepwise Strategy (ACC/AHA + ISH 2020)</h4>
+<ul>
+<li><strong>Step 0:</strong> Lifestyle (DASH diet, ↓ salt, exercise, weight, ↓ alcohol).</li>
+<li><strong>Stage 1 HTN (130-139/80-89):</strong> Single agent if ASCVD risk &gt; 10% or DM/CKD; otherwise lifestyle.</li>
+<li><strong>Stage 2 HTN (≥ 140/90):</strong> Combination (A + C OR A + D) — single pill combos improve adherence.</li>
+<li><strong>Resistant HTN (3 drugs incl. diuretic):</strong> Add Spironolactone 25-50 mg (PATHWAY-2); consider Aprocitentan (2024).</li>
+<li><strong>Special:</strong> Pregnancy = Methyldopa &gt; Labetalol &gt; Nifedipine; DM/CKD = ACEi/ARB; HF = ARNI + βB + MRA + SGLT2i; Pheochromocytoma = α-block FIRST (Phenoxybenzamine) → then β.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🚨 Hypertensive Emergency Drugs</h4>
+<table>
+<tr><th>Drug</th><th>Use</th></tr>
+<tr><td><strong>Sodium Nitroprusside</strong></td><td>IV arteriovenous dilator; titrate; cyanide toxicity risk → check thiocyanate</td></tr>
+<tr><td><strong>Labetalol IV</strong></td><td>Pregnancy-induced HTN, aortic dissection (α+β block)</td></tr>
+<tr><td><strong>Nicardipine / Clevidipine</strong></td><td>IV DHP CCBs — titratable; clevidipine ultra-short t½</td></tr>
+<tr><td><strong>Esmolol IV</strong></td><td>Rapid β-blockade; aortic dissection</td></tr>
+<tr><td><strong>Hydralazine IV</strong></td><td>Pregnancy-induced HTN</td></tr>
+<tr><td><strong>Phentolamine</strong></td><td>Pheochromocytoma crisis (α-block)</td></tr>
+<tr><td><strong>Nitroglycerin IV</strong></td><td>HTN with pulmonary oedema or ACS</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Key ADRs</h4>
+<ul>
+<li><strong>ACEi:</strong> Cough, angioedema, hyperK, AKI (bilateral RAS), pregnancy teratogenic.</li>
+<li><strong>ARB:</strong> Similar but no cough; less angioedema.</li>
+<li><strong>DHP CCBs:</strong> Pedal oedema (esp. Amlodipine), reflex tachycardia, flushing, gingival hyperplasia.</li>
+<li><strong>Non-DHP CCBs:</strong> Bradycardia, AV block, constipation (Verapamil), HF.</li>
+<li><strong>Thiazides:</strong> Hypokalaemia, hyperglycaemia, hyperuricaemia (gout), hypercalcaemia, hyponatraemia (esp. elderly), erectile dysfunction.</li>
+<li><strong>β-blockers:</strong> Bradycardia, bronchospasm, fatigue, mask hypoglycaemia.</li>
+<li><strong>α-blockers:</strong> 1st dose orthostatic hypotension (Prazosin); ↑ HF risk (ALLHAT).</li>
+<li><strong>Clonidine:</strong> Sedation, dry mouth, REBOUND HTN on sudden withdrawal.</li>
+<li><strong>Methyldopa:</strong> Coombs+ haemolytic anaemia, hepatitis, lupus-like.</li>
+<li><strong>Hydralazine:</strong> Drug-induced SLE (anti-histone), reflex tachycardia.</li>
+<li><strong>Minoxidil:</strong> Hypertrichosis, pericardial effusion, reflex tachycardia.</li>
+<li><strong>Aliskiren:</strong> ↓ Renal function in DM with ACEi/ARB.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 32-y-old pregnant (28 wk) with BP 165/105. DOC?<br><strong>Answer:</strong> <em>Methyldopa</em> (Cat B) > Labetalol > Nifedipine. AVOID ACEi/ARB/Aliskiren.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 65-y-old African-American on A+C+D combination, BP still 150/95. Next?<br><strong>Answer:</strong> Add <em>Spironolactone 25-50 mg</em> (PATHWAY-2 — 4th drug for resistant HTN); monitor K⁺.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient with pheochromocytoma — pre-op preparation?<br><strong>Answer:</strong> <em>α-blocker FIRST</em> (Phenoxybenzamine ≥ 7-14 days) → then β-blocker (NEVER β alone — unopposed α → crisis).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Pregnancy HTN DOC</strong> = Methyldopa &gt; Labetalol &gt; Nifedipine; AVOID ACEi/ARB</li>
+<li><strong>DM + CKD HTN</strong> = ACEi/ARB (renoprotective)</li>
+<li><strong>African ancestry</strong> = ACEi less effective; favour CCB + Diuretic</li>
+<li><strong>Elderly ISH</strong> = Thiazide (Chlorthalidone) + DHP CCB</li>
+<li><strong>Resistant HTN 4th drug</strong> = Spironolactone (PATHWAY-2)</li>
+<li><strong>Aprocitentan (2024)</strong> = new dual endothelin antagonist for resistant HTN</li>
+<li><strong>Clonidine</strong> rebound HTN — never stop abruptly; taper</li>
+<li><strong>Hydralazine + ISDN</strong> = African ancestry HF (A-HeFT)</li>
+<li><strong>Pheochromocytoma</strong> = α-block FIRST (Phenoxybenzamine 7-14 d) then β</li>
+<li><strong>Aortic dissection</strong> = Esmolol IV + Sodium nitroprusside (target HR &lt; 60, BP &lt; 120)</li>
+<li><strong>Hypertensive emergency</strong> = reduce BP by 25% in 1st hour; not faster (risk of ischaemia)</li>
+<li><strong>Single-pill combinations</strong> improve adherence (A+C or A+D)</li>
+<li><strong>Chlorthalidone &gt; HCTZ</strong> for HTN (ALLHAT — longer t½, better CV outcomes)</li>
+<li><strong>Indapamide</strong> = thiazide-like; less metabolic effect than HCTZ</li>
+<li><strong>Methyldopa</strong> ADR = Coombs+ haemolysis; LFT monitoring</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Aprocitentan (FDA 2024)</strong> — first endothelin antagonist for resistant HTN (PRECISION trial)</li>
+<li><strong>Zilebesiran</strong> (siRNA against angiotensinogen) — once-yearly antihypertensive (Phase 2/3)</li>
+<li><strong>Renal denervation</strong> (catheter ablation) — FDA approved 2023 for resistant HTN</li>
+<li><strong>Patiromer/Sodium Zirconium Cyclosilicate</strong> — newer K⁺ binders to enable RAASi continuation</li>
+<li><strong>ESC 2024 HTN guidelines</strong> — SBP target &lt; 130 if tolerated; combination 1st line</li>
+<li><strong>Single-pill quadruple combination</strong> low-dose A+C+D+K (QUARTET trial 2021) — superior to monotherapy</li>
+<li><strong>SGLT2 inhibitors</strong> — modest antihypertensive effect; not formal indication</li>
+<li><strong>GLP-1 receptor agonists</strong> (Semaglutide, Tirzepatide) — modest BP reduction</li>
+<li><strong>Continuous ambulatory monitoring</strong> + AI-assisted HTN management</li>
+<li><strong>Polypill</strong> for cardiovascular prevention — TIPS-3 trial (Lancet 2020)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: HTN in pregnancy DOC — <em>Methyldopa</em></li>
+<li><strong>INI-CET 2023</strong>: Resistant HTN 4th drug — <em>Spironolactone (PATHWAY-2)</em></li>
+<li><strong>NEET PG 2024</strong>: Newer drug for resistant HTN (FDA 2024) — <em>Aprocitentan</em></li>
+<li><strong>INI-CET 2024</strong>: African ancestry HFrEF — add — <em>Hydralazine + ISDN</em></li>
+<li><strong>NEET PG 2024</strong>: Pheochromocytoma pre-op preparation — <em>α-blocker FIRST (Phenoxybenzamine) → then β</em></li>
+<li><strong>FMGE 2024</strong>: ALLHAT — Chlorthalidone vs HCTZ — <em>Chlorthalidone superior</em></li>
+<li><strong>NEET PG 2025</strong>: Clonidine major ADR on abrupt cessation — <em>Rebound hypertension</em></li>
+<li><strong>INI-CET 2024</strong>: Hydralazine drug-induced syndrome — <em>SLE (anti-histone Ab)</em></li>
+<li><strong>NEET PG 2023</strong>: Hypertensive emergency DOC (titratable IV) — <em>Sodium nitroprusside</em></li>
+<li><strong>NEET PG 2025</strong>: siRNA against angiotensinogen — once yearly — <em>Zilebesiran</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antihypertensive Drugs — A·C·D·K + Special Situations + Emergency</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antihypertensive Drugs — by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Enalapril",c:"ACE-inhibitor",u:"HTN, CHF, post-MI, diabetic nephropathy"},
-    {n:"Telmisartan",c:"ARB",u:"HTN, CHF; longest t½; no cough"},
-    {n:"Sacubitril-Valsartan",c:"ARNI",u:"HFrEF; replaces ACEi (PARADIGM-HF trial)"},
-    {n:"Amlodipine",c:"DHP-CCB",u:"HTN; long t½; pedal oedema"},
-    {n:"Verapamil",c:"Non-DHP CCB",u:"SVT, HTN, angina; -ve inotropy; constipation"},
-    {n:"Spironolactone",c:"MRA",u:"CHF, resistant HTN, primary hyperaldo, ascites; gynaecomastia"},
-    {n:"Carvedilol",c:"α+β blocker",u:"CHF, HTN; antioxidant"},
-    {n:"Methyldopa",c:"Central α2",u:"DOC HTN in pregnancy"},
-    {n:"Sodium Nitroprusside",c:"NO donor",u:"Hypertensive emergency; cyanide toxicity risk"},
-    {n:"Glyceryl Trinitrate",c:"Nitrate",u:"Acute angina (SL); pulmonary oedema"},
-    {n:"Amiodarone",c:"Class III",u:"AF, VT; most effective antiarrhythmic; many ADRs"},
-    {n:"Adenosine",c:"A1 agonist",u:"DOC for paroxysmal SVT; t½ &lt; 10 s"},
-    {n:"Atorvastatin",c:"HMG-CoA reductase inhibitor",u:"Hyperlipidaemia, ASCVD prevention"},
-    {n:"Ezetimibe",c:"NPC1L1 blocker",u:"Add-on to statin; ↓ LDL further"},
-    {n:"Evolocumab",c:"PCSK9 mAb",u:"FH, statin intolerance; SC every 2-4 weeks"},
-    {n:"Ivabradine",c:"If channel blocker",u:"HFrEF with HR &gt; 70 on β-blocker; stable angina"}
+    // 1. RAAS
+    {n:"Enalapril",c:"1️⃣ ACE-inhibitor",u:"HTN, CHF, post-MI, diabetic nephropathy"},
+    {n:"Ramipril",c:"1️⃣ ACE-inhibitor",u:"HTN, CHF (HOPE trial)"},
+    {n:"Lisinopril",c:"1️⃣ ACE-inhibitor (long-acting)",u:"HTN, CHF; not a prodrug"},
+    {n:"Captopril",c:"1️⃣ ACE-inhibitor (SH group)",u:"Hypertensive urgency; unique ADRs (dysgeusia, rash)"},
+    {n:"Losartan",c:"1️⃣ ARB",u:"HTN; uricosuric; first ARB"},
+    {n:"Telmisartan",c:"1️⃣ ARB (longest t½)",u:"HTN; PPARγ activity; 24 h duration"},
+    {n:"Valsartan",c:"1️⃣ ARB",u:"HTN, CHF, post-MI"},
+    {n:"Sacubitril-Valsartan",c:"1️⃣ ARNI",u:"HFrEF (PARADIGM-HF); 36 h ACEi washout"},
+    {n:"Aliskiren",c:"1️⃣ Direct renin inhibitor",u:"HTN; avoid with ACEi/ARB"},
+    {n:"Spironolactone",c:"1️⃣ MRA (non-selective)",u:"CHF, resistant HTN, hyperaldo, ascites; gynecomastia"},
+    {n:"Eplerenone",c:"1️⃣ MRA (selective)",u:"CHF post-MI (EPHESUS); less endocrine ADR"},
+    {n:"Finerenone",c:"1️⃣ Non-steroidal MRA",u:"Diabetic kidney disease (FIDELIO-DKD)"},
+    // 2. Heart Failure
+    {n:"Bisoprolol",c:"2️⃣ β1-selective blocker (BCM)",u:"HFrEF mortality reduction (CIBIS-II)"},
+    {n:"Carvedilol",c:"2️⃣ α+β blocker (BCM)",u:"HFrEF (COPERNICUS); antioxidant"},
+    {n:"Metoprolol succinate",c:"2️⃣ β1-selective ER (BCM)",u:"HFrEF (MERIT-HF)"},
+    {n:"Dapagliflozin",c:"2️⃣ SGLT-2 inhibitor",u:"HFrEF (DAPA-HF) + HFpEF (DELIVER)"},
+    {n:"Empagliflozin",c:"2️⃣ SGLT-2 inhibitor",u:"HFrEF (EMPEROR-Reduced) + HFpEF (EMPEROR-Preserved)"},
+    {n:"Furosemide",c:"2️⃣ Loop diuretic",u:"Symptomatic congestion in HF; ototoxicity (IV bolus)"},
+    {n:"Torsemide",c:"2️⃣ Loop diuretic",u:"HF; better oral bioavailability than Furosemide"},
+    {n:"Ivabradine",c:"2️⃣ If channel blocker",u:"HFrEF + HR &gt; 70 (SHIFT); stable angina"},
+    {n:"Digoxin",c:"2️⃣ Na/K-ATPase inhibitor",u:"Refractory HF + AF; narrow TI; antidote = Digoxin Fab"},
+    {n:"Vericiguat",c:"2️⃣ sGC stimulator",u:"Worsening HF (VICTORIA)"},
+    {n:"Hydralazine + ISDN",c:"2️⃣ Vasodilator combo",u:"HF in African ancestry (A-HeFT)"},
+    {n:"Dobutamine",c:"2️⃣ β1 agonist (inotrope)",u:"Cardiogenic shock; acute decompensated HF"},
+    {n:"Milrinone",c:"2️⃣ PDE-3 inhibitor",u:"Acute HF; ↑ cAMP; vasodilator"},
+    {n:"Levosimendan",c:"2️⃣ Ca-sensitiser",u:"Acute HF; intermittent infusion"},
+    // 3. Antiischaemic / Antianginal
+    {n:"Glyceryl Trinitrate",c:"3️⃣ Nitrate (SL/IV/patch)",u:"Acute angina, pulmonary oedema"},
+    {n:"Isosorbide Mononitrate",c:"3️⃣ Nitrate (oral)",u:"Stable angina prophylaxis"},
+    {n:"Metoprolol",c:"3️⃣ β1-selective blocker",u:"Stable angina, post-MI, HTN, AF rate control"},
+    {n:"Amlodipine",c:"3️⃣ DHP CCB (long t½)",u:"HTN, stable angina, Prinzmetal; pedal oedema"},
+    {n:"Diltiazem",c:"3️⃣ Non-DHP CCB",u:"HTN, angina, AF rate control"},
+    {n:"Ranolazine",c:"3️⃣ Late Na⁺ blocker",u:"Refractory angina + LV dysfunction; QT prolongation"},
+    {n:"Nicorandil",c:"3️⃣ K-ATP opener + NO donor",u:"Stable angina; oral ulcers ADR"},
+    {n:"Trimetazidine",c:"3️⃣ Metabolic modulator",u:"Refractory angina; parkinsonism ADR"},
+    // 4. Antiarrhythmic
+    {n:"Quinidine",c:"4️⃣ Class IA",u:"AF (historic); cinchonism; ↑ digoxin levels"},
+    {n:"Procainamide",c:"4️⃣ Class IA",u:"VT, WPW with AF; drug-induced SLE"},
+    {n:"Lignocaine (IV)",c:"4️⃣ Class IB",u:"VT post-MI DOC; digitalis arrhythmias"},
+    {n:"Flecainide",c:"4️⃣ Class IC",u:"AF (no SHD); AVOID structural heart disease (CAST)"},
+    {n:"Esmolol",c:"4️⃣ Class II (IV β-blocker)",u:"Acute rate control; t½ ~9 min"},
+    {n:"Amiodarone",c:"4️⃣ Class III (broad I+II+III+IV)",u:"AF, VT, VF; Lung/Liver/Thyroid/Skin ADRs"},
+    {n:"Sotalol",c:"4️⃣ Class III + II",u:"AF, VT; QT prolongation"},
+    {n:"Dofetilide",c:"4️⃣ Class III",u:"AF; Torsades risk → hospital initiation"},
+    {n:"Dronedarone",c:"4️⃣ Class III",u:"Paroxysmal AF; ↑ mortality in permanent AF (PALLAS)"},
+    {n:"Verapamil",c:"4️⃣ Class IV (non-DHP CCB)",u:"SVT, AF rate control; constipation"},
+    {n:"Adenosine",c:"4️⃣ A1 agonist (DOC PSVT)",u:"PSVT; t½ &lt; 10 s; transient asystole"},
+    {n:"Magnesium Sulphate",c:"4️⃣ Antiarrhythmic",u:"Torsades de pointes DOC"},
+    {n:"Digoxin Fab",c:"4️⃣ Antidote",u:"Digoxin toxicity reversal"},
+    // 5. Antihypertensive (other classes)
+    {n:"Hydrochlorothiazide",c:"5️⃣ Thiazide diuretic",u:"HTN; hypokalaemia, hyperuricaemia"},
+    {n:"Chlorthalidone",c:"5️⃣ Thiazide-like (long t½)",u:"HTN (ALLHAT — superior to HCTZ)"},
+    {n:"Indapamide",c:"5️⃣ Thiazide-like",u:"HTN; less metabolic ADR"},
+    {n:"Methyldopa",c:"5️⃣ Central α2 agonist",u:"DOC HTN in pregnancy (Cat B); Coombs+ haemolysis"},
+    {n:"Clonidine",c:"5️⃣ Central α2 agonist",u:"HTN, ADHD; rebound HTN on sudden withdrawal"},
+    {n:"Prazosin",c:"5️⃣ α1 blocker",u:"HTN + BPH; PTSD nightmares; 1st-dose orthostasis"},
+    {n:"Hydralazine",c:"5️⃣ Direct arterial vasodilator",u:"Pregnancy HTN, HF (with ISDN); drug-induced SLE"},
+    {n:"Minoxidil",c:"5️⃣ Direct vasodilator",u:"Resistant HTN; hypertrichosis"},
+    {n:"Sodium Nitroprusside",c:"5️⃣ NO donor (IV)",u:"Hypertensive emergency; cyanide toxicity risk"},
+    {n:"Labetalol (IV)",c:"5️⃣ α+β blocker",u:"Pregnancy HTN; aortic dissection"},
+    {n:"Aprocitentan",c:"5️⃣ Dual endothelin antagonist (2024)",u:"Resistant HTN (PRECISION)"}
   ],
   ppt:[
-    {t:"Hypertension – Stepwise Therapy",p:["Lifestyle","Class A (ACE/ARB)","Class C (CCB)","Class D (diuretic)"]},
-    {t:"ACE Inhibitors & ARBs",p:["MOA","Cough difference","Renal protection","Contraindications"]},
-    {t:"Calcium Channel Blockers",p:["DHP vs non-DHP","Vascular vs cardiac","Pedal oedema","Verapamil-digoxin interaction"]},
-    {t:"Heart Failure – New Approach",p:["GDMT 4 pillars","ARNI","SGLT-2i","MRA"]},
-    {t:"Antianginal Drugs",p:["Stable vs unstable","Nitrates","Newer drugs (ranolazine, nicorandil)","Ivabradine"]},
-    {t:"Antiarrhythmics – VW Class",p:["Class I to IV","DOC for each arrhythmia","Amiodarone toxicity","Adenosine for SVT"]},
-    {t:"Lipid-Lowering Drugs",p:["Statins","Ezetimibe","Fibrates","PCSK9 inhibitors / Inclisiran"]},
-    {t:"Drugs in MI",p:["MONA-B","Antiplatelet","Reperfusion","Long-term"]}
+    // 1. RAAS
+    {t:"1️⃣ RAAS — Overview",p:["Renin → AngI → AngII cascade","ACE = kininase II (bradykinin)","AT1 vs AT2 receptors","Aldosterone effects"]},
+    {t:"1️⃣ ACEi vs ARB vs ARNI",p:["MOA differences","Cough &amp; angioedema (ACEi)","Telmisartan longest t½","ARNI in HFrEF — PARADIGM-HF"]},
+    {t:"1️⃣ MRA &amp; Aliskiren",p:["Spironolactone (non-selective)","Eplerenone (selective)","Finerenone (DKD — 2021)","Aliskiren — Conn's"]},
+    // 2. HF
+    {t:"2️⃣ HF — 4-Pillar GDMT",p:["ARNI/ACEi/ARB","β-Blocker (BCM)","MRA","SGLT-2i"]},
+    {t:"2️⃣ HF Adjuncts",p:["Loop diuretics (symptom)","Ivabradine (SHIFT)","Digoxin (AF + HF)","H-ISDN (African ancestry)"]},
+    {t:"2️⃣ Acute &amp; Advanced HF",p:["IV Furosemide","Vasodilators (NTG, Nitroprusside)","Inotropes (Dobutamine, Milrinone, Levosimendan)","Vericiguat (worsening HF)"]},
+    {t:"2️⃣ HFpEF",p:["SGLT2i (EMPEROR-Preserved, DELIVER)","Spironolactone (TOPCAT)","ARNI (limited)","Tirzepatide for obesity HFpEF"]},
+    // 3. Antiischaemic
+    {t:"3️⃣ Antianginal — Demand vs Supply",p:["↓ Demand: β-blocker, Non-DHP CCB","↑ Supply: Nitrate, DHP CCB","Ranolazine, Nicorandil, Trimetazidine","Ivabradine"]},
+    {t:"3️⃣ Nitrates",p:["NO → cGMP → vasodilation","Tolerance — 8 h nitrate-free interval","AVOID with PDE5i (Sildenafil)","Venous &gt; arterial dilation"]},
+    {t:"3️⃣ ACS Management",p:["MONA-B","DAPT (Aspirin + P2Y12)","PCI vs Thrombolysis","Statin + ACEi + Lifestyle"]},
+    // 4. Antiarrhythmic
+    {t:"4️⃣ Vaughan-Williams",p:["IA, IB, IC — Na⁺ blockers","II — β-blockers","III — K⁺ blockers (Amiodarone)","IV — Non-DHP CCBs"]},
+    {t:"4️⃣ DOC by Arrhythmia",p:["PSVT — Adenosine","VT post-MI — Lignocaine","VF — Defib + Amiodarone","Torsades — Magnesium"]},
+    {t:"4️⃣ Amiodarone &amp; Special",p:["Toxicity (Lung/Liver/Thyroid/Skin/Cornea)","Long t½ 58 days","Pan-CYP inhibitor","Digoxin Fab antidote"]},
+    // 5. Antihypertensive
+    {t:"5️⃣ HTN Step-up (A·C·D·K)",p:["Lifestyle 1st","Stage 1 single agent","Stage 2 combination","Resistant — Spironolactone (PATHWAY-2)"]},
+    {t:"5️⃣ HTN Special Situations",p:["Pregnancy — Methyldopa","DM/CKD — ACEi/ARB","Pheo — α first then β","HF — 4 pillars"]},
+    {t:"5️⃣ Hypertensive Emergency",p:["Sodium Nitroprusside","Labetalol IV","Nicardipine/Clevidipine","Esmolol (aortic dissection)"]},
+    {t:"5️⃣ Newer 2023-25",p:["Aprocitentan (FDA 2024)","Zilebesiran (siRNA, yearly)","Renal denervation (2023)","SGLT2i modest BP effect"]}
   ],
   mcqs:[
-    {q:"DOC for hypertension in pregnancy is:",o:["Enalapril","Atenolol","Methyldopa","Furosemide"],a:"Methyldopa",e:"Methyldopa is safest in pregnancy (Cat B). Alternatives: labetalol, nifedipine. AVOID: ACE-i, ARB, atenolol (FGR)."},
-    {q:"Which drug is preferred for HFrEF over enalapril?",o:["Losartan","Sacubitril-Valsartan","Hydralazine","Bisoprolol"],a:"Sacubitril-Valsartan",e:"ARNI (PARADIGM-HF) showed 20% mortality reduction vs enalapril in HFrEF. Wash-out enalapril for 36 h before starting ARNI."},
-    {q:"Drug of choice for paroxysmal supraventricular tachycardia (PSVT):",o:["Digoxin","Amiodarone","Adenosine IV bolus","Verapamil"],a:"Adenosine IV bolus",e:"Adenosine 6 mg rapid IV bolus → AV block → terminates re-entry circuit. T½ &lt; 10 s. Followed by 12 mg if no response."},
-    {q:"Drug that prolongs QT interval AND has class III action:",o:["Lignocaine","Amiodarone","Verapamil","Esmolol"],a:"Amiodarone",e:"Amiodarone is primarily class III (K⁺ block, ↑ APD) but has class I, II, IV actions too. Causes prolonged QT but rarely causes Torsades."},
-    {q:"Which statin has the most drug interactions through CYP3A4?",o:["Atorvastatin","Rosuvastatin","Pravastatin","Simvastatin"],a:"Simvastatin",e:"Simvastatin and lovastatin are extensively metabolised by CYP3A4 → ↑ rhabdomyolysis with macrolides, azoles, grapefruit. Rosuvastatin and pravastatin are minimally CYP-metabolised."},
-    {q:"In digoxin toxicity, which electrolyte abnormality worsens it?",o:["Hyperkalaemia","Hypokalaemia","Hypernatraemia","Hypocalcaemia"],a:"Hypokalaemia",e:"Hypokalaemia ↑ digoxin binding to Na/K ATPase → enhanced toxicity. Diuretic-induced hypoK is a common cause of digoxin toxicity."}
+    // 1. RAAS (8)
+    {q:"[1️⃣ RAAS] HTN in pregnancy DOC:",o:["Enalapril","Atenolol","Methyldopa","Furosemide"],a:"Methyldopa",e:"Methyldopa = Cat B; alternatives Labetalol, Nifedipine. AVOID ACEi/ARB/Aliskiren (teratogenic)."},
+    {q:"[1️⃣ RAAS] ACEi cough mechanism:",o:["↑ Histamine","↑ Bradykinin","↓ Angiotensin","↑ Serotonin"],a:"↑ Bradykinin",e:"ACE inhibits both Ang II formation AND bradykinin breakdown → ↑ bradykinin → cough in ~10%."},
+    {q:"[1️⃣ RAAS] HFrEF DOC over Enalapril (PARADIGM-HF):",o:["Losartan","Sacubitril-Valsartan (ARNI)","Hydralazine","Bisoprolol"],a:"Sacubitril-Valsartan (ARNI)",e:"ARNI = 20% mortality reduction vs Enalapril. Wash-out 36 h to prevent angioedema."},
+    {q:"[1️⃣ RAAS] ARB with longest half-life (24 h):",o:["Losartan","Telmisartan","Olmesartan","Valsartan"],a:"Telmisartan",e:"Telmisartan t½ ~24 h; also has PPARγ activity."},
+    {q:"[1️⃣ RAAS] Non-steroidal MRA approved for DKD:",o:["Spironolactone","Eplerenone","Finerenone","Triamterene"],a:"Finerenone",e:"Finerenone (FIDELIO-DKD, FIGARO-DKD) — non-steroidal, less endocrine ADR; FDA 2021 for DKD."},
+    {q:"[1️⃣ RAAS] Captopril unique ADR (SH group):",o:["Cough","Dysgeusia / neutropenia","Angioedema","Hyperkalaemia"],a:"Dysgeusia / neutropenia",e:"Captopril's sulfhydryl group → unique taste loss, rash, neutropenia. Modern ACEi (Enalapril, Ramipril) don't have SH."},
+    {q:"[1️⃣ RAAS] Resistant HTN 4th drug (PATHWAY-2):",o:["Doxazosin","Spironolactone","Hydralazine","Clonidine"],a:"Spironolactone",e:"PATHWAY-2 trial — Spironolactone 25 mg superior to doxazosin or bisoprolol as 4th drug in resistant HTN."},
+    {q:"[1️⃣ RAAS] ARNI angioedema prevention requires:",o:["Co-administer ACEi","Co-administer ARB","Wash-out ACEi 36 h before","No precaution"],a:"Wash-out ACEi 36 h before",e:"Sacubitril + ACEi → double bradykinin → fatal angioedema; mandatory 36 h washout."},
+
+    // 2. Heart Failure (8)
+    {q:"[2️⃣ HF] 3 β-blockers with mortality benefit in HFrEF (BCM):",o:["Bisoprolol, Carvedilol, Metoprolol succinate","Atenolol, Propranolol, Metoprolol","Esmolol, Labetalol, Nadolol","Bisoprolol, Atenolol, Acebutolol"],a:"Bisoprolol, Carvedilol, Metoprolol succinate",e:"CIBIS-II (Bisoprolol), COPERNICUS (Carvedilol), MERIT-HF (Metoprolol succinate)."},
+    {q:"[2️⃣ HF] SGLT2i mechanism in HF:",o:["β-blockade","Glycosuria + natriuresis + ketones → cardiac efficiency","RAAS inhibition","↑ contractility"],a:"Glycosuria + natriuresis + ketones → cardiac efficiency",e:"SGLT2i — multi-mechanism benefit independent of glucose lowering; works in HFrEF + HFpEF."},
+    {q:"[2️⃣ HF] Ivabradine mechanism:",o:["β1 block","If (funny) channel block at SAN","NMDA antagonist","Na/K ATPase inhibitor"],a:"If (funny) channel block at SAN",e:"Ivabradine selectively blocks If channel → ↓ HR only (no inotropy effect). Add when HR &gt; 70 on β-blocker (SHIFT)."},
+    {q:"[2️⃣ HF] African ancestry HFrEF — add:",o:["Aliskiren","H-ISDN (Hydralazine + ISDN)","Digoxin","Trimetazidine"],a:"H-ISDN (Hydralazine + ISDN)",e:"A-HeFT trial — H-ISDN benefit in African ancestry HFrEF; arterial + venous balanced unload."},
+    {q:"[2️⃣ HF] Digoxin antidote:",o:["Atropine","Calcium gluconate","Digoxin-specific Fab antibodies","Glucagon"],a:"Digoxin-specific Fab antibodies",e:"Digibind/DigiFab — neutralises digoxin; indication: severe arrhythmia, K⁺ &gt; 5, large OD."},
+    {q:"[2️⃣ HF] First SGLT2i to show HFpEF benefit:",o:["Dapagliflozin","Canagliflozin","Empagliflozin","Sotagliflozin"],a:"Empagliflozin",e:"EMPEROR-Preserved 2021 (Empa) first; DELIVER 2022 (Dapa) confirmed."},
+    {q:"[2️⃣ HF] Worsening HFrEF — sGC stimulator (VICTORIA):",o:["Vericiguat","Riociguat","Ivabradine","Omecamtiv mecarbil"],a:"Vericiguat",e:"Vericiguat (FDA 2021) — sGC stimulator → ↑ cGMP → vasodilation; VICTORIA trial."},
+    {q:"[2️⃣ HF] Cardiogenic shock inotrope DOC:",o:["Adrenaline","Noradrenaline","Dobutamine","Vasopressin"],a:"Dobutamine",e:"Dobutamine β1 agonist → ↑ contractility with minimal vasoconstriction; preferred in cardiogenic shock."},
+
+    // 3. Antiischaemic (8)
+    {q:"[3️⃣ Aisch] Acute angina DOC:",o:["β-blocker","Sublingual GTN","CCB","Ranolazine"],a:"Sublingual GTN",e:"SL GTN 0.4 mg, repeat 5 min × 3, then 911. Pre-load reduction → ↓ wall tension."},
+    {q:"[3️⃣ Aisch] Nitrate tolerance prevention:",o:["Higher doses","8-12 h nitrate-free interval","Combine with β-blocker","Use only PRN"],a:"8-12 h nitrate-free interval",e:"Continuous nitrate &gt; 24 h → tolerance. Need 8-12 h drug-free interval daily."},
+    {q:"[3️⃣ Aisch] Variant (Prinzmetal) angina — AVOID:",o:["CCB","Nitrate","β-blocker","Aspirin"],a:"β-blocker",e:"Prinzmetal = coronary vasospasm. β-blocker unopposed α → ↑ vasospasm. DOC = CCB ± Nitrate."},
+    {q:"[3️⃣ Aisch] Ranolazine mechanism:",o:["Na/K ATPase inhibitor","Late Na⁺ channel blocker","K-ATP opener","β1 blocker"],a:"Late Na⁺ channel blocker",e:"Ranolazine — late Na⁺ block → ↓ Na/Ca exchange → ↓ Ca overload → ↓ wall tension. No HR/BP effect."},
+    {q:"[3️⃣ Aisch] Stable angina 1st-line prophylaxis:",o:["Nitrate","β-blocker","CCB","Ranolazine"],a:"β-blocker",e:"β-blocker reduces HR + contractility + BP → ↓ O₂ demand; mortality benefit post-MI."},
+    {q:"[3️⃣ Aisch] STEMI primary PCI target window:",o:["&lt; 30 min","&lt; 90 min","&lt; 120 min","&lt; 180 min"],a:"&lt; 90 min",e:"Door-to-balloon &lt; 90 min for primary PCI. Door-to-needle &lt; 30 min for thrombolysis if PCI unavailable."},
+    {q:"[3️⃣ Aisch] Nicorandil unique ADR:",o:["Bradycardia","Oral/genital ulcers","QT prolongation","Bronchospasm"],a:"Oral/genital ulcers",e:"Nicorandil — rare but characteristic severe mucosal ulcers; resolves on discontinuation."},
+    {q:"[3️⃣ Aisch] Trimetazidine ADR (elderly):",o:["Bradycardia","Parkinsonism","Cough","Hyperkalaemia"],a:"Parkinsonism",e:"Trimetazidine — central D2 antagonism → parkinsonism, esp. elderly. EMA restricts use."},
+
+    // 4. Antiarrhythmic (8)
+    {q:"[4️⃣ Aarr] PSVT DOC:",o:["Verapamil","Adenosine 6 mg IV bolus","Amiodarone","Digoxin"],a:"Adenosine 6 mg IV bolus",e:"Adenosine 6 mg rapid IV bolus → terminates re-entry. t½ &lt; 10 s. Followed by 12 mg if needed."},
+    {q:"[4️⃣ Aarr] VT post-MI DOC:",o:["Quinidine","Lignocaine IV","Verapamil","Adenosine"],a:"Lignocaine IV",e:"Class IB — Lignocaine works on ischaemic tissue; minimal effect on normal tissue."},
+    {q:"[4️⃣ Aarr] Torsades de pointes DOC:",o:["Lignocaine","Magnesium sulphate IV","Amiodarone","Adenosine"],a:"Magnesium sulphate IV",e:"IV MgSO₄ 2 g + correct K/Mg + stop offending drug + overdrive pacing if needed."},
+    {q:"[4️⃣ Aarr] AF + WPW — AVOID:",o:["IV Procainamide","DC cardioversion","AV nodal blockers (Digoxin, CCB, β-blocker)","Anticoagulation"],a:"AV nodal blockers (Digoxin, CCB, β-blocker)",e:"AV block ↑ accessory pathway conduction → VF risk. Use Procainamide or DC shock."},
+    {q:"[4️⃣ Aarr] Amiodarone toxicity organs:",o:["Lung, Liver, Thyroid, Skin, Cornea","Kidney, GI, BP","Marrow, GI","Cardiac only"],a:"Lung, Liver, Thyroid, Skin, Cornea",e:"Amiodarone — multi-organ ADRs. Monitor PFT, LFT, TFT, ophthal, skin yearly."},
+    {q:"[4️⃣ Aarr] Procainamide drug-induced syndrome:",o:["Lupus (anti-histone Ab)","Hepatitis","SJS","Aplastic anaemia"],a:"Lupus (anti-histone Ab)",e:"Drug-induced SLE: Procainamide, Hydralazine, Isoniazid, Phenytoin, Methyldopa, Quinidine. Anti-histone+, anti-dsDNA−."},
+    {q:"[4️⃣ Aarr] Class IC AED contraindicated in structural heart disease (CAST):",o:["Flecainide","Lignocaine","Amiodarone","Adenosine"],a:"Flecainide",e:"CAST trial — Flecainide/Propafenone ↑ mortality in post-MI/structural heart disease."},
+    {q:"[4️⃣ Aarr] Adenosine t½:",o:["1-2 min","30 min","6-12 hours","&lt; 10 seconds"],a:"&lt; 10 seconds",e:"Adenosine rapidly deaminated by adenosine deaminase; t½ &lt; 10 s. Effects ↑ with Dipyridamole, antagonised by Theophylline/Caffeine."},
+
+    // 5. Antihypertensive (8)
+    {q:"[5️⃣ AHTN] ALLHAT favoured diuretic:",o:["HCTZ","Chlorthalidone","Indapamide","Furosemide"],a:"Chlorthalidone",e:"ALLHAT — Chlorthalidone (longer t½, better CV outcomes) preferred over HCTZ."},
+    {q:"[5️⃣ AHTN] Pheochromocytoma pre-op sequence:",o:["β-blocker first then α","α-blocker first (Phenoxybenzamine) then β","Both together","β only"],a:"α-blocker first (Phenoxybenzamine) then β",e:"NEVER β alone in pheo — unopposed α → hypertensive crisis. α-block 7-14 d first, then β + volume expansion."},
+    {q:"[5️⃣ AHTN] Aortic dissection — DOC:",o:["Sodium nitroprusside","Esmolol + Sodium nitroprusside","Hydralazine","Clonidine"],a:"Esmolol + Sodium nitroprusside",e:"Target HR &lt; 60 + BP &lt; 120/80. Esmolol first (β-block) then vasodilator."},
+    {q:"[5️⃣ AHTN] Newer endothelin antagonist for resistant HTN (FDA 2024):",o:["Bosentan","Macitentan","Aprocitentan","Ambrisentan"],a:"Aprocitentan",e:"PRECISION trial — Aprocitentan FDA 2024; dual endothelin antagonist."},
+    {q:"[5️⃣ AHTN] Clonidine sudden withdrawal causes:",o:["Hypotension","Rebound hypertension","Bradycardia","Bronchospasm"],a:"Rebound hypertension",e:"Clonidine — central α2 agonist; sudden stop → ↑ sympathetic outflow → rebound HTN. Taper gradually."},
+    {q:"[5️⃣ AHTN] Hydralazine drug-induced syndrome:",o:["SLE (anti-histone Ab)","Hepatitis","SJS","Hypothyroidism"],a:"SLE (anti-histone Ab)",e:"Hydralazine + slow acetylators → drug-induced SLE; resolves on discontinuation."},
+    {q:"[5️⃣ AHTN] siRNA against angiotensinogen (yearly):",o:["Patisiran","Inclisiran","Zilebesiran","Givosiran"],a:"Zilebesiran",e:"Zilebesiran — RNAi against angiotensinogen; once-yearly antihypertensive (Phase 2/3)."},
+    {q:"[5️⃣ AHTN] DHP CCB pedal oedema worst with:",o:["Verapamil","Diltiazem","Amlodipine","Esmolol"],a:"Amlodipine",e:"DHP CCBs cause arteriolar vasodilation → capillary hydrostatic pressure ↑ → pedal oedema. Amlodipine most common (long t½)."}
   ],
-  mnemonic:`<strong>HFrEF 4 pillars</strong>: ARNI/ACEi, β-blocker, MRA, SGLT-2i. <strong>HTN in pregnancy DOC</strong>: Methyldopa &gt; Labetalol &gt; Nifedipine. <strong>Amiodarone toxicity</strong>: Lungs, Liver, Thyroid, Skin, Cornea, Nerve.`
+  mnemonic:`<strong>📚 CVS Drugs — Quick Concepts</strong><br>
+• <strong>RAAS</strong> = ACEi (cough) · ARB (no cough) · ARNI (HFrEF) · MRA (K⁺ sparing); pregnancy contra.<br>
+• <strong>HFrEF 4 pillars</strong> = ARNI + β-blocker (BCM: Bisoprolol/Carvedilol/Metoprolol) + MRA + SGLT2i.<br>
+• <strong>HFpEF</strong> = SGLT2i (DELIVER, EMPEROR-Preserved).<br>
+• <strong>Antianginal</strong> = ↓ Demand (β/CCB) + ↑ Supply (Nitrate/CCB) + Newer (Ranolazine, Ivabradine).<br>
+• <strong>Arrhythmias</strong> — PSVT: Adenosine · VT post-MI: Lignocaine · Torsades: Mg · AF rhythm: Amiodarone.<br>
+• <strong>HTN</strong> — A·C·D·K + Pregnancy=Methyldopa; resistant=Spironolactone; new=Aprocitentan (2024).<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 5 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"kidney",icon:"💧",title:"Drugs Acting on Kidney",
@@ -10715,6 +11989,8 @@ function toggleTopic(id){
   node.classList.toggle('open');
   if(node.classList.contains('open')){
     node.scrollIntoView({behavior:'smooth',block:'start'});
+    // Mark topic as visited (progress tracking)
+    if(typeof markTopicVisit==='function') markTopicVisit(id);
     // Kick-start SVG animations in any visible sub-panels
     setTimeout(()=>{
       node.querySelectorAll('.sub-panel.active').forEach(p=>kickStartSVGAnimations(p));
@@ -10771,6 +12047,16 @@ function switchSub(btn,panelId){
   panel.classList.add('active');
   // Kick-start any SVG animations inside the newly visible panel
   kickStartSVGAnimations(panel);
+  // Progress tracking — mark tab visit (moa, fc, mcq, ppt)
+  if(typeof markTabVisit==='function'){
+    const topicEl = btn.closest('.topic-detail');
+    if(topicEl){
+      const topicId = topicEl.id.replace('topic-','');
+      // Determine which tab (panelId format: tabkey-topicId, e.g. moa-cns, fc-cns)
+      const tabKey = panelId.split('-')[0];
+      markTabVisit(topicId, tabKey);
+    }
+  }
 }
 
 function goSubtopic(topicId,panelKey,anchor){
@@ -10792,6 +12078,8 @@ function goSubtopic(topicId,panelKey,anchor){
     targetPanel.style.display='block';
     // Kick-start any SVG animations inside the newly visible panel
     kickStartSVGAnimations(targetPanel);
+    // Progress tracking — mark sub-topic visit
+    if(typeof markSubtopicVisit==='function') markSubtopicVisit(topicId, panelKey);
   }
   // Scroll to anchor if given, else to topic top
   setTimeout(()=>{
@@ -10888,6 +12176,172 @@ function startPractice(id){
 }
 
 /* ── Nav active state + initialization ───────── */
+/* ═══════════ PROGRESS TRACKING SYSTEM ═══════════ */
+const PROGRESS_KEY = 'pharma-progress-v1';
+function getProgress(){
+  try{ return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {}; }catch(e){ return {}; }
+}
+function saveProgress(p){
+  try{ localStorage.setItem(PROGRESS_KEY, JSON.stringify(p)); }catch(e){}
+}
+function markTopicVisit(topicId){
+  const p = getProgress();
+  if(!p[topicId]) p[topicId] = { visited:true, subtopics:{}, tabs:{}, lastVisit:Date.now() };
+  p[topicId].visited = true;
+  p[topicId].lastVisit = Date.now();
+  saveProgress(p);
+  updateAllBadges();
+}
+function markSubtopicVisit(topicId, panelId){
+  const p = getProgress();
+  if(!p[topicId]) p[topicId] = { visited:true, subtopics:{}, tabs:{}, lastVisit:Date.now() };
+  p[topicId].subtopics[panelId] = true;
+  p[topicId].lastVisit = Date.now();
+  saveProgress(p);
+  updateAllBadges();
+  checkAchievements(topicId);
+}
+function markTabVisit(topicId, tabKey){
+  const p = getProgress();
+  if(!p[topicId]) p[topicId] = { visited:true, subtopics:{}, tabs:{}, lastVisit:Date.now() };
+  p[topicId].tabs[tabKey] = true;
+  p[topicId].lastVisit = Date.now();
+  saveProgress(p);
+  updateAllBadges();
+  checkAchievements(topicId);
+}
+function getTopicProgress(topicId){
+  const p = getProgress();
+  const data = p[topicId];
+  const topic = TOPICS.find(t=>t.id===topicId);
+  if(!topic) return { percent:0, badge:null };
+  // Total: 1 (visited) + sub-topics count + tab count (moa + mcq + fc)
+  const subs = topic.subtopics ? topic.subtopics.length : 0;
+  const totalCheckpoints = 1 + subs + 3; // visited + each sub-topic + 3 main tabs
+  let achieved = 0;
+  if(data){
+    if(data.visited) achieved += 1;
+    if(topic.subtopics){
+      topic.subtopics.forEach(s=>{
+        if(data.subtopics[s.panelId]) achieved += 1;
+      });
+    }
+    ['moa','fc','mcq'].forEach(k=>{ if(data.tabs[k]) achieved += 1; });
+  }
+  const percent = Math.round((achieved/totalCheckpoints)*100);
+  let badge = null;
+  if(percent >= 100) badge = 'master';
+  else if(percent >= 80) badge = 'gold';
+  else if(percent >= 50) badge = 'silver';
+  else if(percent >= 20) badge = 'bronze';
+  return { percent, badge, achieved, total: totalCheckpoints };
+}
+function getOverallStats(){
+  const p = getProgress();
+  let started=0, completed=0, totalSubs=0, doneSub=0, totalTopics=0;
+  if(typeof TOPICS!=='undefined') totalTopics = TOPICS.length;
+  if(typeof TOPICS!=='undefined') TOPICS.forEach(t=>{
+    const pr = getTopicProgress(t.id);
+    if(pr.percent>0) started++;
+    if(pr.percent>=100) completed++;
+    if(t.subtopics){
+      totalSubs += t.subtopics.length;
+      const data = p[t.id];
+      if(data){
+        t.subtopics.forEach(s=>{ if(data.subtopics[s.panelId]) doneSub++; });
+      }
+    }
+  });
+  return {started, completed, totalSubs, doneSub, totalTopics};
+}
+function showAchievementToast(title, name, icon){
+  let t = document.getElementById('ach-toast');
+  if(!t){
+    t = document.createElement('div');
+    t.id = 'ach-toast'; t.className = 'achievement-toast';
+    document.body.appendChild(t);
+  }
+  t.innerHTML = `<span class="ach-icon">${icon}</span><span class="ach-text"><span class="ach-title">${title}</span><span class="ach-name">${name}</span></span>`;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3500);
+}
+function checkAchievements(topicId){
+  const pr = getTopicProgress(topicId);
+  const topic = TOPICS.find(t=>t.id===topicId);
+  if(!topic) return;
+  const lastBadgeKey = `last-badge-${topicId}`;
+  const lastBadge = localStorage.getItem(lastBadgeKey) || '';
+  if(pr.badge && pr.badge !== lastBadge){
+    localStorage.setItem(lastBadgeKey, pr.badge);
+    const icons = {bronze:'🥉', silver:'🥈', gold:'🥇', master:'🏆'};
+    const labels = {bronze:'Bronze Explorer', silver:'Silver Learner', gold:'Gold Scholar', master:'Master 🌟'};
+    showAchievementToast(`${labels[pr.badge]} unlocked!`, topic.title, icons[pr.badge]);
+  }
+}
+function updateAllBadges(){
+  // Update topic cards (top grid)
+  document.querySelectorAll('.topic-card').forEach(card=>{
+    const onclick = card.getAttribute('onclick') || '';
+    const m = onclick.match(/openTopic\('([^']+)'\)/);
+    if(!m) return;
+    const id = m[1];
+    const pr = getTopicProgress(id);
+    let existing = card.querySelector('.topic-card-badge');
+    if(existing) existing.remove();
+    if(pr.percent>0){
+      const b = document.createElement('div');
+      b.className = 'topic-card-badge ' + (pr.badge||'');
+      const icons = {bronze:'🥉', silver:'🥈', gold:'🥇', master:'🏆'};
+      b.textContent = `${icons[pr.badge]||'⏳'} ${pr.percent}%`;
+      card.appendChild(b);
+    }
+  });
+  // Update accordion headers
+  document.querySelectorAll('.topic-detail').forEach(t=>{
+    const id = t.id.replace('topic-','');
+    const head = t.querySelector('.topic-detail-head');
+    if(!head) return;
+    const pr = getTopicProgress(id);
+    let existing = head.querySelector('.topic-badge');
+    if(existing) existing.remove();
+    if(pr.percent>0){
+      const b = document.createElement('div');
+      b.className = 'topic-badge ' + (pr.badge||'');
+      const icons = {bronze:'🥉', silver:'🥈', gold:'🥇', master:'🏆'};
+      b.innerHTML = `<span>${icons[pr.badge]||'⏳'}</span><span>${pr.percent}%</span>`;
+      head.appendChild(b);
+    }
+  });
+  // Update dashboard
+  renderProgressDashboard();
+}
+function resetProgress(){
+  if(!confirm('Reset all topic progress? This cannot be undone.')) return;
+  localStorage.removeItem(PROGRESS_KEY);
+  // Clear achievement keys
+  if(typeof TOPICS!=='undefined') TOPICS.forEach(t=>localStorage.removeItem(`last-badge-${t.id}`));
+  updateAllBadges();
+}
+function renderProgressDashboard(){
+  const host = document.getElementById('progress-dashboard');
+  if(!host) return;
+  const stats = getOverallStats();
+  const overallPct = stats.totalTopics ? Math.round((stats.completed/stats.totalTopics)*100) : 0;
+  const subPct = stats.totalSubs ? Math.round((stats.doneSub/stats.totalSubs)*100) : 0;
+  host.innerHTML = `
+    <div class="progress-dash-left">
+      <div class="progress-dash-title">📊 Your Learning Progress</div>
+      <div class="progress-bar-track"><div class="progress-bar-fill" style="width:${overallPct}%"></div></div>
+      <div class="progress-dash-stats">
+        <div class="progress-dash-stat">📚 <strong>${stats.started}</strong>/${stats.totalTopics} topics started</div>
+        <div class="progress-dash-stat">✅ <strong>${stats.completed}</strong>/${stats.totalTopics} topics mastered</div>
+        <div class="progress-dash-stat">📖 <strong>${stats.doneSub}</strong>/${stats.totalSubs} sub-topics done (${subPct}%)</div>
+      </div>
+    </div>
+    <button class="progress-reset-btn" onclick="resetProgress()" title="Clear all progress">🔄 Reset</button>
+  `;
+}
+
 /* ═══════════ THEME TOGGLE (Standard ↔ Reading/Cream) ═══════════ */
 function applyTheme(theme){
   if(theme==='cream'){
@@ -10960,6 +12414,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   buildSearchIndex();
   renderDailyMCQ();
   renderBookmarksPanel();
+
+  // Initial render of progress dashboard + badges
+  if(typeof updateAllBadges==='function') updateAllBadges();
 
   // Kick-start ALL SVG animations across the page (fixes SMIL freeze when injected via innerHTML)
   // Use requestAnimationFrame driver to manually advance the timeline.
