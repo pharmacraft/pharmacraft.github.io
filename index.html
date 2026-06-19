@@ -4256,6 +4256,195 @@ const MOA = {
     <span><span class="dot" style="background:#f5c518"></span>CsA</span>
     <span><span class="dot" style="background:#4da6ff"></span>TCR</span>
   </div>
+</div>`,
+
+  kidneyComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#e8f4f0,#dde9ee);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:var(--navy);margin:0 0 6px;">💧 Topic 9 — Drugs Acting on Kidney (Animated Mechanisms)</h4>
+  <p style="font-size:12px;color:var(--text-light);margin:0;">Site-wise diuretic action along the nephron + ADH/Antidiuretic axis with target receptors and clinical use.</p>
+</div>
+
+<!-- ═══════════ MOA 1 — DIURETICS (Site-wise along nephron) ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 1️⃣ Diuretics — Nephron Site of Action</h4>
+  <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#f7fcfb;border-radius:10px;">
+    <!-- Nephron schematic -->
+    <defs>
+      <linearGradient id="nephGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#dff5ee"/>
+        <stop offset="100%" stop-color="#f7fcfb"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="700" height="360" fill="url(#nephGrad)"/>
+
+    <!-- Glomerulus -->
+    <circle cx="80" cy="60" r="22" fill="#ffd7a3" stroke="#c2880d" stroke-width="2"/>
+    <text x="80" y="65" font-size="9" font-weight="700" text-anchor="middle" fill="#5a3801">Glom</text>
+    <text x="80" y="95" font-size="9" text-anchor="middle" fill="var(--text)">Filtration</text>
+
+    <!-- PCT -->
+    <path d="M105 60 Q 140 65 165 90 Q 175 100 180 115" stroke="#0d7a64" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <text x="140" y="55" font-size="10" font-weight="700" fill="#0d7a64">PCT</text>
+    <text x="140" y="125" font-size="8" fill="var(--text)">65% Na⁺, HCO₃⁻</text>
+
+    <!-- CA inhibitor at PCT -->
+    <circle cx="160" cy="85" r="9" fill="#ffb84d" stroke="#a05c00" stroke-width="1.5">
+      <animate attributeName="r" values="8;13;8" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="160" y="89" font-size="8" font-weight="700" text-anchor="middle" fill="#5a2e00">CA</text>
+    <text x="190" y="80" font-size="9" font-weight="600" fill="#a05c00">Acetazolamide</text>
+
+    <!-- Descending loop -->
+    <path d="M185 130 Q 195 180 210 230" stroke="#0d7a64" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <text x="220" y="180" font-size="9" fill="var(--text)">Desc</text>
+
+    <!-- Mannitol at descending LOH -->
+    <circle cx="210" cy="200" r="7" fill="#a78bfa" stroke="#4c1d95" stroke-width="1.5">
+      <animate attributeName="r" values="6;11;6" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="245" y="205" font-size="9" font-weight="600" fill="#4c1d95">Mannitol (osmotic)</text>
+
+    <!-- Hairpin -->
+    <path d="M215 235 Q 235 250 260 250 Q 285 250 300 235" stroke="#0d7a64" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Thick ascending limb (TAL) -->
+    <path d="M305 230 Q 320 180 335 130" stroke="#0d7a64" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <text x="345" y="180" font-size="10" font-weight="700" fill="#0d7a64">TAL</text>
+    <text x="345" y="195" font-size="8" fill="var(--text)">25% Na⁺</text>
+
+    <!-- Loop Diuretic -->
+    <circle cx="320" cy="180" r="10" fill="#ff6b6b" stroke="#8b0000" stroke-width="1.5">
+      <animate attributeName="r" values="8;15;8" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="320" y="184" font-size="9" font-weight="700" text-anchor="middle" fill="white">L</text>
+    <text x="395" y="180" font-size="9" font-weight="600" fill="#8b0000">Loop: Furosemide (NKCC2)</text>
+
+    <!-- DCT -->
+    <path d="M340 125 Q 380 110 420 105" stroke="#0d7a64" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <text x="385" y="95" font-size="10" font-weight="700" fill="#0d7a64">DCT</text>
+    <text x="385" y="138" font-size="8" fill="var(--text)">5% Na⁺ (NCC)</text>
+
+    <!-- Thiazide -->
+    <circle cx="400" cy="105" r="9" fill="#4dabf7" stroke="#003a80" stroke-width="1.5">
+      <animate attributeName="r" values="8;13;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="109" font-size="8" font-weight="700" text-anchor="middle" fill="white">T</text>
+    <text x="465" y="105" font-size="9" font-weight="600" fill="#003a80">Thiazide: HCTZ (NCC)</text>
+
+    <!-- Collecting duct -->
+    <path d="M430 110 Q 480 130 510 180 Q 525 220 530 275" stroke="#0d7a64" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <text x="540" y="195" font-size="10" font-weight="700" fill="#0d7a64">CD</text>
+    <text x="540" y="208" font-size="8" fill="var(--text)">3% Na⁺ ENaC</text>
+
+    <!-- K-sparing (Amiloride / ENaC blocker) -->
+    <circle cx="510" cy="190" r="8" fill="#fcd34d" stroke="#7c4a00" stroke-width="1.5">
+      <animate attributeName="r" values="7;12;7" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="510" y="194" font-size="8" font-weight="700" text-anchor="middle" fill="#5a2e00">K+</text>
+    <text x="555" y="225" font-size="9" font-weight="600" fill="#7c4a00">Amiloride (ENaC)</text>
+    <text x="555" y="238" font-size="9" font-weight="600" fill="#7c4a00">Spironolactone (MRA)</text>
+
+    <!-- SGLT2 inhibitor at PCT (newer) -->
+    <circle cx="135" cy="78" r="6" fill="#22c55e" stroke="#14532d" stroke-width="1.2">
+      <animate attributeName="r" values="5;10;5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="115" y="40" font-size="8" font-weight="700" fill="#14532d">SGLT2i</text>
+    <text x="115" y="50" font-size="7" fill="#14532d">(Dapa, Empa)</text>
+
+    <!-- Urine flow arrow -->
+    <path d="M530 285 L 540 320" stroke="#666" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+        <polygon points="0,0 6,3 0,6" fill="#666"/>
+      </marker>
+    </defs>
+    <text x="555" y="320" font-size="10" font-weight="700" fill="#444">Urine ↑</text>
+
+    <!-- Legend -->
+    <rect x="20" y="285" width="350" height="65" fill="white" stroke="var(--border)" rx="8"/>
+    <text x="30" y="302" font-size="9" font-weight="700" fill="var(--navy)">Site → Drug → Effect</text>
+    <text x="30" y="316" font-size="8" fill="var(--text)">• PCT: CA-inh (Acetazolamide) + SGLT2i + Mannitol (osmotic)</text>
+    <text x="30" y="328" font-size="8" fill="var(--text)">• TAL: Loop (Furosemide) – most potent</text>
+    <text x="30" y="340" font-size="8" fill="var(--text)">• DCT: Thiazide (HCTZ, Chlorthalidone)</text>
+    <text x="30" y="352" font-size="8" fill="var(--text)">• CD: K-sparing (Amiloride / Spironolactone)</text>
+  </svg>
+</div>
+
+<!-- ═══════════ MOA 2 — ANTIDIURETICS (ADH / V2 axis) ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 2️⃣ Antidiuretics — ADH (V2) Axis &amp; Vaptans</h4>
+  <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#f7fcfb;border-radius:10px;">
+    <rect x="0" y="0" width="700" height="320" fill="url(#nephGrad)"/>
+
+    <!-- Hypothalamus -->
+    <ellipse cx="80" cy="60" rx="40" ry="22" fill="#ffe066" stroke="#996300" stroke-width="2"/>
+    <text x="80" y="58" font-size="9" font-weight="700" text-anchor="middle" fill="#5a3801">Hypothalamus</text>
+    <text x="80" y="70" font-size="8" text-anchor="middle" fill="#5a3801">SON, PVN</text>
+
+    <!-- Arrow to pituitary -->
+    <path d="M80 85 L 80 120" stroke="#996300" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- Posterior pituitary -->
+    <circle cx="80" cy="140" r="18" fill="#ff8a65" stroke="#8b0000" stroke-width="2"/>
+    <text x="80" y="143" font-size="8" font-weight="700" text-anchor="middle" fill="white">Post. Pit</text>
+
+    <!-- ADH release -->
+    <text x="80" y="180" font-size="8" font-weight="700" text-anchor="middle" fill="#8b0000">↑ Osm / ↓ Vol</text>
+    <text x="80" y="192" font-size="8" font-weight="700" text-anchor="middle" fill="#8b0000">→ ADH (AVP)</text>
+
+    <!-- ADH molecules flowing -->
+    <circle cx="160" cy="155" r="5" fill="#e91e63" opacity="0.9">
+      <animate attributeName="cx" values="120;380;120" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="160" r="5" fill="#e91e63" opacity="0.7">
+      <animate attributeName="cx" values="120;380;120" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Kidney collecting duct cell -->
+    <rect x="400" y="100" width="220" height="180" fill="#dff5ee" stroke="var(--teal)" stroke-width="2" rx="10"/>
+    <text x="510" y="120" font-size="11" font-weight="700" text-anchor="middle" fill="var(--navy)">Collecting Duct Cell</text>
+
+    <!-- V2 receptor -->
+    <rect x="410" y="140" width="20" height="40" fill="#0d7a64" stroke="#003020"/>
+    <text x="420" y="165" font-size="9" font-weight="700" text-anchor="middle" fill="white">V2</text>
+
+    <!-- ADH binding -->
+    <circle cx="400" cy="160" r="6" fill="#e91e63">
+      <animate attributeName="r" values="6;9;6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Vaptan block -->
+    <text x="380" y="120" font-size="9" font-weight="700" fill="#dc2626">❌ Vaptans block V2</text>
+    <line x1="395" y1="125" x2="408" y2="148" stroke="#dc2626" stroke-width="2.5"/>
+
+    <!-- cAMP → PKA → AQP2 -->
+    <text x="450" y="200" font-size="9" font-weight="700" fill="var(--navy)">Gs → ↑ cAMP → PKA</text>
+    <text x="450" y="215" font-size="9" font-weight="700" fill="var(--navy)">→ AQP2 insertion</text>
+
+    <!-- Aquaporin -->
+    <rect x="600" y="150" width="14" height="50" fill="#4dabf7" stroke="#003a80" stroke-width="1.5">
+      <animate attributeName="height" values="20;50;20" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="180;150;180" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="640" y="175" font-size="9" font-weight="700" fill="#003a80">AQP2</text>
+    <text x="640" y="187" font-size="8" fill="#003a80">(water channel)</text>
+
+    <!-- Water entering -->
+    <circle cx="650" cy="210" r="4" fill="#3b82f6">
+      <animate attributeName="cy" values="240;160;240" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="220" r="3" fill="#3b82f6">
+      <animate attributeName="cy" values="240;160;240" dur="1.6s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="640" y="270" font-size="8" font-weight="700" fill="#003a80">H₂O reabsorbed</text>
+
+    <!-- Result box -->
+    <rect x="20" y="240" width="340" height="65" fill="white" stroke="var(--border)" rx="8"/>
+    <text x="30" y="258" font-size="10" font-weight="700" fill="var(--navy)">Drugs Acting on ADH Axis</text>
+    <text x="30" y="272" font-size="8" fill="var(--text)">• <tspan font-weight="700">Agonists</tspan>: Desmopressin (DDAVP, V2 selective), Vasopressin, Terlipressin</text>
+    <text x="30" y="284" font-size="8" fill="var(--text)">• <tspan font-weight="700">Antagonists</tspan> (Vaptans): Tolvaptan (V2), Conivaptan (V1a/V2)</text>
+    <text x="30" y="296" font-size="8" fill="var(--text)">• Uses: DI, nocturnal enuresis (agonists); SIADH, ADPKD (antagonists)</text>
+  </svg>
 </div>`
 };
 
@@ -11038,75 +11227,388 @@ TOPICS.push({id:"cvs",icon:"❤️",title:"Cardiovascular System Drugs",
 });
 
 TOPICS.push({id:"kidney",icon:"💧",title:"Drugs Acting on Kidney",
-  classification:`<h4>Diuretics by Site</h4>
-<table><tr><th>Class</th><th>Site</th><th>Drugs</th></tr>
-<tr><td>CA inhibitors</td><td>PCT</td><td>Acetazolamide, Dorzolamide, Brinzolamide</td></tr>
-<tr><td>Osmotic</td><td>PCT, descending LOH, CD</td><td>Mannitol, Urea, Glycerol, Isosorbide</td></tr>
-<tr><td>Loop diuretics</td><td>Thick ascending LOH</td><td>Furosemide, Torsemide, Bumetanide, Ethacrynic acid</td></tr>
-<tr><td>Thiazides</td><td>Distal convoluted tubule</td><td>Hydrochlorothiazide, Chlorthalidone, Indapamide, Metolazone</td></tr>
-<tr><td>K-sparing</td><td>Collecting duct</td><td>Spironolactone, Eplerenone (MRA); Amiloride, Triamterene (ENaC blockers)</td></tr>
-<tr><td>ADH antagonists</td><td>Collecting duct</td><td>Tolvaptan, Conivaptan, Demeclocycline</td></tr>
-<tr><td>SGLT-2 inhibitors</td><td>PCT</td><td>Empagliflozin, Dapagliflozin</td></tr></table>
-<h4>Antidiuretics</h4>
-<p>ADH (Vasopressin), Desmopressin (DDAVP, V2-selective), Thiazides (paradoxical in nephrogenic DI), Indomethacin (NSAID).</p>`,
-  moa:MOA.diuretic,
-  pkpd:`<h4>Furosemide</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Diuretics",panelId:"diuretics"},
+    {n:2,label:"Antidiuretics",panelId:"antidiuretics"}
+  ],
+  classification:`<h4>Drugs Acting on Kidney — Overview</h4>
+<p>Kidney pharmacology covers two complementary groups of drugs — <strong>diuretics</strong> (↑ urine volume by inhibiting Na⁺ reabsorption at specific nephron sites) and <strong>antidiuretics</strong> (↓ urine volume via ADH/V2 axis or paradoxical effects). These drugs are foundational in <em>hypertension, heart failure, oedema, glaucoma, altitude sickness, SIADH, diabetes insipidus,</em> and renal-protective strategies.</p>
+<table>
+<tr><th>Sub-topic</th><th>Site / Receptor</th><th>Key Drugs</th></tr>
+<tr><td><strong>1️⃣ Diuretics</strong></td><td>PCT, LOH, DCT, CD</td><td>Acetazolamide, Mannitol, Furosemide, HCTZ, Spironolactone, Amiloride, SGLT2i</td></tr>
+<tr><td><strong>2️⃣ Antidiuretics</strong></td><td>Collecting duct V2 receptor</td><td>Desmopressin, Vasopressin, Terlipressin (agonists); Tolvaptan, Conivaptan (antagonists); Thiazides &amp; Indomethacin (paradoxical in nephrogenic DI)</td></tr>
+</table>
+<p style="font-size:12px;margin-top:8px;color:var(--text-light);"><em>Click the sub-topic buttons above for detailed classification, MOA, clinical uses, ADRs, contraindications, drug interactions, case-based insights, NEET PG PYQs and recent advances.</em></p>`,
+  moa:MOA.kidneyComplete,
+  extraPanels:[
+    /* ═══════════ 1. DIURETICS ═══════════ */
+    {id:"diuretics",content:`<span id="sub-diuretics-kidney" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💧 1️⃣ DIURETICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Diuretics are drugs that increase urine volume by inhibiting renal tubular Na⁺ (and water) reabsorption at specific sites along the nephron. They are classified by their <em>site of action, potency, and mechanism</em>.</p>
+
+<h4>📋 Classification — Site-wise (mnemonic: <strong>CALCS-AT</strong>)</h4>
+<table>
+<tr><th>Class</th><th>Site</th><th>Target</th><th>Key Drugs</th></tr>
+<tr><td><strong>CA Inhibitors</strong></td><td>PCT</td><td>Carbonic anhydrase</td><td>Acetazolamide, Dorzolamide, Brinzolamide, Methazolamide</td></tr>
+<tr><td><strong>Osmotic</strong></td><td>PCT, Desc LOH, CD</td><td>Osmotic pressure</td><td>Mannitol, Urea, Glycerol, Isosorbide</td></tr>
+<tr><td><strong>Loop Diuretics</strong> (high-ceiling)</td><td>Thick Ascending LOH</td><td>NKCC2 cotransporter</td><td>Furosemide, Torsemide, Bumetanide, Ethacrynic Acid</td></tr>
+<tr><td><strong>Thiazides</strong></td><td>DCT</td><td>NCC cotransporter</td><td>Hydrochlorothiazide, Chlorthalidone, Indapamide, Metolazone</td></tr>
+<tr><td><strong>K⁺-Sparing — MRA</strong></td><td>CD (Principal cells)</td><td>Aldosterone receptor</td><td>Spironolactone, Eplerenone, Finerenone (DKD)</td></tr>
+<tr><td><strong>K⁺-Sparing — ENaC blockers</strong></td><td>CD (Principal cells)</td><td>ENaC</td><td>Amiloride, Triamterene</td></tr>
+<tr><td><strong>SGLT2 Inhibitors</strong> (newer)</td><td>PCT</td><td>SGLT2</td><td>Empagliflozin, Dapagliflozin, Canagliflozin, Sotagliflozin</td></tr>
+<tr><td><strong>ADH Antagonists (Vaptans)</strong></td><td>CD</td><td>V2 receptor</td><td>Tolvaptan, Conivaptan, Demeclocycline</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK</h4>
 <ul>
-<li>Inhibits NKCC2 in thick ascending LOH</li>
-<li>↑ Na, K, Cl, Ca, Mg, H⁺ excretion → hypokalaemia, hypocalcaemia, hyponatraemia, hypomagnesaemia, metabolic alkalosis</li>
-<li>Ceiling diuretic; effective even in renal impairment</li>
-<li>Onset – IV 5 min, oral 30 min</li>
+<li><strong>CA Inhibitors (Acetazolamide):</strong> Block carbonic anhydrase in PCT → ↓ H⁺ secretion + ↓ HCO₃⁻/Na⁺ reabsorption → mild diuresis + metabolic acidosis + alkaline urine.</li>
+<li><strong>Osmotic (Mannitol):</strong> Freely filtered, NOT reabsorbed → ↑ osmolarity in tubular lumen → water stays in lumen → diuresis. Also ↑ intravascular volume transiently.</li>
+<li><strong>Loop Diuretics (Furosemide):</strong> Block NKCC2 cotransporter in thick ascending LOH → ↓ Na/K/Cl reabsorption → massive diuresis + Ca²⁺/Mg²⁺ loss. <em>Ceiling diuretic</em> — effective even in renal failure. Disrupts countercurrent concentration.</li>
+<li><strong>Thiazides (HCTZ):</strong> Block NCC in DCT → ↓ Na/Cl reabsorption → moderate diuresis. ↑ Ca reabsorption (used in stones). <em>Ineffective at GFR &lt; 30 mL/min</em> (except Metolazone).</li>
+<li><strong>K⁺ Sparing — MRA (Spironolactone):</strong> Block aldosterone receptor → ↓ Na reabsorption + ↓ K⁺/H⁺ secretion.</li>
+<li><strong>K⁺ Sparing — ENaC (Amiloride):</strong> Direct ENaC block → same end effect without aldosterone receptor binding.</li>
+<li><strong>SGLT2 Inhibitors:</strong> Block SGLT2 in PCT → glycosuria + natriuresis + osmotic diuresis + cardio-renal protection.</li>
 </ul>
-<h4>Thiazides</h4>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — Drug of Choice (DOC)</h4>
+<table>
+<tr><th>Indication</th><th>DOC</th></tr>
+<tr><td>Acute pulmonary oedema / LVF</td><td>IV Furosemide</td></tr>
+<tr><td>CHF (chronic, with congestion)</td><td>Furosemide / Torsemide ± Spironolactone</td></tr>
+<tr><td>HTN (1st line in elderly, AA, ISH)</td><td>Chlorthalidone &gt; HCTZ (ALLHAT)</td></tr>
+<tr><td>Resistant HTN (4th drug)</td><td>Spironolactone (PATHWAY-2)</td></tr>
+<tr><td>Cerebral oedema / ↑ ICP</td><td>Mannitol (osmotic)</td></tr>
+<tr><td>Acute angle-closure glaucoma</td><td>IV Mannitol + Acetazolamide</td></tr>
+<tr><td>Altitude sickness (prophylaxis &amp; treatment)</td><td>Acetazolamide</td></tr>
+<tr><td>Primary hyperaldosteronism (Conn's)</td><td>Spironolactone</td></tr>
+<tr><td>Ascites &amp; cirrhosis</td><td>Spironolactone + Furosemide (ratio 100:40)</td></tr>
+<tr><td>Hypercalcaemia</td><td>IV Furosemide + saline hydration</td></tr>
+<tr><td>Calcium nephrolithiasis (idiopathic)</td><td>Thiazide (↓ urinary Ca)</td></tr>
+<tr><td>Hyperkalaemia (acute)</td><td>Calcium gluconate + insulin/dextrose + Furosemide + K-binders</td></tr>
+<tr><td>Diabetic Kidney Disease (DKD)</td><td>SGLT2i + Finerenone (FIDELIO-DKD)</td></tr>
+<tr><td>HFpEF</td><td>SGLT2i (DELIVER, EMPEROR-Preserved)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs — Class-wise</h4>
 <ul>
-<li>Inhibits Na-Cl symporter in DCT</li>
-<li>↓ urinary Ca (used in nephrolithiasis), ↑ urinary K, Mg</li>
-<li>Ineffective at GFR &lt; 30 ml/min (except metolazone)</li>
+<li><strong>Loop Diuretic ADRs ("OH HARRD"):</strong> <em>O</em>totoxicity (Ethacrynic acid worst; ↑ with aminoglycosides), <em>H</em>ypokalaemia, <em>H</em>ypovolaemia, <em>A</em>cid-base (metabolic alkalosis), <em>R</em>enal interstitial nephritis, <em>R</em>aising uric acid (gout), <em>D</em>ehydration. Also hypocalcaemia, hypomagnesaemia.</li>
+<li><strong>Thiazide ADRs ("HyperGLUC + HypoNaK"):</strong> Hyper-Glycaemia, -Lipidaemia, -Uricaemia, -Calcaemia. Hypo-Na, -K, -Mg. Also pancreatitis, photosensitivity, ED, sulfa allergy cross-reactivity.</li>
+<li><strong>Spironolactone:</strong> Gynaecomastia, menstrual irregularity, hyperkalaemia, metabolic acidosis. <em>Eplerenone</em> = selective MRA → less endocrine ADRs. <em>Finerenone</em> = non-steroidal MRA → minimal gynaecomastia.</li>
+<li><strong>Amiloride/Triamterene:</strong> Hyperkalaemia, megaloblastic anaemia (Triamterene — folate antagonism).</li>
+<li><strong>CA Inhibitors (Acetazolamide):</strong> Metabolic acidosis, paraesthesias, hypokalaemia, hyponatraemia, calcium phosphate stones, sulfa allergy, drowsiness.</li>
+<li><strong>Mannitol:</strong> Pulmonary oedema (transient ↑ intravascular volume) — AVOID in CHF/anuria; rebound ↑ ICP if BBB disrupted; hyponatraemia.</li>
+<li><strong>SGLT2i:</strong> Euglycaemic DKA, mycotic genital infections, UTIs, dehydration, Fournier's gangrene (rare), normoglycaemic ketoacidosis in T1DM.</li>
 </ul>
-<h4>Mannitol</h4>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
 <ul>
-<li>Freely filtered, not reabsorbed → osmotic effect in PCT/LOH</li>
-<li>Used in cerebral oedema, acute glaucoma, prevention of AKI in rhabdomyolysis</li>
-<li>Avoid in CHF (transient ↑ intravascular volume) and anuria</li>
-</ul>`,
-  adr:`<h4>Loop Diuretic ADRs – "OH HARRD"</h4>
-<p><strong>O</strong>totoxicity (esp. with aminoglycosides; ethacrynic acid worst), <strong>H</strong>ypokalaemia, <strong>H</strong>ypovolaemia, <strong>A</strong>cid-base (met alkalosis), <strong>R</strong>enal interstitial nephritis, <strong>R</strong>aising uric acid (gout), <strong>D</strong>ehydration.</p>
-<h4>Thiazide ADRs – "HyperGLUC + hypoNaKMg"</h4>
-<p>Hyper-Glycaemia, Lipidaemia, Uricaemia, Calcaemia. Hypo-Na, K, Mg. ALSO: sexual dysfunction, photosensitivity, pancreatitis.</p>
-<h4>Spironolactone</h4>
-<p>Gynaecomastia, hyperkalaemia, menstrual irregularities. Eplerenone has fewer endocrine ADRs.</p>`,
+<li>Sulfa allergy → caution with Furosemide, Thiazides, Acetazolamide (Ethacrynic acid is sulfa-FREE alternative).</li>
+<li>Anuria → avoid Mannitol, Loops.</li>
+<li>Severe hyponatraemia → avoid Thiazide.</li>
+<li>Hyperkalaemia (K⁺ &gt; 5) → avoid K-sparing.</li>
+<li>Pregnancy 1st-line — diuretics are NOT preferred.</li>
+<li>Triamterene + folate deficient — megaloblastic anaemia risk.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Loops + Aminoglycosides:</strong> Ototoxicity additive.</li>
+<li><strong>Loops + Lithium:</strong> ↑ Lithium toxicity (less Na, ↑ Li reabsorption).</li>
+<li><strong>Triple Whammy:</strong> ACEi/ARB + NSAID + Diuretic → AKI.</li>
+<li><strong>Thiazide + Lithium:</strong> ↑ Lithium levels.</li>
+<li><strong>K-sparing + ACEi/ARB/ARNI:</strong> Hyperkalaemia.</li>
+<li><strong>Spironolactone + Digoxin:</strong> ↑ Digoxin levels.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 60-y-old man with acute LVF, BP 130/80, RR 32, crackles. Best initial drug?<br><strong>Answer:</strong> <em>IV Furosemide 40 mg</em> + O₂ + NTG + position upright; rapid preload reduction.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Cirrhotic with ascites &amp; oedema. Diuretic strategy?<br><strong>Answer:</strong> <em>Spironolactone 100 mg + Furosemide 40 mg</em> (ratio 100:40) — maintains K⁺ balance; titrate to 1-2 kg/day loss.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Calcium oxalate stone former with hypercalciuria. Drug to prevent recurrence?<br><strong>Answer:</strong> <em>Thiazide</em> — ↓ urinary calcium by enhancing Ca reabsorption at DCT. Also encourage hydration + low Na/oxalate.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>CALCS-AT mnemonic</strong> = CA inhibitor (PCT) · Osmotic · Loop (TAL) · Thiazide (DCT) · K-sparing/ENaC (CD) · ADH antagonist (CD)</li>
+<li><strong>Loop = ceiling diuretic</strong> — works even in renal failure</li>
+<li><strong>Thiazide ineffective at GFR &lt; 30</strong> mL/min — except Metolazone (works at lower GFR)</li>
+<li><strong>ALLHAT</strong> — Chlorthalidone superior to HCTZ in HTN (longer t½, better CV outcomes)</li>
+<li><strong>Spironolactone + Furosemide 100:40 ratio</strong> in cirrhosis ascites</li>
+<li><strong>Furosemide ototoxicity</strong> ↑ with IV bolus + aminoglycosides</li>
+<li><strong>Mannitol AVOID</strong> in CHF, anuria, intracranial bleed (osmotic shifts)</li>
+<li><strong>Acetazolamide</strong> = altitude sickness DOC; also alkalinises urine in salicylate poisoning</li>
+<li><strong>Ethacrynic acid</strong> = sulfa-free loop (use if sulfa allergy)</li>
+<li><strong>Thiazide</strong> = HYPER-calcaemia + HYPO-K, Na, Mg ("HyperGLUC + HypoNaK")</li>
+<li><strong>Loop</strong> = HYPO-calcaemia + HYPO-K, Na, Mg</li>
+<li><strong>Spironolactone</strong> ADR = gynaecomastia; <em>Eplerenone &amp; Finerenone</em> = selective (less endocrine)</li>
+<li><strong>Finerenone</strong> (FDA 2021) = non-steroidal MRA for DKD (FIDELIO-DKD, FIGARO-DKD)</li>
+<li><strong>SGLT2i</strong> = newest diuretic class; CV + renal benefits independent of glucose</li>
+<li><strong>Diuretic resistance</strong> in HF — add Metolazone to Furosemide (sequential nephron blockade)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Finerenone</strong> (FDA 2021) — non-steroidal MRA; FIDELIO-DKD, FIGARO-DKD trials; CKD with DM</li>
+<li><strong>Empagliflozin in CKD</strong> (EMPA-KIDNEY 2023) — slows progression, all-cause CKD</li>
+<li><strong>Dapagliflozin in CKD</strong> (DAPA-CKD) — slows decline regardless of diabetes</li>
+<li><strong>Sotagliflozin</strong> (dual SGLT1/2) — FDA 2023 for HF with DM (SOLOIST-WHF)</li>
+<li><strong>Tolvaptan in ADPKD</strong> (TEMPO 3:4) — slows renal cyst growth in autosomal dominant PKD</li>
+<li><strong>Patiromer / Sodium Zirconium Cyclosilicate</strong> — newer K⁺ binders enable continued RAASi + MRA</li>
+<li><strong>Aprocitentan</strong> (FDA 2024) — dual endothelin antagonist for resistant HTN</li>
+<li><strong>Zilebesiran</strong> (siRNA against angiotensinogen) — once-yearly HTN therapy</li>
+<li><strong>KDIGO 2024</strong> guidelines emphasise early SGLT2i + Finerenone in DKD</li>
+<li><strong>Wearable diuresis monitoring</strong> + AI in HF outpatient management</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Loop diuretic ototoxicity ↑ with — <em>Aminoglycosides</em></li>
+<li><strong>INI-CET 2023</strong>: ALLHAT-favoured thiazide — <em>Chlorthalidone</em></li>
+<li><strong>NEET PG 2024</strong>: Diuretic for altitude sickness — <em>Acetazolamide</em></li>
+<li><strong>INI-CET 2024</strong>: Non-steroidal MRA for DKD — <em>Finerenone</em></li>
+<li><strong>NEET PG 2024</strong>: Spironolactone vs Eplerenone — <em>Less gynaecomastia (selective MRA)</em></li>
+<li><strong>FMGE 2024</strong>: Mannitol AVOID in — <em>CHF / anuria</em></li>
+<li><strong>NEET PG 2025</strong>: Furosemide ADR mnemonic OH HARRD — Identify component — <em>Ototoxicity</em></li>
+<li><strong>INI-CET 2024</strong>: Calcium nephrolithiasis prevention diuretic — <em>Thiazide</em></li>
+<li><strong>NEET PG 2023</strong>: SGLT2i mechanism — <em>SGLT2 block in PCT → glycosuria + natriuresis</em></li>
+<li><strong>NEET PG 2025</strong>: EMPA-KIDNEY trial outcome — <em>Empagliflozin slows CKD progression</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Diuretics — Site-wise, MOA, Clinical Uses, ADRs</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Diuretics Pharmacology — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 2. ANTIDIURETICS ═══════════ */
+    {id:"antidiuretics",content:`<span id="sub-antidiuretics-kidney" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">💦 2️⃣ ANTIDIURETICS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Antidiuretics are drugs that <em>reduce urine volume</em>, primarily via ADH (Vasopressin) receptors (V1a, V1b, V2) or by paradoxical mechanisms in nephrogenic DI. Clinically essential in <em>Diabetes Insipidus (central &amp; nephrogenic), nocturnal enuresis, SIADH, ADPKD, oesophageal variceal bleeding, vasodilatory shock,</em> and bleeding disorders (Haemophilia A, von Willebrand).</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Group</th><th>Drugs</th><th>Receptor / Action</th><th>Key Use</th></tr>
+<tr><td><strong>ADH Agonists (Direct)</strong></td><td>Vasopressin (AVP)</td><td>V1a + V2</td><td>Central DI, vasodilatory shock, variceal bleeding</td></tr>
+<tr><td></td><td>Desmopressin (DDAVP)</td><td>V2 selective</td><td>Central DI (DOC), nocturnal enuresis, Haemophilia A, von Willebrand</td></tr>
+<tr><td></td><td>Terlipressin</td><td>V1 selective (prodrug)</td><td>Hepatorenal syndrome, variceal bleeding</td></tr>
+<tr><td><strong>Paradoxical antidiuretics</strong></td><td>Thiazides, Amiloride</td><td>↓ DCT/CD Na delivery → ↓ free water</td><td>Nephrogenic DI</td></tr>
+<tr><td></td><td>Indomethacin</td><td>↓ PG → enhances ADH effect</td><td>Nephrogenic DI (adjunct)</td></tr>
+<tr><td><strong>ADH Antagonists (Vaptans)</strong></td><td>Tolvaptan, Lixivaptan, Mozavaptan</td><td>V2 selective</td><td>SIADH, hypervolaemic hyponatraemia, ADPKD</td></tr>
+<tr><td></td><td>Conivaptan (IV)</td><td>V1a + V2 (mixed)</td><td>Acute hospital use SIADH</td></tr>
+<tr><td></td><td>Demeclocycline (tetracycline)</td><td>Inhibits ADH action at CD</td><td>Off-label SIADH (older)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK</h4>
+<ul>
+<li><strong>Vasopressin (AVP):</strong> Endogenous nonapeptide from posterior pituitary. Binds V1a (vasoconstriction), V1b (ACTH release), V2 (CD water reabsorption via AQP2 channels — Gs → cAMP → PKA → AQP2 insertion).</li>
+<li><strong>Desmopressin (DDAVP):</strong> Synthetic V2-selective analogue with ↓ pressor effect + longer t½. Available IV, SC, intranasal, oral, tablet. Also ↑ VIII:vWF release.</li>
+<li><strong>Terlipressin:</strong> Long-acting prodrug → slowly releases lysine-vasopressin → V1-selective vasoconstriction (splanchnic).</li>
+<li><strong>Thiazides in nephrogenic DI:</strong> Cause mild volume depletion → ↑ proximal Na/water reabsorption → ↓ distal water delivery → paradoxical ↓ urine output (50% reduction).</li>
+<li><strong>Indomethacin:</strong> ↓ Renal PG → enhances ADH action at CD; useful in lithium-induced nephrogenic DI.</li>
+<li><strong>Vaptans:</strong> Block V2 receptor → AQP2 channels NOT inserted → free water excretion (aquaresis without Na loss).</li>
+<li><strong>Demeclocycline:</strong> Tetracycline antibiotic; inhibits ADH-induced adenylate cyclase in CD → nephrogenic DI-like effect (used for SIADH historically).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses &amp; DOC</h4>
+<table>
+<tr><th>Condition</th><th>DOC / Therapy</th></tr>
+<tr><td>Central Diabetes Insipidus</td><td>Desmopressin (intranasal/oral)</td></tr>
+<tr><td>Nephrogenic DI</td><td>Thiazide + Amiloride + Indomethacin + ↓ Na diet; STOP causative agent (Lithium, Demeclocycline)</td></tr>
+<tr><td>Nocturnal Enuresis (children &gt; 6 y)</td><td>Desmopressin (limit fluid intake at bedtime)</td></tr>
+<tr><td>Haemophilia A (mild) / vWD type 1</td><td>Desmopressin (↑ Factor VIII:C and vWF)</td></tr>
+<tr><td>Oesophageal Variceal Bleeding</td><td>Terlipressin / Octreotide + endoscopic band ligation</td></tr>
+<tr><td>Hepatorenal Syndrome</td><td>Terlipressin + Albumin</td></tr>
+<tr><td>Vasodilatory shock (refractory to NE)</td><td>Vasopressin (0.03 U/min IV)</td></tr>
+<tr><td>SIADH (chronic, ambulatory)</td><td>Fluid restriction → Tolvaptan (V2 antagonist)</td></tr>
+<tr><td>SIADH (acute severe, Na &lt; 120 with symptoms)</td><td>3% Hypertonic saline + Furosemide; correct &lt; 8-10 mEq/24h to avoid ODS</td></tr>
+<tr><td>ADPKD (autosomal dominant PKD)</td><td>Tolvaptan (TEMPO 3:4 — slows cyst growth)</td></tr>
+<tr><td>Cardiac arrest (ACLS-historic)</td><td>Vasopressin 40 U (alternative to Adrenaline — now de-emphasised)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Key ADRs</h4>
+<ul>
+<li><strong>Desmopressin:</strong> Hyponatraemia (water intoxication — esp. nocturnal enuresis + free fluid intake), headache, facial flushing, nausea, mild ↑ BP.</li>
+<li><strong>Vasopressin:</strong> Coronary &amp; mesenteric vasoconstriction → angina, abdominal pain, ischaemia; water intoxication.</li>
+<li><strong>Terlipressin:</strong> Hyponatraemia, peripheral/skin/intestinal ischaemia, MI risk.</li>
+<li><strong>Tolvaptan:</strong> Hepatotoxicity (BLACK BOX — ADPKD); thirst, polyuria, hyperNa, withdrawal hyponatraemia risk.</li>
+<li><strong>Conivaptan:</strong> Phlebitis (IV), hypotension, ortho­static; CYP3A4 substrate &amp; inhibitor.</li>
+<li><strong>Demeclocycline:</strong> Photosensitivity, nephrotoxicity, teeth discolouration (avoid &lt; 8 y), nephrogenic DI (paradox useful).</li>
+<li><strong>Thiazide (nephrogenic DI):</strong> HypoK, HypoNa, hyperGLUC.</li>
+<li><strong>Indomethacin:</strong> GI bleed, AKI, fluid retention.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li><strong>Desmopressin:</strong> Severe hyponatraemia, polydipsia, type 2B vWD (paradoxical thrombocytopenia).</li>
+<li><strong>Tolvaptan:</strong> Hepatic impairment (BLACK BOX), hypovolaemic hyponatraemia, anuria, urgent need for ↑ serum Na.</li>
+<li><strong>Vasopressin / Terlipressin:</strong> IHD, severe peripheral vascular disease, pregnancy.</li>
+<li><strong>Demeclocycline:</strong> Pregnancy, children &lt; 8 y, renal failure.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Tolvaptan + CYP3A4 inhibitors</strong> (Ketoconazole, Clarithromycin) → ↑ Tolvaptan levels &amp; hepatotoxicity.</li>
+<li><strong>Desmopressin + NSAIDs / SSRIs / Carbamazepine</strong> → ↑ Hyponatraemia risk.</li>
+<li><strong>Lithium</strong> blocks renal ADH action → nephrogenic DI; treat with Amiloride.</li>
+<li><strong>Vasopressin + NE / corticosteroids</strong> in vasodilatory shock — synergy.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 30-y-old with polyuria (8 L/day), polydipsia. Urine osmolarity 80, serum Na 148. Water deprivation test → no change in urine osmolarity. Desmopressin → 50% ↑ urine osmolarity. Diagnosis &amp; DOC?<br><strong>Answer:</strong> <em>Central Diabetes Insipidus</em>. DOC = <em>Desmopressin (intranasal/oral)</em>.</p></div>
+<div class="cblock"><p><strong>Case:</strong> Patient on Lithium develops polyuria, urine not responding to desmopressin. Diagnosis &amp; management?<br><strong>Answer:</strong> <em>Nephrogenic DI (Lithium-induced)</em>. Management — Stop/reduce Lithium → Amiloride + Thiazide + low salt + Indomethacin.</p></div>
+<div class="cblock"><p><strong>Case:</strong> ICU patient post-pneumonectomy, Na 118 mEq/L, urine Na 60, urine osm 600, euvolemic. Treatment?<br><strong>Answer:</strong> <em>SIADH</em>. Acute severe = 3% Hypertonic saline + Furosemide (correct &lt; 8-10 mEq/24h to prevent ODS). Chronic ambulatory = Tolvaptan.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Central DI DOC</strong> = <em>Desmopressin</em> (V2-selective; intranasal/oral/SC)</li>
+<li><strong>Nephrogenic DI</strong> = <em>Thiazide + Amiloride + Indomethacin</em> + low salt + stop offending drug</li>
+<li><strong>SIADH chronic</strong> = Fluid restriction → <em>Tolvaptan</em> (V2 antagonist)</li>
+<li><strong>SIADH acute severe</strong> = 3% Hypertonic saline + Furosemide; correct &lt; 8-10 mEq/24h (ODS risk)</li>
+<li><strong>ADPKD</strong> = Tolvaptan (TEMPO 3:4 — slows cyst growth)</li>
+<li><strong>Variceal bleed</strong> = <em>Terlipressin</em> + endoscopic band ligation</li>
+<li><strong>Vasodilatory shock refractory to NE</strong> = add <em>Vasopressin</em> 0.03 U/min</li>
+<li><strong>Nocturnal enuresis &gt; 6 y</strong> = Desmopressin (limit bedtime fluids — hyponatraemia risk)</li>
+<li><strong>Haemophilia A / vWD</strong> = Desmopressin (↑ Factor VIII + vWF)</li>
+<li><strong>Lithium-induced nephrogenic DI</strong> — DOC = <em>Amiloride</em> (blocks Li entry via ENaC)</li>
+<li><strong>Tolvaptan</strong> BLACK BOX = hepatotoxicity (ADPKD use)</li>
+<li><strong>Demeclocycline</strong> = old tetracycline that causes nephrogenic DI; used historically for SIADH</li>
+<li><strong>Hepatorenal Syndrome</strong> = Terlipressin + Albumin</li>
+<li><strong>ODS (Osmotic Demyelination Syndrome)</strong> = central pontine myelinolysis if correcting Na too fast</li>
+<li><strong>Water deprivation test</strong> differentiates Central vs Nephrogenic DI; Desmopressin challenge = treatment confirmation</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Tolvaptan in ADPKD</strong> (TEMPO 3:4, REPRISE) — slows GFR decline; FDA approved 2018; ongoing safety monitoring</li>
+<li><strong>Lixivaptan</strong> — newer V2 antagonist with less hepatotoxicity (Phase 3 for ADPKD)</li>
+<li><strong>Terlipressin</strong> (FDA 2022) — first approved drug for hepatorenal syndrome type 1 in US (CONFIRM trial)</li>
+<li><strong>Tolvaptan + SGLT2i</strong> — investigated for ADPKD synergy</li>
+<li><strong>Tolvaptan in HF</strong> — limited mortality benefit (EVEREST); reserved for hyponatraemia</li>
+<li><strong>Mavacamten / Aficamten</strong> — myosin modulators; not antidiuretic but cardiovascular adjuncts</li>
+<li><strong>SIADH guidelines</strong> — careful Na correction &lt; 8-10 mEq/24h to prevent ODS</li>
+<li><strong>Wearable Na monitoring</strong> + AI-assisted electrolyte management in HF/SIADH</li>
+<li><strong>Selepressin</strong> (selective V1a) — investigational septic shock (SEPSIS-ACT trial; not yet approved)</li>
+<li><strong>Apelin receptor agonists</strong> — investigational alternative to vasopressin in shock</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: DOC for Central DI — <em>Desmopressin</em></li>
+<li><strong>INI-CET 2023</strong>: Drug for SIADH (chronic) — <em>Tolvaptan</em></li>
+<li><strong>NEET PG 2024</strong>: ADPKD progression-slowing drug — <em>Tolvaptan</em></li>
+<li><strong>INI-CET 2024</strong>: V1-selective vasopressin analogue prodrug — <em>Terlipressin</em></li>
+<li><strong>NEET PG 2024</strong>: Lithium-induced nephrogenic DI — DOC — <em>Amiloride</em></li>
+<li><strong>FMGE 2024</strong>: Drug for variceal bleeding (other than octreotide) — <em>Terlipressin</em></li>
+<li><strong>NEET PG 2025</strong>: Tolvaptan BLACK BOX warning — <em>Hepatotoxicity</em></li>
+<li><strong>INI-CET 2024</strong>: Desmopressin use besides DI — <em>Haemophilia A / von Willebrand disease</em></li>
+<li><strong>NEET PG 2023</strong>: Osmotic Demyelination Syndrome prevented by — <em>Correcting Na &lt; 8-10 mEq/24h</em></li>
+<li><strong>NEET PG 2025</strong>: Hepatorenal syndrome type 1 DOC (FDA 2022) — <em>Terlipressin + Albumin</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antidiuretics — ADH agonists, Vaptans, Nephrogenic DI</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antidiuretics — ADH, Desmopressin, Vaptans by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Acetazolamide",c:"CA inhibitor",u:"Glaucoma, altitude sickness, alkalinise urine (drug poisoning), metabolic alkalosis"},
-    {n:"Mannitol",c:"Osmotic",u:"Cerebral oedema, raised ICT, acute glaucoma, oliguric AKI"},
-    {n:"Furosemide",c:"Loop",u:"Acute LVF, pulmonary oedema, CHF, hypercalcaemia, hyperkalaemia"},
-    {n:"Torsemide",c:"Loop",u:"Same as furosemide; better oral bioavailability"},
-    {n:"HCTZ",c:"Thiazide",u:"HTN, mild CHF, nephrogenic DI, calcium nephrolithiasis"},
-    {n:"Chlorthalidone",c:"Thiazide-like",u:"Preferred over HCTZ in HTN; longer duration"},
-    {n:"Indapamide",c:"Thiazide-like",u:"HTN; less metabolic ADRs"},
-    {n:"Spironolactone",c:"MRA",u:"CHF, primary hyperaldo, ascites, resistant HTN, hirsutism"},
-    {n:"Eplerenone",c:"Selective MRA",u:"Post-MI HF; less gynaecomastia"},
-    {n:"Amiloride",c:"ENaC blocker",u:"K-sparing combo; Liddle&rsquo;s; lithium-induced DI"},
-    {n:"Tolvaptan",c:"V2 antagonist",u:"SIADH, hypervolaemic hyponatraemia, ADPKD"},
-    {n:"Desmopressin",c:"V2 agonist",u:"Central DI, bedwetting, haemophilia A, von Willebrand"}
+    // 1. Diuretics
+    {n:"Acetazolamide",c:"1️⃣ CA inhibitor",u:"Glaucoma, altitude sickness, alkalinise urine (salicylate poisoning), metabolic alkalosis"},
+    {n:"Dorzolamide",c:"1️⃣ CA inhibitor (topical)",u:"Glaucoma eye drops"},
+    {n:"Mannitol",c:"1️⃣ Osmotic",u:"Cerebral oedema, raised ICT, acute glaucoma, oliguric AKI"},
+    {n:"Glycerol",c:"1️⃣ Osmotic (oral)",u:"Acute glaucoma pre-op"},
+    {n:"Furosemide",c:"1️⃣ Loop (NKCC2 block)",u:"Acute LVF, pulmonary oedema, CHF, hypercalcaemia, hyperkalaemia; ceiling diuretic"},
+    {n:"Torsemide",c:"1️⃣ Loop (long-acting)",u:"CHF; better oral bioavailability than Furosemide"},
+    {n:"Bumetanide",c:"1️⃣ Loop (potent)",u:"40× more potent than Furosemide"},
+    {n:"Ethacrynic acid",c:"1️⃣ Loop (sulfa-free)",u:"Use if sulfa allergy; most ototoxic"},
+    {n:"Hydrochlorothiazide",c:"1️⃣ Thiazide",u:"HTN, mild CHF, nephrogenic DI, calcium stones"},
+    {n:"Chlorthalidone",c:"1️⃣ Thiazide-like (long t½)",u:"HTN (ALLHAT — preferred over HCTZ)"},
+    {n:"Indapamide",c:"1️⃣ Thiazide-like",u:"HTN; less metabolic ADR"},
+    {n:"Metolazone",c:"1️⃣ Thiazide-like",u:"Diuretic-resistant HF; works at low GFR; sequential blockade with Loop"},
+    {n:"Spironolactone",c:"1️⃣ K-sparing (non-selective MRA)",u:"CHF, primary hyperaldo, ascites, resistant HTN; gynecomastia"},
+    {n:"Eplerenone",c:"1️⃣ Selective MRA",u:"Post-MI HF (EPHESUS); less endocrine ADR"},
+    {n:"Finerenone",c:"1️⃣ Non-steroidal MRA",u:"Diabetic kidney disease (FIDELIO-DKD); minimal gynecomastia"},
+    {n:"Amiloride",c:"1️⃣ K-sparing (ENaC blocker)",u:"K-sparing combo; Liddle's; lithium-induced DI"},
+    {n:"Triamterene",c:"1️⃣ K-sparing (ENaC blocker)",u:"K-sparing combo; folate antagonism (megaloblastic anaemia)"},
+    {n:"Empagliflozin",c:"1️⃣ SGLT2 inhibitor",u:"DM, HFrEF, HFpEF, CKD (EMPA-KIDNEY); cardio-renal protection"},
+    {n:"Dapagliflozin",c:"1️⃣ SGLT2 inhibitor",u:"DM, HFrEF, HFpEF, CKD (DAPA-CKD)"},
+    {n:"Canagliflozin",c:"1️⃣ SGLT2 inhibitor",u:"DM, CKD (CREDENCE); amputation risk warning"},
+    {n:"Sotagliflozin",c:"1️⃣ Dual SGLT1/SGLT2 inhibitor",u:"HF with DM (FDA 2023, SOLOIST-WHF)"},
+    // 2. Antidiuretics
+    {n:"Vasopressin (AVP)",c:"2️⃣ V1+V2 agonist",u:"Vasodilatory shock, variceal bleeding, cardiac arrest (historic)"},
+    {n:"Desmopressin (DDAVP)",c:"2️⃣ V2 selective agonist",u:"Central DI (DOC), nocturnal enuresis, Haemophilia A, vWD"},
+    {n:"Terlipressin",c:"2️⃣ V1 selective prodrug",u:"Variceal bleeding, Hepatorenal syndrome (FDA 2022)"},
+    {n:"Tolvaptan",c:"2️⃣ V2 antagonist (oral)",u:"SIADH, hypervolaemic hyponatraemia, ADPKD (BLACK BOX hepatotoxicity)"},
+    {n:"Conivaptan",c:"2️⃣ V1a+V2 antagonist (IV)",u:"Acute hospital SIADH"},
+    {n:"Lixivaptan",c:"2️⃣ V2 antagonist (newer)",u:"ADPKD (Phase 3); less hepatotoxicity"},
+    {n:"Demeclocycline",c:"2️⃣ Tetracycline (ADH inhibitor at CD)",u:"Historical SIADH (off-label); photosensitivity"},
+    {n:"Indomethacin",c:"2️⃣ NSAID (PG inhibition)",u:"Nephrogenic DI adjunct (esp. Lithium-induced)"},
+    {n:"Thiazide (paradoxical)",c:"2️⃣ Antidiuretic in nephrogenic DI",u:"↓ DCT Na delivery → ↓ urine volume in nephrogenic DI"}
   ],
   ppt:[
-    {t:"Renal Physiology Quick Recap",p:["Nephron segments","Transporters","Hormonal regulation"]},
-    {t:"Diuretic Classification",p:["Site-wise","Potency","Onset & duration"]},
-    {t:"Loop Diuretics",p:["MOA – NKCC2","Furosemide PK","Uses","Toxicity"]},
-    {t:"Thiazides",p:["MOA","Why ineffective in CKD","Metabolic effects","HCTZ vs chlorthalidone"]},
-    {t:"K-sparing Diuretics",p:["Spironolactone","Eplerenone","Amiloride","Indications"]},
-    {t:"Osmotic & CA Inhibitors",p:["Mannitol","Acetazolamide","Glaucoma","Altitude"]},
-    {t:"ADH & Antagonists",p:["Vasopressin","Desmopressin","Tolvaptan","SIADH"]},
-    {t:"Clinical Algorithm",p:["Diuretic in HTN","Diuretic in CHF","Diuretic in CKD","Resistance"]}
+    // 1. Diuretics
+    {t:"1️⃣ Diuretics — Nephron Site Overview",p:["PCT (CA inh, SGLT2i, Osmotic)","LOH (Loop)","DCT (Thiazide)","CD (K-sparing, ADH antagonist)"]},
+    {t:"1️⃣ Loop Diuretics",p:["MOA — NKCC2 block","Ceiling diuretic","Uses (LVF, CHF, hyperCa, hyperK)","OH HARRD ADRs"]},
+    {t:"1️⃣ Thiazides",p:["MOA — NCC block","Chlorthalidone vs HCTZ (ALLHAT)","Calcium nephrolithiasis","HyperGLUC + HypoNaK"]},
+    {t:"1️⃣ K-Sparing &amp; SGLT2i",p:["Spironolactone, Eplerenone","Amiloride, Triamterene","Finerenone (DKD)","SGLT2i (DAPA-CKD, EMPA-KIDNEY)"]},
+    {t:"1️⃣ Osmotic, CA Inhibitor &amp; Special",p:["Mannitol (cerebral oedema)","Acetazolamide (altitude, glaucoma)","Diuretic resistance — sequential blockade","Renal failure adaptations"]},
+    // 2. Antidiuretics
+    {t:"2️⃣ ADH Axis &amp; Receptors",p:["V1a (vasoconstrict)","V1b (ACTH)","V2 (water reabsorb)","AQP2 channel"]},
+    {t:"2️⃣ ADH Agonists",p:["Desmopressin (DOC Central DI)","Vasopressin (shock)","Terlipressin (variceal, HRS)","Haemophilia A use"]},
+    {t:"2️⃣ Vaptans &amp; SIADH",p:["Tolvaptan (SIADH, ADPKD)","Conivaptan (IV)","Demeclocycline (historic)","Hypertonic saline + Furosemide (acute SIADH)"]},
+    {t:"2️⃣ Nephrogenic DI",p:["Lithium-induced","Amiloride DOC","Thiazide + Indomethacin","Stop offending drug"]},
+    {t:"2️⃣ Recent Advances",p:["Terlipressin FDA 2022 HRS","Tolvaptan ADPKD (TEMPO 3:4)","Lixivaptan","Selepressin (V1a — investigational)"]}
   ],
   mcqs:[
-    {q:"DOC for hypertension in pregnancy with mild oedema:",o:["Furosemide","Methyldopa","HCTZ","Spironolactone"],a:"Methyldopa",e:"Diuretics are NOT first-line in pregnancy. Methyldopa, labetalol, nifedipine are preferred. ACEi and ARBs are contraindicated."},
-    {q:"Drug that causes hypocalcaemia AND ototoxicity:",o:["HCTZ","Furosemide","Mannitol","Acetazolamide"],a:"Furosemide",e:"Loop diuretics ↑ urinary calcium (→ hypocalcaemia) and cause ototoxicity (esp. rapid IV with aminoglycosides). Thiazides do opposite – ↑ calcium reabsorption."},
-    {q:"Thiazides cause all EXCEPT:",o:["Hyperuricaemia","Hyperglycaemia","Hypercalcaemia","Hyperkalaemia"],a:"Hyperkalaemia",e:"Thiazides cause HYPOkalaemia (loss of K in DCT). Other 'hypers': uric acid, glucose, lipids, calcium."},
-    {q:"DOC for SIADH is:",o:["Furosemide","Hypertonic saline alone","Tolvaptan","Desmopressin"],a:"Tolvaptan",e:"Tolvaptan – selective V2 receptor antagonist → free water excretion. Used in euvolaemic and hypervolaemic hyponatraemia. Acute severe SIADH: hypertonic saline + furosemide."},
-    {q:"Eplerenone is preferred over spironolactone because:",o:["Stronger diuretic","Cheaper","Less gynaecomastia","Once daily"],a:"Less gynaecomastia",e:"Eplerenone is selective MRA — does not block androgen/progesterone receptors → less gynaecomastia, sexual dysfunction. But more expensive."}
+    // 1. Diuretics (8)
+    {q:"[1️⃣ Diuretics] Acute pulmonary oedema DOC:",o:["Mannitol","IV Furosemide","HCTZ","Acetazolamide"],a:"IV Furosemide",e:"IV Furosemide → venodilation + diuresis → rapid preload reduction. Onset 5 min IV."},
+    {q:"[1️⃣ Diuretics] DOC for altitude sickness prophylaxis:",o:["Mannitol","Acetazolamide","Spironolactone","Furosemide"],a:"Acetazolamide",e:"Acetazolamide → metabolic acidosis → ↑ ventilation → ↑ acclimatisation. Standard regimen 125-250 mg BID."},
+    {q:"[1️⃣ Diuretics] ALLHAT-preferred thiazide for HTN:",o:["HCTZ","Chlorthalidone","Indapamide","Metolazone"],a:"Chlorthalidone",e:"Chlorthalidone — longer t½ (24-72 h), better CV outcomes than HCTZ."},
+    {q:"[1️⃣ Diuretics] Non-steroidal MRA for DKD (FDA 2021):",o:["Spironolactone","Eplerenone","Finerenone","Triamterene"],a:"Finerenone",e:"Finerenone (FIDELIO-DKD, FIGARO-DKD) — non-steroidal MRA; less endocrine ADR; FDA for diabetic kidney disease."},
+    {q:"[1️⃣ Diuretics] Loop diuretic ADRs mnemonic 'OH HARRD' includes:",o:["Hyperkalaemia","Hypokalaemia + ototoxicity","Hypercalcaemia","Bradycardia"],a:"Hypokalaemia + ototoxicity",e:"OH HARRD = Ototoxicity, Hypokalaemia, Hypovolaemia, Acid-base (alkalosis), Renal nephritis, Raising uric acid, Dehydration."},
+    {q:"[1️⃣ Diuretics] Thiazides cause all EXCEPT:",o:["Hyperuricaemia","Hyperglycaemia","Hypercalcaemia","Hyperkalaemia"],a:"Hyperkalaemia",e:"Thiazides cause HYPOkalaemia (block NCC → ↑ Na delivery to CD → K wasting). HYPERs: GLUC = Glucose, Lipid, Uric acid, Calcium."},
+    {q:"[1️⃣ Diuretics] Diuretic-resistant CHF — add to Furosemide:",o:["Mannitol","Acetazolamide","Metolazone","Spironolactone alone"],a:"Metolazone",e:"Metolazone — works at low GFR; sequential nephron blockade with Loop; potentiates diuresis."},
+    {q:"[1️⃣ Diuretics] Sulfa-free loop diuretic:",o:["Furosemide","Torsemide","Bumetanide","Ethacrynic acid"],a:"Ethacrynic acid",e:"Ethacrynic acid is the ONLY sulfa-free loop; use if sulfa allergy. Most ototoxic, however."},
+    // 2. Antidiuretics (8)
+    {q:"[2️⃣ Antidiuretics] DOC for Central Diabetes Insipidus:",o:["Tolvaptan","Desmopressin","Furosemide","Vasopressin IV"],a:"Desmopressin",e:"Desmopressin (DDAVP) — V2-selective; intranasal/oral/SC; longer t½; minimal pressor effect."},
+    {q:"[2️⃣ Antidiuretics] DOC for Lithium-induced Nephrogenic DI:",o:["Furosemide","Amiloride","HCTZ","Desmopressin"],a:"Amiloride",e:"Amiloride — blocks ENaC channel through which Lithium enters principal cells of CD; first-line for Li-induced nephrogenic DI."},
+    {q:"[2️⃣ Antidiuretics] Drug for SIADH (chronic):",o:["Hypertonic saline alone","Tolvaptan","Desmopressin","Vasopressin"],a:"Tolvaptan",e:"Tolvaptan — V2 antagonist → aquaresis (free water excretion without Na loss). BLACK BOX for hepatotoxicity in ADPKD."},
+    {q:"[2️⃣ Antidiuretics] Tolvaptan FDA BLACK BOX warning:",o:["Cardiotoxicity","Hepatotoxicity","Nephrotoxicity","Ototoxicity"],a:"Hepatotoxicity",e:"Tolvaptan in ADPKD use — hepatotoxicity risk; requires LFT monitoring; warning added after long-term ADPKD studies."},
+    {q:"[2️⃣ Antidiuretics] V1-selective prodrug for variceal bleeding:",o:["Desmopressin","Tolvaptan","Terlipressin","Conivaptan"],a:"Terlipressin",e:"Terlipressin — slow-releasing prodrug of lysine-vasopressin; V1-selective → splanchnic vasoconstriction → ↓ portal pressure; also FDA 2022 for hepatorenal syndrome."},
+    {q:"[2️⃣ Antidiuretics] ADPKD progression-slowing drug (TEMPO 3:4):",o:["Tolvaptan","Furosemide","Desmopressin","Indomethacin"],a:"Tolvaptan",e:"Tolvaptan slows GFR decline and renal cyst growth in ADPKD (TEMPO 3:4 trial); FDA 2018; need to monitor LFTs."},
+    {q:"[2️⃣ Antidiuretics] Desmopressin use besides DI:",o:["Hypertension","Haemophilia A / von Willebrand disease","Asthma","Migraine"],a:"Haemophilia A / von Willebrand disease",e:"Desmopressin → ↑ release of Factor VIII:C and vWF from endothelium → used in mild haemophilia A and vWD type 1."},
+    {q:"[2️⃣ Antidiuretics] Acute severe SIADH (Na &lt; 120, symptomatic) treatment:",o:["3% Hypertonic saline + Furosemide","Tolvaptan only","Fluid restriction only","Desmopressin"],a:"3% Hypertonic saline + Furosemide",e:"Acute severe symptomatic SIADH: 3% saline raises Na; Furosemide removes water. Correct Na by &lt; 8-10 mEq/24h to prevent ODS (osmotic demyelination)."}
   ],
-  mnemonic:`<strong>Diuretic site mnemonic – CALCS-AT</strong>: CA inhibitor (PCT), Loop (TAL), Thiazide (DCT), K-sparing (CD), ADH-antagonist (CD). <strong>Thiazide ADRs</strong>: HyperGLUC (Glucose, Lipid, Uric, Calcium); HypoNAK (Na, K).`
+  mnemonic:`<strong>📚 Kidney Drugs — Quick Concepts</strong><br>
+• <strong>Diuretic site CALCS-AT</strong>: CA inh (PCT) · osmotic · Loop (TAL) · Thiazide (DCT) · K-sparing/ENaC (CD) · ADH antagonist (CD).<br>
+• <strong>Loop = HypoCa</strong>; <strong>Thiazide = HyperCa</strong>.<br>
+• <strong>Thiazide ADRs</strong> = HyperGLUC + HypoNaK.<br>
+• <strong>Loop ADRs</strong> = OH HARRD.<br>
+• <strong>ALLHAT</strong> = Chlorthalidone &gt; HCTZ in HTN.<br>
+• <strong>Central DI DOC</strong> = Desmopressin; <strong>Nephrogenic DI</strong> = Amiloride + Thiazide + Indomethacin.<br>
+• <strong>SIADH chronic</strong> = Tolvaptan; <strong>acute severe</strong> = 3% saline + Furosemide.<br>
+• <strong>ADPKD</strong> = Tolvaptan (BLACK BOX hepatotoxicity).<br>
+• <strong>Variceal bleed / HRS</strong> = Terlipressin (FDA 2022).<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 2 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"blood",icon:"🩸",title:"Drugs Affecting Blood",
