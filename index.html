@@ -701,6 +701,133 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
   .ppt-grid{grid-template-columns:1fr;}
   .drug-grid{grid-template-columns:1fr 1fr;}
 }
+
+/* ═══════════ ADAPTIVE TEST GENERATOR ═══════════ */
+.adaptive-hero{
+  background:linear-gradient(135deg,#7c3aed 0%,#ec4899 100%);
+  color:white;padding:20px;border-radius:14px;margin-bottom:18px;
+  box-shadow:0 8px 24px rgba(124,58,237,.25);
+}
+.adaptive-hero h3{margin:0 0 6px;font-size:18px;color:white;}
+.adaptive-hero p{margin:0;font-size:12px;opacity:.95;}
+.adaptive-stats-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:10px;margin-top:14px;
+}
+.adaptive-stat-card{
+  background:rgba(255,255,255,.18);backdrop-filter:blur(6px);
+  border:1.5px solid rgba(255,255,255,.25);
+  padding:10px 12px;border-radius:10px;text-align:center;
+}
+.adaptive-stat-card .v{font-size:22px;font-weight:800;display:block;}
+.adaptive-stat-card .l{font-size:10px;opacity:.9;text-transform:uppercase;letter-spacing:.5px;}
+
+.adaptive-control{
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:14px;padding:18px;margin-bottom:16px;
+  box-shadow:0 4px 12px rgba(13,40,71,.05);
+}
+.adaptive-control h4{margin:0 0 12px;color:var(--navy);font-size:15px;}
+.adaptive-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px;}
+.adaptive-row > label{font-size:12px;font-weight:600;color:var(--navy);min-width:90px;}
+.adaptive-chip{
+  padding:7px 14px;border:2px solid var(--border);background:var(--card);
+  color:var(--text);border-radius:20px;font-size:12px;font-weight:600;
+  cursor:pointer;transition:all .2s;
+}
+.adaptive-chip:hover{border-color:var(--teal);background:var(--card2);}
+.adaptive-chip.active{
+  background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;border-color:#7c3aed;
+}
+.adaptive-start-btn{
+  background:linear-gradient(135deg,#7c3aed,#ec4899);
+  color:white;border:none;padding:12px 26px;
+  border-radius:24px;font-size:14px;font-weight:700;cursor:pointer;
+  box-shadow:0 4px 14px rgba(124,58,237,.35);
+  transition:all .2s;width:100%;margin-top:8px;
+}
+.adaptive-start-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(124,58,237,.45);}
+.adaptive-start-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+
+/* Weak area meter */
+.adaptive-meter-list{display:grid;gap:8px;margin-top:10px;}
+.adaptive-meter-row{display:flex;align-items:center;gap:10px;}
+.adaptive-meter-row .name{flex:0 0 130px;font-size:11px;color:var(--text);font-weight:600;}
+.adaptive-meter-bar{
+  flex:1;height:18px;background:#eee;border-radius:9px;overflow:hidden;position:relative;
+}
+.adaptive-meter-fill{
+  height:100%;display:flex;align-items:center;padding-left:8px;
+  color:white;font-size:10px;font-weight:700;transition:width .6s ease;
+}
+.adaptive-meter-fill.weak{background:linear-gradient(90deg,#dc2626,#f87171);}
+.adaptive-meter-fill.med{background:linear-gradient(90deg,#f59e0b,#fbbf24);}
+.adaptive-meter-fill.strong{background:linear-gradient(90deg,#059669,#34d399);}
+.adaptive-meter-fill.empty{background:#9ca3af;color:white;}
+.adaptive-meter-row .pct{flex:0 0 40px;font-size:11px;font-weight:700;text-align:right;color:var(--navy);}
+
+/* Test arena */
+.adaptive-test-header{
+  background:linear-gradient(135deg,var(--navy),#1e3a5f);
+  color:white;padding:16px;border-radius:14px;margin-bottom:14px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+}
+.adaptive-test-header h3{margin:0;color:white;font-size:16px;}
+.adaptive-test-progress{font-size:12px;opacity:.92;}
+.adaptive-end-btn{
+  background:rgba(255,255,255,.2);border:1.5px solid rgba(255,255,255,.4);
+  color:white;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:600;
+}
+.adaptive-end-btn:hover{background:rgba(255,255,255,.3);}
+
+/* Result + Study Path */
+.adaptive-result-banner{
+  background:linear-gradient(135deg,#059669,#10b981);
+  color:white;padding:22px;border-radius:16px;text-align:center;margin-bottom:18px;
+}
+.adaptive-result-banner.weak{background:linear-gradient(135deg,#dc2626,#f87171);}
+.adaptive-result-banner.med{background:linear-gradient(135deg,#f59e0b,#fbbf24);}
+.adaptive-result-banner h3{margin:0 0 6px;color:white;font-size:24px;}
+.adaptive-result-banner .score{font-size:48px;font-weight:800;display:block;}
+.adaptive-result-banner .label{font-size:13px;opacity:.95;}
+
+.adaptive-path-card{
+  background:var(--card);border:1.5px solid var(--border);
+  border-radius:14px;padding:18px;margin-bottom:14px;
+}
+.adaptive-path-card h4{margin:0 0 12px;color:var(--navy);font-size:15px;}
+.adaptive-path-step{
+  display:flex;gap:12px;padding:10px;
+  background:var(--card2);border-radius:10px;margin-bottom:8px;
+  border-left:4px solid var(--teal);
+}
+.adaptive-path-step.urgent{border-left-color:#dc2626;background:#fee2e2;}
+.adaptive-path-step.warn{border-left-color:#f59e0b;background:#fef3c7;}
+html[data-theme="cream"] .adaptive-path-step.urgent{background:#fde0d0;}
+html[data-theme="cream"] .adaptive-path-step.warn{background:#fbecc7;}
+.adaptive-path-step .icon{font-size:22px;flex:0 0 26px;}
+.adaptive-path-step .body{flex:1;}
+.adaptive-path-step .body strong{display:block;font-size:13px;color:var(--navy);margin-bottom:2px;}
+.adaptive-path-step .body span{font-size:11px;color:var(--text);}
+.adaptive-path-step .pct{font-weight:700;font-size:14px;color:var(--navy);}
+
+/* Reset button */
+.adaptive-reset{
+  font-size:11px;padding:6px 12px;background:#fee2e2;color:#991b1b;
+  border:1.5px solid #fca5a5;border-radius:18px;cursor:pointer;font-weight:600;
+}
+.adaptive-reset:hover{background:#fecaca;}
+
+/* Cream theme adjustments */
+html[data-theme="cream"] .adaptive-hero{
+  background:linear-gradient(135deg,#9a4d1f 0%,#b8862b 100%);
+}
+html[data-theme="cream"] .adaptive-chip.active{
+  background:linear-gradient(135deg,#9a4d1f,#b8862b);border-color:#9a4d1f;
+}
+html[data-theme="cream"] .adaptive-start-btn{
+  background:linear-gradient(135deg,#9a4d1f,#b8862b);
+}
 </style>
 </head>
 <body>
@@ -713,6 +840,7 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
   <a href="#topics">Topics</a>
   <a href="#pyq">PYQs</a>
   <a href="#practice">Practice Sets</a>
+  <a href="#adaptive" style="background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;border-color:#7c3aed;">🧠 Adaptive</a>
   <a href="#fmge">FMGE</a>
   <a href="#about">About</a>
   <button class="search-trigger" onclick="openSearch()" style="margin-left:auto;">🔍 Search <kbd>/</kbd></button>
@@ -845,6 +973,17 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
   </div>
   <div class="quiz-launcher" id="practice-launcher"></div>
   <div id="practice-arena" style="display:none;margin-top:24px;"></div>
+</section>
+
+<!-- ── ADAPTIVE TEST GENERATOR ────────────────── -->
+<section class="section" id="adaptive">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;">🧠 AI-Powered</div>
+    <h2>Adaptive Test Generator</h2>
+    <p>AI picks MCQs from your weak areas — personalised study path based on your performance.</p>
+  </div>
+  <div id="adaptive-dashboard"></div>
+  <div id="adaptive-arena" style="display:none;margin-top:18px;"></div>
 </section>
 
 <!-- ── FMGE ─────────────────────────────────────── -->
@@ -12483,6 +12622,23 @@ function revealAns(key,answer){
     else if(selected && o.dataset.opt === selected) o.classList.add('wrong');
   });
   exp.classList.add('show');
+  // ── Adaptive Test stats hook ──
+  // Track only if user selected an option (avoid auto-reveal pollution)
+  // key formats: "topicid-mcq-N", "prac-topicid-N", "mcq-topicid-N"
+  if(selected && typeof recordAdaptiveAttempt === 'function' && !mcq.dataset.adaptiveTracked){
+    let topicId = null;
+    const m1 = key.match(/^([a-z]+)-mcq-(\d+)$/i);
+    const m2 = key.match(/^prac-([a-z]+)-(\d+)$/i);
+    const m3 = key.match(/^mcq-([a-z]+)-(\d+)$/i);
+    const m = m1 || m2 || m3;
+    if(m){
+      topicId = m[1];
+      const mcqIdx = parseInt(m[2]);
+      const isCorrect = selected === answer;
+      recordAdaptiveAttempt(topicId, mcqIdx, isCorrect);
+      mcq.dataset.adaptiveTracked = '1';
+    }
+  }
 }
 
 function toggleTopic(id){
@@ -12675,6 +12831,466 @@ function startPractice(id){
       ${t.mcqs.map((m,i)=>renderMCQ(m,i,`prac-${id}-${i}`)).join('')}
     </div>`;
   arena.scrollIntoView({behavior:'smooth'});
+}
+
+/* ═══════════ ADAPTIVE TEST GENERATOR ═══════════ */
+const ADAPTIVE_KEY = 'pharma-adaptive-v1';
+let ADAPTIVE_SESSION = null; // current running test
+
+function getAdaptiveStats(){
+  try{ return JSON.parse(localStorage.getItem(ADAPTIVE_KEY)) || {topics:{},sessions:[]}; }
+  catch(e){ return {topics:{},sessions:[]}; }
+}
+function saveAdaptiveStats(s){
+  try{ localStorage.setItem(ADAPTIVE_KEY, JSON.stringify(s)); }catch(e){}
+}
+function recordAdaptiveAttempt(topicId, mcqIdx, isCorrect){
+  const s = getAdaptiveStats();
+  if(!s.topics[topicId]) s.topics[topicId] = {attempted:0,correct:0,recent:[]};
+  const t = s.topics[topicId];
+  t.attempted++;
+  if(isCorrect) t.correct++;
+  // last 20 outcomes for trend
+  t.recent.push(isCorrect?1:0);
+  if(t.recent.length > 20) t.recent.shift();
+  t.lastSeen = Date.now();
+  saveAdaptiveStats(s);
+}
+
+// Calculate accuracy & weak/medium/strong category per topic
+function classifyTopic(stat){
+  if(!stat || stat.attempted === 0) return {pct:null,cat:'untouched'};
+  const pct = Math.round((stat.correct / stat.attempted) * 100);
+  let cat;
+  if(stat.attempted < 3) cat = 'newbie';
+  else if(pct < 60) cat = 'weak';
+  else if(pct < 80) cat = 'med';
+  else cat = 'strong';
+  return {pct, cat};
+}
+
+// Weighted selection: weak 60%, untouched/newbie 20%, medium 15%, strong 5%
+function generateAdaptiveTest(targetCount, scope){
+  // scope = 'all' or topic ID
+  const stats = getAdaptiveStats();
+  const pool = [];
+  TOPICS.forEach(t=>{
+    if(scope !== 'all' && t.id !== scope) return;
+    if(!t.mcqs || t.mcqs.length === 0) return;
+    const stat = stats.topics[t.id] || {attempted:0,correct:0,recent:[]};
+    const {pct,cat} = classifyTopic(stat);
+    // Weight
+    let w;
+    if(cat === 'weak') w = 6;
+    else if(cat === 'untouched' || cat === 'newbie') w = 4;
+    else if(cat === 'med') w = 2;
+    else w = 1; // strong
+    t.mcqs.forEach((mcq,idx)=>{
+      pool.push({topicId:t.id, topicTitle:t.title, topicIcon:t.icon, mcqIdx:idx, mcq, weight:w});
+    });
+  });
+  if(pool.length === 0) return [];
+  // Weighted random sampling without replacement
+  const selected = [];
+  const picked = new Set();
+  let attempts = 0;
+  const maxAttempts = targetCount * 50;
+  while(selected.length < targetCount && attempts < maxAttempts && picked.size < pool.length){
+    attempts++;
+    const totalW = pool.reduce((sum,p,i)=>picked.has(i)?sum:sum+p.weight,0);
+    if(totalW === 0) break;
+    let r = Math.random() * totalW;
+    for(let i=0;i<pool.length;i++){
+      if(picked.has(i)) continue;
+      r -= pool[i].weight;
+      if(r <= 0){ selected.push(pool[i]); picked.add(i); break; }
+    }
+  }
+  // Shuffle selected to avoid clustering
+  for(let i=selected.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [selected[i],selected[j]] = [selected[j],selected[i]];
+  }
+  return selected;
+}
+
+function renderAdaptiveDashboard(){
+  const root = document.getElementById('adaptive-dashboard');
+  if(!root) return;
+  const stats = getAdaptiveStats();
+  // Topic-wise meter
+  const meters = TOPICS.map(t=>{
+    const stat = stats.topics[t.id] || {attempted:0,correct:0};
+    const {pct,cat} = classifyTopic(stat);
+    return {t,stat,pct,cat};
+  });
+  // Aggregate stats
+  let totalAtt = 0, totalCorr = 0, weakCount = 0, untouchedCount = 0, strongCount = 0;
+  meters.forEach(m=>{
+    totalAtt += m.stat.attempted;
+    totalCorr += m.stat.correct;
+    if(m.cat === 'weak') weakCount++;
+    else if(m.cat === 'untouched') untouchedCount++;
+    else if(m.cat === 'strong') strongCount++;
+  });
+  const overallPct = totalAtt > 0 ? Math.round((totalCorr/totalAtt)*100) : 0;
+  const sessionCount = stats.sessions ? stats.sessions.length : 0;
+
+  // Build meters HTML
+  const metersHTML = meters.map(m=>{
+    if(m.pct === null){
+      return `<div class="adaptive-meter-row">
+        <span class="name">${m.t.icon} ${m.t.title.length>22?m.t.title.substring(0,22)+'…':m.t.title}</span>
+        <div class="adaptive-meter-bar"><div class="adaptive-meter-fill empty" style="width:100%;">Not attempted yet</div></div>
+        <span class="pct">—</span>
+      </div>`;
+    }
+    const fillClass = m.cat === 'weak' ? 'weak' : (m.cat === 'med' ? 'med' : (m.cat === 'newbie' ? 'med' : 'strong'));
+    return `<div class="adaptive-meter-row">
+      <span class="name">${m.t.icon} ${m.t.title.length>22?m.t.title.substring(0,22)+'…':m.t.title}</span>
+      <div class="adaptive-meter-bar"><div class="adaptive-meter-fill ${fillClass}" style="width:${m.pct}%;">${m.stat.attempted}q</div></div>
+      <span class="pct">${m.pct}%</span>
+    </div>`;
+  }).join('');
+
+  // Topic dropdown options
+  const topicOpts = TOPICS.map(t=>`<option value="${t.id}">${t.icon} ${t.title}</option>`).join('');
+
+  root.innerHTML = `
+    <div class="adaptive-hero">
+      <h3>🧠 Your AI Personal Tutor</h3>
+      <p>The Adaptive Test Generator analyses your past answers, identifies weak topics, and creates a custom MCQ set focused on what you need to revise most.</p>
+      <div class="adaptive-stats-grid">
+        <div class="adaptive-stat-card"><span class="v">${totalAtt}</span><span class="l">MCQs Attempted</span></div>
+        <div class="adaptive-stat-card"><span class="v">${overallPct}%</span><span class="l">Overall Accuracy</span></div>
+        <div class="adaptive-stat-card"><span class="v">${weakCount}</span><span class="l">Weak Topics</span></div>
+        <div class="adaptive-stat-card"><span class="v">${strongCount}</span><span class="l">Mastered</span></div>
+        <div class="adaptive-stat-card"><span class="v">${sessionCount}</span><span class="l">Test Sessions</span></div>
+      </div>
+    </div>
+
+    <div class="adaptive-control">
+      <h4>⚙️ Test Configuration</h4>
+      <div class="adaptive-row">
+        <label>Test Size:</label>
+        <div class="adaptive-chip-group" id="ad-size">
+          <span class="adaptive-chip" data-v="10" onclick="setAdaptiveOpt('size',10)">10 MCQs</span>
+          <span class="adaptive-chip active" data-v="20" onclick="setAdaptiveOpt('size',20)">20 MCQs</span>
+          <span class="adaptive-chip" data-v="30" onclick="setAdaptiveOpt('size',30)">30 MCQs</span>
+          <span class="adaptive-chip" data-v="50" onclick="setAdaptiveOpt('size',50)">50 MCQs</span>
+        </div>
+      </div>
+      <div class="adaptive-row">
+        <label>Scope:</label>
+        <div class="adaptive-chip-group" id="ad-scope">
+          <span class="adaptive-chip active" data-v="all" onclick="setAdaptiveOpt('scope','all')">All Topics</span>
+          <span class="adaptive-chip" data-v="weak" onclick="setAdaptiveOpt('scope','weak')">Weak Only</span>
+          <span class="adaptive-chip" data-v="untouched" onclick="setAdaptiveOpt('scope','untouched')">Untouched Topics</span>
+        </div>
+      </div>
+      <div class="adaptive-row">
+        <label>Single Topic:</label>
+        <select id="ad-single-topic" onchange="setAdaptiveOpt('scope', this.value)" style="padding:7px 10px;border:1.5px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font-size:12px;flex:1;">
+          <option value="">— Override and pick one topic —</option>
+          ${topicOpts}
+        </select>
+      </div>
+      <button class="adaptive-start-btn" onclick="startAdaptiveTest()">▶ Generate Adaptive Test</button>
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;">
+        <button class="adaptive-reset" onclick="resetAdaptiveStats()">🗑️ Reset Stats</button>
+      </div>
+    </div>
+
+    <div class="adaptive-control">
+      <h4>📊 Topic-wise Accuracy (Your Weak Map)</h4>
+      <p style="font-size:11px;color:var(--text-light);margin:0 0 10px;">
+        <span style="display:inline-block;width:12px;height:12px;background:#dc2626;border-radius:3px;vertical-align:middle;"></span> Weak (&lt; 60%) &nbsp;·&nbsp;
+        <span style="display:inline-block;width:12px;height:12px;background:#f59e0b;border-radius:3px;vertical-align:middle;"></span> Medium (60-79%) &nbsp;·&nbsp;
+        <span style="display:inline-block;width:12px;height:12px;background:#059669;border-radius:3px;vertical-align:middle;"></span> Strong (≥ 80%) &nbsp;·&nbsp;
+        <span style="display:inline-block;width:12px;height:12px;background:#9ca3af;border-radius:3px;vertical-align:middle;"></span> Untouched
+      </p>
+      <div class="adaptive-meter-list">${metersHTML}</div>
+    </div>
+  `;
+}
+
+// Test config state
+window.ADAPTIVE_CFG = {size:20, scope:'all'};
+function setAdaptiveOpt(key, value){
+  window.ADAPTIVE_CFG[key] = value;
+  const grpId = key === 'size' ? 'ad-size' : 'ad-scope';
+  const grp = document.getElementById(grpId);
+  if(grp){
+    grp.querySelectorAll('.adaptive-chip').forEach(c=>{
+      c.classList.toggle('active', String(c.dataset.v) === String(value));
+    });
+  }
+  // Clear single-topic dropdown if scope is changed
+  if(key === 'scope' && ['all','weak','untouched'].includes(value)){
+    const sel = document.getElementById('ad-single-topic');
+    if(sel) sel.value = '';
+  } else if(key === 'scope'){
+    // single topic chosen → clear group active
+    if(grp) grp.querySelectorAll('.adaptive-chip').forEach(c=>c.classList.remove('active'));
+  }
+}
+
+function startAdaptiveTest(){
+  const cfg = window.ADAPTIVE_CFG;
+  const stats = getAdaptiveStats();
+  let pool = [];
+
+  // Determine scope
+  if(cfg.scope === 'weak'){
+    // Pick MCQs only from weak topics
+    const weakIds = TOPICS.filter(t=>{
+      const stat = stats.topics[t.id] || {attempted:0,correct:0};
+      const {cat} = classifyTopic(stat);
+      return cat === 'weak';
+    }).map(t=>t.id);
+    if(weakIds.length === 0){
+      alert('No weak topics yet! Attempt some MCQs from Practice Sets or NEET PG sections first.');
+      return;
+    }
+    weakIds.forEach(id=>{
+      const all = generateAdaptiveTest(cfg.size, id);
+      pool = pool.concat(all);
+    });
+    // re-sample to target size
+    pool = pool.sort(()=>Math.random()-0.5).slice(0, cfg.size);
+  } else if(cfg.scope === 'untouched'){
+    // Pick from untouched topics
+    const untIds = TOPICS.filter(t=>{
+      const stat = stats.topics[t.id] || {attempted:0};
+      return !stat || stat.attempted === 0;
+    }).map(t=>t.id);
+    if(untIds.length === 0){
+      alert('You have attempted MCQs from every topic! Use "All Topics" or "Weak Only".');
+      return;
+    }
+    untIds.forEach(id=>{
+      const all = generateAdaptiveTest(cfg.size, id);
+      pool = pool.concat(all);
+    });
+    pool = pool.sort(()=>Math.random()-0.5).slice(0, cfg.size);
+  } else if(cfg.scope === 'all'){
+    pool = generateAdaptiveTest(cfg.size, 'all');
+  } else {
+    // Specific topic
+    pool = generateAdaptiveTest(cfg.size, cfg.scope);
+  }
+
+  if(!pool || pool.length === 0){
+    alert('Could not build test set. Try a different scope.');
+    return;
+  }
+
+  ADAPTIVE_SESSION = {
+    questions: pool,
+    answers: new Array(pool.length).fill(null), // user picks
+    correct: new Array(pool.length).fill(null), // true/false
+    revealed: new Array(pool.length).fill(false),
+    startedAt: Date.now()
+  };
+  renderAdaptiveArena();
+  document.getElementById('adaptive-arena').scrollIntoView({behavior:'smooth'});
+}
+
+function renderAdaptiveArena(){
+  const arena = document.getElementById('adaptive-arena');
+  const sess = ADAPTIVE_SESSION;
+  if(!sess) return;
+  arena.style.display = 'block';
+
+  const total = sess.questions.length;
+  const answered = sess.answers.filter(x=>x!==null).length;
+
+  arena.innerHTML = `
+    <div class="adaptive-test-header">
+      <div>
+        <h3>🧠 Adaptive Test in Progress</h3>
+        <span class="adaptive-test-progress">${total} questions · weighted toward your weak areas</span>
+      </div>
+      <button class="adaptive-end-btn" onclick="finishAdaptiveTest()">📊 Finish &amp; See Results</button>
+    </div>
+    <div class="mcq-list" id="adaptive-mcq-list">
+      ${sess.questions.map((qd,i)=>{
+        const m = qd.mcq;
+        return `
+        <div class="mcq" data-key="adq-${i}" data-adaptive-i="${i}">
+          <span class="mcq-num">Q${i+1}</span>
+          <p class="mcq-q" style="font-weight:600;">${m.q}</p>
+          <div style="font-size:10px;color:var(--text-light);margin-bottom:6px;">📚 From: ${qd.topicIcon} ${qd.topicTitle}</div>
+          <div class="mcq-opts">
+            ${m.o.map((opt,oi)=>`<div class="mcq-opt" data-opt="${opt.replace(/"/g,'&quot;')}" onclick="selectAdaptiveOpt(this, ${i})"><span class="mcq-letter">${String.fromCharCode(65+oi)}.</span> ${opt}</div>`).join('')}
+          </div>
+          <button class="mcq-reveal" onclick="revealAdaptiveAns(${i})">Reveal Answer</button>
+          <div class="mcq-exp" id="adexp-${i}"><strong>✅ Correct: ${m.a}</strong><p>${m.e}</p></div>
+        </div>`;
+      }).join('')}
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:14px;">
+      <button class="adaptive-start-btn" style="max-width:300px;" onclick="finishAdaptiveTest()">📊 Submit Test &amp; Get Study Path</button>
+    </div>
+  `;
+}
+
+function selectAdaptiveOpt(el, idx){
+  const parent = el.closest('.mcq');
+  parent.querySelectorAll('.mcq-opt').forEach(o=>o.classList.remove('selected'));
+  el.classList.add('selected');
+  parent.dataset.selected = el.dataset.opt;
+  ADAPTIVE_SESSION.answers[idx] = el.dataset.opt;
+}
+
+function revealAdaptiveAns(idx){
+  const sess = ADAPTIVE_SESSION;
+  if(!sess || sess.revealed[idx]) return;
+  const qd = sess.questions[idx];
+  const exp = document.getElementById('adexp-'+idx);
+  const mcq = exp.closest('.mcq');
+  const selected = sess.answers[idx];
+  const answer = qd.mcq.a;
+  mcq.querySelectorAll('.mcq-opt').forEach(o=>{
+    if(o.dataset.opt === answer) o.classList.add('correct');
+    else if(selected && o.dataset.opt === selected) o.classList.add('wrong');
+  });
+  exp.style.display = 'block';
+  sess.revealed[idx] = true;
+  const isCorrect = selected === answer;
+  sess.correct[idx] = isCorrect;
+  // Record into stats
+  recordAdaptiveAttempt(qd.topicId, qd.mcqIdx, isCorrect);
+}
+
+function finishAdaptiveTest(){
+  const sess = ADAPTIVE_SESSION;
+  if(!sess) return;
+  // Auto-reveal any unrevealed (count as wrong if not answered correctly)
+  sess.questions.forEach((qd,i)=>{
+    if(!sess.revealed[i]){
+      const ok = sess.answers[i] === qd.mcq.a;
+      sess.correct[i] = ok;
+      if(sess.answers[i] !== null){
+        recordAdaptiveAttempt(qd.topicId, qd.mcqIdx, ok);
+      }
+    }
+  });
+  // Save session
+  const stats = getAdaptiveStats();
+  if(!stats.sessions) stats.sessions = [];
+  const correctCount = sess.correct.filter(x=>x===true).length;
+  stats.sessions.push({
+    at: sess.startedAt,
+    duration: Date.now() - sess.startedAt,
+    total: sess.questions.length,
+    correct: correctCount,
+    pct: Math.round((correctCount / sess.questions.length) * 100)
+  });
+  if(stats.sessions.length > 50) stats.sessions = stats.sessions.slice(-50);
+  saveAdaptiveStats(stats);
+  // Show results screen
+  renderAdaptiveResults(correctCount, sess.questions.length, sess);
+}
+
+function renderAdaptiveResults(correct, total, sess){
+  const pct = Math.round((correct/total)*100);
+  let banner = 'strong', emoji = '🎯', title = 'Excellent!';
+  if(pct < 60){ banner = 'weak'; emoji = '⚠️'; title = 'Keep Practising!'; }
+  else if(pct < 80){ banner = 'med'; emoji = '👍'; title = 'Good Effort!'; }
+
+  // Per-topic breakdown from this session
+  const topicBreakdown = {};
+  sess.questions.forEach((qd,i)=>{
+    if(!topicBreakdown[qd.topicId]){
+      topicBreakdown[qd.topicId] = {title:qd.topicTitle, icon:qd.topicIcon, total:0, correct:0};
+    }
+    topicBreakdown[qd.topicId].total++;
+    if(sess.correct[i]) topicBreakdown[qd.topicId].correct++;
+  });
+
+  // Build study path — sort topics by accuracy ascending in this session
+  const path = Object.entries(topicBreakdown).map(([id,b])=>({
+    id, ...b,
+    pct: Math.round((b.correct / b.total) * 100)
+  })).sort((a,b)=>a.pct - b.pct);
+
+  // Also consider all-time weak topics
+  const stats = getAdaptiveStats();
+  const overallWeak = TOPICS.map(t=>{
+    const stat = stats.topics[t.id] || {attempted:0,correct:0};
+    const {pct,cat} = classifyTopic(stat);
+    return {id:t.id, title:t.title, icon:t.icon, pct, cat};
+  }).filter(x=>x.cat === 'weak').slice(0,5);
+
+  const arena = document.getElementById('adaptive-arena');
+  arena.innerHTML = `
+    <div class="adaptive-result-banner ${banner}">
+      <div style="font-size:32px;">${emoji}</div>
+      <h3>${title}</h3>
+      <span class="score">${correct}/${total}</span>
+      <span class="label">${pct}% accuracy</span>
+    </div>
+
+    <div class="adaptive-path-card">
+      <h4>📍 This Test — Topic Breakdown</h4>
+      ${path.map(p=>{
+        let cls = 'urgent'; let icon = '🔴';
+        if(p.pct >= 80){ cls=''; icon='🟢'; }
+        else if(p.pct >= 60){ cls='warn'; icon='🟡'; }
+        return `<div class="adaptive-path-step ${cls}">
+          <div class="icon">${icon}</div>
+          <div class="body">
+            <strong>${p.icon} ${p.title}</strong>
+            <span>${p.correct}/${p.total} correct in this test</span>
+          </div>
+          <div class="pct">${p.pct}%</div>
+        </div>`;
+      }).join('')}
+    </div>
+
+    ${overallWeak.length > 0 ? `
+    <div class="adaptive-path-card">
+      <h4>🎯 Your Personal Study Path — Focus Areas</h4>
+      <p style="font-size:11px;color:var(--text-light);margin:-6px 0 12px;">Based on all your attempts (not just this test). Click any topic to revise it.</p>
+      ${overallWeak.map((p,idx)=>`
+        <div class="adaptive-path-step urgent" onclick="document.getElementById('topic-${p.id}').scrollIntoView({behavior:'smooth'});toggleTopic('${p.id}');" style="cursor:pointer;">
+          <div class="icon">${idx+1}️⃣</div>
+          <div class="body">
+            <strong>${p.icon} ${p.title}</strong>
+            <span>Focus on Classification → MOA → MCQs · Aim for 80%+ accuracy</span>
+          </div>
+          <div class="pct">${p.pct}%</div>
+        </div>
+      `).join('')}
+    </div>
+    ` : `
+    <div class="adaptive-path-card" style="text-align:center;">
+      <h4>🏆 No Weak Areas!</h4>
+      <p style="color:var(--text-light);font-size:12px;">You're scoring above 60% on every topic you've attempted. Keep going — try "Untouched Topics" mode.</p>
+    </div>
+    `}
+
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+      <button class="adaptive-start-btn" style="max-width:260px;" onclick="startAdaptiveTest()">🔄 Generate Another Test</button>
+      <button class="adaptive-end-btn" style="background:var(--card2);color:var(--navy);border:1.5px solid var(--border);" onclick="closeAdaptiveArena()">✕ Close</button>
+    </div>
+  `;
+  renderAdaptiveDashboard();
+  arena.scrollIntoView({behavior:'smooth'});
+}
+
+function closeAdaptiveArena(){
+  const arena = document.getElementById('adaptive-arena');
+  arena.style.display = 'none';
+  ADAPTIVE_SESSION = null;
+}
+
+function resetAdaptiveStats(){
+  if(!confirm('Reset all adaptive test stats and history? This cannot be undone.')) return;
+  try{ localStorage.removeItem(ADAPTIVE_KEY); }catch(e){}
+  renderAdaptiveDashboard();
+  alert('Stats reset. Fresh start! 🚀');
 }
 
 /* ── Nav active state + initialization ───────── */
@@ -12916,6 +13532,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   buildSearchIndex();
   renderDailyMCQ();
   renderBookmarksPanel();
+  if(typeof renderAdaptiveDashboard==='function') renderAdaptiveDashboard();
 
   // Initial render of progress dashboard + badges
   if(typeof updateAllBadges==='function') updateAllBadges();
