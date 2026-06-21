@@ -1,0 +1,51 @@
+# PharmaCraft – robots.txt
+# Site: https://pharmacraft.in/
+# Owner: Dr. Susheel Kumar
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /logo.png
+Allow: /manifest.json
+Allow: /sitemap.xml
+
+# Search engines explicitly allowed
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# AI / LLM crawlers — allow for index visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block any sensitive paths (none currently)
+Disallow: /sw.js
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Sitemap location (most important line for SEO)
+Sitemap: https://pharmacraft.in/sitemap.xml
