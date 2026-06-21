@@ -13807,6 +13807,22 @@ document.addEventListener('DOMContentLoaded',()=>{
   renderBookmarksPanel();
   if(typeof renderAdaptiveDashboard==='function') renderAdaptiveDashboard();
 
+  // ═════════ IndexNow Ping (throttled to once per 24h) ═════════
+  // Notifies Bing, Yandex, Seznam, Naver instantly when content changes
+  try{
+    const INDEXNOW_KEY = 'ca8dd8cb0fb498c598ee48a5233d62a2';
+    const INDEXNOW_THROTTLE_KEY = 'pc-indexnow-last';
+    const last = parseInt(localStorage.getItem(INDEXNOW_THROTTLE_KEY) || '0');
+    const now = Date.now();
+    if(now - last > 24*60*60*1000){
+      // Ping IndexNow API
+      const pingURL = `https://api.indexnow.org/IndexNow?url=${encodeURIComponent(location.origin+'/')}&key=${INDEXNOW_KEY}`;
+      // Use no-cors fetch (fire and forget, doesn't block)
+      fetch(pingURL, {mode:'no-cors', method:'GET'}).catch(()=>{});
+      localStorage.setItem(INDEXNOW_THROTTLE_KEY, String(now));
+    }
+  }catch(e){ /* silent */ }
+
   // Initial render of progress dashboard + badges
   if(typeof updateAllBadges==='function') updateAllBadges();
 
