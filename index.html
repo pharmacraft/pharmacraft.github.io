@@ -5648,46 +5648,77 @@ const MOA = {
 <!-- ═══════════ MOA 4 — IMMUNOTHERAPY ═══════════ -->
 <div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
   <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 4️⃣ Immunotherapy — Checkpoint Inhibitors &amp; CAR-T</h4>
-  <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#f5f3ff;border-radius:10px;">
-    <text x="350" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#4c1d95">Cancer Immune Evasion &amp; Drug Targets</text>
-    <ellipse cx="180" cy="140" rx="85" ry="60" fill="#fce7f3" stroke="#831843" stroke-width="2"/>
-    <text x="180" y="135" font-size="11" font-weight="700" text-anchor="middle" fill="#831843">T-CELL</text>
-    <text x="180" y="155" font-size="9" text-anchor="middle" fill="#831843">CTLA-4 / PD-1</text>
-    <ellipse cx="520" cy="140" rx="85" ry="60" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
-    <text x="520" y="135" font-size="11" font-weight="700" text-anchor="middle" fill="#1e3a8a">CANCER CELL</text>
-    <text x="520" y="155" font-size="9" text-anchor="middle" fill="#1e3a8a">PD-L1, MHC-I</text>
-    <rect x="252" y="110" width="20" height="35" fill="#831843"/>
-    <text x="262" y="130" font-size="8" font-weight="700" text-anchor="middle" fill="white">PD-1</text>
-    <rect x="428" y="110" width="20" height="35" fill="#1e3a8a"/>
-    <text x="438" y="130" font-size="8" font-weight="700" text-anchor="middle" fill="white">PD-L1</text>
-    <path d="M270 130 L 430 130" stroke="#7c3aed" stroke-width="3" stroke-dasharray="5,3"/>
-    <text x="350" y="105" font-size="9" font-weight="700" text-anchor="middle" fill="#4c1d95">Immune evasion</text>
-    <circle cx="290" cy="80" r="8" fill="#dc2626">
-      <animate attributeName="r" values="7;12;7" dur="2s" repeatCount="indefinite"/>
+  <svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#f5f3ff;border-radius:10px;">
+    <text x="350" y="22" font-size="13" font-weight="700" text-anchor="middle" fill="#4c1d95">Cancer Immune Evasion &amp; Drug Targets</text>
+
+    <!-- Drug labels at TOP (no overlap with cells) -->
+    <rect x="20" y="40" width="290" height="50" fill="#fee2e2" stroke="#7f1d1d" stroke-width="1.5" rx="6"/>
+    <text x="165" y="58" font-size="10" font-weight="700" text-anchor="middle" fill="#7f1d1d">🚫 PD-1 Inhibitors</text>
+    <text x="165" y="74" font-size="9" font-weight="700" text-anchor="middle" fill="#7f1d1d">Pembrolizumab, Nivolumab, Cemiplimab</text>
+
+    <rect x="390" y="40" width="290" height="50" fill="#fee2e2" stroke="#7f1d1d" stroke-width="1.5" rx="6"/>
+    <text x="535" y="58" font-size="10" font-weight="700" text-anchor="middle" fill="#7f1d1d">🚫 PD-L1 Inhibitors</text>
+    <text x="535" y="74" font-size="9" font-weight="700" text-anchor="middle" fill="#7f1d1d">Atezolizumab, Durvalumab, Avelumab</text>
+
+    <!-- T-cell on left -->
+    <ellipse cx="180" cy="200" rx="90" ry="55" fill="#fce7f3" stroke="#831843" stroke-width="2"/>
+    <text x="180" y="195" font-size="12" font-weight="700" text-anchor="middle" fill="#831843">T-CELL</text>
+    <text x="180" y="212" font-size="9" text-anchor="middle" fill="#831843">CTLA-4 / PD-1</text>
+
+    <!-- Cancer cell on right -->
+    <ellipse cx="520" cy="200" rx="90" ry="55" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="520" y="195" font-size="12" font-weight="700" text-anchor="middle" fill="#1e3a8a">CANCER CELL</text>
+    <text x="520" y="212" font-size="9" text-anchor="middle" fill="#1e3a8a">PD-L1, MHC-I</text>
+
+    <!-- Receptors -->
+    <rect x="262" y="180" width="22" height="40" fill="#831843"/>
+    <text x="273" y="204" font-size="9" font-weight="700" text-anchor="middle" fill="white">PD-1</text>
+
+    <rect x="418" y="180" width="22" height="40" fill="#1e3a8a"/>
+    <text x="429" y="204" font-size="9" font-weight="700" text-anchor="middle" fill="white">PD-L1</text>
+
+    <!-- Connection line (evasion) -->
+    <path d="M285 200 L 416 200" stroke="#7c3aed" stroke-width="3" stroke-dasharray="5,3"/>
+    <text x="350" y="160" font-size="11" font-weight="700" text-anchor="middle" fill="#4c1d95">Immune Evasion</text>
+
+    <!-- Drug arrows pointing down to receptors -->
+    <circle cx="273" cy="120" r="10" fill="#dc2626" stroke="#7f1d1d" stroke-width="1.5">
+      <animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="290" y="84" font-size="7" font-weight="700" text-anchor="middle" fill="white">❌</text>
-    <text x="300" y="70" font-size="9" font-weight="700" fill="#7f1d1d">PD-1 inh: Pembrolizumab,</text>
-    <text x="300" y="82" font-size="9" font-weight="700" fill="#7f1d1d">Nivolumab, Cemiplimab</text>
-    <circle cx="410" cy="80" r="8" fill="#dc2626">
-      <animate attributeName="r" values="7;12;7" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    <text x="273" y="124" font-size="10" font-weight="700" text-anchor="middle" fill="white">✕</text>
+    <path d="M273 132 L 273 175" stroke="#dc2626" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#arrowImm)"/>
+
+    <circle cx="429" cy="120" r="10" fill="#dc2626" stroke="#7f1d1d" stroke-width="1.5">
+      <animate attributeName="r" values="8;14;8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="410" y="84" font-size="7" font-weight="700" text-anchor="middle" fill="white">❌</text>
-    <text x="380" y="65" font-size="9" font-weight="700" fill="#7f1d1d">PD-L1 inh: Atezolizumab,</text>
-    <text x="380" y="77" font-size="9" font-weight="700" fill="#7f1d1d">Durvalumab, Avelumab</text>
-    <rect x="40" y="230" width="280" height="100" fill="white" stroke="#4c1d95" stroke-width="1.5" rx="6"/>
-    <text x="180" y="248" font-size="10" font-weight="700" text-anchor="middle" fill="#4c1d95">Immune Checkpoint Inhibitors</text>
-    <text x="50" y="266" font-size="9" font-weight="700" fill="#4c1d95">CTLA-4: Ipilimumab</text>
-    <text x="60" y="278" font-size="8" fill="#4c1d95">Metastatic melanoma; combo with Nivolumab</text>
-    <text x="50" y="292" font-size="9" font-weight="700" fill="#4c1d95">PD-1/PD-L1 indications:</text>
-    <text x="60" y="304" font-size="8" fill="#4c1d95">Melanoma, NSCLC, RCC, HNC, urothelial, Hodgkin's</text>
-    <text x="50" y="318" font-size="8" font-weight="700" fill="#dc2626">irAEs: pneumonitis, hepatitis, thyroid, colitis</text>
-    <rect x="380" y="230" width="280" height="100" fill="white" stroke="#4c1d95" stroke-width="1.5" rx="6"/>
-    <text x="520" y="248" font-size="10" font-weight="700" text-anchor="middle" fill="#4c1d95">CAR-T Cell Therapy</text>
-    <text x="390" y="266" font-size="9" font-weight="700" fill="#4c1d95">B-cell ALL/NHL: Tisagenlecleucel, Axicabtagene</text>
-    <text x="390" y="280" font-size="9" font-weight="700" fill="#4c1d95">Multiple Myeloma: Idecabtagene, Ciltacabtagene</text>
-    <text x="390" y="294" font-size="9" font-weight="700" fill="#4c1d95">Target: CD19 (lymphoma) / BCMA (myeloma)</text>
-    <text x="390" y="310" font-size="8" font-weight="700" fill="#dc2626">Toxicity: Cytokine release syndrome (CRS)</text>
-    <text x="390" y="322" font-size="8" font-weight="700" fill="#dc2626">Mgmt: Tocilizumab (IL-6 mAb)</text>
+    <text x="429" y="124" font-size="10" font-weight="700" text-anchor="middle" fill="white">✕</text>
+    <path d="M429 132 L 429 175" stroke="#dc2626" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#arrowImm)"/>
+
+    <defs>
+      <marker id="arrowImm" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
+        <polygon points="0,0 6,3 0,6" fill="#dc2626"/>
+      </marker>
+    </defs>
+
+    <!-- ICI Info Box (bottom left) -->
+    <rect x="20" y="290" width="320" height="120" fill="white" stroke="#4c1d95" stroke-width="1.5" rx="6"/>
+    <text x="180" y="308" font-size="11" font-weight="700" text-anchor="middle" fill="#4c1d95">Immune Checkpoint Inhibitors</text>
+    <text x="30" y="326" font-size="9" font-weight="700" fill="#4c1d95">CTLA-4: Ipilimumab</text>
+    <text x="40" y="339" font-size="8" fill="#4c1d95">Metastatic melanoma; combo with Nivolumab</text>
+    <text x="30" y="356" font-size="9" font-weight="700" fill="#4c1d95">PD-1/PD-L1 indications:</text>
+    <text x="40" y="369" font-size="8" fill="#4c1d95">Melanoma, NSCLC, RCC, HNC, urothelial, Hodgkin's</text>
+    <text x="30" y="386" font-size="9" font-weight="700" fill="#4c1d95">irAEs (Immune ADRs):</text>
+    <text x="40" y="399" font-size="8" font-weight="700" fill="#dc2626">Pneumonitis, hepatitis, thyroid, colitis, myocarditis</text>
+
+    <!-- CAR-T Info Box (bottom right) -->
+    <rect x="360" y="290" width="320" height="120" fill="white" stroke="#4c1d95" stroke-width="1.5" rx="6"/>
+    <text x="520" y="308" font-size="11" font-weight="700" text-anchor="middle" fill="#4c1d95">CAR-T Cell Therapy</text>
+    <text x="370" y="326" font-size="9" font-weight="700" fill="#4c1d95">CD19 CAR-T (Lymphoma/B-ALL):</text>
+    <text x="380" y="339" font-size="8" fill="#4c1d95">Tisagenlecleucel, Axicabtagene</text>
+    <text x="370" y="356" font-size="9" font-weight="700" fill="#4c1d95">BCMA CAR-T (Multiple Myeloma):</text>
+    <text x="380" y="369" font-size="8" fill="#4c1d95">Idecabtagene, Ciltacabtagene vicleucel</text>
+    <text x="370" y="386" font-size="9" font-weight="700" fill="#dc2626">Toxicity: CRS (Cytokine Release)</text>
+    <text x="380" y="399" font-size="8" font-weight="700" fill="#dc2626">DOC: Tocilizumab (IL-6 antagonist)</text>
   </svg>
 </div>
 
