@@ -5485,6 +5485,257 @@ const MOA = {
     <text x="370" y="264" font-size="9" font-weight="700" fill="#dc2626">Erectile Dysfunction:</text>
     <text x="380" y="276" font-size="8" font-weight="700" fill="#dc2626">PDE5i — Sildenafil, Tadalafil, Vardenafil</text>
   </svg>
+</div>`,
+
+  cancerComplete: `
+<div style="margin-bottom:14px;padding:12px;background:linear-gradient(135deg,#fce7f3,#fbcfe8);border-radius:12px;border:1.5px solid var(--border);">
+  <h4 style="color:#831843;margin:0 0 6px;">🧫 Topic 13 — Anticancer Drugs (5 Animated Mechanisms)</h4>
+  <p style="font-size:12px;color:var(--text-light);margin:0;">Alkylating · Antimetabolites · Targeted · Immunotherapy · Hormonal — covering cell cycle, signaling, immune checkpoints &amp; hormone-dependent malignancies.</p>
+</div>
+
+<!-- ═══════════ MOA 1 — CELL CYCLE &amp; ALKYLATING ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 1️⃣ Cell Cycle Targets — Alkylating Agents</h4>
+  <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#fdf2f8;border-radius:10px;">
+    <text x="350" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#831843">Cell Cycle &amp; Drug Targets</text>
+    <circle cx="350" cy="180" r="90" fill="white" stroke="#831843" stroke-width="3"/>
+    <text x="350" y="155" font-size="11" font-weight="700" text-anchor="middle" fill="#831843">CELL CYCLE</text>
+    <path d="M350 90 A 90 90 0 0 1 440 180" stroke="#3b82f6" stroke-width="14" fill="none" opacity="0.7"/>
+    <text x="425" y="135" font-size="10" font-weight="700" fill="#1e40af">G1</text>
+    <path d="M440 180 A 90 90 0 0 1 350 270" stroke="#22c55e" stroke-width="14" fill="none" opacity="0.7"/>
+    <text x="430" y="240" font-size="10" font-weight="700" fill="#14532d">S (DNA synth)</text>
+    <path d="M350 270 A 90 90 0 0 1 260 180" stroke="#f59e0b" stroke-width="14" fill="none" opacity="0.7"/>
+    <text x="225" y="235" font-size="10" font-weight="700" fill="#92400e">G2</text>
+    <path d="M260 180 A 90 90 0 0 1 350 90" stroke="#dc2626" stroke-width="14" fill="none" opacity="0.7"/>
+    <text x="230" y="130" font-size="10" font-weight="700" fill="#7f1d1d">M</text>
+    <circle cx="350" cy="180" r="22" fill="#831843">
+      <animate attributeName="r" values="20;28;20" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="350" y="184" font-size="9" font-weight="700" text-anchor="middle" fill="white">DNA</text>
+    <rect x="20" y="40" width="170" height="90" fill="#fee2e2" stroke="#7f1d1d" stroke-width="2" rx="6"/>
+    <text x="105" y="58" font-size="10" font-weight="700" text-anchor="middle" fill="#7f1d1d">Alkylating (CCNS)</text>
+    <text x="30" y="74" font-size="8" font-weight="700" fill="#7f1d1d">N-mustards:</text>
+    <text x="35" y="86" font-size="8" fill="#7f1d1d">Cyclophosphamide, Ifosfamide</text>
+    <text x="30" y="100" font-size="8" font-weight="700" fill="#7f1d1d">Nitrosoureas:</text>
+    <text x="35" y="112" font-size="8" fill="#7f1d1d">Carmustine, Lomustine (CNS)</text>
+    <text x="30" y="124" font-size="8" font-weight="700" fill="#7f1d1d">Pt-analogs: Cis-, Carbo-, Oxali-platin</text>
+    <rect x="510" y="40" width="170" height="90" fill="#dcfce7" stroke="#14532d" stroke-width="2" rx="6"/>
+    <text x="595" y="58" font-size="10" font-weight="700" text-anchor="middle" fill="#14532d">S-phase (Antimet)</text>
+    <text x="520" y="74" font-size="8" font-weight="700" fill="#14532d">MTX, 5-FU, Cytarabine,</text>
+    <text x="520" y="86" font-size="8" font-weight="700" fill="#14532d">Gemcitabine, 6-MP</text>
+    <text x="520" y="100" font-size="8" fill="#14532d">→ Block DNA synthesis</text>
+    <text x="520" y="114" font-size="8" font-weight="700" fill="#14532d">Rescue: Leucovorin (MTX OD)</text>
+    <text x="520" y="126" font-size="8" font-weight="700" fill="#14532d">Mesna: Cyclo/Ifo bladder protection</text>
+    <rect x="20" y="220" width="170" height="100" fill="#fef3c7" stroke="#92400e" stroke-width="2" rx="6"/>
+    <text x="105" y="238" font-size="10" font-weight="700" text-anchor="middle" fill="#92400e">G2/M Phase</text>
+    <text x="30" y="254" font-size="8" font-weight="700" fill="#92400e">Topo II: Etoposide, Doxorubicin</text>
+    <text x="30" y="266" font-size="8" font-weight="700" fill="#92400e">Topo I: Irinotecan, Topotecan</text>
+    <text x="30" y="280" font-size="8" font-weight="700" fill="#92400e">Bleomycin (G2 break)</text>
+    <text x="30" y="294" font-size="8" font-weight="700" fill="#92400e">Vinca: Vincristine, Vinblastine</text>
+    <text x="30" y="308" font-size="8" font-weight="700" fill="#92400e">Taxanes: Paclitaxel, Docetaxel</text>
+    <rect x="510" y="220" width="170" height="100" fill="#e0e7ff" stroke="#312e81" stroke-width="2" rx="6"/>
+    <text x="595" y="238" font-size="10" font-weight="700" text-anchor="middle" fill="#312e81">Cell-Cycle Non-Specific</text>
+    <text x="520" y="254" font-size="8" fill="#312e81">Alkylating agents, Pt-analogs</text>
+    <text x="520" y="266" font-size="8" fill="#312e81">Antitumor antibiotics (Anthracyclines)</text>
+    <text x="520" y="280" font-size="8" font-weight="700" fill="#312e81">DOC for cancers:</text>
+    <text x="520" y="292" font-size="8" fill="#312e81">• Cyclo: Lymphoma, CLL, breast Ca</text>
+    <text x="520" y="304" font-size="8" fill="#312e81">• Cisplatin: Testicular, ovarian</text>
+    <text x="520" y="316" font-size="8" fill="#312e81">• Carmustine: Glioma (crosses BBB)</text>
+  </svg>
+</div>
+
+<!-- ═══════════ MOA 2 — ANTIMETABOLITES ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 2️⃣ Antimetabolites — Disrupt DNA &amp; RNA Synthesis</h4>
+  <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#ecfdf5;border-radius:10px;">
+    <text x="350" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#14532d">DNA Synthesis Pathway &amp; Drug Targets</text>
+    <rect x="40" y="50" width="120" height="40" fill="#fde68a" stroke="#92400e" stroke-width="2" rx="6"/>
+    <text x="100" y="74" font-size="10" font-weight="700" text-anchor="middle" fill="#92400e">Folic Acid</text>
+    <path d="M160 70 L 200 70" stroke="#92400e" stroke-width="2" marker-end="url(#arrow1)"/>
+    <defs>
+      <marker id="arrow1" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
+        <polygon points="0,0 6,3 0,6" fill="#92400e"/>
+      </marker>
+    </defs>
+    <rect x="200" y="50" width="130" height="40" fill="#22c55e" stroke="#14532d" stroke-width="2" rx="6">
+      <animate attributeName="fill" values="#22c55e;#16a34a;#22c55e" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="265" y="74" font-size="10" font-weight="700" text-anchor="middle" fill="white">FH4 (THF)</text>
+    <text x="170" y="44" font-size="9" font-weight="700" fill="#dc2626">🚫 MTX, Trimethoprim</text>
+    <text x="170" y="105" font-size="8" font-weight="700" fill="#dc2626">Block DHFR</text>
+    <path d="M330 70 L 380 70" stroke="#92400e" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="380" y="50" width="130" height="40" fill="#86efac" stroke="#14532d" stroke-width="2" rx="6"/>
+    <text x="445" y="74" font-size="10" font-weight="700" text-anchor="middle" fill="#14532d">Methyl-THF</text>
+    <path d="M510 70 L 560 70" stroke="#92400e" stroke-width="2" marker-end="url(#arrow1)"/>
+    <rect x="560" y="50" width="120" height="40" fill="#fbbf24" stroke="#92400e" stroke-width="2" rx="6">
+      <animate attributeName="fill" values="#fbbf24;#f59e0b;#fbbf24" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="620" y="74" font-size="10" font-weight="700" text-anchor="middle" fill="#5a3e00">dTMP → DNA</text>
+    <text x="510" y="44" font-size="9" font-weight="700" fill="#dc2626">🚫 5-FU, Capecitabine</text>
+    <text x="520" y="105" font-size="8" font-weight="700" fill="#dc2626">Block TS</text>
+    <text x="350" y="135" font-size="11" font-weight="700" text-anchor="middle" fill="#14532d">↓ Purine &amp; Pyrimidine Synthesis</text>
+    <rect x="20" y="160" width="320" height="155" fill="white" stroke="#14532d" stroke-width="1.5" rx="8"/>
+    <text x="180" y="180" font-size="10" font-weight="700" text-anchor="middle" fill="#14532d">Folate Antagonists</text>
+    <text x="30" y="200" font-size="9" font-weight="700" fill="#14532d">Methotrexate (MTX):</text>
+    <text x="40" y="214" font-size="8" fill="#14532d">• Inhibits DHFR (Dihydrofolate Reductase)</text>
+    <text x="40" y="226" font-size="8" fill="#14532d">• Uses: Leukemia, lymphoma, RA, psoriasis</text>
+    <text x="40" y="238" font-size="8" font-weight="700" fill="#dc2626">• Rescue: Leucovorin (Folinic acid)</text>
+    <text x="40" y="250" font-size="8" font-weight="700" fill="#dc2626">• Toxicity: Mucositis, hepatitis, marrow suppression</text>
+    <text x="30" y="268" font-size="9" font-weight="700" fill="#14532d">Pemetrexed (newer):</text>
+    <text x="40" y="282" font-size="8" fill="#14532d">• Multi-target (DHFR, TS, GARFT)</text>
+    <text x="40" y="294" font-size="8" fill="#14532d">• Lung Ca (NSCLC), mesothelioma</text>
+    <text x="40" y="306" font-size="8" font-weight="700" fill="#dc2626">• Add Vit B12 + Folic acid pre-treatment</text>
+    <rect x="360" y="160" width="320" height="155" fill="white" stroke="#14532d" stroke-width="1.5" rx="8"/>
+    <text x="520" y="180" font-size="10" font-weight="700" text-anchor="middle" fill="#14532d">Pyrimidine / Purine Antagonists</text>
+    <text x="370" y="200" font-size="9" font-weight="700" fill="#14532d">Pyrimidine:</text>
+    <text x="380" y="214" font-size="8" fill="#14532d">• 5-FU → blocks TS; colon, breast, head-neck</text>
+    <text x="380" y="226" font-size="8" fill="#14532d">• Capecitabine — oral 5-FU prodrug</text>
+    <text x="380" y="238" font-size="8" fill="#14532d">• Cytarabine (Ara-C) — AML</text>
+    <text x="380" y="250" font-size="8" fill="#14532d">• Gemcitabine — pancreas, lung Ca</text>
+    <text x="370" y="270" font-size="9" font-weight="700" fill="#14532d">Purine:</text>
+    <text x="380" y="284" font-size="8" fill="#14532d">• 6-MP (Mercaptopurine) — ALL, IBD</text>
+    <text x="380" y="296" font-size="8" fill="#14532d">• 6-TG (Thioguanine) — AML</text>
+    <text x="380" y="308" font-size="8" font-weight="700" fill="#dc2626">• 6-MP + Allopurinol → ↑ toxicity (TPMT block)</text>
+  </svg>
+</div>
+
+<!-- ═══════════ MOA 3 — TARGETED THERAPY ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 3️⃣ Targeted Therapy — Smart Bullets</h4>
+  <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#eff6ff;border-radius:10px;">
+    <text x="350" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#1e3a8a">Targeted Therapy — Receptor Tyrosine Kinases &amp; Pathways</text>
+    <ellipse cx="350" cy="180" rx="110" ry="80" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="350" y="170" font-size="11" font-weight="700" text-anchor="middle" fill="#1e3a8a">CANCER CELL</text>
+    <text x="350" y="190" font-size="9" text-anchor="middle" fill="#1e3a8a">Dysregulated signaling</text>
+    <rect x="335" y="105" width="30" height="40" fill="#1e40af" stroke="#1e3a8a"/>
+    <text x="350" y="130" font-size="10" font-weight="700" text-anchor="middle" fill="white">RTK</text>
+    <circle cx="320" cy="100" r="6" fill="#dc2626">
+      <animate attributeName="r" values="5;9;5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="280" y="80" font-size="9" font-weight="700" fill="#dc2626">🚫 mAbs</text>
+    <text x="280" y="92" font-size="8" fill="#7f1d1d">(extracellular)</text>
+    <rect x="40" y="50" width="220" height="90" fill="#fee2e2" stroke="#7f1d1d" stroke-width="2" rx="6"/>
+    <text x="150" y="70" font-size="11" font-weight="700" text-anchor="middle" fill="#7f1d1d">mAbs (Extracellular)</text>
+    <text x="50" y="86" font-size="8" font-weight="700" fill="#7f1d1d">EGFR/HER2:</text>
+    <text x="60" y="98" font-size="8" fill="#7f1d1d">Cetuximab (CRC), Panitumumab</text>
+    <text x="60" y="110" font-size="8" font-weight="700" fill="#7f1d1d">Trastuzumab, Pertuzumab (HER2+ breast)</text>
+    <text x="50" y="122" font-size="8" font-weight="700" fill="#7f1d1d">VEGF: Bevacizumab</text>
+    <text x="50" y="134" font-size="8" font-weight="700" fill="#7f1d1d">CD20: Rituximab (NHL, CLL)</text>
+    <rect x="440" y="50" width="220" height="90" fill="#fef3c7" stroke="#92400e" stroke-width="2" rx="6"/>
+    <text x="550" y="70" font-size="11" font-weight="700" text-anchor="middle" fill="#92400e">TKIs (Intracellular)</text>
+    <text x="450" y="86" font-size="8" font-weight="700" fill="#92400e">BCR-ABL (CML):</text>
+    <text x="460" y="98" font-size="8" fill="#92400e">Imatinib, Dasatinib, Nilotinib, Ponatinib</text>
+    <text x="450" y="110" font-size="8" font-weight="700" fill="#92400e">EGFR (NSCLC):</text>
+    <text x="460" y="122" font-size="8" fill="#92400e">Erlotinib, Gefitinib, Osimertinib</text>
+    <text x="450" y="134" font-size="8" font-weight="700" fill="#92400e">ALK: Crizotinib, Alectinib, Brigatinib</text>
+    <rect x="40" y="250" width="280" height="100" fill="#dcfce7" stroke="#14532d" stroke-width="2" rx="6"/>
+    <text x="180" y="270" font-size="10" font-weight="700" text-anchor="middle" fill="#14532d">Other Pathway Blockers</text>
+    <text x="50" y="286" font-size="8" font-weight="700" fill="#14532d">BRAF/MEK (Melanoma):</text>
+    <text x="60" y="298" font-size="8" fill="#14532d">Vemurafenib, Dabrafenib + Trametinib</text>
+    <text x="50" y="312" font-size="8" font-weight="700" fill="#14532d">PARP (BRCA+ breast/ovarian):</text>
+    <text x="60" y="324" font-size="8" fill="#14532d">Olaparib, Talazoparib, Niraparib</text>
+    <text x="50" y="338" font-size="8" font-weight="700" fill="#14532d">CDK4/6 (HR+ breast Ca): Palbo-, Ribo-, Abemaciclib</text>
+    <rect x="370" y="250" width="290" height="100" fill="#e0e7ff" stroke="#312e81" stroke-width="2" rx="6"/>
+    <text x="515" y="270" font-size="10" font-weight="700" text-anchor="middle" fill="#312e81">Antibody-Drug Conjugates (ADCs)</text>
+    <text x="380" y="286" font-size="8" font-weight="700" fill="#312e81">T-DM1 (Trastuzumab emtansine) — HER2+ breast</text>
+    <text x="380" y="298" font-size="8" font-weight="700" fill="#312e81">T-DXd (Enhertu) — HER2-low breast (2022)</text>
+    <text x="380" y="312" font-size="8" font-weight="700" fill="#312e81">Sacituzumab govitecan — TNBC (Trop-2)</text>
+    <text x="380" y="326" font-size="8" font-weight="700" fill="#312e81">Polatuzumab vedotin — DLBCL</text>
+    <text x="380" y="340" font-size="8" font-weight="700" fill="#dc2626">Selpercatinib — RET fusions (lung, thyroid)</text>
+  </svg>
+</div>
+
+<!-- ═══════════ MOA 4 — IMMUNOTHERAPY ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 4️⃣ Immunotherapy — Checkpoint Inhibitors &amp; CAR-T</h4>
+  <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#f5f3ff;border-radius:10px;">
+    <text x="350" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#4c1d95">Cancer Immune Evasion &amp; Drug Targets</text>
+    <ellipse cx="180" cy="140" rx="85" ry="60" fill="#fce7f3" stroke="#831843" stroke-width="2"/>
+    <text x="180" y="135" font-size="11" font-weight="700" text-anchor="middle" fill="#831843">T-CELL</text>
+    <text x="180" y="155" font-size="9" text-anchor="middle" fill="#831843">CTLA-4 / PD-1</text>
+    <ellipse cx="520" cy="140" rx="85" ry="60" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="520" y="135" font-size="11" font-weight="700" text-anchor="middle" fill="#1e3a8a">CANCER CELL</text>
+    <text x="520" y="155" font-size="9" text-anchor="middle" fill="#1e3a8a">PD-L1, MHC-I</text>
+    <rect x="252" y="110" width="20" height="35" fill="#831843"/>
+    <text x="262" y="130" font-size="8" font-weight="700" text-anchor="middle" fill="white">PD-1</text>
+    <rect x="428" y="110" width="20" height="35" fill="#1e3a8a"/>
+    <text x="438" y="130" font-size="8" font-weight="700" text-anchor="middle" fill="white">PD-L1</text>
+    <path d="M270 130 L 430 130" stroke="#7c3aed" stroke-width="3" stroke-dasharray="5,3"/>
+    <text x="350" y="105" font-size="9" font-weight="700" text-anchor="middle" fill="#4c1d95">Immune evasion</text>
+    <circle cx="290" cy="80" r="8" fill="#dc2626">
+      <animate attributeName="r" values="7;12;7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="290" y="84" font-size="7" font-weight="700" text-anchor="middle" fill="white">❌</text>
+    <text x="300" y="70" font-size="9" font-weight="700" fill="#7f1d1d">PD-1 inh: Pembrolizumab,</text>
+    <text x="300" y="82" font-size="9" font-weight="700" fill="#7f1d1d">Nivolumab, Cemiplimab</text>
+    <circle cx="410" cy="80" r="8" fill="#dc2626">
+      <animate attributeName="r" values="7;12;7" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="410" y="84" font-size="7" font-weight="700" text-anchor="middle" fill="white">❌</text>
+    <text x="380" y="65" font-size="9" font-weight="700" fill="#7f1d1d">PD-L1 inh: Atezolizumab,</text>
+    <text x="380" y="77" font-size="9" font-weight="700" fill="#7f1d1d">Durvalumab, Avelumab</text>
+    <rect x="40" y="230" width="280" height="100" fill="white" stroke="#4c1d95" stroke-width="1.5" rx="6"/>
+    <text x="180" y="248" font-size="10" font-weight="700" text-anchor="middle" fill="#4c1d95">Immune Checkpoint Inhibitors</text>
+    <text x="50" y="266" font-size="9" font-weight="700" fill="#4c1d95">CTLA-4: Ipilimumab</text>
+    <text x="60" y="278" font-size="8" fill="#4c1d95">Metastatic melanoma; combo with Nivolumab</text>
+    <text x="50" y="292" font-size="9" font-weight="700" fill="#4c1d95">PD-1/PD-L1 indications:</text>
+    <text x="60" y="304" font-size="8" fill="#4c1d95">Melanoma, NSCLC, RCC, HNC, urothelial, Hodgkin's</text>
+    <text x="50" y="318" font-size="8" font-weight="700" fill="#dc2626">irAEs: pneumonitis, hepatitis, thyroid, colitis</text>
+    <rect x="380" y="230" width="280" height="100" fill="white" stroke="#4c1d95" stroke-width="1.5" rx="6"/>
+    <text x="520" y="248" font-size="10" font-weight="700" text-anchor="middle" fill="#4c1d95">CAR-T Cell Therapy</text>
+    <text x="390" y="266" font-size="9" font-weight="700" fill="#4c1d95">B-cell ALL/NHL: Tisagenlecleucel, Axicabtagene</text>
+    <text x="390" y="280" font-size="9" font-weight="700" fill="#4c1d95">Multiple Myeloma: Idecabtagene, Ciltacabtagene</text>
+    <text x="390" y="294" font-size="9" font-weight="700" fill="#4c1d95">Target: CD19 (lymphoma) / BCMA (myeloma)</text>
+    <text x="390" y="310" font-size="8" font-weight="700" fill="#dc2626">Toxicity: Cytokine release syndrome (CRS)</text>
+    <text x="390" y="322" font-size="8" font-weight="700" fill="#dc2626">Mgmt: Tocilizumab (IL-6 mAb)</text>
+  </svg>
+</div>
+
+<!-- ═══════════ MOA 5 — HORMONAL THERAPY ═══════════ -->
+<div style="background:white;border:2px solid var(--border);border-radius:14px;padding:14px;margin-bottom:18px;">
+  <h4 style="color:var(--teal);margin:0 0 10px;text-align:center;">⚡ 5️⃣ Hormonal Therapy — Endocrine Cancers</h4>
+  <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;background:#fdf2f8;border-radius:10px;">
+    <text x="350" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#831843">Hormone-Dependent Malignancies</text>
+    <rect x="20" y="50" width="320" height="230" fill="white" stroke="#831843" stroke-width="2" rx="8"/>
+    <text x="180" y="70" font-size="11" font-weight="700" text-anchor="middle" fill="#831843">BREAST CANCER (HR+)</text>
+    <text x="30" y="92" font-size="9" font-weight="700" fill="#831843">Pre-menopausal:</text>
+    <text x="40" y="105" font-size="8" font-weight="700" fill="#dc2626">• Tamoxifen 20 mg/day × 5-10 yrs (SERM)</text>
+    <text x="40" y="117" font-size="8" fill="#831843">• Ovarian suppression: GnRH agonist (Goserelin)</text>
+    <text x="30" y="135" font-size="9" font-weight="700" fill="#831843">Post-menopausal:</text>
+    <text x="40" y="148" font-size="8" font-weight="700" fill="#dc2626">• Letrozole, Anastrozole (Aromatase inh)</text>
+    <text x="40" y="160" font-size="8" fill="#831843">• Exemestane (steroidal)</text>
+    <text x="30" y="178" font-size="9" font-weight="700" fill="#831843">Metastatic HR+:</text>
+    <text x="40" y="191" font-size="8" font-weight="700" fill="#dc2626">• Fulvestrant (SERD)</text>
+    <text x="40" y="203" font-size="8" font-weight="700" fill="#dc2626">• Elacestrant — Oral SERD (FDA 2023)</text>
+    <text x="30" y="221" font-size="9" font-weight="700" fill="#831843">+ CDK4/6 inhibitors:</text>
+    <text x="40" y="234" font-size="8" fill="#831843">Palbociclib, Ribociclib, Abemaciclib</text>
+    <text x="30" y="252" font-size="9" font-weight="700" fill="#831843">+ PARP inhibitors (BRCA+):</text>
+    <text x="40" y="265" font-size="8" fill="#831843">Olaparib, Talazoparib</text>
+    <circle cx="320" cy="90" r="8" fill="#831843">
+      <animate attributeName="r" values="7;11;7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="320" y="94" font-size="7" font-weight="700" text-anchor="middle" fill="white">E</text>
+    <rect x="360" y="50" width="320" height="230" fill="white" stroke="#312e81" stroke-width="2" rx="8"/>
+    <text x="520" y="70" font-size="11" font-weight="700" text-anchor="middle" fill="#312e81">PROSTATE CANCER</text>
+    <text x="370" y="92" font-size="9" font-weight="700" fill="#312e81">Hormone-sensitive (1st-line):</text>
+    <text x="380" y="105" font-size="8" font-weight="700" fill="#dc2626">• GnRH agonist (Leuprolide, Goserelin)</text>
+    <text x="380" y="117" font-size="8" fill="#312e81">  + Bicalutamide × 2 wks (flare protection)</text>
+    <text x="380" y="129" font-size="8" font-weight="700" fill="#dc2626">• GnRH antagonist (Degarelix, Relugolix oral)</text>
+    <text x="370" y="148" font-size="9" font-weight="700" fill="#312e81">Castration-resistant (CRPC):</text>
+    <text x="380" y="161" font-size="8" font-weight="700" fill="#dc2626">• Enzalutamide (AR blocker)</text>
+    <text x="380" y="173" font-size="8" font-weight="700" fill="#dc2626">• Apalutamide, Darolutamide</text>
+    <text x="380" y="185" font-size="8" font-weight="700" fill="#dc2626">• Abiraterone (CYP17 inhibitor)</text>
+    <text x="370" y="203" font-size="9" font-weight="700" fill="#312e81">Theranostics (newer):</text>
+    <text x="380" y="216" font-size="8" font-weight="700" fill="#dc2626">• Lutetium-177 PSMA-617 (Pluvicto)</text>
+    <text x="370" y="234" font-size="9" font-weight="700" fill="#312e81">Chemo (CRPC):</text>
+    <text x="380" y="247" font-size="8" fill="#312e81">• Docetaxel, Cabazitaxel</text>
+    <text x="370" y="265" font-size="9" font-weight="700" fill="#312e81">PARP+ for HRR mutation:</text>
+    <text x="380" y="278" font-size="8" fill="#312e81">Olaparib, Niraparib</text>
+    <circle cx="660" cy="90" r="8" fill="#312e81">
+      <animate attributeName="r" values="7;11;7" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="660" y="94" font-size="7" font-weight="700" text-anchor="middle" fill="white">T</text>
+  </svg>
 </div>`
 };
 
@@ -15072,100 +15323,969 @@ TOPICS.push({id:"amd",icon:"🦠",title:"Antimicrobial Drugs",
 });
 
 TOPICS.push({id:"cancer",icon:"🧫",title:"Anticancer Drugs",
-  classification:`<h4>Cytotoxic Chemotherapy</h4>
-<table><tr><th>Class</th><th>Examples</th></tr>
-<tr><td>Alkylating agents</td><td>Cyclophosphamide, Ifosfamide, Cisplatin, Carboplatin, Oxaliplatin, Busulfan, Procarbazine, Temozolomide, Dacarbazine</td></tr>
-<tr><td>Antimetabolites</td><td>Methotrexate, 5-FU, Capecitabine, Cytarabine, Gemcitabine, 6-MP, 6-TG, Fludarabine, Pemetrexed</td></tr>
-<tr><td>Anti-tumour antibiotics</td><td>Doxorubicin, Daunorubicin, Bleomycin, Mitomycin, Dactinomycin, Mitoxantrone</td></tr>
-<tr><td>Plant alkaloids – Vinca</td><td>Vincristine, Vinblastine, Vinorelbine</td></tr>
-<tr><td>Taxanes</td><td>Paclitaxel, Docetaxel, Cabazitaxel</td></tr>
-<tr><td>Topoisomerase inhibitors</td><td>Etoposide (II), Irinotecan/Topotecan (I)</td></tr>
-<tr><td>Hormonal</td><td>Tamoxifen, Anastrozole, Letrozole, Exemestane, Fulvestrant, Leuprolide, Flutamide, Bicalutamide, Abiraterone, Enzalutamide</td></tr></table>
-<h4>Targeted Therapy</h4>
-<table><tr><th>Target</th><th>Drugs</th></tr>
-<tr><td>HER2</td><td>Trastuzumab, Pertuzumab, T-DM1, Lapatinib</td></tr>
-<tr><td>EGFR</td><td>Cetuximab, Panitumumab, Gefitinib, Erlotinib, Osimertinib</td></tr>
-<tr><td>VEGF</td><td>Bevacizumab, Ramucirumab, Aflibercept</td></tr>
-<tr><td>BCR-ABL</td><td>Imatinib, Dasatinib, Nilotinib, Ponatinib</td></tr>
-<tr><td>BTK</td><td>Ibrutinib, Acalabrutinib</td></tr>
-<tr><td>BRAF/MEK</td><td>Vemurafenib, Dabrafenib + Trametinib</td></tr>
-<tr><td>CDK4/6</td><td>Palbociclib, Ribociclib, Abemaciclib</td></tr>
-<tr><td>mTOR</td><td>Everolimus, Temsirolimus</td></tr>
-<tr><td>ALK</td><td>Crizotinib, Alectinib, Brigatinib</td></tr>
-<tr><td>PARP</td><td>Olaparib, Niraparib, Talazoparib</td></tr></table>
-<h4>Immunotherapy</h4>
-<p><strong>Immune checkpoint inhibitors</strong> – Pembrolizumab, Nivolumab (anti-PD-1), Atezolizumab, Durvalumab, Avelumab (anti-PD-L1), Ipilimumab (anti-CTLA-4). <strong>CAR-T cell therapy</strong> – Tisagenlecleucel, Axicabtagene ciloleucel.</p>
-<h4>Adjuvants &amp; Supportive</h4>
-<p>Mesna (with cyclophosphamide), Leucovorin (folinic acid, with MTX), Dexrazoxane (with doxo), Filgrastim (G-CSF), Erythropoietin, 5HT3+NK1+steroid for emesis, Allopurinol/Rasburicase for tumour lysis.</p>`,
-  moa:MOA.cancer,
-  pkpd:`<h4>Cell-Cycle Specificity</h4>
-<table><tr><th>Phase</th><th>Drugs</th></tr>
-<tr><td>S phase</td><td>Methotrexate, 5-FU, Cytarabine, 6-MP, Gemcitabine, Hydroxyurea</td></tr>
-<tr><td>G2 phase</td><td>Bleomycin, Etoposide</td></tr>
-<tr><td>M phase</td><td>Vinca alkaloids, Taxanes</td></tr>
-<tr><td>Cell cycle non-specific</td><td>Alkylators, anti-tumour antibiotics (except bleo), nitrosoureas, platinum</td></tr></table>
-<h4>Common Targeted Drug Targets</h4>
+  hiddenTabs:['pkpd','adr','drugs'],
+  subtopics:[
+    {n:1,label:"Alkylating Agents",panelId:"alkylate"},
+    {n:2,label:"Antimetabolites",panelId:"antimet"},
+    {n:3,label:"Targeted Therapy",panelId:"targeted"},
+    {n:4,label:"Immunotherapy",panelId:"immuno"},
+    {n:5,label:"Hormonal Therapy",panelId:"hormonal"}
+  ],
+  classification:`<h4>Anticancer Pharmacology — Overview</h4>
+<p>Comprehensive coverage of all five major anticancer classes — cytotoxic (alkylating + antimetabolites), targeted therapy (mAbs + TKIs + PARP/CDK4-6), immunotherapy (checkpoint inhibitors + CAR-T) and hormonal therapy for endocrine cancers. NMC CBME 2024 aligned, NEET PG/INI-CET/FMGE high-yield.</p>
+<table>
+<tr><th>Sub-topic</th><th>Mechanism</th><th>Key Drugs</th></tr>
+<tr><td><strong>1️⃣ Alkylating Agents</strong></td><td>DNA alkylation → cross-linking → apoptosis</td><td>Cyclophosphamide, Ifosfamide, Cisplatin, Carmustine, Busulfan, Temozolomide</td></tr>
+<tr><td><strong>2️⃣ Antimetabolites</strong></td><td>Inhibit DNA/RNA synthesis (S-phase)</td><td>Methotrexate, 5-FU, Capecitabine, Cytarabine, Gemcitabine, 6-MP, Pemetrexed</td></tr>
+<tr><td><strong>3️⃣ Targeted Therapy</strong></td><td>RTK / mAbs / PARP / CDK4-6 / VEGF blockade</td><td>Imatinib, Trastuzumab, Bevacizumab, Rituximab, Olaparib, Palbociclib, Osimertinib, Selpercatinib</td></tr>
+<tr><td><strong>4️⃣ Immunotherapy</strong></td><td>Checkpoint inhibition + CAR-T</td><td>Pembrolizumab, Nivolumab, Ipilimumab, Atezolizumab, Tisagenlecleucel</td></tr>
+<tr><td><strong>5️⃣ Hormonal Therapy</strong></td><td>HR+ breast Ca, Prostate Ca</td><td>Tamoxifen, Letrozole, Fulvestrant, Elacestrant, GnRH agonist/antagonist, Enzalutamide, Abiraterone</td></tr>
+</table>
+<p style="font-size:12px;margin-top:8px;color:var(--text-light);"><em>Click the sub-topic buttons above for detailed classification, MOA, clinical uses, ADRs, contraindications, drug interactions, case-based insights, NEET PG PYQs and recent advances.</em></p>`,
+  moa:MOA.cancerComplete,
+  extraPanels:[
+    /* ═══════════ 1. ALKYLATING AGENTS ═══════════ */
+    {id:"alkylate",content:`<span id="sub-alkylate-cancer" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚗️ 1️⃣ ALKYLATING AGENTS</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Cell cycle non-specific (CCNS) drugs that <em>covalently transfer alkyl groups to DNA</em> → cross-linking → strand breaks → apoptosis. Among the oldest and most widely used chemotherapy agents. Useful in both rapidly dividing and slowly dividing tumor cells.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Key Uses</th></tr>
+<tr><td><strong>Nitrogen Mustards</strong></td><td>Mechlorethamine (original), Cyclophosphamide, Ifosfamide, Melphalan, Chlorambucil, Bendamustine</td><td>Lymphomas, CLL, breast Ca, multiple myeloma, autoimmune</td></tr>
+<tr><td><strong>Nitrosoureas</strong></td><td>Carmustine (BCNU), Lomustine (CCNU), Streptozocin</td><td>CNS tumors (cross BBB), gliomas, melanoma, pancreatic islet</td></tr>
+<tr><td><strong>Alkyl Sulfonates</strong></td><td>Busulfan</td><td>CML, bone marrow ablation pre-BMT</td></tr>
+<tr><td><strong>Triazenes</strong></td><td>Dacarbazine, Temozolomide</td><td>Melanoma, Hodgkin's; Temozolomide for glioblastoma (Stupp protocol)</td></tr>
+<tr><td><strong>Platinum analogues</strong></td><td>Cisplatin, Carboplatin, Oxaliplatin</td><td>Testicular Ca (curative), ovarian, lung, colorectal, head &amp; neck</td></tr>
+<tr><td><strong>Aziridines</strong></td><td>Thiotepa, Mitomycin C</td><td>Bladder Ca (intravesical), stem cell transplant</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK</h4>
 <ul>
-<li><strong>Imatinib</strong> – BCR-ABL fusion in CML, PDGFR, c-KIT in GIST</li>
-<li><strong>Trastuzumab</strong> – HER2 in breast Ca; cardiotoxic (especially with anthracycline)</li>
-<li><strong>Rituximab</strong> – CD20 in NHL, CLL, ITP, RA</li>
-<li><strong>Bevacizumab</strong> – VEGF (anti-angiogenic); ADRs – HTN, proteinuria, GI perforation, impaired wound healing</li>
-</ul>`,
-  adr:`<h4>Drug-Specific Toxicities</h4>
-<table><tr><th>Drug</th><th>Hallmark Toxicity</th></tr>
-<tr><td>Doxorubicin</td><td>Cardiomyopathy (dose-related); Dexrazoxane is protective</td></tr>
-<tr><td>Bleomycin</td><td>Pulmonary fibrosis (cumulative dose 400 U)</td></tr>
-<tr><td>Cyclophosphamide</td><td>Haemorrhagic cystitis (Mesna), SIADH</td></tr>
-<tr><td>Cisplatin</td><td>Nephrotoxicity, ototoxicity, neuropathy, emesis</td></tr>
-<tr><td>Vincristine</td><td>Peripheral neuropathy</td></tr>
-<tr><td>Vinblastine</td><td>Myelosuppression</td></tr>
-<tr><td>Methotrexate</td><td>Hepatotoxicity, mucositis, BM suppression; rescue with leucovorin</td></tr>
-<tr><td>5-FU</td><td>Hand-foot syndrome, mucositis</td></tr>
-<tr><td>Imatinib</td><td>Fluid retention, ↑ liver enzymes</td></tr>
-<tr><td>Trastuzumab</td><td>Cardiotoxicity (reversible)</td></tr>
-<tr><td>Ipilimumab/Nivolumab</td><td>Immune-related AEs – colitis, pneumonitis, hypophysitis, hepatitis</td></tr></table>
-<h4>Tumour Lysis Syndrome</h4>
-<p>Hyperuricaemia, hyperK, hyperphosphataemia, hypoCa, AKI. Prophylaxis – hydration + allopurinol or rasburicase (high-risk).</p>`,
+<li><strong>Cyclophosphamide:</strong> Prodrug → activated by hepatic CYP450 → <em>phosphoramide mustard</em> (active) + <em>acrolein</em> (toxic — causes hemorrhagic cystitis). <em>Mesna</em> binds acrolein → bladder protection.</li>
+<li><strong>Cisplatin:</strong> Cross-links DNA via guanine N7. Excreted renally — requires hydration to prevent nephrotoxicity. <em>Amifostine</em> protects against renal toxicity.</li>
+<li><strong>Carboplatin:</strong> Cisplatin analog with less nephro/oto toxicity but more myelosuppression.</li>
+<li><strong>Oxaliplatin:</strong> Used in colon Ca (FOLFOX); <em>peripheral neuropathy</em> (cold-induced) is hallmark ADR.</li>
+<li><strong>Carmustine:</strong> Lipophilic → crosses BBB → DOC glioma (Gliadel wafer for direct delivery).</li>
+<li><strong>Busulfan:</strong> Used in CML; <em>pulmonary fibrosis</em> (busulfan lung) is distinctive late ADR.</li>
+<li><strong>Temozolomide:</strong> Oral; methylates O6 of guanine → cytotoxicity. Used with radiation in glioblastoma (Stupp protocol).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — DOC</h4>
+<table>
+<tr><th>Indication</th><th>DOC / Therapy</th></tr>
+<tr><td>Hodgkin lymphoma</td><td>ABVD (Doxorubicin + Bleomycin + Vinblastine + Dacarbazine)</td></tr>
+<tr><td>Non-Hodgkin lymphoma (DLBCL)</td><td>R-CHOP (Rituximab + Cyclophosphamide + Doxorubicin + Vincristine + Prednisolone)</td></tr>
+<tr><td>Acute Lymphoblastic Leukemia (ALL)</td><td>Cyclophosphamide-based combinations</td></tr>
+<tr><td>Multiple myeloma</td><td>Melphalan + Prednisolone + Thalidomide/Lenalidomide</td></tr>
+<tr><td>CLL</td><td>Chlorambucil + Obinutuzumab; BR (Bendamustine + Rituximab)</td></tr>
+<tr><td>Breast Ca (adjuvant)</td><td>AC-T (Doxorubicin + Cyclophosphamide → Paclitaxel)</td></tr>
+<tr><td>Testicular Ca (curable)</td><td><em>BEP</em> (Bleomycin + Etoposide + <em>Cisplatin</em>)</td></tr>
+<tr><td>Ovarian Ca</td><td>Carboplatin + Paclitaxel</td></tr>
+<tr><td>NSCLC</td><td>Cisplatin/Carboplatin + Pemetrexed (non-squamous) or Gemcitabine</td></tr>
+<tr><td>Colorectal Ca</td><td>FOLFOX (5-FU + Leucovorin + Oxaliplatin) or FOLFIRI</td></tr>
+<tr><td>Glioblastoma multiforme</td><td><em>Stupp protocol</em>: Temozolomide + Radiation (concurrent then adjuvant)</td></tr>
+<tr><td>Head &amp; Neck Ca</td><td>Cisplatin + Radiation</td></tr>
+<tr><td>Bladder Ca (intravesical)</td><td>Mitomycin C or BCG; newer Pembrolizumab</td></tr>
+<tr><td>SLE / Lupus nephritis (autoimmune)</td><td>Cyclophosphamide (NIH/Euro-Lupus protocol)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs (Class &amp; Drug-Specific)</h4>
+<ul>
+<li><strong>Common to all:</strong> Myelosuppression, mucositis, nausea/vomiting (highly emetogenic), alopecia, fertility issues, secondary malignancies (esp. AML 5-10 yrs later).</li>
+<li><strong>Cyclophosphamide:</strong> <em>Hemorrhagic cystitis (acrolein)</em> — prevent with hydration + Mesna; SIADH (high doses); cardiotoxicity (high doses).</li>
+<li><strong>Ifosfamide:</strong> Same as Cyclophosphamide + <em>encephalopathy</em> (chloroacetaldehyde) — treat with Methylene blue.</li>
+<li><strong>Cisplatin:</strong> <em>Nephrotoxicity</em> (DOC ADR — prevent with hydration + Amifostine), <em>ototoxicity</em>, <em>peripheral neuropathy</em>, severe emesis (use Aprepitant + 5HT3 + Dexa).</li>
+<li><strong>Carboplatin:</strong> More myelosuppression than Cisplatin; less nephro/oto/neuro toxicity.</li>
+<li><strong>Oxaliplatin:</strong> <em>Cold-induced peripheral neuropathy</em> (laryngopharyngeal dysesthesia).</li>
+<li><strong>Busulfan:</strong> <em>Pulmonary fibrosis</em> (Busulfan lung), <em>skin hyperpigmentation</em>.</li>
+<li><strong>Carmustine:</strong> Delayed myelosuppression (4-6 wks), <em>pulmonary fibrosis</em>, hepatotoxicity.</li>
+<li><strong>Temozolomide:</strong> Lymphopenia (PJP prophylaxis with TMP-SMX), nausea, fatigue.</li>
+<li><strong>Mechlorethamine:</strong> Vesicant — severe local injury if extravasation; antidote = Sodium thiosulfate.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Cautions</h4>
+<ul>
+<li>Pregnancy (all teratogenic — Cat D/X).</li>
+<li>Severe myelosuppression.</li>
+<li>Hypersensitivity.</li>
+<li>Cisplatin: pre-existing renal failure.</li>
+<li>Busulfan/Carmustine: pre-existing pulmonary fibrosis.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Cisplatin + Aminoglycosides/Loop diuretics</strong> → ↑ nephrotoxicity, ototoxicity.</li>
+<li><strong>Cyclophosphamide + Allopurinol</strong> → ↑ marrow suppression.</li>
+<li><strong>Methotrexate + NSAIDs/Sulfa</strong> → ↑ MTX toxicity.</li>
+<li><strong>Cisplatin + Phenytoin</strong> → ↓ Phenytoin levels (re-monitor).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 30-y-old male with germ cell testicular Ca, abdominal lymphadenopathy. Curative regimen?<br><strong>Answer:</strong> <em>BEP</em> (Bleomycin + Etoposide + Cisplatin × 3 cycles) — curative even in advanced disease. Monitor Cisplatin nephrotoxicity.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 65-y-old with high-grade glioblastoma. First-line therapy?<br><strong>Answer:</strong> <em>Stupp protocol</em> — Temozolomide + Radiation (concurrent × 6 weeks), then adjuvant Temozolomide × 6 cycles. Add PJP prophylaxis (TMP-SMX).</p></div>
+<div class="cblock"><p><strong>Case:</strong> 50-y-old on Cyclophosphamide develops hematuria. Mechanism &amp; prevention?<br><strong>Answer:</strong> <em>Acrolein-induced hemorrhagic cystitis</em>. Prevent: vigorous hydration + <em>Mesna</em> (binds acrolein in bladder).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Cyclophosphamide ADR</strong> = Hemorrhagic cystitis (acrolein); prevention = <em>Mesna + hydration</em></li>
+<li><strong>Ifosfamide encephalopathy</strong> = chloroacetaldehyde; treat with Methylene blue</li>
+<li><strong>Cisplatin ADRs</strong> = Nephrotoxicity (DOC), ototoxicity, peripheral neuropathy</li>
+<li><strong>Cisplatin emesis prevention</strong> = Aprepitant + 5HT3 antagonist + Dexamethasone</li>
+<li><strong>Carboplatin</strong> = More myelosuppression but less nephro/oto/neuro toxicity</li>
+<li><strong>Oxaliplatin</strong> = Cold-induced peripheral neuropathy + FOLFOX (colon Ca)</li>
+<li><strong>Busulfan</strong> = Pulmonary fibrosis (Busulfan lung); CML, BMT prep</li>
+<li><strong>Carmustine</strong> = Crosses BBB → CNS tumors; delayed marrow suppression</li>
+<li><strong>Temozolomide + Radiation</strong> = Stupp protocol for glioblastoma</li>
+<li><strong>Testicular Ca curative</strong> = BEP (Bleo + Etop + Cisplatin)</li>
+<li><strong>R-CHOP</strong> = DLBCL; <em>ABVD</em> = Hodgkin lymphoma</li>
+<li><strong>Mechlorethamine extravasation</strong> = vesicant; antidote Sodium thiosulfate</li>
+<li><strong>Cyclophosphamide non-onco</strong> = SLE/Lupus nephritis, autoimmune diseases</li>
+<li><strong>Secondary AML risk</strong> 5-10 yrs after alkylating agents</li>
+<li><strong>Pregnancy</strong> = all alkylating agents teratogenic (Cat D/X)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Bendamustine + Obinutuzumab</strong> — first-line CLL alternative to chemoimmunotherapy</li>
+<li><strong>Pembrolizumab + chemo</strong> — neoadjuvant for high-risk TNBC (KEYNOTE-522)</li>
+<li><strong>Atezolizumab + Bevacizumab + chemo</strong> — non-squamous NSCLC (IMpower150)</li>
+<li><strong>Trastuzumab deruxtecan (T-DXd)</strong> — HER2-low breast Ca (DESTINY-Breast04)</li>
+<li><strong>Carmustine wafer (Gliadel)</strong> + Temozolomide + Radiation — local + systemic glioma</li>
+<li><strong>Cisplatin alternatives</strong> with less ototoxicity in development</li>
+<li><strong>Mesna ODT</strong> oral formulation in hemorrhagic cystitis prevention</li>
+<li><strong>Hyperthermic intraperitoneal chemotherapy (HIPEC)</strong> — Cisplatin-based for peritoneal carcinomatosis</li>
+<li><strong>Nephroprotective strategies</strong> — Mannitol, N-acetylcysteine, Amifostine</li>
+<li><strong>Liposomal Doxorubicin (Doxil)</strong> + Carboplatin for recurrent ovarian Ca</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Cyclophosphamide ADR + protection — <em>Hemorrhagic cystitis; Mesna</em></li>
+<li><strong>INI-CET 2023</strong>: Cisplatin nephroprotection — <em>Vigorous hydration + Amifostine</em></li>
+<li><strong>NEET PG 2024</strong>: Stupp protocol for glioblastoma — <em>Temozolomide + Radiation</em></li>
+<li><strong>INI-CET 2024</strong>: Testicular germ cell Ca curative regimen — <em>BEP</em></li>
+<li><strong>NEET PG 2024</strong>: Hodgkin lymphoma regimen — <em>ABVD</em></li>
+<li><strong>FMGE 2024</strong>: Oxaliplatin ADR — <em>Cold-induced peripheral neuropathy</em></li>
+<li><strong>NEET PG 2025</strong>: Ifosfamide encephalopathy treatment — <em>Methylene blue</em></li>
+<li><strong>INI-CET 2024</strong>: Carmustine specific feature — <em>Crosses BBB (CNS tumors)</em></li>
+<li><strong>NEET PG 2023</strong>: Busulfan lung — <em>Pulmonary fibrosis</em></li>
+<li><strong>NEET PG 2025</strong>: Mechlorethamine extravasation antidote — <em>Sodium thiosulfate</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Alkylating Agents — Cyclophosphamide, Cisplatin, Temozolomide</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Alkylating Agents Pharmacology — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 2. ANTIMETABOLITES ═══════════ */
+    {id:"antimet",content:`<span id="sub-antimet-cancer" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🧬 2️⃣ ANTIMETABOLITES</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> S-phase (cell cycle specific) drugs that <em>structurally resemble natural metabolites</em> — folate, purines, pyrimidines — and competitively inhibit enzymes or get incorporated into DNA/RNA → block synthesis → apoptosis.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Mechanism / Use</th></tr>
+<tr><td><strong>Folate Antagonists</strong></td><td>Methotrexate (MTX), Pemetrexed, Pralatrexate, Trimetrexate</td><td>Inhibit DHFR → ↓ THF → ↓ DNA synth</td></tr>
+<tr><td><strong>Pyrimidine Antagonists</strong></td><td>5-Fluorouracil (5-FU), Capecitabine (oral 5-FU prodrug), Floxuridine</td><td>Inhibit TS → ↓ dTMP</td></tr>
+<tr><td></td><td>Cytarabine (Ara-C)</td><td>Inhibits DNA polymerase; AML mainstay</td></tr>
+<tr><td></td><td>Gemcitabine</td><td>Pancreatic Ca DOC; lung, breast, ovarian</td></tr>
+<tr><td><strong>Purine Antagonists</strong></td><td>6-Mercaptopurine (6-MP), 6-Thioguanine (6-TG)</td><td>ALL, AML, IBD (6-MP), maintenance chemo</td></tr>
+<tr><td></td><td>Fludarabine, Cladribine, Clofarabine, Pentostatin</td><td>CLL, Hairy cell leukemia</td></tr>
+<tr><td><strong>Ribonucleotide Reductase Inh</strong></td><td>Hydroxyurea</td><td>CML, sickle cell disease, polycythemia vera</td></tr>
+<tr><td><strong>Asparaginase</strong></td><td>L-Asparaginase, Pegaspargase</td><td>ALL (deprives leukemic cells of asparagine)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK</h4>
+<ul>
+<li><strong>Methotrexate (MTX):</strong> Competitive inhibitor of <em>dihydrofolate reductase (DHFR)</em> → blocks reduction of folate → tetrahydrofolate (THF) → ↓ purine + thymidylate synthesis. Excreted renally. <em>Leucovorin (folinic acid)</em> rescue restores THF after MTX in high-dose protocols (osteosarcoma).</li>
+<li><strong>5-FU:</strong> Converted to <em>FdUMP</em> → inhibits thymidylate synthase (TS) → ↓ dTMP → DNA damage. Also incorporated into RNA. <em>Capecitabine</em> = oral prodrug, converted to 5-FU in tumor cells (higher tumor selectivity).</li>
+<li><strong>Cytarabine (Ara-C):</strong> Converted to Ara-CTP → inhibits DNA polymerase. <em>S-phase specific</em>. Used in AML induction (7+3 regimen with Daunorubicin).</li>
+<li><strong>Gemcitabine:</strong> Cytidine analog; inhibits DNA synthesis. <em>DOC pancreatic Ca</em>.</li>
+<li><strong>6-MP:</strong> Activated by HGPRT to 6-thio-IMP → inhibits purine synthesis. Metabolized by <em>TPMT</em> — patients with TPMT deficiency get severe toxicity. <em>6-MP + Allopurinol</em> (xanthine oxidase block) → ↑ 6-MP levels (↓ dose 75%).</li>
+<li><strong>Hydroxyurea:</strong> Inhibits ribonucleotide reductase → ↓ dNTP. Also ↑ HbF synthesis in sickle cell → fewer crises.</li>
+<li><strong>Asparaginase:</strong> Hydrolyzes asparagine → leukemic cells (lacking asparagine synthetase) starve. <em>Lymphoblastic leukemia mainstay</em>.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — DOC</h4>
+<table>
+<tr><th>Indication</th><th>DOC / Therapy</th></tr>
+<tr><td>Acute Lymphoblastic Leukemia (ALL)</td><td>MTX + 6-MP + Vincristine + Pred + Asparaginase (BFM protocol)</td></tr>
+<tr><td>Acute Myeloid Leukemia (AML)</td><td>7+3 regimen: Cytarabine × 7 days + Daunorubicin × 3 days</td></tr>
+<tr><td>CNS lymphoma / Meningeal leukemia</td><td>Intrathecal MTX</td></tr>
+<tr><td>Osteosarcoma</td><td>High-dose MTX + Leucovorin rescue</td></tr>
+<tr><td>Choriocarcinoma</td><td>MTX (curative)</td></tr>
+<tr><td>Ectopic pregnancy</td><td>MTX 50 mg/m² IM single dose</td></tr>
+<tr><td>Rheumatoid arthritis</td><td>MTX 7.5-25 mg weekly + Folic acid 5 mg</td></tr>
+<tr><td>Psoriasis (moderate-severe)</td><td>MTX low dose; alternative to biologics</td></tr>
+<tr><td>Colorectal Ca</td><td>FOLFOX (5-FU + Leucovorin + Oxaliplatin)</td></tr>
+<tr><td>Pancreatic Ca</td><td>Gemcitabine ± nab-Paclitaxel; FOLFIRINOX for fit patients</td></tr>
+<tr><td>Breast Ca (adjuvant)</td><td>Cyclophosphamide + MTX + 5-FU (CMF) — older; AC-T modern</td></tr>
+<tr><td>Hairy Cell Leukemia</td><td>Cladribine (curative in ~80%)</td></tr>
+<tr><td>CLL</td><td>Fludarabine + Cyclophosphamide + Rituximab (FCR)</td></tr>
+<tr><td>Sickle Cell Disease</td><td>Hydroxyurea (↑ HbF, ↓ crises) + new: Voxelotor, Crizanlizumab</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs</h4>
+<ul>
+<li><strong>Methotrexate:</strong> Mucositis, hepatotoxicity, nephrotoxicity, marrow suppression, pulmonary fibrosis, teratogenic (Cat X). High dose → CNS (intrathecal). <em>Folate rescue with Leucovorin</em>.</li>
+<li><strong>5-FU:</strong> Mucositis, diarrhea, <em>hand-foot syndrome</em> (palmar-plantar erythrodysesthesia), cardiotoxicity (vasospasm); DPD-deficiency → severe toxicity.</li>
+<li><strong>Cytarabine:</strong> Cerebellar toxicity (high dose), conjunctivitis (eye drops needed), myelosuppression, fever syndrome.</li>
+<li><strong>Gemcitabine:</strong> Flu-like syndrome, marrow suppression, rare hemolytic uremic syndrome (HUS).</li>
+<li><strong>6-MP:</strong> Hepatotoxicity, marrow suppression — esp. TPMT-deficient; pancreatitis.</li>
+<li><strong>Hydroxyurea:</strong> Marrow suppression, megaloblastic anemia, skin pigmentation, hyperuricemia.</li>
+<li><strong>Asparaginase:</strong> Pancreatitis, hyperglycemia, hyperammonemia, ↓ clotting factors (thrombosis or bleeding), allergic reactions (use Pegaspargase if hypersensitive).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>MTX: pregnancy (Cat X), severe renal/hepatic dysfunction, severe alcoholism, blood dyscrasias.</li>
+<li>5-FU: DPD deficiency (severe toxicity).</li>
+<li>6-MP + Allopurinol: ↑ toxicity (decrease 6-MP dose by 75% or use Febuxostat).</li>
+<li>Asparaginase: prior pancreatitis, severe coagulopathy.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>MTX + NSAIDs/Sulfa/PPI</strong> → ↓ renal excretion → ↑ MTX toxicity.</li>
+<li><strong>MTX + Trimethoprim</strong> → additive folate antagonism → severe pancytopenia.</li>
+<li><strong>6-MP + Allopurinol</strong> → ↑ 6-MP (block xanthine oxidase).</li>
+<li><strong>5-FU + Warfarin</strong> → ↑ INR (CYP2C9 inhibition).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 10-y-old with ALL on maintenance chemo (MTX + 6-MP). Best DOC for joint pain in this patient: Allopurinol or Febuxostat?<br><strong>Answer:</strong> <em>Febuxostat</em> (avoid Allopurinol — blocks xanthine oxidase → ↑ 6-MP toxicity by 4×). Alternative: ↓ 6-MP dose by 75%.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 30-y-old with ectopic pregnancy, hCG 4000, no rupture. DOC?<br><strong>Answer:</strong> <em>Methotrexate 50 mg/m² IM single dose</em> (or 50 mg/m² day 1 &amp; 4). Monitor hCG weekly. Surgical option if hCG &gt; 5000 or fetal cardiac activity.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 60-y-old on Cytarabine for AML develops cerebellar ataxia, dysarthria. Cause?<br><strong>Answer:</strong> <em>Cytarabine cerebellar toxicity</em> (high-dose). Dose reduction; supportive care; usually reversible.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>MTX rescue</strong> = Leucovorin (folinic acid)</li>
+<li><strong>MTX toxicity ↑ with</strong> NSAIDs, Trimethoprim, Sulfa</li>
+<li><strong>MTX uses non-onco</strong> = RA, psoriasis, ectopic pregnancy, choriocarcinoma</li>
+<li><strong>5-FU hand-foot syndrome</strong> = palmar-plantar erythrodysesthesia</li>
+<li><strong>5-FU + DPD deficiency</strong> = severe toxicity (Uridine triacetate rescue)</li>
+<li><strong>Capecitabine</strong> = oral 5-FU prodrug; activated in tumor cells</li>
+<li><strong>Cytarabine</strong> = AML 7+3 regimen; cerebellar toxicity (high dose)</li>
+<li><strong>Gemcitabine</strong> = DOC pancreatic Ca</li>
+<li><strong>6-MP + Allopurinol</strong> → ↑ 6-MP 4×; use Febuxostat or ↓ dose</li>
+<li><strong>TPMT deficiency</strong> = severe 6-MP toxicity (test before therapy)</li>
+<li><strong>Hydroxyurea</strong> = sickle cell DOC (↑ HbF); CML, polycythemia</li>
+<li><strong>Asparaginase</strong> = ALL; ADRs = pancreatitis, hyperammonemia, thrombosis</li>
+<li><strong>Pegaspargase</strong> for hypersensitivity to L-asparaginase</li>
+<li><strong>High-dose MTX</strong> = osteosarcoma; require leucovorin rescue + alkalinization</li>
+<li><strong>Cladribine</strong> = Hairy Cell Leukemia (curative ~80%)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Voxelotor (Oxbryta)</strong> — sickle cell HbS polymerization inhibitor (FDA 2019)</li>
+<li><strong>Crizanlizumab</strong> — P-selectin inhibitor for sickle cell crisis prevention</li>
+<li><strong>Pemetrexed maintenance</strong> after platinum doublet in NSCLC</li>
+<li><strong>5-FU + DPYD genotype-guided dosing</strong> — reduce severe toxicity</li>
+<li><strong>FOLFIRINOX modified</strong> for borderline resectable pancreatic Ca</li>
+<li><strong>Liposomal Irinotecan</strong> (Onivyde) for pancreatic Ca</li>
+<li><strong>Cladribine</strong> — also approved for relapsing MS</li>
+<li><strong>Hydroxyurea in pediatric SCD</strong> — earlier initiation (≥ 9 months)</li>
+<li><strong>Pegaspargase + Calaspargase</strong> — longer-acting asparaginases for ALL</li>
+<li><strong>Uridine triacetate (Vistogard)</strong> — antidote for 5-FU/Capecitabine overdose</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: MTX rescue — <em>Leucovorin (folinic acid)</em></li>
+<li><strong>INI-CET 2023</strong>: 5-FU specific ADR — <em>Hand-foot syndrome</em></li>
+<li><strong>NEET PG 2024</strong>: Ectopic pregnancy DOC — <em>Methotrexate IM</em></li>
+<li><strong>INI-CET 2024</strong>: 6-MP + Allopurinol interaction — <em>↑ 6-MP toxicity (block xanthine oxidase)</em></li>
+<li><strong>NEET PG 2024</strong>: AML induction 7+3 = — <em>Cytarabine + Daunorubicin</em></li>
+<li><strong>FMGE 2024</strong>: Pancreatic Ca DOC — <em>Gemcitabine</em></li>
+<li><strong>NEET PG 2025</strong>: Sickle cell DOC + mechanism — <em>Hydroxyurea (↑ HbF)</em></li>
+<li><strong>INI-CET 2024</strong>: Asparaginase mechanism — <em>Depletes asparagine (lymphoblastic cells can't synthesize)</em></li>
+<li><strong>NEET PG 2023</strong>: Cytarabine cerebellar toxicity prevention — <em>Dose reduction</em></li>
+<li><strong>NEET PG 2025</strong>: 5-FU overdose antidote — <em>Uridine triacetate</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Antimetabolites — MTX, 5-FU, Cytarabine, Gemcitabine</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Antimetabolites Pharmacology — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 3. TARGETED THERAPY ═══════════ */
+    {id:"targeted",content:`<span id="sub-targeted-cancer" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🎯 3️⃣ TARGETED THERAPY</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs designed to <em>specifically target molecular abnormalities</em> in cancer cells (mutations, fusions, overexpressed receptors). Includes monoclonal antibodies (mAbs), tyrosine kinase inhibitors (TKIs), PARP inhibitors, CDK4/6 inhibitors, mTOR inhibitors, antibody-drug conjugates (ADCs). Marks the era of <em>precision oncology</em>.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Target / Use</th></tr>
+<tr><td><strong>Monoclonal Antibodies (mAbs)</strong></td><td></td><td></td></tr>
+<tr><td>HER2</td><td>Trastuzumab, Pertuzumab, Margetuximab</td><td>HER2+ breast Ca, gastric Ca</td></tr>
+<tr><td>EGFR</td><td>Cetuximab, Panitumumab, Necitumumab</td><td>CRC, head &amp; neck Ca; KRAS wild-type</td></tr>
+<tr><td>VEGF</td><td>Bevacizumab; Ramucirumab (VEGFR2)</td><td>CRC, NSCLC, GBM, RCC</td></tr>
+<tr><td>CD20</td><td>Rituximab, Obinutuzumab, Ofatumumab</td><td>NHL, CLL, RA</td></tr>
+<tr><td>CD52</td><td>Alemtuzumab</td><td>CLL, MS</td></tr>
+<tr><td>CD30</td><td>Brentuximab vedotin (ADC)</td><td>Hodgkin lymphoma</td></tr>
+<tr><td>CD38</td><td>Daratumumab</td><td>Multiple myeloma</td></tr>
+<tr><td>CCR4</td><td>Mogamulizumab</td><td>Cutaneous T-cell lymphoma</td></tr>
+<tr><td><strong>Tyrosine Kinase Inhibitors (TKIs)</strong></td><td></td><td></td></tr>
+<tr><td>BCR-ABL</td><td>Imatinib (1st gen), Dasatinib, Nilotinib, Bosutinib (2nd), Ponatinib (3rd, T315I)</td><td>CML, Ph+ ALL, GIST (Imatinib)</td></tr>
+<tr><td>EGFR (NSCLC)</td><td>Erlotinib, Gefitinib, Afatinib, Osimertinib (T790M)</td><td>EGFR-mutated NSCLC</td></tr>
+<tr><td>ALK / ROS1</td><td>Crizotinib, Alectinib, Brigatinib, Lorlatinib, Ceritinib</td><td>ALK/ROS1+ NSCLC</td></tr>
+<tr><td>BRAF/MEK</td><td>Vemurafenib, Dabrafenib + Trametinib, Cobimetinib, Encorafenib + Binimetinib</td><td>BRAF V600E melanoma, NSCLC</td></tr>
+<tr><td>RET</td><td>Selpercatinib, Pralsetinib (FDA 2020-21)</td><td>RET-fusion lung, thyroid Ca</td></tr>
+<tr><td>VEGFR</td><td>Sunitinib, Sorafenib, Pazopanib, Axitinib, Cabozantinib, Lenvatinib</td><td>RCC, HCC, thyroid, GIST</td></tr>
+<tr><td>KIT</td><td>Imatinib, Sunitinib, Regorafenib</td><td>GIST</td></tr>
+<tr><td>FLT3</td><td>Midostaurin, Gilteritinib</td><td>FLT3-mutated AML</td></tr>
+<tr><td>BTK</td><td>Ibrutinib, Acalabrutinib, Zanubrutinib</td><td>CLL, MCL, Waldenström's</td></tr>
+<tr><td>PI3K</td><td>Idelalisib, Copanlisib, Duvelisib</td><td>CLL, FL</td></tr>
+<tr><td>JAK1/2</td><td>Ruxolitinib, Fedratinib</td><td>Myelofibrosis, polycythemia vera</td></tr>
+<tr><td>BCL-2</td><td>Venetoclax</td><td>CLL, AML (with Azacitidine)</td></tr>
+<tr><td><strong>PARP Inhibitors</strong></td><td>Olaparib, Niraparib, Rucaparib, Talazoparib</td><td>BRCA+ ovarian, breast, prostate Ca</td></tr>
+<tr><td><strong>CDK4/6 Inhibitors</strong></td><td>Palbociclib, Ribociclib, Abemaciclib</td><td>HR+ breast Ca + endocrine therapy</td></tr>
+<tr><td><strong>mTOR Inhibitors</strong></td><td>Everolimus, Temsirolimus</td><td>RCC, breast Ca, neuroendocrine</td></tr>
+<tr><td><strong>Proteasome Inhibitors</strong></td><td>Bortezomib, Carfilzomib, Ixazomib</td><td>Multiple myeloma</td></tr>
+<tr><td><strong>HDAC Inhibitors</strong></td><td>Vorinostat, Romidepsin, Panobinostat</td><td>Cutaneous T-cell lymphoma, MM</td></tr>
+<tr><td><strong>Antibody-Drug Conjugates (ADCs)</strong></td><td>T-DM1, Trastuzumab deruxtecan (T-DXd), Sacituzumab govitecan, Brentuximab vedotin, Polatuzumab vedotin, Enfortumab vedotin</td><td>HER2+ breast, TNBC, lymphoma, urothelial</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — DOC by Mutation/Pathway</h4>
+<table>
+<tr><th>Cancer + Mutation</th><th>DOC</th></tr>
+<tr><td>CML (BCR-ABL+)</td><td>Imatinib 400 mg/day; T315I → Ponatinib</td></tr>
+<tr><td>HER2+ breast Ca</td><td>Trastuzumab + Pertuzumab + chemo; T-DM1 / T-DXd 2nd line</td></tr>
+<tr><td>HER2-low breast Ca</td><td><em>Trastuzumab deruxtecan</em> (T-DXd) — DESTINY-Breast04 (2022)</td></tr>
+<tr><td>Triple-negative breast Ca (TNBC)</td><td>Sacituzumab govitecan; PD-L1+ → Pembrolizumab + chemo</td></tr>
+<tr><td>EGFR-mutated NSCLC</td><td>Osimertinib (1st line all-comers including T790M)</td></tr>
+<tr><td>ALK+ NSCLC</td><td>Alectinib 1st line (preferred over Crizotinib)</td></tr>
+<tr><td>BRAF V600E melanoma</td><td>Dabrafenib + Trametinib (BRAF + MEK combo)</td></tr>
+<tr><td>BRCA+ ovarian Ca (maintenance)</td><td>Olaparib, Niraparib</td></tr>
+<tr><td>HR+ HER2- metastatic breast Ca</td><td>Aromatase inh + CDK4/6 (Palbociclib/Ribociclib/Abemaciclib)</td></tr>
+<tr><td>Multiple Myeloma</td><td>Bortezomib + Lenalidomide + Dexamethasone (VRd)</td></tr>
+<tr><td>CLL</td><td>Ibrutinib or Acalabrutinib (BTK); Venetoclax + Obinutuzumab</td></tr>
+<tr><td>Mantle Cell Lymphoma</td><td>Ibrutinib; Brexucabtagene CAR-T for relapsed</td></tr>
+<tr><td>FLT3+ AML</td><td>Midostaurin + 7+3; Gilteritinib (relapsed)</td></tr>
+<tr><td>GIST (KIT+)</td><td>Imatinib; resistance → Sunitinib, Regorafenib, Ripretinib</td></tr>
+<tr><td>RET-fusion lung/thyroid Ca</td><td>Selpercatinib, Pralsetinib</td></tr>
+<tr><td>HCC</td><td>Atezolizumab + Bevacizumab; Sorafenib, Lenvatinib (1st line)</td></tr>
+<tr><td>RCC</td><td>Pembrolizumab + Axitinib; Nivolumab + Cabozantinib; Sunitinib</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs</h4>
+<ul>
+<li><strong>Imatinib:</strong> Edema, muscle cramps, GI upset, fluid retention; rare cardiotoxicity.</li>
+<li><strong>Trastuzumab:</strong> <em>Cardiotoxicity</em> (LV dysfunction — monitor EF; reversible); infusion reactions.</li>
+<li><strong>Bevacizumab:</strong> Hypertension, proteinuria, bleeding, thrombosis, GI perforation, impaired wound healing.</li>
+<li><strong>Cetuximab/Panitumumab:</strong> Acneiform rash (correlates with response), hypomagnesemia, anaphylaxis (Cetuximab — alpha-gal allergy).</li>
+<li><strong>Rituximab:</strong> Infusion reactions, hepatitis B reactivation (screen first), PML, prolonged B-cell depletion → infections.</li>
+<li><strong>Erlotinib/Gefitinib:</strong> Acneiform rash, diarrhea, interstitial lung disease.</li>
+<li><strong>BRAF inhibitors:</strong> Cutaneous squamous cell Ca (secondary), photosensitivity, pyrexia.</li>
+<li><strong>VEGFR TKIs:</strong> Hypertension, hand-foot syndrome, hypothyroidism, fatigue.</li>
+<li><strong>Ibrutinib:</strong> <em>Atrial fibrillation</em>, bleeding (warfarin interaction), HTN, infections.</li>
+<li><strong>Venetoclax:</strong> <em>Tumor lysis syndrome</em> (TLS — high risk in CLL — ramp-up dosing + prophylaxis).</li>
+<li><strong>Olaparib:</strong> Fatigue, anemia, secondary MDS/AML risk (long-term).</li>
+<li><strong>Palbociclib:</strong> Neutropenia, fatigue, infections.</li>
+<li><strong>Bortezomib:</strong> Peripheral neuropathy (esp. IV — give SC instead), thrombocytopenia.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Special Cautions</h4>
+<ul>
+<li>Bevacizumab: Recent surgery (4 wks), uncontrolled HTN.</li>
+<li>Trastuzumab: LVEF &lt; 40%.</li>
+<li>Rituximab: HBV carrier (reactivation; antiviral prophylaxis).</li>
+<li>Ibrutinib + Warfarin: avoid (bleeding).</li>
+<li>Venetoclax: TLS risk → ramp-up dosing, hydration, Allopurinol.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 50-y-old female with HER2+ early breast Ca. Adjuvant treatment?<br><strong>Answer:</strong> <em>Trastuzumab + Chemo (TCHP)</em> × 1 year. Monitor LVEF (echo every 3 mo); stop if EF drops significantly.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 60-y-old with EGFR-mutated NSCLC (exon 19 deletion). 1st-line?<br><strong>Answer:</strong> <em>Osimertinib 80 mg/day</em> (FLAURA trial — superior over Erlotinib/Gefitinib; effective for T790M resistance).</p></div>
+<div class="cblock"><p><strong>Case:</strong> 55-y-old with CML (Ph+, BCR-ABL+). 1st-line + monitoring?<br><strong>Answer:</strong> <em>Imatinib 400 mg/day</em>. Monitor BCR-ABL transcript (qPCR) every 3 mo; major molecular response (MMR) at 12 mo.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Imatinib</strong> = CML revolution (1st line); also GIST, Ph+ ALL</li>
+<li><strong>T315I mutation</strong> = Ponatinib (only TKI active)</li>
+<li><strong>Trastuzumab</strong> = HER2+ breast Ca; cardiotoxicity (monitor LVEF)</li>
+<li><strong>T-DXd (Enhertu)</strong> = HER2-low breast Ca breakthrough (DESTINY-Breast04)</li>
+<li><strong>EGFR-mut NSCLC DOC</strong> = Osimertinib (FLAURA)</li>
+<li><strong>ALK+ NSCLC DOC</strong> = Alectinib 1st line (better than Crizotinib — ALEX)</li>
+<li><strong>BRAF V600E melanoma</strong> = Dabrafenib + Trametinib combo</li>
+<li><strong>BRCA+ ovarian maintenance</strong> = Olaparib (PARP inh)</li>
+<li><strong>HR+ HER2- metastatic breast Ca</strong> = AI + CDK4/6 inhibitor</li>
+<li><strong>Bevacizumab ADRs</strong> = HTN, proteinuria, bleeding, perforation</li>
+<li><strong>Cetuximab acneiform rash</strong> = correlates with response (good sign)</li>
+<li><strong>Rituximab + HBV</strong> = screen + antiviral prophylaxis</li>
+<li><strong>Ibrutinib ADR</strong> = atrial fibrillation, bleeding</li>
+<li><strong>Venetoclax</strong> = tumor lysis syndrome risk (ramp-up + prophylaxis)</li>
+<li><strong>Selpercatinib</strong> = RET-fusion lung/thyroid Ca (FDA 2020)</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Trastuzumab deruxtecan (T-DXd)</strong> — HER2-low metastatic breast Ca (FDA 2022)</li>
+<li><strong>Sotorasib (Lumakras)</strong> — first KRAS G12C inhibitor (FDA 2021)</li>
+<li><strong>Adagrasib (Krazati)</strong> — newer KRAS G12C inhibitor</li>
+<li><strong>Mobocertinib</strong> — EGFR exon 20 NSCLC</li>
+<li><strong>Margetuximab</strong> — HER2 mAb with Fc-engineering</li>
+<li><strong>Tucatinib + Trastuzumab + Capecitabine</strong> — HER2+ breast Ca with brain mets</li>
+<li><strong>Enfortumab vedotin + Pembrolizumab</strong> — urothelial Ca (FDA 2023)</li>
+<li><strong>Repotrectinib</strong> — NTRK/ROS1 (FDA 2023)</li>
+<li><strong>Pralsetinib, Selpercatinib</strong> — RET fusion solid tumors</li>
+<li><strong>Lutetium-177 PSMA-617 (Pluvicto)</strong> — metastatic prostate Ca</li>
+<li><strong>FDA Project ORBIS</strong> — accelerated targeted therapy approvals globally</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: CML 1st line — <em>Imatinib (BCR-ABL inh)</em></li>
+<li><strong>INI-CET 2023</strong>: T315I mutation CML treatment — <em>Ponatinib</em></li>
+<li><strong>NEET PG 2024</strong>: HER2-low breast Ca breakthrough (FDA 2022) — <em>Trastuzumab deruxtecan</em></li>
+<li><strong>INI-CET 2024</strong>: Trastuzumab major ADR — <em>Cardiotoxicity (↓ LVEF)</em></li>
+<li><strong>NEET PG 2024</strong>: BRCA+ ovarian maintenance — <em>Olaparib (PARP inhibitor)</em></li>
+<li><strong>FMGE 2024</strong>: KRAS G12C NSCLC drug (FDA 2021) — <em>Sotorasib</em></li>
+<li><strong>NEET PG 2025</strong>: ALK+ NSCLC 1st line (ALEX trial) — <em>Alectinib</em></li>
+<li><strong>INI-CET 2024</strong>: Ibrutinib ADR — <em>Atrial fibrillation, bleeding</em></li>
+<li><strong>NEET PG 2023</strong>: Venetoclax major risk — <em>Tumor lysis syndrome</em></li>
+<li><strong>NEET PG 2025</strong>: RET-fusion lung/thyroid drug — <em>Selpercatinib, Pralsetinib</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Targeted Therapy — Imatinib, Trastuzumab, Osimertinib, PARP</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Targeted Therapy Pharmacology — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 4. IMMUNOTHERAPY ═══════════ */
+    {id:"immuno",content:`<span id="sub-immuno-cancer" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">🛡️ 4️⃣ CANCER IMMUNOTHERAPY</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs/biologics that <em>harness host immune system</em> to destroy cancer cells. Includes immune checkpoint inhibitors (ICIs), CAR-T cells, bispecific T-cell engagers (BiTEs), oncolytic viruses, cancer vaccines, and cytokines. The biggest paradigm shift in oncology since 2010.</p>
+
+<h4>📋 Classification</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Target / Use</th></tr>
+<tr><td><strong>Immune Checkpoint Inhibitors (ICIs)</strong></td><td></td><td></td></tr>
+<tr><td>CTLA-4 inhibitors</td><td>Ipilimumab, Tremelimumab</td><td>Melanoma; combo regimens</td></tr>
+<tr><td>PD-1 inhibitors</td><td>Pembrolizumab, Nivolumab, Cemiplimab, Dostarlimab, Tislelizumab</td><td>Melanoma, NSCLC, RCC, HNSCC, Hodgkin's, MSI-H, urothelial</td></tr>
+<tr><td>PD-L1 inhibitors</td><td>Atezolizumab, Durvalumab, Avelumab</td><td>NSCLC, urothelial, TNBC, Merkel cell, SCLC</td></tr>
+<tr><td>LAG-3 inhibitor</td><td>Relatlimab (combo with Nivolumab)</td><td>Melanoma (FDA 2022)</td></tr>
+<tr><td>TIGIT inhibitor</td><td>Tiragolumab (investigational)</td><td>NSCLC trials</td></tr>
+<tr><td><strong>CAR-T Cell Therapy</strong></td><td></td><td></td></tr>
+<tr><td>CD19 CAR-T</td><td>Tisagenlecleucel (Kymriah), Axicabtagene (Yescarta), Brexucabtagene (Tecartus), Lisocabtagene</td><td>B-ALL, DLBCL, MCL, FL</td></tr>
+<tr><td>BCMA CAR-T</td><td>Idecabtagene vicleucel (Abecma), Ciltacabtagene autoleucel (Carvykti)</td><td>Multiple myeloma</td></tr>
+<tr><td><strong>Bispecific T-cell Engagers (BiTEs)</strong></td><td>Blinatumomab (CD19/CD3), Teclistamab (BCMA/CD3), Talquetamab (GPRC5D/CD3), Elranatamab (BCMA/CD3)</td><td>ALL, MM, lymphoma</td></tr>
+<tr><td><strong>Oncolytic Viruses</strong></td><td>Talimogene laherparepvec (T-VEC, FDA 2015)</td><td>Melanoma (intratumoral injection)</td></tr>
+<tr><td><strong>Cancer Vaccines</strong></td><td>Sipuleucel-T (Provenge — prostate Ca), HPV vaccines (cervical Ca prevention)</td><td>Therapeutic + preventive</td></tr>
+<tr><td><strong>Cytokines</strong></td><td>IL-2 (Aldesleukin), IFN-α, IFN-γ</td><td>Melanoma, RCC (historical)</td></tr>
+<tr><td><strong>Adoptive Cell Therapy</strong></td><td>TIL therapy (Lifileucel — FDA 2024 for melanoma), NK cell therapy</td><td>Solid tumors</td></tr>
+<tr><td><strong>Newer Antibody-Cytokine Conjugates</strong></td><td>Bispecific NK engagers, IL-12/IL-15 immunocytokines</td><td>Phase 1/2</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚙️ Mechanism &amp; PK</h4>
+<ul>
+<li><strong>CTLA-4 inhibitor (Ipilimumab):</strong> Blocks CTLA-4 receptor on T-cells → ↑ T-cell activation in lymph nodes (priming phase). Combo with PD-1 = synergistic in melanoma (CheckMate-067).</li>
+<li><strong>PD-1 inhibitors:</strong> Block PD-1 on T-cells → prevents cancer cell PD-L1 from inactivating T-cells → restore tumor killing. Active in many solid tumors.</li>
+<li><strong>PD-L1 inhibitors:</strong> Block PD-L1 on cancer cells (instead of T-cell side). Similar effect.</li>
+<li><strong>CAR-T cells:</strong> Patient's T-cells genetically engineered to express chimeric antigen receptor (CAR) → recognize specific tumor antigen (CD19, BCMA). Infused back. <em>Living drug</em> — proliferates in vivo.</li>
+<li><strong>BiTEs (Blinatumomab):</strong> Bispecific Ab — one arm binds CD19 (tumor), other binds CD3 (T-cell) → engages T-cell to kill tumor cell. Continuous IV infusion.</li>
+<li><strong>T-VEC:</strong> Modified HSV-1 that replicates in melanoma cells → cell lysis + GM-CSF release → local + abscopal immune response.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — DOC</h4>
+<table>
+<tr><th>Indication</th><th>DOC / Therapy</th></tr>
+<tr><td>Metastatic melanoma</td><td>Nivolumab + Ipilimumab combo or Nivolumab + Relatlimab</td></tr>
+<tr><td>NSCLC (PD-L1 high)</td><td>Pembrolizumab monotherapy</td></tr>
+<tr><td>NSCLC (any PD-L1)</td><td>Pembrolizumab + chemo (KEYNOTE-189)</td></tr>
+<tr><td>Renal cell carcinoma</td><td>Pembrolizumab + Axitinib; Nivolumab + Cabozantinib</td></tr>
+<tr><td>Head and neck SCC (R/R)</td><td>Pembrolizumab</td></tr>
+<tr><td>Hodgkin lymphoma (relapsed)</td><td>Nivolumab or Pembrolizumab</td></tr>
+<tr><td>MSI-H / dMMR tumors (any site)</td><td>Pembrolizumab (tissue-agnostic approval)</td></tr>
+<tr><td>Urothelial Ca</td><td>Pembrolizumab, Atezolizumab; Enfortumab vedotin + Pembrolizumab (EV-302)</td></tr>
+<tr><td>TNBC (PD-L1+)</td><td>Pembrolizumab + chemo (KEYNOTE-522 neoadjuvant)</td></tr>
+<tr><td>R/R B-ALL (children/young adults)</td><td>Tisagenlecleucel (CAR-T)</td></tr>
+<tr><td>R/R DLBCL (2nd-line+)</td><td>Axicabtagene CAR-T; Lisocabtagene</td></tr>
+<tr><td>R/R Multiple Myeloma</td><td>Idecabtagene, Ciltacabtagene CAR-T; Teclistamab BiTE</td></tr>
+<tr><td>Localized melanoma</td><td>T-VEC intratumoral injection (alternative)</td></tr>
+<tr><td>Metastatic prostate Ca</td><td>Sipuleucel-T (limited use)</td></tr>
+<tr><td>Hepatocellular carcinoma</td><td>Atezolizumab + Bevacizumab (IMbrave150)</td></tr>
+<tr><td>SCLC (extensive stage)</td><td>Atezolizumab + carboplatin/etoposide (IMpower133)</td></tr>
+<tr><td>Adjuvant melanoma stage III</td><td>Pembrolizumab or Nivolumab × 1 year</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ Immune-Related Adverse Events (irAEs)</h4>
+<ul>
+<li><strong>Skin:</strong> Rash, pruritus, vitiligo, severe (SJS/TEN rare).</li>
+<li><strong>GI:</strong> <em>Colitis</em> (Ipilimumab &gt; PD-1; can perforate; treat with steroids, Infliximab if refractory), hepatitis.</li>
+<li><strong>Endocrine:</strong> <em>Thyroiditis</em> (hypothyroidism most common — give Levothyroxine), hypophysitis (Ipi), adrenal insufficiency, T1DM (rare but acute).</li>
+<li><strong>Pulmonary:</strong> <em>Pneumonitis</em> (1-4% PD-1; 8% combo) — hold ICI, give steroids; can be fatal.</li>
+<li><strong>Renal:</strong> Interstitial nephritis (rare).</li>
+<li><strong>Cardiac:</strong> <em>Myocarditis</em> (rare but high mortality — early diagnosis with troponin + steroids).</li>
+<li><strong>Neuro:</strong> Myasthenic syndrome, Guillain-Barré, encephalitis.</li>
+<li><strong>Rheumatic:</strong> Arthralgia, polymyalgia rheumatica.</li>
+<li><strong>Management:</strong> Mild → continue + symptomatic; moderate → hold + steroids; severe → permanent discontinuation + high-dose steroids ± biologics (Infliximab, Mycophenolate, Tocilizumab).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⚠️ CAR-T &amp; BiTE Toxicities</h4>
+<ul>
+<li><strong>Cytokine Release Syndrome (CRS):</strong> Fever, hypotension, hypoxia. Treatment = <em>Tocilizumab (IL-6 antagonist)</em> + supportive care; severe → ICU + corticosteroids.</li>
+<li><strong>Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS):</strong> Confusion, aphasia, seizures, cerebral edema. Treatment = corticosteroids (Tocilizumab does NOT cross BBB).</li>
+<li><strong>Prolonged cytopenias:</strong> Months after CAR-T.</li>
+<li><strong>B-cell aplasia + hypogammaglobulinemia:</strong> With CD19 CAR-T → IVIG replacement.</li>
+<li><strong>Tumor lysis syndrome:</strong> Rapid tumor lysis — prophylaxis with Allopurinol/Rasburicase + hydration.</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications</h4>
+<ul>
+<li>Active autoimmune disease (relative — case-by-case).</li>
+<li>Organ transplant (rejection risk).</li>
+<li>Active TB / chronic HBV/HCV (treat first).</li>
+<li>Pregnancy (limited data).</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 60-y-old on Pembrolizumab develops watery diarrhea 8×/day with abdominal pain 4 weeks into therapy. Diagnosis &amp; management?<br><strong>Answer:</strong> <em>Immune-mediated colitis (irAE)</em>. Hold Pembrolizumab + start <em>methylprednisolone 1-2 mg/kg IV</em>. If no improvement in 3 days → add <em>Infliximab 5 mg/kg IV</em>. Rule out infectious causes (CDI, CMV).</p></div>
+<div class="cblock"><p><strong>Case:</strong> Child with R/R B-ALL receives Tisagenlecleucel CAR-T. Day 5 — fever 39.5°C, BP 80/50. Diagnosis &amp; treatment?<br><strong>Answer:</strong> <em>Cytokine Release Syndrome (CRS) Grade 3</em>. Treat with <em>Tocilizumab 8 mg/kg IV</em> + supportive care (fluids, vasopressors if needed); severe → ICU. Add corticosteroids if Toci insufficient.</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>PD-1 inhibitors</strong> — Pembrolizumab, Nivolumab, Cemiplimab</li>
+<li><strong>PD-L1 inhibitors</strong> — Atezolizumab, Durvalumab, Avelumab</li>
+<li><strong>CTLA-4 inhibitor</strong> — Ipilimumab (most colitis)</li>
+<li><strong>Pembrolizumab MSI-H tissue-agnostic approval</strong> — any cancer with MSI-H/dMMR</li>
+<li><strong>Combo: Nivo + Ipi</strong> — synergy in melanoma; more irAEs</li>
+<li><strong>irAE management:</strong> Mild = continue; moderate = hold + steroids; severe = stop + high-dose steroids ± Infliximab</li>
+<li><strong>Most common irAE</strong> = Thyroid (treat with Levothyroxine)</li>
+<li><strong>Fatal irAE</strong> = Myocarditis (rare but high mortality)</li>
+<li><strong>CAR-T for B-ALL</strong> = Tisagenlecleucel (Kymriah, 2017)</li>
+<li><strong>CAR-T toxicity DOC</strong> = Tocilizumab (CRS); steroids for ICANS</li>
+<li><strong>BiTE for ALL</strong> = Blinatumomab (CD19/CD3)</li>
+<li><strong>BCMA CAR-T</strong> = Idecabtagene, Ciltacabtagene (multiple myeloma)</li>
+<li><strong>Hodgkin's relapsed</strong> = Brentuximab vedotin or Pembrolizumab/Nivolumab</li>
+<li><strong>T-VEC</strong> = oncolytic HSV-1 for melanoma (intratumoral)</li>
+<li><strong>Sipuleucel-T</strong> = autologous DC vaccine for prostate Ca</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Lifileucel (Amtagvi)</strong> — first FDA-approved TIL therapy for melanoma (Feb 2024)</li>
+<li><strong>Talquetamab</strong> — BiTE (GPRC5D × CD3) for multiple myeloma (FDA 2023)</li>
+<li><strong>Elranatamab</strong> — BCMA × CD3 BiTE for MM (FDA 2023)</li>
+<li><strong>Enfortumab vedotin + Pembrolizumab</strong> — urothelial Ca 1st line (EV-302, FDA 2023)</li>
+<li><strong>Toripalimab</strong> — first PD-1 inh for NPC (FDA 2023)</li>
+<li><strong>Retifanlimab</strong> — Merkel cell carcinoma (FDA 2023)</li>
+<li><strong>Tislelizumab</strong> — esophageal SCC (FDA 2024)</li>
+<li><strong>Cosibelimab</strong> — cutaneous SCC (FDA 2024)</li>
+<li><strong>Ide-cel &amp; Cilta-cel earlier lines</strong> in MM (KarMMa-3, CARTITUDE-4)</li>
+<li><strong>Allogeneic "off-the-shelf" CAR-T</strong> — investigational (no need patient-specific manufacturing)</li>
+<li><strong>Bispecific PD-1 × VEGF antibodies</strong> — investigational</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: PD-1 inhibitors examples — <em>Pembrolizumab, Nivolumab</em></li>
+<li><strong>INI-CET 2023</strong>: CTLA-4 inhibitor for melanoma — <em>Ipilimumab</em></li>
+<li><strong>NEET PG 2024</strong>: CAR-T for B-ALL (FDA 2017) — <em>Tisagenlecleucel</em></li>
+<li><strong>INI-CET 2024</strong>: CRS DOC — <em>Tocilizumab (IL-6 antagonist)</em></li>
+<li><strong>NEET PG 2024</strong>: irAE most common — <em>Thyroiditis (hypothyroidism — Levothyroxine)</em></li>
+<li><strong>FMGE 2024</strong>: First TIL therapy (FDA 2024) for melanoma — <em>Lifileucel</em></li>
+<li><strong>NEET PG 2025</strong>: BCMA CAR-T for MM — <em>Idecabtagene, Ciltacabtagene</em></li>
+<li><strong>INI-CET 2024</strong>: Pembrolizumab MSI-H tissue-agnostic — any cancer with — <em>Microsatellite instability-high</em></li>
+<li><strong>NEET PG 2023</strong>: T-VEC mechanism — <em>Oncolytic HSV-1 in melanoma</em></li>
+<li><strong>NEET PG 2025</strong>: BiTE for ALL — <em>Blinatumomab (CD19/CD3)</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Cancer Immunotherapy — ICIs, CAR-T, BiTEs</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Cancer Immunotherapy Pharmacology — by Dr. Susheel Kumar"</em></p>
+</div>`},
+
+    /* ═══════════ 5. HORMONAL THERAPY ═══════════ */
+    {id:"hormonal",content:`<span id="sub-hormonal-cancer" style="display:block;height:1px;"></span>
+<h4 style="margin-top:18px;text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));padding:14px;color:white;border-radius:12px;font-size:16px;">⚖️ 5️⃣ HORMONAL THERAPY IN CANCER</h4>
+
+<p style="margin-top:14px;"><strong>Definition:</strong> Drugs that block or deplete hormone-dependent cancer cell growth signals. Mainstays of treatment for <em>hormone receptor positive breast cancer, prostate cancer, endometrial cancer, and certain neuroendocrine tumors</em>.</p>
+
+<h4>📋 Classification — Breast Cancer</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Use</th></tr>
+<tr><td><strong>SERMs</strong></td><td>Tamoxifen, Toremifene</td><td>Pre &amp; post-menopausal HR+ breast Ca</td></tr>
+<tr><td><strong>Aromatase Inhibitors (AI)</strong></td><td>Letrozole, Anastrozole (non-steroidal); Exemestane (steroidal)</td><td>Post-menopausal HR+ breast Ca</td></tr>
+<tr><td><strong>SERDs (ER Degraders)</strong></td><td>Fulvestrant (IM); Elacestrant (oral, FDA 2023 for ESR1-mutant)</td><td>Metastatic HR+ breast Ca</td></tr>
+<tr><td><strong>GnRH agonists (ovarian suppression)</strong></td><td>Goserelin, Leuprolide</td><td>Pre-menopausal HR+ breast Ca (with AI/Tam)</td></tr>
+<tr><td><strong>CDK4/6 Inhibitors</strong></td><td>Palbociclib, Ribociclib, Abemaciclib (added to endocrine)</td><td>HR+ HER2- metastatic breast Ca</td></tr>
+<tr><td><strong>PI3K inhibitor</strong></td><td>Alpelisib (PIK3CA-mutant)</td><td>HR+ HER2- breast Ca (with Fulvestrant)</td></tr>
+<tr><td><strong>mTOR inhibitor</strong></td><td>Everolimus + Exemestane</td><td>HR+ HER2- breast Ca (after AI progression)</td></tr>
+</table>
+
+<h4>📋 Classification — Prostate Cancer</h4>
+<table>
+<tr><th>Class</th><th>Drugs</th><th>Use</th></tr>
+<tr><td><strong>GnRH agonists</strong></td><td>Leuprolide, Goserelin, Triptorelin, Histrelin</td><td>Hormone-sensitive PCa (with antiandrogen for flare)</td></tr>
+<tr><td><strong>GnRH antagonists</strong></td><td>Degarelix (IM), Relugolix (oral, FDA 2020 — first oral)</td><td>Hormone-sensitive PCa (no flare)</td></tr>
+<tr><td><strong>1st gen Antiandrogens</strong></td><td>Flutamide, Bicalutamide, Nilutamide</td><td>Flare protection with GnRH agonist</td></tr>
+<tr><td><strong>2nd gen Antiandrogens</strong></td><td>Enzalutamide, Apalutamide, Darolutamide</td><td>Castration-resistant prostate Ca (CRPC)</td></tr>
+<tr><td><strong>CYP17 Inhibitor</strong></td><td>Abiraterone (+ Prednisone)</td><td>CRPC; metastatic hormone-sensitive PCa</td></tr>
+<tr><td><strong>PARP Inhibitors</strong></td><td>Olaparib, Rucaparib (HRR-mutant CRPC)</td><td>BRCA+/HRR+ CRPC</td></tr>
+<tr><td><strong>Radioligand Therapy</strong></td><td>Lutetium-177 PSMA-617 (Pluvicto, FDA 2022)</td><td>PSMA+ metastatic CRPC</td></tr>
+<tr><td><strong>Chemo (CRPC)</strong></td><td>Docetaxel, Cabazitaxel</td><td>Metastatic CRPC</td></tr>
+<tr><td><strong>Bone-targeted</strong></td><td>Zoledronic acid, Denosumab</td><td>Skeletal-related events prevention</td></tr>
+<tr><td><strong>Radium-223</strong></td><td>Xofigo</td><td>Bone-only CRPC</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">🩺 Clinical Uses — DOC</h4>
+<table>
+<tr><th>Indication</th><th>DOC</th></tr>
+<tr><td>Pre-menopausal HR+ breast Ca (adjuvant)</td><td>Tamoxifen 20 mg/day × 5-10 years</td></tr>
+<tr><td>Pre-menopausal HR+ high-risk</td><td>Tamoxifen or AI + Ovarian suppression (Goserelin)</td></tr>
+<tr><td>Post-menopausal HR+ breast Ca (adjuvant)</td><td>AI (Letrozole/Anastrozole) × 5-10 years</td></tr>
+<tr><td>HR+ HER2- metastatic 1st line</td><td>AI + CDK4/6 inhibitor (Palbo/Ribo/Abemaciclib)</td></tr>
+<tr><td>HR+ HER2- metastatic (post-AI)</td><td>Fulvestrant + CDK4/6 or Alpelisib (PIK3CA-mut) or Elacestrant (ESR1-mut)</td></tr>
+<tr><td>HR+ HER2- metastatic + BRCA+</td><td>Olaparib or Talazoparib (PARP inhibitors)</td></tr>
+<tr><td>Hormone-sensitive prostate Ca (localized)</td><td>Surveillance OR Radical prostatectomy OR Radiation</td></tr>
+<tr><td>Locally advanced PCa</td><td>Radiation + GnRH agonist (2-3 yrs)</td></tr>
+<tr><td>Metastatic hormone-sensitive PCa</td><td>GnRH agonist + Apalutamide/Enzalutamide/Abiraterone + Docetaxel</td></tr>
+<tr><td>Castration-resistant PCa</td><td>Enzalutamide/Apalutamide/Abiraterone</td></tr>
+<tr><td>HRR-mutant CRPC</td><td>Olaparib, Rucaparib (PARP inhibitor)</td></tr>
+<tr><td>PSMA+ metastatic CRPC</td><td>Lutetium-177 PSMA-617</td></tr>
+<tr><td>Endometrial Ca (advanced)</td><td>Megestrol acetate, Medroxyprogesterone</td></tr>
+<tr><td>Carcinoid syndrome / Neuroendocrine</td><td>Octreotide, Lanreotide (somatostatin analogues)</td></tr>
+</table>
+
+<h4 style="margin-top:14px;">⚠️ ADRs</h4>
+<ul>
+<li><strong>Tamoxifen:</strong> Hot flashes, ↑ <em>endometrial Ca</em>, ↑ VTE/stroke, cataracts, fatty liver, vaginal discharge. Acts as agonist on endometrium (downside) but antagonist on breast (upside).</li>
+<li><strong>Aromatase Inhibitors:</strong> Hot flashes, <em>osteoporosis</em> (no estrogen — add bisphosphonate/Denosumab), arthralgia, ↑ cholesterol, ↓ libido.</li>
+<li><strong>Fulvestrant:</strong> Injection site reactions, hot flashes, nausea.</li>
+<li><strong>Goserelin/Leuprolide:</strong> Initial flare (block with antiandrogen in PCa), hot flashes, ↓ bone density, sexual dysfunction.</li>
+<li><strong>Bicalutamide/Flutamide:</strong> Gynecomastia (give Tamoxifen prophylaxis), hot flashes, liver toxicity.</li>
+<li><strong>Enzalutamide:</strong> Hot flashes, fatigue, falls, hypertension, seizure risk (rare).</li>
+<li><strong>Abiraterone:</strong> Hypertension, hypokalemia (mineralocorticoid excess), edema, hepatotoxicity. <em>Give with low-dose Prednisone</em>.</li>
+<li><strong>Palbociclib/CDK4/6:</strong> Neutropenia (most common), fatigue, diarrhea, hepatotoxicity (Abemaciclib).</li>
+<li><strong>Alpelisib:</strong> Hyperglycemia, rash, diarrhea (need PIK3CA testing first).</li>
+<li><strong>Olaparib:</strong> Fatigue, anemia, nausea, secondary MDS/AML (long-term).</li>
+</ul>
+
+<h4 style="margin-top:14px;">⛔ Contraindications &amp; Special Cautions</h4>
+<ul>
+<li>Tamoxifen + Warfarin: ↑ INR (use cautiously).</li>
+<li>Tamoxifen in pregnancy: Cat D (teratogenic).</li>
+<li>Aromatase inhibitors in pre-menopausal women: ineffective unless ovarian suppression.</li>
+<li>Abiraterone in HF: hypokalemia + edema risk.</li>
+<li>Enzalutamide in seizure history.</li>
+<li>Olaparib + CYP3A4 inhibitors: ↑ levels.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🔄 Drug Interactions</h4>
+<ul>
+<li><strong>Tamoxifen + CYP2D6 inhibitors</strong> (Paroxetine, Fluoxetine, Quinidine) → ↓ conversion to active endoxifen → ↓ efficacy. Use Venlafaxine/Citalopram instead.</li>
+<li><strong>Anastrozole/Letrozole + Tamoxifen</strong> → ↓ AI levels.</li>
+<li><strong>Enzalutamide</strong> = strong CYP3A4 inducer → ↓ Warfarin, oral contraceptives.</li>
+<li><strong>Abiraterone + spironolactone</strong> → mineralocorticoid antagonism.</li>
+</ul>
+
+<h4 style="margin-top:14px;">🩺 Case-Based Insights</h4>
+<div class="cblock"><p><strong>Case:</strong> 60-y-old post-menopausal woman with HR+ HER2- metastatic breast Ca to bone &amp; liver. 1st-line therapy?<br><strong>Answer:</strong> <em>Letrozole + Palbociclib</em> (or Ribociclib/Abemaciclib). + Bisphosphonate/Denosumab for bone protection.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 70-y-old with metastatic CRPC, PSA rising, ECOG 1, HRR mutation+. Treatment?<br><strong>Answer:</strong> <em>Olaparib 300 mg BID</em> (PROfound trial); alternative — Enzalutamide, Abiraterone + Pred, or Lu-177 PSMA-617 if PSMA+.</p></div>
+<div class="cblock"><p><strong>Case:</strong> 45-y-old pre-menopausal woman with high-risk HR+ HER2- breast Ca. Adjuvant therapy?<br><strong>Answer:</strong> <em>AI (Letrozole) + Ovarian suppression (Goserelin)</em> × 5-10 years; alternative — Tamoxifen + Goserelin (SOFT/TEXT trials).</p></div>
+
+<div class="boxes-header">💡 Quick Reference Boxes — Clinical · Exams · YouTube</div>
+
+<div class="info-box pearl-box">
+<h4>📌 Clinical Pearls</h4>
+<ul>
+<li><strong>Pre-menopausal HR+ breast Ca</strong> = Tamoxifen 1st line (± ovarian suppression for high risk)</li>
+<li><strong>Post-menopausal HR+ breast Ca</strong> = Aromatase Inhibitor (AI)</li>
+<li><strong>Metastatic HR+ HER2-</strong> = AI + CDK4/6 inhibitor</li>
+<li><strong>Elacestrant</strong> = first oral SERD (FDA 2023, ESR1-mutant)</li>
+<li><strong>Tamoxifen</strong> = SERM; agonist endometrium (↑ endometrial Ca), antagonist breast</li>
+<li><strong>AI ADRs</strong> = osteoporosis, arthralgia, ↑ cholesterol</li>
+<li><strong>Hormone-sensitive PCa</strong> = GnRH agonist + Apalutamide/Enzalutamide/Abiraterone + Docetaxel</li>
+<li><strong>GnRH agonist flare</strong> = block with Bicalutamide × 2 wks</li>
+<li><strong>Castration-resistant PCa</strong> = Enzalutamide / Apalutamide / Abiraterone</li>
+<li><strong>HRR-mutant CRPC</strong> = Olaparib (PROfound)</li>
+<li><strong>PSMA+ metastatic CRPC</strong> = Lutetium-177 PSMA-617</li>
+<li><strong>Relugolix oral</strong> = first oral GnRH antagonist for PCa</li>
+<li><strong>Abiraterone</strong> = CYP17 inh; give with Prednisone (mineralocorticoid excess)</li>
+<li><strong>Tamoxifen + Paroxetine</strong> = AVOID (↓ CYP2D6 conversion); use Venlafaxine</li>
+<li><strong>Bone protection</strong> = Bisphosphonate or Denosumab in PCa/breast Ca on hormonal therapy</li>
+</ul>
+</div>
+
+<div class="info-box recent-box">
+<h4>🆕 Recent Advances (2023–2025)</h4>
+<ul>
+<li><strong>Elacestrant</strong> — first oral SERD (FDA 2023, ESR1-mutant HR+ breast Ca)</li>
+<li><strong>Camizestrant, Imlunestrant</strong> — newer oral SERDs (Phase 3)</li>
+<li><strong>Capivasertib</strong> — AKT inhibitor for HR+ HER2- breast Ca with PIK3CA/AKT1/PTEN alterations (FDA 2023)</li>
+<li><strong>Inavolisib</strong> — PI3Kα inhibitor (FDA 2024) for HR+ HER2- breast Ca</li>
+<li><strong>Lutetium-177 PSMA-617 (Pluvicto)</strong> — metastatic CRPC (FDA 2022)</li>
+<li><strong>Talazoparib + Enzalutamide</strong> — metastatic CRPC (FDA 2023)</li>
+<li><strong>Niraparib + Abiraterone</strong> — BRCA+ metastatic CRPC</li>
+<li><strong>Darolutamide + ADT + Docetaxel</strong> — metastatic hormone-sensitive PCa (ARASENS)</li>
+<li><strong>Relugolix combination</strong> with Estradiol+ Norethindrone — fibroids, endometriosis</li>
+<li><strong>Abemaciclib adjuvant</strong> for high-risk HR+ HER2- early breast Ca (monarchE)</li>
+</ul>
+</div>
+
+<div class="info-box pyq-box">
+<h4>🔬 NEET PG / INI-CET PYQs (2023–2025)</h4>
+<ul>
+<li><strong>NEET PG 2023</strong>: Pre-menopausal HR+ breast Ca adjuvant DOC — <em>Tamoxifen</em></li>
+<li><strong>INI-CET 2023</strong>: Post-menopausal HR+ breast Ca adjuvant DOC — <em>Aromatase inhibitor (Letrozole/Anastrozole)</em></li>
+<li><strong>NEET PG 2024</strong>: First oral SERD (FDA 2023) — <em>Elacestrant</em></li>
+<li><strong>INI-CET 2024</strong>: Castration-resistant PCa drugs — <em>Enzalutamide, Apalutamide, Abiraterone</em></li>
+<li><strong>NEET PG 2024</strong>: HR+ HER2- metastatic 1st-line addition — <em>CDK4/6 inhibitor + AI</em></li>
+<li><strong>FMGE 2024</strong>: GnRH agonist flare protection in PCa — <em>Bicalutamide × 2 wks</em></li>
+<li><strong>NEET PG 2025</strong>: PSMA-targeted radioligand for PCa — <em>Lutetium-177 PSMA-617</em></li>
+<li><strong>INI-CET 2024</strong>: HRR-mutant CRPC PARP inh — <em>Olaparib (PROfound)</em></li>
+<li><strong>NEET PG 2023</strong>: Tamoxifen + which SSRI is AVOIDED — <em>Paroxetine (CYP2D6 inhibitor)</em></li>
+<li><strong>NEET PG 2025</strong>: First oral GnRH antagonist PCa (FDA 2020) — <em>Relugolix</em></li>
+</ul>
+</div>
+
+<div class="info-box youtube-box">
+<h4>🎥 Watch Detailed Animated Lecture on YouTube</h4>
+<p>For complete animated explanation of <strong>Hormonal Therapy in Cancer — Breast &amp; Prostate</strong>:</p>
+<a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" class="yt-btn">▶ Visit Dr. Susheel Kumar's Channel</a>
+<p style="margin-top:10px;font-size:11px;color:#991b1b;">🔍 Search: <em>"Hormonal Therapy in Cancer — by Dr. Susheel Kumar"</em></p>
+</div>`}
+  ],
   drugs:[
-    {n:"Cyclophosphamide",c:"Alkylator",u:"Lymphoma, breast Ca, autoimmune (SLE, vasculitis); haemorrhagic cystitis"},
-    {n:"Cisplatin",c:"Platinum",u:"Solid tumours – testicular, ovarian, bladder; nephro/oto-toxic"},
-    {n:"Methotrexate",c:"DHFR inhibitor",u:"ALL, choriocarcinoma, RA, psoriasis, ectopic pregnancy"},
-    {n:"5-Fluorouracil",c:"Thymidylate synthase inhibitor",u:"Colorectal, breast, GI cancers"},
-    {n:"Doxorubicin",c:"Anthracycline",u:"Breast, lymphoma, sarcoma; lifetime dose &lt; 550 mg/m²"},
-    {n:"Bleomycin",c:"DNA strand break",u:"Hodgkin, testicular; pulmonary fibrosis"},
-    {n:"Vincristine",c:"Microtubule inhibitor",u:"ALL, lymphoma; neuropathy; do NOT give intrathecal"},
-    {n:"Paclitaxel",c:"Microtubule stabiliser",u:"Breast, ovarian, lung; neutropenia, neuropathy"},
-    {n:"Imatinib",c:"BCR-ABL TKI",u:"CML (Philadelphia +ve), GIST"},
-    {n:"Rituximab",c:"Anti-CD20 mAb",u:"NHL, CLL, ITP, AIHA, RA, vasculitis"},
-    {n:"Trastuzumab",c:"Anti-HER2",u:"HER2+ breast Ca; cardiotoxic"},
-    {n:"Bevacizumab",c:"Anti-VEGF",u:"Colorectal, NSCLC, glioblastoma; HTN, proteinuria"},
-    {n:"Pembrolizumab",c:"Anti-PD-1",u:"Melanoma, NSCLC, MSI-high cancers; immune AEs"},
-    {n:"Olaparib",c:"PARP inhibitor",u:"BRCA-mutated ovarian, breast, prostate Ca"},
-    {n:"Tamoxifen",c:"SERM",u:"ER+ breast Ca pre-menopausal; ↑ endometrial Ca"},
-    {n:"Letrozole",c:"Aromatase inhibitor",u:"ER+ breast Ca post-menopausal; ovulation induction"},
-    {n:"Leuprolide",c:"GnRH agonist",u:"Prostate Ca, endometriosis, central precocious puberty"},
-    {n:"All-trans retinoic acid",c:"Differentiation",u:"APML (M3 AML) – induces differentiation; combined with arsenic trioxide"}
+    // 1. Alkylating
+    {n:"Cyclophosphamide",c:"1️⃣ Nitrogen mustard",u:"Lymphomas, breast Ca, SLE; hemorrhagic cystitis — Mesna"},
+    {n:"Ifosfamide",c:"1️⃣ Nitrogen mustard",u:"Sarcoma, lymphoma; encephalopathy — Methylene blue"},
+    {n:"Melphalan",c:"1️⃣ Nitrogen mustard",u:"Multiple myeloma"},
+    {n:"Chlorambucil",c:"1️⃣ Nitrogen mustard",u:"CLL, lymphomas"},
+    {n:"Bendamustine",c:"1️⃣ Hybrid (mustard + purine)",u:"CLL, indolent NHL"},
+    {n:"Carmustine (BCNU)",c:"1️⃣ Nitrosourea (crosses BBB)",u:"Glioma, lymphoma, melanoma"},
+    {n:"Lomustine (CCNU)",c:"1️⃣ Nitrosourea (oral)",u:"Glioma"},
+    {n:"Busulfan",c:"1️⃣ Alkyl sulfonate",u:"CML, BMT prep; pulmonary fibrosis"},
+    {n:"Temozolomide",c:"1️⃣ Triazene",u:"Glioblastoma (Stupp protocol)"},
+    {n:"Dacarbazine",c:"1️⃣ Triazene",u:"Melanoma, Hodgkin's (ABVD)"},
+    {n:"Cisplatin",c:"1️⃣ Platinum",u:"Testicular Ca (BEP), ovarian, lung; nephrotoxicity"},
+    {n:"Carboplatin",c:"1️⃣ Platinum",u:"Ovarian, NSCLC; more myelosuppression"},
+    {n:"Oxaliplatin",c:"1️⃣ Platinum",u:"Colorectal (FOLFOX); cold-induced neuropathy"},
+    {n:"Mechlorethamine",c:"1️⃣ Nitrogen mustard (original)",u:"Vesicant; topical for mycosis fungoides"},
+    {n:"Mitomycin C",c:"1️⃣ Aziridine",u:"Bladder Ca (intravesical)"},
+    {n:"Mesna",c:"1️⃣ Bladder protector",u:"With Cyclo/Ifosfamide"},
+    {n:"Amifostine",c:"1️⃣ Nephroprotector",u:"With Cisplatin"},
+    // 2. Antimetabolites
+    {n:"Methotrexate (MTX)",c:"2️⃣ DHFR inhibitor",u:"ALL, lymphoma, RA, psoriasis, ectopic; rescue — Leucovorin"},
+    {n:"Pemetrexed",c:"2️⃣ Multi-target folate antag",u:"NSCLC (non-squamous), mesothelioma"},
+    {n:"5-Fluorouracil (5-FU)",c:"2️⃣ Pyrimidine antag",u:"CRC, breast, head-neck Ca; hand-foot syndrome"},
+    {n:"Capecitabine",c:"2️⃣ Oral 5-FU prodrug",u:"CRC, breast Ca"},
+    {n:"Cytarabine (Ara-C)",c:"2️⃣ Pyrimidine antag",u:"AML 7+3, intrathecal; cerebellar toxicity"},
+    {n:"Gemcitabine",c:"2️⃣ Pyrimidine antag",u:"Pancreas DOC, NSCLC, bladder"},
+    {n:"6-Mercaptopurine (6-MP)",c:"2️⃣ Purine antag",u:"ALL maintenance, IBD; ↑ with Allopurinol"},
+    {n:"6-Thioguanine (6-TG)",c:"2️⃣ Purine antag",u:"AML"},
+    {n:"Fludarabine",c:"2️⃣ Purine antag",u:"CLL, lymphoma"},
+    {n:"Cladribine",c:"2️⃣ Purine antag",u:"Hairy cell leukemia (curative)"},
+    {n:"Hydroxyurea",c:"2️⃣ Ribonucleotide reductase",u:"CML, sickle cell (↑ HbF), polycythemia"},
+    {n:"L-Asparaginase",c:"2️⃣ Asparagine depletion",u:"ALL; pancreatitis, hyperammonemia"},
+    {n:"Pegaspargase",c:"2️⃣ Long-acting asparaginase",u:"ALL (if hypersensitive to L-asp)"},
+    {n:"Leucovorin",c:"2️⃣ Folate rescue",u:"MTX rescue, with 5-FU enhances"},
+    // 3. Targeted
+    {n:"Imatinib",c:"3️⃣ BCR-ABL/KIT TKI",u:"CML, GIST, Ph+ ALL"},
+    {n:"Dasatinib",c:"3️⃣ 2nd gen BCR-ABL",u:"CML, ALL"},
+    {n:"Ponatinib",c:"3️⃣ 3rd gen (T315I)",u:"CML resistance"},
+    {n:"Trastuzumab",c:"3️⃣ HER2 mAb",u:"HER2+ breast Ca; cardiotoxicity"},
+    {n:"Pertuzumab",c:"3️⃣ HER2 mAb (dimerization)",u:"HER2+ breast Ca (with Trastuzumab)"},
+    {n:"T-DM1",c:"3️⃣ ADC (HER2)",u:"HER2+ breast Ca 2nd line"},
+    {n:"Trastuzumab deruxtecan",c:"3️⃣ ADC HER2-low (FDA 2022)",u:"HER2-low breast Ca breakthrough"},
+    {n:"Bevacizumab",c:"3️⃣ VEGF mAb",u:"CRC, NSCLC, GBM; HTN, bleeding"},
+    {n:"Cetuximab",c:"3️⃣ EGFR mAb",u:"CRC (KRAS WT), HNSCC"},
+    {n:"Panitumumab",c:"3️⃣ EGFR mAb (human)",u:"CRC (RAS WT)"},
+    {n:"Rituximab",c:"3️⃣ CD20 mAb",u:"NHL, CLL, RA; HBV reactivation"},
+    {n:"Obinutuzumab",c:"3️⃣ CD20 mAb",u:"CLL, FL"},
+    {n:"Erlotinib",c:"3️⃣ EGFR TKI",u:"NSCLC (EGFR-mut)"},
+    {n:"Osimertinib",c:"3️⃣ 3rd gen EGFR TKI",u:"NSCLC (T790M, 1st line); FLAURA"},
+    {n:"Alectinib",c:"3️⃣ ALK inhibitor",u:"ALK+ NSCLC 1st line (ALEX)"},
+    {n:"Crizotinib",c:"3️⃣ ALK/ROS1/MET inh",u:"ALK+ NSCLC"},
+    {n:"Vemurafenib",c:"3️⃣ BRAF inhibitor",u:"BRAF V600E melanoma"},
+    {n:"Dabrafenib",c:"3️⃣ BRAF inhibitor",u:"BRAF V600E (with Trametinib)"},
+    {n:"Trametinib",c:"3️⃣ MEK inhibitor",u:"BRAF+ melanoma (combo)"},
+    {n:"Selpercatinib",c:"3️⃣ RET inhibitor (FDA 2020)",u:"RET-fusion lung/thyroid Ca"},
+    {n:"Olaparib",c:"3️⃣ PARP inhibitor",u:"BRCA+ ovarian, breast, prostate Ca"},
+    {n:"Talazoparib",c:"3️⃣ PARP inhibitor",u:"BRCA+ breast, prostate Ca"},
+    {n:"Palbociclib",c:"3️⃣ CDK4/6 inhibitor",u:"HR+ HER2- breast Ca + endocrine"},
+    {n:"Ribociclib",c:"3️⃣ CDK4/6 inhibitor",u:"HR+ HER2- breast Ca"},
+    {n:"Abemaciclib",c:"3️⃣ CDK4/6 inhibitor",u:"HR+ HER2- breast Ca; also high-risk adjuvant"},
+    {n:"Ibrutinib",c:"3️⃣ BTK inhibitor",u:"CLL, MCL; atrial fibrillation"},
+    {n:"Venetoclax",c:"3️⃣ BCL-2 inhibitor",u:"CLL, AML; TLS risk"},
+    {n:"Bortezomib",c:"3️⃣ Proteasome inhibitor",u:"Multiple myeloma; neuropathy"},
+    {n:"Sotorasib",c:"3️⃣ KRAS G12C (FDA 2021)",u:"NSCLC KRAS G12C"},
+    // 4. Immunotherapy
+    {n:"Pembrolizumab",c:"4️⃣ PD-1 inhibitor",u:"Melanoma, NSCLC, MSI-H, HNSCC, urothelial"},
+    {n:"Nivolumab",c:"4️⃣ PD-1 inhibitor",u:"Melanoma, NSCLC, RCC, Hodgkin's"},
+    {n:"Cemiplimab",c:"4️⃣ PD-1 inhibitor",u:"Cutaneous SCC, NSCLC"},
+    {n:"Atezolizumab",c:"4️⃣ PD-L1 inhibitor",u:"NSCLC, urothelial, TNBC, HCC"},
+    {n:"Durvalumab",c:"4️⃣ PD-L1 inhibitor",u:"NSCLC stage III, biliary tract Ca"},
+    {n:"Ipilimumab",c:"4️⃣ CTLA-4 inhibitor",u:"Melanoma (with Nivolumab); colitis"},
+    {n:"Relatlimab",c:"4️⃣ LAG-3 inh (FDA 2022)",u:"Melanoma (with Nivolumab)"},
+    {n:"Tisagenlecleucel",c:"4️⃣ CD19 CAR-T (FDA 2017)",u:"B-ALL, DLBCL"},
+    {n:"Axicabtagene",c:"4️⃣ CD19 CAR-T",u:"DLBCL, FL"},
+    {n:"Idecabtagene vicleucel",c:"4️⃣ BCMA CAR-T",u:"Multiple myeloma"},
+    {n:"Blinatumomab",c:"4️⃣ BiTE (CD19/CD3)",u:"ALL"},
+    {n:"Talimogene laherparepvec",c:"4️⃣ Oncolytic HSV-1",u:"Melanoma (intratumoral)"},
+    {n:"Sipuleucel-T",c:"4️⃣ Autologous DC vaccine",u:"Metastatic prostate Ca"},
+    {n:"Lifileucel",c:"4️⃣ TIL therapy (FDA 2024)",u:"Melanoma"},
+    {n:"Tocilizumab",c:"4️⃣ IL-6 antagonist",u:"CRS from CAR-T/BiTEs"},
+    // 5. Hormonal
+    {n:"Tamoxifen",c:"5️⃣ SERM",u:"Pre-menopausal HR+ breast Ca; ↑ endometrial Ca"},
+    {n:"Letrozole",c:"5️⃣ Aromatase inh",u:"Post-menopausal HR+ breast Ca"},
+    {n:"Anastrozole",c:"5️⃣ Aromatase inh",u:"Post-menopausal HR+ breast Ca"},
+    {n:"Exemestane",c:"5️⃣ Steroidal AI",u:"Breast Ca"},
+    {n:"Fulvestrant",c:"5️⃣ SERD (IM)",u:"Metastatic HR+ breast Ca"},
+    {n:"Elacestrant",c:"5️⃣ Oral SERD (FDA 2023)",u:"ESR1-mut HR+ breast Ca"},
+    {n:"Alpelisib",c:"5️⃣ PI3K inh (PIK3CA-mut)",u:"HR+ HER2- breast Ca + Fulvestrant"},
+    {n:"Goserelin",c:"5️⃣ GnRH agonist",u:"Breast Ca (ovarian suppression), PCa"},
+    {n:"Leuprolide",c:"5️⃣ GnRH agonist",u:"PCa, endometriosis, fibroids"},
+    {n:"Degarelix",c:"5️⃣ GnRH antagonist (IM)",u:"PCa (no flare)"},
+    {n:"Relugolix",c:"5️⃣ Oral GnRH antag (FDA 2020)",u:"PCa, fibroids, endometriosis"},
+    {n:"Bicalutamide",c:"5️⃣ Antiandrogen",u:"PCa flare protection with GnRH agonist"},
+    {n:"Enzalutamide",c:"5️⃣ 2nd gen AR blocker",u:"Castration-resistant PCa"},
+    {n:"Apalutamide",c:"5️⃣ 2nd gen AR blocker",u:"Hormone-sensitive + CRPC"},
+    {n:"Darolutamide",c:"5️⃣ 2nd gen AR blocker",u:"CRPC; less CNS penetration"},
+    {n:"Abiraterone",c:"5️⃣ CYP17 inh",u:"CRPC; give with Prednisone"},
+    {n:"Lutetium-177 PSMA-617",c:"5️⃣ Radioligand (FDA 2022)",u:"PSMA+ metastatic CRPC"}
   ],
   ppt:[
-    {t:"Cell Cycle & Drug Targets",p:["Phases","CCS vs CCNS","Resistance mechanisms","Log-kill hypothesis"]},
-    {t:"Alkylating Agents",p:["MOA","Cyclophosphamide","Platinum compounds","Toxicity"]},
-    {t:"Antimetabolites",p:["MTX & leucovorin","5-FU","6-MP","Cytarabine"]},
-    {t:"Plant Alkaloids",p:["Vinca","Taxanes","Etoposide","Camptothecins"]},
-    {t:"Hormonal Therapy",p:["Breast Ca – SERM, AI","Prostate Ca – GnRH, antiandrogen","CRPC – abiraterone, enzalutamide"]},
-    {t:"Targeted Therapy",p:["TKI","mAbs","HER2, EGFR","BRAF, ALK, BCR-ABL"]},
-    {t:"Immunotherapy",p:["Checkpoint inhibitors","irAEs","CAR-T cells","Bispecific antibodies"]},
-    {t:"Supportive Care",p:["Neutropenic fever","Antiemetics","Tumour lysis","Growth factors"]}
+    // 1. Alkylating
+    {t:"1️⃣ Alkylating Mechanism",p:["DNA cross-linking","CCNS","Cyclo prodrug + acrolein","Mesna protection"]},
+    {t:"1️⃣ Platinum Analogs",p:["Cisplatin: testicular, nephro-toxic","Carboplatin: ovarian, myelo","Oxaliplatin: CRC, neuropathy","Hydration + Amifostine"]},
+    {t:"1️⃣ Famous Regimens",p:["BEP — testicular Ca","ABVD — Hodgkin's","R-CHOP — DLBCL","FOLFOX — colorectal"]},
+    // 2. Antimetabolites
+    {t:"2️⃣ Folate Antagonists",p:["MTX inhibits DHFR","Leucovorin rescue","Pemetrexed (NSCLC, multi-target)","Uses: ALL, RA, ectopic"]},
+    {t:"2️⃣ Pyrimidine &amp; Purine Antagonists",p:["5-FU (CRC) + Capecitabine","Cytarabine (AML 7+3)","Gemcitabine (pancreas)","6-MP + Allopurinol interaction"]},
+    // 3. Targeted
+    {t:"3️⃣ TKIs Overview",p:["BCR-ABL (Imatinib — CML)","EGFR (Osimertinib — NSCLC)","ALK (Alectinib — NSCLC)","BTK (Ibrutinib — CLL)"]},
+    {t:"3️⃣ mAbs Overview",p:["HER2: Trastuzumab","VEGF: Bevacizumab","EGFR: Cetuximab","CD20: Rituximab"]},
+    {t:"3️⃣ ADCs &amp; PARP",p:["T-DM1, T-DXd","Sacituzumab govitecan","PARP: Olaparib (BRCA+)","CDK4/6: Palbociclib"]},
+    {t:"3️⃣ Newer Targeted",p:["KRAS G12C: Sotorasib","RET: Selpercatinib","NTRK: Larotrectinib","Pluvicto for PSMA+ PCa"]},
+    // 4. Immunotherapy
+    {t:"4️⃣ Checkpoint Inhibitors",p:["PD-1: Pembro, Nivo","PD-L1: Atezo, Durva","CTLA-4: Ipilimumab","Combos: Nivo+Ipi"]},
+    {t:"4️⃣ irAEs Management",p:["Skin, GI (colitis)","Endocrine (thyroid)","Pneumonitis","Myocarditis"]},
+    {t:"4️⃣ CAR-T &amp; BiTEs",p:["CD19: Tisagenlecleucel","BCMA: Ide-cel, Cilta-cel","Blinatumomab (ALL)","CRS — Tocilizumab"]},
+    // 5. Hormonal
+    {t:"5️⃣ HR+ Breast Ca",p:["Pre-meno: Tamoxifen","Post-meno: AI (Letrozole)","Metastatic: AI + CDK4/6","ESR1-mut: Elacestrant"]},
+    {t:"5️⃣ Prostate Ca",p:["Hormone-sensitive: GnRH + Bicalutamide","CRPC: Enzalutamide, Apalutamide","Abiraterone + Prednisone","PSMA+: Lutetium-177"]},
+    {t:"5️⃣ Recent Hormonal Advances",p:["Elacestrant (oral SERD 2023)","Capivasertib (AKT inh 2023)","Relugolix (oral GnRH antag)","Olaparib for HRR+ CRPC"]},
+    {t:"5️⃣ Cancer Vaccines &amp; Newer",p:["Sipuleucel-T (PCa)","Lifileucel TIL (melanoma 2024)","Bispecifics (Talquetamab)","Theranostics (Lu-177 PSMA)"]}
   ],
   mcqs:[
-    {q:"Drug for chronic myeloid leukaemia (Philadelphia +ve):",o:["Methotrexate","Imatinib","Cyclophosphamide","Rituximab"],a:"Imatinib",e:"Imatinib targets BCR-ABL fusion tyrosine kinase (Philadelphia chromosome t(9;22)). First-line in chronic-phase CML. Resistance – dasatinib, nilotinib, ponatinib."},
-    {q:"Mesna is used along with cyclophosphamide to prevent:",o:["Cardiotoxicity","Haemorrhagic cystitis","Neutropenia","Nausea"],a:"Haemorrhagic cystitis",e:"Mesna (2-mercaptoethane sulphonate) binds and inactivates acrolein, the toxic metabolite of cyclophosphamide/ifosfamide, preventing haemorrhagic cystitis."},
-    {q:"Bleomycin causes:",o:["Cardiotoxicity","Pulmonary fibrosis","Nephrotoxicity","Cystitis"],a:"Pulmonary fibrosis",e:"Bleomycin – dose-cumulative (max 400 U) pulmonary fibrosis. Lungs lack bleomycin hydrolase. Monitor with DLCO."},
-    {q:"Drug used in acute promyelocytic leukaemia for differentiation:",o:["Cytarabine","All-trans retinoic acid","Doxorubicin","Methotrexate"],a:"All-trans retinoic acid",e:"ATRA (vitamin A derivative) combined with arsenic trioxide gives &gt;90% cure rates in APML (t(15;17) PML-RARα). Risk – differentiation syndrome."},
-    {q:"Best monitoring for trastuzumab therapy:",o:["LFT","Echocardiography (LVEF)","ECG","Lung function"],a:"Echocardiography (LVEF)",e:"Trastuzumab is cardiotoxic (reversible) – obtain baseline LVEF, monitor every 3 months. Hold if LVEF drops > 10% absolute or &lt; 40%."},
-    {q:"Imatinib resistance is best managed with:",o:["Stop therapy","Dasatinib/Nilotinib","Add chemotherapy","Cytokines"],a:"Dasatinib/Nilotinib",e:"2nd-gen TKIs (dasatinib, nilotinib, bosutinib) overcome most mutations. T315I mutation needs ponatinib or asciminib."},
-    {q:"Pembrolizumab acts by:",o:["Blocking VEGF","Anti-CD20","Anti-PD-1","Anti-CTLA-4"],a:"Anti-PD-1",e:"Pembrolizumab and nivolumab block PD-1 on T cells, restoring anti-tumour T-cell activity. ADRs – immune-related (colitis, pneumonitis, hypophysitis)."}
+    // 1. Alkylating (8)
+    {q:"[1️⃣ Alkylating] Cyclophosphamide bladder protection:",o:["Amifostine","Mesna","Leucovorin","Dexrazoxane"],a:"Mesna",e:"Mesna binds toxic metabolite acrolein in bladder → prevents hemorrhagic cystitis. Hydrate also."},
+    {q:"[1️⃣ Alkylating] Ifosfamide encephalopathy treatment:",o:["Atropine","Methylene blue","Dexamethasone","Naloxone"],a:"Methylene blue",e:"Chloroacetaldehyde causes encephalopathy → IV Methylene blue is treatment."},
+    {q:"[1️⃣ Alkylating] Cisplatin DOC ADR:",o:["Cardiotoxicity","Nephrotoxicity","Hepatotoxicity","Pulmonary"],a:"Nephrotoxicity",e:"Cisplatin — nephrotoxicity (DOC), also ototoxicity, neuropathy, severe emesis. Hydrate + Amifostine."},
+    {q:"[1️⃣ Alkylating] Stupp protocol for glioblastoma:",o:["Doxo + Cyclo","Temozolomide + Radiation","Cisplatin + Etoposide","Carmustine + Radiation"],a:"Temozolomide + Radiation",e:"Stupp protocol: concurrent Temozolomide + RT × 6 weeks, then adjuvant Temozolomide × 6 cycles."},
+    {q:"[1️⃣ Alkylating] Testicular Ca curative regimen:",o:["ABVD","CHOP","BEP","FOLFOX"],a:"BEP",e:"BEP = Bleomycin + Etoposide + Cisplatin. Curative even in metastatic testicular germ cell tumors."},
+    {q:"[1️⃣ Alkylating] Oxaliplatin specific ADR:",o:["Cardiotoxicity","Cold-induced neuropathy","Nephrotoxicity","Hepatitis"],a:"Cold-induced neuropathy",e:"Oxaliplatin → cold-induced peripheral neuropathy + laryngopharyngeal dysesthesia."},
+    {q:"[1️⃣ Alkylating] Carmustine specific feature:",o:["Crosses BBB","Renal excretion","Cardiotoxic","Vesicant"],a:"Crosses BBB",e:"Carmustine (BCNU) — lipophilic → crosses BBB → CNS tumors. Also delayed marrow suppression."},
+    {q:"[1️⃣ Alkylating] Busulfan distinctive ADR:",o:["Cardiotoxicity","Pulmonary fibrosis","Hand-foot","Cerebellar"],a:"Pulmonary fibrosis",e:"Busulfan lung — pulmonary fibrosis. Also skin hyperpigmentation. Used in CML, BMT prep."},
+
+    // 2. Antimetabolites (8)
+    {q:"[2️⃣ Antimet] MTX rescue:",o:["Leucovorin","Amifostine","Mesna","Dexrazoxane"],a:"Leucovorin",e:"Leucovorin (folinic acid) bypasses DHFR block → rescues normal cells. Critical in high-dose MTX protocols."},
+    {q:"[2️⃣ Antimet] 5-FU specific ADR:",o:["Cardiotoxicity","Hand-foot syndrome","Nephrotoxicity","Cerebellar"],a:"Hand-foot syndrome",e:"5-FU/Capecitabine → palmar-plantar erythrodysesthesia. Also cardiotoxicity (vasospasm), mucositis, diarrhea."},
+    {q:"[2️⃣ Antimet] Ectopic pregnancy DOC:",o:["Cyclophosphamide","Methotrexate","Mifepristone","Cytarabine"],a:"Methotrexate",e:"MTX 50 mg/m² IM single dose for unruptured ectopic with hCG &lt; 5000 and no fetal cardiac activity."},
+    {q:"[2️⃣ Antimet] 6-MP + Allopurinol:",o:["No effect","↑ 6-MP toxicity 4×","↓ 6-MP","Synergistic anti-cancer"],a:"↑ 6-MP toxicity 4×",e:"Allopurinol blocks xanthine oxidase → ↑ 6-MP levels 4×. Use Febuxostat or ↓ 6-MP by 75%."},
+    {q:"[2️⃣ Antimet] AML induction 7+3:",o:["MTX + 6-MP","Cytarabine + Daunorubicin","Vincristine + Pred","Cyclo + Etoposide"],a:"Cytarabine + Daunorubicin",e:"7+3 regimen — Cytarabine continuous infusion × 7 days + Daunorubicin × 3 days. Standard AML induction."},
+    {q:"[2️⃣ Antimet] Pancreatic Ca DOC:",o:["MTX","Cytarabine","Gemcitabine","6-MP"],a:"Gemcitabine",e:"Gemcitabine ± nab-Paclitaxel — pancreatic Ca DOC. FOLFIRINOX for fit patients (better outcomes)."},
+    {q:"[2️⃣ Antimet] Sickle cell DOC + mechanism:",o:["Hydroxyurea (↑ HbF)","Cytarabine (DNA polym)","6-MP (purine)","Methotrexate (DHFR)"],a:"Hydroxyurea (↑ HbF)",e:"Hydroxyurea ↑ HbF synthesis → ↓ HbS polymerization → ↓ crises, ↓ acute chest syndrome."},
+    {q:"[2️⃣ Antimet] Asparaginase mechanism:",o:["DNA cross-link","Asparagine depletion","Topo inhibition","DHFR block"],a:"Asparagine depletion",e:"L-Asparaginase hydrolyzes asparagine → leukemic cells (lacking asparagine synthetase) can't synthesize → apoptosis."},
+
+    // 3. Targeted (8)
+    {q:"[3️⃣ Targeted] CML 1st line DOC:",o:["Imatinib","Dasatinib","Ponatinib","Bosutinib"],a:"Imatinib",e:"Imatinib 400 mg/day — BCR-ABL TKI; revolutionized CML. T315I mutation → Ponatinib only effective TKI."},
+    {q:"[3️⃣ Targeted] HER2-low breast Ca breakthrough (FDA 2022):",o:["Trastuzumab","Trastuzumab deruxtecan","T-DM1","Pertuzumab"],a:"Trastuzumab deruxtecan",e:"DESTINY-Breast04 trial — T-DXd for HER2-low (1+ or 2+) metastatic breast Ca. Paradigm shift."},
+    {q:"[3️⃣ Targeted] Trastuzumab major ADR:",o:["Hepatotoxicity","Cardiotoxicity (↓ LVEF)","Pulmonary","Nephrotoxicity"],a:"Cardiotoxicity (↓ LVEF)",e:"Trastuzumab — reversible LV dysfunction. Monitor LVEF every 3 mo. Hold if significant drop."},
+    {q:"[3️⃣ Targeted] EGFR-mutated NSCLC 1st line:",o:["Erlotinib","Osimertinib","Gefitinib","Afatinib"],a:"Osimertinib",e:"FLAURA trial — Osimertinib (3rd gen EGFR TKI) superior; also covers T790M resistance mutation."},
+    {q:"[3️⃣ Targeted] ALK+ NSCLC 1st line (ALEX trial):",o:["Crizotinib","Alectinib","Brigatinib","Lorlatinib"],a:"Alectinib",e:"ALEX trial — Alectinib superior to Crizotinib (PFS 34 vs 11 mo); better CNS penetration."},
+    {q:"[3️⃣ Targeted] BRCA+ ovarian Ca maintenance:",o:["Olaparib","Bevacizumab","Cisplatin","Carboplatin"],a:"Olaparib",e:"Olaparib — PARP inhibitor; maintenance after platinum response in BRCA+/HRR+ ovarian Ca (SOLO-1)."},
+    {q:"[3️⃣ Targeted] Ibrutinib major ADR:",o:["Cardiotoxicity","Atrial fibrillation + bleeding","Pulmonary fibrosis","Nephrotoxicity"],a:"Atrial fibrillation + bleeding",e:"Ibrutinib — BTK inhibitor; AF, bleeding (avoid warfarin), HTN, infections. Newer: Acalabrutinib safer."},
+    {q:"[3️⃣ Targeted] Venetoclax major risk:",o:["Hepatic failure","Tumor lysis syndrome","Pulmonary fibrosis","Anaphylaxis"],a:"Tumor lysis syndrome",e:"Venetoclax — BCL-2 inhibitor; rapid CLL cell death → TLS. Ramp-up dosing + hydration + Allopurinol/Rasburicase."},
+
+    // 4. Immunotherapy (8)
+    {q:"[4️⃣ Immuno] PD-1 inhibitors examples:",o:["Atezolizumab, Durvalumab","Pembrolizumab, Nivolumab","Ipilimumab","Bevacizumab"],a:"Pembrolizumab, Nivolumab",e:"PD-1: Pembrolizumab, Nivolumab, Cemiplimab, Dostarlimab. PD-L1: Atezo, Durva, Avelumab. CTLA-4: Ipilimumab."},
+    {q:"[4️⃣ Immuno] CAR-T for B-ALL (FDA 2017):",o:["Tisagenlecleucel","Axicabtagene","Idecabtagene","Lifileucel"],a:"Tisagenlecleucel",e:"Tisagenlecleucel (Kymriah) — first CAR-T (FDA 2017) for R/R B-ALL in children/young adults."},
+    {q:"[4️⃣ Immuno] CRS treatment DOC:",o:["Methylprednisolone","Tocilizumab","Cyclophosphamide","Rituximab"],a:"Tocilizumab",e:"CRS (Cytokine Release Syndrome) — IL-6 driven; Tocilizumab (IL-6 antagonist) is DOC. Severe → +steroids."},
+    {q:"[4️⃣ Immuno] Most common irAE:",o:["Pneumonitis","Thyroiditis (hypothyroidism)","Myocarditis","Colitis"],a:"Thyroiditis (hypothyroidism)",e:"Most common irAE = thyroid (esp. hypothyroidism — treat with Levothyroxine; continue ICI). Hyperthyroidism less common."},
+    {q:"[4️⃣ Immuno] First TIL therapy (FDA 2024):",o:["Tisagenlecleucel","Lifileucel","Sipuleucel-T","Talimogene"],a:"Lifileucel",e:"Lifileucel (Amtagvi) — first FDA-approved TIL therapy (Feb 2024) for advanced melanoma."},
+    {q:"[4️⃣ Immuno] Pembrolizumab tissue-agnostic indication:",o:["BRAF-mut","MSI-H/dMMR","BRCA-mut","HER2+"],a:"MSI-H/dMMR",e:"Pembrolizumab approved for ANY MSI-H/dMMR cancer (tissue-agnostic, FDA 2017) — first such approval."},
+    {q:"[4️⃣ Immuno] Combination with worst irAEs:",o:["PD-1 alone","PD-L1 alone","Nivolumab + Ipilimumab","Nivolumab + Relatlimab"],a:"Nivolumab + Ipilimumab",e:"Nivo+Ipi combo — most effective but most irAEs (esp. colitis, hepatitis). Useful in advanced melanoma."},
+    {q:"[4️⃣ Immuno] BiTE for ALL:",o:["Blinatumomab","Rituximab","Tisagenlecleucel","Trastuzumab"],a:"Blinatumomab",e:"Blinatumomab — bispecific T-cell engager (CD19/CD3) for R/R ALL. Continuous IV infusion."},
+
+    // 5. Hormonal (8)
+    {q:"[5️⃣ Hormonal] Pre-menopausal HR+ breast Ca DOC:",o:["Letrozole","Tamoxifen","Anastrozole","Exemestane"],a:"Tamoxifen",e:"Tamoxifen 20 mg/day × 5-10 years — SERM; pre-menopausal. AI needs ovarian suppression in pre-meno."},
+    {q:"[5️⃣ Hormonal] First oral SERD (FDA 2023):",o:["Fulvestrant","Elacestrant","Tamoxifen","Toremifene"],a:"Elacestrant",e:"Elacestrant — first oral SERD; FDA 2023 for ESR1-mutant HR+ HER2- metastatic breast Ca."},
+    {q:"[5️⃣ Hormonal] Castration-resistant PCa AR blockers:",o:["Tamoxifen","Enzalutamide, Apalutamide","Letrozole","Goserelin"],a:"Enzalutamide, Apalutamide",e:"2nd-gen AR blockers — Enzalutamide, Apalutamide, Darolutamide. Plus Abiraterone (CYP17). All approved CRPC."},
+    {q:"[5️⃣ Hormonal] HR+ HER2- metastatic 1st line addition:",o:["PARP","CDK4/6 inhibitor","mTOR","BCL-2"],a:"CDK4/6 inhibitor",e:"AI + CDK4/6 inhibitor (Palbociclib/Ribociclib/Abemaciclib) — 1st line metastatic HR+ HER2- (PALOMA, MONALEESA)."},
+    {q:"[5️⃣ Hormonal] GnRH agonist flare protection:",o:["Spironolactone","Bicalutamide × 2 weeks","Tamoxifen","Letrozole"],a:"Bicalutamide × 2 weeks",e:"Leuprolide initial flare (↑ testosterone 2-3 wks); add Bicalutamide for 2 wks to block downstream effects."},
+    {q:"[5️⃣ Hormonal] Lutetium-177 PSMA-617 indication (FDA 2022):",o:["BRCA+ ovarian","PSMA+ metastatic CRPC","HER2+ breast","KRAS+ NSCLC"],a:"PSMA+ metastatic CRPC",e:"Lutetium-177 PSMA-617 (Pluvicto) — radioligand therapy for PSMA+ metastatic CRPC after androgen receptor pathway inhibition."},
+    {q:"[5️⃣ Hormonal] HRR-mutant CRPC PARP inhibitor:",o:["Olaparib","Letrozole","Bicalutamide","Tamoxifen"],a:"Olaparib",e:"Olaparib — PROfound trial; HRR-mutant (BRCA1/2, ATM) mCRPC; significant survival benefit."},
+    {q:"[5️⃣ Hormonal] First oral GnRH antagonist PCa (FDA 2020):",o:["Goserelin","Degarelix","Relugolix","Leuprolide"],a:"Relugolix",e:"Relugolix — oral GnRH antagonist (FDA 2020); no flare; better tolerability than Degarelix IM injection."}
   ],
-  mnemonic:`<strong>Anthracycline cardiotoxicity</strong> – use Dexrazoxane. <strong>Vincristine: peripheral neuropathy; Vinblastine: bone marrow.</strong> <strong>Bleomycin – Blows Lungs.</strong> <strong>Cisplatin – Crushes Kidneys & Cochlea.</strong>`
+  mnemonic:`<strong>📚 Anticancer Drugs — Quick Concepts</strong><br>
+• <strong>Alkylating CCNS:</strong> Cyclo (cystitis, Mesna) · Ifosfamide (encephalopathy, Methylene blue) · Cisplatin (nephro, hydrate+Amifostine) · Oxaliplatin (cold neuropathy) · Carmustine (CNS, BBB) · Busulfan (lung)<br>
+• <strong>Famous regimens:</strong> BEP (testicular) · ABVD (Hodgkin) · R-CHOP (DLBCL) · FOLFOX (CRC) · Stupp (glioma)<br>
+• <strong>Antimetabolites S-phase:</strong> MTX (DHFR, rescue Leucovorin) · 5-FU (TS, hand-foot) · Cytarabine (AML 7+3, cerebellar) · Gemcitabine (pancreas DOC) · 6-MP + Allopurinol = ↑ toxicity 4×<br>
+• <strong>Sickle cell DOC</strong> = Hydroxyurea (↑ HbF)<br>
+• <strong>CML 1st line</strong> = Imatinib · T315I = Ponatinib<br>
+• <strong>HER2+ breast Ca</strong> = Trastuzumab (cardiotoxicity); <strong>HER2-low</strong> = T-DXd (2022)<br>
+• <strong>EGFR-mut NSCLC</strong> = Osimertinib (FLAURA); <strong>ALK+ NSCLC</strong> = Alectinib (ALEX)<br>
+• <strong>BRCA+ ovarian/breast/PCa</strong> = Olaparib (PARP)<br>
+• <strong>HR+ HER2- metastatic</strong> = AI + CDK4/6 inhibitor<br>
+• <strong>Ibrutinib</strong> = AF, bleeding; <strong>Venetoclax</strong> = TLS risk<br>
+• <strong>PD-1 inhibitors</strong> = Pembrolizumab, Nivolumab · <strong>PD-L1</strong> = Atezolizumab, Durvalumab · <strong>CTLA-4</strong> = Ipilimumab<br>
+• <strong>irAEs</strong>: thyroid most common · pneumonitis · colitis · myocarditis (fatal) — Mgmt: hold/steroids/Infliximab<br>
+• <strong>CAR-T</strong>: CD19 (Tisagenlecleucel) · BCMA (Idecabtagene); <strong>CRS DOC</strong> = Tocilizumab<br>
+• <strong>Pre-meno HR+ breast Ca</strong> = Tamoxifen · <strong>Post-meno</strong> = Aromatase Inh<br>
+• <strong>ESR1-mut metastatic</strong> = Elacestrant (oral SERD 2023)<br>
+• <strong>CRPC AR blockers</strong> = Enzalutamide, Apalutamide, Darolutamide; <strong>Abiraterone</strong> = CYP17 + Pred<br>
+• <strong>PSMA+ mCRPC</strong> = Lutetium-177 PSMA-617<br>
+• <strong>GnRH agonist flare</strong> → block with Bicalutamide × 2 wks<br>
+• <em>For drug-specific classifications, mnemonics, NEET PG points &amp; case-based insights, please use the 5 sub-topic navigation buttons above.</em>`
 });
 
 TOPICS.push({id:"misc",icon:"🔬",title:"Miscellaneous Drugs",
