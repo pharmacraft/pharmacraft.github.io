@@ -679,15 +679,23 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
   border-radius:9px;padding:12px 14px;font-size:12px;line-height:1.7;margin-top:10px;display:none;color:#064e3b;}
 .mcq-exp.show{display:block;animation:fi .3s;}
 .mcq-exp strong{color:#047857;display:block;margin-bottom:4px;font-weight:800;}
-/* ── MCQ Accordion (collapse/expand) ──────────── */
-.mcq-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px;cursor:pointer;user-select:none;padding:2px 0;}
-.mcq-head:hover .mcq-preview{color:var(--teal2);}
-.mcq-preview{flex:1 1 200px;font-size:12.5px;font-weight:600;color:var(--ink);line-height:1.4;margin:0;}
+/* ── MCQ 2-Layer Accordion (badge → question → options) ──── */
+.mcq-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px;cursor:pointer;user-select:none;padding:4px 0;}
+.mcq-head:hover{opacity:.85;}
+.mcq-q-label{font-weight:800;font-size:12px;color:var(--teal2);background:rgba(14,165,233,.08);padding:3px 9px;border-radius:6px;}
 .mcq-chevron{font-size:13px;color:var(--teal);font-weight:900;transition:transform .25s;flex:0 0 auto;margin-left:auto;padding:0 4px;}
-.mcq-collapsed .mcq-body{display:none;}
-.mcq-collapsed{padding:12px 16px;}
-.mcq-collapsed .mcq-num{margin-bottom:0;}
-.mcq-body{animation:fi .3s;}
+/* Layer 1: when closed, hide question layer + options layer */
+.mcq-l1-closed .mcq-q-layer,.mcq-l1-closed .mcq-opts-layer{display:none;}
+.mcq-l1-closed{padding:10px 16px;}
+.mcq-l1-closed .mcq-num{margin-bottom:0;}
+/* Layer 2: question shown, but options hidden */
+.mcq-q-layer{cursor:pointer;user-select:none;background:linear-gradient(135deg,rgba(14,165,233,.04),rgba(245,197,24,.04));border:1px dashed var(--border);border-radius:9px;padding:10px 14px;margin-top:10px;transition:background .2s;}
+.mcq-q-layer:hover{background:linear-gradient(135deg,rgba(14,165,233,.08),rgba(245,197,24,.08));}
+.mcq-q-layer .mcq-q{margin:0 0 6px;font-size:13px;font-weight:700;line-height:1.6;color:var(--text);}
+.mcq-l2-hint{display:inline-block;font-size:10.5px;font-weight:700;color:var(--teal2);background:rgba(14,165,233,.1);padding:3px 8px;border-radius:5px;}
+/* Layer 2 closed: hide options-layer */
+.mcq-l2-closed .mcq-opts-layer{display:none;}
+.mcq-opts-layer{animation:fi .3s;margin-top:10px;}
 
 /* ── PPT SLIDES ───────────────────────────────── */
 .ppt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:8px;}
@@ -20623,17 +20631,19 @@ function renderPYQ(filter='all'){
   const list = filter==='all' ? PYQ : PYQ.filter(p=>p.exam===filter);
   list.forEach((p,i)=>{
     const key=`pyq-${i}-${Math.random().toString(36).slice(2,7)}`;
-    const qPreview = p.q.length > 80 ? p.q.substring(0,80)+'...' : p.q;
     root.appendChild(el(`
-      <div class="mcq mcq-collapsed" data-key="${key}">
-        <div class="mcq-head" onclick="toggleMcq(this)">
+      <div class="mcq mcq-l1-closed mcq-l2-closed" data-key="${key}">
+        <div class="mcq-head" onclick="toggleMcqL1(this)">
           <span class="mcq-num">${p.exam.toUpperCase()} ${p.year}</span>
           <span class="mcq-num" style="background:rgba(245,197,24,.15);color:var(--gold);margin-left:6px;">${p.t}</span>
-          <div class="mcq-preview">Q${i+1}. ${qPreview}</div>
+          <span class="mcq-q-label">Q${i+1}</span>
           <span class="mcq-chevron">▼</span>
         </div>
-        <div class="mcq-body">
-          <p class="mcq-q" style="margin-top:8px;">${p.q}</p>
+        <div class="mcq-q-layer" onclick="toggleMcqL2(this)">
+          <p class="mcq-q">${p.q}</p>
+          <span class="mcq-l2-hint">▼ Click to see options</span>
+        </div>
+        <div class="mcq-opts-layer">
           <div class="mcq-opts">
             ${p.o.map((opt,j)=>`<div class="mcq-opt" data-opt="${opt.replace(/"/g,'&quot;')}" onclick="selectOpt(this,'${key}')"><span class="mcq-letter">${String.fromCharCode(65+j)}.</span> ${opt}</div>`).join('')}
           </div>
@@ -20656,16 +20666,17 @@ function renderFMGE(){
   root.innerHTML = '';
   FMGE.forEach((p,i)=>{
     const key = `fmge-${i}`;
-    const qPreview = p.q.length > 80 ? p.q.substring(0,80)+'...' : p.q;
     root.appendChild(el(`
-      <div class="mcq mcq-collapsed" data-key="${key}">
-        <div class="mcq-head" onclick="toggleMcq(this)">
+      <div class="mcq mcq-l1-closed mcq-l2-closed" data-key="${key}">
+        <div class="mcq-head" onclick="toggleMcqL1(this)">
           <span class="mcq-num" style="background:#b388ff;">FMGE Q${i+1}</span>
-          <div class="mcq-preview">${qPreview}</div>
           <span class="mcq-chevron">▼</span>
         </div>
-        <div class="mcq-body">
-          <p class="mcq-q" style="margin-top:8px;">${p.q}</p>
+        <div class="mcq-q-layer" onclick="toggleMcqL2(this)">
+          <p class="mcq-q">${p.q}</p>
+          <span class="mcq-l2-hint">▼ Click to see options</span>
+        </div>
+        <div class="mcq-opts-layer">
           <div class="mcq-opts">
             ${p.o.map((opt,j)=>`<div class="mcq-opt" data-opt="${opt.replace(/"/g,'&quot;')}" onclick="selectOpt(this,'${key}')"><span class="mcq-letter">${String.fromCharCode(65+j)}.</span> ${opt}</div>`).join('')}
           </div>
@@ -20676,13 +20687,24 @@ function renderFMGE(){
   });
 }
 
-/* ── MCQ Accordion Toggle ──────────────────────── */
-function toggleMcq(headEl){
+/* ── MCQ 2-Layer Accordion Toggle ──────────────── */
+function toggleMcqL1(headEl){
   const card = headEl.closest('.mcq');
   if(!card) return;
-  card.classList.toggle('mcq-collapsed');
+  card.classList.toggle('mcq-l1-closed');
+  // Auto-collapse L2 when L1 is collapsing
+  if(card.classList.contains('mcq-l1-closed')){
+    card.classList.add('mcq-l2-closed');
+  }
   const chev = headEl.querySelector('.mcq-chevron');
-  if(chev) chev.textContent = card.classList.contains('mcq-collapsed') ? '▼' : '▲';
+  if(chev) chev.textContent = card.classList.contains('mcq-l1-closed') ? '▼' : '▲';
+}
+function toggleMcqL2(qLayerEl){
+  const card = qLayerEl.closest('.mcq');
+  if(!card) return;
+  card.classList.toggle('mcq-l2-closed');
+  const hint = qLayerEl.querySelector('.mcq-l2-hint');
+  if(hint) hint.innerHTML = card.classList.contains('mcq-l2-closed') ? '▼ Click to see options' : '▲ Hide options';
 }
 
 /* ── Practice launcher ──────────────────────────── */
