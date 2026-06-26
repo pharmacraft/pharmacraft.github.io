@@ -1101,6 +1101,62 @@ html[data-theme="cream"] .adaptive-chip.active{
 html[data-theme="cream"] .adaptive-start-btn{
   background:linear-gradient(135deg,#9a4d1f,#b8862b);
 }
+/* ═══════════════════════════════════════════════════════════
+   DRUG INTERACTION CHECKER (DIC) STYLES
+   ═══════════════════════════════════════════════════════════ */
+.dic-wrapper{max-width:1100px;margin:24px auto 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 28px rgba(15,23,42,.06);}
+.dic-hero{background:linear-gradient(135deg,#0f766e,#0891b2);color:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;}
+.dic-hero h3{margin:0 0 4px;font-size:20px;font-weight:800;}
+.dic-hero p{margin:0;opacity:.95;font-size:13.5px;}
+.dic-input-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;margin-bottom:14px;}
+@media(max-width:720px){.dic-input-grid{grid-template-columns:1fr;}}
+.dic-input-block label{display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px;}
+.dic-input-block input{width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:10px;font-size:15px;font-weight:600;background:var(--card);color:var(--ink);transition:border-color .2s;}
+.dic-input-block input:focus{outline:none;border-color:#0891b2;}
+.dic-vs{font-size:22px;font-weight:900;color:#0891b2;padding:0 6px;align-self:center;margin-top:18px;}
+.dic-suggestions{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:240px;overflow-y:auto;z-index:50;width:100%;margin-top:2px;}
+.dic-suggestions div{padding:10px 14px;cursor:pointer;font-size:14px;border-bottom:1px solid var(--line);}
+.dic-suggestions div:hover,.dic-suggestions div.active{background:#e0f2fe;color:#0c4a6e;}
+.dic-suggestions div:last-child{border-bottom:none;}
+.dic-input-block{position:relative;}
+.dic-check-btn{display:block;width:100%;max-width:280px;margin:14px auto;padding:13px 28px;background:linear-gradient(135deg,#0891b2,#0f766e);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(8,145,178,.3);transition:transform .2s,box-shadow .2s;}
+.dic-check-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(8,145,178,.4);}
+.dic-result{margin-top:18px;border-radius:14px;overflow:hidden;border:2px solid;}
+.dic-result-header{padding:14px 18px;color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;gap:10px;}
+.dic-result-body{padding:18px 20px;background:var(--card);}
+.dic-result.contraindicated{border-color:#991b1b;}
+.dic-result.contraindicated .dic-result-header{background:linear-gradient(135deg,#991b1b,#dc2626);}
+.dic-result.major{border-color:#c2410c;}
+.dic-result.major .dic-result-header{background:linear-gradient(135deg,#c2410c,#ea580c);}
+.dic-result.moderate{border-color:#a16207;}
+.dic-result.moderate .dic-result-header{background:linear-gradient(135deg,#a16207,#ca8a04);}
+.dic-result.minor{border-color:#15803d;}
+.dic-result.minor .dic-result-header{background:linear-gradient(135deg,#15803d,#16a34a);}
+.dic-result.none{border-color:#64748b;}
+.dic-result.none .dic-result-header{background:linear-gradient(135deg,#475569,#64748b);}
+.dic-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px;}
+@media(max-width:720px){.dic-detail-grid{grid-template-columns:1fr;}}
+.dic-detail-box{background:#f8fafc;border-left:4px solid #0891b2;border-radius:6px;padding:12px 14px;font-size:13.5px;line-height:1.5;}
+.dic-detail-box strong{display:block;color:#0c4a6e;font-size:11px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px;}
+.dic-exam-pearl{background:linear-gradient(135deg,#fef3c7,#fde68a);border:1px solid #f59e0b;border-radius:8px;padding:11px 14px;margin-top:12px;font-size:13.5px;}
+.dic-exam-pearl strong{color:#92400e;display:block;font-size:11.5px;margin-bottom:3px;letter-spacing:.5px;text-transform:uppercase;}
+.dic-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+.dic-stat{background:#ecfeff;color:#0e7490;font-size:11.5px;font-weight:700;padding:5px 10px;border-radius:20px;border:1px solid #67e8f9;}
+.dic-quick-pairs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.dic-quick-pairs button{background:#f1f5f9;color:#334155;border:1px solid var(--line);border-radius:20px;padding:6px 14px;font-size:12.5px;font-weight:600;cursor:pointer;transition:all .2s;}
+.dic-quick-pairs button:hover{background:#0891b2;color:#fff;border-color:#0891b2;}
+.dic-info-card{background:linear-gradient(135deg,#f0fdfa,#cffafe);border:1px solid #67e8f9;border-radius:10px;padding:14px;margin-bottom:14px;font-size:13.5px;line-height:1.55;}
+.dic-info-card strong{color:#0e7490;}
+.dic-legend{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px;justify-content:center;}
+.dic-legend span{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:20px;color:#fff;}
+.dic-legend .l-c{background:#dc2626;}
+.dic-legend .l-mj{background:#ea580c;}
+.dic-legend .l-mo{background:#ca8a04;}
+.dic-legend .l-mi{background:#16a34a;}
+.dic-legend .l-n{background:#64748b;}
+html[data-theme="cream"] .dic-info-card{background:linear-gradient(135deg,#fef9e7,#fef3c7);border-color:#fbbf24;}
+html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
+
 </style>
 </head>
 <body>
@@ -1114,6 +1170,7 @@ html[data-theme="cream"] .adaptive-start-btn{
   <a href="#pyq">PYQs</a>
   <a href="#practice">Practice Sets</a>
   <a href="#adaptive" style="background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;border-color:#7c3aed;">🧠 Adaptive</a>
+  <a href="#dic" style="background:linear-gradient(135deg,#0891b2,#0f766e);color:white;border-color:#0891b2;">🔍 Interactions</a>
   <a href="#fmge">FMGE</a>
   <a href="#about">About</a>
   <button class="search-trigger" onclick="openSearch()" style="margin-left:auto;">🔍 Search <kbd>/</kbd></button>
@@ -1258,6 +1315,59 @@ html[data-theme="cream"] .adaptive-start-btn{
   <div id="adaptive-dashboard"></div>
   <div id="adaptive-arena" style="display:none;margin-top:18px;"></div>
 </section>
+
+<!-- ── DRUG INTERACTION CHECKER ──────────────────── -->
+<section class="section" id="dic">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#0891b2,#0f766e);color:white;">🔍 Clinical Tool</div>
+    <h2>Drug Interaction Checker</h2>
+    <p>200+ NEET PG &amp; INI-CET high-yield drug interactions — severity-coded with mechanism, management &amp; exam pearls.</p>
+  </div>
+  <div class="dic-wrapper">
+    <div class="dic-hero">
+      <h3>💊 Check Two Drugs Instantly</h3>
+      <p>Enter both drug names — get severity (🔴 Contraindicated / 🟠 Major / 🟡 Moderate / 🟢 Minor), mechanism, management plan and exam-ready summary.</p>
+    </div>
+
+    <div class="dic-info-card">
+      <strong>📚 Clinical Pearl:</strong> Approx. <strong>20-30% of hospital admissions</strong> in elderly are due to adverse drug interactions. Mastery of these combinations is essential for safe practice <em>and</em> high-yield NEET PG / INI-CET questions.
+    </div>
+
+    <div class="dic-legend">
+      <span class="l-c">🔴 Contraindicated</span>
+      <span class="l-mj">🟠 Major</span>
+      <span class="l-mo">🟡 Moderate</span>
+      <span class="l-mi">🟢 Minor</span>
+      <span class="l-n">⚪ No Known</span>
+    </div>
+
+    <div class="dic-input-grid">
+      <div class="dic-input-block">
+        <label for="dic-drug-a">Drug A</label>
+        <input type="text" id="dic-drug-a" placeholder="e.g. Warfarin" autocomplete="off" oninput="dicSuggest(this,'a')" onfocus="dicSuggest(this,'a')" onblur="setTimeout(()=>dicHideSuggest('a'),200)">
+        <div class="dic-suggestions" id="dic-sug-a" style="display:none;"></div>
+      </div>
+      <div class="dic-vs">⚡ VS ⚡</div>
+      <div class="dic-input-block">
+        <label for="dic-drug-b">Drug B</label>
+        <input type="text" id="dic-drug-b" placeholder="e.g. Aspirin" autocomplete="off" oninput="dicSuggest(this,'b')" onfocus="dicSuggest(this,'b')" onblur="setTimeout(()=>dicHideSuggest('b'),200)">
+        <div class="dic-suggestions" id="dic-sug-b" style="display:none;"></div>
+      </div>
+    </div>
+
+    <button class="dic-check-btn" onclick="checkInteraction()">🔍 Check Interaction</button>
+
+    <div style="font-size:12px;color:var(--muted);text-align:center;margin-top:8px;">⚡ Quick test with common combinations:</div>
+    <div class="dic-quick-pairs" id="dic-quick-pairs"></div>
+
+    <div id="dic-result-container"></div>
+
+    <div style="margin-top:22px;padding:14px;background:#fef9e7;border-left:4px solid #f59e0b;border-radius:6px;font-size:12.5px;color:#78350f;">
+      <strong>⚠️ Educational Use Only:</strong> This tool covers NEET PG / INI-CET / FMGE high-yield interactions for academic learning. Always verify with Lexicomp, Micromedex or UpToDate for real clinical decisions. Drug names: enter generic name (lowercase OK). 200+ pairs covered &mdash; not exhaustive.
+    </div>
+  </div>
+</section>
+
 
 <!-- ── FMGE ─────────────────────────────────────── -->
 <section class="section" id="fmge">
@@ -21194,5 +21304,332 @@ function showLockMessage(msg){
 }
 </script>
 
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   DRUG INTERACTION DATABASE (200+ NEET PG/INI-CET HIGH-YIELD)
+   ═══════════════════════════════════════════════════════════
+   severity: contraindicated | major | moderate | minor
+   Each entry: a (drug A list), b (drug B list), severity, mech, mgmt, exam
+   ═══════════════════════════════════════════════════════════ */
+const DRUG_INTERACTIONS = [
+  // ─── CONTRAINDICATED (Life-threatening / NEVER combine) ───
+  {a:["maoi","selegiline","phenelzine","tranylcypromine","moclobemide","isocarboxazid"],b:["ssri","fluoxetine","sertraline","paroxetine","citalopram","escitalopram","fluvoxamine"],severity:"contraindicated",mech:"Both ↑ synaptic serotonin → SEROTONIN SYNDROME (hyperthermia, autonomic instability, clonus, AMS)",mgmt:"NEVER combine. Washout: 2 weeks after MAOI, 5 weeks after fluoxetine. Treat syndrome: cyproheptadine + cooling",exam:"⚡ Classic NEET PG/INI-CET MCQ — Hunter criteria for serotonin syndrome"},
+  {a:["maoi","selegiline","phenelzine","tranylcypromine"],b:["meperidine","pethidine","tramadol","dextromethorphan"],severity:"contraindicated",mech:"Serotonin syndrome + hypertensive crisis via ↑ serotonin & NE",mgmt:"Use morphine instead. Discontinue MAOI 14 days before",exam:"⚡ Pethidine + MAOI = death (multiple textbook fact)"},
+  {a:["sildenafil","tadalafil","vardenafil","avanafil"],b:["nitrate","nitroglycerin","gtn","isosorbide","amyl nitrite"],severity:"contraindicated",mech:"Both ↑ cGMP → massive vasodilation → SEVERE refractory HYPOTENSION, MI risk",mgmt:"NEVER combine. Wait 24 hrs (sildenafil/vardenafil) or 48 hrs (tadalafil) before nitrate",exam:"⚡ Most asked PDE5i interaction — emergency MI scenarios"},
+  {a:["allopurinol","febuxostat"],b:["azathioprine","6-mp","mercaptopurine"],severity:"contraindicated",mech:"Xanthine oxidase inhibitor blocks 6-MP catabolism → 10× ↑ levels → SEVERE marrow suppression",mgmt:"Reduce 6-MP/azathioprine to 25-33% of dose, monitor CBC weekly. Avoid if possible",exam:"⚡ Classic — given as case in 6-MP toxicity scenarios"},
+  {a:["methotrexate"],b:["trimethoprim","co-trimoxazole","septran","bactrim"],severity:"contraindicated",mech:"Both inhibit DHFR + TMP displaces MTX from protein binding → SEVERE pancytopenia, megaloblastic anaemia",mgmt:"Avoid combination. Use alternative antibiotic (cephalexin, nitrofurantoin). If used → folinic acid rescue",exam:"⚡ Renal transplant + UTI scenarios in NEET PG"},
+  {a:["aminoglycoside","gentamicin","amikacin","streptomycin","tobramycin","neomycin"],b:["neuromuscular blocker","vecuronium","rocuronium","atracurium","succinylcholine"],severity:"contraindicated",mech:"Aminoglycosides ↓ presynaptic ACh release + ↓ postsynaptic sensitivity → PROLONGED PARALYSIS, respiratory arrest",mgmt:"Avoid intraop. Reverse with neostigmine + Ca gluconate. Watch in myasthenia gravis",exam:"⚡ Post-op apnoea + aminoglycoside = classic SAQ"},
+  {a:["clarithromycin","erythromycin","ketoconazole","itraconazole","voriconazole","ritonavir"],b:["simvastatin","lovastatin","atorvastatin"],severity:"contraindicated",mech:"Strong CYP3A4 inhibition → 10-20× ↑ statin levels → RHABDOMYOLYSIS, ARF, hyperK",mgmt:"Stop statin during antifungal/macrolide course OR switch to pravastatin/rosuvastatin/fluvastatin (non-CYP3A4)",exam:"⚡ Rhabdomyolysis case + recent Z-pack = high-yield"},
+  {a:["linezolid"],b:["ssri","tramadol","mao inhibitor","tricyclic","tca","amitriptyline","fluoxetine"],severity:"contraindicated",mech:"Linezolid = reversible MAOI → SEROTONIN SYNDROME with other serotonergic agents",mgmt:"Stop SSRI 2 wks before linezolid (5 wks for fluoxetine). Avoid if possible",exam:"⚡ VRE/MRSA + depression case = high-yield"},
+  {a:["verapamil","diltiazem"],b:["beta blocker","propranolol","atenolol","metoprolol","bisoprolol"],severity:"contraindicated",mech:"Both negative chronotropic + dromotropic → COMPLETE AV BLOCK, asystole, cardiogenic shock",mgmt:"NEVER combine IV. PO combination only with extreme caution + ECG monitoring",exam:"⚡ Complete heart block scenarios — IV verapamil + β-blocker = classic"},
+  {a:["cisapride"],b:["clarithromycin","erythromycin","ketoconazole","itraconazole","fluconazole"],severity:"contraindicated",mech:"CYP3A4 inhibition → ↑ cisapride → QT prolongation → TORSADES",mgmt:"Cisapride withdrawn worldwide for this reason. Use prokinetic alternative (metoclopramide)",exam:"⚡ Why was cisapride withdrawn? — Common MCQ"},
+  {a:["pimozide","thioridazine"],b:["macrolide","azole","ritonavir","quinidine"],severity:"contraindicated",mech:"CYP3A4 inhibition → QT prolongation → Torsades",mgmt:"Avoid combination. Use SSRIs over thioridazine if interacting drug needed",exam:"Thioridazine — most QT-prone typical antipsychotic"},
+
+  // ─── MAJOR (Avoid or strict monitoring) ───
+  {a:["warfarin"],b:["aspirin","nsaid","ibuprofen","naproxen","diclofenac","indomethacin"],severity:"major",mech:"Additive bleeding: warfarin blocks vit K factors + NSAID inhibits platelet COX-1 + GI mucosal damage",mgmt:"Avoid if possible. If needed: lowest aspirin dose (75mg), add PPI, tight INR (2.0-2.5)",exam:"⚡ ↑ GI bleed 2-3× — most tested warfarin interaction"},
+  {a:["warfarin"],b:["amiodarone","fluconazole","metronidazole","ciprofloxacin","cotrimoxazole","tmp-smx","cimetidine","fluoxetine","fluvastatin","omeprazole"],severity:"major",mech:"CYP2C9 inhibition → ↑ warfarin levels → ↑↑ INR → bleeding",mgmt:"Reduce warfarin 25-50%, check INR within 3-5 days",exam:"Amiodarone + warfarin = classic — reduce warfarin ⅓ to ½"},
+  {a:["warfarin"],b:["rifampicin","rifampin","carbamazepine","phenytoin","phenobarbital","st johns wort"],severity:"major",mech:"CYP induction → ↓ warfarin levels → ↓ INR → clot risk",mgmt:"↑ warfarin dose, monitor INR weekly during induction phase",exam:"Rifampin = classic strong inducer"},
+  {a:["digoxin"],b:["quinidine","amiodarone","verapamil","diltiazem","spironolactone","clarithromycin","propafenone"],severity:"major",mech:"P-glycoprotein inhibition + renal clearance ↓ → ↑ digoxin → toxicity (arrhythmias, GI, visual)",mgmt:"Reduce digoxin dose 50%, monitor levels (target 0.5-0.9 ng/mL)",exam:"⚡ Quinidine + digoxin = classic — doubles digoxin level"},
+  {a:["digoxin"],b:["furosemide","thiazide","hydrochlorothiazide","bumetanide"],severity:"major",mech:"Diuretic-induced hypoK + hypoMg → ↑ digoxin binding to Na/K-ATPase → toxicity (even with normal levels)",mgmt:"Monitor & replete K (4-5 mEq/L) and Mg. Combine with K-sparing diuretic",exam:"⚡ HypoK potentiates dig toxicity"},
+  {a:["lithium"],b:["nsaid","ibuprofen","naproxen","diclofenac","indomethacin","celecoxib"],severity:"major",mech:"NSAIDs ↓ renal PG → ↓ GFR → ↓ Li excretion → ↑ Li 25-60%",mgmt:"Avoid chronic NSAID. Aspirin & sulindac safer. Check Li level after 4-5 days",exam:"⚡ Lithium narrow TI — NSAID = classic"},
+  {a:["lithium"],b:["thiazide","hydrochlorothiazide","chlorthalidone","indapamide","metolazone"],severity:"major",mech:"Volume depletion → ↑ proximal tubular Na/Li reabsorption → ↑ Li 25-40%",mgmt:"Reduce Li dose 25%, monitor levels. Loop diuretics safer than thiazides",exam:"⚡ Tested NEET PG — why thiazide raises lithium"},
+  {a:["lithium"],b:["acei","enalapril","lisinopril","ramipril","arb","losartan","telmisartan"],severity:"major",mech:"↓ aldosterone → ↑ Na excretion + ↓ GFR → ↑ Li reabsorption",mgmt:"Monitor Li levels 1 wk after starting, adjust dose",exam:"Bipolar + HTN — careful BP drug choice"},
+  {a:["theophylline"],b:["ciprofloxacin","norfloxacin","enoxacin","erythromycin","clarithromycin","cimetidine","fluvoxamine"],severity:"major",mech:"CYP1A2 inhibition → ↑ theophylline (narrow TI) → seizures, arrhythmias",mgmt:"Reduce theophylline 30-50%, check level (target 10-20 mcg/mL)",exam:"⚡ Cipro + theophylline = seizure case"},
+  {a:["clopidogrel"],b:["omeprazole","esomeprazole"],severity:"major",mech:"CYP2C19 inhibition → ↓ activation of clopidogrel prodrug → ↓ antiplatelet → stent thrombosis",mgmt:"Use pantoprazole/rabeprazole instead (less CYP2C19 effect) or H2 blocker",exam:"⚡ Post-PCI patient + GERD — classic NEET PG question"},
+  {a:["mtx","methotrexate"],b:["nsaid","aspirin","ibuprofen","naproxen","diclofenac"],severity:"major",mech:"NSAIDs ↓ renal clearance + displace MTX from protein binding → ↑ MTX → marrow suppression",mgmt:"Hold NSAID 24h before & 72h after high-dose MTX. Low-dose MTX (RA): monitor closely",exam:"RA + MTX patient asking for analgesic — caution"},
+  {a:["ciclosporin","cyclosporine","tacrolimus","sirolimus"],b:["clarithromycin","erythromycin","ketoconazole","itraconazole","fluconazole","diltiazem","verapamil","grapefruit"],severity:"major",mech:"CYP3A4 inhibition → ↑ immunosuppressant → nephrotoxicity, neurotoxicity",mgmt:"Monitor levels, reduce dose 50%. Avoid grapefruit juice",exam:"⚡ Transplant patient + macrolide = classic case"},
+  {a:["fluoroquinolone","ciprofloxacin","levofloxacin","moxifloxacin","ofloxacin"],b:["antacid","aluminum","magnesium","calcium","sucralfate","iron","zinc","milk"],severity:"major",mech:"Chelation of polyvalent cations → ↓ FQ absorption 50-90% → treatment failure",mgmt:"Separate by ≥2 hrs before or 6 hrs after antacid/iron",exam:"⚡ Cipro + milk = classic counseling MCQ"},
+  {a:["tetracycline","doxycycline","minocycline"],b:["antacid","aluminum","magnesium","calcium","iron","milk","dairy"],severity:"major",mech:"Chelation → ↓ tetracycline absorption (doxycycline less affected)",mgmt:"Take 1h before or 2h after dairy/antacid",exam:"⚡ Why doxycycline preferred over tetracycline in some cases"},
+  {a:["oral contraceptive","ocp","estrogen","ethinyl estradiol","progestin"],b:["rifampicin","rifabutin","carbamazepine","phenytoin","phenobarbital","topiramate","st johns wort","griseofulvin","nevirapine"],severity:"major",mech:"CYP induction → ↑ OCP metabolism → contraceptive failure",mgmt:"Use barrier method/IUD during enzyme inducer therapy. Higher-dose OCP if needed",exam:"⚡ TB Rx + OCP failure pregnancy — classic"},
+  {a:["oral contraceptive","ocp","estrogen"],b:["amoxicillin","ampicillin","doxycycline","tetracycline"],severity:"moderate",mech:"Disrupted gut flora → ↓ enterohepatic estrogen recirculation → ↓ OCP efficacy (controversial, modest)",mgmt:"Backup contraception during + 7 days after antibiotic (conservative advice)",exam:"Common counseling point — though evidence weak"},
+  {a:["beta blocker","propranolol","atenolol","metoprolol"],b:["insulin","sulfonylurea","glimepiride","glipizide","glyburide"],severity:"major",mech:"β-blockers MASK hypoglycemia symptoms (tachycardia, tremor) + delay recovery + ↓ glycogenolysis",mgmt:"Use cardioselective (β1) like atenolol/metoprolol. Educate patient on alternative hypo signs (sweating preserved)",exam:"⚡ Diabetic with HTN — drug choice MCQ"},
+  {a:["lithium","carbamazepine"],b:["haloperidol"],severity:"major",mech:"Increased risk of neuroleptic malignant syndrome, encephalopathy",mgmt:"Monitor for AMS, fever, rigidity",exam:"Bipolar pt — caution combining"},
+  {a:["mao inhibitor","selegiline","linezolid"],b:["tyramine","aged cheese","wine","fermented food"],severity:"major",mech:"MAOI prevents tyramine breakdown → ↑↑ NE release → HYPERTENSIVE CRISIS",mgmt:"Strict low-tyramine diet during MAOI therapy + 2 weeks after",exam:"⚡ Cheese effect — classic — emergency mgmt with phentolamine/nitroprusside"},
+  {a:["amiodarone"],b:["digoxin","warfarin","statin","cyclosporine","phenytoin","quinidine"],severity:"major",mech:"Amiodarone = pan-CYP & P-gp inhibitor → ↑ multiple drugs",mgmt:"Reduce digoxin 50%, warfarin 33%, monitor others",exam:"Amiodarone = drug interaction monster"},
+  {a:["spironolactone","eplerenone","amiloride","triamterene"],b:["acei","arb","enalapril","lisinopril","losartan","valsartan","potassium","kcl"],severity:"major",mech:"All ↓ K excretion → severe HYPERKALEMIA, arrhythmias",mgmt:"Monitor K weekly initially. Avoid in CKD. Use lowest dose",exam:"⚡ Triple whammy = ACEI + K-sparing + KCl supplement = arrest"},
+  {a:["acei","arb"],b:["nsaid"],severity:"major",mech:"Both ↓ renal PG → AKI (Triple whammy with diuretic). Also ↓ antihypertensive effect",mgmt:"Avoid in elderly, CKD, dehydration. Monitor renal function",exam:"⚡ Triple whammy AKI = ACEI + Diuretic + NSAID"},
+  {a:["acei","arb"],b:["aliskiren"],severity:"major",mech:"Dual RAAS blockade → ↑ hyperK, hypotension, AKI (esp. in DM)",mgmt:"Avoid combination — contraindicated in DM",exam:"ALTITUDE trial — stopped early due to harm"},
+  {a:["levothyroxine","thyroxine"],b:["iron","calcium","antacid","cholestyramine","sucralfate","ppi","coffee","fiber"],severity:"major",mech:"↓ absorption of T4 (chelation/binding) → hypothyroidism",mgmt:"Take T4 fasting + 30-60 min before food. Separate from interacting drugs by 4 hrs",exam:"⚡ Classic counseling MCQ"},
+  {a:["levodopa","ldopa","sinemet"],b:["pyridoxine","b6","vitamin b6","mao inhibitor","metoclopramide","haloperidol","prochlorperazine"],severity:"major",mech:"B6: ↑ peripheral conversion → ↓ central availability (prevented by carbidopa). Antipsychotics/metoclopramide: D2 block",mgmt:"Avoid antipsychotics. Use ondansetron for nausea. B6 OK if carbidopa present",exam:"⚡ Parkinson's + antiemetic choice"},
+  {a:["mtor inhibitor","sirolimus","everolimus","tacrolimus","cyclosporine"],b:["nsaid","ace inhibitor"],severity:"major",mech:"Synergistic nephrotoxicity",mgmt:"Avoid in transplant patients",exam:"Renal transplant maintenance drug interactions"},
+  {a:["isoniazid","inh"],b:["phenytoin","carbamazepine","theophylline","warfarin","diazepam"],severity:"major",mech:"INH inhibits CYP2C9, CYP2C19, CYP3A4 → ↑ levels of substrates",mgmt:"Reduce phenytoin dose, monitor levels",exam:"⚡ INH + phenytoin = ataxia, nystagmus — high-yield"},
+  {a:["rifampicin","rifampin","rifabutin"],b:["warfarin","ocp","cyclosporine","digoxin","ketoconazole","corticosteroid","statin","phenytoin","theophylline","methadone","sulfonylurea","protease inhibitor","nnrti","antiretroviral"],severity:"major",mech:"Strong pan-CYP & P-gp INDUCER → ↓ many drug levels",mgmt:"Monitor drug levels, ↑ doses or switch agents",exam:"⚡ Rifampin = enzyme inducer king"},
+  {a:["clopidogrel"],b:["aspirin","warfarin","heparin","lmwh","nsaid"],severity:"major",mech:"Synergistic antiplatelet/anticoagulant → bleeding",mgmt:"Indicated only post-PCI/ACS. Add PPI for GI protection",exam:"DAPT duration in PCI"},
+  {a:["sulfonylurea","glimepiride","glipizide","glyburide"],b:["fluconazole","cotrimoxazole","trimethoprim","gemfibrozil","warfarin"],severity:"major",mech:"CYP2C9 inhibition + protein displacement → ↑ sulfonylurea → hypoglycemia",mgmt:"Reduce dose, monitor BG, educate on hypo signs",exam:"Elderly DM + UTI on cotrimoxazole — hypo case"},
+  {a:["statin","simvastatin","atorvastatin","lovastatin"],b:["fibrate","gemfibrozil","fenofibrate","niacin","cyclosporine","grapefruit"],severity:"major",mech:"Synergistic muscle toxicity + ↑ statin levels (esp. gemfibrozil via OATP1B1)",mgmt:"Use fenofibrate not gemfibrozil with statin. Monitor CK if myalgia",exam:"⚡ Rhabdomyolysis combo"},
+  {a:["ssri","fluoxetine","sertraline","paroxetine","citalopram","venlafaxine"],b:["tramadol","triptan","sumatriptan","st johns wort","mdma","cocaine","linezolid","mao inhibitor"],severity:"major",mech:"↑↑ serotonin → SEROTONIN SYNDROME",mgmt:"Avoid combos. Counsel on OTC supplements (St John's wort)",exam:"⚡ Migraine + depression — triptan choice"},
+  {a:["tca","amitriptyline","imipramine","nortriptyline","clomipramine"],b:["maoi","ssri","tramadol","sympathomimetic","epinephrine","alcohol"],severity:"major",mech:"Multiple: serotonin synd (MAOI/SSRI), hypertensive crisis (sympathomimetic)",mgmt:"Washout periods. Avoid combos",exam:"TCA OD + amphetamine = HTN crisis"},
+  {a:["clozapine"],b:["fluvoxamine","ciprofloxacin","carbamazepine","trimethoprim"],severity:"major",mech:"Fluvoxamine/cipro ↑ clozapine (CYP1A2 inhib). Carbamazepine + clozapine = ↑ agranulocytosis",mgmt:"Reduce clozapine dose. Avoid carbamazepine combo",exam:"Treatment-resistant schizo case"},
+  {a:["valproate","valproic acid"],b:["aspirin","lamotrigine","carbapenem","meropenem","carbamazepine","phenytoin"],severity:"major",mech:"Aspirin displaces valproate → ↑ free. Lamotrigine SJS risk. Carbapenem ↓ valproate to subtherapeutic",mgmt:"Slow lamotrigine titration when on valproate. Avoid carbapenems in epileptics",exam:"⚡ Lamotrigine + valproate SJS — high-yield"},
+  {a:["phenytoin"],b:["valproate","fluconazole","amiodarone","cimetidine","cotrimoxazole","isoniazid","disulfiram","topiramate","ssri"],severity:"major",mech:"CYP2C9/19 inhibition or displacement → ↑ phenytoin → nystagmus, ataxia, lethargy",mgmt:"Monitor levels (10-20 mcg/mL), adjust dose. Watch free phenytoin if albumin low",exam:"⚡ Phenytoin toxicity case scenarios"},
+  {a:["phenytoin","carbamazepine","phenobarbital","primidone"],b:["doac","apixaban","rivaroxaban","dabigatran","edoxaban"],severity:"major",mech:"CYP3A4 + P-gp induction → ↓ DOAC → clot risk",mgmt:"Avoid DOAC + enzyme inducer. Use warfarin with monitoring instead",exam:"Newer high-yield 2024 question"},
+  {a:["azole","fluconazole","itraconazole","voriconazole","posaconazole","ketoconazole"],b:["warfarin","sulfonylurea","cyclosporine","tacrolimus","statin","midazolam","triazolam","quetiapine","oral antidiabetic"],severity:"major",mech:"CYP3A4/2C9 inhibition → ↑ substrate levels",mgmt:"Reduce substrate dose 50%",exam:"Azole = strong CYP3A4 inhibitor"},
+  {a:["protease inhibitor","ritonavir","lopinavir","atazanavir","darunavir"],b:["statin","simvastatin","lovastatin","amiodarone","midazolam","ergotamine","rifampicin"],severity:"major",mech:"Ritonavir = potent CYP3A4 inhibitor (used as booster)",mgmt:"Avoid simvastatin/lovastatin. Use atorvastatin/rosuvastatin low dose",exam:"HIV + dyslipidemia case"},
+  {a:["dpp4 inhibitor","sitagliptin","linagliptin","saxagliptin"],b:["acei","enalapril","lisinopril"],severity:"moderate",mech:"Both ↑ bradykinin → ↑ angioedema risk",mgmt:"Monitor for facial/tongue swelling",exam:"DM + HTN combination caution"},
+  {a:["sglt2 inhibitor","empagliflozin","dapagliflozin","canagliflozin"],b:["diuretic","furosemide","insulin","sulfonylurea"],severity:"moderate",mech:"Volume depletion + hypoglycemia risk with insulin/SU",mgmt:"Reduce insulin/SU dose 20%, ensure hydration",exam:"Newer SGLT2i counseling"},
+  {a:["acei","arb"],b:["potassium","kcl","spironolactone","k-sparing"],severity:"major",mech:"↑↑ K → hyperkalemia → arrhythmia",mgmt:"Monitor K. Avoid K supplements unless documented hypoK",exam:"⚡ HF triple Rx caution"},
+
+  // ─── MODERATE ───
+  {a:["furosemide","torsemide","bumetanide","ethacrynic acid"],b:["aminoglycoside","gentamicin","amikacin","cisplatin","amphotericin"],severity:"moderate",mech:"Additive ototoxicity + nephrotoxicity",mgmt:"Monitor renal function, audiometry. Reduce doses",exam:"Ototoxicity question"},
+  {a:["acei","arb"],b:["furosemide","thiazide"],severity:"moderate",mech:"Synergistic hypotension, first-dose hypotension. Combined ↓ GFR risk if dehydrated",mgmt:"Start ACEI low dose, ensure euvolemia. Hold morning diuretic on first ACEI dose",exam:"First-dose hypotension counseling"},
+  {a:["metformin"],b:["contrast media","iodinated contrast"],severity:"moderate",mech:"Risk of contrast-induced AKI → metformin accumulation → lactic acidosis",mgmt:"Hold metformin from contrast until 48h after + check Cr",exam:"⚡ Pre-procedure counseling MCQ"},
+  {a:["metformin"],b:["alcohol"],severity:"moderate",mech:"Both can cause lactic acidosis (rare with metformin alone)",mgmt:"Limit alcohol, especially binge drinking",exam:"DM patient counseling"},
+  {a:["benzodiazepine","alprazolam","diazepam","lorazepam","midazolam"],b:["opioid","morphine","fentanyl","oxycodone","tramadol","alcohol","barbiturate"],severity:"major",mech:"Additive CNS + respiratory depression → death",mgmt:"FDA black box. Avoid unless essential. Lowest doses, monitor",exam:"⚡ Opioid epidemic — BZD + opioid = death"},
+  {a:["benzodiazepine","alprazolam","midazolam","triazolam"],b:["clarithromycin","erythromycin","ketoconazole","itraconazole","grapefruit"],severity:"moderate",mech:"CYP3A4 inhib → ↑ BZD → sedation",mgmt:"Use lorazepam/oxazepam (glucuronidated, no CYP)",exam:"Elderly with insomnia + Z-pack case"},
+  {a:["nsaid","ibuprofen","naproxen","diclofenac"],b:["furosemide","thiazide","beta blocker"],severity:"moderate",mech:"NSAID ↓ renal PG → ↓ antihypertensive efficacy",mgmt:"Use lowest NSAID dose, prefer paracetamol",exam:"BP control worsening — check OTC NSAIDs"},
+  {a:["aspirin"],b:["ibuprofen"],severity:"moderate",mech:"Ibuprofen blocks aspirin access to COX-1 in platelets → ↓ cardioprotection",mgmt:"Take aspirin 2h BEFORE ibuprofen or 8h AFTER",exam:"⚡ Post-MI + arthritis — drug timing"},
+  {a:["clopidogrel"],b:["fluoxetine","fluvoxamine","cimetidine","etravirine","felbamate"],severity:"moderate",mech:"CYP2C19 inhibition → ↓ clopidogrel activation",mgmt:"Consider prasugrel/ticagrelor (not CYP2C19 dependent)",exam:"Post-PCI + SSRI choice"},
+  {a:["ace inhibitor","arb"],b:["mtor","sirolimus","everolimus"],severity:"moderate",mech:"Synergistic angioedema risk",mgmt:"Monitor",exam:"Transplant patient angioedema"},
+  {a:["finasteride","dutasteride"],b:["pregnant women"],severity:"contraindicated",mech:"5α-reductase inhib → teratogenic (genital malformation)",mgmt:"Avoid handling crushed/broken tablets in pregnancy",exam:"⚡ BPH drug — pregnancy counseling"},
+  {a:["isotretinoin","retinoid","vitamin a"],b:["tetracycline","doxycycline","minocycline"],severity:"major",mech:"Both ↑ ICP → pseudotumor cerebri (idiopathic intracranial HTN)",mgmt:"Avoid combination. Headache + visual changes → stop both",exam:"⚡ Acne treatment + UTI case"},
+  {a:["isotretinoin"],b:["pregnancy","ocp"],severity:"contraindicated",mech:"Severe teratogenicity (heart, CNS, face defects)",mgmt:"iPLEDGE program — 2 negative pregnancy tests + 2 contraceptives",exam:"⚡ Most teratogenic Rx drug — high yield"},
+  {a:["thyroxine","levothyroxine"],b:["warfarin"],severity:"moderate",mech:"T4 ↑ clotting factor catabolism → ↑ warfarin effect",mgmt:"Monitor INR closely when starting/adjusting thyroxine",exam:"Hypothyroid + AF case"},
+  {a:["corticosteroid","prednisolone","prednisone","dexamethasone"],b:["nsaid","aspirin"],severity:"moderate",mech:"Additive GI ulceration risk",mgmt:"Add PPI for prophylaxis",exam:"RA on steroid + NSAID — PPI need"},
+  {a:["corticosteroid","prednisolone"],b:["fluoroquinolone","ciprofloxacin","levofloxacin"],severity:"moderate",mech:"Both ↑ tendon rupture risk (Achilles)",mgmt:"Caution in elderly. Avoid if h/o tendinitis",exam:"Tendon rupture warning — black box"},
+  {a:["corticosteroid"],b:["live vaccine","mmr","varicella","oral polio","bcg","yellow fever"],severity:"contraindicated",mech:"Immunosuppression → vaccine-strain infection",mgmt:"Wait 1 month after stopping steroids before live vaccine",exam:"Steroid + vaccine counseling"},
+  {a:["serotonin antagonist","ondansetron","granisetron"],b:["tramadol","ssri","linezolid","fentanyl"],severity:"moderate",mech:"Mild serotonin synd risk + ↓ analgesic via 5-HT3 block",mgmt:"Monitor for syndrome signs",exam:"Post-op patient on multiple serotonergics"},
+  {a:["antipsychotic","haloperidol","quetiapine","risperidone","olanzapine","ziprasidone"],b:["macrolide","azole","ssri","ondansetron","methadone"],severity:"moderate",mech:"Additive QT prolongation → torsades",mgmt:"ECG monitoring, correct electrolytes (K, Mg)",exam:"QT-prolonging combos"},
+  {a:["zolpidem","zaleplon","eszopiclone"],b:["alcohol","opioid","benzodiazepine","muscle relaxant"],severity:"moderate",mech:"Additive CNS depression + sleep behaviours",mgmt:"Avoid combos. Limit to short-term use",exam:"Z-drug counseling"},
+  {a:["gabapentin","pregabalin"],b:["opioid","benzodiazepine","alcohol"],severity:"moderate",mech:"Additive CNS depression — ↑ overdose death risk",mgmt:"Caution. Monitor for sedation, respiratory depression",exam:"Chronic pain combo caution"},
+  {a:["nitroglycerin","isosorbide"],b:["sildenafil","tadalafil","vardenafil","alcohol"],severity:"contraindicated",mech:"Synergistic vasodilation → severe hypotension",mgmt:"Avoid. Use 24-48 hr window",exam:"PDE5i ED counseling for cardiac pt"},
+  {a:["disulfiram"],b:["alcohol","metronidazole","tinidazole","cefoperazone","procarbazine","griseofulvin","sulfonylurea"],severity:"major",mech:"Disulfiram-like reaction (flushing, headache, n/v, hypotension)",mgmt:"Avoid alcohol 12h before & 3 days after disulfiram/metronidazole",exam:"⚡ Disulfiram reaction — classic — many drugs"},
+  {a:["metronidazole"],b:["alcohol","warfarin","lithium","phenytoin"],severity:"major",mech:"Disulfiram-like + CYP2C9 inhib",mgmt:"No alcohol 24h before to 3 days after metronidazole",exam:"⚡ Common counseling MCQ"},
+  {a:["cephalosporin","cefoperazone","cefotetan","cefamandole","ceftriaxone"],b:["alcohol","warfarin"],severity:"moderate",mech:"NMTT side chain → ↓ vit K activation + disulfiram-like",mgmt:"Avoid alcohol, monitor INR",exam:"NMTT side chain — high yield"},
+  {a:["ceftriaxone"],b:["calcium","ringer lactate","ca-containing iv fluid"],severity:"contraindicated",mech:"Ca-ceftriaxone precipitate → fatal pulmonary/renal emboli (in neonates esp.)",mgmt:"NEVER combine in same IV line, especially neonates",exam:"⚡ Neonatal sepsis case — FDA warning"},
+  {a:["allopurinol"],b:["ampicillin","amoxicillin","captopril","ace inhibitor"],severity:"moderate",mech:"↑ risk of maculopapular rash, SJS",mgmt:"Avoid in early gout therapy",exam:"Allopurinol hypersensitivity"},
+  {a:["valproate"],b:["pregnancy"],severity:"contraindicated",mech:"Neural tube defects, autism, ↓ IQ",mgmt:"Avoid in women of childbearing age. Use lamotrigine/levetiracetam",exam:"⚡ Most teratogenic AED"},
+  {a:["isoniazid"],b:["alcohol","rifampicin","pyrazinamide","acetaminophen","paracetamol"],severity:"moderate",mech:"Additive hepatotoxicity",mgmt:"Monitor LFTs, limit alcohol & paracetamol",exam:"ATT hepatotoxicity workup"},
+  {a:["acetaminophen","paracetamol"],b:["alcohol","isoniazid","rifampicin","carbamazepine","phenobarbital"],severity:"moderate",mech:"CYP2E1 induction → ↑ NAPQI → hepatotoxicity at lower doses",mgmt:"Limit paracetamol to 2g/d in chronic alcoholics",exam:"⚡ Paracetamol OD in alcoholic"},
+  {a:["heparin","lmwh","enoxaparin","dalteparin"],b:["nsaid","aspirin","clopidogrel","warfarin"],severity:"major",mech:"Additive bleeding",mgmt:"Indication-based, monitor Hb",exam:"ACS dual/triple Rx bleeding risk"},
+  {a:["heparin"],b:["protamine"],severity:"minor",mech:"Protamine = reversal agent",mgmt:"1 mg protamine reverses 100 U heparin (max 50 mg)",exam:"Reversal — basic fact"},
+  {a:["warfarin"],b:["vitamin k"],severity:"minor",mech:"Reversal — vit K bypasses warfarin block",mgmt:"Use for INR>10 or bleeding. 1-2.5 mg PO for moderate INR rise",exam:"Reversal dosing"},
+  {a:["bupropion"],b:["maoi","tca","alcohol"],severity:"major",mech:"↑ seizure risk + serotonin synd",mgmt:"Avoid in seizure disorder, eating disorders",exam:"Bupropion + smoking cessation contraindications"},
+  {a:["beta blocker"],b:["clonidine"],severity:"moderate",mech:"Sudden clonidine withdrawal in pt on β-blocker → unopposed α → rebound HTN",mgmt:"Taper clonidine first, then β-blocker",exam:"⚡ Clonidine withdrawal — high-yield"},
+  {a:["beta blocker"],b:["epinephrine","adrenaline"],severity:"moderate",mech:"Unopposed α effect → HTN, bradycardia (esp non-selective β-blocker)",mgmt:"Use selective β1-blocker if needed. In anaphylaxis: epinephrine still works (delayed)",exam:"⚡ Anaphylaxis on β-blocker — glucagon"},
+  {a:["antacid","aluminum","magnesium","calcium"],b:["levothyroxine","iron","fluoroquinolone","tetracycline","bisphosphonate","atazanavir","ketoconazole"],severity:"major",mech:"↑ gastric pH ± chelation → ↓ absorption",mgmt:"Separate by ≥2-4 hrs",exam:"Common counseling MCQs"},
+  {a:["ppi","omeprazole","pantoprazole","lansoprazole","esomeprazole","rabeprazole"],b:["clopidogrel","atazanavir","iron","levothyroxine","mycophenolate"],severity:"moderate",mech:"↑ gastric pH → ↓ absorption of pH-dependent drugs",mgmt:"Time separation or H2-blocker alternative",exam:"PPI deprescribing question"},
+  {a:["carbidopa","l-dopa"],b:["protein","high-protein meal"],severity:"moderate",mech:"Large neutral AA compete with L-dopa for transport",mgmt:"Take L-dopa 30 min before meals + low-protein diet",exam:"⚡ Parkinson's diet counseling"},
+  {a:["mao b inhibitor","selegiline","rasagiline"],b:["tyramine"],severity:"minor",mech:"At usual doses, selective MAO-B → less tyramine risk",mgmt:"Diet less restrictive than non-selective MAOI",exam:"PD drug — diet counseling"},
+  {a:["amiodarone","sotalol","quinidine","procainamide","disopyramide"],b:["other qt prolonging","fluoroquinolone","macrolide","ondansetron","methadone","haloperidol"],severity:"major",mech:"Additive QT → torsades",mgmt:"Monitor QTc, correct K+/Mg+",exam:"⚡ QT drugs combo"},
+  {a:["acetylcysteine","nac"],b:["activated charcoal"],severity:"moderate",mech:"Charcoal adsorbs NAC",mgmt:"Separate doses, or use IV NAC for paracetamol OD",exam:"Paracetamol OD management"},
+  {a:["paracetamol","acetaminophen"],b:["warfarin"],severity:"moderate",mech:"Paracetamol (>2g/d chronic) ↑ INR via unclear mechanism",mgmt:"Monitor INR with chronic paracetamol use",exam:"Lesser-known but tested"},
+  {a:["statin"],b:["grapefruit","grapefruit juice"],severity:"moderate",mech:"Furanocoumarins inhibit intestinal CYP3A4 → ↑ statin (simva/lovastatin >> atorva)",mgmt:"Avoid grapefruit with simvastatin/lovastatin. Pravastatin/rosuvastatin safer",exam:"⚡ Counseling MCQ"},
+  {a:["calcium channel blocker","amlodipine","felodipine","nifedipine","verapamil","diltiazem"],b:["grapefruit","clarithromycin","ketoconazole"],severity:"moderate",mech:"CYP3A4 inhib → ↑ CCB → hypotension, flushing",mgmt:"Avoid grapefruit. Monitor BP",exam:"BP control with CCB + antibiotic"},
+  {a:["allopurinol"],b:["theophylline","cyclophosphamide"],severity:"moderate",mech:"↑ levels",mgmt:"Reduce doses",exam:""},
+  {a:["acetazolamide"],b:["aspirin","salicylate"],severity:"major",mech:"Acetazolamide-induced acidosis ↑ salicylate CNS penetration → toxicity",mgmt:"Avoid combination",exam:"Glaucoma + chronic pain case"},
+  {a:["lamotrigine"],b:["valproate"],severity:"major",mech:"Valproate ↓ lamotrigine clearance → ↑↑ levels → SJS/TEN risk",mgmt:"Slow titration (25 mg every 2 wks when adding lamotrigine to valproate)",exam:"⚡ Bipolar Rx caution"},
+  {a:["carbamazepine"],b:["lamotrigine","ocp","warfarin","doxycycline"],severity:"major",mech:"CYP3A4 induction → ↓ substrate levels",mgmt:"Adjust doses",exam:"Strong enzyme inducer"},
+  {a:["fluvoxamine"],b:["caffeine","clozapine","theophylline","tizanidine"],severity:"major",mech:"Strong CYP1A2 inhibitor → ↑ substrate",mgmt:"Reduce substrate dose",exam:"OCD + theophylline asthmatic"},
+  {a:["tcas","amitriptyline","imipramine"],b:["beta blocker","clonidine"],severity:"moderate",mech:"Additive hypotension or BP effects",mgmt:"Monitor BP",exam:""},
+  {a:["lithium"],b:["caffeine","theophylline"],severity:"moderate",mech:"↑ Li clearance via xanthines",mgmt:"Stable caffeine intake. ↓ caffeine → ↑ Li",exam:"Bipolar pt — coffee counseling"},
+  {a:["digoxin"],b:["macrolide","erythromycin","clarithromycin","tetracycline"],severity:"moderate",mech:"↓ gut flora → ↓ digoxin metabolism (10% of pop. has Eggerthella) → ↑ digoxin",mgmt:"Monitor digoxin levels",exam:"Eggerthella lenta — interesting fact"},
+  {a:["digoxin"],b:["antacid","cholestyramine","kaolin pectin","sucralfate"],severity:"moderate",mech:"↓ digoxin absorption",mgmt:"Separate by 2 hrs",exam:""},
+  {a:["acei","arb"],b:["lithium"],severity:"major",mech:"↑ Li retention",mgmt:"Use CCB instead",exam:""},
+  {a:["amiodarone"],b:["sotalol","procainamide","quinidine"],severity:"contraindicated",mech:"Additive QT prolongation",mgmt:"Avoid combination",exam:"Antiarrhythmic combo MCQ"},
+  {a:["nifedipine","amlodipine"],b:["beta blocker"],severity:"minor",mech:"Dihydropyridine + β-blocker is generally SAFE (often combined for HTN/angina)",mgmt:"Combination is appropriate",exam:"vs non-DHP CCB + β-blocker = dangerous"},
+  {a:["aminoglycoside"],b:["loop diuretic","amphotericin","contrast","vancomycin"],severity:"major",mech:"Additive nephrotoxicity + ototoxicity",mgmt:"Once-daily dosing, monitor levels & Cr, audiometry",exam:""},
+  {a:["vancomycin"],b:["aminoglycoside","loop diuretic","piperacillin"],severity:"moderate",mech:"Synergistic nephrotoxicity (vanco + pip/tazo controversial)",mgmt:"Monitor Cr, vanco levels",exam:"AKI risk question"},
+  {a:["sulfonylurea","glipizide","glyburide"],b:["beta blocker"],severity:"moderate",mech:"β-blocker masks hypoglycemia signs",mgmt:"Use β1-selective",exam:"DM + HTN"},
+  {a:["insulin"],b:["beta blocker","mao inhibitor","alcohol","sulfonamide","ace inhibitor"],severity:"moderate",mech:"↑ hypoglycemia risk via various mechanisms",mgmt:"Monitor BG, educate",exam:"Hypo risk combo"},
+  {a:["thiazolidinedione","pioglitazone","rosiglitazone"],b:["insulin","sulfonylurea"],severity:"moderate",mech:"↑ edema, CHF risk + hypo",mgmt:"Avoid in CHF (Class III/IV)",exam:""},
+  {a:["acarbose","miglitol"],b:["digestive enzyme","amylase","pancreatin"],severity:"minor",mech:"Antagonistic mechanisms",mgmt:"Separate timing",exam:""},
+  {a:["loop diuretic","furosemide"],b:["digoxin","lithium","aminoglycoside","cisplatin"],severity:"major",mech:"HypoK ↑ dig toxicity, ↓ Li clearance, additive nephro/ototox",mgmt:"Monitor electrolytes",exam:""},
+  {a:["thiazide","hydrochlorothiazide"],b:["digoxin","lithium","calcium","amiodarone"],severity:"major",mech:"HypoK + hyperCa effects",mgmt:"Monitor electrolytes",exam:""},
+  {a:["chloramphenicol"],b:["phenytoin","sulfonylurea","warfarin","cyclophosphamide"],severity:"major",mech:"CYP inhibition + protein displacement → ↑ substrates",mgmt:"Monitor levels",exam:""},
+  {a:["griseofulvin"],b:["warfarin","ocp","cyclosporine"],severity:"major",mech:"CYP induction → ↓ substrates",mgmt:"Use alternative or backup contraception",exam:""},
+  {a:["ribavirin"],b:["didanosine","azt","stavudine","ddi"],severity:"major",mech:"Lactic acidosis, pancreatitis (didanosine), anemia (AZT)",mgmt:"Avoid combinations",exam:"HCV + HIV co-infection"},
+  {a:["protease inhibitor"],b:["ergotamine","cisapride","midazolam","statin","rifampin"],severity:"contraindicated",mech:"Ritonavir-boosted PI = strong CYP3A4 inhib",mgmt:"Avoid combinations",exam:"HIV combination Rx"},
+  {a:["efavirenz","nevirapine","etravirine"],b:["ocp","methadone","warfarin","ketoconazole"],severity:"major",mech:"CYP3A4 induction → ↓ substrates",mgmt:"↑ doses, alternative contraception",exam:"HIV+ pregnancy plan"},
+  {a:["acetylsalicylic acid","aspirin"],b:["methotrexate","valproate","phenytoin"],severity:"moderate",mech:"Displaces from protein, ↓ renal excretion → ↑ levels",mgmt:"Use other analgesic in RA on MTX",exam:""},
+  {a:["nitrate","nitroglycerin","isosorbide"],b:["heparin","aspirin","alcohol"],severity:"moderate",mech:"Various: nitrate may ↓ heparin effect (controversial)",mgmt:"Monitor PTT",exam:"ACS Rx"},
+  {a:["hormonal contraceptive","ocp"],b:["lamotrigine"],severity:"moderate",mech:"Estrogen ↓ lamotrigine levels → breakthrough seizures",mgmt:"↑ lamotrigine dose during OCP use",exam:"Epilepsy + contraception"},
+  {a:["topiramate"],b:["ocp"],severity:"moderate",mech:"High-dose topiramate ↓ OCP via CYP3A4",mgmt:"Use higher-dose OCP or alternative method",exam:""},
+  {a:["nsaid"],b:["sulfonylurea"],severity:"moderate",mech:"Displaces SU from protein → hypo",mgmt:"Monitor BG",exam:""},
+  {a:["aluminum hydroxide","sucralfate"],b:["fluoroquinolone","tetracycline","levothyroxine"],severity:"major",mech:"Chelation/binding → ↓ absorption",mgmt:"Separate by 2-4 hrs",exam:""},
+  {a:["amitriptyline","imipramine"],b:["tramadol","linezolid","mao inhibitor"],severity:"major",mech:"Serotonin synd",mgmt:"Avoid",exam:""},
+  {a:["nystatin"],b:["food","oral antifungal cream"],severity:"minor",mech:"Topical nystatin = minimal systemic absorption",mgmt:"Generally safe",exam:""},
+
+  // ─── ANTICANCER / SUPPORTIVE ───
+  {a:["5-fu","5-fluorouracil","capecitabine"],b:["warfarin"],severity:"major",mech:"5-FU inhibits CYP2C9 → ↑↑ INR",mgmt:"Reduce warfarin, monitor INR weekly during chemo",exam:"⚡ Common chemo combo"},
+  {a:["tamoxifen"],b:["fluoxetine","paroxetine","bupropion","duloxetine"],severity:"major",mech:"CYP2D6 inhib → ↓ active endoxifen → ↓ tamoxifen efficacy",mgmt:"Use venlafaxine/escitalopram for hot flashes (low CYP2D6 inhib)",exam:"⚡ Breast Ca + depression case"},
+  {a:["irinotecan"],b:["st johns wort","carbamazepine","phenytoin","rifampin"],severity:"major",mech:"CYP3A4 induction → ↓ active SN-38 → ↓ efficacy",mgmt:"Avoid combos",exam:""},
+  {a:["cisplatin"],b:["aminoglycoside","loop diuretic","amphotericin","nsaid"],severity:"major",mech:"Synergistic nephrotoxicity + ototoxicity",mgmt:"Hydrate, avoid combos. Mannitol forced diuresis",exam:"Chemo support care"},
+  {a:["doxorubicin"],b:["trastuzumab"],severity:"major",mech:"Synergistic cardiotoxicity (LV dysfunction)",mgmt:"Sequential not concurrent, monitor LVEF",exam:"Breast Ca regimens"},
+  {a:["mtor inhibitor","everolimus","sirolimus"],b:["ace inhibitor","rapamycin"],severity:"major",mech:"Synergistic angioedema",mgmt:"Avoid in transplant pts on mTORi",exam:""},
+  {a:["cyclophosphamide"],b:["allopurinol"],severity:"moderate",mech:"↑ cyclophos toxicity (BM, GI)",mgmt:"Avoid",exam:""},
+  {a:["bleomycin"],b:["oxygen","high fio2"],severity:"contraindicated",mech:"O2-mediated pulmonary fibrosis (Hyperoxia → ROS → lung damage)",mgmt:"Use lowest FiO2. Avoid 100% O2 perop",exam:"⚡ Bleomycin + O2 = Pulmonary fibrosis — classic"},
+
+  // ─── MISC HIGH-YIELD ───
+  {a:["captopril","enalapril"],b:["sulfa","sulfonamide","cotrimoxazole","sulfasalazine"],severity:"moderate",mech:"Cross-reactivity for sulfa-allergic patients (mild)",mgmt:"Document allergy. Most ACEIs not sulfa, captopril has SH group not sulfa",exam:"Sulfa allergy myths"},
+  {a:["mtx","methotrexate"],b:["penicillin","cephalosporin","probenecid","sulfa"],severity:"moderate",mech:"↓ renal excretion of MTX → ↑ MTX",mgmt:"Monitor levels, avoid combos",exam:""},
+  {a:["lactulose"],b:["antacid","laxative"],severity:"moderate",mech:"↑ pH inhibits lactulose action",mgmt:"Time separation",exam:"Hepatic encephalopathy Rx"},
+  {a:["beta blocker"],b:["verapamil intravenous","digoxin"],severity:"contraindicated",mech:"Bradycardia, AV block, asystole",mgmt:"NEVER combine IV. PO with caution",exam:"Heart block scenarios"},
+  {a:["adenosine"],b:["theophylline","caffeine","dipyridamole"],severity:"moderate",mech:"Theophylline blocks adenosine receptors → ↓ efficacy. Dipyridamole ↑ effect",mgmt:"↑ adenosine dose if on theophylline; ↓ if on dipyridamole",exam:"SVT management exam pt"},
+  {a:["clozapine"],b:["smoking","tobacco","cigarette"],severity:"moderate",mech:"CYP1A2 induction by smoking → ↓ clozapine",mgmt:"↑ dose in smokers; ↓ if quits smoking abruptly",exam:"⚡ Smoking + psych meds — high-yield"},
+  {a:["olanzapine"],b:["smoking"],severity:"moderate",mech:"Similar — CYP1A2 induction",mgmt:"Adjust on smoking status change",exam:""},
+  {a:["lovastatin","simvastatin","atorvastatin"],b:["niacin"],severity:"moderate",mech:"Synergistic myopathy/rhabdo",mgmt:"AIM-HIGH showed no CV benefit, ↑ harm. Avoid",exam:"Combination lipid therapy"},
+  {a:["carbamazepine"],b:["macrolide","azole","grapefruit","valproate"],severity:"major",mech:"CYP3A4 inhib → ↑ carbamazepine → toxicity",mgmt:"Monitor levels (4-12 mcg/mL)",exam:""},
+  {a:["levetiracetam"],b:["carbamazepine","phenytoin","valproate"],severity:"minor",mech:"Minimal interactions (renally excreted, no major CYP)",mgmt:"Why levetiracetam is preferred — clean profile",exam:"⚡ Best AED for polytherapy"},
+  {a:["dabigatran"],b:["dronedarone","ketoconazole","verapamil","amiodarone","rifampin"],severity:"major",mech:"P-gp inhibitors ↑ dabigatran. Inducers ↓",mgmt:"Adjust dose or alternative DOAC",exam:""},
+  {a:["apixaban","rivaroxaban"],b:["azole","macrolide","ritonavir","rifampin","carbamazepine"],severity:"major",mech:"CYP3A4 + P-gp interactions",mgmt:"Avoid strong inducers/inhibitors",exam:""},
+  {a:["heparin"],b:["nitroglycerin"],severity:"moderate",mech:"NTG may ↓ heparin effect (controversial)",mgmt:"Monitor aPTT closely",exam:"ACS Rx"},
+  {a:["aspirin"],b:["acetazolamide"],severity:"major",mech:"Metabolic acidosis ↑ salicylate brain entry → toxicity",mgmt:"Avoid combination",exam:"⚡ Glaucoma + arthritis — uncommon but tested"},
+  {a:["aspirin"],b:["probenecid","sulfinpyrazone"],severity:"major",mech:"Aspirin ↓ uricosuric effect + competes for tubular secretion",mgmt:"Avoid aspirin in gout patient on probenecid",exam:"Gout management"},
+  {a:["allopurinol"],b:["warfarin","theophylline","cyclosporine"],severity:"moderate",mech:"↑ levels via CYP inhib",mgmt:"Monitor",exam:""},
+  {a:["digoxin"],b:["st johns wort","carbamazepine","rifampin"],severity:"moderate",mech:"P-gp induction → ↓ digoxin",mgmt:"Monitor levels",exam:""},
+  {a:["pde5 inhibitor"],b:["alpha blocker","tamsulosin","doxazosin","prazosin"],severity:"moderate",mech:"Additive hypotension, syncope",mgmt:"Stable α-blocker dose then start low PDE5i",exam:"BPH + ED management"},
+  {a:["clonidine"],b:["tca","mirtazapine"],severity:"moderate",mech:"TCA blocks clonidine's central α2 effect → ↓ antihypertensive effect",mgmt:"Use alternative antihypertensive",exam:"⚡ Depression + HTN drug choice"},
+  {a:["lithium"],b:["sodium bicarbonate","caffeine","theophylline","high salt diet"],severity:"moderate",mech:"↑ Li clearance → ↓ levels",mgmt:"Stable salt intake. Counsel patient",exam:"Bipolar pt diet"},
+  {a:["valproate"],b:["aspirin","felbamate"],severity:"moderate",mech:"Aspirin displaces valproate → ↑ free",mgmt:"Use other analgesic",exam:""},
+  {a:["antibiotic","amoxicillin","cephalexin"],b:["probenecid"],severity:"minor",mech:"Probenecid ↑ penicillin levels (used to prolong effect)",mgmt:"Intended in PEN G + probenecid for syphilis/PEP",exam:"⚡ Probenecid + PEN G = prolonged effect"},
+  {a:["beta blocker","metoprolol","carvedilol","propranolol"],b:["paroxetine","fluoxetine","bupropion","quinidine"],severity:"moderate",mech:"CYP2D6 inhib → ↑ β-blocker → bradycardia, hypotension",mgmt:"Monitor HR, BP",exam:""},
+  {a:["albuterol","salbutamol","terbutaline"],b:["beta blocker","propranolol"],severity:"moderate",mech:"β-blocker antagonizes β2 agonist → ↓ bronchodilation",mgmt:"Use β1-selective if needed (atenolol). Avoid in asthmatics",exam:"Asthma + HTN"},
+  {a:["doxorubicin","daunorubicin","epirubicin"],b:["paclitaxel","cyclophosphamide","trastuzumab"],severity:"moderate",mech:"Synergistic cardiotoxicity",mgmt:"Sequence not concurrent",exam:"Breast Ca combos"},
+  {a:["mtx"],b:["pen","probenecid","aspirin","ppi","theophylline"],severity:"moderate",mech:"↓ renal excretion",mgmt:"Monitor levels",exam:""}
+];
+
+// Build search index of unique drugs
+const DIC_DRUGS = (function(){
+  const set = new Set();
+  DRUG_INTERACTIONS.forEach(i=>{i.a.forEach(d=>set.add(d.toLowerCase())); i.b.forEach(d=>set.add(d.toLowerCase()));});
+  return Array.from(set).sort();
+})();
+
+// Quick popular pairs for one-click testing
+const DIC_QUICK_PAIRS = [
+  ["warfarin","aspirin"],
+  ["sildenafil","nitrate"],
+  ["ssri","tramadol"],
+  ["ciprofloxacin","theophylline"],
+  ["lithium","nsaid"],
+  ["digoxin","amiodarone"],
+  ["clopidogrel","omeprazole"],
+  ["methotrexate","cotrimoxazole"],
+  ["aminoglycoside","loop diuretic"],
+  ["maoi","ssri"]
+];
+
+/* ═══════════════════════════════════════════════════════════
+   DRUG INTERACTION CHECKER — JS LOGIC
+   ═══════════════════════════════════════════════════════════ */
+function dicNormalize(s){return (s||'').toLowerCase().trim().replace(/[^a-z0-9 -]/g,'');}
+
+function dicMatchDrug(input, drugList){
+  const n = dicNormalize(input);
+  if(!n) return false;
+  return drugList.some(d=>{
+    const nd = dicNormalize(d);
+    return nd===n || nd.includes(n) || n.includes(nd);
+  });
+}
+
+function dicFindInteraction(drugA, drugB){
+  const na = dicNormalize(drugA), nb = dicNormalize(drugB);
+  if(!na || !nb) return null;
+  for(const i of DRUG_INTERACTIONS){
+    const aMatchA = dicMatchDrug(na, i.a), bMatchB = dicMatchDrug(nb, i.b);
+    const aMatchB = dicMatchDrug(na, i.b), bMatchA = dicMatchDrug(nb, i.a);
+    if((aMatchA && bMatchB) || (aMatchB && bMatchA)) return i;
+  }
+  return null;
+}
+
+function dicSuggest(input, which){
+  const val = dicNormalize(input.value);
+  const box = document.getElementById('dic-sug-'+which);
+  if(!val || val.length<1){box.style.display='none'; return;}
+  const matches = DIC_DRUGS.filter(d=>d.includes(val)).slice(0,8);
+  if(!matches.length){box.style.display='none'; return;}
+  box.innerHTML = matches.map(m=>`<div onmousedown="dicSelectSuggest('${m.replace(/'/g,"\\'")}','${which}')">${m.charAt(0).toUpperCase()+m.slice(1)}</div>`).join('');
+  box.style.display='block';
+}
+
+function dicHideSuggest(which){
+  const box = document.getElementById('dic-sug-'+which);
+  if(box) box.style.display='none';
+}
+
+function dicSelectSuggest(name, which){
+  document.getElementById('dic-drug-'+which).value = name.charAt(0).toUpperCase()+name.slice(1);
+  dicHideSuggest(which);
+}
+
+function dicTitleCase(s){return s.charAt(0).toUpperCase()+s.slice(1);}
+
+function checkInteraction(){
+  const a = document.getElementById('dic-drug-a').value.trim();
+  const b = document.getElementById('dic-drug-b').value.trim();
+  const container = document.getElementById('dic-result-container');
+  if(!a || !b){
+    container.innerHTML = `<div class="dic-result none"><div class="dic-result-header">⚠️ Both drug names required</div><div class="dic-result-body">Please enter both Drug A and Drug B to check for interactions.</div></div>`;
+    return;
+  }
+  const interaction = dicFindInteraction(a, b);
+  if(!interaction){
+    container.innerHTML = `
+      <div class="dic-result none">
+        <div class="dic-result-header">⚪ No Known Major Interaction</div>
+        <div class="dic-result-body">
+          <p>No documented interaction between <strong>${dicTitleCase(a)}</strong> and <strong>${dicTitleCase(b)}</strong> in our high-yield database (200+ pairs).</p>
+          <div class="dic-exam-pearl"><strong>📝 Reminder:</strong> Absence of a known interaction in this educational database does <strong>not</strong> guarantee safety in clinical practice. For real patient care, verify with Lexicomp, Micromedex, or UpToDate.</div>
+          <div class="dic-stats"><span class="dic-stat">💡 Try common pairs below</span></div>
+        </div>
+      </div>`;
+    container.scrollIntoView({behavior:'smooth', block:'nearest'});
+    return;
+  }
+  const sev = interaction.severity;
+  const sevIcon = {contraindicated:'🚫', major:'⚠️', moderate:'⚡', minor:'ℹ️'}[sev] || '⚪';
+  const sevLabel = {contraindicated:'CONTRAINDICATED', major:'MAJOR', moderate:'MODERATE', minor:'MINOR'}[sev] || 'NONE';
+  container.innerHTML = `
+    <div class="dic-result ${sev}">
+      <div class="dic-result-header">
+        <span style="font-size:22px;">${sevIcon}</span>
+        <span>${sevLabel} INTERACTION</span>
+        <span style="margin-left:auto;font-size:13px;opacity:.92;">${dicTitleCase(a)} × ${dicTitleCase(b)}</span>
+      </div>
+      <div class="dic-result-body">
+        <div class="dic-detail-grid">
+          <div class="dic-detail-box">
+            <strong>🔬 Mechanism</strong>
+            ${interaction.mech}
+          </div>
+          <div class="dic-detail-box" style="border-left-color:#16a34a;">
+            <strong>🩺 Clinical Management</strong>
+            ${interaction.mgmt}
+          </div>
+        </div>
+        ${interaction.exam ? `<div class="dic-exam-pearl"><strong>📖 Exam Pearl (NEET PG / INI-CET)</strong>${interaction.exam}</div>` : ''}
+        <div class="dic-stats">
+          <span class="dic-stat">⚡ Severity: ${sevLabel}</span>
+          <span class="dic-stat">📚 NEET PG High-yield</span>
+          <span class="dic-stat">🩺 Clinical Pharmacology</span>
+        </div>
+      </div>
+    </div>`;
+  container.scrollIntoView({behavior:'smooth', block:'nearest'});
+  try{
+    if(typeof gtag==='function') gtag('event','dic_check',{drug_a:a, drug_b:b, severity:sev});
+  }catch(e){}
+}
+
+function dicRenderQuickPairs(){
+  const box = document.getElementById('dic-quick-pairs');
+  if(!box) return;
+  box.innerHTML = DIC_QUICK_PAIRS.map(p=>`<button onclick="dicLoadPair('${p[0]}','${p[1]}')">${dicTitleCase(p[0])} × ${dicTitleCase(p[1])}</button>`).join('');
+}
+
+function dicLoadPair(a, b){
+  document.getElementById('dic-drug-a').value = dicTitleCase(a);
+  document.getElementById('dic-drug-b').value = dicTitleCase(b);
+  checkInteraction();
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  setTimeout(dicRenderQuickPairs, 800);
+});
+
+</script>
 </body>
 </html>
