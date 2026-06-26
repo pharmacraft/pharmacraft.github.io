@@ -1108,14 +1108,14 @@ html[data-theme="cream"] .adaptive-start-btn{
 .dic-hero{background:linear-gradient(135deg,#0f766e,#0891b2);color:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;}
 .dic-hero h3{margin:0 0 4px;font-size:20px;font-weight:800;}
 .dic-hero p{margin:0;opacity:.95;font-size:13.5px;}
-.dic-input-grid{display:flex;justify-content:center;align-items:end;gap:10px;margin:0 auto 14px;max-width:620px;flex-wrap:nowrap;}
-.dic-input-grid > .dic-input-block{flex:0 1 260px;min-width:0;}
-@media(max-width:560px){.dic-input-grid{flex-direction:column;align-items:stretch;max-width:340px;}.dic-input-grid > .dic-input-block{flex:1 1 auto;}}
-.dic-input-block label{display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px;}
-.dic-input-block input{width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:10px;font-size:15px;font-weight:600;background:var(--card);color:var(--ink);transition:border-color .2s;}
+.dic-input-grid{display:flex;justify-content:center;align-items:flex-end;gap:14px;margin:0 auto 16px;max-width:480px;flex-wrap:nowrap;}
+.dic-input-grid > .dic-input-block{flex:0 0 190px;min-width:0;text-align:center;}
+@media(max-width:520px){.dic-input-grid{flex-direction:column;align-items:center;max-width:300px;gap:10px;}.dic-input-grid > .dic-input-block{flex:0 0 auto;width:100%;}}
+.dic-input-block label{display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px;text-align:center;}
+.dic-input-block input{width:100%;padding:11px 14px;border:2px solid var(--line);border-radius:10px;font-size:15px;font-weight:600;background:var(--card);color:var(--ink);transition:border-color .2s;text-align:center;}
 .dic-input-block input:focus{outline:none;border-color:#0891b2;}
-.dic-vs{font-size:18px;font-weight:900;color:#0891b2;padding:0 2px;align-self:center;margin-top:22px;flex:0 0 auto;white-space:nowrap;}
-@media(max-width:560px){.dic-vs{margin:6px auto;text-align:center;}}
+.dic-vs{font-size:20px;font-weight:900;color:#0891b2;padding:0;align-self:flex-end;margin-bottom:10px;flex:0 0 auto;white-space:nowrap;line-height:1;}
+@media(max-width:520px){.dic-vs{margin:0 auto;text-align:center;align-self:center;}}
 .dic-suggestions{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:240px;overflow-y:auto;z-index:50;width:100%;margin-top:2px;}
 .dic-suggestions div{padding:10px 14px;cursor:pointer;font-size:14px;border-bottom:1px solid var(--line);}
 .dic-suggestions div:hover,.dic-suggestions div.active{background:#e0f2fe;color:#0c4a6e;}
