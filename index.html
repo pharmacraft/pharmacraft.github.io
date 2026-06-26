@@ -679,21 +679,24 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
   border-radius:9px;padding:12px 14px;font-size:12px;line-height:1.7;margin-top:10px;display:none;color:#064e3b;}
 .mcq-exp.show{display:block;animation:fi .3s;}
 .mcq-exp strong{color:#047857;display:block;margin-bottom:4px;font-weight:800;}
-/* ── MCQ 2-Layer Accordion (badge → question → options) ──── */
-.mcq-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px;cursor:pointer;user-select:none;padding:4px 0;}
-.mcq-head:hover{opacity:.85;}
-.mcq-q-label{font-weight:800;font-size:12px;color:var(--teal2);background:rgba(14,165,233,.08);padding:3px 9px;border-radius:6px;}
-.mcq-chevron{font-size:13px;color:var(--teal);font-weight:900;transition:transform .25s;flex:0 0 auto;margin-left:auto;padding:0 4px;}
-/* Layer 1: when closed, hide question layer + options layer */
-.mcq-l1-closed .mcq-q-layer,.mcq-l1-closed .mcq-opts-layer{display:none;}
-.mcq-l1-closed{padding:10px 16px;}
-.mcq-l1-closed .mcq-num{margin-bottom:0;}
-/* Layer 2: question shown, but options hidden */
-.mcq-q-layer{cursor:pointer;user-select:none;background:linear-gradient(135deg,rgba(14,165,233,.04),rgba(245,197,24,.04));border:1px dashed var(--border);border-radius:9px;padding:10px 14px;margin-top:10px;transition:background .2s;}
+/* ── MCQ Section Master Toggle (Layer 1: ONE big button per section) ── */
+.mcq-master-toggle{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:14px 22px;border-radius:14px;cursor:pointer;user-select:none;font-weight:700;font-size:14px;box-shadow:0 6px 18px rgba(255,107,157,0.22);transition:all .25s;margin:14px auto 0;max-width:560px;}
+.mcq-master-toggle:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,107,157,0.32);}
+.mcq-master-icon{font-size:22px;}
+.mcq-master-text{flex:1;letter-spacing:.3px;}
+.mcq-master-count{display:inline-block;background:rgba(255,255,255,.22);padding:3px 11px;border-radius:20px;font-size:12px;font-weight:800;margin-left:8px;}
+.mcq-master-chevron{font-size:15px;font-weight:900;transition:transform .25s;}
+.mcq-master-active{background:linear-gradient(135deg,#0f766e,#0891b2);}
+.mcq-section-body{animation:fi .35s;margin-top:14px;}
+.mcq-section-closed{display:none;}
+/* ── MCQ Layer 2: question card → click reveals options ── */
+.mcq-q-layer{cursor:pointer;user-select:none;background:linear-gradient(135deg,rgba(14,165,233,.04),rgba(245,197,24,.04));border:1px dashed var(--border);border-radius:9px;padding:12px 14px;transition:background .2s;}
 .mcq-q-layer:hover{background:linear-gradient(135deg,rgba(14,165,233,.08),rgba(245,197,24,.08));}
+.mcq-q-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.mcq-q-tags .mcq-num{margin-bottom:0;}
+.mcq-q-label{font-weight:800;font-size:11px;color:var(--teal2);background:rgba(14,165,233,.08);padding:4px 10px;border-radius:6px;}
 .mcq-q-layer .mcq-q{margin:0 0 6px;font-size:13px;font-weight:700;line-height:1.6;color:var(--text);}
 .mcq-l2-hint{display:inline-block;font-size:10.5px;font-weight:700;color:var(--teal2);background:rgba(14,165,233,.1);padding:3px 8px;border-radius:5px;}
-/* Layer 2 closed: hide options-layer */
 .mcq-l2-closed .mcq-opts-layer{display:none;}
 .mcq-opts-layer{animation:fi .3s;margin-top:10px;}
 
@@ -1304,13 +1307,20 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <h2>NEET PG Pharmacology PYQs</h2>
     <p>High-yield previous year questions from NEET PG, INI-CET and FMGE, solved with detailed explanations.</p>
   </div>
-  <div class="exam-filter">
-    <button class="exam-btn active" data-exam="all" onclick="filterPYQ('all',this)">All</button>
-    <button class="exam-btn" data-exam="neetpg" onclick="filterPYQ('neetpg',this)">NEET PG</button>
-    <button class="exam-btn" data-exam="inicet" onclick="filterPYQ('inicet',this)">INI-CET</button>
-    <button class="exam-btn" data-exam="fmge" onclick="filterPYQ('fmge',this)">FMGE</button>
+  <div class="mcq-master-toggle" id="pyq-master-toggle" onclick="toggleMcqSection('pyq')">
+    <span class="mcq-master-icon">📋</span>
+    <span class="mcq-master-text">View PYQ Questions <span id="pyq-count-badge" class="mcq-master-count">0</span></span>
+    <span class="mcq-master-chevron" id="pyq-master-chevron">▼</span>
   </div>
-  <div class="mcq-list" id="pyq-list"></div>
+  <div class="mcq-section-body mcq-section-closed" id="pyq-section-body">
+    <div class="exam-filter">
+      <button class="exam-btn active" data-exam="all" onclick="filterPYQ('all',this)">All</button>
+      <button class="exam-btn" data-exam="neetpg" onclick="filterPYQ('neetpg',this)">NEET PG</button>
+      <button class="exam-btn" data-exam="inicet" onclick="filterPYQ('inicet',this)">INI-CET</button>
+      <button class="exam-btn" data-exam="fmge" onclick="filterPYQ('fmge',this)">FMGE</button>
+    </div>
+    <div class="mcq-list" id="pyq-list"></div>
+  </div>
 </section>
 
 <!-- ── PRACTICE SETS ────────────────────────────── -->
@@ -1395,7 +1405,14 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <h2>FMGE Pharmacology Practice</h2>
     <p>Curated MCQs in FMGE pattern, essential for foreign medical graduates appearing for the licentiate exam.</p>
   </div>
-  <div class="mcq-list" id="fmge-list"></div>
+  <div class="mcq-master-toggle" id="fmge-master-toggle" onclick="toggleMcqSection('fmge')">
+    <span class="mcq-master-icon">🎓</span>
+    <span class="mcq-master-text">View FMGE Questions <span id="fmge-count-badge" class="mcq-master-count">0</span></span>
+    <span class="mcq-master-chevron" id="fmge-master-chevron">▼</span>
+  </div>
+  <div class="mcq-section-body mcq-section-closed" id="fmge-section-body">
+    <div class="mcq-list" id="fmge-list"></div>
+  </div>
 </section>
 
 <!-- ── ABOUT ────────────────────────────────────── -->
@@ -20632,14 +20649,13 @@ function renderPYQ(filter='all'){
   list.forEach((p,i)=>{
     const key=`pyq-${i}-${Math.random().toString(36).slice(2,7)}`;
     root.appendChild(el(`
-      <div class="mcq mcq-l1-closed mcq-l2-closed" data-key="${key}">
-        <div class="mcq-head" onclick="toggleMcqL1(this)">
-          <span class="mcq-num">${p.exam.toUpperCase()} ${p.year}</span>
-          <span class="mcq-num" style="background:rgba(245,197,24,.15);color:var(--gold);margin-left:6px;">${p.t}</span>
-          <span class="mcq-q-label">Q${i+1}</span>
-          <span class="mcq-chevron">▼</span>
-        </div>
+      <div class="mcq mcq-l2-closed" data-key="${key}">
         <div class="mcq-q-layer" onclick="toggleMcqL2(this)">
+          <div class="mcq-q-tags">
+            <span class="mcq-num">${p.exam.toUpperCase()} ${p.year}</span>
+            <span class="mcq-num" style="background:rgba(245,197,24,.15);color:var(--gold);">${p.t}</span>
+            <span class="mcq-q-label">Q${i+1}</span>
+          </div>
           <p class="mcq-q">${p.q}</p>
           <span class="mcq-l2-hint">▼ Click to see options</span>
         </div>
@@ -20652,6 +20668,9 @@ function renderPYQ(filter='all'){
         </div>
       </div>`));
   });
+  // Update count badge
+  const badge=document.getElementById('pyq-count-badge');
+  if(badge) badge.textContent=list.length;
 }
 
 function filterPYQ(exam,btn){
@@ -20667,12 +20686,11 @@ function renderFMGE(){
   FMGE.forEach((p,i)=>{
     const key = `fmge-${i}`;
     root.appendChild(el(`
-      <div class="mcq mcq-l1-closed mcq-l2-closed" data-key="${key}">
-        <div class="mcq-head" onclick="toggleMcqL1(this)">
-          <span class="mcq-num" style="background:#b388ff;">FMGE Q${i+1}</span>
-          <span class="mcq-chevron">▼</span>
-        </div>
+      <div class="mcq mcq-l2-closed" data-key="${key}">
         <div class="mcq-q-layer" onclick="toggleMcqL2(this)">
+          <div class="mcq-q-tags">
+            <span class="mcq-num" style="background:#b388ff;">FMGE Q${i+1}</span>
+          </div>
           <p class="mcq-q">${p.q}</p>
           <span class="mcq-l2-hint">▼ Click to see options</span>
         </div>
@@ -20685,20 +20703,23 @@ function renderFMGE(){
         </div>
       </div>`));
   });
+  const badge=document.getElementById('fmge-count-badge');
+  if(badge) badge.textContent=FMGE.length;
 }
 
-/* ── MCQ 2-Layer Accordion Toggle ──────────────── */
-function toggleMcqL1(headEl){
-  const card = headEl.closest('.mcq');
-  if(!card) return;
-  card.classList.toggle('mcq-l1-closed');
-  // Auto-collapse L2 when L1 is collapsing
-  if(card.classList.contains('mcq-l1-closed')){
-    card.classList.add('mcq-l2-closed');
-  }
-  const chev = headEl.querySelector('.mcq-chevron');
-  if(chev) chev.textContent = card.classList.contains('mcq-l1-closed') ? '▼' : '▲';
+/* ── MCQ Section Master Toggle (single button reveals whole list) ── */
+function toggleMcqSection(prefix){
+  const body=document.getElementById(prefix+'-section-body');
+  const chev=document.getElementById(prefix+'-master-chevron');
+  const toggle=document.getElementById(prefix+'-master-toggle');
+  if(!body) return;
+  body.classList.toggle('mcq-section-closed');
+  const open=!body.classList.contains('mcq-section-closed');
+  if(chev) chev.textContent=open?'▲':'▼';
+  if(toggle) toggle.classList.toggle('mcq-master-active',open);
 }
+
+/* ── MCQ Layer 2 (click question to see options) ── */
 function toggleMcqL2(qLayerEl){
   const card = qLayerEl.closest('.mcq');
   if(!card) return;
