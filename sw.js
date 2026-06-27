@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v35-topic9-56mcq-20260626';
+const CACHE_VERSION = 'pharmacraft-v36-topic7s1-160mcq-20260627';
 const CORE_ASSETS = [
   '/',
   '/index.html',
