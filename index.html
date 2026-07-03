@@ -22400,6 +22400,7 @@ function goSubtopic(topicId,panelKey,anchor){
 /* ── PYQ render ─────────────────────────────────── */
 function renderPYQ(filter='all'){
   const root = document.getElementById('pyq-list');
+  if(!root) return; // Old element removed (unified into #pyq vault)
   root.innerHTML = '';
   const list = filter==='all' ? PYQ : PYQ.filter(p=>p.exam===filter);
   list.forEach((p,i)=>{
@@ -22438,6 +22439,7 @@ function filterPYQ(exam,btn){
 /* ── FMGE list ──────────────────────────────────── */
 function renderFMGE(){
   const root = document.getElementById('fmge-list');
+  if(!root) return; // Old element removed (merged into #pyq vault)
   root.innerHTML = '';
   FMGE.forEach((p,i)=>{
     const key = `fmge-${i}`;
