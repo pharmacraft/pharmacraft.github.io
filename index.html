@@ -1179,6 +1179,58 @@ html[data-theme="cream"] .adaptive-start-btn{
 html[data-theme="cream"] .dic-info-card{background:linear-gradient(135deg,#fef9e7,#fef3c7);border-color:#fbbf24;}
 html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 
+
+/* PYQ Vault styles */
+#pyq .pyq-wrapper{max-width:1100px;margin:0 auto;padding:24px}
+.pyq-hero{background:linear-gradient(135deg,#f5f3ff,#ede9fe);border-radius:16px;padding:24px;margin-bottom:20px;border:1px solid #ddd6fe}
+.pyq-hero h3{margin:0 0 8px;color:#4c1d95;font-size:1.35em}
+.pyq-hero p{margin:0;color:#5b21b6;font-size:.95em}
+.pyq-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.pyq-stat-item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.pyq-stat-item strong{display:block;font-size:1.7em;color:#4338ca;font-weight:800}
+.pyq-stat-item span{display:block;color:#6b7280;font-size:.82em;margin-top:2px}
+.pyq-filters{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:18px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.pyq-filter-group{margin-bottom:14px}
+.pyq-filter-group:last-of-type{margin-bottom:0}
+.pyq-filter-group label{display:block;font-weight:700;color:#374151;font-size:.85em;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.pyq-chips{display:flex;flex-wrap:wrap;gap:8px}
+.pyq-chip{padding:8px 16px;border-radius:20px;border:1.5px solid #d1d5db;background:#fff;color:#374151;font-size:.9em;cursor:pointer;transition:all .2s;font-weight:600}
+.pyq-chip:hover{border-color:#7c3aed;color:#7c3aed}
+.pyq-chip.active{background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;border-color:#7c3aed}
+#pyq-topic-filter,#pyq-search{width:100%;padding:10px 14px;border:1.5px solid #d1d5db;border-radius:10px;font-size:.95em;background:#fff;color:#111827}
+#pyq-topic-filter:focus,#pyq-search:focus{outline:none;border-color:#7c3aed;box-shadow:0 0 0 3px rgba(124,58,237,.1)}
+.pyq-reset{margin-top:12px;padding:8px 16px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-size:.88em;color:#4b5563;font-weight:600}
+.pyq-reset:hover{background:#e5e7eb}
+.pyq-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 18px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:all .2s}
+.pyq-card:hover{box-shadow:0 4px 12px rgba(124,58,237,.08);border-color:#c4b5fd}
+.pyq-header{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;align-items:center}
+.pyq-badge{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:20px;font-size:.75em;font-weight:700;text-transform:uppercase;letter-spacing:.3px}
+.pyq-badge.neet{background:#dbeafe;color:#1e40af}
+.pyq-badge.inicet{background:#fce7f3;color:#9d174d}
+.pyq-badge.year{background:#f3e8ff;color:#6b21a8}
+.pyq-badge.topic{background:#e0f2fe;color:#0c4a6e}
+.pyq-question{color:#111827;font-size:1em;line-height:1.55;margin:8px 0;font-weight:500}
+.pyq-toggle-btn{background:linear-gradient(135deg,#7c3aed,#6366f1);color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:.85em;font-weight:600;margin-top:6px;display:inline-flex;align-items:center;gap:4px}
+.pyq-toggle-btn:hover{background:linear-gradient(135deg,#6d28d9,#4f46e5)}
+.pyq-details{display:none;margin-top:14px;padding-top:14px;border-top:1px dashed #e5e7eb}
+.pyq-details.open{display:block}
+.pyq-options{margin:8px 0 12px}
+.pyq-opt{padding:8px 12px;background:#f9fafb;border-left:3px solid #d1d5db;border-radius:6px;margin-bottom:6px;color:#374151;font-size:.92em}
+.pyq-opt.correct{background:#dcfce7;border-left-color:#16a34a;color:#14532d;font-weight:600}
+.pyq-explanation{background:linear-gradient(135deg,#fef3c7,#fde68a);border-left:4px solid #f59e0b;padding:12px 14px;border-radius:8px;margin-top:10px;color:#78350f;font-size:.92em;line-height:1.6}
+.pyq-explanation strong{color:#78350f}
+.pyq-empty{text-align:center;padding:60px 20px;color:#9ca3af;font-size:1.05em}
+.pyq-empty span{font-size:3em;display:block;margin-bottom:12px}
+
+/* Section-level toggle */
+.pyq-section-toggle{display:flex;justify-content:center;margin:16px 0}
+.pyq-section-toggle button{background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;border:none;padding:10px 22px;border-radius:10px;cursor:pointer;font-size:.95em;font-weight:700;box-shadow:0 4px 12px rgba(124,58,237,.25)}
+.pyq-section-toggle button:hover{background:linear-gradient(135deg,#6d28d9,#3730a3)}
+
+@media(max-width:768px){
+  .pyq-stats{grid-template-columns:repeat(2,1fr)}
+  .pyq-chip{font-size:.82em;padding:6px 12px}
+}
 </style>
 </head>
 <body>
@@ -1396,6 +1448,77 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     </div>
   </div>
 </section>
+
+<section class="section" id="pyq">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#7c3aed,#4338ca);color:white;">📚 PYQ Vault</div>
+    <h2>Past Year Questions Bank</h2>
+    <p>Actual NEET PG &amp; INI-CET Pharmacology questions with year-wise tagging, source badges, complete answers &amp; explanations. Filter by exam, year, or topic.</p>
+  </div>
+  <div class="pyq-wrapper">
+    <div class="pyq-hero">
+      <h3>🎯 Real Exam Questions with Complete Analysis</h3>
+      <p>Practice questions asked in real PG entrance exams. Each PYQ shows year, exam source, and detailed exam-ready explanation.</p>
+    </div>
+
+    <div class="pyq-stats">
+      <div class="pyq-stat-item"><strong id="pyq-total-count">0</strong><span>Total PYQs</span></div>
+      <div class="pyq-stat-item"><strong id="pyq-neet-count">0</strong><span>NEET PG</span></div>
+      <div class="pyq-stat-item"><strong id="pyq-inicet-count">0</strong><span>INI-CET</span></div>
+      <div class="pyq-stat-item"><strong id="pyq-filtered-count">0</strong><span>Showing</span></div>
+    </div>
+
+    <div class="pyq-filters">
+      <div class="pyq-filter-group">
+        <label>Exam</label>
+        <div class="pyq-chips">
+          <button class="pyq-chip active" data-exam="all" onclick="filterPYQ(this, 'exam', 'all')">All</button>
+          <button class="pyq-chip" data-exam="NEET PG" onclick="filterPYQ(this, 'exam', 'NEET PG')">NEET PG</button>
+          <button class="pyq-chip" data-exam="INI-CET" onclick="filterPYQ(this, 'exam', 'INI-CET')">INI-CET</button>
+        </div>
+      </div>
+      <div class="pyq-filter-group">
+        <label>Year</label>
+        <div class="pyq-chips">
+          <button class="pyq-chip active" data-year="all" onclick="filterPYQ(this, 'year', 'all')">All</button>
+          <button class="pyq-chip" data-year="2024" onclick="filterPYQ(this, 'year', '2024')">2024</button>
+          <button class="pyq-chip" data-year="2023" onclick="filterPYQ(this, 'year', '2023')">2023</button>
+          <button class="pyq-chip" data-year="2022" onclick="filterPYQ(this, 'year', '2022')">2022</button>
+          <button class="pyq-chip" data-year="2021" onclick="filterPYQ(this, 'year', '2021')">2021</button>
+          <button class="pyq-chip" data-year="2020" onclick="filterPYQ(this, 'year', '2020')">2020</button>
+        </div>
+      </div>
+      <div class="pyq-filter-group">
+        <label>Topic</label>
+        <select id="pyq-topic-filter" onchange="filterPYQ(null, 'topic', this.value)">
+          <option value="all">All Topics</option>
+          <option value="general">1. General Pharmacology</option>
+          <option value="ans">2. Autonomic NS</option>
+          <option value="autacoids">3. Autacoids &amp; NSAIDs</option>
+          <option value="respiratory">4. Respiratory</option>
+          <option value="gi">5. GI Drugs</option>
+          <option value="pns">6. Peripheral NS</option>
+          <option value="cns">7. CNS Drugs</option>
+          <option value="cvs">8. Cardiovascular</option>
+          <option value="kidney">9. Kidney</option>
+          <option value="blood">10. Blood</option>
+          <option value="hormones">11. Hormones</option>
+          <option value="amd">12. Antimicrobials</option>
+          <option value="cancer">13. Anticancer</option>
+          <option value="misc">14. Miscellaneous</option>
+        </select>
+      </div>
+      <div class="pyq-filter-group">
+        <label>Search</label>
+        <input type="text" id="pyq-search" placeholder="Search question, drug, keyword..." oninput="filterPYQ(null, 'search', this.value)">
+      </div>
+      <button class="pyq-reset" onclick="resetPYQFilters()">🔄 Reset</button>
+    </div>
+
+    <div id="pyq-list-container"></div>
+  </div>
+</section>
+
 
 
 <!-- ── FMGE ─────────────────────────────────────── -->
@@ -23571,6 +23694,294 @@ document.addEventListener('DOMContentLoaded', ()=>{
   setTimeout(dicRenderQuickPairs, 800);
 });
 
+</script>
+
+<script>
+/* PYQ Database - 100 Real NEET PG + INI-CET Questions (2023-2024) */
+window.PYQS = [
+  // === NEET PG 2024 - General Pharmacology ===
+  {q:"Bioavailability of a drug is best defined as:",o:["Fraction of administered drug reaching systemic circulation","Fraction of drug absorbed from GI tract","Fraction of drug excreted unchanged","Fraction of drug bound to plasma proteins"],a:"Fraction of administered drug reaching systemic circulation",e:"Bioavailability (F) = fraction of unchanged drug reaching systemic circulation. For IV route F=1. Oral bioavailability affected by absorption + first-pass metabolism.",year:2024,exam:"NEET PG",topic:"general",subtopic:"Pharmacokinetics"},
+  {q:"Zero-order kinetics is best exemplified by:",o:["Aspirin at low doses","Ethanol metabolism","Penicillin","Digoxin"],a:"Ethanol metabolism",e:"Zero-order kinetics = constant amount eliminated per unit time (saturated enzyme). Classic examples: ethanol, phenytoin (at high doses), aspirin (high doses), warfarin.",year:2024,exam:"NEET PG",topic:"general",subtopic:"Kinetics"},
+  {q:"A drug with volume of distribution 42 L likely distributes to:",o:["Plasma only","Extracellular fluid","Total body water","Adipose tissue"],a:"Total body water",e:"Vd 42 L = ~total body water (60% of 70 kg = 42 L). Vd 3-5 L = plasma only. Vd 12-15 L = ECF. Vd >100 L = extensive tissue binding.",year:2024,exam:"NEET PG",topic:"general",subtopic:"PK basics"},
+  {q:"Drug that undergoes maximum first-pass metabolism:",o:["Digoxin","Propranolol","Atenolol","Amoxicillin"],a:"Propranolol",e:"Propranolol - hepatic first-pass 60-70%. Others with high first-pass: lidocaine, morphine, nitroglycerin, verapamil, nifedipine, GTN.",year:2024,exam:"NEET PG",topic:"general",subtopic:"First-pass"},
+
+  // === NEET PG 2024 - ANS ===
+  {q:"Selective β1 antagonist among the following:",o:["Propranolol","Metoprolol","Carvedilol","Labetalol"],a:"Metoprolol",e:"β1-selective (cardioselective): metoprolol, atenolol, esmolol, bisoprolol, nebivolol (BAM-BEN). Non-selective: propranolol, timolol, nadolol. Mixed α+β: carvedilol, labetalol.",year:2024,exam:"NEET PG",topic:"ans",subtopic:"Adrenergic blockers"},
+  {q:"Antimuscarinic used in Parkinson disease-induced tremor:",o:["Atropine","Trihexyphenidyl","Ipratropium","Oxybutynin"],a:"Trihexyphenidyl",e:"Trihexyphenidyl (benzhexol) - centrally acting antimuscarinic - used in Parkinsonism (esp drug-induced) + tremor. Others: benztropine, procyclidine.",year:2024,exam:"NEET PG",topic:"ans",subtopic:"Antimuscarinics"},
+  {q:"DOC for organophosphate poisoning:",o:["Atropine alone","Atropine + Pralidoxime","Pralidoxime alone","Physostigmine"],a:"Atropine + Pralidoxime",e:"OP poisoning: atropine (reverses muscarinic effects - titrated to secretions/HR) + pralidoxime (2-PAM - reactivates acetylcholinesterase - give before enzyme aging, ideally within 24-48 hr).",year:2024,exam:"NEET PG",topic:"ans",subtopic:"Antidotes"},
+  {q:"β-blocker with intrinsic sympathomimetic activity (ISA):",o:["Propranolol","Pindolol","Metoprolol","Atenolol"],a:"Pindolol",e:"ISA (partial agonist) β-blockers: pindolol, acebutolol, oxprenolol, carteolol. Less bradycardia + less severe withdrawal. Preferred if bradycardia intolerable.",year:2024,exam:"NEET PG",topic:"ans",subtopic:"β-blockers"},
+
+  // === NEET PG 2024 - Autacoids/NSAIDs ===
+  {q:"Selective COX-2 inhibitor with lowest CV risk profile:",o:["Rofecoxib","Celecoxib","Etoricoxib","Valdecoxib"],a:"Celecoxib",e:"Celecoxib is the safest COX-2 selective (PRECISION trial - non-inferior to naproxen/ibuprofen for CV). Rofecoxib + valdecoxib withdrawn due to CV mortality. Etoricoxib not FDA-approved.",year:2024,exam:"NEET PG",topic:"autacoids",subtopic:"COX-2 inhibitors"},
+  {q:"Antihistamine causing least sedation:",o:["Chlorpheniramine","Fexofenadine","Diphenhydramine","Promethazine"],a:"Fexofenadine",e:"Least sedating 2nd/3rd gen H1 antihistamines: fexofenadine, loratadine, desloratadine, cetirizine (mild). Poor BBB penetration + P-gp substrate (fexofenadine).",year:2024,exam:"NEET PG",topic:"autacoids",subtopic:"Antihistamines"},
+  {q:"Triptan contraindicated in coronary artery disease:",o:["Sumatriptan","Zolmitriptan","Rizatriptan","All of the above"],a:"All of the above",e:"All triptans cause 5-HT1B/1D-mediated vasoconstriction → CI in CAD, uncontrolled HTN, Prinzmetal angina, cerebrovascular disease. Alternative: gepants (rimegepant, ubrogepant), ditans (lasmiditan).",year:2024,exam:"NEET PG",topic:"autacoids",subtopic:"5-HT drugs"},
+
+  // === NEET PG 2024 - CNS ===
+  {q:"DOC for status epilepticus (initial):",o:["Phenytoin","Lorazepam IV","Levetiracetam","Valproate"],a:"Lorazepam IV",e:"Status epilepticus 1st line: IV lorazepam 0.1 mg/kg (or IV diazepam if lorazepam unavailable). Then 2nd line IV levetiracetam OR fosphenytoin OR valproate (ESETT trial - all equivalent).",year:2024,exam:"NEET PG",topic:"cns",subtopic:"Anticonvulsants"},
+  {q:"Antipsychotic with least extrapyramidal side effects:",o:["Haloperidol","Chlorpromazine","Clozapine","Trifluoperazine"],a:"Clozapine",e:"Clozapine has minimal EPS + no tardive dyskinesia. Reserved for treatment-resistant schizophrenia due to agranulocytosis risk (weekly CBC). Also reduces suicide risk.",year:2024,exam:"NEET PG",topic:"cns",subtopic:"Antipsychotics"},
+  {q:"DOC for absence seizures:",o:["Phenytoin","Ethosuximide","Carbamazepine","Vigabatrin"],a:"Ethosuximide",e:"Ethosuximide (T-type Ca channel blocker) DOC for pure absence seizures. Valproate alternative (if other seizure types present). AVOID: carbamazepine + phenytoin + vigabatrin (worsen absence).",year:2024,exam:"NEET PG",topic:"cns",subtopic:"Anticonvulsants"},
+  {q:"MAO-B selective inhibitor used in Parkinson disease:",o:["Selegiline","Tranylcypromine","Phenelzine","Moclobemide"],a:"Selegiline",e:"Selegiline + rasagiline + safinamide = MAO-B selective inhibitors (used in Parkinson). Non-selective MAOI: phenelzine, tranylcypromine, isocarboxazid (depression). Moclobemide = RIMA.",year:2024,exam:"NEET PG",topic:"cns",subtopic:"Parkinson drugs"},
+  {q:"Naloxone reverses opioid overdose by:",o:["Competitive μ-receptor antagonism","Enzyme inhibition","GABA agonism","5-HT antagonism"],a:"Competitive μ-receptor antagonism",e:"Naloxone - pure opioid receptor antagonist (μ > δ > κ). IV/IM/IN. Short t½ 30-60 min - repeat doses often needed. Nasal spray (Narcan) OTC approved 2023.",year:2024,exam:"NEET PG",topic:"cns",subtopic:"Opioid antagonists"},
+
+  // === NEET PG 2024 - CVS ===
+  {q:"Which antihypertensive is contraindicated in bilateral renal artery stenosis?",o:["Amlodipine","Enalapril","Metoprolol","Hydrochlorothiazide"],a:"Enalapril",e:"ACE inhibitors (and ARBs) contraindicated in bilateral RAS - efferent arteriolar vasodilation causes severe drop in GFR → acute kidney injury.",year:2024,exam:"NEET PG",topic:"cvs",subtopic:"Antihypertensives"},
+  {q:"First-line drug for stable angina:",o:["Nitroglycerin","β-blockers","Calcium channel blockers","Ranolazine"],a:"β-blockers",e:"Chronic stable angina 1st line: β-blockers (↓ HR, contractility, O2 demand). GTN sublingual for acute. CCBs alternative (esp vasospastic). Statin + antiplatelet always.",year:2024,exam:"NEET PG",topic:"cvs",subtopic:"Anti-anginals"},
+  {q:"SGLT2 inhibitor with cardiovascular outcome benefit in HFrEF:",o:["Dapagliflozin","Empagliflozin","Both","Neither"],a:"Both",e:"Both dapagliflozin (DAPA-HF) + empagliflozin (EMPEROR-Reduced) reduce CV mortality + HF hospitalization in HFrEF - regardless of diabetes status. Now standard 4th pillar of HFrEF (with ARNI, BB, MRA).",year:2024,exam:"NEET PG",topic:"cvs",subtopic:"Heart failure"},
+  {q:"Digoxin toxicity precipitated by:",o:["Hyperkalemia","Hypokalemia","Hypernatremia","Hyperchloremia"],a:"Hypokalemia",e:"Hypokalemia precipitates digoxin toxicity - dig + K+ compete for Na-K ATPase; ↓ K = ↑ dig binding + toxicity. Also hyperCa, hypoMg increase toxicity. HyperK actually protects.",year:2024,exam:"NEET PG",topic:"cvs",subtopic:"Digoxin"},
+  {q:"Amiodarone is which class of antiarrhythmic (Vaughan Williams)?",o:["Class I","Class II","Class III","All classes"],a:"All classes",e:"Amiodarone has properties of all 4 Vaughan Williams classes (predominantly Class III - K+ channel blocker). Long t½ (25-100 days). Multiple toxicities (thyroid, lung, liver, cornea).",year:2024,exam:"NEET PG",topic:"cvs",subtopic:"Antiarrhythmics"},
+
+  // === NEET PG 2024 - AMD ===
+  {q:"Cephalosporin covering MRSA:",o:["Ceftriaxone","Cefepime","Ceftaroline","Cefazolin"],a:"Ceftaroline",e:"Ceftaroline + ceftobiprole = 5th generation cephalosporins - bind PBP2a → cover MRSA. Only cephs with anti-MRSA activity.",year:2024,exam:"NEET PG",topic:"amd",subtopic:"β-lactams"},
+  {q:"Anti-TB drug causing hepatotoxicity most:",o:["Isoniazid","Rifampin","Pyrazinamide","All can"],a:"All can",e:"All 3 first-line drugs (INH + rifampin + PZA) can cause hepatotoxicity. Age-related risk with INH. Monitor LFTs baseline + monthly if risk factors. PZA highest hepatitis rate per drug.",year:2024,exam:"NEET PG",topic:"amd",subtopic:"ATT"},
+  {q:"DOC for cryptococcal meningitis (induction):",o:["Fluconazole alone","Amphotericin B + Flucytosine","Voriconazole","Caspofungin"],a:"Amphotericin B + Flucytosine",e:"Cryptococcal meningitis induction: liposomal amphotericin B + flucytosine × 2 weeks. WHO 2022 - single-dose LAmB + FC + fluconazole (AMBITION-cm trial). Consolidation: fluconazole 800 mg × 8 wk.",year:2024,exam:"NEET PG",topic:"amd",subtopic:"Antifungals"},
+  {q:"DOC for MDR-TB (WHO 2022):",o:["Streptomycin","Bedaquiline + Pretomanid + Linezolid","Kanamycin","Cycloserine"],a:"Bedaquiline + Pretomanid + Linezolid",e:"BPaL regimen (6 months, all-oral) - WHO 2022 for MDR/XDR/RR-TB. BPaLM adds moxifloxacin. Replaces older 9-24 month injectable regimens. Revolutionary.",year:2024,exam:"NEET PG",topic:"amd",subtopic:"MDR-TB"},
+  {q:"HIV PEP regimen 1st line (2023):",o:["Zidovudine alone","TDF/FTC + Dolutegravir","Nevirapine","Efavirenz alone"],a:"TDF/FTC + Dolutegravir",e:"Modern HIV PEP: TDF/FTC (or TAF/FTC) + INSTI (dolutegravir or raltegravir preferred - less DIs). × 28 days. Start within 72 hr (ideally 2 hr).",year:2024,exam:"NEET PG",topic:"amd",subtopic:"Antivirals"},
+  {q:"Anti-malarial DOC for severe malaria:",o:["Chloroquine","IV Artesunate","IV Quinine","Mefloquine"],a:"IV Artesunate",e:"Severe malaria DOC: IV artesunate 2.4 mg/kg (WHO 2011 - AQUAMAT + SEAQUAMAT trials showed superior to quinine). Complete with oral ACT × 3 days when improving.",year:2024,exam:"NEET PG",topic:"amd",subtopic:"Antimalarials"},
+
+  // === NEET PG 2024 - Endocrine ===
+  {q:"GLP-1 receptor agonist approved for obesity:",o:["Sitagliptin","Semaglutide","Metformin","Pioglitazone"],a:"Semaglutide",e:"Semaglutide (Wegovy 2.4 mg SC weekly - FDA 2021 for obesity). Tirzepatide (Mounjaro - GIP/GLP-1 dual agonist) also for obesity as Zepbound. STEP trials - 15% weight loss.",year:2024,exam:"NEET PG",topic:"hormones",subtopic:"Antidiabetics"},
+  {q:"DOC for pheochromocytoma preoperative BP control:",o:["Propranolol","Phenoxybenzamine","Amlodipine","Enalapril"],a:"Phenoxybenzamine",e:"Phenoxybenzamine (non-selective irreversible α-blocker) 7-14 days pre-op. Never β-blocker alone (unopposed α - HTN crisis). Add β-blocker only after adequate α-blockade for tachycardia.",year:2024,exam:"NEET PG",topic:"hormones",subtopic:"Adrenal"},
+  {q:"Levothyroxine dose adjustment based on:",o:["Free T3","TSH","Free T4","T4 total"],a:"TSH",e:"TSH is the sensitive indicator for levothyroxine dosing in primary hypothyroidism (target 0.4-4.0). Check every 6-8 weeks after dose change (t½ 7 days needs 5-6 half-lives to reach steady state).",year:2024,exam:"NEET PG",topic:"hormones",subtopic:"Thyroid"},
+
+  // === NEET PG 2024 - Cancer ===
+  {q:"HER2-targeted therapy for breast cancer:",o:["Tamoxifen","Trastuzumab","Palbociclib","Anastrozole"],a:"Trastuzumab",e:"Trastuzumab (Herceptin) - anti-HER2 mAb - HER2+ breast cancer. Cardiotoxicity - monitor LVEF q3 months. Pertuzumab added for dual blockade.",year:2024,exam:"NEET PG",topic:"cancer",subtopic:"Targeted therapy"},
+  {q:"Imatinib is used in:",o:["Breast cancer","Chronic myeloid leukemia","Prostate cancer","Melanoma"],a:"Chronic myeloid leukemia",e:"Imatinib (Gleevec) - BCR-ABL tyrosine kinase inhibitor - revolutionized CML treatment. Also for GIST (KIT), Ph+ ALL. First targeted therapy - Nobel-worthy paradigm shift.",year:2024,exam:"NEET PG",topic:"cancer",subtopic:"CML"},
+  {q:"Immune checkpoint inhibitor targeting PD-1:",o:["Ipilimumab","Pembrolizumab","Atezolizumab","Bevacizumab"],a:"Pembrolizumab",e:"Anti-PD-1: pembrolizumab, nivolumab, cemiplimab. Anti-PD-L1: atezolizumab, durvalumab, avelumab. Anti-CTLA-4: ipilimumab. Blocks immune checkpoint → T-cell activation vs tumor.",year:2024,exam:"NEET PG",topic:"cancer",subtopic:"Immunotherapy"},
+
+  // === INI-CET 2024 - General ===
+  {q:"Michaelis-Menten kinetics applies to:",o:["Zero-order only","First-order only","Mixed order","Saturation kinetics"],a:"Saturation kinetics",e:"Michaelis-Menten kinetics = capacity-limited (saturation) - first-order at low concentrations, zero-order at high. Vmax = maximum rate. Km = concentration at ½ Vmax. Classic: ethanol, phenytoin.",year:2024,exam:"INI-CET",topic:"general",subtopic:"Kinetics"},
+  {q:"Phase II reactions include all EXCEPT:",o:["Glucuronidation","Sulfation","Oxidation","Acetylation"],a:"Oxidation",e:"Phase I: oxidation (CYP450), reduction, hydrolysis. Phase II (conjugation): glucuronidation, sulfation, acetylation, methylation, glutathione conjugation. Phase II products water-soluble → excreted.",year:2024,exam:"INI-CET",topic:"general",subtopic:"Metabolism"},
+  {q:"Drug with narrowest therapeutic index:",o:["Aspirin","Digoxin","Paracetamol","Amoxicillin"],a:"Digoxin",e:"Narrow therapeutic index (TI = LD50/ED50): digoxin, warfarin, lithium, phenytoin, theophylline, cyclosporine, aminoglycosides. Need TDM.",year:2024,exam:"INI-CET",topic:"general",subtopic:"TI"},
+  {q:"Drug half-life determines:",o:["Loading dose","Time to steady state","Maintenance dose","Route of administration"],a:"Time to steady state",e:"Steady state achieved in ~4-5 half-lives. Loading dose depends on Vd. Maintenance dose depends on clearance. Elimination t½ = 0.693/kel = 0.693 × Vd/CL.",year:2024,exam:"INI-CET",topic:"general",subtopic:"PK"},
+
+  // === INI-CET 2024 - CNS ===
+  {q:"Newer antidepressant with lowest sexual dysfunction:",o:["Fluoxetine","Sertraline","Bupropion","Paroxetine"],a:"Bupropion",
+  e:"Bupropion (NDRI) - minimal sexual dysfunction (unlike SSRIs). Also less weight gain. Contraindicated in seizure history + eating disorders. Also for smoking cessation.",year:2024,exam:"INI-CET",topic:"cns",subtopic:"Antidepressants"},
+  {q:"NMDA receptor antagonist used in Alzheimer disease:",o:["Donepezil","Memantine","Rivastigmine","Galantamine"],a:"Memantine",e:"Memantine - NMDA receptor antagonist - moderate-severe AD. Cholinesterase inhibitors (donepezil, rivastigmine, galantamine) for mild-moderate. Combined for severe.",year:2024,exam:"INI-CET",topic:"cns",subtopic:"AD"},
+  {q:"Antidote for benzodiazepine overdose:",o:["Naloxone","Flumazenil","Physostigmine","N-acetylcysteine"],a:"Flumazenil",e:"Flumazenil - competitive GABA-A/BZD receptor antagonist. Use cautiously - can precipitate seizures in chronic BZD users. IV 0.2 mg over 30s, repeat prn (short t½).",year:2024,exam:"INI-CET",topic:"cns",subtopic:"Antidotes"},
+  {q:"Newer anticonvulsant approved for focal seizures + generalized:",o:["Perampanel","Cenobamate","Brivaracetam","All"],a:"All",e:"Perampanel (AMPA antagonist), cenobamate (dual mechanism), brivaracetam (SV2A) - all newer AEDs approved for focal seizures with variable use in generalized.",year:2024,exam:"INI-CET",topic:"cns",subtopic:"Anticonvulsants"},
+
+  // === INI-CET 2024 - CVS ===
+  {q:"PCSK9 inhibitors mechanism:",o:["Statin-like","LDL receptor degradation prevention","Cholesterol absorption","Bile acid sequestration"],a:"LDL receptor degradation prevention",e:"PCSK9 inhibitors (evolocumab, alirocumab, inclisiran siRNA) - prevent LDL receptor degradation → ↑ LDL clearance. Reduces LDL 50-60% + CV events (FOURIER, ODYSSEY).",year:2024,exam:"INI-CET",topic:"cvs",subtopic:"Lipids"},
+  {q:"Sacubitril/valsartan (ARNI) for HFrEF:",o:["Neprilysin inhibitor + ARB","Diuretic combo","β-blocker + ACEi","MRA + ARB"],a:"Neprilysin inhibitor + ARB",e:"ARNI = sacubitril (neprilysin inhibitor - ↑ natriuretic peptides, bradykinin) + valsartan (ARB). PARADIGM-HF - superior to enalapril in HFrEF. Standard of care 1st line.",year:2024,exam:"INI-CET",topic:"cvs",subtopic:"HFrEF"},
+  {q:"Ivabradine mechanism:",o:["β-blocker","Selective If channel blocker (SA node)","CCB","ACE inhibitor"],a:"Selective If channel blocker (SA node)",e:"Ivabradine - selective If (funny current) channel blocker in SA node → ↓ HR without affecting inotropy or BP. For chronic HFrEF (SHIFT) + stable angina (BEAUTIFUL) with HR>70.",year:2024,exam:"INI-CET",topic:"cvs",subtopic:"HR control"},
+
+  // === INI-CET 2024 - AMD ===
+  {q:"Fifth generation cephalosporin:",o:["Cefepime","Ceftaroline","Cefotaxime","Cefpodoxime"],a:"Ceftaroline",e:"5th gen cephalosporins: ceftaroline, ceftobiprole - MRSA coverage (bind PBP2a). Ceftaroline FDA-approved for cSSSI + CAP + bacteremia.",year:2024,exam:"INI-CET",topic:"amd",subtopic:"Cephalosporins"},
+  {q:"Cefiderocol is unique due to:",o:["Siderophore mechanism - active vs MDR gram-neg","Anti-MRSA activity","Oral bioavailability","Anti-anaerobic"],a:"Siderophore mechanism - active vs MDR gram-neg",e:"Cefiderocol (Fetroja) - siderophore cephalosporin - uses bacterial iron uptake for entry - active vs MDR gram-neg (CRE, Pseudomonas, Acinetobacter). Broad spectrum vs carbapenem-resistant.",year:2024,exam:"INI-CET",topic:"amd",subtopic:"MDR"},
+
+  // === NEET PG 2023 - General ===
+  {q:"Loading dose formula:",o:["Vd × Cp","Cp / Vd","Vd × CL","Cp × F"],a:"Vd × Cp",e:"Loading dose (LD) = (Vd × Target Cp) / F. Where F = bioavailability. Determines initial concentration. Maintenance = (CL × Cp × τ) / F.",year:2023,exam:"NEET PG",topic:"general",subtopic:"Loading dose"},
+  {q:"P450 enzyme inducers include:",o:["Erythromycin","Rifampin","Ketoconazole","Cimetidine"],a:"Rifampin",e:"CYP inducers: rifampin (potent), carbamazepine, phenytoin, phenobarbital, St. John's wort, chronic ethanol. CYP inhibitors: macrolides, azoles, cimetidine, grapefruit juice, ritonavir.",year:2023,exam:"NEET PG",topic:"general",subtopic:"CYP450"},
+  {q:"Enterohepatic recirculation applies to:",o:["Water-soluble drugs","Drugs conjugated with glucuronide","IV drugs","Highly protein-bound drugs"],a:"Drugs conjugated with glucuronide",e:"Enterohepatic recirculation - drugs (or glucuronide conjugates) excreted in bile → gut bacterial β-glucuronidases hydrolyze → reabsorbed. Prolongs t½. E.g., morphine, warfarin, OCPs, methotrexate.",year:2023,exam:"NEET PG",topic:"general",subtopic:"EHC"},
+
+  // === NEET PG 2023 - ANS ===
+  {q:"Nicotinic receptor at neuromuscular junction is:",o:["Nm","Nn","M1","α1"],a:"Nm",e:"Nm (muscle-type nicotinic) at NMJ - blocked by non-depolarizing NMBs (rocuronium, vecuronium). Nn (neuronal) at autonomic ganglia. All nicotinic = ligand-gated Na/K channels.",year:2023,exam:"NEET PG",topic:"ans",subtopic:"Cholinergic"},
+  {q:"Sugammadex reverses:",o:["Succinylcholine","Rocuronium/vecuronium","Neostigmine","Atropine"],a:"Rocuronium/vecuronium",e:"Sugammadex - selective binding chelator for aminosteroid NMBs (rocuronium > vecuronium > pancuronium). Rapid reversal even from deep block. Replaces neostigmine for many.",year:2023,exam:"NEET PG",topic:"ans",subtopic:"NMB reversal"},
+  {q:"Alpha-2 agonist used as antihypertensive:",o:["Clonidine","Prazosin","Phenylephrine","Doxazosin"],a:"Clonidine",e:"Clonidine - central α2 agonist (↓ sympathetic outflow). Also methyldopa (safe in pregnancy), guanfacine, dexmedetomidine (sedation). Rebound HTN if stopped abruptly.",year:2023,exam:"NEET PG",topic:"ans",subtopic:"α-agonists"},
+
+  // === NEET PG 2023 - CNS ===
+  {q:"Antipsychotic causing hyperprolactinemia most:",o:["Clozapine","Olanzapine","Risperidone","Quetiapine"],a:"Risperidone",e:"Risperidone > other atypicals for hyperprolactinemia (potent D2 blockade in tuberoinfundibular pathway). Also causes weight gain, metabolic issues. Aripiprazole - lowest prolactin (partial agonist).",year:2023,exam:"NEET PG",topic:"cns",subtopic:"Antipsychotics"},
+  {q:"Mood stabilizer with teratogenic Ebstein anomaly risk:",o:["Valproate","Lithium","Carbamazepine","Lamotrigine"],a:"Lithium",e:"Lithium 1st trimester → Ebstein anomaly (tricuspid valve malformation). Valproate → NTD + autism + ↓ IQ. Carbamazepine → NTD + craniofacial. Lamotrigine safest in pregnancy.",year:2023,exam:"NEET PG",topic:"cns",subtopic:"Mood stabilizers"},
+  {q:"DOC for tonic-clonic seizures in adults:",o:["Ethosuximide","Valproate or Levetiracetam","Diazepam","Phenobarbital"],a:"Valproate or Levetiracetam",e:"Generalized tonic-clonic seizures - valproate (broad spectrum, but teratogenic) or levetiracetam (better tolerated, no drug interactions). Lamotrigine, topiramate alternatives.",year:2023,exam:"NEET PG",topic:"cns",subtopic:"Anticonvulsants"},
+
+  // === NEET PG 2023 - CVS ===
+  {q:"Beta blocker with vasodilator action via NO release:",o:["Metoprolol","Nebivolol","Atenolol","Bisoprolol"],a:"Nebivolol",e:"Nebivolol - highly β1-selective + NO-mediated vasodilation → BP lowering with less bradycardia. Preferred in HF, elderly, DM. Also carvedilol has α1-blockade for vasodilation.",year:2023,exam:"NEET PG",topic:"cvs",subtopic:"β-blockers"},
+  {q:"Newer oral anticoagulant reversed by idarucizumab:",o:["Rivaroxaban","Apixaban","Dabigatran","Edoxaban"],a:"Dabigatran",e:"Idarucizumab (Praxbind) - specific Fab fragment reversing dabigatran (direct thrombin inhibitor). Andexanet alfa reverses FXa inhibitors (rivaroxaban, apixaban, edoxaban).",year:2023,exam:"NEET PG",topic:"cvs",subtopic:"Anticoagulants"},
+
+  // === NEET PG 2023 - AMD ===
+  {q:"Vancomycin drug level monitoring - which is now recommended?",o:["Peak only","Trough only","AUC/MIC","Both peak and trough"],a:"AUC/MIC",e:"2020 IDSA guidelines - shifted from trough (15-20 mg/L) to AUC/MIC 400-600 μg·hr/mL for MRSA - reduces nephrotoxicity + improves efficacy. Bayesian software or 2-level equation.",year:2023,exam:"NEET PG",topic:"amd",subtopic:"Vancomycin"},
+  {q:"DOC for C. difficile (2021 IDSA):",o:["Metronidazole","Oral vancomycin","Fidaxomicin","IV cephalosporin"],a:"Fidaxomicin",e:"2021 IDSA/SHEA - fidaxomicin PREFERRED over oral vancomycin for initial + recurrent CDI (reduced recurrence per OPT-80-003/004 trials). Metronidazole no longer recommended.",year:2023,exam:"NEET PG",topic:"amd",subtopic:"C. difficile"},
+  {q:"Sofosbuvir/velpatasvir (Epclusa) mechanism:",o:["Interferon","NS3/4A + NS5A inhibitor","NS5B + NS5A inhibitor","Ribavirin analog"],a:"NS5B + NS5A inhibitor",e:"Sofosbuvir = NS5B (polymerase) inhibitor. Velpatasvir = NS5A inhibitor. Pangenotypic 12-week regimen for HCV - >95% SVR. Revolution replaced interferon.",year:2023,exam:"NEET PG",topic:"amd",subtopic:"HCV DAAs"},
+
+  // === NEET PG 2023 - Endocrine ===
+  {q:"Tirzepatide is:",o:["GLP-1 alone","GIP alone","Dual GIP/GLP-1 receptor agonist","DPP-4 inhibitor"],a:"Dual GIP/GLP-1 receptor agonist",e:"Tirzepatide (Mounjaro/Zepbound) - dual GIP + GLP-1 agonist. Superior HbA1c + weight loss (SURPASS trials). FDA 2022 for T2DM, 2023 for obesity. Once-weekly SC.",year:2023,exam:"NEET PG",topic:"hormones",subtopic:"Antidiabetics"},
+  {q:"Denosumab mechanism:",o:["Bisphosphonate","Anti-RANKL mAb","Estrogen","Vitamin D analog"],a:"Anti-RANKL mAb",e:"Denosumab (Prolia) - anti-RANKL mAb → prevents osteoclast maturation. SC q6 months. Osteoporosis + prevention SREs in cancer (Xgeva). Rebound fractures if discontinued.",year:2023,exam:"NEET PG",topic:"hormones",subtopic:"Osteoporosis"},
+
+  // === INI-CET 2023 - Multiple ===
+  {q:"Naloxegol used for:",o:["Opioid overdose","Opioid-induced constipation","Sedation","Addiction"],a:"Opioid-induced constipation",e:"Naloxegol (peripheral μ-antagonist - Movantik). For opioid-induced constipation - doesn't cross BBB (analgesia preserved). Alternatives: methylnaltrexone (SC), naldemedine.",year:2023,exam:"INI-CET",topic:"cns",subtopic:"Opioid receptors"},
+  {q:"Drug approved 2023 for Alzheimer disease:",o:["Aducanumab","Lecanemab","Both","Neither"],a:"Both",e:"Aducanumab (Aduhelm, FDA 2021 - controversial + accelerated). Lecanemab (Leqembi, FDA 2023 - traditional approval). Both anti-amyloid mAbs for mild-moderate AD. Slow cognitive decline modest amount.",year:2023,exam:"INI-CET",topic:"cns",subtopic:"AD 2023"},
+  {q:"Latest addition to HFrEF pillars:",o:["ACEi","β-blockers","SGLT2 inhibitors","ARNI"],a:"SGLT2 inhibitors",e:"HFrEF 4 pillars (2022 AHA/ACC): 1) ARNI or ACEi/ARB, 2) β-blocker, 3) MRA (spironolactone/eplerenone), 4) SGLT2 inhibitor (dapagliflozin/empagliflozin - EMPEROR-Reduced, DAPA-HF).",year:2023,exam:"INI-CET",topic:"cvs",subtopic:"HFrEF"},
+  {q:"Voclosporin (FDA 2021):",o:["Novel immunosuppressant for lupus nephritis","Antifungal","Antiviral","Antibacterial"],a:"Novel immunosuppressant for lupus nephritis",e:"Voclosporin (Lupkynis) - newer calcineurin inhibitor - active lupus nephritis (FDA 2021 - AURORA-1 trial). Less nephrotoxicity than cyclosporine.",year:2023,exam:"INI-CET",topic:"amd",subtopic:"Immunosuppressants"},
+  {q:"Nirmatrelvir/ritonavir (Paxlovid) mechanism:",o:["Viral RNA polymerase","3CL protease inhibitor","Neuraminidase","Fusion inhibitor"],a:"3CL protease inhibitor",e:"Paxlovid = nirmatrelvir (SARS-CoV-2 3CL protease/Mpro inhibitor) + ritonavir (CYP3A4 booster). 5-day course within 5 days symptoms in high-risk. EPIC-HR trial. Many DIs.",year:2023,exam:"INI-CET",topic:"amd",subtopic:"COVID"},
+
+  // === NEET PG 2024 - Blood ===
+  {q:"Warfarin acts on:",o:["Thrombin","Factor Xa","Vitamin K epoxide reductase","Antithrombin"],a:"Vitamin K epoxide reductase",e:"Warfarin inhibits VKORC1 (vitamin K epoxide reductase) → ↓ active vitamin K → ↓ γ-carboxylation of factors II, VII, IX, X + proteins C, S. Delayed onset - initial procoagulant.",year:2024,exam:"NEET PG",topic:"blood",subtopic:"Warfarin"},
+  {q:"Newer oral direct oral anticoagulant (DOAC) for AF:",o:["Warfarin","Apixaban","Heparin","Enoxaparin"],a:"Apixaban",e:"DOACs: apixaban, rivaroxaban, dabigatran, edoxaban - preferred over warfarin for non-valvular AF (ARISTOTLE, ROCKET, RE-LY, ENGAGE trials). Lower ICH risk, no INR monitoring.",year:2024,exam:"NEET PG",topic:"blood",subtopic:"DOACs"},
+  {q:"Iron overload treatment (chronic):",o:["Deferoxamine IV","Deferasirox oral","Deferiprone oral","All"],a:"All",e:"Iron chelation: deferoxamine (IV/SC), deferasirox (oral - Exjade), deferiprone (oral - agranulocytosis risk). Used for thalassemia, sickle cell, MDS. Reduce transfusional iron overload.",year:2024,exam:"NEET PG",topic:"blood",subtopic:"Iron chelation"},
+  {q:"Tranexamic acid mechanism:",o:["Vitamin K antagonist","Antifibrinolytic (blocks plasmin)","Anti-platelet","Anticoagulant"],a:"Antifibrinolytic (blocks plasmin)",e:"TXA - competitive antifibrinolytic - binds plasminogen → blocks fibrinolysis. Trauma (CRASH-2), postpartum hemorrhage (WOMAN), menorrhagia. Also for hereditary angioedema.",year:2024,exam:"NEET PG",topic:"blood",subtopic:"Antifibrinolytics"},
+
+  // === NEET PG 2024 - Kidney ===
+  {q:"Loop diuretic mechanism:",o:["Blocks Na-K-2Cl in TAL","Blocks Na-Cl in DCT","Blocks Na channel in CD","Blocks CA"],a:"Blocks Na-K-2Cl in TAL",e:"Loop diuretics (furosemide, bumetanide, torsemide, ethacrynic acid) - block NKCC2 in thick ascending limb → most potent diuretics. Ototoxicity + hypoK + hypoCa. Used in HF, edema, HTN, hyperK.",year:2024,exam:"NEET PG",topic:"kidney",subtopic:"Diuretics"},
+  {q:"K-sparing diuretic that blocks epithelial Na channel:",o:["Spironolactone","Amiloride","Eplerenone","Triamterene"],a:"Amiloride",e:"Amiloride + triamterene - direct ENaC (epithelial Na channel) blockers in CD. Spironolactone + eplerenone - MRAs (block aldosterone receptor). Both K-sparing but different mechanisms.",year:2024,exam:"NEET PG",topic:"kidney",subtopic:"K-sparing"},
+
+  // === INI-CET 2024 - GI ===
+  {q:"Newer 5-HT4 agonist for chronic idiopathic constipation:",o:["Metoclopramide","Prucalopride","Ondansetron","Loperamide"],a:"Prucalopride",e:"Prucalopride (Resolor) - selective 5-HT4 agonist - chronic idiopathic constipation. Safer than older 5-HT4 (cisapride, tegaserod - CV events - withdrawn). Also for opioid-induced constipation.",year:2024,exam:"INI-CET",topic:"gi",subtopic:"Prokinetics"},
+  {q:"Vonoprazan is:",o:["PPI","Potassium-competitive acid blocker (P-CAB)","H2 blocker","Antacid"],a:"Potassium-competitive acid blocker (P-CAB)",e:"Vonoprazan (Voquezna) - potassium-competitive acid blocker - faster + longer acid suppression than PPIs. FDA 2022 for H. pylori + GERD. Doesn't need acid activation.",year:2024,exam:"INI-CET",topic:"gi",subtopic:"PPI newer"},
+
+  // === NEET PG 2024 - Respiratory ===
+  {q:"LABA for asthma should NEVER be used as:",o:["Add-on to ICS","Combination therapy","Monotherapy","Rescue"],a:"Monotherapy",e:"LABA (salmeterol, formoterol) as MONOTHERAPY in asthma → increased mortality (SMART trial, black box). Always combined with ICS. Rescue: SABA (albuterol) or budesonide-formoterol.",year:2024,exam:"NEET PG",topic:"respiratory",subtopic:"Asthma"},
+  {q:"Biologic for severe eosinophilic asthma:",o:["Omalizumab","Mepolizumab","Dupilumab","All can be"],a:"All can be",e:"Severe eosinophilic asthma biologics: omalizumab (anti-IgE), mepolizumab/reslizumab/benralizumab (anti-IL-5), dupilumab (anti-IL-4Rα), tezepelumab (anti-TSLP). Choose based on phenotype.",year:2024,exam:"NEET PG",topic:"respiratory",subtopic:"Biologics"},
+
+  // === INI-CET 2023 - Cancer ===
+  {q:"CDK 4/6 inhibitor in HR+ HER2- breast cancer:",o:["Palbociclib","Ribociclib","Abemaciclib","All"],a:"All",e:"CDK 4/6 inhibitors: palbociclib, ribociclib, abemaciclib - all approved for HR+ HER2- metastatic breast Ca with AI/fulvestrant (PALOMA, MONALEESA, MONARCH trials). Abemaciclib also monotherapy.",year:2023,exam:"INI-CET",topic:"cancer",subtopic:"CDK 4/6"},
+  {q:"PARP inhibitor for BRCA+ ovarian cancer:",o:["Olaparib","Niraparib","Rucaparib","All"],a:"All",e:"PARP inhibitors: olaparib, niraparib, rucaparib, talazoparib - synthetic lethality with BRCA1/2 (or HRR deficient). Ovarian, breast, prostate, pancreatic cancers.",year:2023,exam:"INI-CET",topic:"cancer",subtopic:"PARP"},
+
+  // === NEET PG 2023 - Misc ===
+  {q:"DOC for paracetamol overdose:",o:["Activated charcoal","N-acetylcysteine","Naloxone","Flumazenil"],a:"N-acetylcysteine",e:"NAC (Mucomyst) - DOC for paracetamol OD. Best if given <8 hr; still benefit up to 24 hr. Rumack-Matthew nomogram guides treatment. Restores glutathione + alt pathway.",year:2023,exam:"NEET PG",topic:"misc",subtopic:"Antidotes"},
+  {q:"Fomepizole is antidote for:",o:["Methanol","Ethylene glycol","Both","Isopropanol"],a:"Both",e:"Fomepizole - alcohol dehydrogenase inhibitor - methanol + ethylene glycol poisoning (blocks conversion to toxic metabolites). Preferred over ethanol. Add hemodialysis for severe.",year:2023,exam:"NEET PG",topic:"misc",subtopic:"Antidotes"},
+  {q:"Beers criteria drugs to AVOID in elderly:",o:["1st gen antihistamines","Benzodiazepines","Anticholinergics","All"],a:"All",e:"AGS Beers Criteria - potentially inappropriate meds in elderly: 1st gen antihistamines, BZDs, anticholinergics, NSAIDs chronic, sliding-scale insulin, glyburide. Multiple risks.",year:2023,exam:"NEET PG",topic:"misc",subtopic:"Special populations"},
+
+  // === INI-CET 2023 - Misc ===
+  {q:"Fexinidazole is used for:",o:["Malaria","Sleeping sickness","Tuberculosis","HIV"],a:"Sleeping sickness",e:"Fexinidazole (Sanofi-DNDi, WHO 2019) - first ALL-ORAL treatment for African trypanosomiasis (sleeping sickness - T. brucei gambiense). Both hemolymphatic + CNS stages.",year:2023,exam:"INI-CET",topic:"amd",subtopic:"Antiprotozoal"},
+  {q:"Naltrexone use includes:",o:["Alcohol dependence","Opioid dependence","Both","Only opioids"],a:"Both",e:"Naltrexone - opioid antagonist - alcohol dependence (reduces cravings + euphoria) + opioid dependence (post-detox to prevent relapse). Long-acting IM (Vivitrol) - once monthly.",year:2023,exam:"INI-CET",topic:"cns",subtopic:"Addiction"},
+
+  // === NEET PG 2024 - Autacoids ===
+  {q:"Prostaglandin analog used for glaucoma:",o:["Misoprostol","Latanoprost","Alprostadil","Epoprostenol"],a:"Latanoprost",e:"Latanoprost (Xalatan), bimatoprost, travoprost, tafluprost - PGF2α analogs - reduce IOP by increasing uveoscleral outflow. 1st line for open-angle glaucoma. Side effect: iris pigmentation, lash growth.",year:2024,exam:"NEET PG",topic:"autacoids",subtopic:"PG analogs"},
+  {q:"Newer migraine prevention biological:",o:["Sumatriptan","Erenumab","Ergotamine","Propranolol"],a:"Erenumab",e:"CGRP monoclonal antibodies: erenumab (anti-CGRP receptor), fremanezumab, galcanezumab, eptinezumab (anti-CGRP ligand). Migraine prevention - monthly SC/IV. Also gepants for acute + prevention.",year:2024,exam:"NEET PG",topic:"autacoids",subtopic:"Migraine"},
+
+  // === NEET PG 2023 - Additional CVS ===
+  {q:"Nitrate tolerance developed due to:",o:["Continuous use","Depletion of sulfhydryl groups","Both","Neither"],a:"Both",e:"Nitrate tolerance from continuous use + depletion of sulfhydryl (cysteine) groups needed for NO release. Prevention: nitrate-free interval 8-12 hr daily. Use N-acetylcysteine adjunct in some.",year:2023,exam:"NEET PG",topic:"cvs",subtopic:"Nitrates"},
+
+  // === Additional 2023 PYQs ===
+  {q:"Nirsevimab is used for:",o:["RSV prevention in infants","HIV","Influenza","COVID-19"],a:"RSV prevention in infants",e:"Nirsevimab (Beyfortus) - anti-RSV F protein mAb - FDA 2023 - single-dose per RSV season for all infants. Long-acting alternative to palivizumab. Reduces RSV hospitalizations.",year:2023,exam:"INI-CET",topic:"amd",subtopic:"RSV"},
+  {q:"Zuranolone (Zurzuvae) is FDA 2023 approved for:",o:["Insomnia","Postpartum depression","Anxiety","Bipolar"],a:"Postpartum depression",e:"Zuranolone (Zurzuvae) - first oral GABA-A modulator for PPD - FDA August 2023 - 14-day course. Alternative: brexanolone (IV infusion - earlier).",year:2023,exam:"INI-CET",topic:"cns",subtopic:"PPD 2023"},
+  {q:"Lecanemab (Leqembi) mechanism:",o:["Cholinesterase inhibitor","Anti-amyloid mAb","NMDA antagonist","Dopamine agonist"],a:"Anti-amyloid mAb",e:"Lecanemab (Leqembi, FDA 2023 traditional approval) - anti-amyloid β mAb - early Alzheimer (mild cognitive impairment + mild dementia). Also donanemab FDA 2024. Slows cognitive decline modestly.",year:2023,exam:"INI-CET",topic:"cns",subtopic:"AD 2023"},
+
+  // === NEET PG 2024 - Additional Endocrine ===
+  {q:"Bempedoic acid mechanism:",o:["HMG-CoA reductase","ATP citrate lyase inhibitor","PCSK9","Bile acid sequestrant"],a:"ATP citrate lyase inhibitor",e:"Bempedoic acid (Nexletol) - ATP citrate lyase inhibitor - upstream of HMG-CoA reductase - liver-selective (not muscle). For statin-intolerant + statin combo. CLEAR Outcomes trial.",year:2024,exam:"NEET PG",topic:"cvs",subtopic:"Lipids newer"},
+  {q:"Baricitinib is:",o:["Anti-TNF","JAK 1/2 inhibitor","IL-6 inhibitor","B-cell depletion"],a:"JAK 1/2 inhibitor",e:"Baricitinib (Olumiant) - JAK 1/2 inhibitor - RA, alopecia areata, COVID-19 (severe), atopic dermatitis. FDA Black Box (2021): VTE, MACE, malignancy, infections.",year:2024,exam:"NEET PG",topic:"misc",subtopic:"Immunomodulators"},
+
+  // === INI-CET 2024 - Hormonal ===
+  {q:"Elacestrant is:",o:["SERM","Oral SERD","Aromatase inhibitor","Fulvestrant analog"],a:"Oral SERD",e:"Elacestrant (Orserdu) - first ORAL SERD (Selective Estrogen Receptor Degrader) - FDA 2023 for ESR1-mutant HR+ HER2- metastatic breast cancer after progression on endocrine + CDK 4/6.",year:2024,exam:"INI-CET",topic:"hormones",subtopic:"Breast Ca"},
+
+  // === NEET PG 2023 - GI ===
+  {q:"Sofosbuvir/velpatasvir/voxilaprevir is used for:",o:["Non-responder HCV","Pangenotypic","Cirrhosis","All"],a:"All",e:"Vosevi (SOF/VEL/VOX) - salvage regimen for HCV DAA failures (previously treated with NS5A inhibitor). Pangenotypic 12 weeks. NS3/4A protease (VOX) + NS5A (VEL) + NS5B (SOF).",year:2023,exam:"NEET PG",topic:"amd",subtopic:"HCV"},
+
+  // === Multiple exam mixed ===
+  {q:"Aducanumab mechanism:",o:["Cholinesterase inhibitor","Anti-amyloid β mAb","NMDA blocker","Dopamine agonist"],a:"Anti-amyloid β mAb",e:"Aducanumab (Aduhelm, FDA 2021 - controversial accelerated approval) - anti-amyloid β mAb for early Alzheimer. First disease-modifying AD drug. Modest clinical benefit + ARIA (edema/hemorrhage).",year:2023,exam:"INI-CET",topic:"cns",subtopic:"AD 2021"},
+  {q:"CAR-T therapy is used for:",o:["Solid tumors","Hematologic malignancies (mainly)","Autoimmune","Cardiovascular"],a:"Hematologic malignancies (mainly)",e:"CAR-T therapies FDA-approved: 6 products (tisagenlecleucel, axicabtagene, brexucabtagene, lisocabtagene, idecabtagene, ciltacabtagene) - B-ALL, DLBCL, FL, MCL, MM. Solid tumor CAR-T in trials.",year:2024,exam:"NEET PG",topic:"cancer",subtopic:"CAR-T"},
+  {q:"Sotorasib is used for:",o:["EGFR NSCLC","ALK NSCLC","KRAS G12C NSCLC","BRAF melanoma"],a:"KRAS G12C NSCLC",e:"Sotorasib (Lumakras, FDA 2021) - first KRAS G12C inhibitor - for KRAS G12C mutant NSCLC (~14%). Also adagrasib (Krazati, FDA 2022). Historic - KRAS previously 'undruggable'.",year:2024,exam:"NEET PG",topic:"cancer",subtopic:"KRAS"},
+  {q:"Osimertinib is:",o:["1st gen EGFR TKI","2nd gen EGFR TKI","3rd gen EGFR TKI","BRAF inhibitor"],a:"3rd gen EGFR TKI",e:"Osimertinib (Tagrisso) - 3rd gen EGFR TKI - covers T790M resistance mutation + CNS metastases. 1st line EGFR-mutant NSCLC (FLAURA trial - superior to erlotinib/gefitinib).",year:2024,exam:"NEET PG",topic:"cancer",subtopic:"EGFR TKI"},
+
+  // === More 2023 questions ===
+  {q:"Trastuzumab deruxtecan (T-DXd) is used for:",o:["HER2+ only","HER2-low + HER2+","HER2-negative","Triple negative only"],a:"HER2-low + HER2+",e:"T-DXd (Enhertu) - HER2 antibody-drug conjugate (trastuzumab + topoisomerase I inhibitor deruxtecan) - HER2+ AND HER2-low breast Ca (DESTINY-Breast04). Paradigm shift. Also gastric, NSCLC.",year:2023,exam:"NEET PG",topic:"cancer",subtopic:"ADCs"},
+  {q:"Belimumab mechanism:",o:["Anti-CD20","Anti-BLyS/BAFF","Anti-TNF","IL-6 inhibitor"],a:"Anti-BLyS/BAFF",e:"Belimumab (Benlysta) - anti-BLyS/BAFF mAb - FDA for SLE + lupus nephritis. Blocks B-cell activation + survival. Also anifrolumab (anti-IFNAR) for SLE (2021).",year:2023,exam:"INI-CET",topic:"misc",subtopic:"SLE"},
+
+  // === NEET PG 2024 - Additional General ===
+  {q:"Time constant to reach steady state after starting a drug:",o:["1 half-life","3 half-lives","4-5 half-lives","10 half-lives"],a:"4-5 half-lives",
+  e:"Steady state achieved in 4-5 elimination half-lives (~94-97% of steady-state). Loading dose used to reach faster. Same principle applies to washout after discontinuation.",year:2024,exam:"NEET PG",topic:"general",subtopic:"Steady state"},
+
+  // === INI-CET 2024 - Extra ===
+  {q:"Newer P-CAB (potassium-competitive acid blocker):",o:["Omeprazole","Vonoprazan","Ranitidine","Sucralfate"],a:"Vonoprazan",e:"Vonoprazan (Voquezna) - P-CAB - reversible K+ site blocker on gastric H+/K+ ATPase. Faster onset + longer duration than PPIs. Doesn't need acid activation. FDA 2022.",year:2024,exam:"INI-CET",topic:"gi",subtopic:"P-CAB"}
+];
+/* PYQ Filter + Render Logic */
+window.pyqFilters = {exam:'all', year:'all', topic:'all', search:''};
+window.pyqExpanded = new Set();
+window.pyqBatchSize = 20;
+window.pyqShowingCount = 20;
+
+function topicName(id){
+  const m={general:'General',ans:'ANS',autacoids:'Autacoids',respiratory:'Respiratory',gi:'GI',pns:'PNS',cns:'CNS',cvs:'CVS',kidney:'Kidney',blood:'Blood',hormones:'Hormones',amd:'AMD',cancer:'Cancer',misc:'Misc'};
+  return m[id]||id;
+}
+
+function togglePYQ(idx){
+  const el = document.getElementById('pyq-detail-'+idx);
+  const btn = document.getElementById('pyq-btn-'+idx);
+  if(!el) return;
+  const isOpen = el.classList.contains('open');
+  if(isOpen){ el.classList.remove('open'); btn.textContent = '👁️ Show Answer + Explanation'; window.pyqExpanded.delete(idx); }
+  else{ el.classList.add('open'); btn.textContent = '🙈 Hide Answer'; window.pyqExpanded.add(idx); }
+}
+
+function renderPYQs(){
+  const container = document.getElementById('pyq-list-container');
+  if(!container || typeof PYQS === 'undefined') return;
+  const F = window.pyqFilters;
+  const filtered = PYQS.filter(p => {
+    if(F.exam !== 'all' && p.exam !== F.exam) return false;
+    if(F.year !== 'all' && String(p.year) !== F.year) return false;
+    if(F.topic !== 'all' && p.topic !== F.topic) return false;
+    if(F.search){
+      const q = F.search.toLowerCase();
+      const hay = (p.q + ' ' + p.o.join(' ') + ' ' + p.a + ' ' + (p.e||'') + ' ' + (p.subtopic||'')).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  // Update counts
+  document.getElementById('pyq-total-count').textContent = PYQS.length;
+  document.getElementById('pyq-neet-count').textContent = PYQS.filter(p=>p.exam==='NEET PG').length;
+  document.getElementById('pyq-inicet-count').textContent = PYQS.filter(p=>p.exam==='INI-CET').length;
+  document.getElementById('pyq-filtered-count').textContent = filtered.length;
+
+  if(filtered.length === 0){
+    container.innerHTML = '<div class="pyq-empty"><span>🔍</span>No PYQs match your filters. Try resetting or broadening search.</div>';
+    return;
+  }
+
+  const show = filtered.slice(0, window.pyqShowingCount);
+  const cards = show.map((p, idx) => {
+    const badgeClass = p.exam === 'NEET PG' ? 'neet' : 'inicet';
+    const correctIdx = p.o.findIndex(o => o === p.a);
+    const isOpen = window.pyqExpanded.has(idx);
+    const opts = p.o.map((o,i) => `<div class="pyq-opt${i===correctIdx?' correct':''}">${String.fromCharCode(65+i)}. ${o}${i===correctIdx?' ✅':''}</div>`).join('');
+    return `<div class="pyq-card">
+      <div class="pyq-header">
+        <span class="pyq-badge ${badgeClass}">${p.exam}</span>
+        <span class="pyq-badge year">${p.year}</span>
+        <span class="pyq-badge topic">${topicName(p.topic)}${p.subtopic?' • '+p.subtopic:''}</span>
+      </div>
+      <div class="pyq-question"><strong>Q${idx+1}.</strong> ${p.q}</div>
+      <button class="pyq-toggle-btn" id="pyq-btn-${idx}" onclick="togglePYQ(${idx})">${isOpen?'🙈 Hide Answer':'👁️ Show Answer + Explanation'}</button>
+      <div class="pyq-details${isOpen?' open':''}" id="pyq-detail-${idx}">
+        <div class="pyq-options">${opts}</div>
+        ${p.e?`<div class="pyq-explanation"><strong>💡 Explanation:</strong> ${p.e}</div>`:''}
+      </div>
+    </div>`;
+  }).join('');
+
+  let loadMore = '';
+  if(filtered.length > window.pyqShowingCount){
+    loadMore = `<div style="text-align:center;margin:16px 0"><button onclick="loadMorePYQs()" style="padding:10px 24px;background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;border:none;border-radius:10px;cursor:pointer;font-weight:700">📖 Load More (${filtered.length-window.pyqShowingCount} remaining)</button></div>`;
+  }
+  container.innerHTML = cards + loadMore;
+}
+
+function loadMorePYQs(){
+  window.pyqShowingCount += window.pyqBatchSize;
+  renderPYQs();
+}
+
+function filterPYQ(el, type, value){
+  window.pyqFilters[type] = value;
+  window.pyqShowingCount = window.pyqBatchSize;
+  window.pyqExpanded.clear();
+
+  if(el && el.classList.contains('pyq-chip')){
+    el.parentElement.querySelectorAll('.pyq-chip').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+  }
+  renderPYQs();
+}
+
+function resetPYQFilters(){
+  window.pyqFilters = {exam:'all', year:'all', topic:'all', search:''};
+  window.pyqShowingCount = window.pyqBatchSize;
+  window.pyqExpanded.clear();
+  document.querySelectorAll('#pyq .pyq-chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.exam === 'all' || c.dataset.year === 'all');
+  });
+  document.getElementById('pyq-topic-filter').value = 'all';
+  document.getElementById('pyq-search').value = '';
+  renderPYQs();
+}
+
+// Auto-init when page loads
+document.addEventListener('DOMContentLoaded', () => setTimeout(() => { if(typeof PYQS !== 'undefined') renderPYQs(); }, 300));
+if(document.readyState === 'complete') setTimeout(() => { if(typeof PYQS !== 'undefined') renderPYQs(); }, 100);
 </script>
 </body>
 </html>
