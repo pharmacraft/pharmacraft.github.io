@@ -1342,113 +1342,8 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <div class="topic-card" onclick="openTopic('amd')"><div class="topic-num">TOPIC 12</div><div class="topic-icon">🦠</div><div class="topic-title">Antimicrobial Drugs</div><div class="topic-desc">Antibiotics, antivirals, antifungals, antiTB</div><div class="topic-meta"><span class="topic-pill">β-lactams</span><span class="topic-pill">ATT</span></div></div>
     <div class="topic-card" onclick="openTopic('cancer')"><div class="topic-num">TOPIC 13</div><div class="topic-icon">🧫</div><div class="topic-title">Anticancer Drugs</div><div class="topic-desc">Cytotoxics, targeted therapy, immunotherapy</div><div class="topic-meta"><span class="topic-pill">Targeted</span></div></div>
     <div class="topic-card" onclick="openTopic('misc')"><div class="topic-num">TOPIC 14</div><div class="topic-icon">🔬</div><div class="topic-title">Miscellaneous Drugs</div><div class="topic-desc">Immunosuppressants, vitamins, chelators, vaccines</div><div class="topic-meta"><span class="topic-pill">Vitamins</span></div></div>
-  </div>
-</section>
-
-<!-- ── TOPIC DETAILS (ACCORDIONS) ───────────────── -->
-<section class="section" id="topic-details">
-  <div class="section-head">
-    <div class="section-tag">Deep Dive</div>
-    <h2>Topic-Wise Complete Notes</h2>
-    <p>Click any topic to expand. Switch tabs to view Classification, Animated MOA, Drugs, PPT Outline and MCQs.</p>
-  </div>
-  <div id="topic-accordions"></div>
-</section>
-
-<!-- ── PYQs ──────────────────────────────────────── -->
-<section class="section" id="pyq">
-  <div class="section-head">
-    <div class="section-tag">Previous Year Questions</div>
-    <h2>NEET PG Pharmacology PYQs</h2>
-    <p>High-yield previous year questions from NEET PG, INI-CET and FMGE, solved with detailed explanations.</p>
-  </div>
-  <div class="mcq-master-toggle" id="pyq-master-toggle" onclick="toggleMcqSection('pyq')">
-    <span class="mcq-master-icon">📋</span>
-    <span class="mcq-master-text">View PYQ Questions <span id="pyq-count-badge" class="mcq-master-count">0</span></span>
-    <span class="mcq-master-chevron" id="pyq-master-chevron">▼</span>
-  </div>
-  <div class="mcq-section-body mcq-section-closed" id="pyq-section-body">
-    <div class="exam-filter">
-      <button class="exam-btn active" data-exam="all" onclick="filterPYQ('all',this)">All</button>
-      <button class="exam-btn" data-exam="neetpg" onclick="filterPYQ('neetpg',this)">NEET PG</button>
-      <button class="exam-btn" data-exam="inicet" onclick="filterPYQ('inicet',this)">INI-CET</button>
-      <button class="exam-btn" data-exam="fmge" onclick="filterPYQ('fmge',this)">FMGE</button>
-    </div>
-    <div class="mcq-list" id="pyq-list"></div>
-  </div>
-</section>
-
-<!-- ── PRACTICE SETS ────────────────────────────── -->
-<section class="section" id="practice">
-  <div class="section-head">
-    <div class="section-tag">Practice Mode</div>
-    <h2>Topic-Wise Practice Sets</h2>
-    <p>Choose a topic and start a practice quiz, instant feedback with explanations after each question.</p>
-  </div>
-  <div class="quiz-launcher" id="practice-launcher"></div>
-  <div id="practice-arena" style="display:none;margin-top:24px;"></div>
-</section>
-
-<!-- ── ADAPTIVE TEST GENERATOR ────────────────── -->
-<section class="section" id="adaptive">
-  <div class="section-head">
-    <div class="section-tag" style="background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;">🧠 Smart Learning</div>
-    <h2>Adaptive Test Generator</h2>
-    <p>Smart algorithm picks MCQs from your weak areas, personalised study path based on your performance.</p>
-  </div>
-  <div id="adaptive-dashboard"></div>
-  <div id="adaptive-arena" style="display:none;margin-top:18px;"></div>
-</section>
-
-<!-- ── DRUG INTERACTION CHECKER ──────────────────── -->
-<section class="section" id="dic">
-  <div class="section-head">
-    <div class="section-tag" style="background:linear-gradient(135deg,#0891b2,#0f766e);color:white;">🔍 Clinical Tool</div>
-    <h2>Drug Interaction Checker</h2>
-    <p>200+ NEET PG &amp; INI-CET high-yield drug interactions, severity-coded with mechanism, management &amp; exam pearls.</p>
-  </div>
-  <div class="dic-wrapper">
-    <div class="dic-hero">
-      <h3>💊 Check Two Drugs Instantly</h3>
-      <p>Enter both drug names, get severity (🔴 Contraindicated / 🟠 Major / 🟡 Moderate / 🟢 Minor), mechanism, management plan and exam-ready summary.</p>
-    </div>
-
-    <div class="dic-info-card">
-      <strong>📚 Clinical Pearl:</strong> Approx. <strong>20-30% of hospital admissions</strong> in elderly are due to adverse drug interactions. Mastery of these combinations is essential for safe practice <em>and</em> high-yield NEET PG / INI-CET questions.
-    </div>
-
-    <div class="dic-legend">
-      <span class="l-c">🔴 Contraindicated</span>
-      <span class="l-mj">🟠 Major</span>
-      <span class="l-mo">🟡 Moderate</span>
-      <span class="l-mi">🟢 Minor</span>
-      <span class="l-n">⚪ No Known</span>
-    </div>
-
-    <div class="dic-input-grid">
-      <div class="dic-input-block">
-        <label for="dic-drug-a">Drug A</label>
-        <input type="text" id="dic-drug-a" placeholder="e.g. Warfarin" autocomplete="off" oninput="dicSuggest(this,'a')" onfocus="dicSuggest(this,'a')" onblur="setTimeout(()=>dicHideSuggest('a'),200)">
-        <div class="dic-suggestions" id="dic-sug-a" style="display:none;"></div>
-      </div>
-      <div class="dic-vs">⚡</div>
-      <div class="dic-input-block">
-        <label for="dic-drug-b">Drug B</label>
-        <input type="text" id="dic-drug-b" placeholder="e.g. Aspirin" autocomplete="off" oninput="dicSuggest(this,'b')" onfocus="dicSuggest(this,'b')" onblur="setTimeout(()=>dicHideSuggest('b'),200)">
-        <div class="dic-suggestions" id="dic-sug-b" style="display:none;"></div>
-      </div>
-    </div>
-
-    <button class="dic-check-btn" onclick="checkInteraction()">🔍 Check Interaction</button>
-
-    <div style="font-size:12px;color:var(--muted);text-align:center;margin-top:8px;">⚡ Quick test with common combinations:</div>
-    <div class="dic-quick-pairs" id="dic-quick-pairs"></div>
-
-    <div id="dic-result-container"></div>
-
-    <div style="margin-top:22px;padding:14px;background:#fef9e7;border-left:4px solid #f59e0b;border-radius:6px;font-size:12.5px;color:#78350f;">
-      <strong>⚠️ Educational Use Only:</strong> This tool covers NEET PG / INI-CET / FMGE high-yield interactions for academic learning. Always verify with Lexicomp, Micromedex or UpToDate for real clinical decisions. Drug names: enter generic name (lowercase OK). 200+ pairs covered, not exhaustive.
-    </div>
+  
+    <div class="topic-card" onclick="document.getElementById('pyq').scrollIntoView({behavior:'smooth'})" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:2px solid #a78bfa;"><div class="topic-num" style="color:#7c3aed;">📚 PYQ VAULT</div><div class="topic-icon">🎯</div><div class="topic-title" style="color:#4c1d95;">Previous Year Questions</div><div class="topic-desc">Real NEET PG, INI-CET, FMGE, AIIMS, UPSC-CMS PYQs. Filter by exam, year, topic.</div><div class="topic-meta"><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">300+ PYQs</span><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">5 Exams</span><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">5 Years</span></div></div>
   </div>
 </section>
 
@@ -1526,24 +1421,97 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   </div>
 </section>
 
+<!-- ── TOPIC DETAILS (ACCORDIONS) ───────────────── -->
+<section class="section" id="topic-details">
+  <div class="section-head">
+    <div class="section-tag">Deep Dive</div>
+    <h2>Topic-Wise Complete Notes</h2>
+    <p>Click any topic to expand. Switch tabs to view Classification, Animated MOA, Drugs, PPT Outline and MCQs.</p>
+  </div>
+  <div id="topic-accordions"></div>
+</section>
+
+<!-- Old PYQ section removed, unified into #pyq vault -->
+<!-- ── PRACTICE SETS ────────────────────────────── -->
+<section class="section" id="practice">
+  <div class="section-head">
+    <div class="section-tag">Practice Mode</div>
+    <h2>Topic-Wise Practice Sets</h2>
+    <p>Choose a topic and start a practice quiz, instant feedback with explanations after each question.</p>
+  </div>
+  <div class="quiz-launcher" id="practice-launcher"></div>
+  <div id="practice-arena" style="display:none;margin-top:24px;"></div>
+</section>
+
+<!-- ── ADAPTIVE TEST GENERATOR ────────────────── -->
+<section class="section" id="adaptive">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;">🧠 Smart Learning</div>
+    <h2>Adaptive Test Generator</h2>
+    <p>Smart algorithm picks MCQs from your weak areas, personalised study path based on your performance.</p>
+  </div>
+  <div id="adaptive-dashboard"></div>
+  <div id="adaptive-arena" style="display:none;margin-top:18px;"></div>
+</section>
+
+<!-- ── DRUG INTERACTION CHECKER ──────────────────── -->
+<section class="section" id="dic">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#0891b2,#0f766e);color:white;">🔍 Clinical Tool</div>
+    <h2>Drug Interaction Checker</h2>
+    <p>200+ NEET PG &amp; INI-CET high-yield drug interactions, severity-coded with mechanism, management &amp; exam pearls.</p>
+  </div>
+  <div class="dic-wrapper">
+    <div class="dic-hero">
+      <h3>💊 Check Two Drugs Instantly</h3>
+      <p>Enter both drug names, get severity (🔴 Contraindicated / 🟠 Major / 🟡 Moderate / 🟢 Minor), mechanism, management plan and exam-ready summary.</p>
+    </div>
+
+    <div class="dic-info-card">
+      <strong>📚 Clinical Pearl:</strong> Approx. <strong>20-30% of hospital admissions</strong> in elderly are due to adverse drug interactions. Mastery of these combinations is essential for safe practice <em>and</em> high-yield NEET PG / INI-CET questions.
+    </div>
+
+    <div class="dic-legend">
+      <span class="l-c">🔴 Contraindicated</span>
+      <span class="l-mj">🟠 Major</span>
+      <span class="l-mo">🟡 Moderate</span>
+      <span class="l-mi">🟢 Minor</span>
+      <span class="l-n">⚪ No Known</span>
+    </div>
+
+    <div class="dic-input-grid">
+      <div class="dic-input-block">
+        <label for="dic-drug-a">Drug A</label>
+        <input type="text" id="dic-drug-a" placeholder="e.g. Warfarin" autocomplete="off" oninput="dicSuggest(this,'a')" onfocus="dicSuggest(this,'a')" onblur="setTimeout(()=>dicHideSuggest('a'),200)">
+        <div class="dic-suggestions" id="dic-sug-a" style="display:none;"></div>
+      </div>
+      <div class="dic-vs">⚡</div>
+      <div class="dic-input-block">
+        <label for="dic-drug-b">Drug B</label>
+        <input type="text" id="dic-drug-b" placeholder="e.g. Aspirin" autocomplete="off" oninput="dicSuggest(this,'b')" onfocus="dicSuggest(this,'b')" onblur="setTimeout(()=>dicHideSuggest('b'),200)">
+        <div class="dic-suggestions" id="dic-sug-b" style="display:none;"></div>
+      </div>
+    </div>
+
+    <button class="dic-check-btn" onclick="checkInteraction()">🔍 Check Interaction</button>
+
+    <div style="font-size:12px;color:var(--muted);text-align:center;margin-top:8px;">⚡ Quick test with common combinations:</div>
+    <div class="dic-quick-pairs" id="dic-quick-pairs"></div>
+
+    <div id="dic-result-container"></div>
+
+    <div style="margin-top:22px;padding:14px;background:#fef9e7;border-left:4px solid #f59e0b;border-radius:6px;font-size:12.5px;color:#78350f;">
+      <strong>⚠️ Educational Use Only:</strong> This tool covers NEET PG / INI-CET / FMGE high-yield interactions for academic learning. Always verify with Lexicomp, Micromedex or UpToDate for real clinical decisions. Drug names: enter generic name (lowercase OK). 200+ pairs covered, not exhaustive.
+    </div>
+  </div>
+</section>
+
+
+
 
 
 <!-- ── FMGE ─────────────────────────────────────── -->
-<section class="section" id="fmge">
-  <div class="section-head">
-    <div class="section-tag">FMGE Special</div>
-    <h2>FMGE Pharmacology Practice</h2>
-    <p>Curated MCQs in FMGE pattern, essential for foreign medical graduates appearing for the licentiate exam.</p>
-  </div>
-  <div class="mcq-master-toggle" id="fmge-master-toggle" onclick="toggleMcqSection('fmge')">
-    <span class="mcq-master-icon">🎓</span>
-    <span class="mcq-master-text">View FMGE Questions <span id="fmge-count-badge" class="mcq-master-count">0</span></span>
-    <span class="mcq-master-chevron" id="fmge-master-chevron">▼</span>
-  </div>
-  <div class="mcq-section-body mcq-section-closed" id="fmge-section-body">
-    <div class="mcq-list" id="fmge-list"></div>
-  </div>
-</section>
+<!-- Old FMGE section removed, questions merged into #pyq vault -->
 
 <!-- ── ABOUT ────────────────────────────────────── -->
 <section class="section" id="about">
@@ -1578,7 +1546,6 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <a href="#topics">Topics</a>
     <a href="#pyq">PYQs</a>
     <a href="#practice">Practice</a>
-    <a href="#fmge">FMGE</a>
     <a href="https://www.youtube.com/@dr.susheelkumar2024" target="_blank" rel="noopener" style="color:#dc2626;font-weight:800;">▶ YouTube, <strong>Dr. Susheel Kumar</strong></a>
   </div>
   <div style="margin:14px auto 18px;max-width:560px;background:linear-gradient(135deg,rgba(255,0,0,0.08),rgba(255,0,0,0.02));border:1px solid rgba(255,0,0,0.25);border-radius:12px;padding:16px 20px;">
@@ -21956,41 +21923,12 @@ TOPICS.push({id:"misc",icon:"🔬",title:"Miscellaneous Drugs",
 /* ════════════════════════════════════════════════════
    PYQ, NEET PG / INI-CET / FMGE
 ═════════════════════════════════════════════════════ */
-PYQ.push(
-  {exam:"neetpg",year:"2023",t:"CNS",q:"A 25-year-old female with bipolar disorder is planned for therapy. Which drug given during pregnancy is most likely to cause Ebstein's anomaly?",o:["Valproate","Lithium","Carbamazepine","Lamotrigine"],a:"Lithium",e:"Lithium use in first trimester is associated with Ebstein's anomaly (downward displacement of tricuspid valve). Switch to lamotrigine or quetiapine in pregnant bipolar patients."},
-  {exam:"neetpg",year:"2023",t:"CVS",q:"DOC for prevention of contrast-induced nephropathy:",o:["Furosemide","Mannitol","IV normal saline + N-acetylcysteine","Dopamine"],a:"IV normal saline + N-acetylcysteine",e:"Hydration with isotonic saline is mainstay. NAC provides additional antioxidant protection. Avoid nephrotoxins, NSAIDs, metformin around contrast study."},
-  {exam:"neetpg",year:"2022",t:"AMD",q:"Newer drug for MDR-TB acting on ATP synthase:",o:["Bedaquiline","Delamanid","Pretomanid","Linezolid"],a:"Bedaquiline",e:"Bedaquiline inhibits mycobacterial ATP synthase. Delamanid and pretomanid inhibit mycolic acid synthesis. Linezolid inhibits 23S rRNA."},
-  {exam:"neetpg",year:"2022",t:"Hormones",q:"Mechanism of empagliflozin in HFrEF:",o:["β-blockade","Increased contractility","Inhibition of SGLT-2 with natriuresis &amp; metabolic effects","Aldosterone antagonism"],a:"Inhibition of SGLT-2 with natriuresis &amp; metabolic effects",e:"SGLT-2 inhibitors reduce CV death and HF hospitalisation independent of diabetes. Multiple mechanisms, natriuresis, ↓ preload, ↑ erythropoiesis, ↓ epicardial fat, anti-inflammatory."},
-  {exam:"neetpg",year:"2021",t:"Blood",q:"Idarucizumab is specifically used to reverse:",o:["Apixaban","Dabigatran","Rivaroxaban","Warfarin"],a:"Dabigatran",e:"Idarucizumab is a humanised mAb fragment binding free and thrombin-bound dabigatran with 350× affinity. Andexanet alfa reverses factor Xa inhibitors."},
-  {exam:"inicet",year:"2023",t:"ANS",q:"A patient bitten by Russell's viper develops hypotension. The most effective non-specific drug for treatment of venom-induced shock is:",o:["Atropine","Adrenaline","Prazosin","Dobutamine"],a:"Prazosin",e:"Both scorpion sting and viper bite cause autonomic storm with massive catecholamine release. Prazosin (α1-blocker) blocks vasoconstriction and reverses pulmonary oedema."},
-  {exam:"inicet",year:"2023",t:"General",q:"Drug with greatest first-pass metabolism:",o:["Atenolol","Propranolol","Lidocaine","Aspirin"],a:"Lidocaine",e:"Lignocaine has near-complete first-pass metabolism, hence given IV/IM not oral. Other high first-pass drugs: propranolol, GTN, morphine, verapamil, hydralazine."},
-  {exam:"inicet",year:"2022",t:"Cancer",q:"Drug used in BRCA-mutated ovarian carcinoma:",o:["Olaparib","Imatinib","Trastuzumab","Rituximab"],a:"Olaparib",e:"PARP inhibitors (olaparib, niraparib, rucaparib, talazoparib) exploit synthetic lethality in BRCA-mutated cells. Used in BRCA-mutated ovarian, breast, prostate, pancreatic cancers."},
-  {exam:"inicet",year:"2022",t:"CNS",q:"Drug of choice for absence seizures with comorbid GTCS:",o:["Ethosuximide","Sodium Valproate","Phenytoin","Carbamazepine","Levetiracetam"],a:"Sodium Valproate",e:"Valproate is broad-spectrum, effective for absence + GTCS. Ethosuximide is DOC only when absence is the sole seizure type, it can worsen GTCS."},
-  {exam:"fmge",year:"2023",t:"Autacoids",q:"Drug useful in aspirin-sensitive asthma:",o:["Salbutamol","Theophylline","Montelukast","Sodium Cromoglycate"],a:"Montelukast",e:"Aspirin shunts arachidonic acid to LOX pathway → ↑ leukotrienes. LTRAs (montelukast) block CysLT1 receptors and are particularly effective in aspirin-sensitive asthma."},
-  {exam:"fmge",year:"2023",t:"Hormones",q:"Drug of choice for diabetic nephropathy:",o:["Atenolol","Amlodipine","ACE inhibitor / ARB","Hydrochlorothiazide"],a:"ACE inhibitor / ARB",e:"ACEi/ARB ↓ intraglomerular pressure → reduce proteinuria and slow progression of diabetic nephropathy independent of BP-lowering effect."},
-  {exam:"fmge",year:"2022",t:"GI",q:"Treatment of choice for hepatic encephalopathy:",o:["Lactulose","Rifaximin","Both","Neomycin"],a:"Both",e:"Lactulose ↓ ammonia absorption (acidifies colonic contents). Rifaximin (poorly absorbed antibiotic) ↓ urease-producing bacteria. Combination is most effective in moderate-severe HE."},
-  {exam:"fmge",year:"2022",t:"Respiratory",q:"Drug useful in cystic fibrosis to lyse DNA in thick mucus:",o:["N-acetylcysteine","Dornase alfa","Bromhexine","Ambroxol"],a:"Dornase alfa",e:"Dornase alfa is recombinant DNase, cleaves extracellular DNA released from neutrophils in CF airways → ↓ mucus viscosity. Approved for cystic fibrosis."},
-  {exam:"neetpg",year:"2021",t:"AMD",q:"Drug responsible for SJS in HIV patient on therapy:",o:["Efavirenz","Tenofovir","Nevirapine","Lamivudine"],a:"Nevirapine",e:"Nevirapine is associated with severe rash, SJS/TEN, especially in females with CD4 > 250. Dose escalation and monitoring during first 2 weeks help mitigate risk."},
-  {exam:"neetpg",year:"2020",t:"PNS",q:"Sugammadex specifically reverses:",o:["Atracurium","Vecuronium &amp; Rocuronium","Succinylcholine","All NMBs"],a:"Vecuronium &amp; Rocuronium",e:"Sugammadex (modified γ-cyclodextrin) encapsulates aminosteroid NMBs (rocuronium &gt; vecuronium &gt;&gt; pancuronium). Does NOT reverse benzylisoquinoline NMBs (atracurium, cisatracurium) or succinylcholine."},
-  {exam:"neetpg",year:"2020",t:"Kidney",q:"Mannitol is contraindicated in:",o:["Cerebral oedema","Acute glaucoma","Congestive heart failure","Oliguric AKI"],a:"Congestive heart failure",e:"Mannitol initially expands intravascular volume → can precipitate pulmonary oedema in CHF. Also contraindicated in anuria, intracranial bleed, and pulmonary congestion."},
-  {exam:"inicet",year:"2021",t:"Misc",q:"Drug of choice for accidental overdose with TCA:",o:["Naloxone","Sodium bicarbonate IV","Flumazenil","Atropine"],a:"Sodium bicarbonate IV",e:"TCA overdose causes wide QRS, hypotension, seizures (anticholinergic + α-block + Na-channel block). NaHCO3 alkalinises plasma → ↓ TCA binding to Na channels and ↓ free drug."}
-);
+/* Old PYQ array migrated to window.PYQS */
 
 /* ════════════════════════════════════════════════════
    FMGE, Pattern Practice
 ═════════════════════════════════════════════════════ */
-FMGE.push(
-  {q:"Drug of choice for typhoid fever in adults:",o:["Chloramphenicol","Ciprofloxacin","Ceftriaxone","Azithromycin"],a:"Ceftriaxone",e:"With rising fluoroquinolone resistance globally, ceftriaxone and azithromycin are now preferred for typhoid. WHO recommends azithromycin for uncomplicated typhoid."},
-  {q:"Most effective drug to reduce mortality in COPD:",o:["Inhaled corticosteroids","Long-acting muscarinic antagonist","Smoking cessation","Theophylline"],a:"Smoking cessation",e:"Smoking cessation is the SINGLE most important intervention to reduce mortality in COPD. Pharmacotherapy improves symptoms and reduces exacerbations."},
-  {q:"DOC for trigeminal neuralgia:",o:["Phenytoin","Carbamazepine","Gabapentin","Pregabalin"],a:"Carbamazepine",e:"Carbamazepine is first-line for trigeminal neuralgia. Oxcarbazepine alternative. Refractory, gabapentin, baclofen, surgery (MVD)."},
-  {q:"Newer non-stimulant for ADHD:",o:["Methylphenidate","Atomoxetine","Amphetamine","Modafinil"],a:"Atomoxetine",e:"Atomoxetine is a selective NA reuptake inhibitor, non-stimulant ADHD drug. Useful in those with substance abuse risk."},
-  {q:"Drug used in benign prostatic hyperplasia (BPH), selective α1A blocker:",o:["Prazosin","Tamsulosin","Phenoxybenzamine","Terazosin"],a:"Tamsulosin",e:"Tamsulosin and silodosin are α1A-selective, block prostatic α1A receptors with minimal vascular α1B effect → less orthostatic hypotension."},
-  {q:"DOC for falciparum malaria with severe complications (cerebral malaria):",o:["Chloroquine","Quinine","IV Artesunate","Mefloquine"],a:"IV Artesunate",e:"IV artesunate is preferred over quinine for severe falciparum malaria, superior survival benefit (SEAQUAMAT, AQUAMAT trials)."},
-  {q:"Vitamin used in INH-induced peripheral neuropathy:",o:["Vit B1 thiamine","Vit B6 pyridoxine","Vit B12","Folic acid"],a:"Vit B6 pyridoxine",e:"INH structurally resembles pyridoxine; ↑ urinary excretion of B6 → neuropathy. Prophylactic pyridoxine 10-25 mg/day in high-risk: alcoholics, malnourished, pregnant, DM, HIV."},
-  {q:"Drug used in opioid maintenance therapy:",o:["Naloxone","Methadone","Buprenorphine","Both Methadone and Buprenorphine"],a:"Both Methadone and Buprenorphine",e:"Both are used for opioid maintenance therapy. Methadone is full μ-agonist; buprenorphine is partial μ-agonist (ceiling effect, safer). Buprenorphine-naloxone (Suboxone) reduces diversion."},
-  {q:"Adverse effect of Bisphosphonate therapy:",o:["Renal failure","Osteonecrosis of jaw","Hypocalcaemia","All of the above"],a:"All of the above",e:"Bisphosphonate ADRs, upper GI (oesophagitis), hypocalcaemia, ONJ (especially dental procedures + IV bisphos in cancer), atypical femoral fracture, renal toxicity (IV)."},
-  {q:"Drug of choice for acute attack of asthma:",o:["Inhaled beclomethasone","Nebulised salbutamol","Oral montelukast","IV aminophylline"],a:"Nebulised salbutamol",e:"Nebulised SABA (salbutamol) is first-line for acute asthma exacerbation. Add ipratropium for severe cases. Systemic corticosteroids reduce relapse."}
-);
+/* Old FMGE array migrated to window.PYQS */
 
 /* ════════════════════════════════════════════════════
    RENDERING LOGIC
@@ -24151,6 +24089,34 @@ window.PYQS = [
     {q:"Antiarrhythmic used in torsades de pointes:",o:["Amiodarone","Lidocaine","Magnesium sulfate","Beta blockers"],a:"Magnesium sulfate",e:"Torsades de pointes (polymorphic VT with long QT): IV magnesium sulfate 2 g bolus - DOC. Also isoproterenol (increases HR shortens QT), pacing. Avoid drugs prolonging QT. Correct hypoK + hypoMg.",year:2022,exam:"UPSC-CMS",topic:"cvs",subtopic:"Torsades"},
     {q:"Drug improving cognitive function in Alzheimer disease:",o:["Donepezil","Rivastigmine","Galantamine","All"],a:"All",e:"Alzheimer disease AChE inhibitors: donepezil (mild-severe), rivastigmine (mild-moderate, patch available), galantamine (mild-moderate). Add memantine (NMDA antagonist) for moderate-severe. Lecanemab (anti-amyloid, 2023).",year:2022,exam:"UPSC-CMS",topic:"cns",subtopic:"AD"},
     {q:"Drug not used in acute MI:",o:["Aspirin","Statin","Nitroglycerin","Diltiazem in RV MI"],a:"Diltiazem in RV MI",e:"Acute MI early: aspirin + P2Y12 inhibitor (clopidogrel/ticagrelor/prasugrel), heparin, statin, β-blocker (if no CI), nitroglycerin. AVOID diltiazem/verapamil + nitrates in RV MI (worsen hypotension - RV preload dependent).",year:2022,exam:"UPSC-CMS",topic:"cvs",subtopic:"MI"}
+  ,
+    {q:"A 25-year-old female with bipolar disorder is planned for therapy. Which drug given during pregnancy is most likely to cause Ebstein's anomaly?",o:["Valproate","Lithium","Carbamazepine","Lamotrigine"],a:"Lithium",e:"Lithium use in first trimester is associated with Ebstein's anomaly (downward displacement of tricuspid valve). Switch to lamotrigine or quetiapine in pregnant bipolar patients.",year:2023,exam:"NEET PG",topic:"cns",subtopic:"CNS"},
+    {q:"DOC for prevention of contrast-induced nephropathy:",o:["Furosemide","Mannitol","IV normal saline + N-acetylcysteine","Dopamine"],a:"IV normal saline + N-acetylcysteine",e:"Hydration with isotonic saline is mainstay. NAC provides additional antioxidant protection. Avoid nephrotoxins, NSAIDs, metformin around contrast study.",year:2023,exam:"NEET PG",topic:"cvs",subtopic:"CVS"},
+    {q:"Newer drug for MDR-TB acting on ATP synthase:",o:["Bedaquiline","Delamanid","Pretomanid","Linezolid"],a:"Bedaquiline",e:"Bedaquiline inhibits mycobacterial ATP synthase. Delamanid and pretomanid inhibit mycolic acid synthesis. Linezolid inhibits 23S rRNA.",year:2022,exam:"NEET PG",topic:"amd",subtopic:"AMD"},
+    {q:"Mechanism of empagliflozin in HFrEF:",o:["β-blockade","Increased contractility","Inhibition of SGLT-2 with natriuresis &amp; metabolic effects","Aldosterone antagonism"],a:"Inhibition of SGLT-2 with natriuresis &amp; metabolic effects",e:"SGLT-2 inhibitors reduce CV death and HF hospitalisation independent of diabetes. Multiple mechanisms, natriuresis, ↓ preload, ↑ erythropoiesis, ↓ epicardial fat, anti-inflammatory.",year:2022,exam:"NEET PG",topic:"hormones",subtopic:"Hormones"},
+    {q:"Idarucizumab is specifically used to reverse:",o:["Apixaban","Dabigatran","Rivaroxaban","Warfarin"],a:"Dabigatran",e:"Idarucizumab is a humanised mAb fragment binding free and thrombin-bound dabigatran with 350× affinity. Andexanet alfa reverses factor Xa inhibitors.",year:2021,exam:"NEET PG",topic:"blood",subtopic:"Blood"},
+    {q:"A patient bitten by Russell's viper develops hypotension. The most effective non-specific drug for treatment of venom-induced shock is:",o:["Atropine","Adrenaline","Prazosin","Dobutamine"],a:"Prazosin",e:"Both scorpion sting and viper bite cause autonomic storm with massive catecholamine release. Prazosin (α1-blocker) blocks vasoconstriction and reverses pulmonary oedema.",year:2023,exam:"INI-CET",topic:"ans",subtopic:"ANS"},
+    {q:"Drug with greatest first-pass metabolism:",o:["Atenolol","Propranolol","Lidocaine","Aspirin"],a:"Lidocaine",e:"Lignocaine has near-complete first-pass metabolism, hence given IV/IM not oral. Other high first-pass drugs: propranolol, GTN, morphine, verapamil, hydralazine.",year:2023,exam:"INI-CET",topic:"general",subtopic:"General"},
+    {q:"Drug used in BRCA-mutated ovarian carcinoma:",o:["Olaparib","Imatinib","Trastuzumab","Rituximab"],a:"Olaparib",e:"PARP inhibitors (olaparib, niraparib, rucaparib, talazoparib) exploit synthetic lethality in BRCA-mutated cells. Used in BRCA-mutated ovarian, breast, prostate, pancreatic cancers.",year:2022,exam:"INI-CET",topic:"cancer",subtopic:"Cancer"},
+    {q:"Drug of choice for absence seizures with comorbid GTCS:",o:["Ethosuximide","Sodium Valproate","Phenytoin","Carbamazepine","Levetiracetam"],a:"Sodium Valproate",e:"Valproate is broad-spectrum, effective for absence + GTCS. Ethosuximide is DOC only when absence is the sole seizure type, it can worsen GTCS.",year:2022,exam:"INI-CET",topic:"cns",subtopic:"CNS"},
+    {q:"Drug useful in aspirin-sensitive asthma:",o:["Salbutamol","Theophylline","Montelukast","Sodium Cromoglycate"],a:"Montelukast",e:"Aspirin shunts arachidonic acid to LOX pathway → ↑ leukotrienes. LTRAs (montelukast) block CysLT1 receptors and are particularly effective in aspirin-sensitive asthma.",year:2023,exam:"FMGE",topic:"autacoids",subtopic:"Autacoids"},
+    {q:"Drug of choice for diabetic nephropathy:",o:["Atenolol","Amlodipine","ACE inhibitor / ARB","Hydrochlorothiazide"],a:"ACE inhibitor / ARB",e:"ACEi/ARB ↓ intraglomerular pressure → reduce proteinuria and slow progression of diabetic nephropathy independent of BP-lowering effect.",year:2023,exam:"FMGE",topic:"hormones",subtopic:"Hormones"},
+    {q:"Treatment of choice for hepatic encephalopathy:",o:["Lactulose","Rifaximin","Both","Neomycin"],a:"Both",e:"Lactulose ↓ ammonia absorption (acidifies colonic contents). Rifaximin (poorly absorbed antibiotic) ↓ urease-producing bacteria. Combination is most effective in moderate-severe HE.",year:2022,exam:"FMGE",topic:"gi",subtopic:"GI"},
+    {q:"Drug useful in cystic fibrosis to lyse DNA in thick mucus:",o:["N-acetylcysteine","Dornase alfa","Bromhexine","Ambroxol"],a:"Dornase alfa",e:"Dornase alfa is recombinant DNase, cleaves extracellular DNA released from neutrophils in CF airways → ↓ mucus viscosity. Approved for cystic fibrosis.",year:2022,exam:"FMGE",topic:"respiratory",subtopic:"Respiratory"},
+    {q:"Drug responsible for SJS in HIV patient on therapy:",o:["Efavirenz","Tenofovir","Nevirapine","Lamivudine"],a:"Nevirapine",e:"Nevirapine is associated with severe rash, SJS/TEN, especially in females with CD4 > 250. Dose escalation and monitoring during first 2 weeks help mitigate risk.",year:2021,exam:"NEET PG",topic:"amd",subtopic:"AMD"},
+    {q:"Sugammadex specifically reverses:",o:["Atracurium","Vecuronium &amp; Rocuronium","Succinylcholine","All NMBs"],a:"Vecuronium &amp; Rocuronium",e:"Sugammadex (modified γ-cyclodextrin) encapsulates aminosteroid NMBs (rocuronium &gt; vecuronium &gt;&gt; pancuronium). Does NOT reverse benzylisoquinoline NMBs (atracurium, cisatracurium) or succinylcholine.",year:2020,exam:"NEET PG",topic:"pns",subtopic:"PNS"},
+    {q:"Mannitol is contraindicated in:",o:["Cerebral oedema","Acute glaucoma","Congestive heart failure","Oliguric AKI"],a:"Congestive heart failure",e:"Mannitol initially expands intravascular volume → can precipitate pulmonary oedema in CHF. Also contraindicated in anuria, intracranial bleed, and pulmonary congestion.",year:2020,exam:"NEET PG",topic:"kidney",subtopic:"Kidney"},
+    {q:"Drug of choice for accidental overdose with TCA:",o:["Naloxone","Sodium bicarbonate IV","Flumazenil","Atropine"],a:"Sodium bicarbonate IV",e:"TCA overdose causes wide QRS, hypotension, seizures (anticholinergic + α-block + Na-channel block). NaHCO3 alkalinises plasma → ↓ TCA binding to Na channels and ↓ free drug.",year:2021,exam:"INI-CET",topic:"misc",subtopic:"Misc"},
+    {q:"Drug of choice for typhoid fever in adults:",o:["Chloramphenicol","Ciprofloxacin","Ceftriaxone","Azithromycin"],a:"Ceftriaxone",e:"With rising fluoroquinolone resistance globally, ceftriaxone and azithromycin are now preferred for typhoid. WHO recommends azithromycin for uncomplicated typhoid.",year:2023,exam:"FMGE",topic:"amd",subtopic:"FMGE Pattern"},
+    {q:"Most effective drug to reduce mortality in COPD:",o:["Inhaled corticosteroids","Long-acting muscarinic antagonist","Smoking cessation","Theophylline"],a:"Smoking cessation",e:"Smoking cessation is the SINGLE most important intervention to reduce mortality in COPD. Pharmacotherapy improves symptoms and reduces exacerbations.",year:2023,exam:"FMGE",topic:"respiratory",subtopic:"FMGE Pattern"},
+    {q:"DOC for trigeminal neuralgia:",o:["Phenytoin","Carbamazepine","Gabapentin","Pregabalin"],a:"Carbamazepine",e:"Carbamazepine is first-line for trigeminal neuralgia. Oxcarbazepine alternative. Refractory, gabapentin, baclofen, surgery (MVD).",year:2023,exam:"FMGE",topic:"cns",subtopic:"FMGE Pattern"},
+    {q:"Newer non-stimulant for ADHD:",o:["Methylphenidate","Atomoxetine","Amphetamine","Modafinil"],a:"Atomoxetine",e:"Atomoxetine is a selective NA reuptake inhibitor, non-stimulant ADHD drug. Useful in those with substance abuse risk.",year:2023,exam:"FMGE",topic:"cns",subtopic:"FMGE Pattern"},
+    {q:"Drug used in benign prostatic hyperplasia (BPH), selective α1A blocker:",o:["Prazosin","Tamsulosin","Phenoxybenzamine","Terazosin"],a:"Tamsulosin",e:"Tamsulosin and silodosin are α1A-selective, block prostatic α1A receptors with minimal vascular α1B effect → less orthostatic hypotension.",year:2023,exam:"FMGE",topic:"ans",subtopic:"FMGE Pattern"},
+    {q:"DOC for falciparum malaria with severe complications (cerebral malaria):",o:["Chloroquine","Quinine","IV Artesunate","Mefloquine"],a:"IV Artesunate",e:"IV artesunate is preferred over quinine for severe falciparum malaria, superior survival benefit (SEAQUAMAT, AQUAMAT trials).",year:2023,exam:"FMGE",topic:"amd",subtopic:"FMGE Pattern"},
+    {q:"Vitamin used in INH-induced peripheral neuropathy:",o:["Vit B1 thiamine","Vit B6 pyridoxine","Vit B12","Folic acid"],a:"Vit B6 pyridoxine",e:"INH structurally resembles pyridoxine; ↑ urinary excretion of B6 → neuropathy. Prophylactic pyridoxine 10-25 mg/day in high-risk: alcoholics, malnourished, pregnant, DM, HIV.",year:2023,exam:"FMGE",topic:"amd",subtopic:"FMGE Pattern"},
+    {q:"Drug used in opioid maintenance therapy:",o:["Naloxone","Methadone","Buprenorphine","Both Methadone and Buprenorphine"],a:"Both Methadone and Buprenorphine",e:"Both are used for opioid maintenance therapy. Methadone is full μ-agonist; buprenorphine is partial μ-agonist (ceiling effect, safer). Buprenorphine-naloxone (Suboxone) reduces diversion.",year:2023,exam:"FMGE",topic:"cns",subtopic:"FMGE Pattern"},
+    {q:"Adverse effect of Bisphosphonate therapy:",o:["Renal failure","Osteonecrosis of jaw","Hypocalcaemia","All of the above"],a:"All of the above",e:"Bisphosphonate ADRs, upper GI (oesophagitis), hypocalcaemia, ONJ (especially dental procedures + IV bisphos in cancer), atypical femoral fracture, renal toxicity (IV).",year:2023,exam:"FMGE",topic:"hormones",subtopic:"FMGE Pattern"},
+    {q:"Drug of choice for acute attack of asthma:",o:["Inhaled beclomethasone","Nebulised salbutamol","Oral montelukast","IV aminophylline"],a:"Nebulised salbutamol",e:"Nebulised SABA (salbutamol) is first-line for acute asthma exacerbation. Add ipratropium for severe cases. Systemic corticosteroids reduce relapse.",year:2023,exam:"FMGE",topic:"respiratory",subtopic:"FMGE Pattern"}
   ];
 /* PYQ Filter + Render Logic */
 window.pyqFilters = {exam:'all', year:'all', topic:'all', search:''};
