@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v53-rx-simulator-stage1-20260704';
+const CACHE_VERSION = 'pharmacraft-v54-rx-25-cases-lokendra-20260704';
 const CORE_ASSETS = [
   '/',
   '/index.html',

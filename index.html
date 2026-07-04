@@ -1247,6 +1247,9 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 .rx-mode-toggle{display:flex;gap:8px;background:#f3f4f6;border-radius:10px;padding:4px;margin-bottom:20px}
 .rx-mode-btn{flex:1;padding:10px;border:none;background:transparent;border-radius:8px;cursor:pointer;font-size:.95em;font-weight:700;color:#6b7280;transition:all .2s}
 .rx-mode-btn.active{background:linear-gradient(135deg,#059669,#10b981);color:#fff;box-shadow:0 2px 8px rgba(5,150,105,.3)}
+.rx-diff-chip{padding:6px 14px;border-radius:16px;border:1.5px solid #d1d5db;background:#fff;color:#374151;cursor:pointer;font-size:.85em;font-weight:600;transition:all .2s}
+.rx-diff-chip:hover{border-color:#059669;color:#059669}
+.rx-diff-chip.active{background:linear-gradient(135deg,#059669,#10b981);color:#fff;border-color:#059669}
 .rx-case-library{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .rx-case-card{background:#fff;border:1px solid #e5e7eb;border-left:5px solid #059669;border-radius:12px;padding:16px;cursor:pointer;transition:all .2s}
 .rx-case-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(5,150,105,.12);border-left-color:#047857}
@@ -1551,7 +1554,7 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 
     <!-- Stats + Mode -->
     <div class="rx-stats">
-      <div class="rx-stat-item"><strong id="rx-cases-solved">0</strong><span>Cases Solved</span></div>
+      <div class="rx-stat-item"><strong id="rx-cases-solved">0</strong><span>Cases Solved / 25</span></div>
       <div class="rx-stat-item"><strong id="rx-score-total">0</strong><span>Total Score</span></div>
       <div class="rx-stat-item"><strong id="rx-badge">Beginner</strong><span>Current Badge</span></div>
     </div>
@@ -1560,6 +1563,14 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <div class="rx-mode-toggle">
       <button class="rx-mode-btn active" id="rx-mode-writing" onclick="switchRxMode('writing')">✍️ Writing Mode</button>
       <button class="rx-mode-btn" id="rx-mode-checking" onclick="switchRxMode('checking')">🔍 Checking Mode</button>
+    </div>
+
+    <!-- Difficulty Filter -->
+    <div class="rx-diff-filter" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+      <button class="rx-diff-chip active" data-diff="all" onclick="filterRxDiff(this,'all')">All Cases</button>
+      <button class="rx-diff-chip" data-diff="mbbs" onclick="filterRxDiff(this,'mbbs')">MBBS Level</button>
+      <button class="rx-diff-chip" data-diff="neetpg" onclick="filterRxDiff(this,'neetpg')">NEET PG</button>
+      <button class="rx-diff-chip" data-diff="clinical" onclick="filterRxDiff(this,'clinical')">Clinical (Advanced)</button>
     </div>
 
     <!-- Case Library -->
@@ -24417,6 +24428,96 @@ window.RX_CASES = [
     scenario:'3 yr M with right ear pain × 2 days, fever 39°C. Otoscopy: right TM red + bulging + reduced mobility. No other focus. Diagnosis: Acute Otitis Media (right).',
     correctRx:{diagnosis:'Acute Otitis Media (right)',drugs:[{drug:'Amoxicillin',strength:'80-90 mg/kg/day',form:'Suspension',dose:'6.3 ml (1120 mg/day divided BD)',freq:'BD',route:'PO',duration:'10 days'},{drug:'Paracetamol',strength:'15 mg/kg',form:'Suspension',dose:'5 ml (210 mg)',freq:'q6h',route:'PO',duration:'SOS'}]},
     keyPoints:['Amoxicillin high-dose 80-90 mg/kg/day divided BD (AAP 2013)','Weight-based dosing: 14 kg × 80 = 1120 mg/day = 560 mg BD','Duration 10 days for <2 yr; 5-7 days for older','Paracetamol 15 mg/kg PO q6h for pain + fever','If treatment failure at 48-72 hr: switch to amox-clav (β-lactamase producing organisms)']}
+,
+  {id:'c11',diff:'clinical',title:'Anaphylaxis',brief:'32 yr F, sudden facial swelling + wheezing + BP 80/50 after peanut',
+    patient:{name:'Priya Malhotra',age:32,sex:'F',wt:60,allergies:'Peanut',comorbid:'None'},
+    scenario:'5 min after eating peanut butter: facial swelling, urticaria, throat tightness, wheeze, hypotension (BP 80/50), HR 128. Diagnosis: Anaphylaxis (peanut).',
+    correctRx:{diagnosis:'Anaphylaxis',drugs:[{drug:'Adrenaline (Epinephrine)',strength:'1:1000 (1 mg/mL)',form:'IM injection',dose:'0.3-0.5 mg (0.3-0.5 mL)',freq:'STAT, repeat q5-15 min',route:'IM',duration:'PRN'},{drug:'Hydrocortisone',strength:'200 mg',form:'IV injection',dose:'200 mg',freq:'STAT',route:'IV',duration:'Single'},{drug:'Chlorpheniramine',strength:'10 mg',form:'IV injection',dose:'10 mg',freq:'STAT',route:'IV',duration:'Single'}]},
+    keyPoints:['IM Adrenaline 0.3-0.5 mg (1:1000) into anterolateral thigh - LIFESAVING first drug','IV Hydrocortisone 200 mg + IV antihistamine as secondary','Position supine, elevate legs, oxygen, IV fluids','Continue observation 4-6 hr (biphasic reaction risk)','Discharge with EpiPen + allergy specialist referral']},
+
+  {id:'c12',diff:'mbbs',title:'Acute Gout Attack',brief:'55 yr M, sudden severe R big toe pain + swelling + redness',
+    patient:{name:'Suresh Iyer',age:55,sex:'M',wt:82,allergies:'None',comorbid:'HTN on amlodipine, no CKD'},
+    scenario:'Sudden onset 6 AM: severe pain + swelling + redness of right first MTP joint. Cannot bear touch. History of 2 similar episodes. Serum uric acid 9.2 mg/dL. Diagnosis: Acute gout attack.',
+    correctRx:{diagnosis:'Acute Gout Attack',drugs:[{drug:'Naproxen',strength:'500 mg',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'5-7 days'},{drug:'Colchicine',strength:'0.5 mg',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'Until pain resolves'},{drug:'Pantoprazole',strength:'40 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'While on NSAID'}]},
+    keyPoints:['NSAIDs (naproxen 500 mg BD or indomethacin) - 1st line if no CKD/PUD','Colchicine 1.2 mg then 0.6 mg 1 hr later (low-dose per AGREE trial 2010)','ADD PPI to prevent NSAID GI toxicity','START allopurinol ONLY after acute attack resolves (may worsen if started during)','Long-term: allopurinol titrated to uric acid <6 mg/dL']},
+
+  {id:'c13',diff:'neetpg',title:'Warfarin Over-anticoagulation with Bleeding',brief:'68 yr M on warfarin, INR 8.5, melena + drop in Hb',
+    patient:{name:'Ashok Mehta',age:68,sex:'M',wt:72,allergies:'None',comorbid:'AF, warfarin 5 mg OD × 2 yrs'},
+    scenario:'On warfarin for AF. Presented with melena × 2 days. Hb dropped 12→9 g/dL. INR 8.5. Hemodynamically stable. Diagnosis: Warfarin over-anticoagulation with GI bleeding.',
+    correctRx:{diagnosis:'Warfarin over-anticoagulation with GI bleed',drugs:[{drug:'Vitamin K1 (Phytomenadione)',strength:'10 mg',form:'IV slow infusion',dose:'10 mg over 30 min',freq:'STAT',route:'IV',duration:'Single dose'},{drug:'4-factor Prothrombin Complex Concentrate',strength:'25-50 IU/kg',form:'IV infusion',dose:'2500 IU (approx 35 IU/kg)',freq:'STAT',route:'IV',duration:'Single dose'}]},
+    keyPoints:['Major bleeding on warfarin: HOLD warfarin + IV Vitamin K 10 mg slow infusion (30 min)','4F-PCC (Kcentra) 25-50 IU/kg IV - FASTER than FFP + less volume','Alternative if PCC unavailable: FFP 10-15 mL/kg','Recheck INR at 30 min + 4-6 hr','Restart warfarin at lower dose when INR normalizes + bleed controlled']},
+
+  {id:'c14',diff:'neetpg',title:'Nephrotic Syndrome with Anasarca',brief:'8 yr F, generalized edema, proteinuria 4+, hypoalbuminemia',
+    patient:{name:'Aarti Kumari',age:8,sex:'F',wt:25,allergies:'None',comorbid:'Minimal change disease (biopsy)'},
+    scenario:'8 yr F with periorbital + generalized edema × 1 wk. Urine albumin 4+, 24 hr protein 4.5 g/day. Serum albumin 1.8 g/dL. Renal biopsy: Minimal change disease. Diagnosis: Nephrotic syndrome (MCD).',
+    correctRx:{diagnosis:'Nephrotic Syndrome (Minimal Change Disease)',drugs:[{drug:'Prednisolone',strength:'2 mg/kg/day (max 60 mg)',form:'Tablet',dose:'50 mg (2 mg/kg × 25 kg)',freq:'OD',route:'PO',duration:'4-6 weeks then taper'},{drug:'Furosemide',strength:'1 mg/kg',form:'Tablet',dose:'25 mg',freq:'BD',route:'PO',duration:'PRN for edema'},{drug:'Spironolactone',strength:'1-2 mg/kg',form:'Tablet',dose:'25 mg',freq:'BD',route:'PO',duration:'While diuresing'}]},
+    keyPoints:['Prednisolone 2 mg/kg/day (max 60 mg) × 4-6 wks then alternate-day taper (ISKDC protocol)','Furosemide + spironolactone for edema (K-sparing prevents hypoK)','Add ACE-I (enalapril) for proteinuria if steroid-resistant','Low-salt diet + protein-appropriate intake','Watch for infections (immunosuppressed) + monitor growth']},
+
+  {id:'c15',diff:'neetpg',title:'Breast Cancer HR+ HER2- Adjuvant',brief:'52 yr F postmenopausal, T2N1 IDC, ER+ 90%, PR+ 80%, HER2-',
+    patient:{name:'Rekha Bhattacharya',age:52,sex:'F',wt:65,allergies:'None',comorbid:'Postmenopausal, s/p lumpectomy + RT'},
+    scenario:'Post-lumpectomy + RT for T2N1 IDC. IHC: ER+ 90%, PR+ 80%, HER2 IHC 1+ (negative). Postmenopausal for 3 years. Started adjuvant endocrine therapy. Diagnosis: Adjuvant HR+ HER2- breast Ca.',
+    correctRx:{diagnosis:'Adjuvant HR+ HER2- Breast Ca (postmenopausal)',drugs:[{drug:'Letrozole',strength:'2.5 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'5 years'},{drug:'Alendronate',strength:'70 mg',form:'Tablet',dose:'1 tab',freq:'Weekly',route:'PO',duration:'5 years'},{drug:'Calcium + Vitamin D3',strength:'500 mg + 250 IU',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'5 years'}]},
+    keyPoints:['Aromatase inhibitor (letrozole 2.5 mg OD) preferred for postmenopausal (ATAC trial superior to tamoxifen)','Duration 5-10 years (extended if high-risk)','AI causes bone loss - add bisphosphonate + Ca/Vit D + baseline DEXA','Monitor lipids + LFTs annually','Consider CDK 4/6 inhibitor if high-risk (monarchE, NATALEE trials)']},
+
+  {id:'c16',diff:'mbbs',title:'Rheumatoid Arthritis - DMARD Naive',brief:'42 yr F, symmetric MCP/PIP joint pain + morning stiffness > 1 hr',
+    patient:{name:'Sunita Choudhary',age:42,sex:'F',wt:60,allergies:'None',comorbid:'None, not pregnant, no liver disease'},
+    scenario:'6 months of symmetric MCP + PIP joint pain, morning stiffness × 90 min. RF+, anti-CCP+, ESR 55. X-ray: periarticular osteopenia. Diagnosis: Rheumatoid Arthritis (DMARD-naive).',
+    correctRx:{diagnosis:'Rheumatoid Arthritis',drugs:[{drug:'Methotrexate',strength:'15 mg',form:'Tablet',dose:'1 tab',freq:'Weekly',route:'PO',duration:'Continue'},{drug:'Folic acid',strength:'5 mg',form:'Tablet',dose:'1 tab',freq:'Weekly',route:'PO',duration:'Continue (day after MTX)'},{drug:'Prednisolone',strength:'10 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'2-3 months tapered'}]},
+    keyPoints:['Methotrexate 15 mg WEEKLY (never daily - fatal) - 1st line DMARD per EULAR 2022','Folic acid 5 mg weekly (day AFTER MTX) to prevent GI/hepatic/BM toxicity','Bridge with low-dose prednisolone × 2-3 months while MTX takes effect','Baseline: CBC, LFTs, RFTs, hepatitis B/C, TB screening','Monitor: CBC + LFTs monthly initially then every 3 months']},
+
+  {id:'c17',diff:'mbbs',title:'Major Depressive Disorder',brief:'35 yr F, low mood + anhedonia + insomnia × 6 wks, PHQ-9: 16',
+    patient:{name:'Meera Nair',age:35,sex:'F',wt:58,allergies:'None',comorbid:'None, not pregnant/breastfeeding'},
+    scenario:'6 weeks of low mood, anhedonia, decreased appetite, initial insomnia, difficulty concentrating. PHQ-9 = 16 (moderate-severe). No suicidal ideation. First episode. Diagnosis: MDD (moderate).',
+    correctRx:{diagnosis:'Major Depressive Disorder',drugs:[{drug:'Sertraline',strength:'50 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'Continue 6-12 months min'}]},
+    keyPoints:['Sertraline 50 mg OD - 1st line SSRI (also good in pregnancy if needed)','Start low (25-50 mg), titrate over 2-4 wks based on response','Full effect takes 4-6 wks - counsel patient about delayed onset','Continue for 6-12 months after remission (first episode)','Watch for suicidal ideation (esp <25 yr - black box), serotonin syndrome, sexual dysfunction']},
+
+  {id:'c18',diff:'mbbs',title:'Chronic Stable Angina',brief:'62 yr M, exertional retrosternal chest pain relieved by rest',
+    patient:{name:'Prakash Rao',age:62,sex:'M',wt:78,allergies:'None',comorbid:'HTN, DM, ex-smoker'},
+    scenario:'Exertional retrosternal chest pain × 3 months, relieved by rest in 3-5 min. TMT: 2 mm ST depression at moderate workload. LVEF 55%. Diagnosis: Chronic stable angina.',
+    correctRx:{diagnosis:'Chronic Stable Angina',drugs:[{drug:'Aspirin',strength:'75 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'Continue'},{drug:'Atorvastatin',strength:'40 mg',form:'Tablet',dose:'1 tab',freq:'HS',route:'PO',duration:'Continue'},{drug:'Metoprolol succinate',strength:'50 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'Continue'},{drug:'Glyceryl trinitrate',strength:'0.5 mg',form:'Sublingual tablet',dose:'1 tab',freq:'SOS',route:'Sublingual',duration:'PRN for angina'}]},
+    keyPoints:['Aspirin 75 mg + Statin (high-intensity) + Beta-blocker (1st line antianginal)','Sublingual GTN for acute angina (up to 3 doses q5 min - if not resolved call ambulance)','Add CCB (amlodipine) or long-acting nitrate if angina persists','Control BP, DM, LDL <70 (very high risk), smoking cessation','Consider PCI/CABG based on angiography + severity']},
+
+  {id:'c19',diff:'mbbs',title:'Primary Hypothyroidism',brief:'48 yr F, fatigue + cold intolerance + wt gain, TSH 22, T4 low',
+    patient:{name:'Deepa Iyengar',age:48,sex:'F',wt:70,allergies:'None',comorbid:'None'},
+    scenario:'6 months fatigue, cold intolerance, weight gain, constipation. Puffy face, dry skin, delayed reflexes. TSH 22 mIU/L (0.4-4), Free T4 0.6 ng/dL (0.8-1.8), anti-TPO+. Diagnosis: Primary hypothyroidism (Hashimoto).',
+    correctRx:{diagnosis:'Primary Hypothyroidism (Hashimoto)',drugs:[{drug:'Levothyroxine',strength:'75 mcg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'Lifelong'}]},
+    keyPoints:['Levothyroxine 1.6 mcg/kg/day (70 kg × 1.6 = 112 mcg, round to 100-125 mcg)','Take on empty stomach 30-60 min before breakfast (or bedtime, 3+ hr after last meal)','Separate from Ca, Fe, PPI, soy (all reduce absorption)','Recheck TSH after 6-8 weeks (target 0.4-4)','Elderly + CAD: start lower dose (25-50 mcg), titrate slowly']},
+
+  {id:'c20',diff:'clinical',title:'Rabies Post-Exposure (Category III bite)',brief:'25 yr M, stray dog bite on hand with bleeding × 1 hr ago',
+    patient:{name:'Deepak Yadav',age:25,sex:'M',wt:70,allergies:'None',comorbid:'Never vaccinated for rabies'},
+    scenario:'Stray dog bite on right hand 1 hour ago. Bleeding present. Dog ran away (status unknown). Never vaccinated for rabies. Diagnosis: Category III animal bite (rabies exposure).',
+    correctRx:{diagnosis:'Rabies Post-Exposure Prophylaxis (Category III)',drugs:[{drug:'Human Rabies Immunoglobulin (HRIG)',strength:'20 IU/kg',form:'IM/local infiltration',dose:'1400 IU (20 × 70 kg)',freq:'STAT',route:'Local infiltration + IM',duration:'Single dose'},{drug:'Purified Chick Embryo Cell (PCEC) Vaccine',strength:'0.5 mL',form:'IM injection',dose:'0.5 mL',freq:'Day 0, 3, 7, 14, 28 (Essen)',route:'IM (deltoid)',duration:'5 doses over 28 days'},{drug:'Tetanus Toxoid',strength:'0.5 mL',form:'IM injection',dose:'0.5 mL',freq:'STAT',route:'IM',duration:'Single (if not up to date)'}]},
+    keyPoints:['Category III: wound wash (soap + water × 15 min) + RIG + Vaccine + wound care','HRIG 20 IU/kg (or ERIG 40 IU/kg) - infiltrate around wound, rest IM','Rabies vaccine: Essen 5-dose (0/3/7/14/28) or Thai Red Cross 4-dose ID','Tetanus toxoid + antibiotics (amox-clav) for bite wound','NO WOUND SUTURING if possible; if unavoidable - after RIG infiltration']},
+
+  {id:'c21',diff:'mbbs',title:'Post-op Nausea Vomiting Prophylaxis',brief:'28 yr F undergoing lap cholecystectomy, high PONV risk',
+    patient:{name:'Anita Desai',age:28,sex:'F',wt:65,allergies:'None',comorbid:'Non-smoker, history of PONV, motion sickness'},
+    scenario:'Scheduled elective lap cholecystectomy. Apfel score: 4 (female + non-smoker + h/o PONV + volatile anesthetic planned). High risk PONV. Diagnosis: PONV prophylaxis.',
+    correctRx:{diagnosis:'PONV Prophylaxis (High Risk)',drugs:[{drug:'Ondansetron',strength:'4 mg',form:'IV injection',dose:'4 mg',freq:'At end of surgery',route:'IV',duration:'Single dose'},{drug:'Dexamethasone',strength:'4 mg',form:'IV injection',dose:'4 mg',freq:'At induction',route:'IV',duration:'Single dose'}]},
+    keyPoints:['Multimodal approach for high-risk PONV (Apfel ≥3 → 2 antiemetics from different classes)','Ondansetron 4 mg IV at end of surgery (5-HT3 antagonist)','Dexamethasone 4-8 mg IV at induction (works throughout)','TIVA (propofol) reduces PONV vs volatile anesthetics','Add droperidol/haloperidol OR aprepitant (NK1) for very high risk']},
+
+  {id:'c22',diff:'mbbs',title:'GERD (Newly Diagnosed)',brief:'40 yr M, retrosternal burning + regurgitation × 3 months',
+    patient:{name:'Rajiv Khanna',age:40,sex:'M',wt:88,allergies:'None',comorbid:'Obese, no alarm symptoms'},
+    scenario:'3 months retrosternal burning + acid regurgitation, worse at night + after meals. No dysphagia, weight loss, GI bleed, anemia. BMI 30. Diagnosis: GERD (empirical trial).',
+    correctRx:{diagnosis:'GERD',drugs:[{drug:'Pantoprazole',strength:'40 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'8 weeks'}]},
+    keyPoints:['PPI (pantoprazole/omeprazole 40 mg OD) - 8 wk empirical trial','Take 30-60 min before breakfast (best efficacy)','Lifestyle: weight loss, elevate head of bed, avoid late-night eating, avoid triggers','Endoscopy only if alarm symptoms (weight loss, dysphagia, anemia, bleed) or > 55 yr','Long-term: step-down to lowest effective dose or on-demand H2 blocker']},
+
+  {id:'c23',diff:'neetpg',title:'HIV Post-Exposure Prophylaxis (Occupational)',brief:'Nurse pricked with needle from HIV+ patient, viral load high',
+    patient:{name:'Sister Ritu',age:29,sex:'F',wt:60,allergies:'None',comorbid:'HCW exposure, source HIV+ VL >100,000'},
+    scenario:'Nursing staff exposed to needle stick injury from HIV+ patient with VL >100,000, on ART with resistance. Source hep B/C negative. Baseline nurse HIV-. Exposure 2 hours ago. Diagnosis: Occupational HIV exposure (high-risk).',
+    correctRx:{diagnosis:'HIV Post-Exposure Prophylaxis (occupational, high-risk)',drugs:[{drug:'Tenofovir DF + Emtricitabine',strength:'300 + 200 mg',form:'Tablet (Truvada)',dose:'1 tab',freq:'OD',route:'PO',duration:'28 days'},{drug:'Dolutegravir',strength:'50 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'28 days'}]},
+    keyPoints:['Start PEP ASAP - ideally within 2 hr, MAX 72 hr','3-drug regimen: TDF/FTC + INSTI (dolutegravir preferred over raltegravir - single tablet)','Duration: 28 days','Baseline HIV + Hep B/C + pregnancy testing','Follow-up HIV testing: 6 wks, 3 mo, 6 mo (with 4th gen assay - may skip 6 mo)']},
+
+  {id:'c24',diff:'clinical',title:'Snake Bite (Neurotoxic - Cobra)',brief:'40 yr M, ptosis + drooling + descending paralysis after snake bite',
+    patient:{name:'Ganesh Patil',age:40,sex:'M',wt:75,allergies:'None',comorbid:'Neurotoxic snake bite (probable cobra)'},
+    scenario:'Bitten 3 hours ago by black snake in field. Now: ptosis, drooling, difficulty swallowing, descending paralysis. Fang marks visible on foot. No bleeding. Diagnosis: Neurotoxic snake envenomation (probable cobra/krait).',
+    correctRx:{diagnosis:'Neurotoxic Snake Envenomation (Cobra/Krait)',drugs:[{drug:'Polyvalent Anti-Snake Venom (ASV)',strength:'10 mL/vial',form:'IV infusion',dose:'10 vials (100 mL) in 200 mL NS',freq:'Over 1 hr',route:'IV',duration:'Repeat q6h if paralysis progresses'},{drug:'Neostigmine',strength:'0.5 mg',form:'IV injection',dose:'0.04 mg/kg (3 mg)',freq:'q30 min × 3, then PRN',route:'IV',duration:'Until reversal'},{drug:'Atropine',strength:'0.6 mg',form:'IV injection',dose:'0.6 mg with each neostigmine',freq:'With neostigmine',route:'IV',duration:'To block muscarinic'},{drug:'Adrenaline (Anaphylaxis prep)',strength:'1:1000',form:'IM (SC prep)',dose:'0.5 mg SC prophylaxis before ASV',freq:'Once',route:'SC',duration:'Prior to ASV'}]},
+    keyPoints:['Polyvalent ASV covers Big 4 Indian snakes: cobra, krait, Russell viper, saw-scaled viper','10 vials IV over 1 hr (test dose no longer required per updated protocol)','PRE-MEDICATE with SC adrenaline 0.5 mg + hydrocortisone + antihistamine (ASV anaphylaxis risk)','Neostigmine + atropine reverse cobra neurotoxin (post-synaptic block)','Intubation + ventilation if respiratory failure (do not wait)']},
+
+  {id:'c25',diff:'mbbs',title:'Postmenopausal Osteoporosis',brief:'65 yr F, DEXA T-score -3.0 (spine), h/o vertebral compression fx',
+    patient:{name:'Kamla Devi',age:65,sex:'F',wt:55,allergies:'None',comorbid:'Postmenopausal 15 yrs, prior vertebral fx'},
+    scenario:'65 yr F postmenopausal × 15 yrs. Back pain + height loss (5 cm) × 2 yrs. DEXA: T-score -3.0 (lumbar spine), -2.6 (femoral neck). Prior T12 vertebral compression fx. Diagnosis: Severe osteoporosis with prior fragility fx.',
+    correctRx:{diagnosis:'Postmenopausal Osteoporosis',drugs:[{drug:'Alendronate',strength:'70 mg',form:'Tablet',dose:'1 tab',freq:'Weekly',route:'PO',duration:'5 years'},{drug:'Calcium carbonate',strength:'500 mg',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'Continue'},{drug:'Cholecalciferol (Vit D3)',strength:'60000 IU',form:'Sachet',dose:'1 sachet',freq:'Weekly × 8 wks then monthly',route:'PO',duration:'Continue'}]},
+    keyPoints:['Alendronate 70 mg weekly - 1st line bisphosphonate (or risedronate)','Take with plain water on empty stomach, sit upright 30 min (prevent esophagitis)','Ca 1000-1200 mg + Vit D 800-1000 IU/day essential','Monitor: BMD after 2 yr, drug holiday after 5 yr if stable','Alternatives: denosumab (SC q6mo), teriparatide (severe/failed BP), zoledronic acid (IV yearly)']}
 ];
 
 /* Get + save rx stats */
@@ -24446,11 +24547,20 @@ function renderRxStats(){
   if(badgeEl){ badgeEl.textContent = b.name; badgeEl.style.color = b.color; }
 }
 
+function filterRxDiff(el, diff){
+  window.RX_DIFF_FILTER = diff;
+  document.querySelectorAll('.rx-diff-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  renderRxCaseLibrary();
+}
+
 function renderRxCaseLibrary(){
   const root = document.getElementById('rx-case-library');
   if(!root || typeof RX_CASES === 'undefined') return;
   const s = getRxStats();
-  const html = RX_CASES.map(c => {
+  const filter = window.RX_DIFF_FILTER || 'all';
+  const cases = filter === 'all' ? RX_CASES : RX_CASES.filter(c => c.diff === filter);
+  const html = cases.map(c => {
     const solved = s.solved[c.id];
     return `<div class="rx-case-card ${solved?'solved':''}" onclick="openRxCase('${c.id}')">
       <span class="rx-case-diff ${c.diff}">${c.diff==='mbbs'?'MBBS':c.diff==='neetpg'?'NEET PG':'Clinical'}</span>
@@ -24505,7 +24615,7 @@ function renderWritingMode(c, arena){
     </div>
     <div class="rx-pad">
       <div class="rx-pad-header">
-        <h4>Dr. Susheel Kumar, MD (Pharmacology)</h4>
+        <h4>Dr. Lokendra Sharma, MD (Pharmacology)</h4>
         <div class="doc-details">MCI Reg. No. XXXXX · PharmaCraft Clinic · Ph: XXXXXXXXXX</div>
       </div>
       <div class="rx-pad-fields">
@@ -24519,7 +24629,7 @@ function renderWritingMode(c, arena){
         ${[0,1,2].map(i=>renderDrugRow(i)).join('')}
       </div>
       <button class="rx-add-drug" onclick="addDrugRow()">+ Add Drug</button>
-      <div class="rx-signature">Signature: _________________________<br>Dr. Susheel Kumar (Reg. No. XXXXX)</div>
+      <div class="rx-signature">Signature: _________________________<br>Dr. Lokendra Sharma (Reg. No. XXXXX)</div>
     </div>
     <button class="rx-submit-btn" onclick="submitRx()">🎯 Submit &amp; Get Score</button>
     <div id="rx-feedback"></div>
@@ -24672,7 +24782,22 @@ function generateErrorsForCase(c){
     c7:{lines:['Dx: Headache','℞','Sumatriptan 25 mg SOS (repeat q30 min prn)','Ergotamine 2 mg SOS'],errors:[1,2]},
     c8:{lines:['Dx: Anemia','℞','Ferrous sulphate 325 mg with tea/coffee','Vitamin B12 1000 mcg IM'],errors:[1,2]},
     c9:{lines:['Dx: DKA','℞','IV insulin 0.1 U/kg/hr bolus (before checking K)','5% Dextrose IV'],errors:[1,2]},
-    c10:{lines:['Dx: AOM','℞','Amoxicillin 250 mg BD × 5 days (child wt 14 kg)','Ciprofloxacin ear drops'],errors:[1,2]}
+    c10:{lines:['Dx: AOM','℞','Amoxicillin 250 mg BD × 5 days (child wt 14 kg)','Ciprofloxacin ear drops'],errors:[1,2]},
+    c11:{lines:['Dx: Anaphylaxis','℞','IV Hydrocortisone 100 mg (first drug)','Chlorpheniramine 10 mg IV','Adrenaline 0.5 mg SC (delayed)'],errors:[1,3]},
+    c12:{lines:['Dx: Gout','℞','Allopurinol 300 mg OD (start immediately)','Aspirin 500 mg TDS','Colchicine 1 mg BD'],errors:[1,2,3]},
+    c13:{lines:['Dx: Warfarin overdose','℞','Vit K 10 mg PO','Continue warfarin at same dose','FFP 4 units'],errors:[1,2]},
+    c14:{lines:['Dx: Nephrotic syndrome','℞','Prednisolone 5 mg OD (subtherapeutic)','Furosemide 40 mg BD (adult dose)','Amoxicillin prophylaxis'],errors:[1,2,3]},
+    c15:{lines:['Dx: Breast Ca','℞','Tamoxifen 20 mg OD (not preferred postmeno)','Trastuzumab (HER2- pt)','No bone protection'],errors:[1,2,3]},
+    c16:{lines:['Dx: RA','℞','Methotrexate 15 mg DAILY (fatal!)','No folic acid','NSAIDs only'],errors:[1,2,3]},
+    c17:{lines:['Dx: Depression','℞','Fluoxetine 20 mg BD','Alprazolam 0.5 mg TDS × 3 months','Vitamin B12 IM'],errors:[1,2]},
+    c18:{lines:['Dx: Stable angina','℞','Sublingual GTN q4h scheduled','Nifedipine short-acting BD','No aspirin'],errors:[1,2,3]},
+    c19:{lines:['Dx: Hypothyroidism','℞','Levothyroxine 50 mcg after breakfast','Take with Ca supplement','Repeat TSH after 1 week'],errors:[1,2,3]},
+    c20:{lines:['Dx: Dog bite','℞','Amoxiclav only (no vaccine/RIG)','Suture wound immediately','Skip tetanus'],errors:[1,2,3]},
+    c21:{lines:['Dx: PONV','℞','Metoclopramide 10 mg IV (single agent for high risk)','No dexamethasone'],errors:[1,2]},
+    c22:{lines:['Dx: GERD','℞','Pantoprazole 40 mg after meals','Endoscopy in every patient','Long-term without step-down'],errors:[1,2,3]},
+    c23:{lines:['Dx: HIV exposure','℞','TDF/FTC monotherapy (needs 3rd drug)','Start after 5 days (too late)','No follow-up HIV testing'],errors:[1,2,3]},
+    c24:{lines:['Dx: Snake bite','℞','1 vial ASV IV push (need 10)','No pre-medication for anaphylaxis','Delay intubation until arrest'],errors:[1,2,3]},
+    c25:{lines:['Dx: Osteoporosis','℞','Alendronate 70 mg WEEKLY with orange juice','Lie down after taking','Only Ca (no Vit D)'],errors:[1,2,3]}
   };
   return errorSets[c.id] || {lines:['Dx','℞','Drug X'],errors:[]};
 }
