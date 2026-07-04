@@ -22264,15 +22264,23 @@ const SEARCH_INDEX = [];
 function buildSearchIndex(){
   TOPICS.forEach((t,ti)=>{
     SEARCH_INDEX.push({type:'topic',title:t.title,sub:'Topic, full content',id:t.id,icon:t.icon});
-    t.drugs.forEach((d,di)=>{
-      SEARCH_INDEX.push({type:'drug',title:d.n,sub:`${d.c}, ${d.u.substring(0,60)}`,id:t.id,icon:'💊'});
+    (t.drugs||[]).forEach((d,di)=>{
+      const uses = (d.u||'').toString().substring(0,60);
+      const cls = (d.c||'').toString();
+      SEARCH_INDEX.push({type:'drug',title:d.n||'Drug',sub:`${cls}, ${uses}`,id:t.id,icon:'💊'});
     });
-    t.mcqs.forEach((m,mi)=>{
-      SEARCH_INDEX.push({type:'mcq',title:m.q.substring(0,80),sub:`Answer: ${m.a}`,id:t.id,icon:'🎯'});
+    (t.mcqs||[]).forEach((m,mi)=>{
+      const q = (m.q||'').toString().substring(0,80);
+      SEARCH_INDEX.push({type:'mcq',title:q,sub:`Answer: ${m.a||''}`,id:t.id,icon:'🎯'});
     });
   });
-  PYQ.forEach(p=>{
-    SEARCH_INDEX.push({type:'pyq',title:p.q.substring(0,80),sub:`${p.exam.toUpperCase()} ${p.year}, ${p.t}`,id:'pyq',icon:'📋'});
+  // Use unified PYQS (has 329) instead of old PYQ array
+  const pyqSrc = (typeof PYQS !== 'undefined' && PYQS.length) ? PYQS : (typeof PYQ !== 'undefined' ? PYQ : []);
+  pyqSrc.forEach(p=>{
+    const q = (p.q||'').toString().substring(0,80);
+    const exam = (p.exam||'').toString().toUpperCase();
+    const topic = p.topic || p.t || '';
+    SEARCH_INDEX.push({type:'pyq',title:q,sub:`${exam} ${p.year||''}, ${topic}`,id:'pyq',icon:'📋'});
   });
 }
 function openSearch(){
