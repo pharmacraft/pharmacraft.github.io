@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v61-ga4-signup-popup-20260704';
+const CACHE_VERSION = 'pharmacraft-v62-formsubmit-configured-20260704';
 const CORE_ASSETS = [
   '/',
   '/index.html',

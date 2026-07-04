@@ -1737,7 +1737,7 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
       <h3>Get FREE Pharmacology Notes + Updates</h3>
       <p>Join <strong id="signup-count">1000+</strong> medical students preparing smarter. Get PDF notes, weekly high-yield MCQs, and exam alerts directly on WhatsApp.</p>
     </div>
-    <form id="signup-form" onsubmit="submitSignup(event)">
+    <form id="signup-form" onsubmit="submitSignup(event)"><input type="text" name="_honey" style="display:none;" tabindex="-1" autocomplete="off">
       <div class="signup-row">
         <div class="signup-field"><label>Full Name *</label><input type="text" name="name" required placeholder="Dr. Rahul Kumar"></div>
         <div class="signup-field"><label>Email *</label><input type="email" name="email" required placeholder="rahul@example.com"></div>
@@ -25378,7 +25378,7 @@ function toggleRxCases(btn){
 window.GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // <-- Replace after creating GA4 property
 
 // Google Apps Script Webhook URL - REPLACE with your deployed webhook URL to save signups to Google Sheets
-window.SIGNUP_WEBHOOK_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec'; // <-- Replace after deploying Apps Script
+window.SIGNUP_WEBHOOK_URL = 'https://formsubmit.co/ajax/susheelpn72@gmail.com'; // FormSubmit.co - sends signups directly to your inbox
 
 // Track events via GA4 (safe wrapper)
 function trackEvent(name, params){
@@ -25415,7 +25415,11 @@ async function submitSignup(e){
     year: form.year.value,
     exam: form.exam.value,
     timestamp: new Date().toISOString(),
-    source: 'pharmacraft.in'
+    source: 'pharmacraft.in',
+    _subject: 'New PharmaCraft Signup: ' + form.name.value.trim() + ' (' + form.exam.value + ')',
+    _template: 'table',
+    _captcha: 'false',
+    _honey: form._honey ? form._honey.value : ''
   };
 
   // Track signup event in GA
@@ -25431,13 +25435,15 @@ async function submitSignup(e){
 
   // Submit to Google Apps Script webhook (if configured)
   try{
-    if(window.SIGNUP_WEBHOOK_URL && !window.SIGNUP_WEBHOOK_URL.includes('YOUR_SCRIPT_ID')){
-      await fetch(window.SIGNUP_WEBHOOK_URL, {
+    if(window.SIGNUP_WEBHOOK_URL && window.SIGNUP_WEBHOOK_URL.length > 20){
+      // FormSubmit.co AJAX endpoint - supports CORS + JSON
+      const resp = await fetch(window.SIGNUP_WEBHOOK_URL, {
         method: 'POST',
-        mode: 'no-cors', // Google Apps Script requires no-cors from browser
-        headers: {'Content-Type': 'application/json'},
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
         body: JSON.stringify(data)
       });
+      const respData = await resp.json().catch(()=>({success:false}));
+      console.log('[signup] response:', respData);
     }
   }catch(err){
     console.warn('Signup webhook error (data saved locally):', err);
