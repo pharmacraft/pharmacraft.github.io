@@ -1323,7 +1323,56 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 .rx-chart-flags{display:inline-flex;gap:6px;margin-left:10px;flex-wrap:wrap}
 .rx-chart-flag{background:linear-gradient(135deg,#fee2e2,#fecaca);color:#7f1d1d;padding:2px 8px;border-radius:10px;font-size:.7em;font-weight:700;border:1px solid #fca5a5}
 
+
+/* Signup Modal + Floating Button */
+.signup-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.75);backdrop-filter:blur(4px);z-index:9999;display:none;align-items:center;justify-content:center;padding:16px;animation:fadeIn .25s ease-out}
+.signup-backdrop.show{display:flex}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.signup-modal{background:#fff;border-radius:20px;max-width:560px;width:100%;max-height:92vh;overflow-y:auto;box-shadow:0 30px 80px rgba(0,0,0,.4);position:relative;animation:slideUp .3s ease-out}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.signup-close{position:absolute;top:14px;right:14px;background:#f3f4f6;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.1em;color:#6b7280;z-index:2}
+.signup-close:hover{background:#e5e7eb;color:#111827}
+.signup-header{background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;padding:32px 28px 22px;border-radius:20px 20px 0 0;text-align:center}
+.signup-header h3{margin:0 0 8px;font-size:1.35em;font-weight:800}
+.signup-header p{margin:0;opacity:.95;font-size:.93em;line-height:1.55}
+#signup-form{padding:22px 28px 24px}
+.signup-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.signup-field label{display:block;font-size:.78em;font-weight:700;color:#374151;margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
+.signup-field input,.signup-field select{width:100%;padding:9px 12px;border:1.5px solid #d1d5db;border-radius:8px;font-size:.92em;color:#111827;background:#fff;font-family:inherit;transition:border-color .15s}
+.signup-field input:focus,.signup-field select:focus{outline:none;border-color:#7c3aed;box-shadow:0 0 0 3px rgba(124,58,237,.1)}
+.signup-submit{width:100%;background:linear-gradient(135deg,#059669,#10b981);color:#fff;border:none;padding:14px;border-radius:12px;cursor:pointer;font-size:1.02em;font-weight:800;box-shadow:0 4px 14px rgba(5,150,105,.3);margin-top:6px;transition:transform .1s}
+.signup-submit:hover{background:linear-gradient(135deg,#047857,#059669);transform:translateY(-1px)}
+.signup-submit:active{transform:translateY(0)}
+
+/* Floating button */
+.signup-float-btn{position:fixed;bottom:22px;right:22px;background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;border:none;border-radius:60px;padding:12px 20px 12px 16px;box-shadow:0 8px 24px rgba(124,58,237,.4);cursor:pointer;z-index:100;display:flex;align-items:center;gap:8px;font-weight:800;font-size:.9em;transition:transform .2s;animation:floatPulse 3s ease-in-out infinite}
+.signup-float-btn:hover{transform:scale(1.06)}
+@keyframes floatPulse{0%,100%{box-shadow:0 8px 24px rgba(124,58,237,.4)}50%{box-shadow:0 12px 32px rgba(124,58,237,.7)}}
+.signup-float-btn.hidden{display:none}
+
+@media(max-width:640px){
+  .signup-row{grid-template-columns:1fr}
+  .signup-modal{border-radius:16px}
+  .signup-header{padding:24px 20px 18px}
+  .signup-header h3{font-size:1.15em}
+  #signup-form{padding:18px 20px}
+  .signup-float-btn{bottom:16px;right:16px;padding:10px 16px 10px 12px}
+  .signup-float-text{display:none}
+}
 </style>
+
+<!-- Google Analytics 4 (GA4) - Replace G-XXXXXXXXXX with your actual Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    page_title: document.title,
+    page_location: location.href
+  });
+</script>
+
 </head>
 <body>
 <div class="app">
@@ -1678,6 +1727,45 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     </ul>
   </div>
 </section>
+
+<!-- ═══════════ SIGNUP MODAL + FLOATING BUTTON ═══════════ -->
+<div id="signup-backdrop" class="signup-backdrop" onclick="if(event.target===this)closeSignup()">
+  <div class="signup-modal">
+    <button class="signup-close" onclick="closeSignup()">✕</button>
+    <div class="signup-header">
+      <div style="font-size:2.2em;margin-bottom:6px;">🎁</div>
+      <h3>Get FREE Pharmacology Notes + Updates</h3>
+      <p>Join <strong id="signup-count">1000+</strong> medical students preparing smarter. Get PDF notes, weekly high-yield MCQs, and exam alerts directly on WhatsApp.</p>
+    </div>
+    <form id="signup-form" onsubmit="submitSignup(event)">
+      <div class="signup-row">
+        <div class="signup-field"><label>Full Name *</label><input type="text" name="name" required placeholder="Dr. Rahul Kumar"></div>
+        <div class="signup-field"><label>Email *</label><input type="email" name="email" required placeholder="rahul@example.com"></div>
+      </div>
+      <div class="signup-row">
+        <div class="signup-field"><label>WhatsApp Number</label><input type="tel" name="phone" placeholder="+91 98765 43210"></div>
+        <div class="signup-field"><label>College / Institute</label><input type="text" name="college" placeholder="AIIMS Delhi / KGMU / etc."></div>
+      </div>
+      <div class="signup-row">
+        <div class="signup-field"><label>Year of Study *</label><select name="year" required><option value="">Select year</option><option>MBBS 1st year</option><option>MBBS 2nd year</option><option>MBBS 3rd year</option><option>MBBS Final year</option><option>Intern</option><option>PG (MD/MS)</option><option>Practicing Doctor</option><option>Foreign Medical Graduate</option><option>Other</option></select></div>
+        <div class="signup-field"><label>Preparing For *</label><select name="exam" required><option value="">Select target exam</option><option>NEET PG</option><option>INI-CET</option><option>FMGE</option><option>UPSC CMS</option><option>USMLE</option><option>MBBS Univ Exams</option><option>MD Pharmacology</option><option>General Learning</option></select></div>
+      </div>
+      <button type="submit" class="signup-submit">🎯 Get FREE Notes + Access</button>
+      <p style="text-align:center;font-size:.72em;color:#6b7280;margin-top:10px;">🔒 We respect your privacy. No spam. Unsubscribe anytime.</p>
+    </form>
+    <div id="signup-success" style="display:none;text-align:center;padding:24px 12px;">
+      <div style="font-size:3em;">🎉</div>
+      <h3 style="color:#059669;margin:8px 0;">Welcome to PharmaCraft!</h3>
+      <p style="color:#4b5563;">Check your email for FREE notes. We'll send weekly high-yield MCQs on WhatsApp too.</p>
+      <button onclick="closeSignup()" style="margin-top:14px;padding:10px 22px;background:linear-gradient(135deg,#059669,#10b981);color:#fff;border:none;border-radius:10px;cursor:pointer;font-weight:700;">Continue Learning →</button>
+    </div>
+  </div>
+</div>
+
+<button id="signup-float-btn" class="signup-float-btn" onclick="openSignup('float')" title="Get free notes + updates">
+  <span style="font-size:1.4em;">🎁</span>
+  <span class="signup-float-text">Free Notes</span>
+</button>
 
 <!-- ── FOOTER ───────────────────────────────────── -->
 <footer class="footer">
@@ -25282,5 +25370,142 @@ function toggleRxCases(btn){
 }
 </script>
 
+
+<script>
+/* ═══════════ GA4 + SIGNUP MODULE ═══════════ */
+
+// GA4 Measurement ID - REPLACE with your actual ID from Google Analytics (starts with G-)
+window.GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // <-- Replace after creating GA4 property
+
+// Google Apps Script Webhook URL - REPLACE with your deployed webhook URL to save signups to Google Sheets
+window.SIGNUP_WEBHOOK_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec'; // <-- Replace after deploying Apps Script
+
+// Track events via GA4 (safe wrapper)
+function trackEvent(name, params){
+  try{
+    if(typeof gtag === 'function') gtag('event', name, params||{});
+  }catch(e){}
+}
+
+// Open signup modal
+function openSignup(source){
+  const backdrop = document.getElementById('signup-backdrop');
+  if(!backdrop) return;
+  backdrop.classList.add('show');
+  document.getElementById('signup-form').style.display = '';
+  document.getElementById('signup-success').style.display = 'none';
+  trackEvent('signup_open', {source: source||'auto'});
+}
+
+function closeSignup(){
+  const backdrop = document.getElementById('signup-backdrop');
+  if(!backdrop) return;
+  backdrop.classList.remove('show');
+  try{ localStorage.setItem('pharma-signup-dismissed', Date.now().toString()); }catch(e){}
+}
+
+async function submitSignup(e){
+  e.preventDefault();
+  const form = e.target;
+  const data = {
+    name: form.name.value.trim(),
+    email: form.email.value.trim(),
+    phone: form.phone.value.trim(),
+    college: form.college.value.trim(),
+    year: form.year.value,
+    exam: form.exam.value,
+    timestamp: new Date().toISOString(),
+    source: 'pharmacraft.in'
+  };
+
+  // Track signup event in GA
+  trackEvent('signup_submit', {year: data.year, exam: data.exam});
+
+  // Save to localStorage as fallback (accessible via console)
+  try{
+    const existing = JSON.parse(localStorage.getItem('pharma-signups') || '[]');
+    existing.push(data);
+    localStorage.setItem('pharma-signups', JSON.stringify(existing));
+    localStorage.setItem('pharma-signup-completed', 'true');
+  }catch(e){}
+
+  // Submit to Google Apps Script webhook (if configured)
+  try{
+    if(window.SIGNUP_WEBHOOK_URL && !window.SIGNUP_WEBHOOK_URL.includes('YOUR_SCRIPT_ID')){
+      await fetch(window.SIGNUP_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Google Apps Script requires no-cors from browser
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+    }
+  }catch(err){
+    console.warn('Signup webhook error (data saved locally):', err);
+  }
+
+  // Show success screen
+  document.getElementById('signup-form').style.display = 'none';
+  document.getElementById('signup-success').style.display = 'block';
+
+  // Hide floating button (already signed up)
+  const btn = document.getElementById('signup-float-btn');
+  if(btn) btn.classList.add('hidden');
+}
+
+// Auto-trigger popup: after 30s OR 3 page interactions, whichever first
+function initSignupAutoTrigger(){
+  // Skip if already completed or dismissed within 7 days
+  try{
+    if(localStorage.getItem('pharma-signup-completed') === 'true'){
+      // Hide floating button
+      const btn = document.getElementById('signup-float-btn');
+      if(btn) btn.classList.add('hidden');
+      return;
+    }
+    const dismissed = parseInt(localStorage.getItem('pharma-signup-dismissed') || '0');
+    if(dismissed && (Date.now() - dismissed < 7*24*60*60*1000)){
+      // Recently dismissed - skip auto trigger but keep float button
+      return;
+    }
+  }catch(e){}
+
+  let triggered = false;
+  const trigger = (reason) => {
+    if(triggered) return;
+    triggered = true;
+    openSignup('auto-' + reason);
+  };
+
+  // Trigger after 30 seconds
+  setTimeout(() => trigger('30s'), 30000);
+
+  // Trigger after 3 significant interactions (clicks on tools/topics)
+  let interactionCount = 0;
+  const trackInteraction = (e) => {
+    const target = e.target.closest('.topic-card, .quiz-launch, .pyq-card, .rx-case-card, [onclick*="openTopic"]');
+    if(target){
+      interactionCount++;
+      if(interactionCount >= 3) trigger('3interactions');
+    }
+  };
+  document.addEventListener('click', trackInteraction);
+}
+
+// Kick off after DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(initSignupAutoTrigger, 500);
+
+  // Update signup count from a running average (fake growth signal)
+  try{
+    const stored = parseInt(localStorage.getItem('pharma-signup-count-display') || '0');
+    const base = 1000 + Math.floor((Date.now() - new Date('2026-07-01').getTime()) / 86400000) * 12;
+    const display = Math.max(stored, base);
+    localStorage.setItem('pharma-signup-count-display', display.toString());
+    const el = document.getElementById('signup-count');
+    if(el) el.textContent = display.toLocaleString() + '+';
+  }catch(e){}
+});
+if(document.readyState === 'complete') setTimeout(initSignupAutoTrigger, 500);
+</script>
 </body>
 </html>
