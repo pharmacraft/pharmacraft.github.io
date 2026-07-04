@@ -1548,58 +1548,6 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <div id="adaptive-arena" style="display:none;margin-top:18px;"></div>
 </section>
 
-<!-- ── PRESCRIPTION SIMULATOR ──────────────────────── -->
-<section class="section" id="rx-sim">
-  <div class="section-head">
-    <div class="section-tag" style="background:linear-gradient(135deg,#059669,#10b981);color:white;">📝 Clinical Skill</div>
-    <h2>Prescription Simulator</h2>
-    <p>Practice NMC-format Rx writing + spot errors in real-world prescriptions. Includes NEET PG / MBBS clinical scenarios with instant feedback.</p>
-  </div>
-
-  <div class="rx-wrapper">
-
-    <!-- Hero -->
-    <div class="rx-hero">
-      <h3>🩺 Master Rational Prescribing</h3>
-      <p>Aligned with NMC CBME PH 5.1-5.7 competencies. Two modes: <strong>Writing</strong> (build Rx from case) and <strong>Checking</strong> (find errors in flawed Rx). Case-based, scored, immediate feedback.</p>
-    </div>
-
-    <!-- Stats + Mode -->
-    <div class="rx-stats">
-      <div class="rx-stat-item"><strong id="rx-cases-solved">0</strong><span>Cases Solved / 25</span></div>
-      <div class="rx-stat-item"><strong id="rx-score-total">0</strong><span>Total Score</span></div>
-      <div class="rx-stat-item"><strong id="rx-badge">Beginner</strong><span>Current Badge</span></div>
-    </div>
-
-    <!-- Mode toggle -->
-    <div class="rx-mode-toggle">
-      <button class="rx-mode-btn active" id="rx-mode-writing" onclick="switchRxMode('writing')">✍️ Writing Mode</button>
-      <button class="rx-mode-btn" id="rx-mode-checking" onclick="switchRxMode('checking')">🔍 Checking Mode</button>
-    </div>
-
-    <!-- Difficulty Filter -->
-    <div class="rx-diff-filter" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
-      <button class="rx-diff-chip active" data-diff="all" onclick="filterRxDiff(this,'all')">All Cases</button>
-      <button class="rx-diff-chip" data-diff="mbbs" onclick="filterRxDiff(this,'mbbs')">MBBS Level</button>
-      <button class="rx-diff-chip" data-diff="neetpg" onclick="filterRxDiff(this,'neetpg')">NEET PG</button>
-      <button class="rx-diff-chip" data-diff="clinical" onclick="filterRxDiff(this,'clinical')">Clinical (Advanced)</button>
-    </div>
-
-    <!-- Case Library Toggle -->
-    <div class="rx-collapse-toggle" onclick="toggleRxCases(this)" style="cursor:pointer;background:linear-gradient(135deg,#059669,#10b981);color:#fff;padding:14px 22px;border-radius:12px;text-align:center;font-weight:800;font-size:1.02em;margin-bottom:14px;box-shadow:0 4px 14px rgba(5,150,105,.25);display:flex;align-items:center;justify-content:center;gap:10px;">
-      <span>🩺 Click to View 25 Clinical Cases</span>
-      <span class="rx-collapse-arrow" style="transition:transform .3s;font-size:1.2em;">▼</span>
-    </div>
-    <!-- Case Library -->
-    <div class="rx-case-library" id="rx-case-library" style="display:none;"></div>
-
-    <!-- Active Case Arena -->
-    <div class="rx-arena" id="rx-arena" style="display:none;"></div>
-
-  </div>
-</section>
-
-
 <!-- ── DRUG INTERACTION CHECKER ──────────────────── -->
 <section class="section" id="dic">
   <div class="section-head">
@@ -1649,6 +1597,58 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <div style="margin-top:22px;padding:14px;background:#fef9e7;border-left:4px solid #f59e0b;border-radius:6px;font-size:12.5px;color:#78350f;">
       <strong>⚠️ Educational Use Only:</strong> This tool covers NEET PG / INI-CET / FMGE high-yield interactions for academic learning. Always verify with Lexicomp, Micromedex or UpToDate for real clinical decisions. Drug names: enter generic name (lowercase OK). 200+ pairs covered, not exhaustive.
     </div>
+  </div>
+</section>
+
+
+<!-- ── PRESCRIPTION SIMULATOR ──────────────────────── -->
+<section class="section" id="rx-sim">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#059669,#10b981);color:white;">📝 Clinical Skill</div>
+    <h2>Prescription Simulator</h2>
+    <p>Practice NMC-format Rx writing + spot errors in real-world prescriptions. Includes NEET PG / MBBS clinical scenarios with instant feedback.</p>
+  </div>
+
+  <div class="rx-wrapper">
+
+    <!-- Hero -->
+    <div class="rx-hero">
+      <h3>🩺 Master Rational Prescribing</h3>
+      <p>Aligned with NMC CBME PH 5.1-5.7 competencies. Two modes: <strong>Writing</strong> (build Rx from case) and <strong>Checking</strong> (find errors in flawed Rx). Case-based, scored, immediate feedback.</p>
+    </div>
+
+    <!-- Stats + Mode -->
+    <div class="rx-stats">
+      <div class="rx-stat-item"><strong id="rx-cases-solved">0</strong><span>Cases Solved / 25</span></div>
+      <div class="rx-stat-item"><strong id="rx-score-total">0</strong><span>Total Score</span></div>
+      <div class="rx-stat-item"><strong id="rx-badge">Beginner</strong><span>Current Badge</span></div>
+    </div>
+
+    <!-- Mode toggle -->
+    <div class="rx-mode-toggle">
+      <button class="rx-mode-btn active" id="rx-mode-writing" onclick="switchRxMode('writing')">✍️ Writing Mode</button>
+      <button class="rx-mode-btn" id="rx-mode-checking" onclick="switchRxMode('checking')">🔍 Checking Mode</button>
+    </div>
+
+    <!-- Difficulty Filter -->
+    <div class="rx-diff-filter" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+      <button class="rx-diff-chip active" data-diff="all" onclick="filterRxDiff(this,'all')">All Cases</button>
+      <button class="rx-diff-chip" data-diff="mbbs" onclick="filterRxDiff(this,'mbbs')">MBBS Level</button>
+      <button class="rx-diff-chip" data-diff="neetpg" onclick="filterRxDiff(this,'neetpg')">NEET PG</button>
+      <button class="rx-diff-chip" data-diff="clinical" onclick="filterRxDiff(this,'clinical')">Clinical (Advanced)</button>
+    </div>
+
+    <!-- Case Library Toggle -->
+    <div class="rx-collapse-toggle" onclick="toggleRxCases(this)" style="cursor:pointer;background:linear-gradient(135deg,#059669,#10b981);color:#fff;padding:14px 22px;border-radius:12px;text-align:center;font-weight:800;font-size:1.02em;margin-bottom:14px;box-shadow:0 4px 14px rgba(5,150,105,.25);display:flex;align-items:center;justify-content:center;gap:10px;">
+      <span>🩺 Click to View 25 Clinical Cases</span>
+      <span class="rx-collapse-arrow" style="transition:transform .3s;font-size:1.2em;">▼</span>
+    </div>
+    <!-- Case Library -->
+    <div class="rx-case-library" id="rx-case-library" style="display:none;"></div>
+
+    <!-- Active Case Arena -->
+    <div class="rx-arena" id="rx-arena" style="display:none;"></div>
+
   </div>
 </section>
 
