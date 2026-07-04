@@ -1315,6 +1315,14 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   .rx-pad-fields{grid-template-columns:1fr}
   .rx-drug-row{grid-template-columns:1fr}
 }
+
+.rx-chart-section{margin-top:12px;padding-top:10px;border-top:1px dashed rgba(30,64,175,.25)}
+.rx-chart-title{font-weight:700;color:#1e3a8a;font-size:.85em;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.rx-chart-row{display:flex;flex-wrap:wrap;gap:6px;font-size:.85em}
+.rx-chart-row span{background:rgba(255,255,255,.7);padding:5px 10px;border-radius:5px;color:#1e3a8a}
+.rx-chart-flags{display:inline-flex;gap:6px;margin-left:10px;flex-wrap:wrap}
+.rx-chart-flag{background:linear-gradient(135deg,#fee2e2,#fecaca);color:#7f1d1d;padding:2px 8px;border-radius:10px;font-size:.7em;font-weight:700;border:1px solid #fca5a5}
+
 </style>
 </head>
 <body>
@@ -24876,6 +24884,346 @@ if(document.readyState === 'complete'){
     }
   }, 100);
 }
+</script>
+
+<script>
+/* ═══════════ STAGE 3: PATIENT CHARTS + AUTO-CHECKS ═══════════ */
+
+// Enhanced patient data per case (vitals, labs, current meds)
+window.RX_CHARTS = {
+  c1:{vitals:{bp:'128/82',hr:98,rr:22,spo2:96,temp:'39.0°C'},labs:{cr:0.9,egfr:88,hb:13.2,wbc:14500,plt:280,alt:32,ast:28,glucose:98,na:138,k:4.1},currentMeds:[],pregnancy:false},
+  c2:{vitals:{bp:118/78,hr:78,rr:16,spo2:99,temp:'37.1°C'},labs:{cr:0.7,egfr:100,hb:13.0,wbc:8500,plt:250,alt:22,ast:20,glucose:90},currentMeds:[],pregnancy:false},
+  c3:{vitals:{bp:'138/86',hr:80,rr:16,spo2:98,temp:'36.8°C'},labs:{cr:1.0,egfr:85,hb:14.5,wbc:7200,plt:280,alt:35,ast:30,glucose:168,hba1c:8.2,ldl:145,tg:180},currentMeds:[],pregnancy:false},
+  c4:{vitals:{bp:'156/98',hr:78,rr:16,spo2:99,temp:'37.0°C'},labs:{cr:0.9,egfr:92,hb:14.8,wbc:6800,plt:260,alt:28,ast:24,glucose:95,k:4.2,na:140},currentMeds:[],pregnancy:false},
+  c5:{vitals:{bp:'122/78',hr:76,rr:16,spo2:99,temp:'36.9°C'},labs:{cr:0.8,egfr:98,hb:13.5,wbc:7500,plt:275,alt:24,ast:22,glucose:92},currentMeds:[],pregnancy:false},
+  c6:{vitals:{bp:'132/85',hr:108,rr:26,spo2:92,temp:'37.2°C'},labs:{cr:0.7,egfr:110,hb:12.8,wbc:9200,plt:245,alt:20,ast:18,peakFlow:'60% pred'},currentMeds:['Salbutamol inhaler PRN','Budesonide 200 mcg BD'],pregnancy:false},
+  c7:{vitals:{bp:'110/72',hr:82,rr:16,spo2:98,temp:'36.8°C'},labs:{cr:0.7,egfr:105,hb:12.5,wbc:6200,plt:280},currentMeds:['OCP (Yasmin)'],pregnancy:false,warnings:'Migraine with aura + OCP = ↑ stroke risk'},
+  c8:{vitals:{bp:'108/68',hr:88,rr:16,spo2:98,temp:'36.7°C'},labs:{cr:0.7,egfr:95,hb:8.2,mcv:68,mch:22,ferritin:8,tibc:450,serumIron:35,wbc:6500,plt:340},currentMeds:[],pregnancy:false},
+  c9:{vitals:{bp:'96/60',hr:118,rr:32,spo2:97,temp:'37.0°C'},labs:{cr:1.2,egfr:78,glucose:480,ketones:'+++',pH:7.15,hco3:8,anionGap:22,na:130,k:3.2,bun:32,hb:13.2},currentMeds:['Insulin glargine 20 U HS','Insulin lispro before meals'],pregnancy:false},
+  c10:{vitals:{bp:'92/62',hr:132,rr:28,spo2:97,temp:'39.0°C'},labs:{cr:0.4,egfr:'age-appropriate',hb:11.8,wbc:15200,plt:320},currentMeds:[],pregnancy:false,pediatric:true},
+  c11:{vitals:{bp:'80/50',hr:128,rr:28,spo2:92,temp:'37.5°C'},labs:{cr:0.8,egfr:92,hb:13.5,wbc:11000,plt:260},currentMeds:[],pregnancy:false,severity:'CRITICAL'},
+  c12:{vitals:{bp:'138/88',hr:85,rr:16,spo2:98,temp:'37.4°C'},labs:{cr:1.0,egfr:82,hb:14.5,wbc:9800,plt:285,uricAcid:9.2,alt:32,ast:28},currentMeds:['Amlodipine 5 mg OD','Aspirin 75 mg OD (started 1 mo ago)'],pregnancy:false},
+  c13:{vitals:{bp:'115/72',hr:98,rr:18,spo2:97,temp:'36.9°C'},labs:{cr:1.1,egfr:72,hb:9.0,wbc:6500,plt:180,inr:8.5,alt:28,ast:26,ptT:32,apttT:38},currentMeds:['Warfarin 5 mg OD','Digoxin 0.25 mg OD','Furosemide 40 mg OD'],pregnancy:false},
+  c14:{vitals:{bp:'110/68',hr:92,rr:22,spo2:98,temp:'37.0°C'},labs:{cr:0.5,egfr:'age-appropriate',albumin:1.8,urineProt:'4+',urineProt24h:4500,hb:12.2,wbc:8200,plt:340,ldl:190,tg:280},currentMeds:[],pregnancy:false,pediatric:true},
+  c15:{vitals:{bp:'128/78',hr:74,rr:16,spo2:99,temp:'36.8°C'},labs:{cr:0.8,egfr:78,hb:12.5,wbc:5800,plt:240,alt:22,ast:20,vitD:22,ca:9.4,dexaTscore:-1.8},currentMeds:['Calcium+Vit D previously prescribed'],pregnancy:false,postmenopause:true},
+  c16:{vitals:{bp:'118/76',hr:82,rr:16,spo2:98,temp:'37.0°C'},labs:{cr:0.7,egfr:98,hb:11.8,wbc:8500,plt:320,esr:55,crp:18,rf:'+',antiCcp:'+',alt:25,ast:22,hbsAg:'-',antiHcv:'-'},currentMeds:['Paracetamol PRN'],pregnancy:false},
+  c17:{vitals:{bp:'118/74',hr:78,rr:16,spo2:98,temp:'36.9°C'},labs:{cr:0.7,egfr:100,hb:12.8,wbc:7200,plt:280,tsh:2.1,vit12:340,folate:12},currentMeds:[],pregnancy:false},
+  c18:{vitals:{bp:'142/88',hr:74,rr:16,spo2:97,temp:'36.8°C'},labs:{cr:1.1,egfr:72,hb:13.8,wbc:7000,plt:265,ldl:132,hdl:38,tg:180,hba1c:7.4,glucose:145,alt:32,ast:30},currentMeds:['Metformin 500 mg BD','Telmisartan 40 mg OD'],pregnancy:false},
+  c19:{vitals:{bp:'122/78',hr:62,rr:14,spo2:98,temp:'36.4°C'},labs:{cr:0.9,egfr:78,hb:11.5,wbc:5500,plt:245,tsh:22,freeT4:0.6,antiTPO:'+',cholesterol:245,ldl:165},currentMeds:[],pregnancy:false},
+  c20:{vitals:{bp:'128/78',hr:96,rr:18,spo2:99,temp:'37.2°C'},labs:{cr:0.9,egfr:98,hb:14.5,wbc:9800,plt:280},currentMeds:[],pregnancy:false,exposure:'stray dog bite Cat III'},
+  c21:{vitals:{bp:'118/74',hr:82,rr:14,spo2:99,temp:'36.8°C'},labs:{cr:0.8,egfr:100,hb:12.8,wbc:6500,plt:280},currentMeds:['OCP'],pregnancy:false,apfelScore:4},
+  c22:{vitals:{bp:'132/84',hr:78,rr:16,spo2:98,temp:'36.9°C'},labs:{cr:1.0,egfr:88,hb:14.2,wbc:7200,plt:265,alt:38,ast:32,hpylori:'-'},currentMeds:['Antacid PRN'],pregnancy:false,bmi:30},
+  c23:{vitals:{bp:'118/72',hr:78,rr:16,spo2:99,temp:'36.9°C'},labs:{cr:0.7,egfr:105,hb:12.5,wbc:6800,plt:290,hivBase:'negative',hbsAg:'-',antiHcv:'-'},currentMeds:[],pregnancy:false,exposure:'HIV+ VL>100k needlestick'},
+  c24:{vitals:{bp:'110/68',hr:110,rr:26,spo2:94,temp:'37.1°C'},labs:{cr:0.9,egfr:98,hb:13.8,wbc:12500,plt:220,ck:1200,pt:14,aptt:38,fibrinogen:280},currentMeds:[],pregnancy:false,severity:'CRITICAL'},
+  c25:{vitals:{bp:'135/82',hr:72,rr:16,spo2:98,temp:'36.8°C'},labs:{cr:0.9,egfr:72,hb:11.8,wbc:5500,plt:245,ca:9.2,phos:3.4,vitD:18,dexaTscore:-3.0,alkPhos:82},currentMeds:['Paracetamol PRN'],pregnancy:false,postmenopause:true}
+};
+
+// Drug-drug interaction database (subset for auto-check)
+window.RX_INTERACTIONS = {
+  'warfarin':{'aspirin':{sev:'MAJOR',msg:'Bleeding risk (additive antihemostatic)'},'amiodarone':{sev:'MAJOR',msg:'↑ INR 2× (CYP2C9 inhibition)'},'metronidazole':{sev:'MAJOR',msg:'↑ INR - reduce warfarin by 25-50%'},'ciprofloxacin':{sev:'MODERATE',msg:'↑ INR risk'},'clarithromycin':{sev:'MAJOR',msg:'↑ INR risk'},'trimethoprim':{sev:'MODERATE',msg:'↑ INR'},'nsaid':{sev:'MAJOR',msg:'Bleeding + GI ulceration'},'naproxen':{sev:'MAJOR',msg:'Bleeding + GI ulceration'},'ibuprofen':{sev:'MAJOR',msg:'Bleeding'},'diclofenac':{sev:'MAJOR',msg:'Bleeding'}},
+  'aspirin':{'warfarin':{sev:'MAJOR',msg:'Bleeding risk'},'clopidogrel':{sev:'MODERATE',msg:'Bleeding (DAPT indicated only if ACS)'},'methotrexate':{sev:'MAJOR',msg:'↑ MTX toxicity - myelosuppression'},'ibuprofen':{sev:'MODERATE',msg:'Ibuprofen antagonizes aspirin antiplatelet effect'}},
+  'metformin':{'contrast':{sev:'MAJOR',msg:'Lactic acidosis risk - hold before contrast'},'alcohol':{sev:'MODERATE',msg:'Lactic acidosis risk'}},
+  'digoxin':{'furosemide':{sev:'MAJOR',msg:'HypoK potentiates digoxin toxicity - monitor K'},'amiodarone':{sev:'MAJOR',msg:'↑ Digoxin 2× - reduce dig 50%'},'verapamil':{sev:'MAJOR',msg:'↑ Digoxin - reduce dose'},'clarithromycin':{sev:'MAJOR',msg:'↑ Digoxin toxicity'}},
+  'methotrexate':{'nsaid':{sev:'MAJOR',msg:'↑ MTX toxicity - avoid or monitor'},'trimethoprim':{sev:'MAJOR',msg:'Additive myelosuppression - avoid'},'aspirin':{sev:'MAJOR',msg:'↑ MTX toxicity'},'naproxen':{sev:'MAJOR',msg:'↑ MTX toxicity'}},
+  'ssri':{'maoi':{sev:'CONTRAINDICATED',msg:'Serotonin syndrome - wait 2 wks'},'tramadol':{sev:'MODERATE',msg:'Serotonin syndrome risk'},'linezolid':{sev:'CONTRAINDICATED',msg:'Serotonin syndrome'},'triptan':{sev:'MODERATE',msg:'Serotonin syndrome (usually safe)'}},
+  'sertraline':{'tramadol':{sev:'MODERATE',msg:'Serotonin syndrome'},'sumatriptan':{sev:'MODERATE',msg:'Serotonin syndrome (usually safe)'},'linezolid':{sev:'CONTRAINDICATED',msg:'Serotonin syndrome'}},
+  'sumatriptan':{'ssri':{sev:'MODERATE',msg:'Serotonin syndrome (rare)'},'ergot':{sev:'CONTRAINDICATED',msg:'Vasospasm - avoid within 24h'},'maoi':{sev:'CONTRAINDICATED',msg:'HTN crisis + serotonin syndrome'}},
+  'allopurinol':{'6-mp':{sev:'MAJOR',msg:'↑ 6-MP toxicity 4× - reduce 75%'},'mercaptopurine':{sev:'MAJOR',msg:'↑ 6-MP toxicity'},'azathioprine':{sev:'MAJOR',msg:'↑ AZA toxicity'},'ampicillin':{sev:'MODERATE',msg:'Rash risk'},'amoxicillin':{sev:'MODERATE',msg:'Rash risk'}},
+  'levothyroxine':{'calcium':{sev:'MODERATE',msg:'↓ absorption - separate by 4 hr'},'iron':{sev:'MODERATE',msg:'↓ absorption - separate 4 hr'},'ppi':{sev:'MINOR',msg:'↓ absorption'},'omeprazole':{sev:'MINOR',msg:'↓ absorption slightly'}}
+};
+
+// Drug renal/hepatic/pregnancy caution database
+window.RX_CAUTIONS = {
+  renal:{
+    'nitrofurantoin':{threshold:60,msg:'Avoid if CrCl <60 (inadequate urinary concentration + toxicity)'},
+    'metformin':{threshold:30,msg:'Avoid if eGFR <30 (lactic acidosis)'},
+    'nsaid':{threshold:30,msg:'Avoid NSAIDs if eGFR <30 (worsens renal)'},
+    'naproxen':{threshold:30,msg:'Avoid if eGFR <30'},
+    'diclofenac':{threshold:30,msg:'Avoid if eGFR <30'},
+    'ibuprofen':{threshold:30,msg:'Avoid if eGFR <30'},
+    'aminoglycoside':{threshold:60,msg:'Dose adjustment required in renal impairment'},
+    'gentamicin':{threshold:60,msg:'Dose adjustment required'},
+    'digoxin':{threshold:60,msg:'Reduce dose in renal impairment'},
+    'atenolol':{threshold:35,msg:'Dose adjustment in CKD'}
+  },
+  pregnancy:{
+    'warfarin':{msg:'Teratogenic (Category X) - use heparin/LMWH'},
+    'ace':{msg:'Teratogenic (Cat D 2nd+3rd tri) - avoid in pregnancy'},
+    'enalapril':{msg:'Teratogenic - avoid in pregnancy'},
+    'ramipril':{msg:'Teratogenic - avoid'},
+    'arb':{msg:'Teratogenic - avoid in pregnancy'},
+    'telmisartan':{msg:'Teratogenic - avoid'},
+    'statin':{msg:'Category X - avoid in pregnancy'},
+    'atorvastatin':{msg:'Category X - avoid in pregnancy'},
+    'methotrexate':{msg:'Abortifacient + teratogenic - AVOID'},
+    'isotretinoin':{msg:'Highly teratogenic (Cat X)'},
+    'valproate':{msg:'NTD + autism risk - avoid'},
+    'tetracycline':{msg:'Teeth staining + bone - avoid after 15 wks'},
+    'doxycycline':{msg:'Teeth staining - avoid'},
+    'fluoroquinolone':{msg:'Cartilage damage - avoid'},
+    'ciprofloxacin':{msg:'Avoid in pregnancy (cartilage)'}
+  },
+  allergyClasses:{
+    'penicillin':['amoxicillin','ampicillin','amoxiclav','piperacillin','benzylpenicillin','cloxacillin','flucloxacillin','penicillin g'],
+    'sulfa':['cotrimoxazole','sulfamethoxazole','sulfadiazine','trimethoprim-sulfamethoxazole'],
+    'nsaid':['aspirin','ibuprofen','naproxen','diclofenac','indomethacin','ketorolac','celecoxib'],
+    'cephalosporin':['cefazolin','ceftriaxone','cefepime','cefotaxime','cephalexin','cefixime']
+  }
+};
+
+/* Enhanced patient card renderer */
+function renderEnhancedPatientCard(c){
+  const chart = RX_CHARTS[c.id] || {};
+  const v = chart.vitals || {};
+  const l = chart.labs || {};
+  const meds = chart.currentMeds || [];
+
+  const vitalHTML = v.bp ? `
+    <div class="rx-chart-section">
+      <div class="rx-chart-title">🩺 Vitals</div>
+      <div class="rx-chart-row">
+        <span><strong>BP:</strong> ${v.bp}</span>
+        <span><strong>HR:</strong> ${v.hr}/min</span>
+        <span><strong>RR:</strong> ${v.rr}/min</span>
+        <span><strong>SpO2:</strong> ${v.spo2}%</span>
+        <span><strong>Temp:</strong> ${v.temp}</span>
+      </div>
+    </div>` : '';
+
+  const labKeys = Object.keys(l);
+  const labHTML = labKeys.length ? `
+    <div class="rx-chart-section">
+      <div class="rx-chart-title">🧪 Labs</div>
+      <div class="rx-chart-row">
+        ${labKeys.map(k => `<span><strong>${k.toUpperCase()}:</strong> ${l[k]}</span>`).join('')}
+      </div>
+    </div>` : '';
+
+  const medsHTML = meds.length ? `
+    <div class="rx-chart-section">
+      <div class="rx-chart-title" style="color:#dc2626;">💊 Current Medications (Watch Interactions!)</div>
+      <div class="rx-chart-row">
+        ${meds.map(m => `<span style="background:#fef2f2;color:#7f1d1d;padding:4px 10px;border-radius:6px;border:1px solid #fecaca;font-weight:600;">${m}</span>`).join('')}
+      </div>
+    </div>` : '';
+
+  const flags = [];
+  if(chart.pregnancy) flags.push('🤰 PREGNANT');
+  if(chart.pediatric) flags.push('👶 PEDIATRIC');
+  if(chart.postmenopause) flags.push('👵 POSTMENOPAUSAL');
+  if(chart.severity === 'CRITICAL') flags.push('🚨 CRITICAL');
+  const flagsHTML = flags.length ? `<div class="rx-chart-flags">${flags.map(f => `<span class="rx-chart-flag">${f}</span>`).join('')}</div>` : '';
+
+  const allergyHighlight = c.patient.allergies && c.patient.allergies !== 'None' ?
+    `<span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:6px;font-weight:700;">⚠️ ${c.patient.allergies}</span>` :
+    c.patient.allergies;
+
+  return `<div class="rx-patient-card">
+      <h4>👤 Patient Details ${flagsHTML}</h4>
+      <div class="rx-patient-info">
+        <span><strong>Name:</strong> ${c.patient.name}</span>
+        <span><strong>Age:</strong> ${c.patient.age} yr</span>
+        <span><strong>Sex:</strong> ${c.patient.sex}</span>
+        <span><strong>Weight:</strong> ${c.patient.wt} kg</span>
+        <span><strong>Allergies:</strong> ${allergyHighlight}</span>
+        <span><strong>Comorbid:</strong> ${c.patient.comorbid}</span>
+      </div>
+      ${vitalHTML}
+      ${labHTML}
+      ${medsHTML}
+    </div>`;
+}
+
+/* Auto-check patient safety for prescribed drugs */
+function checkPrescriptionSafety(userDrugs, caseId){
+  const c = RX_CASES.find(x => x.id === caseId);
+  if(!c) return [];
+  const chart = RX_CHARTS[caseId] || {};
+  const alerts = [];
+
+  userDrugs.forEach(ud => {
+    const drugLower = (ud.drug || '').toLowerCase().trim();
+    if(!drugLower) return;
+
+    // 1. Allergy check
+    if(c.patient.allergies && c.patient.allergies !== 'None'){
+      const allergyLower = c.patient.allergies.toLowerCase();
+      // Check drug classes
+      for(const [allergyClass, drugList] of Object.entries(RX_CAUTIONS.allergyClasses)){
+        if(allergyLower.includes(allergyClass)){
+          for(const d of drugList){
+            if(drugLower.includes(d) || d.includes(drugLower.split(' ')[0])){
+              alerts.push({sev:'CONTRAINDICATED',msg:`🚨 <strong>ALLERGY:</strong> Patient is allergic to ${allergyClass} - do NOT prescribe ${ud.drug}!`});
+            }
+          }
+        }
+      }
+    }
+
+    // 2. Drug-drug interactions with current meds
+    const currentMeds = chart.currentMeds || [];
+    const interactMap = RX_INTERACTIONS[drugLower] || {};
+    // Also check if user drug is target of interaction lookups from currentMeds
+    currentMeds.forEach(cm => {
+      const cmLower = cm.toLowerCase();
+      const cmKey = cmLower.split(' ')[0];
+      // Check user drug interacts with current med
+      for(const [otherDrug,info] of Object.entries(interactMap)){
+        if(cmLower.includes(otherDrug) || cmKey === otherDrug){
+          alerts.push({sev:info.sev,msg:`⚠️ <strong>DRUG INTERACTION:</strong> ${ud.drug} + ${cm}: ${info.msg}`});
+        }
+      }
+      // Reverse lookup
+      const cmInteractMap = RX_INTERACTIONS[cmKey] || {};
+      for(const [otherDrug,info] of Object.entries(cmInteractMap)){
+        if(drugLower.includes(otherDrug) || drugLower.split(' ')[0] === otherDrug){
+          alerts.push({sev:info.sev,msg:`⚠️ <strong>DRUG INTERACTION:</strong> ${cm} + ${ud.drug}: ${info.msg}`});
+        }
+      }
+    });
+
+    // 3. Renal caution check
+    const egfr = chart.labs?.egfr;
+    if(typeof egfr === 'number'){
+      for(const [drugKey, cautions] of Object.entries(RX_CAUTIONS.renal)){
+        if(drugLower.includes(drugKey) && egfr < cautions.threshold){
+          alerts.push({sev:'MAJOR',msg:`🔬 <strong>RENAL CAUTION:</strong> eGFR ${egfr} - ${cautions.msg}`});
+        }
+      }
+    }
+
+    // 4. Pregnancy warnings
+    if(chart.pregnancy){
+      for(const [drugKey, warning] of Object.entries(RX_CAUTIONS.pregnancy)){
+        if(drugLower.includes(drugKey)){
+          alerts.push({sev:'CONTRAINDICATED',msg:`🤰 <strong>PREGNANCY:</strong> ${warning.msg}`});
+        }
+      }
+    }
+  });
+
+  return alerts;
+}
+
+/* Override existing renderWritingMode to use enhanced patient card + auto-check */
+window.__originalRenderWritingMode = window.renderWritingMode;
+window.renderWritingMode = function(c, arena){
+  arena.innerHTML = `
+    <button class="rx-close-btn" onclick="closeRxCase()">✕ Close</button>
+    <h3 style="color:#065f46;margin:0 0 12px;">✍️ ${c.title}</h3>
+    ${renderEnhancedPatientCard(c)}
+    <div class="rx-scenario">
+      <strong>📋 Clinical Scenario:</strong> ${c.scenario}
+    </div>
+    <div class="rx-pad">
+      <div class="rx-pad-header">
+        <h4>Dr. Lokendra Sharma, MD (Pharmacology)</h4>
+        <div class="doc-details">MCI Reg. No. XXXXX · PharmaCraft Clinic · Ph: XXXXXXXXXX</div>
+      </div>
+      <div class="rx-pad-fields">
+        <div><label>Patient Name:</label><input value="${c.patient.name}" id="rx-w-name"></div>
+        <div><label>Age / Sex / Wt:</label><input value="${c.patient.age}yr/${c.patient.sex}/${c.patient.wt}kg" id="rx-w-agesex"></div>
+        <div><label>Date:</label><input type="date" value="${new Date().toISOString().slice(0,10)}" id="rx-w-date"></div>
+        <div><label>Diagnosis:</label><input placeholder="Enter diagnosis" id="rx-w-dx"></div>
+      </div>
+      <span class="rx-symbol">℞</span>
+      <div id="rx-drug-rows">
+        ${[0,1,2].map(i=>renderDrugRow(i)).join('')}
+      </div>
+      <button class="rx-add-drug" onclick="addDrugRow()">+ Add Drug</button>
+      <div class="rx-signature">Signature: _________________________<br>Dr. Lokendra Sharma (Reg. No. XXXXX)</div>
+    </div>
+    <button class="rx-submit-btn" onclick="submitRx()">🎯 Submit &amp; Get Score</button>
+    <div id="rx-feedback"></div>
+  `;
+};
+
+/* Override submitRx to include safety alerts */
+window.__originalSubmitRx = window.submitRx;
+window.submitRx = function(){
+  const c = window.RX_CURRENT_CASE;
+  if(!c) return;
+  const user = collectRxData();
+  const correct = c.correctRx;
+
+  let score = 0;
+  const feedback = [];
+
+  // Diagnosis check
+  const dxMatch = user.dx.toLowerCase().includes(correct.diagnosis.toLowerCase().split(' ')[0].toLowerCase());
+  if(dxMatch) { score += 10; feedback.push({ok:true, msg:'Diagnosis correct (+10)'}); }
+  else feedback.push({ok:false, msg:`Diagnosis missing/incorrect. Expected: <em>${correct.diagnosis}</em>`});
+
+  // Drug matching
+  const drugsPts = 80 / correct.drugs.length;
+  correct.drugs.forEach(cd => {
+    const userDrug = user.drugs.find(ud => ud.drug && ud.drug.toLowerCase().includes(cd.drug.toLowerCase().split(' ')[0].toLowerCase()));
+    if(userDrug){
+      let sub = drugsPts * 0.5;
+      const okFreq = userDrug.freq && cd.freq.toLowerCase().includes(userDrug.freq.toLowerCase());
+      const okRoute = userDrug.route && cd.route.toLowerCase().includes(userDrug.route.toLowerCase());
+      if(okFreq) sub += drugsPts * 0.25;
+      if(okRoute) sub += drugsPts * 0.25;
+      score += sub;
+      feedback.push({ok:true, msg:`${cd.drug} ✅ ${okFreq?'':' (freq mismatch: expected '+cd.freq+')'}${okRoute?'':' (route mismatch: expected '+cd.route+')'} (+${Math.round(sub)})`});
+    } else {
+      feedback.push({ok:false, msg:`Missing: <strong>${cd.drug} ${cd.strength}, ${cd.freq}, ${cd.route}, ${cd.duration}</strong>`});
+    }
+  });
+
+  // Auto-check safety (10 pts bonus if no critical errors)
+  const safetyAlerts = checkPrescriptionSafety(user.drugs, c.id);
+  const contraindicated = safetyAlerts.filter(a => a.sev === 'CONTRAINDICATED');
+  if(contraindicated.length === 0 && user.drugs.length > 0){
+    score += 10;
+    feedback.push({ok:true, msg:'Safety check passed - no contraindications (+10)'});
+  } else if(contraindicated.length > 0){
+    feedback.push({ok:false, msg:'CRITICAL SAFETY VIOLATIONS detected below'});
+  }
+
+  score = Math.min(100, Math.round(score));
+  const stats = getRxStats();
+  if(!stats.solved[c.id] || stats.solved[c.id].score < score){
+    const prevScore = stats.solved[c.id]?.score || 0;
+    stats.totalScore = stats.totalScore - prevScore + score;
+    stats.solved[c.id] = {score, at:Date.now()};
+    saveRxStats(stats);
+  }
+
+  const modelRx = correct.drugs.map((d,i) => `${i+1}. ${d.drug} ${d.strength} ${d.form}\n   ${d.dose}, ${d.freq}, ${d.route} × ${d.duration}`).join('\n\n');
+  const feedbackClass = score >= 80 ? 'correct' : score >= 50 ? 'partial' : 'wrong';
+  const emoji = score >= 80 ? '🎉' : score >= 50 ? '📝' : '❌';
+
+  const alertsHTML = safetyAlerts.length ? `
+    <div style="margin-top:12px;padding:12px;background:${contraindicated.length>0?'#fee2e2':'#fef3c7'};border-left:4px solid ${contraindicated.length>0?'#dc2626':'#f59e0b'};border-radius:8px;">
+      <strong style="color:${contraindicated.length>0?'#7f1d1d':'#78350f'};">🛡️ Auto Safety Check (${safetyAlerts.length} alert${safetyAlerts.length>1?'s':''})</strong>
+      ${safetyAlerts.map(a => `<div style="padding:6px 0;font-size:.9em;color:${a.sev==='CONTRAINDICATED'?'#7f1d1d':'#78350f'};">${a.msg}</div>`).join('')}
+    </div>` : `<div style="margin-top:12px;padding:12px;background:#d1fae5;border-left:4px solid #10b981;border-radius:8px;color:#064e3b;"><strong>🛡️ Auto Safety Check:</strong> All prescribed drugs are safe for this patient ✅</div>`;
+
+  document.getElementById('rx-feedback').innerHTML = `
+    <div class="rx-feedback ${feedbackClass}">
+      <h4>${emoji} Score: ${score}/100</h4>
+      <div style="margin-top:8px;">
+        ${feedback.map(f => `<div style="padding:6px 0;">${f.ok?'✅':'❌'} ${f.msg}</div>`).join('')}
+      </div>
+      ${alertsHTML}
+      <div style="margin-top:12px;padding:10px;background:rgba(255,255,255,.5);border-radius:8px;">
+        <strong>🎯 Key Teaching Points:</strong>
+        <ul style="margin:6px 0 0 20px;padding:0;">
+          ${c.keyPoints.map(p => `<li style="margin:3px 0;font-size:.9em;">${p}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="rx-model-answer"><strong>📋 Model Prescription:</strong>
+Diagnosis: ${correct.diagnosis}
+
+℞
+${modelRx}
+      </div>
+    </div>
+  `;
+  renderRxStats();
+  renderRxCaseLibrary();
+};
 </script>
 </body>
 </html>
