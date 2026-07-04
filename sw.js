@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v57-fix-card-overlap-20260704';
+const CACHE_VERSION = 'pharmacraft-v58-collapsible-pyq-rx-20260704';
 const CORE_ASSETS = [
   '/',
   '/index.html',

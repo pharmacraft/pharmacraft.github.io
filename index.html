@@ -1507,7 +1507,11 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
       <button class="pyq-reset" onclick="resetPYQFilters()">🔄 Reset</button>
     </div>
 
-    <div id="pyq-list-container"></div>
+    <div class="pyq-collapse-toggle" onclick="togglePYQList(this)" style="cursor:pointer;background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;padding:14px 22px;border-radius:12px;text-align:center;font-weight:800;font-size:1.02em;margin-bottom:14px;box-shadow:0 4px 14px rgba(124,58,237,.25);display:flex;align-items:center;justify-content:center;gap:10px;">
+      <span>📋 Click to View PYQ Questions</span>
+      <span class="pyq-collapse-arrow" style="transition:transform .3s;font-size:1.2em;">▼</span>
+    </div>
+    <div id="pyq-list-container" style="display:none;"></div>
   </div>
 </section>
 
@@ -1581,8 +1585,13 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
       <button class="rx-diff-chip" data-diff="clinical" onclick="filterRxDiff(this,'clinical')">Clinical (Advanced)</button>
     </div>
 
+    <!-- Case Library Toggle -->
+    <div class="rx-collapse-toggle" onclick="toggleRxCases(this)" style="cursor:pointer;background:linear-gradient(135deg,#059669,#10b981);color:#fff;padding:14px 22px;border-radius:12px;text-align:center;font-weight:800;font-size:1.02em;margin-bottom:14px;box-shadow:0 4px 14px rgba(5,150,105,.25);display:flex;align-items:center;justify-content:center;gap:10px;">
+      <span>🩺 Click to View 25 Clinical Cases</span>
+      <span class="rx-collapse-arrow" style="transition:transform .3s;font-size:1.2em;">▼</span>
+    </div>
     <!-- Case Library -->
-    <div class="rx-case-library" id="rx-case-library"></div>
+    <div class="rx-case-library" id="rx-case-library" style="display:none;"></div>
 
     <!-- Active Case Arena -->
     <div class="rx-arena" id="rx-arena" style="display:none;"></div>
@@ -25233,5 +25242,45 @@ ${modelRx}
   renderRxCaseLibrary();
 };
 </script>
+
+<script>
+function togglePYQList(btn){
+  const list = document.getElementById('pyq-list-container');
+  const arrow = btn.querySelector('.pyq-collapse-arrow');
+  const label = btn.querySelector('span:first-child');
+  const isHidden = list.style.display === 'none';
+  if(isHidden){
+    list.style.display = '';
+    arrow.style.transform = 'rotate(180deg)';
+    label.textContent = '📋 Hide PYQ Questions';
+    // Render if not already rendered
+    if(list.children.length === 0 && typeof renderPYQs === 'function') renderPYQs();
+  } else {
+    list.style.display = 'none';
+    arrow.style.transform = 'rotate(0deg)';
+    const count = document.getElementById('pyq-filtered-count')?.textContent || '';
+    label.textContent = '📋 Click to View ' + (count?count+' ':'')+'PYQ Questions';
+  }
+}
+
+function toggleRxCases(btn){
+  const lib = document.getElementById('rx-case-library');
+  const arrow = btn.querySelector('.rx-collapse-arrow');
+  const label = btn.querySelector('span:first-child');
+  const isHidden = lib.style.display === 'none';
+  if(isHidden){
+    lib.style.display = '';
+    arrow.style.transform = 'rotate(180deg)';
+    label.textContent = '🩺 Hide Clinical Cases';
+    // Render if not already rendered
+    if(lib.children.length === 0 && typeof renderRxCaseLibrary === 'function') renderRxCaseLibrary();
+  } else {
+    lib.style.display = 'none';
+    arrow.style.transform = 'rotate(0deg)';
+    label.textContent = '🩺 Click to View 25 Clinical Cases';
+  }
+}
+</script>
+
 </body>
 </html>
