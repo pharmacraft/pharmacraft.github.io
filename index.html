@@ -22098,6 +22098,7 @@ function renderBookmarksPanel(){
   const sec = document.getElementById('bookmarks-section');
   const grid = document.getElementById('bookmark-grid');
   const cnt = document.getElementById('bm-count');
+  if(!sec || !grid || !cnt) return; // Elements missing - skip render
   cnt.textContent = keys.length;
   if(!keys.length){sec.style.display='none';return;}
   sec.style.display='block';
@@ -23207,14 +23208,16 @@ document.addEventListener('DOMContentLoaded',()=>{
   const savedTheme=localStorage.getItem('pharma-theme')||'standard';
   applyTheme(savedTheme);
 
-  renderTopicAccordions();
-  renderPYQ('all');
-  renderFMGE();
-  renderPracticeLauncher();
-  buildSearchIndex();
-  renderDailyMCQ();
-  renderBookmarksPanel();
-  if(typeof renderAdaptiveDashboard==='function') renderAdaptiveDashboard();
+  // Wrap each init step so one broken function does NOT break the whole chain
+  const safeCall = (name, fn) => { try { fn(); } catch(e) { console.warn('[init]', name, 'failed:', e.message); } };
+  safeCall('renderTopicAccordions', renderTopicAccordions);
+  safeCall('renderPYQ', () => renderPYQ('all'));
+  safeCall('renderFMGE', renderFMGE);
+  safeCall('renderPracticeLauncher', renderPracticeLauncher);
+  safeCall('buildSearchIndex', buildSearchIndex);
+  safeCall('renderDailyMCQ', renderDailyMCQ);
+  safeCall('renderBookmarksPanel', renderBookmarksPanel);
+  if(typeof renderAdaptiveDashboard==='function') safeCall('renderAdaptiveDashboard', renderAdaptiveDashboard);
 
   // ═════════ IndexNow Ping (throttled to once per 24h) ═════════
   // Notifies Bing, Yandex, Seznam, Naver instantly when content changes
