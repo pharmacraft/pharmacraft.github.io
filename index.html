@@ -1234,6 +1234,84 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   .pyq-stats{grid-template-columns:repeat(2,1fr)}
   .pyq-chip{font-size:.82em;padding:6px 12px}
 }
+
+/* Prescription Simulator styles */
+#rx-sim .rx-wrapper{max-width:1100px;margin:0 auto;padding:24px}
+.rx-hero{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1px solid #6ee7b7;border-radius:16px;padding:24px;margin-bottom:20px}
+.rx-hero h3{margin:0 0 8px;color:#065f46;font-size:1.35em}
+.rx-hero p{margin:0;color:#047857;font-size:.95em;line-height:1.6}
+.rx-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.rx-stat-item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.rx-stat-item strong{display:block;font-size:1.6em;color:#059669;font-weight:800}
+.rx-stat-item span{display:block;color:#6b7280;font-size:.82em;margin-top:2px}
+.rx-mode-toggle{display:flex;gap:8px;background:#f3f4f6;border-radius:10px;padding:4px;margin-bottom:20px}
+.rx-mode-btn{flex:1;padding:10px;border:none;background:transparent;border-radius:8px;cursor:pointer;font-size:.95em;font-weight:700;color:#6b7280;transition:all .2s}
+.rx-mode-btn.active{background:linear-gradient(135deg,#059669,#10b981);color:#fff;box-shadow:0 2px 8px rgba(5,150,105,.3)}
+.rx-case-library{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.rx-case-card{background:#fff;border:1px solid #e5e7eb;border-left:5px solid #059669;border-radius:12px;padding:16px;cursor:pointer;transition:all .2s}
+.rx-case-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(5,150,105,.12);border-left-color:#047857}
+.rx-case-card.solved{border-left-color:#f59e0b;background:linear-gradient(135deg,#fff,#fffbeb)}
+.rx-case-diff{display:inline-block;padding:3px 10px;border-radius:12px;font-size:.7em;font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.rx-case-diff.mbbs{background:#dbeafe;color:#1e40af}
+.rx-case-diff.neetpg{background:#fce7f3;color:#9d174d}
+.rx-case-diff.clinical{background:#fef3c7;color:#92400e}
+.rx-case-title{font-size:1.05em;font-weight:700;color:#111827;margin:0 0 6px}
+.rx-case-brief{color:#6b7280;font-size:.9em;line-height:1.5}
+.rx-case-solved-badge{color:#f59e0b;font-size:.75em;font-weight:700;margin-top:6px}
+
+/* Arena */
+.rx-arena{background:#fff;border:2px solid #6ee7b7;border-radius:14px;padding:24px;margin-top:20px}
+.rx-close-btn{float:right;background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:.85em;font-weight:600}
+.rx-close-btn:hover{background:#fecaca}
+.rx-patient-card{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #93c5fd;border-radius:12px;padding:16px;margin-bottom:18px;color:#1e3a8a}
+.rx-patient-card h4{margin:0 0 6px;color:#1e40af;font-size:1.1em}
+.rx-patient-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;font-size:.9em;margin-top:8px}
+.rx-patient-info span{background:rgba(255,255,255,.6);padding:6px 10px;border-radius:6px}
+.rx-scenario{background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 16px;border-radius:8px;margin-bottom:16px;color:#78350f;font-size:.95em;line-height:1.6}
+
+/* Rx Pad */
+.rx-pad{background:linear-gradient(180deg,#fefce8,#fef9c3);border:2px solid #eab308;border-radius:12px;padding:24px;font-family:'Courier New',monospace;position:relative;box-shadow:0 4px 20px rgba(234,179,8,.1);margin-bottom:16px}
+.rx-pad-header{border-bottom:2px solid #ca8a04;padding-bottom:12px;margin-bottom:16px}
+.rx-pad-header h4{margin:0;color:#713f12;font-size:1.15em;font-weight:800}
+.rx-pad-header .doc-details{font-size:.8em;color:#78350f;margin-top:2px}
+.rx-pad-fields{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;font-size:.88em;color:#78350f}
+.rx-pad-fields label{display:block;font-weight:700;margin-bottom:2px}
+.rx-pad-fields input,.rx-pad-fields select{width:100%;padding:6px 8px;border:1px solid #eab308;border-radius:6px;background:#fefce8;font-family:'Courier New',monospace;font-size:.95em;color:#78350f}
+.rx-symbol{font-size:2em;font-weight:800;color:#713f12;display:block;margin:10px 0 8px}
+.rx-drug-row{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr auto;gap:6px;margin-bottom:10px;align-items:center}
+.rx-drug-row input,.rx-drug-row select{padding:6px 8px;border:1px solid #d97706;border-radius:6px;background:#fff;font-family:inherit;font-size:.88em}
+.rx-drug-remove{background:#fecaca;color:#991b1b;border:none;border-radius:4px;padding:5px 8px;cursor:pointer;font-weight:700}
+.rx-add-drug{background:linear-gradient(135deg,#059669,#10b981);color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:700;font-size:.85em;margin-top:6px}
+.rx-signature{border-top:1px dashed #ca8a04;padding-top:10px;margin-top:12px;font-style:italic;font-size:.85em;color:#713f12}
+
+.rx-submit-btn{background:linear-gradient(135deg,#059669,#10b981);color:#fff;border:none;padding:12px 28px;border-radius:10px;cursor:pointer;font-weight:800;font-size:1em;margin-top:8px;box-shadow:0 4px 12px rgba(5,150,105,.3)}
+.rx-submit-btn:hover{background:linear-gradient(135deg,#047857,#059669)}
+
+/* Feedback */
+.rx-feedback{margin-top:20px;padding:18px;border-radius:12px}
+.rx-feedback.correct{background:linear-gradient(135deg,#d1fae5,#a7f3d0);border:2px solid #10b981;color:#064e3b}
+.rx-feedback.partial{background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #f59e0b;color:#78350f}
+.rx-feedback.wrong{background:linear-gradient(135deg,#fee2e2,#fecaca);border:2px solid #ef4444;color:#7f1d1d}
+.rx-feedback h4{margin:0 0 8px;font-size:1.1em}
+.rx-model-answer{background:rgba(255,255,255,.7);padding:12px;border-radius:8px;margin-top:12px;font-family:'Courier New',monospace;font-size:.9em;line-height:1.6;white-space:pre-line}
+.rx-errors-list{list-style:none;padding:0;margin:10px 0}
+.rx-errors-list li{padding:8px 12px;background:rgba(239,68,68,.1);border-left:3px solid #ef4444;border-radius:6px;margin-bottom:6px;font-size:.9em}
+.rx-errors-list li.detected{background:rgba(16,185,129,.1);border-left-color:#10b981}
+.rx-errors-list li.detected::before{content:'✅ ';font-weight:700}
+.rx-errors-list li:not(.detected)::before{content:'❌ Missed: ';font-weight:700}
+
+/* Checking mode - clickable errors */
+.rx-check-pad{background:linear-gradient(180deg,#fefce8,#fef9c3);border:2px solid #eab308;border-radius:12px;padding:24px;font-family:'Courier New',monospace;position:relative;line-height:1.9;font-size:.95em;color:#713f12}
+.rx-check-line{padding:2px 4px;cursor:pointer;border-radius:4px;transition:all .15s}
+.rx-check-line:hover{background:rgba(239,68,68,.15)}
+.rx-check-line.error-found{background:rgba(16,185,129,.25);text-decoration:line-through;text-decoration-color:#10b981}
+.rx-check-line.error-marked{background:rgba(239,68,68,.35);border:1px dashed #ef4444}
+
+@media(max-width:768px){
+  .rx-stats{grid-template-columns:1fr 1fr}
+  .rx-pad-fields{grid-template-columns:1fr}
+  .rx-drug-row{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -1248,6 +1326,7 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <a href="#practice">Practice Sets</a>
   <a href="#adaptive" style="background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;border-color:#7c3aed;">🧠 Adaptive</a>
   <a href="#dic" style="background:linear-gradient(135deg,#0891b2,#0f766e);color:white;border-color:#0891b2;">🔍 Interactions</a>
+  <a href="#rx-sim" style="background:linear-gradient(135deg,#059669,#10b981);color:white;border-color:#059669;">📝 Rx Sim</a>
   <a href="#about">About</a>
   <button class="search-trigger" onclick="openSearch()" style="margin-left:auto;">🔍 Search <kbd>/</kbd></button>
   <button class="theme-toggle" id="theme-toggle" onclick="togglePharmaTheme()" title="Toggle Cream / Standard theme" aria-label="Toggle theme">
@@ -1342,7 +1421,8 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <div class="topic-card" onclick="openTopic('cancer')"><div class="topic-num">TOPIC 13</div><div class="topic-icon">🧫</div><div class="topic-title">Anticancer Drugs</div><div class="topic-desc">Cytotoxics, targeted therapy, immunotherapy</div><div class="topic-meta"><span class="topic-pill">Targeted</span></div></div>
     <div class="topic-card" onclick="openTopic('misc')"><div class="topic-num">TOPIC 14</div><div class="topic-icon">🔬</div><div class="topic-title">Miscellaneous Drugs</div><div class="topic-desc">Immunosuppressants, vitamins, chelators, vaccines</div><div class="topic-meta"><span class="topic-pill">Vitamins</span></div></div>
   
-    <div class="topic-card" onclick="document.getElementById('pyq').scrollIntoView({behavior:'smooth'})" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:2px solid #a78bfa;"><div class="topic-num" style="color:#7c3aed;">📚 PYQ VAULT</div><div class="topic-icon">🎯</div><div class="topic-title" style="color:#4c1d95;">Previous Year Questions</div><div class="topic-desc">Real NEET PG, INI-CET, FMGE, AIIMS, UPSC-CMS PYQs. Filter by exam, year, topic.</div><div class="topic-meta"><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">300+ PYQs</span><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">5 Exams</span><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">5 Years</span></div></div>
+    <div class="topic-card" onclick="document.getElementById('pyq').scrollIntoView({behavior:'smooth'})" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:2px solid #a78bfa;"><div class="topic-num" style="color:#7c3aed;">📚 PYQ VAULT</div><div class="topic-icon">🎯</div><div class="topic-title" style="color:#4c1d95;">Previous Year Questions</div><div class="topic-desc">Real NEET PG, INI-CET, FMGE, AIIMS, UPSC-CMS PYQs. Filter by exam, year, topic.</div><div class="topic-meta"><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">300+ PYQs</span><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">5 Exams</span><span class="topic-pill" style="background:rgba(124,58,237,.15);color:#6d28d9;">5 Years</span></div>
+    <div class="topic-card" onclick="document.getElementById('rx-sim').scrollIntoView({behavior:'smooth'})" style="background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:2px solid #10b981;"><div class="topic-num" style="color:#047857;">📝 RX SIMULATOR</div><div class="topic-icon">🩺</div><div class="topic-title" style="color:#065f46;">Prescription Writing</div><div class="topic-desc">NMC-format prescription practice. 10 real clinical cases. Writing + Checking modes with instant feedback.</div><div class="topic-meta"><span class="topic-pill" style="background:rgba(16,185,129,.15);color:#047857;">10 Cases</span><span class="topic-pill" style="background:rgba(16,185,129,.15);color:#047857;">NMC Format</span><span class="topic-pill" style="background:rgba(16,185,129,.15);color:#047857;">Scored</span></div></div></div>
   </div>
 </section>
 
@@ -1452,6 +1532,45 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <div id="adaptive-dashboard"></div>
   <div id="adaptive-arena" style="display:none;margin-top:18px;"></div>
 </section>
+
+<!-- ── PRESCRIPTION SIMULATOR ──────────────────────── -->
+<section class="section" id="rx-sim">
+  <div class="section-head">
+    <div class="section-tag" style="background:linear-gradient(135deg,#059669,#10b981);color:white;">📝 Clinical Skill</div>
+    <h2>Prescription Simulator</h2>
+    <p>Practice NMC-format Rx writing + spot errors in real-world prescriptions. Includes NEET PG / MBBS clinical scenarios with instant feedback.</p>
+  </div>
+
+  <div class="rx-wrapper">
+
+    <!-- Hero -->
+    <div class="rx-hero">
+      <h3>🩺 Master Rational Prescribing</h3>
+      <p>Aligned with NMC CBME PH 5.1-5.7 competencies. Two modes: <strong>Writing</strong> (build Rx from case) and <strong>Checking</strong> (find errors in flawed Rx). Case-based, scored, immediate feedback.</p>
+    </div>
+
+    <!-- Stats + Mode -->
+    <div class="rx-stats">
+      <div class="rx-stat-item"><strong id="rx-cases-solved">0</strong><span>Cases Solved</span></div>
+      <div class="rx-stat-item"><strong id="rx-score-total">0</strong><span>Total Score</span></div>
+      <div class="rx-stat-item"><strong id="rx-badge">Beginner</strong><span>Current Badge</span></div>
+    </div>
+
+    <!-- Mode toggle -->
+    <div class="rx-mode-toggle">
+      <button class="rx-mode-btn active" id="rx-mode-writing" onclick="switchRxMode('writing')">✍️ Writing Mode</button>
+      <button class="rx-mode-btn" id="rx-mode-checking" onclick="switchRxMode('checking')">🔍 Checking Mode</button>
+    </div>
+
+    <!-- Case Library -->
+    <div class="rx-case-library" id="rx-case-library"></div>
+
+    <!-- Active Case Arena -->
+    <div class="rx-arena" id="rx-arena" style="display:none;"></div>
+
+  </div>
+</section>
+
 
 <!-- ── DRUG INTERACTION CHECKER ──────────────────── -->
 <section class="section" id="dic">
@@ -24230,6 +24349,408 @@ function resetPYQFilters(){
 // Auto-init when page loads
 document.addEventListener('DOMContentLoaded', () => setTimeout(() => { if(typeof PYQS !== 'undefined') renderPYQs(); }, 300));
 if(document.readyState === 'complete') setTimeout(() => { if(typeof PYQS !== 'undefined') renderPYQs(); }, 100);
+</script>
+
+<script>
+/* ═══════════ PRESCRIPTION SIMULATOR ═══════════ */
+window.RX_MODE = 'writing';
+window.RX_CURRENT_CASE = null;
+
+// 10 clinical cases with correct Rx + common errors
+window.RX_CASES = [
+  {id:'c1',diff:'mbbs',title:'Community-Acquired Pneumonia',brief:'35 yr M, fever + productive cough + right lower zone crackles',
+    patient:{name:'Rajesh Kumar',age:35,sex:'M',wt:70,allergies:'None',comorbid:'None'},
+    scenario:'Presenting complaint: fever 39°C × 3 days, productive cough with yellowish sputum, right-sided pleuritic chest pain. Vitals stable, SpO2 96%. CXR: right lower lobe consolidation. Diagnosis: Community-Acquired Pneumonia (mild, CURB-65 = 0).',
+    correctRx:{diagnosis:'Community-Acquired Pneumonia (mild)',drugs:[{drug:'Amoxicillin',strength:'500 mg',form:'Capsule',dose:'1 cap',freq:'TDS',route:'PO',duration:'5 days'},{drug:'Paracetamol',strength:'500 mg',form:'Tablet',dose:'1 tab',freq:'QID',route:'PO',duration:'SOS'}]},
+    keyPoints:['Amoxicillin 500 mg TDS × 5 days (1st line CAP outpatient per IDSA 2019)','Add macrolide (azithromycin) OR fluoroquinolone if atypical suspected','Paracetamol for fever + pain','Duration: 5 days sufficient in uncomplicated']},
+
+  {id:'c2',diff:'mbbs',title:'Uncomplicated Cystitis (Female)',brief:'28 yr F, dysuria + frequency × 2 days, no fever',
+    patient:{name:'Priya Sharma',age:28,sex:'F',wt:58,allergies:'None',comorbid:'None, not pregnant'},
+    scenario:'Presenting complaint: burning micturition + urinary frequency × 2 days. No fever, no flank pain, no vaginal discharge. Urine dipstick: LE+, nitrites+. Diagnosis: Uncomplicated cystitis.',
+    correctRx:{diagnosis:'Uncomplicated Cystitis',drugs:[{drug:'Nitrofurantoin',strength:'100 mg',form:'Capsule',dose:'1 cap',freq:'BD',route:'PO',duration:'5 days'},{drug:'Phenazopyridine',strength:'100 mg',form:'Tablet',dose:'1 tab',freq:'TDS',route:'PO',duration:'2 days'}]},
+    keyPoints:['Nitrofurantoin 100 mg BD × 5 days (1st line IDSA 2010)','Take with food (better absorption + less GI upset)','Phenazopyridine for symptomatic dysuria relief (max 2 days)','Avoid fluoroquinolones (collateral damage) as 1st line','Advise increased fluid intake']},
+
+  {id:'c3',diff:'mbbs',title:'Type 2 Diabetes (New)',brief:'52 yr M, HbA1c 8.2%, BMI 29, no comorbidities',
+    patient:{name:'Ramesh Patel',age:52,sex:'M',wt:82,allergies:'None',comorbid:'None'},
+    scenario:'New diagnosis: Type 2 DM. HbA1c 8.2%, FBS 168, PPBS 245. Body weight 82 kg, BMI 29. Renal + hepatic function normal. Diagnosis: Type 2 DM (newly diagnosed).',
+    correctRx:{diagnosis:'Type 2 Diabetes Mellitus (newly diagnosed)',drugs:[{drug:'Metformin',strength:'500 mg',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'Continue'},{drug:'Atorvastatin',strength:'10 mg',form:'Tablet',dose:'1 tab',freq:'HS',route:'PO',duration:'Continue'}]},
+    keyPoints:['Metformin 500 mg BD (start low, titrate) - 1st line ADA 2024','Take with meals to reduce GI side effects','Statin for cardiovascular protection (ADA recommends in DM >40 yr)','Lifestyle counseling essential: diet + exercise + smoking cessation','HbA1c target <7% (individualize)']},
+
+  {id:'c4',diff:'mbbs',title:'Stage 1 Hypertension',brief:'45 yr M, BP 156/98, no comorbidities, no target organ damage',
+    patient:{name:'Vikram Singh',age:45,sex:'M',wt:75,allergies:'None',comorbid:'None'},
+    scenario:'BP 156/98 mmHg on 3 separate visits. No proteinuria, normal ECG, normal fundus. Diagnosis: Stage 1 essential hypertension. No compelling indications.',
+    correctRx:{diagnosis:'Stage 1 Essential Hypertension',drugs:[{drug:'Amlodipine',strength:'5 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'Continue'}]},
+    keyPoints:['Amlodipine 5 mg OD (CCB - Indian HTN 2019 1st line)','Alternatives: ACE-I (enalapril), ARB (telmisartan), or thiazide','Titrate to BP target <140/90','Lifestyle: DASH diet, salt <5g/day, exercise 150 min/wk, weight loss','Reassess in 4-6 wks; add 2nd drug if not controlled']},
+
+  {id:'c5',diff:'mbbs',title:'Peptic Ulcer Disease (H. pylori positive)',brief:'40 yr M, epigastric pain, endoscopy: duodenal ulcer, H. pylori+',
+    patient:{name:'Anil Verma',age:40,sex:'M',wt:70,allergies:'None',comorbid:'None'},
+    scenario:'Chronic epigastric burning pain relieved by food. Upper GI endoscopy: 8 mm duodenal ulcer. Rapid urease test + for H. pylori. Diagnosis: H. pylori-associated duodenal ulcer.',
+    correctRx:{diagnosis:'H. pylori-associated Duodenal Ulcer',drugs:[{drug:'Omeprazole',strength:'20 mg',form:'Capsule',dose:'1 cap',freq:'BD',route:'PO',duration:'14 days'},{drug:'Amoxicillin',strength:'1000 mg',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'14 days'},{drug:'Clarithromycin',strength:'500 mg',form:'Tablet',dose:'1 tab',freq:'BD',route:'PO',duration:'14 days'}]},
+    keyPoints:['Triple therapy: PPI + Amoxicillin + Clarithromycin × 14 days (Maastricht V)','Omeprazole BD before meals (30 min pre-breakfast + dinner)','Continue PPI 4-8 wks after triple therapy for ulcer healing','Test for H. pylori eradication 4 wks after treatment (urea breath test)','If clarithromycin resistance >15% in area: use bismuth quadruple']},
+
+  {id:'c6',diff:'mbbs',title:'Acute Asthma Exacerbation (Moderate)',brief:'25 yr F, sudden wheezing + dyspnea, SpO2 92%, PEFR 60%',
+    patient:{name:'Neha Gupta',age:25,sex:'F',wt:55,allergies:'None',comorbid:'Known asthma'},
+    scenario:'Sudden wheezing + dyspnea 3 hours ago, unable to complete sentences. HR 108, RR 26, SpO2 92% RA, PEFR 60% predicted. Diagnosis: Moderate acute asthma exacerbation.',
+    correctRx:{diagnosis:'Moderate Acute Asthma Exacerbation',drugs:[{drug:'Salbutamol',strength:'2.5 mg',form:'Nebulizer solution',dose:'2.5 mg',freq:'q20min × 3',route:'Nebulized',duration:'1 hour'},{drug:'Ipratropium bromide',strength:'0.5 mg',form:'Nebulizer solution',dose:'0.5 mg',freq:'q20min × 3',route:'Nebulized',duration:'1 hour'},{drug:'Prednisolone',strength:'40 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'5 days'}]},
+    keyPoints:['Salbutamol nebulization 2.5 mg q20 min × 3 doses (SABA 1st line GINA 2024)','Add ipratropium in moderate-severe exacerbation','Oral prednisolone 40 mg × 5 days (systemic steroid - critical to reduce relapse)','O2 to target SpO2 93-95%','Discharge with ICS + reliever (SMART regimen: budesonide-formoterol)']},
+
+  {id:'c7',diff:'neetpg',title:'Migraine with Aura (Acute)',brief:'26 yr F, throbbing right-sided headache + visual aura, no vomiting',
+    patient:{name:'Pooja Reddy',age:26,sex:'F',wt:58,allergies:'None',comorbid:'History of migraine, not pregnant'},
+    scenario:'Right-sided throbbing headache × 4 hours, preceded by shimmering visual aura × 20 min. Photophobia + phonophobia. No fever/neck stiffness/focal deficit. Diagnosis: Acute migraine attack (with aura).',
+    correctRx:{diagnosis:'Acute Migraine with Aura',drugs:[{drug:'Sumatriptan',strength:'50 mg',form:'Tablet',dose:'1 tab',freq:'SOS',route:'PO',duration:'PRN, max 2 doses/24 hr'},{drug:'Metoclopramide',strength:'10 mg',form:'Tablet',dose:'1 tab',freq:'SOS',route:'PO',duration:'PRN'},{drug:'Paracetamol',strength:'1000 mg',form:'Tablet',dose:'2 tab',freq:'SOS',route:'PO',duration:'PRN'}]},
+    keyPoints:['Sumatriptan 50-100 mg PO 1st line for moderate-severe migraine','Repeat after 2 hrs if partial response (max 2 doses/24 hr)','Add antiemetic (metoclopramide/domperidone)','AVOID triptans if CAD, uncontrolled HTN, hemiplegic migraine, basilar migraine','Migraine with aura increases stroke risk - avoid OCP + smoking cessation critical']},
+
+  {id:'c8',diff:'mbbs',title:'Iron Deficiency Anemia (Female)',brief:'32 yr F, Hb 8.2, MCV 68, menorrhagia, no red flags',
+    patient:{name:'Kavita Patel',age:32,sex:'F',wt:60,allergies:'None',comorbid:'Menorrhagia'},
+    scenario:'Fatigue + pallor × 3 months. Hb 8.2 g/dL, MCV 68, MCH 22, low serum ferritin (8 ng/mL), TIBC high. Peripheral smear: microcytic hypochromic RBCs. Diagnosis: Iron deficiency anemia secondary to menorrhagia.',
+    correctRx:{diagnosis:'Iron Deficiency Anemia',drugs:[{drug:'Ferrous sulfate',strength:'325 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'3 months'},{drug:'Vitamin C',strength:'500 mg',form:'Tablet',dose:'1 tab',freq:'OD',route:'PO',duration:'3 months'}]},
+    keyPoints:['Ferrous sulfate 325 mg (65 mg elemental Fe) OD or alternate day (BSHG 2020 - alternate day = better absorption)','Take on empty stomach with Vitamin C to increase absorption','Avoid antacids + calcium + tea/coffee at same time (reduce absorption)','Continue 3 months after Hb normalizes to replenish stores','Address underlying cause: refer gynecology for menorrhagia workup']},
+
+  {id:'c9',diff:'neetpg',title:'Diabetic Ketoacidosis (Adult)',brief:'22 yr M with T1DM, BS 480, ketones+++, pH 7.15, K 3.2',
+    patient:{name:'Arjun Kapoor',age:22,sex:'M',wt:65,allergies:'None',comorbid:'Type 1 DM'},
+    scenario:'Nausea + vomiting × 24 hrs, Kussmaul breathing. Blood glucose 480 mg/dL, urine ketones +++, ABG: pH 7.15 HCO3 8. Serum K 3.2, Na 130. Diagnosis: DKA.',
+    correctRx:{diagnosis:'Diabetic Ketoacidosis',drugs:[{drug:'Normal Saline (0.9% NS)',strength:'1 L',form:'IV fluid',dose:'1 L over 1 hr, then 500 ml/hr',freq:'Continuous',route:'IV',duration:'As per hydration'},{drug:'KCl',strength:'40 mEq',form:'IV injection',dose:'40 mEq/L in IV fluid',freq:'Once K<5.3',route:'IV',duration:'Until K stabilizes'},{drug:'Regular Insulin',strength:'0.1 units/kg/hr',form:'IV infusion',dose:'0.1 units/kg/hr',freq:'Continuous',route:'IV',duration:'Until gap closes'}]},
+    keyPoints:['Rehydration FIRST: NS 1L in 1 hr, then 500 ml/hr','Give K FIRST if serum K <5.3 (before insulin - K will drop with insulin)','IV Insulin 0.1 units/kg/hr AFTER K checked','Monitor: BS q1h, K + ABG q2-4h, urine ketones q6h','When BS <250: switch to D5NS to avoid hypoglycemia','Continue IV insulin until anion gap closes + patient tolerating PO']},
+
+  {id:'c10',diff:'clinical',title:'Pediatric Otitis Media',brief:'3 yr child, right ear pain + fever 39°C, red bulging TM',
+    patient:{name:'Baby Ansh',age:3,sex:'M',wt:14,allergies:'None',comorbid:'None'},
+    scenario:'3 yr M with right ear pain × 2 days, fever 39°C. Otoscopy: right TM red + bulging + reduced mobility. No other focus. Diagnosis: Acute Otitis Media (right).',
+    correctRx:{diagnosis:'Acute Otitis Media (right)',drugs:[{drug:'Amoxicillin',strength:'80-90 mg/kg/day',form:'Suspension',dose:'6.3 ml (1120 mg/day divided BD)',freq:'BD',route:'PO',duration:'10 days'},{drug:'Paracetamol',strength:'15 mg/kg',form:'Suspension',dose:'5 ml (210 mg)',freq:'q6h',route:'PO',duration:'SOS'}]},
+    keyPoints:['Amoxicillin high-dose 80-90 mg/kg/day divided BD (AAP 2013)','Weight-based dosing: 14 kg × 80 = 1120 mg/day = 560 mg BD','Duration 10 days for <2 yr; 5-7 days for older','Paracetamol 15 mg/kg PO q6h for pain + fever','If treatment failure at 48-72 hr: switch to amox-clav (β-lactamase producing organisms)']}
+];
+
+/* Get + save rx stats */
+function getRxStats(){
+  try { return JSON.parse(localStorage.getItem('rx-sim-stats')) || {solved:{},totalScore:0}; }
+  catch(e){ return {solved:{},totalScore:0}; }
+}
+function saveRxStats(s){ try{ localStorage.setItem('rx-sim-stats',JSON.stringify(s)); }catch(e){} }
+
+function getBadge(score){
+  if(score >= 500) return {name:'🏆 Master Prescriber',color:'#7c3aed'};
+  if(score >= 300) return {name:'⭐ Advanced',color:'#059669'};
+  if(score >= 150) return {name:'📈 Intermediate',color:'#0891b2'};
+  if(score >= 50) return {name:'📚 Learner',color:'#f59e0b'};
+  return {name:'🌱 Beginner',color:'#6b7280'};
+}
+
+function renderRxStats(){
+  const s = getRxStats();
+  const solvedCount = Object.keys(s.solved).length;
+  const solvedEl = document.getElementById('rx-cases-solved');
+  const scoreEl = document.getElementById('rx-score-total');
+  const badgeEl = document.getElementById('rx-badge');
+  if(solvedEl) solvedEl.textContent = solvedCount;
+  if(scoreEl) scoreEl.textContent = s.totalScore;
+  const b = getBadge(s.totalScore);
+  if(badgeEl){ badgeEl.textContent = b.name; badgeEl.style.color = b.color; }
+}
+
+function renderRxCaseLibrary(){
+  const root = document.getElementById('rx-case-library');
+  if(!root || typeof RX_CASES === 'undefined') return;
+  const s = getRxStats();
+  const html = RX_CASES.map(c => {
+    const solved = s.solved[c.id];
+    return `<div class="rx-case-card ${solved?'solved':''}" onclick="openRxCase('${c.id}')">
+      <span class="rx-case-diff ${c.diff}">${c.diff==='mbbs'?'MBBS':c.diff==='neetpg'?'NEET PG':'Clinical'}</span>
+      <div class="rx-case-title">${c.title}</div>
+      <div class="rx-case-brief">${c.brief}</div>
+      ${solved ? `<div class="rx-case-solved-badge">✅ Solved · Score: ${solved.score}/100</div>` : ''}
+    </div>`;
+  }).join('');
+  root.innerHTML = html;
+}
+
+function switchRxMode(mode){
+  window.RX_MODE = mode;
+  document.getElementById('rx-mode-writing').classList.toggle('active', mode==='writing');
+  document.getElementById('rx-mode-checking').classList.toggle('active', mode==='checking');
+  document.getElementById('rx-arena').style.display = 'none';
+  window.RX_CURRENT_CASE = null;
+}
+
+function openRxCase(caseId){
+  const c = RX_CASES.find(x=>x.id===caseId);
+  if(!c) return;
+  window.RX_CURRENT_CASE = c;
+  const arena = document.getElementById('rx-arena');
+  arena.style.display = 'block';
+
+  if(window.RX_MODE === 'writing'){
+    renderWritingMode(c, arena);
+  } else {
+    renderCheckingMode(c, arena);
+  }
+  arena.scrollIntoView({behavior:'smooth'});
+}
+
+function renderWritingMode(c, arena){
+  arena.innerHTML = `
+    <button class="rx-close-btn" onclick="closeRxCase()">✕ Close</button>
+    <h3 style="color:#065f46;margin:0 0 12px;">✍️ ${c.title}</h3>
+    <div class="rx-patient-card">
+      <h4>👤 Patient Details</h4>
+      <div class="rx-patient-info">
+        <span><strong>Name:</strong> ${c.patient.name}</span>
+        <span><strong>Age:</strong> ${c.patient.age} yr</span>
+        <span><strong>Sex:</strong> ${c.patient.sex}</span>
+        <span><strong>Weight:</strong> ${c.patient.wt} kg</span>
+        <span><strong>Allergies:</strong> ${c.patient.allergies}</span>
+        <span><strong>Comorbid:</strong> ${c.patient.comorbid}</span>
+      </div>
+    </div>
+    <div class="rx-scenario">
+      <strong>📋 Clinical Scenario:</strong> ${c.scenario}
+    </div>
+    <div class="rx-pad">
+      <div class="rx-pad-header">
+        <h4>Dr. Susheel Kumar, MD (Pharmacology)</h4>
+        <div class="doc-details">MCI Reg. No. XXXXX · PharmaCraft Clinic · Ph: XXXXXXXXXX</div>
+      </div>
+      <div class="rx-pad-fields">
+        <div><label>Patient Name:</label><input value="${c.patient.name}" id="rx-w-name"></div>
+        <div><label>Age / Sex / Wt:</label><input value="${c.patient.age}yr/${c.patient.sex}/${c.patient.wt}kg" id="rx-w-agesex"></div>
+        <div><label>Date:</label><input type="date" value="${new Date().toISOString().slice(0,10)}" id="rx-w-date"></div>
+        <div><label>Diagnosis:</label><input placeholder="Enter diagnosis" id="rx-w-dx"></div>
+      </div>
+      <span class="rx-symbol">℞</span>
+      <div id="rx-drug-rows">
+        ${[0,1,2].map(i=>renderDrugRow(i)).join('')}
+      </div>
+      <button class="rx-add-drug" onclick="addDrugRow()">+ Add Drug</button>
+      <div class="rx-signature">Signature: _________________________<br>Dr. Susheel Kumar (Reg. No. XXXXX)</div>
+    </div>
+    <button class="rx-submit-btn" onclick="submitRx()">🎯 Submit &amp; Get Score</button>
+    <div id="rx-feedback"></div>
+  `;
+}
+
+function renderDrugRow(i){
+  return `<div class="rx-drug-row">
+    <input placeholder="Drug (generic)" data-idx="${i}" data-field="drug">
+    <input placeholder="Dose (e.g. 500 mg)" data-idx="${i}" data-field="dose">
+    <select data-idx="${i}" data-field="freq"><option value="">Freq</option><option>OD</option><option>BD</option><option>TDS</option><option>QID</option><option>HS</option><option>SOS</option><option>q4h</option><option>q6h</option><option>q8h</option><option>Continuous</option></select>
+    <select data-idx="${i}" data-field="route"><option value="">Route</option><option>PO</option><option>IV</option><option>IM</option><option>SC</option><option>Topical</option><option>Nebulized</option><option>Sublingual</option></select>
+    <input placeholder="Duration" data-idx="${i}" data-field="duration" style="max-width:80px;">
+  </div>`;
+}
+
+let drugRowCount = 3;
+function addDrugRow(){
+  const container = document.getElementById('rx-drug-rows');
+  const div = document.createElement('div');
+  div.innerHTML = renderDrugRow(drugRowCount++);
+  container.appendChild(div.firstElementChild);
+}
+
+function collectRxData(){
+  const drugs = [];
+  document.querySelectorAll('#rx-drug-rows [data-idx]').forEach(el => {
+    const idx = parseInt(el.dataset.idx);
+    if(!drugs[idx]) drugs[idx] = {};
+    drugs[idx][el.dataset.field] = el.value.trim();
+  });
+  return {
+    dx: document.getElementById('rx-w-dx').value.trim(),
+    drugs: drugs.filter(d => d && d.drug)
+  };
+}
+
+function submitRx(){
+  const c = window.RX_CURRENT_CASE;
+  if(!c) return;
+  const user = collectRxData();
+  const correct = c.correctRx;
+
+  // Score calculation
+  let score = 0;
+  const feedback = [];
+
+  // Diagnosis (10 pts)
+  const dxMatch = user.dx.toLowerCase().includes(correct.diagnosis.toLowerCase().split(' ')[0].toLowerCase());
+  if(dxMatch) { score += 10; feedback.push({ok:true, msg:'Diagnosis correct (+10)'}); }
+  else feedback.push({ok:false, msg:`Diagnosis missing/incorrect. Expected: <em>${correct.diagnosis}</em>`});
+
+  // Drug matching (up to 90 pts spread across correct drugs)
+  const drugsPts = 90 / correct.drugs.length;
+  correct.drugs.forEach(cd => {
+    const userDrug = user.drugs.find(ud => ud.drug && ud.drug.toLowerCase().includes(cd.drug.toLowerCase().split(' ')[0].toLowerCase()));
+    if(userDrug){
+      let sub = drugsPts * 0.5; // base 50% for matching drug name
+      const okFreq = userDrug.freq && cd.freq.toLowerCase().includes(userDrug.freq.toLowerCase());
+      const okRoute = userDrug.route && cd.route.toLowerCase().includes(userDrug.route.toLowerCase());
+      if(okFreq) sub += drugsPts * 0.25;
+      if(okRoute) sub += drugsPts * 0.25;
+      score += sub;
+      feedback.push({ok:true, msg:`${cd.drug} ✅ ${okFreq?'':' (freq mismatch - expected '+cd.freq+')'}${okRoute?'':' (route mismatch - expected '+cd.route+')'} (+${Math.round(sub)})`});
+    } else {
+      feedback.push({ok:false, msg:`Missing: <strong>${cd.drug} ${cd.strength}, ${cd.freq}, ${cd.route}, ${cd.duration}</strong>`});
+    }
+  });
+
+  score = Math.round(score);
+  const stats = getRxStats();
+  if(!stats.solved[c.id] || stats.solved[c.id].score < score){
+    // Only add score if higher than previous
+    const prevScore = stats.solved[c.id]?.score || 0;
+    stats.totalScore = stats.totalScore - prevScore + score;
+    stats.solved[c.id] = {score, at:Date.now()};
+    saveRxStats(stats);
+  }
+
+  const modelRx = correct.drugs.map((d,i) => `${i+1}. ${d.drug} ${d.strength} ${d.form}\n   ${d.dose}, ${d.freq}, ${d.route} × ${d.duration}`).join('\n\n');
+
+  const feedbackClass = score >= 80 ? 'correct' : score >= 50 ? 'partial' : 'wrong';
+  const emoji = score >= 80 ? '🎉' : score >= 50 ? '📝' : '❌';
+  document.getElementById('rx-feedback').innerHTML = `
+    <div class="rx-feedback ${feedbackClass}">
+      <h4>${emoji} Score: ${score}/100</h4>
+      <div style="margin-top:8px;">
+        ${feedback.map(f => `<div style="padding:6px 0;">${f.ok?'✅':'❌'} ${f.msg}</div>`).join('')}
+      </div>
+      <div style="margin-top:12px;padding:10px;background:rgba(255,255,255,.5);border-radius:8px;">
+        <strong>🎯 Key Teaching Points:</strong>
+        <ul style="margin:6px 0 0 20px;padding:0;">
+          ${c.keyPoints.map(p => `<li style="margin:3px 0;font-size:.9em;">${p}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="rx-model-answer"><strong>📋 Model Prescription:</strong>
+Diagnosis: ${correct.diagnosis}
+
+℞
+${modelRx}
+      </div>
+    </div>
+  `;
+  renderRxStats();
+  renderRxCaseLibrary();
+}
+
+function renderCheckingMode(c, arena){
+  // Generate flawed Rx with intentional errors + let user identify
+  const errors = generateErrorsForCase(c);
+  window.RX_CHECK_ERRORS = errors;
+  window.RX_MARKED = new Set();
+
+  arena.innerHTML = `
+    <button class="rx-close-btn" onclick="closeRxCase()">✕ Close</button>
+    <h3 style="color:#065f46;margin:0 0 12px;">🔍 ${c.title} - Find the Errors</h3>
+    <div class="rx-patient-card">
+      <h4>👤 Patient</h4>
+      <div class="rx-patient-info">
+        <span><strong>Name:</strong> ${c.patient.name}</span>
+        <span><strong>Age:</strong> ${c.patient.age} yr</span>
+        <span><strong>Wt:</strong> ${c.patient.wt} kg</span>
+        <span><strong>Allergies:</strong> ${c.patient.allergies}</span>
+      </div>
+    </div>
+    <div class="rx-scenario">${c.scenario}</div>
+    <p style="color:#059669;font-weight:600;margin:0 0 8px;">👇 Click on any line/text that contains an error:</p>
+    <div class="rx-check-pad" id="rx-check-pad">
+      <div class="rx-pad-header">
+        <h4 style="margin:0;">Dr. XYZ · Reg No. 12345</h4>
+        <div style="font-size:.85em;color:#78350f;">Date: ${new Date().toISOString().slice(0,10)}</div>
+      </div>
+      Patient: ${c.patient.name}, ${c.patient.age}yr/${c.patient.sex}<br>
+      ${errors.lines.map((line,i) => `<span class="rx-check-line" data-line="${i}" onclick="markError(${i})">${line}</span><br>`).join('')}
+    </div>
+    <button class="rx-submit-btn" onclick="submitCheckMode()">✅ Submit Analysis</button>
+    <div id="rx-feedback"></div>
+  `;
+}
+
+function generateErrorsForCase(c){
+  // Simplified: pre-defined error lines per case
+  const errorSets = {
+    c1:{lines:['Dx: Chest infection','℞','Amoxicillin 250 mg TDS × 3 days','Paracetamol 500 mg SOS','Ciprofloxacin 500 mg BD × 5 days'],errors:[0,2,3,4]},
+    c2:{lines:['Dx: UTI','℞','Ciprofloxacin 500 mg BD × 7 days','Phenazopyridine 100 mg TDS × 10 days'],errors:[2,3]},
+    c3:{lines:['Dx: DM','℞','Glimepiride 2 mg OD','Metformin 1 g BD (start)','Aspirin 75 mg OD'],errors:[1,2,3]},
+    c4:{lines:['Dx: HTN','℞','Atenolol 100 mg BD','Diet + exercise'],errors:[1]},
+    c5:{lines:['Dx: PUD','℞','Ranitidine 150 mg BD × 8 wks','Amoxicillin 500 mg TDS × 7 days'],errors:[1,2]},
+    c6:{lines:['Dx: Asthma','℞','Salbutamol MDI 2 puffs SOS','Prednisolone 20 mg × 3 days','Ipratropium NEB'],errors:[1,2]},
+    c7:{lines:['Dx: Headache','℞','Sumatriptan 25 mg SOS (repeat q30 min prn)','Ergotamine 2 mg SOS'],errors:[1,2]},
+    c8:{lines:['Dx: Anemia','℞','Ferrous sulphate 325 mg with tea/coffee','Vitamin B12 1000 mcg IM'],errors:[1,2]},
+    c9:{lines:['Dx: DKA','℞','IV insulin 0.1 U/kg/hr bolus (before checking K)','5% Dextrose IV'],errors:[1,2]},
+    c10:{lines:['Dx: AOM','℞','Amoxicillin 250 mg BD × 5 days (child wt 14 kg)','Ciprofloxacin ear drops'],errors:[1,2]}
+  };
+  return errorSets[c.id] || {lines:['Dx','℞','Drug X'],errors:[]};
+}
+
+function markError(lineIdx){
+  const el = document.querySelector(`.rx-check-line[data-line="${lineIdx}"]`);
+  if(window.RX_MARKED.has(lineIdx)){
+    window.RX_MARKED.delete(lineIdx);
+    el.classList.remove('error-marked');
+  } else {
+    window.RX_MARKED.add(lineIdx);
+    el.classList.add('error-marked');
+  }
+}
+
+function submitCheckMode(){
+  const c = window.RX_CURRENT_CASE;
+  const errs = window.RX_CHECK_ERRORS;
+  const marked = window.RX_MARKED;
+  const correctErrors = new Set(errs.errors);
+
+  let correct = 0, missed = 0, falsePos = 0;
+  correctErrors.forEach(e => {
+    if(marked.has(e)){ correct++; document.querySelector(`.rx-check-line[data-line="${e}"]`).classList.add('error-found'); document.querySelector(`.rx-check-line[data-line="${e}"]`).classList.remove('error-marked'); }
+    else missed++;
+  });
+  marked.forEach(e => { if(!correctErrors.has(e)) falsePos++; });
+
+  const totalErrors = correctErrors.size;
+  const score = Math.max(0, Math.round((correct / totalErrors) * 100 - falsePos * 15));
+
+  const stats = getRxStats();
+  const prevScore = stats.solved[c.id]?.score || 0;
+  if(score > prevScore){
+    stats.totalScore = stats.totalScore - prevScore + score;
+    stats.solved[c.id] = {score, at:Date.now()};
+    saveRxStats(stats);
+  }
+
+  const feedbackClass = score >= 80 ? 'correct' : score >= 50 ? 'partial' : 'wrong';
+  document.getElementById('rx-feedback').innerHTML = `
+    <div class="rx-feedback ${feedbackClass}">
+      <h4>${score >= 80 ? '🎉' : score >= 50 ? '📝' : '❌'} Score: ${score}/100</h4>
+      <p><strong>Errors Found:</strong> ${correct}/${totalErrors} · <strong>False Positives:</strong> ${falsePos}</p>
+      <div style="margin-top:12px;padding:10px;background:rgba(255,255,255,.5);border-radius:8px;">
+        <strong>🎯 Correct Approach:</strong>
+        <ul style="margin:6px 0 0 20px;padding:0;">
+          ${c.keyPoints.map(p => `<li style="margin:3px 0;font-size:.9em;">${p}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  `;
+  renderRxStats();
+  renderRxCaseLibrary();
+}
+
+function closeRxCase(){
+  document.getElementById('rx-arena').style.display = 'none';
+  window.RX_CURRENT_CASE = null;
+}
+
+/* Init on DOMContentLoaded */
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    if(document.getElementById('rx-sim')){
+      renderRxCaseLibrary();
+      renderRxStats();
+    }
+  }, 500);
+});
+if(document.readyState === 'complete'){
+  setTimeout(() => {
+    if(document.getElementById('rx-sim')){
+      renderRxCaseLibrary();
+      renderRxStats();
+    }
+  }, 100);
+}
 </script>
 </body>
 </html>
