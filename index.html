@@ -118,7 +118,8 @@
   ],
   "sameAs": [
     "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
-    "https://t.me/pharmacraft_official"
+    "https://t.me/pharmacraft_official",
+    "https://www.instagram.com/pharmacraft_official/"
   ]
 }
 </script>
@@ -149,7 +150,8 @@
   "worksFor": { "@id": "https://pharmacraft.in/#organization" },
   "sameAs": [
     "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
-    "https://t.me/pharmacraft_official"
+    "https://t.me/pharmacraft_official",
+    "https://www.instagram.com/pharmacraft_official/"
   ]
 }
 </script>
@@ -287,7 +289,8 @@
   },
   "sameAs": [
     "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
-    "https://t.me/pharmacraft_official"
+    "https://t.me/pharmacraft_official",
+    "https://www.instagram.com/pharmacraft_official/"
   ]
 }
 </script>
@@ -407,6 +410,7 @@
   "sameAs": [
     "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
     "https://t.me/pharmacraft_official",
+    "https://www.instagram.com/pharmacraft_official/",
     "https://pharmacraft.in/#person"
   ]
 }
@@ -878,6 +882,37 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
 .quiz-launch-icon{font-size:32px;margin-bottom:8px;}
 .quiz-launch-title{font-size:13px;font-weight:800;color:var(--text);margin-bottom:4px;}
 .quiz-launch-meta{font-size:10px;color:var(--muted);font-weight:600;}
+
+
+/* ── COMMUNITY STRIP (Above Footer) ──── */
+.community-strip{max-width:1100px;margin:60px auto 20px;padding:0 24px;}
+.community-inner{background:linear-gradient(135deg,#0f172a 0%,#1e293b 40%,#4c1d95 100%);border-radius:24px;padding:40px 30px 34px;text-align:center;box-shadow:0 20px 60px rgba(15,23,42,0.35);position:relative;overflow:hidden;}
+.community-inner::before{content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(139,92,246,0.15) 0%,transparent 60%);animation:communityGlow 6s ease-in-out infinite;pointer-events:none;}
+@keyframes communityGlow{0%,100%{transform:translate(-10%,-10%) scale(1);}50%{transform:translate(10%,10%) scale(1.1);}}
+.community-title{font-size:1.5em;font-weight:900;color:#fff;letter-spacing:0.5px;margin-bottom:8px;position:relative;z-index:1;}
+.community-subtitle{font-size:0.95em;color:rgba(255,255,255,0.75);margin-bottom:26px;position:relative;z-index:1;font-weight:500;}
+.community-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:800px;margin:0 auto;position:relative;z-index:1;}
+.community-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.15);border-radius:16px;padding:20px 14px 18px;text-decoration:none;color:#fff;transition:all 0.3s ease;display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;overflow:hidden;}
+.community-card::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--card-color,#ff0000) 0%,transparent 100%);opacity:0;transition:opacity 0.3s ease;pointer-events:none;}
+.community-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.35);color:#fff;text-decoration:none;box-shadow:0 12px 32px rgba(0,0,0,0.3);}
+.community-card:hover::before{opacity:0.25;}
+.community-card svg{width:36px;height:36px;position:relative;z-index:1;}
+.community-card .cc-label{font-size:0.85em;color:rgba(255,255,255,0.65);font-weight:600;letter-spacing:0.3px;text-transform:uppercase;position:relative;z-index:1;}
+.community-card .cc-name{font-size:1.05em;font-weight:800;position:relative;z-index:1;}
+.community-card .cc-cta{font-size:0.75em;color:rgba(255,255,255,0.75);font-weight:600;position:relative;z-index:1;}
+.community-card.cc-youtube{--card-color:#ff0000;}
+.community-card.cc-telegram{--card-color:#0088cc;}
+.community-card.cc-instagram{--card-color:#e1306c;}
+.community-note{margin-top:22px;font-size:0.8em;color:rgba(255,255,255,0.55);letter-spacing:0.5px;position:relative;z-index:1;}
+@media(max-width:640px){
+  .community-strip{padding:0 12px;margin:40px auto 12px;}
+  .community-inner{padding:28px 18px;border-radius:20px;}
+  .community-title{font-size:1.25em;}
+  .community-cards{grid-template-columns:1fr;gap:12px;}
+  .community-card{flex-direction:row;justify-content:flex-start;padding:14px 18px;text-align:left;}
+  .community-card svg{width:30px;height:30px;flex-shrink:0;}
+  .community-card>div{flex:1;}
+}
 
 /* ── FOOTER ───────────────────────────────────── */
 .footer{background:linear-gradient(135deg,#dce8ef,#e6f0f5,#d0e3e0);border-top:2px solid var(--border);padding:40px 24px 32px;text-align:center;margin-top:60px;}
@@ -1493,15 +1528,6 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 .signup-float-btn:hover{transform:scale(1.06)}
 @keyframes floatPulse{0%,100%{box-shadow:0 8px 24px rgba(124,58,237,.4)}50%{box-shadow:0 12px 32px rgba(124,58,237,.7)}}
 .signup-float-btn.hidden{display:none}
-/* Telegram Floating Button */
-.telegram-float-btn{position:fixed;bottom:22px;right:172px;background:linear-gradient(135deg,#0088cc,#006ba0);color:#fff;border:none;border-radius:60px;padding:12px 20px 12px 14px;box-shadow:0 8px 24px rgba(0,136,204,.4);cursor:pointer;z-index:100;display:flex;align-items:center;gap:8px;font-weight:800;font-size:.9em;text-decoration:none;transition:transform .2s;animation:tgPulse 3.5s ease-in-out infinite}
-.telegram-float-btn:hover{transform:scale(1.06);color:#fff;text-decoration:none}
-@keyframes tgPulse{0%,100%{box-shadow:0 8px 24px rgba(0,136,204,.4)}50%{box-shadow:0 12px 32px rgba(0,136,204,.7)}}
-@media(max-width:640px){
-  .telegram-float-btn{bottom:16px;right:140px;padding:10px 16px 10px 12px}
-  .telegram-float-text{display:none}
-}
-
 
 @media(max-width:640px){
   .signup-row{grid-template-columns:1fr}
@@ -1926,10 +1952,37 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <span class="signup-float-text">Free Notes</span>
 </button>
 
-<a href="https://t.me/pharmacraft_official" target="_blank" rel="noopener" id="telegram-float-btn" class="telegram-float-btn" title="Join our Telegram channel for daily MCQs" onclick="try{if(typeof gtag==='function')gtag('event','telegram_click',{source:'float'});}catch(e){}">
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.643.135-.953l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
-  <span class="telegram-float-text">Telegram</span>
-</a>
+
+
+
+<!-- ── COMMUNITY STRIP ───────────────────────────── -->
+<section class="community-strip">
+  <div class="community-inner">
+    <div class="community-title">🌐 Join Our Learning Community</div>
+    <div class="community-subtitle">Daily MCQs • PYQs • Animated MOA videos • Study tips • Live doubt sessions</div>
+    <div class="community-cards">
+      <a href="https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA" target="_blank" rel="noopener" class="community-card cc-youtube" onclick="try{if(typeof gtag==='function')gtag('event','social_click',{network:'youtube',source:'community'});}catch(e){}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <div class="cc-label">Subscribe</div>
+        <div class="cc-name">YouTube</div>
+        <div class="cc-cta">Watch lectures →</div>
+      </a>
+      <a href="https://t.me/pharmacraft_official" target="_blank" rel="noopener" class="community-card cc-telegram" onclick="try{if(typeof gtag==='function')gtag('event','social_click',{network:'telegram',source:'community'});}catch(e){}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0088cc"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.643.135-.953l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+        <div class="cc-label">Join Channel</div>
+        <div class="cc-name">Telegram</div>
+        <div class="cc-cta">Daily MCQs →</div>
+      </a>
+      <a href="https://www.instagram.com/pharmacraft_official/" target="_blank" rel="noopener" class="community-card cc-instagram" onclick="try{if(typeof gtag==='function')gtag('event','social_click',{network:'instagram',source:'community'});}catch(e){}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="igGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igGrad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        <div class="cc-label">Follow</div>
+        <div class="cc-name">Instagram</div>
+        <div class="cc-cta">Study reels →</div>
+      </a>
+    </div>
+    <div class="community-note">🚀 Growing community of MBBS + NEET PG aspirants across India</div>
+  </div>
+</section>
 
 <!-- ── FOOTER ───────────────────────────────────── -->
 <footer class="footer">
