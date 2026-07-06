@@ -117,7 +117,8 @@
     "Pharmacokinetics"
   ],
   "sameAs": [
-    "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA"
+    "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
+    "https://t.me/pharmacraft_official"
   ]
 }
 </script>
@@ -147,7 +148,8 @@
   ],
   "worksFor": { "@id": "https://pharmacraft.in/#organization" },
   "sameAs": [
-    "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA"
+    "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
+    "https://t.me/pharmacraft_official"
   ]
 }
 </script>
@@ -284,7 +286,8 @@
     "availableLanguage": ["en", "hi"]
   },
   "sameAs": [
-    "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA"
+    "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
+    "https://t.me/pharmacraft_official"
   ]
 }
 </script>
@@ -403,6 +406,7 @@
   },
   "sameAs": [
     "https://www.youtube.com/channel/UCGcnxksfYSQjNwXIcWdgrDA",
+    "https://t.me/pharmacraft_official",
     "https://pharmacraft.in/#person"
   ]
 }
@@ -1489,6 +1493,15 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 .signup-float-btn:hover{transform:scale(1.06)}
 @keyframes floatPulse{0%,100%{box-shadow:0 8px 24px rgba(124,58,237,.4)}50%{box-shadow:0 12px 32px rgba(124,58,237,.7)}}
 .signup-float-btn.hidden{display:none}
+/* Telegram Floating Button */
+.telegram-float-btn{position:fixed;bottom:22px;right:172px;background:linear-gradient(135deg,#0088cc,#006ba0);color:#fff;border:none;border-radius:60px;padding:12px 20px 12px 14px;box-shadow:0 8px 24px rgba(0,136,204,.4);cursor:pointer;z-index:100;display:flex;align-items:center;gap:8px;font-weight:800;font-size:.9em;text-decoration:none;transition:transform .2s;animation:tgPulse 3.5s ease-in-out infinite}
+.telegram-float-btn:hover{transform:scale(1.06);color:#fff;text-decoration:none}
+@keyframes tgPulse{0%,100%{box-shadow:0 8px 24px rgba(0,136,204,.4)}50%{box-shadow:0 12px 32px rgba(0,136,204,.7)}}
+@media(max-width:640px){
+  .telegram-float-btn{bottom:16px;right:140px;padding:10px 16px 10px 12px}
+  .telegram-float-text{display:none}
+}
+
 
 @media(max-width:640px){
   .signup-row{grid-template-columns:1fr}
@@ -1896,8 +1909,14 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <div id="signup-success" style="display:none;text-align:center;padding:24px 12px;">
       <div style="font-size:3em;">🎉</div>
       <h3 style="color:#059669;margin:8px 0;">Welcome to PharmaCraft!</h3>
-      <p style="color:#4b5563;">Check your email for FREE notes. We'll send weekly high-yield MCQs on WhatsApp too.</p>
-      <button onclick="closeSignup()" style="margin-top:14px;padding:10px 22px;background:linear-gradient(135deg,#059669,#10b981);color:#fff;border:none;border-radius:10px;cursor:pointer;font-weight:700;">Continue Learning →</button>
+      <p style="color:#4b5563;margin-bottom:14px;">Aap ki details save ho gayi. Ab hamare Telegram channel me join karo, daily MCQs milte hain:</p>
+      <a href="https://t.me/pharmacraft_official" target="_blank" rel="noopener" onclick="try{if(typeof gtag==='function')gtag('event','telegram_click',{source:'signup_success'});}catch(e){}" style="display:inline-flex;align-items:center;gap:10px;margin:8px 0;padding:14px 28px;background:linear-gradient(135deg,#0088cc,#006ba0);color:#fff;border:none;border-radius:12px;text-decoration:none;font-weight:800;font-size:1em;box-shadow:0 4px 14px rgba(0,136,204,.35);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.643.135-.953l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+        Join Telegram Channel
+      </a>
+      <p style="font-size:.78em;color:#6b7280;margin:10px 0 4px;">📢 Daily NEET PG MCQs • PYQs • Updates</p>
+      <br>
+      <button onclick="closeSignup()" style="margin-top:8px;padding:10px 22px;background:#f3f4f6;color:#374151;border:none;border-radius:10px;cursor:pointer;font-weight:700;">Continue Learning →</button>
     </div>
   </div>
 </div>
@@ -1906,6 +1925,11 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <span style="font-size:1.4em;">🎁</span>
   <span class="signup-float-text">Free Notes</span>
 </button>
+
+<a href="https://t.me/pharmacraft_official" target="_blank" rel="noopener" id="telegram-float-btn" class="telegram-float-btn" title="Join our Telegram channel for daily MCQs" onclick="try{if(typeof gtag==='function')gtag('event','telegram_click',{source:'float'});}catch(e){}">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.643.135-.953l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+  <span class="telegram-float-text">Telegram</span>
+</a>
 
 <!-- ── FOOTER ───────────────────────────────────── -->
 <footer class="footer">

@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v66-name-only-20260705';
+const CACHE_VERSION = 'pharmacraft-v67-telegram-live-20260705';
 const CORE_ASSETS = [
   '/',
   '/index.html',
