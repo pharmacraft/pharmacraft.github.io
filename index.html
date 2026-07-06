@@ -603,6 +603,21 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
   background:linear-gradient(135deg,var(--navy) 0%,var(--teal) 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .hero p{color:var(--muted);font-size:16px;max-width:680px;margin:0 auto 26px;line-height:1.8;}
+
+/* ── HERO: 6-Block Impact Numbers ────────── */
+.hero-impact{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;max-width:1050px;margin:26px auto 32px;padding:0 6px;}
+.hero-impact-card{background:rgba(255,255,255,0.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid var(--border);border-radius:14px;padding:16px 10px 14px;text-align:center;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;position:relative;overflow:hidden;}
+.hero-impact-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .35s ease;}
+.hero-impact-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(15,40,71,0.20);border-color:var(--teal);}
+.hero-impact-card:hover::before{transform:scaleX(1);}
+.hero-impact-num{font-size:1.85em;font-weight:900;background:linear-gradient(135deg,var(--navy),var(--teal2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.5px;line-height:1;}
+.hero-impact-num .plus{font-size:0.7em;color:var(--gold);-webkit-text-fill-color:var(--gold);margin-left:1px;}
+.hero-impact-lbl{font-size:0.76em;font-weight:800;color:var(--navy);margin-top:5px;letter-spacing:0.3px;text-transform:uppercase;}
+.hero-impact-sub{font-size:0.65em;color:var(--muted);margin-top:2px;font-weight:600;}
+html[data-theme="cream"] .hero-impact-card{background:rgba(253,248,234,0.9);}
+@media(max-width:1000px){.hero-impact{grid-template-columns:repeat(3,1fr);gap:10px;}}
+@media(max-width:520px){.hero-impact{grid-template-columns:repeat(2,1fr);gap:8px;margin:20px auto 24px;}.hero-impact-num{font-size:1.5em;}.hero-impact-lbl{font-size:0.7em;}.hero-impact-sub{font-size:0.6em;}}
+
 .hero-stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:28px;}
 .hero-stat{background:#fff;border:1.5px solid var(--border);border-radius:14px;
   padding:16px 26px;min-width:120px;box-shadow:var(--shadow);transition:transform .2s;}
@@ -1644,11 +1659,37 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <h1>Master Pharmacology<br>The Smart Way</h1>
   <p>A complete teaching platform built for MBBS, NEET PG, INI-CET and FMGE aspirants. Animated mechanisms, high-yield classifications, drug-by-drug profiles, exam-oriented MCQs, PYQs and timed practice sets, all in one place.</p>
 
-  <div class="hero-stats">
-    <div class="hero-stat"><div class="hero-stat-v">14</div><div class="hero-stat-l">Core Topics</div></div>
-    <div class="hero-stat"><div class="hero-stat-v">300+</div><div class="hero-stat-l">Drugs</div></div>
-    <div class="hero-stat"><div class="hero-stat-v">2,245+</div><div class="hero-stat-l">MCQs</div></div>
-    <div class="hero-stat"><div class="hero-stat-v">PYQs</div><div class="hero-stat-l">NEET PG / FMGE</div></div>
+  <div class="hero-impact">
+    <div class="hero-impact-card">
+      <div class="hero-impact-num">14</div>
+      <div class="hero-impact-lbl">Core Topics</div>
+      <div class="hero-impact-sub">NMC CBME aligned</div>
+    </div>
+    <div class="hero-impact-card">
+      <div class="hero-impact-num">2,245<span class="plus">+</span></div>
+      <div class="hero-impact-lbl">NEET PG MCQs</div>
+      <div class="hero-impact-sub">With explanations</div>
+    </div>
+    <div class="hero-impact-card">
+      <div class="hero-impact-num">329<span class="plus">+</span></div>
+      <div class="hero-impact-lbl">Real PYQs</div>
+      <div class="hero-impact-sub">5 exams &times; 5 years</div>
+    </div>
+    <div class="hero-impact-card">
+      <div class="hero-impact-num">25</div>
+      <div class="hero-impact-lbl">Rx Sim Cases</div>
+      <div class="hero-impact-sub">Clinical scenarios</div>
+    </div>
+    <div class="hero-impact-card">
+      <div class="hero-impact-num">200<span class="plus">+</span></div>
+      <div class="hero-impact-lbl">Drug Interactions</div>
+      <div class="hero-impact-sub">Safety checker</div>
+    </div>
+    <div class="hero-impact-card">
+      <div class="hero-impact-num">40<span class="plus">+</span></div>
+      <div class="hero-impact-lbl">Animated MOAs</div>
+      <div class="hero-impact-sub">SVG mechanisms</div>
+    </div>
   </div>
 
   <div class="hero-cta">
@@ -1934,40 +1975,6 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <p>PharmaCraft is built and curated by <strong style="font-size:1.15em;font-weight:800;background:linear-gradient(135deg,var(--navy),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Dr. Susheel Kumar</strong>, with a focus on clinical integration and exam-oriented teaching.</p>
   </div>
 
-  <!-- Impact Numbers Grid -->
-  <div class="about-impact">
-    <div class="impact-card">
-      <div class="impact-num">14</div>
-      <div class="impact-lbl">Core Topics</div>
-      <div class="impact-sub">NMC CBME aligned</div>
-    </div>
-    <div class="impact-card">
-      <div class="impact-num">2,245<span class="plus">+</span></div>
-      <div class="impact-lbl">NEET PG MCQs</div>
-      <div class="impact-sub">With explanations</div>
-    </div>
-    <div class="impact-card">
-      <div class="impact-num">329<span class="plus">+</span></div>
-      <div class="impact-lbl">Real PYQs</div>
-      <div class="impact-sub">5 exams &times; 5 years</div>
-    </div>
-    <div class="impact-card">
-      <div class="impact-num">25</div>
-      <div class="impact-lbl">Rx Sim Cases</div>
-      <div class="impact-sub">Clinical scenarios</div>
-    </div>
-    <div class="impact-card">
-      <div class="impact-num">200<span class="plus">+</span></div>
-      <div class="impact-lbl">Drug Interactions</div>
-      <div class="impact-sub">Safety checker</div>
-    </div>
-    <div class="impact-card">
-      <div class="impact-num">40<span class="plus">+</span></div>
-      <div class="impact-lbl">Animated MOAs</div>
-      <div class="impact-sub">SVG mechanisms</div>
-    </div>
-  </div>
-
   <div class="cblock" style="max-width:760px;margin:0 auto;">
     <h4>Our Mission</h4>
     <p>To make Pharmacology, often considered one of the most volume-heavy subjects in medicine, <strong>conceptual, visual and clinically meaningful</strong>. Every drug here is explained with mechanism animations, classification trees, side-by-side comparisons and exam-style MCQs so the student remembers <em>how</em> and <em>why</em> a drug works, not just the name.</p>
@@ -1984,7 +1991,7 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <div class="founder-note">
     <div class="founder-quote-mark">&ldquo;</div>
     <div class="founder-content">
-      <p class="founder-line">During my own MBBS days, Pharmacology felt like an ocean of drug names, endless side effects, and mechanisms that never quite <em>clicked</em>. I spent nights trying to build connections between what I read in books and what I saw in wards, wishing there was a place that would show me <strong>how a drug actually works</strong>, not just <em>what it does</em>.</p>
+      <p class="founder-line">During my own student days, Pharmacology felt like an ocean of drug names, endless side effects, and mechanisms that never quite <em>clicked</em>. I spent nights trying to build connections between what I read in textbooks and what I saw in real clinical situations.</p><p class="founder-line">I kept wishing there was a place that would show me <strong>how a drug actually works</strong>, not just <em>what it does</em>.</p>
       <p class="founder-line">Years later, teaching Pharmacology to medical students, I heard the same frustration in almost every classroom. So I sat down to build the resource I never had, one where every drug tells its story through <strong>animation, classification, clinical use, and exam-relevant MCQs</strong>, all in one place.</p>
       <p class="founder-line">PharmaCraft is that resource. It is completely free, always will be, and it grows every week with new content, corrections and features. If it helps even one student walk into their exam with confidence, it will have done its job.</p>
       <div class="founder-signature">
