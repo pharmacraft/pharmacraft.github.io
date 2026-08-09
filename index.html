@@ -2310,25 +2310,35 @@ document.getElementById('year').textContent=new Date().getFullYear();
     }
   }
   
-  // BULLETPROOF click toggle with debounce lock
+  // BULLETPROOF: Global init guard + event delegation (single handler for all)
+  if(window.__pharmacraftDropdownInit){
+    return; // Already initialized, don't re-attach
+  }
+  window.__pharmacraftDropdownInit = true;
+  
   let clickLock = false;
-  document.querySelectorAll('.nav-dropdown').forEach(function(dd){
-    const trigger = dd.querySelector('.nav-dropdown-trigger');
+  
+  // Single delegated click handler on document (not per-trigger)
+  document.addEventListener('click', function(e){
+    const trigger = e.target.closest('.nav-dropdown-trigger');
     if(!trigger) return;
     
-    trigger.addEventListener('click', function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      if(clickLock) return;
-      clickLock = true;
-      setTimeout(function(){ clickLock = false; }, 300);
-      if(dd.classList.contains('dd-open')){
-        closeAllDropdowns();
-      } else {
-        openDropdown(dd);
-      }
-    });
-  });
+    const dd = trigger.closest('.nav-dropdown');
+    if(!dd) return;
+    
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if(clickLock) return;
+    clickLock = true;
+    setTimeout(function(){ clickLock = false; }, 350);
+    
+    if(dd.classList.contains('dd-open')){
+      closeAllDropdowns();
+    } else {
+      openDropdown(dd);
+    }
+  }, true); // capture phase - runs before other click handlers
   
   // Backdrop click closes dropdown
   backdrop.addEventListener('click', function(e){
