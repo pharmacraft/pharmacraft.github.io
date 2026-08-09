@@ -627,15 +627,14 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
 
 /* Dropdown Menu — Centered Modal Style */
 .nav-dropdown-menu{
-  display:none;position:fixed;
-  top:70px;left:50%;transform:translateX(-50%);
-  opacity:1;
-  background:#ffffff!important;border:3px solid #0d7a64;
+  display:none;position:fixed !important;
+  top:70px !important;left:50% !important;transform:translateX(-50%) !important;
+  opacity:1 !important;visibility:visible !important;
+  background:#ffffff !important;border:3px solid #0d7a64;
   border-radius:18px;padding:14px 10px;
   box-shadow:0 25px 80px rgba(0,0,0,0.5),0 0 0 4px rgba(255,255,255,0.4);
   min-width:320px;max-width:min(94vw,440px);width:auto;
-  z-index:10001;
-  animation:ddModalIn 0.25s cubic-bezier(0.4,0,0.2,1) forwards;
+  z-index:2147483647 !important;
   max-height:calc(100vh - 90px);overflow-y:auto;
 }
 .nav-dropdown.dd-open .nav-dropdown-menu{display:block;}
@@ -2269,7 +2268,12 @@ document.getElementById('year').textContent=new Date().getFullYear();
   }
   
   function closeAllDropdowns(){
-    document.querySelectorAll('.nav-dropdown.dd-open').forEach(dd => dd.classList.remove('dd-open'));
+    document.querySelectorAll('.nav-dropdown.dd-open').forEach(dd => {
+      dd.classList.remove('dd-open');
+      const menu = document.querySelectorAll('.nav-dropdown-menu');
+      // Hide menus
+      menu.forEach(m => { m.style.display = 'none'; });
+    });
     backdrop.classList.remove('show');
   }
   
@@ -2277,9 +2281,17 @@ document.getElementById('year').textContent=new Date().getFullYear();
     closeAllDropdowns();
     dd.classList.add('dd-open');
     backdrop.classList.add('show');
-    // Add close button if not present
     const menu = dd.querySelector('.nav-dropdown-menu');
-    if(menu && !menu.querySelector('.nav-dd-close')){
+    if(!menu) return;
+    // Move menu to body (escape nav stacking context)
+    if(menu.parentElement !== document.body){
+      dd._originalParent = menu.parentElement;
+      document.body.appendChild(menu);
+    }
+    // Force styles inline
+    menu.style.cssText = 'display:block !important; position:fixed !important; top:70px !important; left:50% !important; transform:translateX(-50%) !important; opacity:1 !important; visibility:visible !important; background:#ffffff !important; border:3px solid #0d7a64 !important; border-radius:18px !important; padding:14px 10px !important; box-shadow:0 25px 80px rgba(0,0,0,0.5), 0 0 0 4px rgba(255,255,255,0.4) !important; min-width:320px !important; max-width:min(94vw,440px) !important; width:auto !important; z-index:2147483647 !important; max-height:calc(100vh - 90px) !important; overflow-y:auto !important;';
+    // Add close button if not present
+    if(!menu.querySelector('.nav-dd-close')){
       const btn = document.createElement('button');
       btn.className = 'nav-dd-close';
       btn.innerHTML = '&times;';
