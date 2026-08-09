@@ -612,6 +612,15 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
 /* ── NAV DROPDOWN MENUS (Modal-Style with Backdrop) ────── */
 .nav-dropdown{position:relative;display:inline-block;}
 .nav-dropdown-trigger{cursor:pointer;display:inline-flex;align-items:center;gap:4px;user-select:none;}
+button.nav-dropdown-trigger{
+  background:transparent;border:1.5px solid transparent;
+  padding:5px 10px;font-size:0.9em;color:var(--text);
+  font-weight:600;font-family:inherit;border-radius:8px;
+  transition:background .15s;
+}
+button.nav-dropdown-trigger:hover{color:var(--teal2);background:rgba(255,107,157,0.06);}
+button.nav-dropdown-trigger *{pointer-events:none;}
+
 .dd-arrow{font-size:0.75em;opacity:0.7;transition:transform 0.2s ease;}
 .nav-dropdown.dd-open .dd-arrow{transform:rotate(180deg);opacity:1;}
 
@@ -1698,7 +1707,7 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 
   <!-- Topics Dropdown -->
   <div class="nav-dropdown">
-    <a href="#topics" class="nav-dropdown-trigger">Topics <span class="dd-arrow">▾</span></a>
+    <button type="button" class="nav-dropdown-trigger">Topics <span class="dd-arrow">▾</span></button>
     <div class="nav-dropdown-menu">
       <div class="dd-header">🧪 14 Core Pharmacology Topics</div>
       <a onclick="jumpToTopic('general')">🧪 General Pharmacology</a>
@@ -1720,7 +1729,7 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 
   <!-- Practice Dropdown (PYQs included inside) -->
   <div class="nav-dropdown">
-    <a href="#practice" class="nav-dropdown-trigger">Practice <span class="dd-arrow">▾</span></a>
+    <button type="button" class="nav-dropdown-trigger">Practice <span class="dd-arrow">▾</span></button>
     <div class="nav-dropdown-menu">
       <div class="dd-header">🎯 Practice Modes</div>
       <a href="#pyq">📚 PYQ Vault (329+ PYQs)</a>
@@ -2301,7 +2310,8 @@ document.getElementById('year').textContent=new Date().getFullYear();
     }
   }
   
-  // Attach ONLY click handlers - no hover to avoid blinking
+  // BULLETPROOF click toggle with debounce lock
+  let clickLock = false;
   document.querySelectorAll('.nav-dropdown').forEach(function(dd){
     const trigger = dd.querySelector('.nav-dropdown-trigger');
     if(!trigger) return;
@@ -2309,6 +2319,9 @@ document.getElementById('year').textContent=new Date().getFullYear();
     trigger.addEventListener('click', function(e){
       e.preventDefault();
       e.stopPropagation();
+      if(clickLock) return;
+      clickLock = true;
+      setTimeout(function(){ clickLock = false; }, 300);
       if(dd.classList.contains('dd-open')){
         closeAllDropdowns();
       } else {
@@ -2318,7 +2331,12 @@ document.getElementById('year').textContent=new Date().getFullYear();
   });
   
   // Backdrop click closes dropdown
-  backdrop.addEventListener('click', closeAllDropdowns);
+  backdrop.addEventListener('click', function(e){
+    if(clickLock) return;
+    clickLock = true;
+    setTimeout(function(){ clickLock = false; }, 300);
+    closeAllDropdowns();
+  });
   
   // Escape key closes dropdown
   document.addEventListener('keydown', function(e){
