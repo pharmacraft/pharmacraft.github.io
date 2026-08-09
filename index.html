@@ -394,7 +394,7 @@
   "description": "Dr. Susheel Kumar is a Senior Pharmacology Educator and founder of PharmaCraft, India's leading free Pharmacology teaching platform. He specializes in teaching MBBS students, NEET PG aspirants, INI-CET candidates, and FMGE examinees through animated mechanisms, high-yield MCQ banks, and clinical case simulations.",
   "url": "https://pharmacraft.in/",
   "image": "https://pharmacraft.in/logo.png",
-  "email": "susheelpn72@gmail.com",
+  "email": "drsusheel.mededu@gmail.com",
   "knowsAbout": ["Pharmacology", "Clinical Pharmacology", "Medical Education", "NEET PG Coaching", "INI-CET Preparation", "FMGE Preparation", "Drug Mechanisms", "Pharmacokinetics", "Pharmacodynamics", "Rational Drug Prescribing", "Adverse Drug Reactions", "NMC CBME Curriculum"],
   "hasOccupation": {
     "@type": "Occupation",
@@ -1071,6 +1071,41 @@ html[data-theme="cream"] .hero-impact-card{background:rgba(253,248,234,0.9);}
 .footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:14px;}
 .footer-links a{color:var(--teal2);font-size:11px;text-decoration:none;transition:color .2s;font-weight:700;}
 .footer-links a:hover{color:var(--gold);}
+
+/* Legal Footer Links + Modal */
+.footer-legal-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:10px 0 14px;font-size:11px;}
+.footer-legal-links a{color:var(--teal2);text-decoration:none;font-weight:600;cursor:pointer;transition:color .2s;}
+.footer-legal-links a:hover{color:var(--gold);text-decoration:underline;}
+.legal-sep{color:var(--muted);opacity:0.5;}
+.legal-backdrop{display:none;position:fixed;inset:0;background:rgba(15,23,42,0.7);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:2147483646;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;}
+.legal-backdrop.show{display:flex;}
+.legal-modal{background:#ffffff;border-radius:16px;max-width:800px;width:100%;padding:0;box-shadow:0 30px 80px rgba(0,0,0,0.5);position:relative;margin:auto;}
+.legal-modal-head{position:sticky;top:0;background:linear-gradient(135deg,#0d7a64,#0a5e4d);color:#fff;padding:20px 28px;border-radius:16px 16px 0 0;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.legal-modal-head h2{margin:0;font-size:1.2em;font-weight:800;color:#fff;}
+.legal-modal-close{background:rgba(255,255,255,0.2);border:none;color:#fff;width:36px;height:36px;border-radius:50%;font-size:1.3em;cursor:pointer;transition:all .15s;flex-shrink:0;}
+.legal-modal-close:hover{background:rgba(255,255,255,0.35);transform:rotate(90deg);}
+.legal-modal-body{padding:24px 28px 32px;color:#1f2937;line-height:1.7;font-size:0.92em;max-height:none;}
+.legal-modal-body h3{color:#0a5e4d;font-size:1.05em;font-weight:800;margin:20px 0 8px;}
+.legal-modal-body h3:first-child{margin-top:0;}
+.legal-modal-body h4{color:#0d7a64;font-size:0.95em;font-weight:700;margin:14px 0 5px;}
+.legal-modal-body p{margin:0 0 10px;}
+.legal-modal-body ul{margin:0 0 12px 20px;}
+.legal-modal-body li{margin-bottom:5px;}
+.legal-modal-body strong{color:#0f2847;}
+.legal-modal-body .legal-meta{background:#f0fdf4;border-left:4px solid #0d7a64;padding:10px 16px;border-radius:8px;margin-bottom:16px;font-size:0.88em;}
+.legal-tabs{display:flex;gap:6px;padding:12px 28px 0;background:#fff;position:sticky;top:76px;z-index:2;border-bottom:1px solid #e5e7eb;flex-wrap:wrap;}
+.legal-tab{background:#f3f4f6;border:none;padding:8px 16px;border-radius:8px 8px 0 0;font-size:0.85em;font-weight:700;color:#6b7280;cursor:pointer;transition:all .15s;}
+.legal-tab.active{background:#0d7a64;color:#fff;}
+.legal-tab:hover:not(.active){background:#e5e7eb;}
+.legal-section{display:none;}
+.legal-section.active{display:block;}
+@media(max-width:640px){
+  .legal-modal-head{padding:16px 18px;}
+  .legal-modal-body{padding:18px;}
+  .legal-tabs{padding:10px 18px 0;top:64px;}
+  .legal-tab{padding:6px 12px;font-size:0.78em;}
+}
+
 .footer-copy{font-size:11px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;max-width:680px;margin:0 auto;line-height:1.8;}
 .footer-copy strong{color:var(--teal2);font-weight:800;}
 
@@ -2255,16 +2290,186 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
     <a href="#pyq">PYQs</a>
     <a href="#practice">Practice</a>
   </div>
+  <div class="footer-legal-links">
+    <a onclick="openLegal('terms')">Terms of Service</a>
+    <span class="legal-sep">|</span>
+    <a onclick="openLegal('privacy')">Privacy Policy</a>
+    <span class="legal-sep">|</span>
+    <a onclick="openLegal('disclaimer')">Medical Disclaimer</a>
+    <span class="legal-sep">|</span>
+    <a href="mailto:drsusheel.mededu@gmail.com">Contact</a>
+  </div>
   <div class="footer-copy">
     © <span id="year"></span> <strong>Copyright PharmaCraft, Dr. Susheel Kumar</strong>. All rights reserved.<br>
     Crafted for educational purposes, animated mechanisms, classifications, drug profiles and exam-pattern MCQs in one place.
   </div>
 </footer>
 
+<!-- ═══════════ LEGAL MODAL (Terms/Privacy/Disclaimer) ═══════════ -->
+<div id="legal-backdrop" class="legal-backdrop" onclick="if(event.target===this)closeLegal()">
+  <div class="legal-modal">
+    <div class="legal-modal-head">
+      <h2>PharmaCraft — Legal & Compliance</h2>
+      <button class="legal-modal-close" onclick="closeLegal()" aria-label="Close">&times;</button>
+    </div>
+    <div class="legal-tabs">
+      <button class="legal-tab active" data-legal="terms" onclick="switchLegal('terms')">Terms of Service</button>
+      <button class="legal-tab" data-legal="disclaimer" onclick="switchLegal('disclaimer')">Medical Disclaimer</button>
+      <button class="legal-tab" data-legal="privacy" onclick="switchLegal('privacy')">Privacy Policy</button>
+    </div>
+    <div class="legal-modal-body">
+      <div class="legal-meta">
+        <strong>Effective Date:</strong> August 09, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> August 09, 2026 &nbsp;|&nbsp; <strong>Jurisdiction:</strong> India
+      </div>
+
+      <!-- TERMS -->
+      <div class="legal-section active" id="legal-terms">
+        <h3>Terms of Service</h3>
+        <h4>1. About the Platform</h4>
+        <p>PharmaCraft is an educational technology platform designed to support pharmacology learning for medical students, NEET-PG, INICET and FMGE aspirants, and healthcare education. It provides drug profiles, drug comparisons, interaction-checking exercises, prescription practice, and quiz modules. The Platform uses standard textbooks, latest guidelines, and artificial intelligence to generate educational content.</p>
+        <h4>2. Eligibility</h4>
+        <p>You must be at least 18 years of age, or using the Platform under the supervision of a parent, guardian, or educational institution. The Platform is intended for medical, paramedical, nursing, and pharmacy students, educators, and healthcare professionals for educational purposes only.</p>
+        <h4>3. Educational Purpose Only</h4>
+        <p>All content on PharmaCraft is provided strictly for educational and informational purposes. It is <strong>NOT</strong> a substitute for professional medical advice, diagnosis, treatment, or clinical decision-making. The Platform must never be used to make real-world prescribing or treatment decisions. Please refer to the full Medical Disclaimer.</p>
+        <h4>4. Access and Registration</h4>
+        <p>PharmaCraft is currently offered free of charge. When you sign up to receive updates or notes, you agree to provide accurate and current information. You are responsible for the security of any credentials associated with your access and for all activity carried out under your details. Notify us immediately of any unauthorized use.</p>
+        <h4>5. Acceptable Use</h4>
+        <p>You agree NOT to:</p>
+        <ul>
+          <li>Use the Platform for any unlawful purpose or in violation of any applicable Indian law.</li>
+          <li>Rely on AI-generated content for actual patient care, prescribing, or clinical practice.</li>
+          <li>Copy, reproduce, scrape, or redistribute content without authorization.</li>
+          <li>Attempt to reverse-engineer, hack, or disrupt the Platform or its underlying systems.</li>
+          <li>Upload malicious code or attempt unauthorized access to other users' data.</li>
+          <li>Misrepresent AI-generated educational content as verified clinical guidance.</li>
+        </ul>
+        <h4>6. Intellectual Property</h4>
+        <p>All original content, design, layout, source code, branding, and the "PharmaCraft" name and logo are the intellectual property of the Platform owner and are protected under the Copyright Act, 1957, the Designs Act, 2000, and the Trade Marks Act, 1999. No part may be reproduced, distributed, or commercially exploited without prior written permission.</p>
+        <h4>7. Third-Party Links and Services</h4>
+        <p>The Platform may contain links to third-party websites, tools, or services (such as YouTube, Telegram, and Instagram). We are not responsible for the content, policies, or practices of any third-party services. Access them at your own discretion.</p>
+        <h4>8. AI-Generated Content</h4>
+        <p>Portions of the Platform's content are generated using artificial intelligence. While we strive for accuracy, AI-generated content may contain errors, omissions, or outdated information. Users must independently verify all pharmacological information against authoritative textbooks, official drug references, and current clinical guidelines.</p>
+        <h4>9. Limitation of Liability</h4>
+        <p>To the maximum extent permitted by law, the Platform, its owner, and contributors shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of, or inability to use, the Platform, including any reliance placed on AI-generated or educational content. The Platform is provided on an "as-is" and "as-available" basis without warranties of any kind.</p>
+        <h4>10. Indemnification</h4>
+        <p>You agree to indemnify and hold harmless the Platform and its owner from any claims, damages, or expenses arising out of your misuse of the Platform or violation of these Terms.</p>
+        <h4>11. Termination</h4>
+        <p>We reserve the right to suspend or terminate your access at our discretion, without notice, for any breach of these Terms or applicable law.</p>
+        <h4>12. Modifications to Terms</h4>
+        <p>We may update these Terms from time to time. Continued use of the Platform after changes constitutes acceptance of the revised Terms. The "Last Updated" date will reflect the latest revision.</p>
+        <h4>13. Governing Law and Jurisdiction</h4>
+        <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts of Jaipur, Rajasthan, India.</p>
+        <h4>14. Contact</h4>
+        <p>For any questions regarding these Terms, contact us at: <strong>drsusheel.mededu@gmail.com</strong></p>
+      </div>
+
+      <!-- DISCLAIMER -->
+      <div class="legal-section" id="legal-disclaimer">
+        <h3>Medical Disclaimer</h3>
+        <h4>1. No Medical Advice</h4>
+        <p>The content provided on PharmaCraft, including drug profiles, dosages, interactions, comparisons, and prescription practice exercises, is intended solely for academic and educational learning. It does not constitute medical, pharmacological, or professional clinical advice and should not be treated as such.</p>
+        <h4>2. Not for Clinical Use</h4>
+        <ul>
+          <li>Information on the Platform must <strong>NOT</strong> be used for actual prescribing, dispensing, or patient treatment.</li>
+          <li>Drug dosages, indications, and interactions shown are simplified for teaching and may not reflect the most current approved labelling or clinical guidelines.</li>
+          <li>Prescription practice and interaction-checking modules are simulated learning exercises, not validated clinical tools.</li>
+        </ul>
+        <h4>3. AI-Generated Content Caution</h4>
+        <p>Content may be generated or assisted by artificial intelligence and can contain inaccuracies, outdated data, or omissions. Users must independently verify all information against standard pharmacology textbooks, official drug formularies (such as the National Formulary of India), manufacturer prescribing information, and current clinical guidelines.</p>
+        <h4>4. Professional Responsibility</h4>
+        <p>Students and healthcare professionals remain fully responsible for verifying information and applying their own clinical judgment. Nothing on this Platform overrides the standard of care, institutional protocols, or the supervision of qualified faculty and licensed practitioners.</p>
+        <h4>5. No Doctor-Patient Relationship</h4>
+        <p>Use of PharmaCraft does not create any doctor-patient, pharmacist-patient, or professional advisory relationship between the user and the Platform or its owner.</p>
+        <h4>6. Emergencies</h4>
+        <p>PharmaCraft is <strong>NOT</strong> for use in medical emergencies. In any emergency, contact a qualified medical professional or emergency services immediately.</p>
+        <h4>7. Limitation of Liability</h4>
+        <p>The Platform and its owner disclaim all liability for any loss, injury, or damage arising directly or indirectly from the use of, or reliance on, any content provided. Use of the Platform is entirely at the user's own risk.</p>
+      </div>
+
+      <!-- PRIVACY -->
+      <div class="legal-section" id="legal-privacy">
+        <h3>Privacy Policy <span style="font-size:0.75em;color:#6b7280;">(DPDP Act 2023 Compliant)</span></h3>
+        <h4>1. Data Fiduciary</h4>
+        <p>For the purposes of the DPDP Act, 2023, the owner/operator of PharmaCraft acts as the "Data Fiduciary" responsible for determining the purpose and means of processing your personal data. Contact details are provided in Section 12.</p>
+        <h4>2. Information We Collect</h4>
+        <ul>
+          <li><strong>Account/contact information:</strong> name, email address, WhatsApp number, college, and year of study (when you sign up for updates).</li>
+          <li><strong>Educational profile:</strong> course, level (MBBS / MD / PG aspirant), and target exam preferences.</li>
+          <li><strong>Usage data:</strong> quiz attempts, module progress, feature interactions, and performance analytics.</li>
+          <li><strong>Technical data:</strong> device type, browser, IP address, and log data.</li>
+          <li>Queries submitted to AI features, which may be processed by third-party AI service providers.</li>
+        </ul>
+        <h4>3. How We Use Your Data</h4>
+        <ul>
+          <li>To provide, operate, and personalize the Platform and its learning features.</li>
+          <li>To manage your access and communicate relevant educational updates.</li>
+          <li>To improve content quality, fix issues, and develop new features.</li>
+          <li>To respond to queries and provide support.</li>
+          <li>To comply with legal obligations under applicable Indian law.</li>
+        </ul>
+        <h4>4. Legal Basis and Consent</h4>
+        <p>Under the DPDP Act, 2023, we process your personal data based on the consent you provide at the time of registration, or for legitimate uses permitted under the Act. You may withdraw consent at any time, subject to legal and contractual limitations.</p>
+        <h4>5. Third-Party Services</h4>
+        <p>We use trusted third-party providers (for example, AI content services, hosting, and analytics). These providers process data only as necessary to deliver their services and are expected to maintain appropriate safeguards. Queries to AI features may be transmitted to such providers for processing.</p>
+        <h4>6. Data Sharing and Disclosure</h4>
+        <ul>
+          <li>We do <strong>NOT</strong> sell your personal data.</li>
+          <li>Data may be shared with service providers strictly for operational purposes.</li>
+          <li>Data may be disclosed if required by law, court order, or a lawful government request.</li>
+        </ul>
+        <h4>7. Data Security</h4>
+        <p>We implement reasonable technical and organizational security measures, including encryption in transit, access controls, and secure hosting, to protect your data against unauthorized access, alteration, or loss. However, no system can guarantee absolute security.</p>
+        <h4>8. Data Retention</h4>
+        <p>We retain personal data only as long as necessary to fulfil the purposes outlined in this Policy, or as required by law. Upon account deletion or withdrawal of consent, your data will be erased or anonymized, subject to legal retention requirements.</p>
+        <h4>9. Your Rights (under the DPDP Act, 2023)</h4>
+        <ul>
+          <li>Right to access information about your personal data being processed.</li>
+          <li>Right to correction and erasure of inaccurate or no-longer-necessary data.</li>
+          <li>Right to grievance redressal through our designated contact.</li>
+          <li>Right to nominate another individual to exercise your rights in case of incapacity or death.</li>
+          <li>Right to withdraw consent at any time.</li>
+        </ul>
+        <h4>10. Children's Data</h4>
+        <p>If any user is below 18 years of age, processing will be carried out only with verifiable consent of a parent or lawful guardian, in accordance with the DPDP Act, 2023. We do not knowingly process children's data for tracking, behavioural monitoring, or targeted advertising.</p>
+        <h4>11. Cookies and Tracking</h4>
+        <p>The Platform may use cookies and similar technologies to maintain sessions, remember preferences, and analyze usage. You can control cookie settings through your browser.</p>
+        <h4>12. Grievance Officer and Contact</h4>
+        <p>In accordance with Indian law, you may contact our Grievance Officer for any privacy-related concerns:</p>
+        <p><strong>Name:</strong> Dr. Susheel Kumar<br>
+        <strong>Email:</strong> drsusheel.mededu@gmail.com<br>
+        <strong>Location:</strong> Jaipur, Rajasthan, India</p>
+        <h4>13. Changes to this Policy</h4>
+        <p>We may update this Privacy Policy periodically. Material changes will be notified through the Platform. The "Last Updated" date reflects the most recent revision.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </div>
 
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
+
+/* ── LEGAL MODAL (Terms/Privacy/Disclaimer) ── */
+window.openLegal = function(section){
+  const bd = document.getElementById('legal-backdrop');
+  if(bd){ bd.classList.add('show'); switchLegal(section||'terms'); document.body.style.overflow='hidden'; }
+  try{ if(typeof gtag==='function') gtag('event','legal_view',{section:section}); }catch(e){}
+};
+window.closeLegal = function(){
+  const bd = document.getElementById('legal-backdrop');
+  if(bd){ bd.classList.remove('show'); document.body.style.overflow=''; }
+};
+window.switchLegal = function(section){
+  document.querySelectorAll('.legal-tab').forEach(t => t.classList.toggle('active', t.dataset.legal===section));
+  document.querySelectorAll('.legal-section').forEach(s => s.classList.remove('active'));
+  const target = document.getElementById('legal-'+section);
+  if(target) target.classList.add('active');
+  const body = document.querySelector('.legal-modal-body');
+  if(body) body.scrollTop = 0;
+};
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLegal(); });
 
 /* ── DROPDOWN: Click toggle + Modal backdrop ── */
 (function(){
