@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v79-dropdown-modal-20260705';
+const CACHE_VERSION = 'pharmacraft-v80-dropdown-top-center-20260705';
 const CORE_ASSETS = [
   '/',
   '/index.html',
