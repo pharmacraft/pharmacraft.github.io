@@ -629,18 +629,19 @@ input,textarea,.search-input{-webkit-user-select:text;user-select:text;}
 .nav-dropdown-menu{
   display:none;position:fixed;
   top:70px;left:50%;transform:translateX(-50%);
+  opacity:1;
   background:var(--card);border:2px solid var(--teal);
   border-radius:18px;padding:14px 10px;
   box-shadow:0 25px 60px rgba(15,40,71,0.35);
   min-width:320px;max-width:min(94vw,440px);width:auto;
   z-index:10000;
-  animation:ddModalIn 0.25s cubic-bezier(0.4,0,0.2,1);
+  animation:ddModalIn 0.25s cubic-bezier(0.4,0,0.2,1) forwards;
   max-height:calc(100vh - 90px);overflow-y:auto;
 }
 .nav-dropdown.dd-open .nav-dropdown-menu{display:block;}
 @keyframes ddModalIn{
-  from{opacity:0;transform:translateX(-50%) translateY(-10px) scale(0.95);}
-  to{opacity:1;transform:translateX(-50%) translateY(0) scale(1);}
+  0%{opacity:0;transform:translateX(-50%) translateY(-10px) scale(0.95);}
+  100%{opacity:1;transform:translateX(-50%) translateY(0) scale(1);}
 }
 
 /* Close button top-right */
