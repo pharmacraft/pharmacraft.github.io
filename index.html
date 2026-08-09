@@ -2301,12 +2301,11 @@ document.getElementById('year').textContent=new Date().getFullYear();
     }
   }
   
-  // Attach click handlers to dropdown triggers
+  // Attach ONLY click handlers - no hover to avoid blinking
   document.querySelectorAll('.nav-dropdown').forEach(function(dd){
     const trigger = dd.querySelector('.nav-dropdown-trigger');
     if(!trigger) return;
     
-    // Prevent default link behavior on trigger
     trigger.addEventListener('click', function(e){
       e.preventDefault();
       e.stopPropagation();
@@ -2315,16 +2314,6 @@ document.getElementById('year').textContent=new Date().getFullYear();
       } else {
         openDropdown(dd);
       }
-    });
-    
-    // Also allow hover on desktop (>900px)
-    dd.addEventListener('mouseenter', function(){
-      if(window.innerWidth > 900) openDropdown(dd);
-    });
-    dd.addEventListener('mouseleave', function(){
-      if(window.innerWidth > 900) setTimeout(function(){
-        if(!dd.matches(':hover')) closeAllDropdowns();
-      }, 200);
     });
   });
   
