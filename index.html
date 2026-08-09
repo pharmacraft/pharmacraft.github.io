@@ -2290,14 +2290,16 @@ document.getElementById('year').textContent=new Date().getFullYear();
     closeAllDropdowns();
     dd.classList.add('dd-open');
     backdrop.classList.add('show');
-    const menu = dd.querySelector('.nav-dropdown-menu');
+    // Get menu - use stored reference if menu was moved to body
+    let menu = dd._menuRef || dd.querySelector('.nav-dropdown-menu');
     if(!menu) return;
-    // Move menu to body (escape nav stacking context)
+    // Store reference on first find (survives moves to body)
+    dd._menuRef = menu;
+    // Move menu to body (escape nav stacking context) on first time
     if(menu.parentElement !== document.body){
-      dd._originalParent = menu.parentElement;
       document.body.appendChild(menu);
     }
-    // Force styles inline
+    // Force styles inline every time
     menu.style.cssText = 'display:block !important; position:fixed !important; top:70px !important; left:50% !important; transform:translateX(-50%) !important; opacity:1 !important; visibility:visible !important; background:#ffffff !important; border:3px solid #0d7a64 !important; border-radius:18px !important; padding:14px 10px !important; box-shadow:0 25px 80px rgba(0,0,0,0.5), 0 0 0 4px rgba(255,255,255,0.4) !important; min-width:320px !important; max-width:min(94vw,440px) !important; width:auto !important; z-index:2147483647 !important; max-height:calc(100vh - 90px) !important; overflow-y:auto !important;';
     // Add close button if not present
     if(!menu.querySelector('.nav-dd-close')){
