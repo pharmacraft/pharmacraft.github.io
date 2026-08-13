@@ -497,6 +497,27 @@ html[data-theme="cream"] .recent-box h4,html[data-theme="cream"] .recent-box li{
 html[data-theme="cream"] .pyq-box h4,html[data-theme="cream"] .pyq-box li{color:#7a5618;}
 html[data-theme="cream"] .youtube-box h4{color:#a13030;}
 /* Theme toggle button */
+
+/* Nav Share Button */
+.nav-share-btn{display:flex;align-items:center;gap:6px;background:linear-gradient(135deg,#14a085,#0e7a64);border:1.5px solid #0e7a64;border-radius:18px;padding:6px 14px;font-size:12px;font-weight:700;color:#fff;cursor:pointer;transition:all .2s;flex-shrink:0;}
+.nav-share-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(20,160,133,0.35);}
+.nav-share-btn svg{flex-shrink:0;}
+@media(max-width:900px){.nav-share-label{display:none;}.nav-share-btn{padding:6px 10px;}}
+/* Share fallback popup */
+.share-pop-backdrop{display:none;position:fixed;inset:0;background:rgba(15,23,42,0.6);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:2147483646;align-items:center;justify-content:center;padding:20px;}
+.share-pop-backdrop.show{display:flex;}
+.share-pop{background:#fff;border-radius:18px;padding:24px;max-width:360px;width:100%;box-shadow:0 25px 60px rgba(0,0,0,0.35);text-align:center;}
+.share-pop h3{margin:0 0 4px;color:#0a5e4d;font-size:1.15em;font-weight:800;}
+.share-pop p{margin:0 0 18px;color:#6b7280;font-size:0.85em;}
+.share-pop-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.share-pop-btns a,.share-pop-btns button{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:12px;font-weight:700;font-size:0.9em;text-decoration:none;border:none;cursor:pointer;transition:transform .15s;color:#fff;}
+.share-pop-btns a:hover,.share-pop-btns button:hover{transform:translateY(-2px);}
+.sp-wa{background:#25D366;}
+.sp-tg{background:#0088cc;}
+.sp-copy{background:#6366f1;}
+.sp-more{background:#374151;}
+.share-pop-close{margin-top:16px;background:#f3f4f6;color:#374151;border:none;padding:8px 20px;border-radius:10px;font-weight:600;cursor:pointer;font-size:0.85em;}
+
 .theme-toggle{background:transparent;border:1.5px solid var(--border);border-radius:18px;
   padding:6px 12px;cursor:pointer;font-family:'Sora',sans-serif;font-size:12px;font-weight:600;
   color:var(--text);transition:.25s;display:inline-flex;align-items:center;gap:6px;margin-right:8px;}
@@ -1781,7 +1802,11 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <a href="#about">About</a>
   <a href="#community" onclick="document.querySelector('.community-strip')?.scrollIntoView({behavior:'smooth'});return false;">🌐 Community</a>
 
-  <button class="search-trigger" onclick="openSearch()" style="margin-left:auto;">🔍 Search <kbd>/</kbd></button>
+  <button class="nav-share-btn" onclick="sharePharmaCraft()" title="Share PharmaCraft" aria-label="Share" style="margin-left:auto;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+    <span class="nav-share-label">Share</span>
+  </button>
+  <button class="search-trigger" onclick="openSearch()">🔍 Search <kbd>/</kbd></button>
   <button class="theme-toggle" id="theme-toggle" onclick="togglePharmaTheme()" title="Toggle Cream / Standard theme" aria-label="Toggle theme">
     <span id="theme-toggle-icon">📖</span><span id="theme-toggle-label">Reading</span>
   </button>
@@ -2305,6 +2330,21 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   </div>
 </footer>
 
+<!-- ═══════════ SHARE POPUP (fallback) ═══════════ -->
+<div id="share-pop-backdrop" class="share-pop-backdrop" onclick="if(event.target===this)closeSharePop()">
+  <div class="share-pop">
+    <h3>Share PharmaCraft</h3>
+    <p>Help fellow students master Pharmacology</p>
+    <div class="share-pop-btns">
+      <a id="sp-whatsapp" class="sp-wa" target="_blank" rel="noopener">WhatsApp</a>
+      <a id="sp-telegram" class="sp-tg" target="_blank" rel="noopener">Telegram</a>
+      <button class="sp-copy" onclick="copyShareLink(this)">Copy Link</button>
+      <button class="sp-more" onclick="nativeShareFallback()">More</button>
+    </div>
+    <button class="share-pop-close" onclick="closeSharePop()">Close</button>
+  </div>
+</div>
+
 <!-- ═══════════ LEGAL MODAL (Terms/Privacy/Disclaimer) ═══════════ -->
 <div id="legal-backdrop" class="legal-backdrop" onclick="if(event.target===this)closeLegal()">
   <div class="legal-modal">
@@ -2470,6 +2510,65 @@ window.switchLegal = function(section){
   if(body) body.scrollTop = 0;
 };
 document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLegal(); });
+
+/* ── SHARE PHARMACRAFT ── */
+window.__shareText = "🩺 PharmaCraft — Free Pharmacology Platform by Dr. Susheel Kumar\n\n✅ 14 Core Topics + Animated Mechanisms\n✅ 2,245+ NEET PG MCQs with explanations\n✅ 329+ PYQs (NEET PG, INI-CET, FMGE, AIIMS)\n✅ 25 Prescription Simulator Cases\n\nPerfect for MBBS, NEET PG, INI-CET & FMGE prep. 100% FREE!\n\n👉 https://pharmacraft.in";
+window.__shareURL = "https://pharmacraft.in";
+
+window.sharePharmaCraft = function(){
+  try{ if(typeof gtag==='function') gtag('event','share_click',{method:'nav_button'}); }catch(e){}
+  // Try native Web Share API first (mobile)
+  if(navigator.share){
+    navigator.share({
+      title: 'PharmaCraft — Pharmacology for MBBS, NEET PG, INI-CET & FMGE',
+      text: window.__shareText,
+      url: window.__shareURL
+    }).catch(function(){ openSharePop(); });
+  } else {
+    openSharePop();
+  }
+};
+
+window.openSharePop = function(){
+  const bd = document.getElementById('share-pop-backdrop');
+  if(!bd) return;
+  const txt = encodeURIComponent(window.__shareText);
+  const url = encodeURIComponent(window.__shareURL);
+  const wa = document.getElementById('sp-whatsapp');
+  const tg = document.getElementById('sp-telegram');
+  if(wa) wa.href = 'https://wa.me/?text=' + txt;
+  if(tg) tg.href = 'https://t.me/share/url?url=' + url + '&text=' + encodeURIComponent(window.__shareText);
+  bd.classList.add('show');
+};
+
+window.closeSharePop = function(){
+  const bd = document.getElementById('share-pop-backdrop');
+  if(bd) bd.classList.remove('show');
+};
+
+window.copyShareLink = function(btn){
+  const full = window.__shareText;
+  navigator.clipboard.writeText(full).then(function(){
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied!';
+    setTimeout(function(){ btn.textContent = orig; }, 1800);
+  }).catch(function(){
+    // Fallback
+    const ta = document.createElement('textarea');
+    ta.value = full; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); btn.textContent='✓ Copied!'; setTimeout(()=>btn.textContent='Copy Link',1800); }catch(e){}
+    document.body.removeChild(ta);
+  });
+};
+
+window.nativeShareFallback = function(){
+  if(navigator.share){
+    navigator.share({title:'PharmaCraft', text:window.__shareText, url:window.__shareURL}).catch(function(){});
+  } else {
+    copyShareLink({textContent:'',});
+    alert('Link copied! Paste it anywhere to share.');
+  }
+};
 
 /* ── DROPDOWN: Click toggle + Modal backdrop ── */
 (function(){
