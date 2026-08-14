@@ -498,6 +498,36 @@ html[data-theme="cream"] .pyq-box h4,html[data-theme="cream"] .pyq-box li{color:
 html[data-theme="cream"] .youtube-box h4{color:#a13030;}
 /* Theme toggle button */
 
+
+/* ── HAMBURGER + MOBILE MENU ────────────── */
+.nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:4px;background:transparent;border:none;cursor:pointer;padding:8px;margin-left:auto;width:40px;height:40px;}
+.nav-hamburger span{display:block;width:22px;height:2.5px;background:var(--navy);border-radius:2px;transition:all .25s;}
+.nav-hamburger:hover span{background:var(--teal);}
+.mobile-menu-backdrop{display:none;position:fixed;inset:0;background:rgba(15,23,42,0.6);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:2147483645;}
+.mobile-menu-backdrop.show{display:block;animation:mmFade .2s ease;}
+@keyframes mmFade{from{opacity:0}to{opacity:1}}
+.mobile-menu{position:fixed;top:0;right:0;bottom:0;width:min(80vw,320px);background:#ffffff;box-shadow:-8px 0 32px rgba(0,0,0,0.25);transform:translateX(100%);transition:transform .28s cubic-bezier(0.4,0,0.2,1);overflow-y:auto;}
+.mobile-menu-backdrop.show .mobile-menu{transform:translateX(0);}
+.mobile-menu-head{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;background:linear-gradient(135deg,#14a085,#0e7a64);color:#fff;position:sticky;top:0;z-index:2;}
+.mobile-menu-title{font-size:1.1em;font-weight:800;}
+.mobile-menu-close{background:rgba(255,255,255,0.2);border:none;color:#fff;width:34px;height:34px;border-radius:50%;font-size:1.4em;cursor:pointer;line-height:1;}
+.mobile-menu-close:hover{background:rgba(255,255,255,0.35);}
+.mobile-menu-links{display:flex;flex-direction:column;padding:12px 10px;}
+.mobile-menu-links a{display:block;padding:14px 16px;color:#1a3a5f;text-decoration:none;font-weight:600;font-size:1em;border-radius:10px;cursor:pointer;transition:all .15s;}
+.mobile-menu-links a:hover,.mobile-menu-links a:active{background:linear-gradient(135deg,#14a085,#0e7a64);color:#fff;}
+.mobile-menu-divider{height:1px;background:#e5e7eb;margin:8px 16px;}
+
+/* Show hamburger, hide desktop nav items on mobile */
+@media(max-width:768px){
+  .nav-hamburger{display:flex;}
+  .nav > a:not(.nav-brand),
+  .nav > .nav-dropdown,
+  .nav > .search-trigger,
+  .nav > .theme-toggle{display:none !important;}
+  .nav-share-btn{display:flex !important;margin-left:0 !important;}
+  .nav{gap:8px;}
+}
+
 /* Nav Share Button */
 .nav-share-btn{display:flex;align-items:center;gap:6px;background:linear-gradient(135deg,#14a085,#0e7a64);border:1.5px solid #0e7a64;border-radius:18px;padding:6px 14px;font-size:12px;font-weight:700;color:#fff;cursor:pointer;transition:all .2s;flex-shrink:0;}
 .nav-share-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(20,160,133,0.35);}
@@ -1759,6 +1789,9 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
 <!-- ── NAVIGATION ───────────────────────────────── -->
 <nav class="nav">
   <a href="#home" class="nav-brand"><img src="logo.png" alt="PharmaCraft Logo"><span class="nav-brand-text">PharmaCraft</span></a>
+  <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu" title="Menu">
+    <span></span><span></span><span></span>
+  </button>
   <a href="#home" class="active">Home</a>
 
   <!-- Topics Dropdown -->
@@ -2330,6 +2363,31 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   </div>
 </footer>
 
+<!-- ═══════════ MOBILE MENU DRAWER ═══════════ -->
+<div id="mobile-menu-backdrop" class="mobile-menu-backdrop" onclick="if(event.target===this)closeMobileMenu()">
+  <div class="mobile-menu">
+    <div class="mobile-menu-head">
+      <span class="mobile-menu-title">Menu</span>
+      <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close">&times;</button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="#home" onclick="closeMobileMenu()">🏠 Home</a>
+      <a href="#topics" onclick="closeMobileMenu()">📚 Topics</a>
+      <a href="#pyq" onclick="closeMobileMenu()">🎯 PYQ Vault</a>
+      <a href="#practice" onclick="closeMobileMenu()">📝 Practice Sets</a>
+      <a href="#adaptive" onclick="closeMobileMenu()">🧠 Adaptive Test</a>
+      <a href="#dic" onclick="closeMobileMenu()">🔍 Drug Interactions</a>
+      <a href="#rx-sim" onclick="closeMobileMenu()">📝 Rx Simulator</a>
+      <a href="#about" onclick="closeMobileMenu()">ℹ️ About</a>
+      <a onclick="document.querySelector('.community-strip')?.scrollIntoView({behavior:'smooth'});closeMobileMenu();">🌐 Community</a>
+      <div class="mobile-menu-divider"></div>
+      <a onclick="sharePharmaCraft();closeMobileMenu();">📤 Share PharmaCraft</a>
+      <a onclick="openSearch();closeMobileMenu();">🔍 Search</a>
+      <a href="https://www.youtube.com/@pharmacraft_official" target="_blank" rel="noopener" onclick="closeMobileMenu()" style="color:#dc2626;font-weight:800;">▶ YouTube Channel</a>
+    </nav>
+  </div>
+</div>
+
 <!-- ═══════════ SHARE POPUP (fallback) ═══════════ -->
 <div id="share-pop-backdrop" class="share-pop-backdrop" onclick="if(event.target===this)closeSharePop()">
   <div class="share-pop">
@@ -2514,6 +2572,17 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLega
 /* ── SHARE PHARMACRAFT ── */
 window.__shareText = "🩺 PharmaCraft — Free Pharmacology Platform by Dr. Susheel Kumar\n\n✅ 14 Core Topics + Animated Mechanisms\n✅ 2,245+ NEET PG MCQs with explanations\n✅ 329+ PYQs (NEET PG, INI-CET, FMGE, AIIMS)\n✅ 25 Prescription Simulator Cases\n\nPerfect for MBBS, NEET PG, INI-CET & FMGE prep. 100% FREE!\n\n👉 https://pharmacraft.in";
 window.__shareURL = "https://pharmacraft.in";
+
+window.toggleMobileMenu = function(){
+  const bd = document.getElementById('mobile-menu-backdrop');
+  if(!bd) return;
+  if(bd.classList.contains('show')){ closeMobileMenu(); }
+  else { bd.classList.add('show'); document.body.style.overflow='hidden'; try{if(typeof gtag==='function')gtag('event','mobile_menu_open');}catch(e){} }
+};
+window.closeMobileMenu = function(){
+  const bd = document.getElementById('mobile-menu-backdrop');
+  if(bd){ bd.classList.remove('show'); document.body.style.overflow=''; }
+};
 
 window.sharePharmaCraft = function(){
   try{ if(typeof gtag==='function') gtag('event','share_click',{method:'nav_button'}); }catch(e){}
