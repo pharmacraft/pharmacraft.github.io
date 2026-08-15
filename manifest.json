@@ -1,5 +1,5 @@
 {
-  "name": "PharmaCraft – Complete Pharmacology Platform",
+  "name": "PharmaCraft \u2013 Complete Pharmacology Platform",
   "short_name": "PharmaCraft",
   "description": "Comprehensive Pharmacology teaching platform for MBBS, NEET PG, INI-CET and FMGE students. Animated mechanisms, classifications, NEET PG MCQs and practice sets by Dr. Susheel Kumar.",
   "start_url": "/",
@@ -9,19 +9,29 @@
   "background_color": "#eef4f8",
   "theme_color": "#0f2847",
   "lang": "en",
-  "categories": ["education", "medical", "books"],
+  "categories": [
+    "education",
+    "medical",
+    "books"
+  ],
   "icons": [
     {
-      "src": "logo.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "logo.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
@@ -30,21 +40,36 @@
       "short_name": "Topics",
       "description": "All 14 pharmacology topics",
       "url": "/#topics",
-      "icons": [{ "src": "logo.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "logo.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "NEET PG PYQs",
       "short_name": "PYQs",
       "description": "Year-wise NEET PG questions",
       "url": "/#pyq",
-      "icons": [{ "src": "logo.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "logo.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Practice Sets",
       "short_name": "Practice",
       "description": "Timed practice exams",
       "url": "/#practice",
-      "icons": [{ "src": "logo.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "logo.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
