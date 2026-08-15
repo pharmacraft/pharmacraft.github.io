@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v96-icon-circle-safe-20260815';
+const CACHE_VERSION = 'pharmacraft-v97-new-circular-logo-20260815';
 const CORE_ASSETS = [
   '/',
   '/index.html',
