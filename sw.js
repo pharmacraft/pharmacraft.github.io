@@ -1,7 +1,7 @@
 /* PharmaCraft Service Worker
    Cache-first for shell, network-first for HTML.
    Version bumped each deploy to force update. */
-const CACHE_VERSION = 'pharmacraft-v100-logo-white-theme-20260816';
+const CACHE_VERSION = 'pharmacraft-v101-ios-install-hint-20261001';
 const CORE_ASSETS = [
   '/',
   '/index.html',

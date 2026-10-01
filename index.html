@@ -1878,6 +1878,18 @@ html[data-theme="cream"] .dic-detail-box{background:#fefcf3;}
   <span class="close" onclick="dismissPWA()">✕</span>
 </div>
 
+<!-- iOS Install Hint (Safari has no auto-prompt) -->
+<div id="ios-install-banner" style="display:none;position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:2147483600;background:#fff;border:2px solid #0d7a64;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.25);padding:14px 16px;max-width:360px;width:calc(100vw - 32px);display:none;align-items:center;gap:12px;">
+  <img src="icon-192.png" alt="PharmaCraft" style="width:44px;height:44px;border-radius:10px;flex-shrink:0;">
+  <div style="flex:1;font-size:13px;line-height:1.5;color:#1a3a5f;">
+    <strong style="color:#0a5e4d;">Install PharmaCraft</strong><br>
+    Tap <span style="display:inline-block;vertical-align:-3px;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0d7a64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+    </span> Share, then <strong>"Add to Home Screen"</strong>
+  </div>
+  <button onclick="dismissIOSBanner()" aria-label="Close" style="background:#f3f4f6;border:none;width:28px;height:28px;border-radius:50%;font-size:1em;color:#6b7280;cursor:pointer;flex-shrink:0;">&times;</button>
+</div>
+
 <!-- ── SEARCH OVERLAY ─────────────────────────── -->
 <div class="search-overlay" id="search-overlay" onclick="if(event.target===this)closeSearch()">
   <div class="search-box">
@@ -24436,6 +24448,27 @@ function dismissPWA(){
   if(b) b.classList.remove('show');
   try{localStorage.setItem('pwa-dismissed','1');}catch(e){}
 }
+
+/* iOS install hint - Safari has no beforeinstallprompt */
+window.dismissIOSBanner=function(){
+  const b=document.getElementById('ios-install-banner');
+  if(b) b.style.display='none';
+  try{localStorage.setItem('ios-install-dismissed','1');}catch(e){}
+};
+(function(){
+  function isIOS(){ return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1); }
+  function isSafari(){ const ua=navigator.userAgent; return /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|Chrome/.test(ua); }
+  function isStandalone(){ return window.navigator.standalone===true || window.matchMedia('(display-mode: standalone)').matches; }
+  try{
+    if(isIOS() && isSafari() && !isStandalone() && localStorage.getItem('ios-install-dismissed')!=='1'){
+      setTimeout(function(){
+        const b=document.getElementById('ios-install-banner');
+        if(b){ b.style.display='flex'; }
+        try{ if(typeof gtag==='function') gtag('event','ios_install_hint_shown'); }catch(e){}
+      }, 3500);
+    }
+  }catch(e){}
+})();
 
 document.addEventListener('DOMContentLoaded',()=>{
   // Sync theme icon/label with saved theme
