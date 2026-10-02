@@ -1,0 +1,46 @@
+{
+  "_help": "Add as many MCQs and notes as you want. Each day the script posts the NEXT item in order (day 1 = first item, day 2 = second). When the list ends it loops back to the top. Quiz 'explanation' must be 200 characters or less. 'correct' is the option number starting from 0 (first option = 0).",
+  "start_date": "2026-10-03",
+  "mcqs": [
+    {
+      "topic": "Autonomic Nervous System",
+      "question": "Which drug is the first-line antidote for organophosphate poisoning?",
+      "options": ["Atropine", "Pralidoxime", "Physostigmine", "Neostigmine"],
+      "correct": 0,
+      "explanation": "Atropine blocks muscarinic effects immediately. Pralidoxime regenerates cholinesterase and is given alongside."
+    },
+    {
+      "topic": "Cardiovascular",
+      "question": "Which drug is the agent of choice for acute termination of PSVT?",
+      "options": ["Amiodarone", "Adenosine", "Verapamil", "Lignocaine"],
+      "correct": 1,
+      "explanation": "Adenosine has an ultra-short half-life and transiently blocks the AV node, terminating PSVT."
+    },
+    {
+      "topic": "Antimicrobials",
+      "question": "Which antitubercular drug most commonly causes peripheral neuropathy?",
+      "options": ["Rifampicin", "Ethambutol", "Isoniazid", "Pyrazinamide"],
+      "correct": 2,
+      "explanation": "Isoniazid causes B6 (pyridoxine) deficiency leading to neuropathy. Prevented by giving pyridoxine."
+    },
+    {
+      "topic": "CNS",
+      "question": "Which drug is first-line IV therapy for status epilepticus?",
+      "options": ["Phenytoin", "Lorazepam", "Valproate", "Levetiracetam"],
+      "correct": 1,
+      "explanation": "IV Lorazepam is first-line due to rapid onset and longer duration of action than diazepam."
+    },
+    {
+      "topic": "Endocrine",
+      "question": "Which oral antidiabetic is the first-line drug in type 2 diabetes mellitus?",
+      "options": ["Glimepiride", "Metformin", "Sitagliptin", "Pioglitazone"],
+      "correct": 1,
+      "explanation": "Metformin is first-line: reduces hepatic gluconeogenesis, is weight-neutral, no hypoglycaemia."
+    }
+  ],
+  "notes": [
+    "<b>Today's Note: Atropine</b>\n\nClass: Muscarinic antagonist\nUses: Organophosphate poisoning, bradycardia, preanaesthetic medication, mydriatic\nKey effects: Tachycardia, dry mouth, mydriasis, urinary retention, reduced secretions\nToxicity mnemonic: Hot as a hare, dry as a bone, red as a beet, mad as a hatter, blind as a bat\n\nHigh-yield for NEET PG and INI-CET.",
+    "<b>Today's Note: Adenosine</b>\n\nHalf-life: under 10 seconds (give as rapid IV push)\nMechanism: Activates A1 receptors, increases K+ efflux, transient AV block\nUse: Drug of choice for acute PSVT\nCaution: Avoid in asthma (bronchospasm); brief flushing and chest tightness are common\n\nClassic one-liner for exams.",
+    "<b>Today's Note: Isoniazid (INH)</b>\n\nMechanism: Inhibits mycolic acid synthesis\nAdverse effects: Peripheral neuropathy (give pyridoxine), hepatotoxicity, lupus-like syndrome\nMetabolism: Acetylation (fast vs slow acetylators)\nKey point: Pyridoxine (B6) prevents the neuropathy\n\nFrequently asked antitubercular drug."
+  ]
+}
