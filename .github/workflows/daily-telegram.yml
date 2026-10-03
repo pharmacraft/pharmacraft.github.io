@@ -1,9 +1,13 @@
 name: PharmaCraft Daily Telegram
 
+# Times are in UTC. 03:30 UTC = 09:00 AM IST.
 on:
   schedule:
-    - cron: '30 12 * * *'
+    - cron: '30 3 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   post:
@@ -17,8 +21,16 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Post daily MCQ and note
+      - name: Post daily MCQs (5 streams)
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL:   ${{ secrets.CHANNEL }}
         run: python post_daily.py
+
+      - name: Commit daily.json for the website
+        run: |
+          git config user.name "pharmacraft-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add daily.json
+          git commit -m "Update daily.json" || echo "No changes to commit"
+          git push || echo "Nothing to push"
