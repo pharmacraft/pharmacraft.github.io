@@ -1388,6 +1388,12 @@ html[data-theme="cream"] .hero-impact-card{background:rgba(253,248,234,0.9);}
 .daily-exp{background:rgba(16,185,129,0.08);border:1px solid #86efac;border-radius:8px;padding:11px 13px;
   font-size:12px;line-height:1.7;display:none;}
 .daily-exp.show{display:block;animation:fi .3s;}
+.daily-stream{background:#fff;border:1.5px solid #fcd34d;border-radius:14px;padding:14px 15px;margin-bottom:12px;}
+.daily-stream-tag{font-size:11px;font-weight:800;color:#92400e;text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px;}
+.daily-wa{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:6px;padding:12px 18px;
+  background:linear-gradient(135deg,#25D366,#1da851);color:#fff;border-radius:12px;text-decoration:none;
+  font-weight:800;font-size:13px;box-shadow:0 4px 14px rgba(37,211,102,.3);}
+.daily-wa:hover{color:#fff;transform:translateY(-1px);}
 
 /* ── PRINT / PDF ─────────────────────────────── */
 .topic-export-btn{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,var(--navy),var(--teal));
@@ -23442,34 +23448,59 @@ function searchKeys(e){
 
 /* ── DAILY MCQ ──────────────────────────────── */
 function renderDailyMCQ(){
+  const host = document.getElementById('daily-mcq-host');
+  if(!host) return;
+  // Load the 5-stream daily set posted by the bot (daily.json). Fallback to a local MCQ.
+  fetch('daily.json?t='+Date.now()).then(r=>r.ok?r.json():Promise.reject()).then(data=>{
+    if(!data || !Array.isArray(data.items) || !data.items.length) throw 0;
+    const letters=['A','B','C','D','E'];
+    const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const blocks = data.items.map(it=>{
+      const correctTxt = (it.options&&it.options[it.correct])||'';
+      const opts = (it.options||[]).map((opt,i)=>`<div class="daily-opt" onclick="dailyPick(this)"><span class="daily-letter">${letters[i]}.</span> ${esc(opt)}</div>`).join('');
+      return `<div class="daily-stream" data-correct="${esc(correctTxt)}">
+        <div class="daily-stream-tag">${esc(it.emoji||'')} ${esc(it.stream||'')} <span style="opacity:.65;">• ${esc(it.topic||'')}</span></div>
+        <p class="daily-q">${esc(it.question||'')}</p>
+        <div class="daily-opts">${opts}</div>
+        <div class="daily-exp"><strong style="color:#047857;display:block;margin-bottom:4px;">✅ ${esc(correctTxt)}</strong><p>${esc(it.explanation||'')}</p></div>
+      </div>`;
+    }).join('');
+    const wa = data.whatsapp_url ? `<a href="${data.whatsapp_url}" target="_blank" rel="noopener" class="daily-wa" onclick="try{if(typeof gtag==='function')gtag('event','whatsapp_share',{source:'daily_mcq'});}catch(e){}">📲 Share today's MCQs on WhatsApp</a>` : '';
+    host.innerHTML = `<div class="daily-h"><span class="daily-badge">📅 MCQ of the Day</span><h3>5 Exams • ${esc(data.date||'')}</h3></div>${blocks}${wa}`;
+  }).catch(()=>{ renderDailyMCQLocal(); });
+}
+function renderDailyMCQLocal(){
   const allMCQ = [];
+  if(typeof TOPICS==='undefined') return;
   TOPICS.forEach(t=>t.mcqs.forEach(m=>allMCQ.push({...m,topic:t.title})));
   if(!allMCQ.length) return;
   const day = Math.floor(Date.now()/86400000);
-  const idx = day % allMCQ.length;
-  const q = allMCQ[idx];
+  const q = allMCQ[day % allMCQ.length];
   const letters = ['A','B','C','D'];
   const host = document.getElementById('daily-mcq-host');
   if(!host) return;
   host.innerHTML = `
-    <div class="daily-h">
-      <span class="daily-badge">📅 MCQ of the Day</span>
-      <h3>${q.topic}</h3>
-    </div>
-    <p class="daily-q">${q.q}</p>
-    <div class="daily-opts" id="daily-opts">
-      ${q.o.map((opt,i)=>`<div class="daily-opt" onclick="dailyPick(this,'${opt.replace(/'/g,"\\'")}','${q.a.replace(/'/g,"\\'")}')"><span class="daily-letter">${letters[i]}.</span> ${opt}</div>`).join('')}
-    </div>
-    <div class="daily-exp" id="daily-exp"><strong style="color:#047857;display:block;margin-bottom:4px;">✅ Correct: ${q.a}</strong><p>${q.e}</p></div>
-  `;
+    <div class="daily-h"><span class="daily-badge">📅 MCQ of the Day</span><h3>${q.topic}</h3></div>
+    <div class="daily-stream" data-correct="${(q.a||'').replace(/"/g,'&quot;')}">
+      <p class="daily-q">${q.q}</p>
+      <div class="daily-opts">
+        ${q.o.map((opt,i)=>`<div class="daily-opt" onclick="dailyPick(this)"><span class="daily-letter">${letters[i]}.</span> ${opt}</div>`).join('')}
+      </div>
+      <div class="daily-exp"><strong style="color:#047857;display:block;margin-bottom:4px;">✅ Correct: ${q.a}</strong><p>${q.e}</p></div>
+    </div>`;
 }
-function dailyPick(elx,picked,correct){
-  document.querySelectorAll('#daily-opts .daily-opt').forEach(o=>{o.onclick=null;});
-  document.querySelectorAll('#daily-opts .daily-opt').forEach(o=>{
-    if(o.textContent.includes(correct)) o.classList.add('correct');
+function dailyPick(elx){
+  const block = elx.closest('.daily-stream');
+  if(!block) return;
+  const correct = (block.getAttribute('data-correct')||'').trim();
+  block.querySelectorAll('.daily-opt').forEach(o=>{
+    o.onclick=null;
+    const txt = o.textContent.replace(/^\s*[A-E]\.\s*/,'').trim();
+    if(txt===correct) o.classList.add('correct');
     else if(o===elx) o.classList.add('wrong');
   });
-  document.getElementById('daily-exp').classList.add('show');
+  const exp = block.querySelector('.daily-exp');
+  if(exp) exp.classList.add('show');
 }
 
 /* ── PRINT / EXPORT ─────────────────────────── */

@@ -1,398 +1,1494 @@
 {
-  "_help": "Each day the script posts the NEXT item in order. 30 MCQs and 30 notes = 30 days of fresh content, then it loops. Quiz explanation must be 200 characters or less. 'correct' starts from 0.",
-  "start_date": "2026-10-03",
-  "mcqs": [
-    {
-      "topic": "Autonomic Nervous System",
-      "question": "Drug of choice as the first antidote in organophosphate poisoning?",
-      "options": [
-        "Atropine",
-        "Pralidoxime",
-        "Physostigmine",
-        "Neostigmine"
-      ],
-      "correct": 0,
-      "explanation": "Atropine blocks muscarinic effects at once. Pralidoxime (oxime) reactivates cholinesterase and is added alongside."
-    },
-    {
-      "topic": "Autonomic Nervous System",
-      "question": "Which beta-blocker is cardioselective (relatively safe in asthma)?",
-      "options": [
-        "Propranolol",
-        "Atenolol",
-        "Timolol",
-        "Nadolol"
-      ],
-      "correct": 1,
-      "explanation": "Atenolol and metoprolol are beta-1 selective. Non-selective agents (propranolol, timolol) can trigger bronchospasm."
-    },
-    {
-      "topic": "Cardiovascular",
-      "question": "Agent of choice for acute termination of paroxysmal SVT?",
-      "options": [
-        "Amiodarone",
-        "Adenosine",
-        "Verapamil",
-        "Lignocaine"
-      ],
-      "correct": 1,
-      "explanation": "Adenosine (half-life under 10 sec) causes transient AV nodal block, terminating PSVT. Given as rapid IV push."
-    },
-    {
-      "topic": "Cardiovascular",
-      "question": "Preferred antihypertensive in pregnancy?",
-      "options": [
-        "Enalapril",
-        "Methyldopa",
-        "Losartan",
-        "Atenolol"
-      ],
-      "correct": 1,
-      "explanation": "Methyldopa, labetalol and nifedipine are safe. ACE inhibitors and ARBs are contraindicated (fetal toxicity)."
-    },
-    {
-      "topic": "Cardiovascular",
-      "question": "Which drug reduces mortality in chronic heart failure (HFrEF)?",
-      "options": [
-        "Digoxin",
-        "Dobutamine",
-        "Enalapril",
-        "Furosemide"
-      ],
-      "correct": 2,
-      "explanation": "ACE inhibitors, beta-blockers, MRAs and ARNI reduce mortality. Digoxin and diuretics give symptomatic relief only."
-    },
-    {
-      "topic": "Cardiovascular",
-      "question": "Drug of choice for variant (Prinzmetal) angina?",
-      "options": [
-        "Propranolol",
-        "Amlodipine",
-        "Aspirin",
-        "Digoxin"
-      ],
-      "correct": 1,
-      "explanation": "Calcium channel blockers relieve coronary vasospasm. Non-selective beta-blockers may worsen the spasm."
-    },
-    {
-      "topic": "Antimicrobials",
-      "question": "Antitubercular drug that most commonly causes peripheral neuropathy?",
-      "options": [
-        "Rifampicin",
-        "Ethambutol",
-        "Isoniazid",
-        "Pyrazinamide"
-      ],
-      "correct": 2,
-      "explanation": "Isoniazid depletes pyridoxine (B6), causing neuropathy. Prevented and treated by giving pyridoxine."
-    },
-    {
-      "topic": "Antimicrobials",
-      "question": "Mechanism of action of penicillins?",
-      "options": [
-        "Inhibit protein synthesis",
-        "Inhibit cell wall synthesis",
-        "Inhibit DNA gyrase",
-        "Inhibit folate synthesis"
-      ],
-      "correct": 1,
-      "explanation": "Beta-lactams inhibit transpeptidase (PBPs), blocking peptidoglycan cross-linking, so cell wall synthesis fails."
-    },
-    {
-      "topic": "Antimicrobials",
-      "question": "Characteristic dose-limiting toxicity of aminoglycosides?",
-      "options": [
-        "Hepatotoxicity",
-        "Nephrotoxicity",
-        "Cardiotoxicity",
-        "Pulmonary fibrosis"
-      ],
-      "correct": 1,
-      "explanation": "Aminoglycosides (gentamicin) cause nephrotoxicity and ototoxicity. Once-daily dosing lowers the risk."
-    },
-    {
-      "topic": "Antimicrobials",
-      "question": "Long-term use of which antimalarial causes retinopathy?",
-      "options": [
-        "Quinine",
-        "Chloroquine",
-        "Primaquine",
-        "Artesunate"
-      ],
-      "correct": 1,
-      "explanation": "Chloroquine and hydroxychloroquine cause retinopathy on prolonged use. Primaquine causes hemolysis in G6PD deficiency."
-    },
-    {
-      "topic": "Antimicrobials",
-      "question": "Major dose-limiting toxicity of amphotericin B?",
-      "options": [
-        "Hepatotoxicity",
-        "Nephrotoxicity",
-        "Retinopathy",
-        "Neuropathy"
-      ],
-      "correct": 1,
-      "explanation": "Amphotericin B is markedly nephrotoxic and causes infusion reactions. Liposomal forms are less toxic."
-    },
-    {
-      "topic": "Antimicrobials",
-      "question": "Drug of choice for herpes simplex encephalitis?",
-      "options": [
-        "Ganciclovir",
-        "Acyclovir",
-        "Oseltamivir",
-        "Ribavirin"
-      ],
-      "correct": 1,
-      "explanation": "IV acyclovir is first-line for HSV encephalitis. Ganciclovir is used for CMV, oseltamivir for influenza."
-    },
-    {
-      "topic": "CNS",
-      "question": "First-line IV drug for status epilepticus?",
-      "options": [
-        "Phenytoin",
-        "Lorazepam",
-        "Valproate",
-        "Levetiracetam"
-      ],
-      "correct": 1,
-      "explanation": "IV benzodiazepine (lorazepam) is first-line. Phenytoin, valproate or levetiracetam are second-line."
-    },
-    {
-      "topic": "CNS",
-      "question": "Most effective drug for Parkinson disease?",
-      "options": [
-        "Amantadine",
-        "Levodopa",
-        "Selegiline",
-        "Bromocriptine"
-      ],
-      "correct": 1,
-      "explanation": "Levodopa (with carbidopa) is the most effective. Carbidopa blocks peripheral conversion and reduces side effects."
-    },
-    {
-      "topic": "CNS",
-      "question": "Which antipsychotic causes agranulocytosis needing blood monitoring?",
-      "options": [
-        "Haloperidol",
-        "Clozapine",
-        "Risperidone",
-        "Aripiprazole"
-      ],
-      "correct": 1,
-      "explanation": "Clozapine can cause agranulocytosis, so regular leucocyte counts are mandatory. It is reserved for resistant cases."
-    },
-    {
-      "topic": "CNS",
-      "question": "First-line drug class for major depression?",
-      "options": [
-        "Tricyclic antidepressants",
-        "MAO inhibitors",
-        "SSRIs",
-        "Lithium"
-      ],
-      "correct": 2,
-      "explanation": "SSRIs are first-line due to safety and tolerability. TCAs and MAOIs are reserved for selected or resistant cases."
-    },
-    {
-      "topic": "CNS",
-      "question": "Drug of choice for acute opioid overdose?",
-      "options": [
-        "Naltrexone",
-        "Naloxone",
-        "Flumazenil",
-        "Nalorphine"
-      ],
-      "correct": 1,
-      "explanation": "Naloxone is a short-acting IV opioid antagonist. Flumazenil reverses benzodiazepines, not opioids."
-    },
-    {
-      "topic": "Endocrine",
-      "question": "First-line oral drug in type 2 diabetes mellitus?",
-      "options": [
-        "Glimepiride",
-        "Metformin",
-        "Insulin",
-        "Sitagliptin"
-      ],
-      "correct": 1,
-      "explanation": "Metformin reduces hepatic gluconeogenesis, is weight-neutral and does not cause hypoglycaemia. Add SGLT2i/GLP1 for CV benefit."
-    },
-    {
-      "topic": "Endocrine",
-      "question": "Preferred antithyroid drug in the first trimester of pregnancy?",
-      "options": [
-        "Carbimazole",
-        "Methimazole",
-        "Propylthiouracil",
-        "Radioiodine"
-      ],
-      "correct": 2,
-      "explanation": "PTU is preferred in the first trimester (methimazole is teratogenic early). Radioiodine is contraindicated in pregnancy."
-    },
-    {
-      "topic": "Endocrine",
-      "question": "Common adverse effect of long-term glucocorticoid therapy?",
-      "options": [
-        "Hyperkalemia",
-        "Osteoporosis",
-        "Hypoglycemia",
-        "Weight loss"
-      ],
-      "correct": 1,
-      "explanation": "Chronic steroids cause osteoporosis, Cushingoid features, hyperglycaemia and immunosuppression."
-    },
-    {
-      "topic": "Gastrointestinal",
-      "question": "Mechanism of action of proton pump inhibitors?",
-      "options": [
-        "H2 receptor block",
-        "Irreversible block of H+/K+ ATPase",
-        "Neutralise acid",
-        "Prostaglandin analog"
-      ],
-      "correct": 1,
-      "explanation": "PPIs (omeprazole) irreversibly inhibit the gastric H+/K+ ATPase (proton pump), the final step of acid secretion."
-    },
-    {
-      "topic": "Gastrointestinal",
-      "question": "Drug of choice for chemotherapy-induced vomiting?",
-      "options": [
-        "Metoclopramide",
-        "Ondansetron",
-        "Domperidone",
-        "Hyoscine"
-      ],
-      "correct": 1,
-      "explanation": "Ondansetron, a 5-HT3 antagonist, is highly effective for chemotherapy-induced nausea and vomiting."
-    },
-    {
-      "topic": "Respiratory",
-      "question": "Drug of choice for an acute asthma attack?",
-      "options": [
-        "Salmeterol",
-        "Salbutamol",
-        "Montelukast",
-        "Theophylline"
-      ],
-      "correct": 1,
-      "explanation": "Inhaled short-acting beta-2 agonist (salbutamol) gives rapid bronchodilation. Salmeterol is long-acting for maintenance."
-    },
-    {
-      "topic": "Hematology",
-      "question": "Antidote for heparin overdose?",
-      "options": [
-        "Vitamin K",
-        "Protamine sulfate",
-        "Fresh frozen plasma",
-        "Idarucizumab"
-      ],
-      "correct": 1,
-      "explanation": "Protamine sulfate reverses heparin. Heparin is monitored by aPTT; vitamin K reverses warfarin."
-    },
-    {
-      "topic": "Hematology",
-      "question": "Warfarin therapy is monitored by?",
-      "options": [
-        "aPTT",
-        "PT / INR",
-        "Bleeding time",
-        "Platelet count"
-      ],
-      "correct": 1,
-      "explanation": "Warfarin (vitamin K antagonist) is monitored by PT/INR. Heparin is monitored by aPTT."
-    },
-    {
-      "topic": "Hematology",
-      "question": "Specific antidote for dabigatran?",
-      "options": [
-        "Andexanet alfa",
-        "Idarucizumab",
-        "Protamine",
-        "Vitamin K"
-      ],
-      "correct": 1,
-      "explanation": "Idarucizumab reverses dabigatran (direct thrombin inhibitor). Andexanet alfa reverses factor Xa inhibitors."
-    },
-    {
-      "topic": "Chemotherapy",
-      "question": "Rescue agent for methotrexate toxicity?",
-      "options": [
-        "Folic acid",
-        "Leucovorin",
-        "Mesna",
-        "Dexrazoxane"
-      ],
-      "correct": 1,
-      "explanation": "Leucovorin (folinic acid) rescues normal cells. Mesna prevents cyclophosphamide cystitis; dexrazoxane protects from anthracyclines."
-    },
-    {
-      "topic": "Autacoids",
-      "question": "Aspirin is avoided in children with viral fever due to risk of?",
-      "options": [
-        "Kernicterus",
-        "Reye syndrome",
-        "Gray baby syndrome",
-        "Hemolysis"
-      ],
-      "correct": 1,
-      "explanation": "Aspirin in viral illness in children can cause Reye syndrome (encephalopathy with hepatic failure)."
-    },
-    {
-      "topic": "Autacoids",
-      "question": "First-line urate-lowering drug for chronic gout?",
-      "options": [
-        "Colchicine",
-        "Allopurinol",
-        "Indomethacin",
-        "Prednisolone"
-      ],
-      "correct": 1,
-      "explanation": "Allopurinol, a xanthine oxidase inhibitor, lowers uric acid for long-term control. Colchicine/NSAIDs treat acute attacks."
-    },
-    {
-      "topic": "Renal",
-      "question": "Which diuretic is potassium-sparing?",
-      "options": [
-        "Furosemide",
-        "Hydrochlorothiazide",
-        "Spironolactone",
-        "Mannitol"
-      ],
-      "correct": 2,
-      "explanation": "Spironolactone (aldosterone antagonist) is potassium-sparing. Loop and thiazide diuretics cause hypokalaemia."
-    }
+  "_help": "5 exam streams. Each day the script posts one quiz per stream (labelled), rotating through each stream's list. Add more items to any stream to extend the runway. Quiz explanation must be 200 chars or less; 'correct' starts at 0.",
+  "start_date": "2026-10-04",
+  "stream_order": [
+    "MBBS",
+    "NEET PG",
+    "INI-CET",
+    "FMGE",
+    "MD Pharmacology"
   ],
-  "notes": [
-    "<b>Drug Spotlight: Atropine</b>\n\nClass: Muscarinic antagonist\nUses: Organophosphate poisoning, symptomatic bradycardia, preanaesthetic medication\nEffects: Tachycardia, dry mouth, mydriasis, urinary retention\nToxicity mnemonic: Hot, dry, red, mad and blind.",
-    "<b>Drug Spotlight: Beta-blockers</b>\n\nCardioselective (B1): Atenolol, Metoprolol, Bisoprolol\nNon-selective: Propranolol, Timolol, Nadolol\nUses: Hypertension, angina, post-MI, arrhythmia, heart failure\nCaution: Asthma, heart block, abrupt withdrawal (rebound).",
-    "<b>Drug Spotlight: Adenosine</b>\n\nHalf-life: under 10 seconds, give as rapid IV push\nMechanism: A1 receptor activation, transient AV block\nUse: Drug of choice for acute PSVT\nCaution: Avoid in asthma; brief flushing and chest tightness are common.",
-    "<b>Topic: Antihypertensives in Pregnancy</b>\n\nSafe: Methyldopa, Labetalol, Nifedipine, Hydralazine\nContraindicated: ACE inhibitors and ARBs (fetal renal damage)\nKey exam point: Methyldopa is the classic first choice.",
-    "<b>Drug Spotlight: ACE Inhibitors</b>\n\nExamples: Enalapril, Ramipril, Lisinopril\nUses: Hypertension, heart failure, diabetic nephropathy\nAdverse: Dry cough, hyperkalaemia, angioedema, first-dose hypotension\nContraindicated: Pregnancy, bilateral renal artery stenosis.",
-    "<b>Drug Spotlight: Calcium Channel Blockers</b>\n\nDihydropyridines: Amlodipine, Nifedipine (vascular)\nNon-DHP: Verapamil, Diltiazem (cardiac)\nUses: Hypertension, angina, Prinzmetal angina, PSVT (verapamil)\nAdverse: Ankle oedema, flushing, constipation (verapamil).",
-    "<b>Drug Spotlight: Isoniazid</b>\n\nMechanism: Inhibits mycolic acid synthesis\nAdverse: Peripheral neuropathy (give pyridoxine), hepatotoxicity, lupus-like syndrome\nMetabolism: Acetylation (fast vs slow acetylators).",
-    "<b>Drug Spotlight: Penicillins</b>\n\nMechanism: Inhibit transpeptidase, blocking cell wall synthesis\nUses: Streptococcal infection, syphilis, many gram-positive infections\nAdverse: Hypersensitivity (rash to anaphylaxis)\nResistance: Beta-lactamase production.",
-    "<b>Drug Spotlight: Aminoglycosides</b>\n\nExamples: Gentamicin, Amikacin, Streptomycin\nMechanism: Bind 30S, inhibit protein synthesis (bactericidal)\nAdverse: Nephrotoxicity, ototoxicity, neuromuscular block\nTip: Once-daily dosing reduces toxicity.",
-    "<b>Drug Spotlight: Chloroquine</b>\n\nUses: Malaria, amoebic liver abscess, rheumatoid arthritis\nAdverse: Retinopathy (long-term), pruritus, QT prolongation\nContrast: Primaquine causes hemolysis in G6PD deficiency.",
-    "<b>Drug Spotlight: Amphotericin B</b>\n\nUse: Serious systemic fungal infections\nMechanism: Binds ergosterol, forms membrane pores\nAdverse: Nephrotoxicity, hypokalaemia, infusion fever and chills\nTip: Liposomal form is less nephrotoxic.",
-    "<b>Drug Spotlight: Acyclovir</b>\n\nMechanism: Activated by viral thymidine kinase, inhibits DNA polymerase\nUses: HSV (drug of choice for HSV encephalitis), varicella zoster\nAdverse: Crystalluria, nephrotoxicity (ensure hydration).",
-    "<b>Drug Spotlight: Benzodiazepines</b>\n\nMechanism: Enhance GABA-A (increase frequency of Cl- channel opening)\nUses: Status epilepticus, anxiety, sedation, alcohol withdrawal\nAntidote: Flumazenil\nCaution: Respiratory depression with opioids.",
-    "<b>Drug Spotlight: Levodopa</b>\n\nMost effective drug for Parkinson disease\nGiven with carbidopa to block peripheral conversion\nAdverse: Nausea, dyskinesias, on-off phenomenon, postural hypotension\nAvoid with non-selective MAO inhibitors.",
-    "<b>Drug Spotlight: Clozapine</b>\n\nAtypical antipsychotic for resistant schizophrenia\nAdverse: Agranulocytosis (monitor counts), seizures, myocarditis, weight gain\nAdvantage: Very low extrapyramidal side effects.",
-    "<b>Drug Spotlight: SSRIs</b>\n\nExamples: Fluoxetine, Sertraline, Escitalopram\nUse: First-line for depression and anxiety disorders\nAdverse: GI upset, sexual dysfunction, hyponatraemia\nCaution: Serotonin syndrome with MAOIs.",
-    "<b>Drug Spotlight: Naloxone</b>\n\nShort-acting IV opioid antagonist\nUse: Acute opioid overdose (reverses respiratory depression)\nNote: Repeat dosing may be needed as it is shorter-acting than many opioids.",
-    "<b>Drug Spotlight: Metformin</b>\n\nFirst-line in type 2 diabetes\nMechanism: Reduces hepatic gluconeogenesis, improves insulin sensitivity\nAdvantage: Weight-neutral, no hypoglycaemia\nAdverse: GI upset, B12 deficiency, rare lactic acidosis.",
-    "<b>Topic: Antithyroid Drugs</b>\n\nCarbimazole / Methimazole: usual choice\nPropylthiouracil: preferred in first trimester and thyroid storm\nAdverse: Agranulocytosis (warn about sore throat and fever).",
-    "<b>Drug Spotlight: Glucocorticoids</b>\n\nUses: Inflammation, autoimmune disease, allergy, asthma\nAdverse: Osteoporosis, hyperglycaemia, Cushingoid habitus, infection, cataract\nKey: Never stop long-term steroids abruptly.",
-    "<b>Drug Spotlight: Proton Pump Inhibitors</b>\n\nExamples: Omeprazole, Pantoprazole\nMechanism: Irreversibly block gastric H+/K+ ATPase\nUses: GERD, peptic ulcer, H. pylori regimens\nLong-term: Low magnesium, B12, raised fracture risk.",
-    "<b>Drug Spotlight: Ondansetron</b>\n\nMechanism: 5-HT3 receptor antagonist\nUse: Chemotherapy, post-operative and radiation-induced vomiting\nAdverse: Headache, constipation, QT prolongation.",
-    "<b>Drug Spotlight: Beta-2 Agonists</b>\n\nSABA: Salbutamol (acute asthma, rapid relief)\nLABA: Salmeterol, Formoterol (maintenance, always with inhaled steroid)\nAdverse: Tremor, tachycardia, hypokalaemia.",
-    "<b>Drug Spotlight: Heparin</b>\n\nMechanism: Activates antithrombin, inhibits thrombin and factor Xa\nMonitoring: aPTT (for unfractionated)\nAntidote: Protamine sulfate\nAdverse: Bleeding, HIT (heparin-induced thrombocytopenia).",
-    "<b>Drug Spotlight: Warfarin</b>\n\nMechanism: Vitamin K antagonist (factors II, VII, IX, X)\nMonitoring: PT / INR\nAntidote: Vitamin K (and FFP/PCC if severe)\nCaution: Many drug and food interactions; teratogenic.",
-    "<b>Topic: Direct Oral Anticoagulants (DOACs)</b>\n\nDabigatran: thrombin inhibitor, reversed by Idarucizumab\nRivaroxaban / Apixaban: factor Xa inhibitors, reversed by Andexanet alfa\nAdvantage: No routine monitoring; now preferred in atrial fibrillation.",
-    "<b>Drug Spotlight: Methotrexate</b>\n\nMechanism: Inhibits dihydrofolate reductase\nUses: Cancer, rheumatoid arthritis, psoriasis\nRescue: Leucovorin (folinic acid)\nAdverse: Myelosuppression, mucositis, hepatotoxicity.",
-    "<b>Topic: Aspirin Key Points</b>\n\nLow dose: Irreversible COX-1 inhibition, antiplatelet\nAdverse: Gastric ulcer, bleeding\nAvoid in children with viral fever (Reye syndrome)\nToxicity: Tinnitus, respiratory alkalosis then metabolic acidosis.",
-    "<b>Drug Spotlight: Allopurinol</b>\n\nMechanism: Xanthine oxidase inhibitor, lowers uric acid\nUse: Chronic gout prophylaxis, tumour lysis prevention\nNote: Do not start during an acute attack\nInteraction: Raises 6-mercaptopurine and azathioprine toxicity.",
-    "<b>Topic: Diuretics at a Glance</b>\n\nLoop (furosemide): strongest, causes hypokalaemia\nThiazide (HCTZ): hypertension, hypokalaemia, hypercalcaemia\nPotassium-sparing (spironolactone): hyperkalaemia\nOsmotic (mannitol): raised intracranial pressure."
-  ]
+  "stream_emoji": {
+    "MBBS": "🎓",
+    "NEET PG": "🩺",
+    "INI-CET": "🏥",
+    "FMGE": "🌍",
+    "MD Pharmacology": "🔬"
+  },
+  "streams": {
+    "MBBS": [
+      {
+        "topic": "General Pharmacology",
+        "question": "The study of movement of drugs into, within and out of the body is called?",
+        "options": [
+          "Pharmacodynamics",
+          "Pharmacokinetics",
+          "Pharmacogenetics",
+          "Pharmacovigilance"
+        ],
+        "correct": 1,
+        "explanation": "Pharmacokinetics = ADME (absorption, distribution, metabolism, excretion). Pharmacodynamics is what the drug does to the body."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "Bioavailability of an intravenous drug is?",
+        "options": [
+          "0%",
+          "25%",
+          "50%",
+          "100%"
+        ],
+        "correct": 3,
+        "explanation": "IV drugs enter circulation directly, so bioavailability is 100% by definition. Oral drugs are less due to first-pass metabolism."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "First-order kinetics means the rate of elimination is?",
+        "options": [
+          "Constant amount per time",
+          "Proportional to drug concentration",
+          "Independent of dose",
+          "Always saturated"
+        ],
+        "correct": 1,
+        "explanation": "In first-order kinetics a constant fraction is eliminated per unit time, so rate is proportional to concentration."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "Phase II drug metabolism reactions are mainly?",
+        "options": [
+          "Oxidation",
+          "Reduction",
+          "Conjugation",
+          "Hydrolysis"
+        ],
+        "correct": 2,
+        "explanation": "Phase II = conjugation (glucuronidation, sulfation, acetylation), making drugs more water-soluble for excretion."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "The neurotransmitter at all autonomic ganglia is?",
+        "options": [
+          "Noradrenaline",
+          "Acetylcholine",
+          "Dopamine",
+          "Adrenaline"
+        ],
+        "correct": 1,
+        "explanation": "Acetylcholine acts on nicotinic (Nn) receptors at both sympathetic and parasympathetic ganglia."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Atropine acts by blocking which receptor?",
+        "options": [
+          "Nicotinic",
+          "Muscarinic",
+          "Alpha adrenergic",
+          "Beta adrenergic"
+        ],
+        "correct": 1,
+        "explanation": "Atropine is a competitive muscarinic antagonist, causing tachycardia, mydriasis and dry secretions."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Which drug is used to treat myasthenia gravis?",
+        "options": [
+          "Atropine",
+          "Neostigmine",
+          "Adrenaline",
+          "Propranolol"
+        ],
+        "correct": 1,
+        "explanation": "Neostigmine, an anticholinesterase, increases acetylcholine at the neuromuscular junction, improving muscle strength."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Digoxin acts by inhibiting?",
+        "options": [
+          "Na-K ATPase",
+          "ACE",
+          "Beta receptors",
+          "Calcium channels"
+        ],
+        "correct": 0,
+        "explanation": "Digoxin inhibits the Na-K ATPase pump, raising intracellular calcium and increasing cardiac contractility (positive inotrope)."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "A common adverse effect of ACE inhibitors is?",
+        "options": [
+          "Dry cough",
+          "Hypokalemia",
+          "Bradycardia",
+          "Weight gain"
+        ],
+        "correct": 0,
+        "explanation": "ACE inhibitors raise bradykinin, causing a dry cough. Other effects: hyperkalemia, angioedema. Contraindicated in pregnancy."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Which drug is given sublingually for acute angina?",
+        "options": [
+          "Atenolol",
+          "Glyceryl trinitrate",
+          "Digoxin",
+          "Amlodipine"
+        ],
+        "correct": 1,
+        "explanation": "Sublingual glyceryl trinitrate (nitroglycerin) causes rapid venodilation, reducing preload and relieving angina."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Which is the drug of choice for absence (petit mal) seizures?",
+        "options": [
+          "Phenytoin",
+          "Ethosuximide",
+          "Carbamazepine",
+          "Phenobarbitone"
+        ],
+        "correct": 1,
+        "explanation": "Ethosuximide (blocks T-type calcium channels) is first-line for absence seizures. Valproate is an alternative."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Morphine mainly acts on which receptor?",
+        "options": [
+          "GABA",
+          "Mu opioid",
+          "Dopamine",
+          "Serotonin"
+        ],
+        "correct": 1,
+        "explanation": "Morphine is a mu opioid receptor agonist, giving analgesia, euphoria, respiratory depression and constipation."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Which benzodiazepine antagonist reverses its effects?",
+        "options": [
+          "Naloxone",
+          "Flumazenil",
+          "Atropine",
+          "Physostigmine"
+        ],
+        "correct": 1,
+        "explanation": "Flumazenil is a competitive benzodiazepine antagonist used in overdose. Naloxone reverses opioids."
+      },
+      {
+        "topic": "Autacoids and NSAIDs",
+        "question": "Aspirin irreversibly inhibits which enzyme?",
+        "options": [
+          "Lipoxygenase",
+          "Cyclooxygenase",
+          "Phospholipase A2",
+          "Xanthine oxidase"
+        ],
+        "correct": 1,
+        "explanation": "Aspirin irreversibly acetylates cyclooxygenase (COX), reducing prostaglandin and thromboxane synthesis."
+      },
+      {
+        "topic": "Autacoids and NSAIDs",
+        "question": "Paracetamol overdose is treated with?",
+        "options": [
+          "N-acetylcysteine",
+          "Naloxone",
+          "Atropine",
+          "Vitamin K"
+        ],
+        "correct": 0,
+        "explanation": "N-acetylcysteine replenishes glutathione, preventing hepatotoxicity from the toxic metabolite NAPQI."
+      },
+      {
+        "topic": "Respiratory",
+        "question": "Drug of choice for acute bronchial asthma is?",
+        "options": [
+          "Salmeterol",
+          "Salbutamol",
+          "Montelukast",
+          "Ipratropium"
+        ],
+        "correct": 1,
+        "explanation": "Inhaled short-acting beta-2 agonist salbutamol gives rapid bronchodilation in acute asthma."
+      },
+      {
+        "topic": "Gastrointestinal",
+        "question": "Omeprazole reduces gastric acid by inhibiting?",
+        "options": [
+          "H2 receptors",
+          "Proton pump (H/K ATPase)",
+          "Muscarinic receptors",
+          "Gastrin"
+        ],
+        "correct": 1,
+        "explanation": "Omeprazole irreversibly inhibits the gastric H+/K+ ATPase (proton pump), the final common step of acid secretion."
+      },
+      {
+        "topic": "Gastrointestinal",
+        "question": "Which drug is a 5-HT3 antagonist antiemetic?",
+        "options": [
+          "Metoclopramide",
+          "Ondansetron",
+          "Domperidone",
+          "Hyoscine"
+        ],
+        "correct": 1,
+        "explanation": "Ondansetron blocks 5-HT3 receptors and is effective for chemotherapy and post-operative vomiting."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "First-line drug in type 2 diabetes mellitus is?",
+        "options": [
+          "Insulin",
+          "Metformin",
+          "Glibenclamide",
+          "Pioglitazone"
+        ],
+        "correct": 1,
+        "explanation": "Metformin reduces hepatic glucose output, is weight-neutral and does not cause hypoglycaemia."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "Which drug is used in hyperthyroidism to block hormone synthesis?",
+        "options": [
+          "Levothyroxine",
+          "Carbimazole",
+          "Propranolol",
+          "Iodine"
+        ],
+        "correct": 1,
+        "explanation": "Carbimazole (and methimazole) inhibit thyroid peroxidase, blocking thyroid hormone synthesis."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Which antibiotic inhibits bacterial cell wall synthesis?",
+        "options": [
+          "Gentamicin",
+          "Penicillin",
+          "Tetracycline",
+          "Ciprofloxacin"
+        ],
+        "correct": 1,
+        "explanation": "Penicillins (beta-lactams) inhibit transpeptidase, blocking peptidoglycan cross-linking in the cell wall."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Red-orange discolouration of body fluids is caused by?",
+        "options": [
+          "Isoniazid",
+          "Rifampicin",
+          "Ethambutol",
+          "Pyrazinamide"
+        ],
+        "correct": 1,
+        "explanation": "Rifampicin causes harmless red-orange colouring of urine, sweat and tears. It is a potent enzyme inducer."
+      },
+      {
+        "topic": "Blood",
+        "question": "Antidote for warfarin overdose is?",
+        "options": [
+          "Protamine",
+          "Vitamin K",
+          "Idarucizumab",
+          "FFP only"
+        ],
+        "correct": 1,
+        "explanation": "Vitamin K reverses warfarin (a vitamin K antagonist). Protamine reverses heparin."
+      },
+      {
+        "topic": "Renal",
+        "question": "Furosemide acts on which part of the nephron?",
+        "options": [
+          "Proximal tubule",
+          "Thick ascending loop of Henle",
+          "Distal tubule",
+          "Collecting duct"
+        ],
+        "correct": 1,
+        "explanation": "Furosemide inhibits the Na-K-2Cl cotransporter in the thick ascending limb, a powerful loop diuretic."
+      },
+      {
+        "topic": "Toxicology",
+        "question": "Specific antidote for organophosphate poisoning is?",
+        "options": [
+          "Atropine and pralidoxime",
+          "Naloxone",
+          "Flumazenil",
+          "Vitamin K"
+        ],
+        "correct": 0,
+        "explanation": "Atropine blocks muscarinic effects; pralidoxime reactivates cholinesterase. Both are used together."
+      }
+    ],
+    "NEET PG": [
+      {
+        "topic": "General Pharmacology",
+        "question": "A drug with zero-order kinetics at therapeutic doses is?",
+        "options": [
+          "Paracetamol",
+          "Phenytoin",
+          "Amoxicillin",
+          "Atenolol"
+        ],
+        "correct": 1,
+        "explanation": "Phenytoin, ethanol, aspirin (high dose) and theophylline show zero-order (saturation) kinetics, risking toxicity."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "Drug showing high first-pass metabolism among these?",
+        "options": [
+          "Atenolol",
+          "Propranolol",
+          "Gentamicin",
+          "Digoxin"
+        ],
+        "correct": 1,
+        "explanation": "Propranolol, lignocaine, GTN, morphine and verapamil undergo extensive first-pass hepatic metabolism."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Tamsulosin is selective for which receptor?",
+        "options": [
+          "Alpha-1A",
+          "Beta-1",
+          "Alpha-2",
+          "Beta-2"
+        ],
+        "correct": 0,
+        "explanation": "Tamsulosin is a selective alpha-1A blocker used in BPH with less effect on blood pressure."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Which antiarrhythmic is a class III agent?",
+        "options": [
+          "Lignocaine",
+          "Amiodarone",
+          "Verapamil",
+          "Flecainide"
+        ],
+        "correct": 1,
+        "explanation": "Amiodarone is a class III (potassium channel blocker) but has all four Vaughan-Williams actions. Watch for thyroid, lung toxicity."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Sacubitril is combined with valsartan; it is a?",
+        "options": [
+          "Beta blocker",
+          "Neprilysin inhibitor",
+          "Calcium blocker",
+          "Statin"
+        ],
+        "correct": 1,
+        "explanation": "Sacubitril inhibits neprilysin, raising natriuretic peptides. ARNI (sacubitril-valsartan) improves survival in HFrEF."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Drug of choice for status epilepticus (first-line IV)?",
+        "options": [
+          "Phenytoin",
+          "Lorazepam",
+          "Valproate",
+          "Levetiracetam"
+        ],
+        "correct": 1,
+        "explanation": "IV benzodiazepine (lorazepam) is first-line; phenytoin, valproate or levetiracetam are second-line."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Which antidepressant is safest in overdose?",
+        "options": [
+          "Amitriptyline",
+          "Fluoxetine",
+          "Imipramine",
+          "Phenelzine"
+        ],
+        "correct": 1,
+        "explanation": "SSRIs like fluoxetine are safer in overdose than TCAs, which cause fatal arrhythmias."
+      },
+      {
+        "topic": "Autacoids and NSAIDs",
+        "question": "Selective COX-2 inhibitor among these?",
+        "options": [
+          "Ibuprofen",
+          "Celecoxib",
+          "Naproxen",
+          "Indomethacin"
+        ],
+        "correct": 1,
+        "explanation": "Celecoxib is a selective COX-2 inhibitor with less GI toxicity but increased cardiovascular risk."
+      },
+      {
+        "topic": "Respiratory",
+        "question": "Omalizumab used in severe asthma is a?",
+        "options": [
+          "Anti-IgE antibody",
+          "Anti-IL5",
+          "LABA",
+          "Leukotriene antagonist"
+        ],
+        "correct": 0,
+        "explanation": "Omalizumab is a monoclonal anti-IgE antibody for severe allergic asthma. Mepolizumab targets IL-5."
+      },
+      {
+        "topic": "Gastrointestinal",
+        "question": "Drug of choice for cytoprotection in NSAID ulcers?",
+        "options": [
+          "Ranitidine",
+          "Misoprostol",
+          "Omeprazole",
+          "Sucralfate"
+        ],
+        "correct": 1,
+        "explanation": "Misoprostol, a PGE1 analogue, prevents NSAID-induced ulcers but causes diarrhoea; avoided in pregnancy (abortifacient)."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "Which antidiabetic causes weight loss and has cardiovascular benefit?",
+        "options": [
+          "Glimepiride",
+          "Empagliflozin",
+          "Pioglitazone",
+          "Sitagliptin"
+        ],
+        "correct": 1,
+        "explanation": "SGLT2 inhibitors (empagliflozin) cause glucosuria, weight loss, and reduce cardiovascular and renal events."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "GLP-1 receptor agonist among these?",
+        "options": [
+          "Liraglutide",
+          "Metformin",
+          "Acarbose",
+          "Repaglinide"
+        ],
+        "correct": 0,
+        "explanation": "Liraglutide and semaglutide are GLP-1 agonists; they aid weight loss and have cardiovascular benefit."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Which drug is used in MRSA infection?",
+        "options": [
+          "Penicillin",
+          "Vancomycin",
+          "Ampicillin",
+          "Cefazolin"
+        ],
+        "correct": 1,
+        "explanation": "Vancomycin (glycopeptide) is used for MRSA. Linezolid and daptomycin are alternatives."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Mechanism of action of fluoroquinolones?",
+        "options": [
+          "Inhibit DNA gyrase/topoisomerase",
+          "Inhibit cell wall",
+          "Inhibit 30S ribosome",
+          "Inhibit folate"
+        ],
+        "correct": 0,
+        "explanation": "Fluoroquinolones inhibit DNA gyrase (topoisomerase II) and topoisomerase IV, blocking bacterial DNA replication."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Antitubercular drug causing optic neuritis is?",
+        "options": [
+          "Isoniazid",
+          "Ethambutol",
+          "Rifampicin",
+          "Pyrazinamide"
+        ],
+        "correct": 1,
+        "explanation": "Ethambutol causes dose-dependent retrobulbar optic neuritis; monitor colour vision and acuity."
+      },
+      {
+        "topic": "Blood",
+        "question": "Specific antidote for dabigatran is?",
+        "options": [
+          "Andexanet alfa",
+          "Idarucizumab",
+          "Protamine",
+          "Vitamin K"
+        ],
+        "correct": 1,
+        "explanation": "Idarucizumab reverses dabigatran (direct thrombin inhibitor). Andexanet alfa reverses factor Xa inhibitors."
+      },
+      {
+        "topic": "Blood",
+        "question": "Heparin-induced thrombocytopenia is managed with?",
+        "options": [
+          "More heparin",
+          "Argatroban or fondaparinux",
+          "Warfarin alone",
+          "Aspirin"
+        ],
+        "correct": 1,
+        "explanation": "Stop heparin; use a non-heparin anticoagulant (argatroban, fondaparinux). Avoid warfarin until platelets recover."
+      },
+      {
+        "topic": "Renal",
+        "question": "Which diuretic can cause gynaecomastia?",
+        "options": [
+          "Furosemide",
+          "Spironolactone",
+          "Thiazide",
+          "Mannitol"
+        ],
+        "correct": 1,
+        "explanation": "Spironolactone, an aldosterone antagonist, causes gynaecomastia and hyperkalemia due to antiandrogen action."
+      },
+      {
+        "topic": "Reproductive",
+        "question": "Drug used for medical abortion with misoprostol?",
+        "options": [
+          "Mifepristone",
+          "Clomiphene",
+          "Danazol",
+          "Tamoxifen"
+        ],
+        "correct": 0,
+        "explanation": "Mifepristone (antiprogestin) followed by misoprostol is used for medical termination of early pregnancy."
+      },
+      {
+        "topic": "Anticancer",
+        "question": "Methotrexate toxicity is rescued by?",
+        "options": [
+          "Folinic acid",
+          "Folic acid",
+          "Mesna",
+          "Dexrazoxane"
+        ],
+        "correct": 0,
+        "explanation": "Leucovorin (folinic acid) rescues normal cells. Mesna prevents cyclophosphamide cystitis; dexrazoxane protects from anthracyclines."
+      },
+      {
+        "topic": "Anticancer",
+        "question": "Cardiotoxicity is characteristic of which drug?",
+        "options": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Vincristine",
+          "Bleomycin"
+        ],
+        "correct": 1,
+        "explanation": "Doxorubicin (anthracycline) causes dose-dependent cardiomyopathy; dexrazoxane is cardioprotective. Bleomycin causes lung fibrosis."
+      },
+      {
+        "topic": "Immunopharmacology",
+        "question": "Cyclosporine acts by inhibiting?",
+        "options": [
+          "Calcineurin",
+          "mTOR",
+          "IMP dehydrogenase",
+          "Dihydrofolate reductase"
+        ],
+        "correct": 0,
+        "explanation": "Cyclosporine and tacrolimus inhibit calcineurin, reducing IL-2 and T-cell activation. Nephrotoxicity is a key concern."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Which drug precipitates thyroid storm if stopped and treats tremor in hyperthyroidism?",
+        "options": [
+          "Propranolol",
+          "Atenolol",
+          "Esmolol",
+          "Carvedilol"
+        ],
+        "correct": 0,
+        "explanation": "Propranolol controls adrenergic symptoms of thyrotoxicosis and blocks peripheral T4 to T3 conversion at high doses."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Vigabatrin acts by?",
+        "options": [
+          "Blocking sodium channels",
+          "Inhibiting GABA transaminase",
+          "Blocking calcium channels",
+          "NMDA antagonism"
+        ],
+        "correct": 1,
+        "explanation": "Vigabatrin irreversibly inhibits GABA transaminase, raising brain GABA; risk of visual field defects."
+      }
+    ],
+    "INI-CET": [
+      {
+        "topic": "Recent Advances",
+        "question": "Inclisiran, a cholesterol-lowering drug, acts by?",
+        "options": [
+          "Statin pathway",
+          "siRNA against PCSK9",
+          "Anti-PCSK9 antibody",
+          "Bile acid binding"
+        ],
+        "correct": 1,
+        "explanation": "Inclisiran is a small interfering RNA (siRNA) that silences hepatic PCSK9 synthesis, lowering LDL with twice-yearly dosing."
+      },
+      {
+        "topic": "Recent Advances",
+        "question": "Which drug is an SGLT2 inhibitor approved for heart failure even without diabetes?",
+        "options": [
+          "Dapagliflozin",
+          "Sitagliptin",
+          "Glipizide",
+          "Acarbose"
+        ],
+        "correct": 0,
+        "explanation": "Dapagliflozin and empagliflozin reduce heart failure hospitalisation and renal decline independent of diabetes status."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "Context-sensitive half-time is most relevant for?",
+        "options": [
+          "Oral drugs",
+          "IV infused anaesthetics",
+          "Topical drugs",
+          "Inhaled steroids"
+        ],
+        "correct": 1,
+        "explanation": "Context-sensitive half-time describes decline in plasma concentration after stopping a continuous infusion (e.g. propofol, remifentanil)."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Which is an ultra-short-acting beta blocker used IV?",
+        "options": [
+          "Atenolol",
+          "Esmolol",
+          "Nadolol",
+          "Bisoprolol"
+        ],
+        "correct": 1,
+        "explanation": "Esmolol has a half-life of about 9 minutes (hydrolysed by esterases), used for intra-operative tachycardia and hypertension."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Ivabradine lowers heart rate by acting on?",
+        "options": [
+          "Beta receptors",
+          "Funny (If) current in SA node",
+          "Calcium channels",
+          "Sodium channels"
+        ],
+        "correct": 1,
+        "explanation": "Ivabradine selectively inhibits the If current in the SA node, slowing heart rate without affecting contractility or BP."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Vericiguat used in heart failure is a?",
+        "options": [
+          "Beta blocker",
+          "Soluble guanylate cyclase stimulator",
+          "SGLT2 inhibitor",
+          "ARNI"
+        ],
+        "correct": 1,
+        "explanation": "Vericiguat stimulates soluble guanylate cyclase, raising cGMP, and reduces HF events in worsening chronic HFrEF."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Which antimigraine class blocks CGRP?",
+        "options": [
+          "Triptans",
+          "Gepants",
+          "Ergots",
+          "NSAIDs"
+        ],
+        "correct": 1,
+        "explanation": "Gepants (rimegepant, ubrogepant) are CGRP receptor antagonists; monoclonal anti-CGRP antibodies are also used for prevention."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Esketamine nasal spray is approved for?",
+        "options": [
+          "Epilepsy",
+          "Treatment-resistant depression",
+          "Parkinsonism",
+          "Insomnia"
+        ],
+        "correct": 1,
+        "explanation": "Esketamine, an NMDA antagonist, is approved for treatment-resistant depression; it acts rapidly compared to SSRIs."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Bedaquiline used in MDR-TB acts by inhibiting?",
+        "options": [
+          "Cell wall",
+          "Mycobacterial ATP synthase",
+          "RNA polymerase",
+          "Folate synthesis"
+        ],
+        "correct": 1,
+        "explanation": "Bedaquiline inhibits mycobacterial ATP synthase; it is used in MDR-TB. Caution: QT prolongation and hepatotoxicity."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Which antifungal is an echinocandin?",
+        "options": [
+          "Fluconazole",
+          "Caspofungin",
+          "Amphotericin B",
+          "Griseofulvin"
+        ],
+        "correct": 1,
+        "explanation": "Caspofungin, micafungin and anidulafungin inhibit beta-1,3-glucan synthesis of the fungal cell wall."
+      },
+      {
+        "topic": "Anticancer",
+        "question": "Imatinib targets which tyrosine kinase?",
+        "options": [
+          "EGFR",
+          "BCR-ABL",
+          "VEGFR",
+          "HER2"
+        ],
+        "correct": 1,
+        "explanation": "Imatinib inhibits BCR-ABL tyrosine kinase in chronic myeloid leukaemia; also acts on c-KIT in GIST."
+      },
+      {
+        "topic": "Anticancer",
+        "question": "Immune checkpoint inhibitor pembrolizumab targets?",
+        "options": [
+          "CTLA-4",
+          "PD-1",
+          "VEGF",
+          "CD20"
+        ],
+        "correct": 1,
+        "explanation": "Pembrolizumab and nivolumab block PD-1, restoring T-cell antitumour activity. Ipilimumab targets CTLA-4."
+      },
+      {
+        "topic": "Anticancer",
+        "question": "Trastuzumab is a monoclonal antibody against?",
+        "options": [
+          "EGFR",
+          "HER2/neu",
+          "CD20",
+          "VEGF"
+        ],
+        "correct": 1,
+        "explanation": "Trastuzumab targets HER2 in HER2-positive breast cancer; cardiotoxicity is a key adverse effect."
+      },
+      {
+        "topic": "Immunopharmacology",
+        "question": "Rituximab acts against which cell surface marker?",
+        "options": [
+          "CD20",
+          "CD3",
+          "CD52",
+          "TNF-alpha"
+        ],
+        "correct": 0,
+        "explanation": "Rituximab is an anti-CD20 monoclonal antibody depleting B cells, used in lymphoma and autoimmune disease."
+      },
+      {
+        "topic": "Immunopharmacology",
+        "question": "Which biologic is a TNF-alpha inhibitor?",
+        "options": [
+          "Adalimumab",
+          "Tocilizumab",
+          "Ustekinumab",
+          "Secukinumab"
+        ],
+        "correct": 0,
+        "explanation": "Adalimumab, infliximab and etanercept inhibit TNF-alpha. Screen for latent TB before starting."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "Tirzepatide is a dual agonist of?",
+        "options": [
+          "GLP-1 and GIP",
+          "GLP-1 and SGLT2",
+          "GIP and DPP4",
+          "GLP-1 and glucagon"
+        ],
+        "correct": 0,
+        "explanation": "Tirzepatide is a dual GIP and GLP-1 receptor agonist with marked glycaemic and weight-loss benefit."
+      },
+      {
+        "topic": "Respiratory",
+        "question": "Which drug is a PDE4 inhibitor used in COPD?",
+        "options": [
+          "Roflumilast",
+          "Theophylline",
+          "Tiotropium",
+          "Montelukast"
+        ],
+        "correct": 0,
+        "explanation": "Roflumilast is a selective phosphodiesterase-4 inhibitor reducing exacerbations in severe COPD with chronic bronchitis."
+      },
+      {
+        "topic": "Blood",
+        "question": "Caplacizumab used in TTP targets?",
+        "options": [
+          "von Willebrand factor",
+          "Factor Xa",
+          "Thrombin",
+          "Platelet GPIIb/IIIa"
+        ],
+        "correct": 0,
+        "explanation": "Caplacizumab is an anti-von Willebrand factor nanobody used in acquired thrombotic thrombocytopenic purpura."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "Therapeutic drug monitoring is essential for which drug?",
+        "options": [
+          "Paracetamol",
+          "Lithium",
+          "Amoxicillin",
+          "Loratadine"
+        ],
+        "correct": 1,
+        "explanation": "Lithium has a narrow therapeutic index; levels must be monitored. Others: digoxin, phenytoin, aminoglycosides, cyclosporine."
+      },
+      {
+        "topic": "Pharmacogenomics",
+        "question": "HLA-B*1502 testing before which drug reduces Stevens-Johnson risk?",
+        "options": [
+          "Carbamazepine",
+          "Phenobarbitone",
+          "Valproate",
+          "Gabapentin"
+        ],
+        "correct": 0,
+        "explanation": "HLA-B*1502 (common in Asians) predicts carbamazepine-induced SJS/TEN; testing is advised before starting."
+      },
+      {
+        "topic": "Toxicology",
+        "question": "Antidote for methanol poisoning is?",
+        "options": [
+          "Fomepizole or ethanol",
+          "Naloxone",
+          "Atropine",
+          "Deferoxamine"
+        ],
+        "correct": 0,
+        "explanation": "Fomepizole (or ethanol) inhibits alcohol dehydrogenase, preventing toxic formic acid formation in methanol poisoning."
+      },
+      {
+        "topic": "Toxicology",
+        "question": "Antidote for iron poisoning is?",
+        "options": [
+          "Deferoxamine",
+          "Penicillamine",
+          "Dimercaprol",
+          "EDTA"
+        ],
+        "correct": 0,
+        "explanation": "Deferoxamine chelates iron in acute iron overdose. Dimercaprol/penicillamine are used for other heavy metals."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Which anticoagulant is preferred in antiphospholipid syndrome?",
+        "options": [
+          "Dabigatran",
+          "Warfarin",
+          "Rivaroxaban",
+          "Apixaban"
+        ],
+        "correct": 1,
+        "explanation": "Warfarin is preferred in antiphospholipid syndrome; DOACs showed higher thrombosis rates in trials."
+      },
+      {
+        "topic": "Autacoids and NSAIDs",
+        "question": "Which gout drug is a selective xanthine oxidase inhibitor and non-purine?",
+        "options": [
+          "Allopurinol",
+          "Febuxostat",
+          "Probenecid",
+          "Colchicine"
+        ],
+        "correct": 1,
+        "explanation": "Febuxostat is a non-purine selective xanthine oxidase inhibitor for chronic gout; useful if allopurinol is not tolerated."
+      }
+    ],
+    "FMGE": [
+      {
+        "topic": "General Pharmacology",
+        "question": "The term 'half-life' of a drug refers to time taken for?",
+        "options": [
+          "Full elimination",
+          "Plasma concentration to fall by half",
+          "Onset of action",
+          "Peak effect"
+        ],
+        "correct": 1,
+        "explanation": "Half-life (t1/2) is the time for plasma concentration to decrease by 50%. About 4-5 half-lives reach steady state."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "Which route avoids first-pass metabolism?",
+        "options": [
+          "Oral",
+          "Sublingual",
+          "Rectal (partial)",
+          "All avoid it"
+        ],
+        "correct": 1,
+        "explanation": "Sublingual absorption drains into systemic veins, bypassing hepatic first-pass metabolism (e.g. GTN)."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Pilocarpine is used in glaucoma because it is a?",
+        "options": [
+          "Muscarinic agonist",
+          "Beta blocker",
+          "Alpha agonist",
+          "Muscarinic antagonist"
+        ],
+        "correct": 0,
+        "explanation": "Pilocarpine is a muscarinic agonist causing miosis and improved aqueous outflow, lowering intraocular pressure."
+      },
+      {
+        "topic": "Autonomic Nervous System",
+        "question": "Adrenaline is the drug of choice in?",
+        "options": [
+          "Hypertension",
+          "Anaphylaxis",
+          "Angina",
+          "Glaucoma"
+        ],
+        "correct": 1,
+        "explanation": "Adrenaline (IM) is first-line in anaphylaxis: it reverses bronchospasm, vasodilation and hypotension."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Statins lower cholesterol by inhibiting?",
+        "options": [
+          "HMG-CoA reductase",
+          "ACE",
+          "PCSK9",
+          "Lipase"
+        ],
+        "correct": 0,
+        "explanation": "Statins inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis. Watch for myopathy and raised LFTs."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Which drug is used to treat hypertensive emergency IV?",
+        "options": [
+          "Amlodipine",
+          "Sodium nitroprusside",
+          "Atenolol",
+          "Losartan"
+        ],
+        "correct": 1,
+        "explanation": "Sodium nitroprusside is a rapid IV vasodilator for hypertensive emergency; prolonged use risks cyanide toxicity."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Levodopa is combined with carbidopa to?",
+        "options": [
+          "Increase CNS entry and reduce side effects",
+          "Increase metabolism",
+          "Block dopamine",
+          "Cause sedation"
+        ],
+        "correct": 0,
+        "explanation": "Carbidopa inhibits peripheral dopa decarboxylase, so more levodopa reaches the brain with fewer peripheral side effects."
+      },
+      {
+        "topic": "Central Nervous System",
+        "question": "Diazepam enhances the action of which neurotransmitter?",
+        "options": [
+          "Glutamate",
+          "GABA",
+          "Dopamine",
+          "Acetylcholine"
+        ],
+        "correct": 1,
+        "explanation": "Benzodiazepines enhance GABA-A activity (increase frequency of chloride channel opening), causing sedation and anxiolysis."
+      },
+      {
+        "topic": "Autacoids and NSAIDs",
+        "question": "First-generation antihistamine causing sedation is?",
+        "options": [
+          "Loratadine",
+          "Chlorpheniramine",
+          "Fexofenadine",
+          "Cetirizine"
+        ],
+        "correct": 1,
+        "explanation": "Chlorpheniramine and diphenhydramine are sedating first-generation H1 blockers that cross the blood-brain barrier."
+      },
+      {
+        "topic": "Respiratory",
+        "question": "Inhaled corticosteroid used for asthma maintenance is?",
+        "options": [
+          "Salbutamol",
+          "Budesonide",
+          "Ipratropium",
+          "Theophylline"
+        ],
+        "correct": 1,
+        "explanation": "Budesonide and fluticasone are inhaled corticosteroids controlling airway inflammation for long-term asthma control."
+      },
+      {
+        "topic": "Gastrointestinal",
+        "question": "Which drug is used in hepatic encephalopathy to reduce ammonia?",
+        "options": [
+          "Lactulose",
+          "Loperamide",
+          "Omeprazole",
+          "Ondansetron"
+        ],
+        "correct": 0,
+        "explanation": "Lactulose acidifies the colon, trapping ammonia as ammonium and promoting its excretion. Rifaximin is an add-on."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "Which insulin has the fastest onset?",
+        "options": [
+          "Regular",
+          "Lispro",
+          "NPH",
+          "Glargine"
+        ],
+        "correct": 1,
+        "explanation": "Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, given at mealtime. Glargine is long-acting basal."
+      },
+      {
+        "topic": "Endocrine",
+        "question": "Hydrocortisone is used in which emergency?",
+        "options": [
+          "Thyroid storm",
+          "Addisonian (adrenal) crisis",
+          "Hyperglycemia",
+          "Hypertension"
+        ],
+        "correct": 1,
+        "explanation": "IV hydrocortisone is life-saving in acute adrenal (Addisonian) crisis along with fluids and glucose."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Drug of choice for Pneumocystis jirovecii pneumonia is?",
+        "options": [
+          "Cotrimoxazole",
+          "Azithromycin",
+          "Fluconazole",
+          "Doxycycline"
+        ],
+        "correct": 0,
+        "explanation": "Cotrimoxazole (trimethoprim-sulfamethoxazole) is first-line for PCP treatment and prophylaxis in immunocompromised patients."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Which antibiotic should be avoided in children due to tooth discolouration?",
+        "options": [
+          "Amoxicillin",
+          "Tetracycline",
+          "Erythromycin",
+          "Cephalexin"
+        ],
+        "correct": 1,
+        "explanation": "Tetracyclines chelate calcium, causing permanent tooth discolouration and affecting bone; avoided in children under 8 and pregnancy."
+      },
+      {
+        "topic": "Chemotherapy",
+        "question": "Gray baby syndrome is caused by?",
+        "options": [
+          "Chloramphenicol",
+          "Gentamicin",
+          "Penicillin",
+          "Sulfonamide"
+        ],
+        "correct": 0,
+        "explanation": "Chloramphenicol causes gray baby syndrome in neonates due to immature glucuronidation and reduced clearance."
+      },
+      {
+        "topic": "Blood",
+        "question": "Which vitamin is given with isoniazid to prevent neuropathy?",
+        "options": [
+          "Vitamin B6 (pyridoxine)",
+          "Vitamin C",
+          "Vitamin D",
+          "Vitamin K"
+        ],
+        "correct": 0,
+        "explanation": "Pyridoxine (B6) prevents isoniazid-induced peripheral neuropathy by replacing the depleted cofactor."
+      },
+      {
+        "topic": "Renal",
+        "question": "Mannitol is which type of diuretic?",
+        "options": [
+          "Osmotic",
+          "Loop",
+          "Thiazide",
+          "Potassium-sparing"
+        ],
+        "correct": 0,
+        "explanation": "Mannitol is an osmotic diuretic used to reduce raised intracranial and intraocular pressure. Avoid in pulmonary oedema."
+      },
+      {
+        "topic": "Reproductive",
+        "question": "Oxytocin is used in obstetrics to?",
+        "options": [
+          "Stop labour",
+          "Induce or augment labour",
+          "Prevent ovulation",
+          "Treat infertility only"
+        ],
+        "correct": 1,
+        "explanation": "Oxytocin induces and augments uterine contractions and controls postpartum haemorrhage by uterine contraction."
+      },
+      {
+        "topic": "Toxicology",
+        "question": "Antidote for benzodiazepine overdose is?",
+        "options": [
+          "Naloxone",
+          "Flumazenil",
+          "Atropine",
+          "N-acetylcysteine"
+        ],
+        "correct": 1,
+        "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist; use cautiously as it may precipitate seizures."
+      },
+      {
+        "topic": "Toxicology",
+        "question": "Activated charcoal is most useful when given?",
+        "options": [
+          "After 24 hours",
+          "Within 1 hour of ingestion",
+          "Only IV",
+          "For metal poisoning"
+        ],
+        "correct": 1,
+        "explanation": "Activated charcoal adsorbs many drugs if given within about 1 hour of ingestion. It does not bind iron, lithium or alcohols."
+      },
+      {
+        "topic": "General Pharmacology",
+        "question": "A drug that binds a receptor and produces no effect but blocks the agonist is a?",
+        "options": [
+          "Full agonist",
+          "Antagonist",
+          "Partial agonist",
+          "Inverse agonist"
+        ],
+        "correct": 1,
+        "explanation": "An antagonist binds the receptor without activating it and prevents the agonist from acting."
+      },
+      {
+        "topic": "Autacoids and NSAIDs",
+        "question": "Which drug is uricosuric (increases uric acid excretion)?",
+        "options": [
+          "Allopurinol",
+          "Probenecid",
+          "Febuxostat",
+          "Colchicine"
+        ],
+        "correct": 1,
+        "explanation": "Probenecid increases renal uric acid excretion for chronic gout. Allopurinol and febuxostat reduce uric acid production."
+      },
+      {
+        "topic": "Cardiovascular",
+        "question": "Which electrolyte disturbance increases digoxin toxicity?",
+        "options": [
+          "Hyperkalemia",
+          "Hypokalemia",
+          "Hypernatremia",
+          "Hypercalcemia low"
+        ],
+        "correct": 1,
+        "explanation": "Hypokalemia increases digoxin binding to Na-K ATPase, precipitating toxicity. Watch in patients on diuretics."
+      }
+    ],
+    "MD Pharmacology": [
+      {
+        "topic": "Clinical Trials",
+        "question": "Which clinical trial phase first tests a drug in a large patient population for efficacy and safety?",
+        "options": [
+          "Phase I",
+          "Phase II",
+          "Phase III",
+          "Phase IV"
+        ],
+        "correct": 2,
+        "explanation": "Phase III is a large randomised controlled trial (1000-3000 patients) confirming efficacy and safety; forms the basis of the NDA."
+      },
+      {
+        "topic": "Clinical Trials",
+        "question": "The primary aim of a Phase I trial is to assess?",
+        "options": [
+          "Efficacy",
+          "Safety and pharmacokinetics",
+          "Marketing",
+          "Cost"
+        ],
+        "correct": 1,
+        "explanation": "Phase I trials (20-100 healthy volunteers) assess safety, tolerability, PK and maximum tolerated dose."
+      },
+      {
+        "topic": "Clinical Trials",
+        "question": "Phase 0 (microdosing) studies use?",
+        "options": [
+          "Therapeutic doses",
+          "Sub-therapeutic doses",
+          "Toxic doses",
+          "No drug"
+        ],
+        "correct": 1,
+        "explanation": "Phase 0 uses sub-therapeutic microdoses in a few volunteers to study PK/PD early, before full Phase I."
+      },
+      {
+        "topic": "Clinical Trials",
+        "question": "Post-marketing surveillance corresponds to which phase?",
+        "options": [
+          "Phase I",
+          "Phase II",
+          "Phase III",
+          "Phase IV"
+        ],
+        "correct": 3,
+        "explanation": "Phase IV (pharmacovigilance) detects rare or long-term adverse effects after marketing in the general population."
+      },
+      {
+        "topic": "Clinical Trials",
+        "question": "The gold-standard design to minimise bias in a clinical trial is?",
+        "options": [
+          "Open-label",
+          "Case series",
+          "Randomised double-blind controlled trial",
+          "Cross-sectional"
+        ],
+        "correct": 2,
+        "explanation": "Randomisation and double-blinding minimise selection and observer bias, making the RCT the gold standard for efficacy."
+      },
+      {
+        "topic": "Clinical Trials",
+        "question": "Intention-to-treat analysis means patients are analysed?",
+        "options": [
+          "Only if they completed",
+          "By treatment received",
+          "By the group they were randomised to",
+          "After exclusions"
+        ],
+        "correct": 2,
+        "explanation": "Intention-to-treat analyses all randomised patients in their original group, preserving randomisation and reducing bias."
+      },
+      {
+        "topic": "Clinical Trials",
+        "question": "A non-inferiority trial aims to show the new drug is?",
+        "options": [
+          "Better than comparator",
+          "Not worse than comparator by a set margin",
+          "Cheaper",
+          "Equal in cost"
+        ],
+        "correct": 1,
+        "explanation": "Non-inferiority trials show the new treatment is not worse than the standard by more than a pre-specified margin."
+      },
+      {
+        "topic": "Research Methodology",
+        "question": "Number needed to treat (NNT) is calculated as?",
+        "options": [
+          "1/absolute risk reduction",
+          "1/relative risk",
+          "Risk ratio",
+          "Odds ratio"
+        ],
+        "correct": 0,
+        "explanation": "NNT = 1 / absolute risk reduction. It is the number of patients treated to prevent one additional adverse outcome."
+      },
+      {
+        "topic": "Research Methodology",
+        "question": "Which study design is best for studying rare diseases?",
+        "options": [
+          "Cohort",
+          "Case-control",
+          "RCT",
+          "Cross-sectional"
+        ],
+        "correct": 1,
+        "explanation": "Case-control studies start from outcome and look back at exposure, making them efficient for rare diseases. They yield odds ratios."
+      },
+      {
+        "topic": "Research Methodology",
+        "question": "A p-value less than 0.05 conventionally indicates?",
+        "options": [
+          "Clinical importance",
+          "Statistical significance",
+          "No effect",
+          "Large effect size"
+        ],
+        "correct": 1,
+        "explanation": "p<0.05 means the result is statistically significant (unlikely by chance), but it does not confirm clinical importance."
+      },
+      {
+        "topic": "Drug Development",
+        "question": "The document submitted to the regulator before first human testing is the?",
+        "options": [
+          "NDA",
+          "IND",
+          "ANDA",
+          "BLA"
+        ],
+        "correct": 1,
+        "explanation": "The Investigational New Drug (IND) application, with preclinical data and protocol, is submitted before Phase I human studies."
+      },
+      {
+        "topic": "Drug Development",
+        "question": "An ANDA (Abbreviated New Drug Application) is used for?",
+        "options": [
+          "New molecules",
+          "Generic drugs",
+          "Biologics",
+          "Vaccines"
+        ],
+        "correct": 1,
+        "explanation": "An ANDA is filed for generic drugs, requiring bioequivalence to the reference product rather than new efficacy trials."
+      },
+      {
+        "topic": "Drug Development",
+        "question": "Preclinical testing mainly involves?",
+        "options": [
+          "Healthy volunteers",
+          "Animal and in-vitro studies",
+          "Large patient trials",
+          "Marketing"
+        ],
+        "correct": 1,
+        "explanation": "Preclinical studies use in-vitro and animal models to assess pharmacology and toxicology before human trials, under GLP."
+      },
+      {
+        "topic": "Pharmaceutical Industry",
+        "question": "Good Manufacturing Practice (GMP) primarily ensures?",
+        "options": [
+          "Marketing ethics",
+          "Consistent quality of manufactured drugs",
+          "Clinical trial design",
+          "Pricing"
+        ],
+        "correct": 1,
+        "explanation": "GMP ensures products are consistently produced and controlled to quality standards appropriate to their intended use."
+      },
+      {
+        "topic": "Regulatory",
+        "question": "The regulatory authority for drug approval in India is?",
+        "options": [
+          "FDA",
+          "CDSCO (DCGI)",
+          "EMA",
+          "MHRA"
+        ],
+        "correct": 1,
+        "explanation": "The Central Drugs Standard Control Organisation (CDSCO), headed by the DCGI, regulates drug approval in India."
+      },
+      {
+        "topic": "Regulatory",
+        "question": "Schedule H drugs in India are?",
+        "options": [
+          "OTC drugs",
+          "Prescription-only drugs",
+          "Narcotics only",
+          "Banned drugs"
+        ],
+        "correct": 1,
+        "explanation": "Schedule H lists prescription-only drugs. Schedule X covers drugs with stricter control; Schedule H1 targets antibiotics and certain drugs."
+      },
+      {
+        "topic": "Pharmacovigilance",
+        "question": "A Type A adverse drug reaction is?",
+        "options": [
+          "Bizarre and unpredictable",
+          "Dose-dependent and predictable",
+          "Due to allergy",
+          "Idiosyncratic"
+        ],
+        "correct": 1,
+        "explanation": "Type A (augmented) reactions are dose-dependent, predictable extensions of pharmacology (e.g. bleeding with anticoagulants)."
+      },
+      {
+        "topic": "Pharmacovigilance",
+        "question": "Causality of an adverse drug reaction is commonly assessed by?",
+        "options": [
+          "Naranjo scale",
+          "APGAR score",
+          "Glasgow scale",
+          "MMSE"
+        ],
+        "correct": 0,
+        "explanation": "The Naranjo algorithm scores the probability that a drug caused an adverse reaction (definite, probable, possible, doubtful)."
+      },
+      {
+        "topic": "History of Pharmacology",
+        "question": "The 'father of modern pharmacology' who established the first pharmacology institute is?",
+        "options": [
+          "Oswald Schmiedeberg",
+          "Paul Ehrlich",
+          "Alexander Fleming",
+          "William Withering"
+        ],
+        "correct": 0,
+        "explanation": "Oswald Schmiedeberg is regarded as the father of modern pharmacology. Paul Ehrlich pioneered chemotherapy ('magic bullet')."
+      },
+      {
+        "topic": "History of Pharmacology",
+        "question": "William Withering is known for introducing which drug?",
+        "options": [
+          "Digitalis",
+          "Penicillin",
+          "Aspirin",
+          "Quinine"
+        ],
+        "correct": 0,
+        "explanation": "William Withering described the use of digitalis (foxglove) for dropsy (heart failure) in 1785."
+      },
+      {
+        "topic": "History of Pharmacology",
+        "question": "Paul Ehrlich developed which early antisyphilitic drug?",
+        "options": [
+          "Salvarsan",
+          "Penicillin",
+          "Sulfanilamide",
+          "Streptomycin"
+        ],
+        "correct": 0,
+        "explanation": "Paul Ehrlich introduced Salvarsan (arsphenamine) for syphilis, founding the concept of targeted chemotherapy."
+      },
+      {
+        "topic": "Recent Advances",
+        "question": "CAR-T cell therapy is primarily used in?",
+        "options": [
+          "Hypertension",
+          "Certain haematological cancers",
+          "Diabetes",
+          "Asthma"
+        ],
+        "correct": 1,
+        "explanation": "Chimeric antigen receptor T-cell therapy re-engineers patient T cells against tumour antigens (e.g. CD19 in B-cell malignancies)."
+      },
+      {
+        "topic": "Recent Advances",
+        "question": "mRNA vaccine technology works by?",
+        "options": [
+          "Live attenuated virus",
+          "Delivering mRNA encoding an antigen",
+          "Inactivated toxin",
+          "Bacterial extract"
+        ],
+        "correct": 1,
+        "explanation": "mRNA vaccines deliver mRNA (in lipid nanoparticles) that instructs host cells to make an antigen, triggering immunity."
+      },
+      {
+        "topic": "Biostatistics",
+        "question": "Which test compares means of two independent groups with normal data?",
+        "options": [
+          "Chi-square test",
+          "Student t-test",
+          "Mann-Whitney U",
+          "ANOVA"
+        ],
+        "correct": 1,
+        "explanation": "The unpaired Student t-test compares means of two independent, normally distributed groups. ANOVA compares three or more."
+      },
+      {
+        "topic": "Pharmacoeconomics",
+        "question": "Cost-effectiveness analysis expresses outcomes in?",
+        "options": [
+          "Only money",
+          "Natural units (e.g. life-years gained)",
+          "Utility (QALYs)",
+          "Willingness to pay"
+        ],
+        "correct": 1,
+        "explanation": "Cost-effectiveness analysis measures outcomes in natural units (e.g. cost per life-year gained). Cost-utility uses QALYs."
+      }
+    ]
+  }
 }
