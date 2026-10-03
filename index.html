@@ -26474,6 +26474,7 @@ async function submitSignup(e){
     _subject: 'New PharmaCraft Signup: ' + form.name.value.trim() + ' (' + form.exam.value + ')',
     _template: 'table',
     _captcha: 'false',
+    _autoresponse: 'Hi ' + form.name.value.trim() + ',\n\nThank you for joining PharmaCraft! Your details are saved.\n\nJoin our official Telegram channel for daily NEET PG MCQs, notes and exam updates (free):\nhttps://t.me/pharmacraft_official\n\nTap the link, then press JOIN inside Telegram.\n\nExplore the full platform: https://pharmacraft.in\n\nHappy learning,\nDr. Susheel Kumar\nPharmaCraft',
     _honey: form._honey ? form._honey.value : ''
   };
 
