@@ -1,6 +1,6 @@
 {
   "_help": "5 exam streams. Each day the script posts one quiz per stream (labelled), rotating through each stream's list. Add more items to any stream to extend the runway. Quiz explanation must be 200 chars or less; 'correct' starts at 0.",
-  "start_date": "2026-10-04",
+  "start_date": "2026-10-03",
   "stream_order": [
     "MBBS",
     "NEET PG",
