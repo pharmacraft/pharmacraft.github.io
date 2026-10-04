@@ -1,9 +1,9 @@
 name: PharmaCraft Daily Telegram
 
-# Times are in UTC. 03:30 UTC = 09:00 AM IST.
+# Times are in UTC. 03:33 UTC = ~09:03 AM IST. (GitHub may still delay scheduled runs.)
 on:
   schedule:
-    - cron: '30 3 * * *'
+    - cron: '33 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -33,4 +33,5 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add daily.json
           git commit -m "Update daily.json" || echo "No changes to commit"
-          git push || echo "Nothing to push"
+          git pull --rebase origin main || true
+          git push origin HEAD:main || echo "Nothing to push"
