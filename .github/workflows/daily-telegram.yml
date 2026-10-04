@@ -1,9 +1,8 @@
 name: PharmaCraft Daily Telegram
 
-# Times are in UTC. 03:33 UTC = ~09:03 AM IST. (GitHub may still delay scheduled runs.)
+# Triggered externally by cron-job.org at 09:00 AM IST (reliable, no GitHub scheduled delay).
+# Manual runs also allowed from the Actions tab.
 on:
-  schedule:
-    - cron: '33 3 * * *'
   workflow_dispatch:
 
 permissions:
