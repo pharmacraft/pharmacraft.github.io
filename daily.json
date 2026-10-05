@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "General Pharmacology",
-      "question": "Bioavailability of an intravenous drug is?",
+      "question": "First-order kinetics means the rate of elimination is?",
       "options": [
-        "0%",
-        "25%",
-        "50%",
-        "100%"
+        "Constant amount per time",
+        "Proportional to drug concentration",
+        "Independent of dose",
+        "Always saturated"
       ],
-      "correct": 3,
-      "explanation": "IV drugs enter circulation directly, so bioavailability is 100% by definition. Oral drugs are less due to first-pass metabolism."
+      "correct": 1,
+      "explanation": "In first-order kinetics a constant fraction is eliminated per unit time, so rate is proportional to concentration."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "General Pharmacology",
-      "question": "Drug showing high first-pass metabolism among these?",
+      "topic": "Autonomic Nervous System",
+      "question": "Tamsulosin is selective for which receptor?",
       "options": [
-        "Atenolol",
-        "Propranolol",
-        "Gentamicin",
-        "Digoxin"
+        "Alpha-1A",
+        "Beta-1",
+        "Alpha-2",
+        "Beta-2"
       ],
-      "correct": 1,
-      "explanation": "Propranolol, lignocaine, GTN, morphine and verapamil undergo extensive first-pass hepatic metabolism."
+      "correct": 0,
+      "explanation": "Tamsulosin is a selective alpha-1A blocker used in BPH with less effect on blood pressure."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Recent Advances",
-      "question": "Which drug is an SGLT2 inhibitor approved for heart failure even without diabetes?",
+      "topic": "General Pharmacology",
+      "question": "Context-sensitive half-time is most relevant for?",
       "options": [
-        "Dapagliflozin",
-        "Sitagliptin",
-        "Glipizide",
-        "Acarbose"
+        "Oral drugs",
+        "IV infused anaesthetics",
+        "Topical drugs",
+        "Inhaled steroids"
       ],
-      "correct": 0,
-      "explanation": "Dapagliflozin and empagliflozin reduce heart failure hospitalisation and renal decline independent of diabetes status."
+      "correct": 1,
+      "explanation": "Context-sensitive half-time describes decline in plasma concentration after stopping a continuous infusion (e.g. propofol, remifentanil)."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "General Pharmacology",
-      "question": "Which route avoids first-pass metabolism?",
+      "topic": "Autonomic Nervous System",
+      "question": "Pilocarpine is used in glaucoma because it is a?",
       "options": [
-        "Oral",
-        "Sublingual",
-        "Rectal (partial)",
-        "All avoid it"
+        "Muscarinic agonist",
+        "Beta blocker",
+        "Alpha agonist",
+        "Muscarinic antagonist"
       ],
-      "correct": 1,
-      "explanation": "Sublingual absorption drains into systemic veins, bypassing hepatic first-pass metabolism (e.g. GTN)."
+      "correct": 0,
+      "explanation": "Pilocarpine is a muscarinic agonist causing miosis and improved aqueous outflow, lowering intraocular pressure."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Clinical Trials",
-      "question": "The primary aim of a Phase I trial is to assess?",
+      "question": "Phase 0 (microdosing) studies use?",
       "options": [
-        "Efficacy",
-        "Safety and pharmacokinetics",
-        "Marketing",
-        "Cost"
+        "Therapeutic doses",
+        "Sub-therapeutic doses",
+        "Toxic doses",
+        "No drug"
       ],
       "correct": 1,
-      "explanation": "Phase I trials (20-100 healthy volunteers) assess safety, tolerability, PK and maximum tolerated dose."
+      "explanation": "Phase 0 uses sub-therapeutic microdoses in a few volunteers to study PK/PD early, before full Phase I."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 04 Oct 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: Bioavailability of an intravenous drug is?\nAns: 100%\nWhy: IV drugs enter circulation directly, so bioavailability is 100% by definition. Oral drugs are less due to first-pass metabolism.\n\n🩺 *NEET PG* (General Pharmacology)\nQ: Drug showing high first-pass metabolism among these?\nAns: Propranolol\nWhy: Propranolol, lignocaine, GTN, morphine and verapamil undergo extensive first-pass hepatic metabolism.\n\n🏥 *INI-CET* (Recent Advances)\nQ: Which drug is an SGLT2 inhibitor approved for heart failure even without diabetes?\nAns: Dapagliflozin\nWhy: Dapagliflozin and empagliflozin reduce heart failure hospitalisation and renal decline independent of diabetes status.\n\n🌍 *FMGE* (General Pharmacology)\nQ: Which route avoids first-pass metabolism?\nAns: Sublingual\nWhy: Sublingual absorption drains into systemic veins, bypassing hepatic first-pass metabolism (e.g. GTN).\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: The primary aim of a Phase I trial is to assess?\nAns: Safety and pharmacokinetics\nWhy: Phase I trials (20-100 healthy volunteers) assess safety, tolerability, PK and maximum tolerated dose.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2004%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20Bioavailability%20of%20an%20intravenous%20drug%20is%3F%0AAns%3A%20100%25%0AWhy%3A%20IV%20drugs%20enter%20circulation%20directly%2C%20so%20bioavailability%20is%20100%25%20by%20definition.%20Oral%20drugs%20are%20less%20due%20to%20first-pass%20metabolism.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20Drug%20showing%20high%20first-pass%20metabolism%20among%20these%3F%0AAns%3A%20Propranolol%0AWhy%3A%20Propranolol%2C%20lignocaine%2C%20GTN%2C%20morphine%20and%20verapamil%20undergo%20extensive%20first-pass%20hepatic%20metabolism.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Recent%20Advances%29%0AQ%3A%20Which%20drug%20is%20an%20SGLT2%20inhibitor%20approved%20for%20heart%20failure%20even%20without%20diabetes%3F%0AAns%3A%20Dapagliflozin%0AWhy%3A%20Dapagliflozin%20and%20empagliflozin%20reduce%20heart%20failure%20hospitalisation%20and%20renal%20decline%20independent%20of%20diabetes%20status.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20Which%20route%20avoids%20first-pass%20metabolism%3F%0AAns%3A%20Sublingual%0AWhy%3A%20Sublingual%20absorption%20drains%20into%20systemic%20veins%2C%20bypassing%20hepatic%20first-pass%20metabolism%20%28e.g.%20GTN%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20The%20primary%20aim%20of%20a%20Phase%20I%20trial%20is%20to%20assess%3F%0AAns%3A%20Safety%20and%20pharmacokinetics%0AWhy%3A%20Phase%20I%20trials%20%2820-100%20healthy%20volunteers%29%20assess%20safety%2C%20tolerability%2C%20PK%20and%20maximum%20tolerated%20dose.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 05 Oct 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: First-order kinetics means the rate of elimination is?\nAns: Proportional to drug concentration\nWhy: In first-order kinetics a constant fraction is eliminated per unit time, so rate is proportional to concentration.\n\n🩺 *NEET PG* (Autonomic Nervous System)\nQ: Tamsulosin is selective for which receptor?\nAns: Alpha-1A\nWhy: Tamsulosin is a selective alpha-1A blocker used in BPH with less effect on blood pressure.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: Context-sensitive half-time is most relevant for?\nAns: IV infused anaesthetics\nWhy: Context-sensitive half-time describes decline in plasma concentration after stopping a continuous infusion (e.g. propofol, remifentanil).\n\n🌍 *FMGE* (Autonomic Nervous System)\nQ: Pilocarpine is used in glaucoma because it is a?\nAns: Muscarinic agonist\nWhy: Pilocarpine is a muscarinic agonist causing miosis and improved aqueous outflow, lowering intraocular pressure.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: Phase 0 (microdosing) studies use?\nAns: Sub-therapeutic doses\nWhy: Phase 0 uses sub-therapeutic microdoses in a few volunteers to study PK/PD early, before full Phase I.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2005%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20First-order%20kinetics%20means%20the%20rate%20of%20elimination%20is%3F%0AAns%3A%20Proportional%20to%20drug%20concentration%0AWhy%3A%20In%20first-order%20kinetics%20a%20constant%20fraction%20is%20eliminated%20per%20unit%20time%2C%20so%20rate%20is%20proportional%20to%20concentration.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Tamsulosin%20is%20selective%20for%20which%20receptor%3F%0AAns%3A%20Alpha-1A%0AWhy%3A%20Tamsulosin%20is%20a%20selective%20alpha-1A%20blocker%20used%20in%20BPH%20with%20less%20effect%20on%20blood%20pressure.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20Context-sensitive%20half-time%20is%20most%20relevant%20for%3F%0AAns%3A%20IV%20infused%20anaesthetics%0AWhy%3A%20Context-sensitive%20half-time%20describes%20decline%20in%20plasma%20concentration%20after%20stopping%20a%20continuous%20infusion%20%28e.g.%20propofol%2C%20remifentanil%29.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Pilocarpine%20is%20used%20in%20glaucoma%20because%20it%20is%20a%3F%0AAns%3A%20Muscarinic%20agonist%0AWhy%3A%20Pilocarpine%20is%20a%20muscarinic%20agonist%20causing%20miosis%20and%20improved%20aqueous%20outflow%2C%20lowering%20intraocular%20pressure.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20Phase%200%20%28microdosing%29%20studies%20use%3F%0AAns%3A%20Sub-therapeutic%20doses%0AWhy%3A%20Phase%200%20uses%20sub-therapeutic%20microdoses%20in%20a%20few%20volunteers%20to%20study%20PK/PD%20early%2C%20before%20full%20Phase%20I.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
