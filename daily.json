@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "General Pharmacology",
-      "question": "First-order kinetics means the rate of elimination is?",
+      "question": "Phase II drug metabolism reactions are mainly?",
       "options": [
-        "Constant amount per time",
-        "Proportional to drug concentration",
-        "Independent of dose",
-        "Always saturated"
+        "Oxidation",
+        "Reduction",
+        "Conjugation",
+        "Hydrolysis"
       ],
-      "correct": 1,
-      "explanation": "In first-order kinetics a constant fraction is eliminated per unit time, so rate is proportional to concentration."
+      "correct": 2,
+      "explanation": "Phase II = conjugation (glucuronidation, sulfation, acetylation), making drugs more water-soluble for excretion."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Autonomic Nervous System",
-      "question": "Tamsulosin is selective for which receptor?",
+      "topic": "Cardiovascular",
+      "question": "Which antiarrhythmic is a class III agent?",
       "options": [
-        "Alpha-1A",
-        "Beta-1",
-        "Alpha-2",
-        "Beta-2"
+        "Lignocaine",
+        "Amiodarone",
+        "Verapamil",
+        "Flecainide"
       ],
-      "correct": 0,
-      "explanation": "Tamsulosin is a selective alpha-1A blocker used in BPH with less effect on blood pressure."
+      "correct": 1,
+      "explanation": "Amiodarone is a class III (potassium channel blocker) but has all four Vaughan-Williams actions. Watch for thyroid, lung toxicity."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "General Pharmacology",
-      "question": "Context-sensitive half-time is most relevant for?",
+      "topic": "Autonomic Nervous System",
+      "question": "Which is an ultra-short-acting beta blocker used IV?",
       "options": [
-        "Oral drugs",
-        "IV infused anaesthetics",
-        "Topical drugs",
-        "Inhaled steroids"
+        "Atenolol",
+        "Esmolol",
+        "Nadolol",
+        "Bisoprolol"
       ],
       "correct": 1,
-      "explanation": "Context-sensitive half-time describes decline in plasma concentration after stopping a continuous infusion (e.g. propofol, remifentanil)."
+      "explanation": "Esmolol has a half-life of about 9 minutes (hydrolysed by esterases), used for intra-operative tachycardia and hypertension."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "Autonomic Nervous System",
-      "question": "Pilocarpine is used in glaucoma because it is a?",
+      "question": "Adrenaline is the drug of choice in?",
       "options": [
-        "Muscarinic agonist",
-        "Beta blocker",
-        "Alpha agonist",
-        "Muscarinic antagonist"
+        "Hypertension",
+        "Anaphylaxis",
+        "Angina",
+        "Glaucoma"
       ],
-      "correct": 0,
-      "explanation": "Pilocarpine is a muscarinic agonist causing miosis and improved aqueous outflow, lowering intraocular pressure."
+      "correct": 1,
+      "explanation": "Adrenaline (IM) is first-line in anaphylaxis: it reverses bronchospasm, vasodilation and hypotension."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Clinical Trials",
-      "question": "Phase 0 (microdosing) studies use?",
+      "question": "Post-marketing surveillance corresponds to which phase?",
       "options": [
-        "Therapeutic doses",
-        "Sub-therapeutic doses",
-        "Toxic doses",
-        "No drug"
+        "Phase I",
+        "Phase II",
+        "Phase III",
+        "Phase IV"
       ],
-      "correct": 1,
-      "explanation": "Phase 0 uses sub-therapeutic microdoses in a few volunteers to study PK/PD early, before full Phase I."
+      "correct": 3,
+      "explanation": "Phase IV (pharmacovigilance) detects rare or long-term adverse effects after marketing in the general population."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 05 Oct 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: First-order kinetics means the rate of elimination is?\nAns: Proportional to drug concentration\nWhy: In first-order kinetics a constant fraction is eliminated per unit time, so rate is proportional to concentration.\n\n🩺 *NEET PG* (Autonomic Nervous System)\nQ: Tamsulosin is selective for which receptor?\nAns: Alpha-1A\nWhy: Tamsulosin is a selective alpha-1A blocker used in BPH with less effect on blood pressure.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: Context-sensitive half-time is most relevant for?\nAns: IV infused anaesthetics\nWhy: Context-sensitive half-time describes decline in plasma concentration after stopping a continuous infusion (e.g. propofol, remifentanil).\n\n🌍 *FMGE* (Autonomic Nervous System)\nQ: Pilocarpine is used in glaucoma because it is a?\nAns: Muscarinic agonist\nWhy: Pilocarpine is a muscarinic agonist causing miosis and improved aqueous outflow, lowering intraocular pressure.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: Phase 0 (microdosing) studies use?\nAns: Sub-therapeutic doses\nWhy: Phase 0 uses sub-therapeutic microdoses in a few volunteers to study PK/PD early, before full Phase I.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2005%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20First-order%20kinetics%20means%20the%20rate%20of%20elimination%20is%3F%0AAns%3A%20Proportional%20to%20drug%20concentration%0AWhy%3A%20In%20first-order%20kinetics%20a%20constant%20fraction%20is%20eliminated%20per%20unit%20time%2C%20so%20rate%20is%20proportional%20to%20concentration.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Tamsulosin%20is%20selective%20for%20which%20receptor%3F%0AAns%3A%20Alpha-1A%0AWhy%3A%20Tamsulosin%20is%20a%20selective%20alpha-1A%20blocker%20used%20in%20BPH%20with%20less%20effect%20on%20blood%20pressure.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20Context-sensitive%20half-time%20is%20most%20relevant%20for%3F%0AAns%3A%20IV%20infused%20anaesthetics%0AWhy%3A%20Context-sensitive%20half-time%20describes%20decline%20in%20plasma%20concentration%20after%20stopping%20a%20continuous%20infusion%20%28e.g.%20propofol%2C%20remifentanil%29.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Pilocarpine%20is%20used%20in%20glaucoma%20because%20it%20is%20a%3F%0AAns%3A%20Muscarinic%20agonist%0AWhy%3A%20Pilocarpine%20is%20a%20muscarinic%20agonist%20causing%20miosis%20and%20improved%20aqueous%20outflow%2C%20lowering%20intraocular%20pressure.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20Phase%200%20%28microdosing%29%20studies%20use%3F%0AAns%3A%20Sub-therapeutic%20doses%0AWhy%3A%20Phase%200%20uses%20sub-therapeutic%20microdoses%20in%20a%20few%20volunteers%20to%20study%20PK/PD%20early%2C%20before%20full%20Phase%20I.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 06 Oct 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: Phase II drug metabolism reactions are mainly?\nAns: Conjugation\nWhy: Phase II = conjugation (glucuronidation, sulfation, acetylation), making drugs more water-soluble for excretion.\n\n🩺 *NEET PG* (Cardiovascular)\nQ: Which antiarrhythmic is a class III agent?\nAns: Amiodarone\nWhy: Amiodarone is a class III (potassium channel blocker) but has all four Vaughan-Williams actions. Watch for thyroid, lung toxicity.\n\n🏥 *INI-CET* (Autonomic Nervous System)\nQ: Which is an ultra-short-acting beta blocker used IV?\nAns: Esmolol\nWhy: Esmolol has a half-life of about 9 minutes (hydrolysed by esterases), used for intra-operative tachycardia and hypertension.\n\n🌍 *FMGE* (Autonomic Nervous System)\nQ: Adrenaline is the drug of choice in?\nAns: Anaphylaxis\nWhy: Adrenaline (IM) is first-line in anaphylaxis: it reverses bronchospasm, vasodilation and hypotension.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: Post-marketing surveillance corresponds to which phase?\nAns: Phase IV\nWhy: Phase IV (pharmacovigilance) detects rare or long-term adverse effects after marketing in the general population.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2006%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20Phase%20II%20drug%20metabolism%20reactions%20are%20mainly%3F%0AAns%3A%20Conjugation%0AWhy%3A%20Phase%20II%20%3D%20conjugation%20%28glucuronidation%2C%20sulfation%2C%20acetylation%29%2C%20making%20drugs%20more%20water-soluble%20for%20excretion.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20antiarrhythmic%20is%20a%20class%20III%20agent%3F%0AAns%3A%20Amiodarone%0AWhy%3A%20Amiodarone%20is%20a%20class%20III%20%28potassium%20channel%20blocker%29%20but%20has%20all%20four%20Vaughan-Williams%20actions.%20Watch%20for%20thyroid%2C%20lung%20toxicity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Which%20is%20an%20ultra-short-acting%20beta%20blocker%20used%20IV%3F%0AAns%3A%20Esmolol%0AWhy%3A%20Esmolol%20has%20a%20half-life%20of%20about%209%20minutes%20%28hydrolysed%20by%20esterases%29%2C%20used%20for%20intra-operative%20tachycardia%20and%20hypertension.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Adrenaline%20is%20the%20drug%20of%20choice%20in%3F%0AAns%3A%20Anaphylaxis%0AWhy%3A%20Adrenaline%20%28IM%29%20is%20first-line%20in%20anaphylaxis%3A%20it%20reverses%20bronchospasm%2C%20vasodilation%20and%20hypotension.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20Post-marketing%20surveillance%20corresponds%20to%20which%20phase%3F%0AAns%3A%20Phase%20IV%0AWhy%3A%20Phase%20IV%20%28pharmacovigilance%29%20detects%20rare%20or%20long-term%20adverse%20effects%20after%20marketing%20in%20the%20general%20population.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
