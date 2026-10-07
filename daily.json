@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "General Pharmacology",
-      "question": "Phase II drug metabolism reactions are mainly?",
+      "topic": "Autonomic Nervous System",
+      "question": "The neurotransmitter at all autonomic ganglia is?",
       "options": [
-        "Oxidation",
-        "Reduction",
-        "Conjugation",
-        "Hydrolysis"
+        "Noradrenaline",
+        "Acetylcholine",
+        "Dopamine",
+        "Adrenaline"
       ],
-      "correct": 2,
-      "explanation": "Phase II = conjugation (glucuronidation, sulfation, acetylation), making drugs more water-soluble for excretion."
+      "correct": 1,
+      "explanation": "Acetylcholine acts on nicotinic (Nn) receptors at both sympathetic and parasympathetic ganglia."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
       "topic": "Cardiovascular",
-      "question": "Which antiarrhythmic is a class III agent?",
+      "question": "Sacubitril is combined with valsartan; it is a?",
       "options": [
-        "Lignocaine",
-        "Amiodarone",
-        "Verapamil",
-        "Flecainide"
+        "Beta blocker",
+        "Neprilysin inhibitor",
+        "Calcium blocker",
+        "Statin"
       ],
       "correct": 1,
-      "explanation": "Amiodarone is a class III (potassium channel blocker) but has all four Vaughan-Williams actions. Watch for thyroid, lung toxicity."
+      "explanation": "Sacubitril inhibits neprilysin, raising natriuretic peptides. ARNI (sacubitril-valsartan) improves survival in HFrEF."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Autonomic Nervous System",
-      "question": "Which is an ultra-short-acting beta blocker used IV?",
+      "topic": "Cardiovascular",
+      "question": "Ivabradine lowers heart rate by acting on?",
       "options": [
-        "Atenolol",
-        "Esmolol",
-        "Nadolol",
-        "Bisoprolol"
+        "Beta receptors",
+        "Funny (If) current in SA node",
+        "Calcium channels",
+        "Sodium channels"
       ],
       "correct": 1,
-      "explanation": "Esmolol has a half-life of about 9 minutes (hydrolysed by esterases), used for intra-operative tachycardia and hypertension."
+      "explanation": "Ivabradine selectively inhibits the If current in the SA node, slowing heart rate without affecting contractility or BP."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Autonomic Nervous System",
-      "question": "Adrenaline is the drug of choice in?",
+      "topic": "Cardiovascular",
+      "question": "Statins lower cholesterol by inhibiting?",
       "options": [
-        "Hypertension",
-        "Anaphylaxis",
-        "Angina",
-        "Glaucoma"
+        "HMG-CoA reductase",
+        "ACE",
+        "PCSK9",
+        "Lipase"
       ],
-      "correct": 1,
-      "explanation": "Adrenaline (IM) is first-line in anaphylaxis: it reverses bronchospasm, vasodilation and hypotension."
+      "correct": 0,
+      "explanation": "Statins inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis. Watch for myopathy and raised LFTs."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Clinical Trials",
-      "question": "Post-marketing surveillance corresponds to which phase?",
+      "question": "The gold-standard design to minimise bias in a clinical trial is?",
       "options": [
-        "Phase I",
-        "Phase II",
-        "Phase III",
-        "Phase IV"
+        "Open-label",
+        "Case series",
+        "Randomised double-blind controlled trial",
+        "Cross-sectional"
       ],
-      "correct": 3,
-      "explanation": "Phase IV (pharmacovigilance) detects rare or long-term adverse effects after marketing in the general population."
+      "correct": 2,
+      "explanation": "Randomisation and double-blinding minimise selection and observer bias, making the RCT the gold standard for efficacy."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 06 Oct 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: Phase II drug metabolism reactions are mainly?\nAns: Conjugation\nWhy: Phase II = conjugation (glucuronidation, sulfation, acetylation), making drugs more water-soluble for excretion.\n\n🩺 *NEET PG* (Cardiovascular)\nQ: Which antiarrhythmic is a class III agent?\nAns: Amiodarone\nWhy: Amiodarone is a class III (potassium channel blocker) but has all four Vaughan-Williams actions. Watch for thyroid, lung toxicity.\n\n🏥 *INI-CET* (Autonomic Nervous System)\nQ: Which is an ultra-short-acting beta blocker used IV?\nAns: Esmolol\nWhy: Esmolol has a half-life of about 9 minutes (hydrolysed by esterases), used for intra-operative tachycardia and hypertension.\n\n🌍 *FMGE* (Autonomic Nervous System)\nQ: Adrenaline is the drug of choice in?\nAns: Anaphylaxis\nWhy: Adrenaline (IM) is first-line in anaphylaxis: it reverses bronchospasm, vasodilation and hypotension.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: Post-marketing surveillance corresponds to which phase?\nAns: Phase IV\nWhy: Phase IV (pharmacovigilance) detects rare or long-term adverse effects after marketing in the general population.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2006%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20Phase%20II%20drug%20metabolism%20reactions%20are%20mainly%3F%0AAns%3A%20Conjugation%0AWhy%3A%20Phase%20II%20%3D%20conjugation%20%28glucuronidation%2C%20sulfation%2C%20acetylation%29%2C%20making%20drugs%20more%20water-soluble%20for%20excretion.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20antiarrhythmic%20is%20a%20class%20III%20agent%3F%0AAns%3A%20Amiodarone%0AWhy%3A%20Amiodarone%20is%20a%20class%20III%20%28potassium%20channel%20blocker%29%20but%20has%20all%20four%20Vaughan-Williams%20actions.%20Watch%20for%20thyroid%2C%20lung%20toxicity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Which%20is%20an%20ultra-short-acting%20beta%20blocker%20used%20IV%3F%0AAns%3A%20Esmolol%0AWhy%3A%20Esmolol%20has%20a%20half-life%20of%20about%209%20minutes%20%28hydrolysed%20by%20esterases%29%2C%20used%20for%20intra-operative%20tachycardia%20and%20hypertension.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Adrenaline%20is%20the%20drug%20of%20choice%20in%3F%0AAns%3A%20Anaphylaxis%0AWhy%3A%20Adrenaline%20%28IM%29%20is%20first-line%20in%20anaphylaxis%3A%20it%20reverses%20bronchospasm%2C%20vasodilation%20and%20hypotension.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20Post-marketing%20surveillance%20corresponds%20to%20which%20phase%3F%0AAns%3A%20Phase%20IV%0AWhy%3A%20Phase%20IV%20%28pharmacovigilance%29%20detects%20rare%20or%20long-term%20adverse%20effects%20after%20marketing%20in%20the%20general%20population.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 07 Oct 2026*\n\n🎓 *MBBS* (Autonomic Nervous System)\nQ: The neurotransmitter at all autonomic ganglia is?\nAns: Acetylcholine\nWhy: Acetylcholine acts on nicotinic (Nn) receptors at both sympathetic and parasympathetic ganglia.\n\n🩺 *NEET PG* (Cardiovascular)\nQ: Sacubitril is combined with valsartan; it is a?\nAns: Neprilysin inhibitor\nWhy: Sacubitril inhibits neprilysin, raising natriuretic peptides. ARNI (sacubitril-valsartan) improves survival in HFrEF.\n\n🏥 *INI-CET* (Cardiovascular)\nQ: Ivabradine lowers heart rate by acting on?\nAns: Funny (If) current in SA node\nWhy: Ivabradine selectively inhibits the If current in the SA node, slowing heart rate without affecting contractility or BP.\n\n🌍 *FMGE* (Cardiovascular)\nQ: Statins lower cholesterol by inhibiting?\nAns: HMG-CoA reductase\nWhy: Statins inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis. Watch for myopathy and raised LFTs.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: The gold-standard design to minimise bias in a clinical trial is?\nAns: Randomised double-blind controlled trial\nWhy: Randomisation and double-blinding minimise selection and observer bias, making the RCT the gold standard for efficacy.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2007%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20The%20neurotransmitter%20at%20all%20autonomic%20ganglia%20is%3F%0AAns%3A%20Acetylcholine%0AWhy%3A%20Acetylcholine%20acts%20on%20nicotinic%20%28Nn%29%20receptors%20at%20both%20sympathetic%20and%20parasympathetic%20ganglia.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Cardiovascular%29%0AQ%3A%20Sacubitril%20is%20combined%20with%20valsartan%3B%20it%20is%20a%3F%0AAns%3A%20Neprilysin%20inhibitor%0AWhy%3A%20Sacubitril%20inhibits%20neprilysin%2C%20raising%20natriuretic%20peptides.%20ARNI%20%28sacubitril-valsartan%29%20improves%20survival%20in%20HFrEF.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Cardiovascular%29%0AQ%3A%20Ivabradine%20lowers%20heart%20rate%20by%20acting%20on%3F%0AAns%3A%20Funny%20%28If%29%20current%20in%20SA%20node%0AWhy%3A%20Ivabradine%20selectively%20inhibits%20the%20If%20current%20in%20the%20SA%20node%2C%20slowing%20heart%20rate%20without%20affecting%20contractility%20or%20BP.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Cardiovascular%29%0AQ%3A%20Statins%20lower%20cholesterol%20by%20inhibiting%3F%0AAns%3A%20HMG-CoA%20reductase%0AWhy%3A%20Statins%20inhibit%20HMG-CoA%20reductase%2C%20the%20rate-limiting%20enzyme%20of%20cholesterol%20synthesis.%20Watch%20for%20myopathy%20and%20raised%20LFTs.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20The%20gold-standard%20design%20to%20minimise%20bias%20in%20a%20clinical%20trial%20is%3F%0AAns%3A%20Randomised%20double-blind%20controlled%20trial%0AWhy%3A%20Randomisation%20and%20double-blinding%20minimise%20selection%20and%20observer%20bias%2C%20making%20the%20RCT%20the%20gold%20standard%20for%20efficacy.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
