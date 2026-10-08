@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Autonomic Nervous System",
-      "question": "The neurotransmitter at all autonomic ganglia is?",
+      "question": "Atropine acts by blocking which receptor?",
       "options": [
-        "Noradrenaline",
-        "Acetylcholine",
-        "Dopamine",
-        "Adrenaline"
+        "Nicotinic",
+        "Muscarinic",
+        "Alpha adrenergic",
+        "Beta adrenergic"
       ],
       "correct": 1,
-      "explanation": "Acetylcholine acts on nicotinic (Nn) receptors at both sympathetic and parasympathetic ganglia."
+      "explanation": "Atropine is a competitive muscarinic antagonist, causing tachycardia, mydriasis and dry secretions."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Cardiovascular",
-      "question": "Sacubitril is combined with valsartan; it is a?",
+      "topic": "Central Nervous System",
+      "question": "Drug of choice for status epilepticus (first-line IV)?",
       "options": [
-        "Beta blocker",
-        "Neprilysin inhibitor",
-        "Calcium blocker",
-        "Statin"
+        "Phenytoin",
+        "Lorazepam",
+        "Valproate",
+        "Levetiracetam"
       ],
       "correct": 1,
-      "explanation": "Sacubitril inhibits neprilysin, raising natriuretic peptides. ARNI (sacubitril-valsartan) improves survival in HFrEF."
+      "explanation": "IV benzodiazepine (lorazepam) is first-line; phenytoin, valproate or levetiracetam are second-line."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
       "topic": "Cardiovascular",
-      "question": "Ivabradine lowers heart rate by acting on?",
+      "question": "Vericiguat used in heart failure is a?",
       "options": [
-        "Beta receptors",
-        "Funny (If) current in SA node",
-        "Calcium channels",
-        "Sodium channels"
+        "Beta blocker",
+        "Soluble guanylate cyclase stimulator",
+        "SGLT2 inhibitor",
+        "ARNI"
       ],
       "correct": 1,
-      "explanation": "Ivabradine selectively inhibits the If current in the SA node, slowing heart rate without affecting contractility or BP."
+      "explanation": "Vericiguat stimulates soluble guanylate cyclase, raising cGMP, and reduces HF events in worsening chronic HFrEF."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "Cardiovascular",
-      "question": "Statins lower cholesterol by inhibiting?",
+      "question": "Which drug is used to treat hypertensive emergency IV?",
       "options": [
-        "HMG-CoA reductase",
-        "ACE",
-        "PCSK9",
-        "Lipase"
+        "Amlodipine",
+        "Sodium nitroprusside",
+        "Atenolol",
+        "Losartan"
       ],
-      "correct": 0,
-      "explanation": "Statins inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis. Watch for myopathy and raised LFTs."
+      "correct": 1,
+      "explanation": "Sodium nitroprusside is a rapid IV vasodilator for hypertensive emergency; prolonged use risks cyanide toxicity."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Clinical Trials",
-      "question": "The gold-standard design to minimise bias in a clinical trial is?",
+      "question": "Intention-to-treat analysis means patients are analysed?",
       "options": [
-        "Open-label",
-        "Case series",
-        "Randomised double-blind controlled trial",
-        "Cross-sectional"
+        "Only if they completed",
+        "By treatment received",
+        "By the group they were randomised to",
+        "After exclusions"
       ],
       "correct": 2,
-      "explanation": "Randomisation and double-blinding minimise selection and observer bias, making the RCT the gold standard for efficacy."
+      "explanation": "Intention-to-treat analyses all randomised patients in their original group, preserving randomisation and reducing bias."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 07 Oct 2026*\n\n🎓 *MBBS* (Autonomic Nervous System)\nQ: The neurotransmitter at all autonomic ganglia is?\nAns: Acetylcholine\nWhy: Acetylcholine acts on nicotinic (Nn) receptors at both sympathetic and parasympathetic ganglia.\n\n🩺 *NEET PG* (Cardiovascular)\nQ: Sacubitril is combined with valsartan; it is a?\nAns: Neprilysin inhibitor\nWhy: Sacubitril inhibits neprilysin, raising natriuretic peptides. ARNI (sacubitril-valsartan) improves survival in HFrEF.\n\n🏥 *INI-CET* (Cardiovascular)\nQ: Ivabradine lowers heart rate by acting on?\nAns: Funny (If) current in SA node\nWhy: Ivabradine selectively inhibits the If current in the SA node, slowing heart rate without affecting contractility or BP.\n\n🌍 *FMGE* (Cardiovascular)\nQ: Statins lower cholesterol by inhibiting?\nAns: HMG-CoA reductase\nWhy: Statins inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis. Watch for myopathy and raised LFTs.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: The gold-standard design to minimise bias in a clinical trial is?\nAns: Randomised double-blind controlled trial\nWhy: Randomisation and double-blinding minimise selection and observer bias, making the RCT the gold standard for efficacy.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2007%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20The%20neurotransmitter%20at%20all%20autonomic%20ganglia%20is%3F%0AAns%3A%20Acetylcholine%0AWhy%3A%20Acetylcholine%20acts%20on%20nicotinic%20%28Nn%29%20receptors%20at%20both%20sympathetic%20and%20parasympathetic%20ganglia.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Cardiovascular%29%0AQ%3A%20Sacubitril%20is%20combined%20with%20valsartan%3B%20it%20is%20a%3F%0AAns%3A%20Neprilysin%20inhibitor%0AWhy%3A%20Sacubitril%20inhibits%20neprilysin%2C%20raising%20natriuretic%20peptides.%20ARNI%20%28sacubitril-valsartan%29%20improves%20survival%20in%20HFrEF.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Cardiovascular%29%0AQ%3A%20Ivabradine%20lowers%20heart%20rate%20by%20acting%20on%3F%0AAns%3A%20Funny%20%28If%29%20current%20in%20SA%20node%0AWhy%3A%20Ivabradine%20selectively%20inhibits%20the%20If%20current%20in%20the%20SA%20node%2C%20slowing%20heart%20rate%20without%20affecting%20contractility%20or%20BP.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Cardiovascular%29%0AQ%3A%20Statins%20lower%20cholesterol%20by%20inhibiting%3F%0AAns%3A%20HMG-CoA%20reductase%0AWhy%3A%20Statins%20inhibit%20HMG-CoA%20reductase%2C%20the%20rate-limiting%20enzyme%20of%20cholesterol%20synthesis.%20Watch%20for%20myopathy%20and%20raised%20LFTs.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20The%20gold-standard%20design%20to%20minimise%20bias%20in%20a%20clinical%20trial%20is%3F%0AAns%3A%20Randomised%20double-blind%20controlled%20trial%0AWhy%3A%20Randomisation%20and%20double-blinding%20minimise%20selection%20and%20observer%20bias%2C%20making%20the%20RCT%20the%20gold%20standard%20for%20efficacy.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 08 Oct 2026*\n\n🎓 *MBBS* (Autonomic Nervous System)\nQ: Atropine acts by blocking which receptor?\nAns: Muscarinic\nWhy: Atropine is a competitive muscarinic antagonist, causing tachycardia, mydriasis and dry secretions.\n\n🩺 *NEET PG* (Central Nervous System)\nQ: Drug of choice for status epilepticus (first-line IV)?\nAns: Lorazepam\nWhy: IV benzodiazepine (lorazepam) is first-line; phenytoin, valproate or levetiracetam are second-line.\n\n🏥 *INI-CET* (Cardiovascular)\nQ: Vericiguat used in heart failure is a?\nAns: Soluble guanylate cyclase stimulator\nWhy: Vericiguat stimulates soluble guanylate cyclase, raising cGMP, and reduces HF events in worsening chronic HFrEF.\n\n🌍 *FMGE* (Cardiovascular)\nQ: Which drug is used to treat hypertensive emergency IV?\nAns: Sodium nitroprusside\nWhy: Sodium nitroprusside is a rapid IV vasodilator for hypertensive emergency; prolonged use risks cyanide toxicity.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: Intention-to-treat analysis means patients are analysed?\nAns: By the group they were randomised to\nWhy: Intention-to-treat analyses all randomised patients in their original group, preserving randomisation and reducing bias.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2008%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Atropine%20acts%20by%20blocking%20which%20receptor%3F%0AAns%3A%20Muscarinic%0AWhy%3A%20Atropine%20is%20a%20competitive%20muscarinic%20antagonist%2C%20causing%20tachycardia%2C%20mydriasis%20and%20dry%20secretions.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Drug%20of%20choice%20for%20status%20epilepticus%20%28first-line%20IV%29%3F%0AAns%3A%20Lorazepam%0AWhy%3A%20IV%20benzodiazepine%20%28lorazepam%29%20is%20first-line%3B%20phenytoin%2C%20valproate%20or%20levetiracetam%20are%20second-line.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Cardiovascular%29%0AQ%3A%20Vericiguat%20used%20in%20heart%20failure%20is%20a%3F%0AAns%3A%20Soluble%20guanylate%20cyclase%20stimulator%0AWhy%3A%20Vericiguat%20stimulates%20soluble%20guanylate%20cyclase%2C%20raising%20cGMP%2C%20and%20reduces%20HF%20events%20in%20worsening%20chronic%20HFrEF.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20drug%20is%20used%20to%20treat%20hypertensive%20emergency%20IV%3F%0AAns%3A%20Sodium%20nitroprusside%0AWhy%3A%20Sodium%20nitroprusside%20is%20a%20rapid%20IV%20vasodilator%20for%20hypertensive%20emergency%3B%20prolonged%20use%20risks%20cyanide%20toxicity.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20Intention-to-treat%20analysis%20means%20patients%20are%20analysed%3F%0AAns%3A%20By%20the%20group%20they%20were%20randomised%20to%0AWhy%3A%20Intention-to-treat%20analyses%20all%20randomised%20patients%20in%20their%20original%20group%2C%20preserving%20randomisation%20and%20reducing%20bias.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
