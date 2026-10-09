@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Autonomic Nervous System",
-      "question": "Atropine acts by blocking which receptor?",
+      "question": "Which drug is used to treat myasthenia gravis?",
       "options": [
-        "Nicotinic",
-        "Muscarinic",
-        "Alpha adrenergic",
-        "Beta adrenergic"
+        "Atropine",
+        "Neostigmine",
+        "Adrenaline",
+        "Propranolol"
       ],
       "correct": 1,
-      "explanation": "Atropine is a competitive muscarinic antagonist, causing tachycardia, mydriasis and dry secretions."
+      "explanation": "Neostigmine, an anticholinesterase, increases acetylcholine at the neuromuscular junction, improving muscle strength."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
       "topic": "Central Nervous System",
-      "question": "Drug of choice for status epilepticus (first-line IV)?",
+      "question": "Which antidepressant is safest in overdose?",
       "options": [
-        "Phenytoin",
-        "Lorazepam",
-        "Valproate",
-        "Levetiracetam"
+        "Amitriptyline",
+        "Fluoxetine",
+        "Imipramine",
+        "Phenelzine"
       ],
       "correct": 1,
-      "explanation": "IV benzodiazepine (lorazepam) is first-line; phenytoin, valproate or levetiracetam are second-line."
+      "explanation": "SSRIs like fluoxetine are safer in overdose than TCAs, which cause fatal arrhythmias."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Cardiovascular",
-      "question": "Vericiguat used in heart failure is a?",
+      "topic": "Central Nervous System",
+      "question": "Which antimigraine class blocks CGRP?",
       "options": [
-        "Beta blocker",
-        "Soluble guanylate cyclase stimulator",
-        "SGLT2 inhibitor",
-        "ARNI"
+        "Triptans",
+        "Gepants",
+        "Ergots",
+        "NSAIDs"
       ],
       "correct": 1,
-      "explanation": "Vericiguat stimulates soluble guanylate cyclase, raising cGMP, and reduces HF events in worsening chronic HFrEF."
+      "explanation": "Gepants (rimegepant, ubrogepant) are CGRP receptor antagonists; monoclonal anti-CGRP antibodies are also used for prevention."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Cardiovascular",
-      "question": "Which drug is used to treat hypertensive emergency IV?",
+      "topic": "Central Nervous System",
+      "question": "Levodopa is combined with carbidopa to?",
       "options": [
-        "Amlodipine",
-        "Sodium nitroprusside",
-        "Atenolol",
-        "Losartan"
+        "Increase CNS entry and reduce side effects",
+        "Increase metabolism",
+        "Block dopamine",
+        "Cause sedation"
       ],
-      "correct": 1,
-      "explanation": "Sodium nitroprusside is a rapid IV vasodilator for hypertensive emergency; prolonged use risks cyanide toxicity."
+      "correct": 0,
+      "explanation": "Carbidopa inhibits peripheral dopa decarboxylase, so more levodopa reaches the brain with fewer peripheral side effects."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Clinical Trials",
-      "question": "Intention-to-treat analysis means patients are analysed?",
+      "question": "A non-inferiority trial aims to show the new drug is?",
       "options": [
-        "Only if they completed",
-        "By treatment received",
-        "By the group they were randomised to",
-        "After exclusions"
+        "Better than comparator",
+        "Not worse than comparator by a set margin",
+        "Cheaper",
+        "Equal in cost"
       ],
-      "correct": 2,
-      "explanation": "Intention-to-treat analyses all randomised patients in their original group, preserving randomisation and reducing bias."
+      "correct": 1,
+      "explanation": "Non-inferiority trials show the new treatment is not worse than the standard by more than a pre-specified margin."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 08 Oct 2026*\n\n🎓 *MBBS* (Autonomic Nervous System)\nQ: Atropine acts by blocking which receptor?\nAns: Muscarinic\nWhy: Atropine is a competitive muscarinic antagonist, causing tachycardia, mydriasis and dry secretions.\n\n🩺 *NEET PG* (Central Nervous System)\nQ: Drug of choice for status epilepticus (first-line IV)?\nAns: Lorazepam\nWhy: IV benzodiazepine (lorazepam) is first-line; phenytoin, valproate or levetiracetam are second-line.\n\n🏥 *INI-CET* (Cardiovascular)\nQ: Vericiguat used in heart failure is a?\nAns: Soluble guanylate cyclase stimulator\nWhy: Vericiguat stimulates soluble guanylate cyclase, raising cGMP, and reduces HF events in worsening chronic HFrEF.\n\n🌍 *FMGE* (Cardiovascular)\nQ: Which drug is used to treat hypertensive emergency IV?\nAns: Sodium nitroprusside\nWhy: Sodium nitroprusside is a rapid IV vasodilator for hypertensive emergency; prolonged use risks cyanide toxicity.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: Intention-to-treat analysis means patients are analysed?\nAns: By the group they were randomised to\nWhy: Intention-to-treat analyses all randomised patients in their original group, preserving randomisation and reducing bias.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2008%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Atropine%20acts%20by%20blocking%20which%20receptor%3F%0AAns%3A%20Muscarinic%0AWhy%3A%20Atropine%20is%20a%20competitive%20muscarinic%20antagonist%2C%20causing%20tachycardia%2C%20mydriasis%20and%20dry%20secretions.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Drug%20of%20choice%20for%20status%20epilepticus%20%28first-line%20IV%29%3F%0AAns%3A%20Lorazepam%0AWhy%3A%20IV%20benzodiazepine%20%28lorazepam%29%20is%20first-line%3B%20phenytoin%2C%20valproate%20or%20levetiracetam%20are%20second-line.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Cardiovascular%29%0AQ%3A%20Vericiguat%20used%20in%20heart%20failure%20is%20a%3F%0AAns%3A%20Soluble%20guanylate%20cyclase%20stimulator%0AWhy%3A%20Vericiguat%20stimulates%20soluble%20guanylate%20cyclase%2C%20raising%20cGMP%2C%20and%20reduces%20HF%20events%20in%20worsening%20chronic%20HFrEF.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20drug%20is%20used%20to%20treat%20hypertensive%20emergency%20IV%3F%0AAns%3A%20Sodium%20nitroprusside%0AWhy%3A%20Sodium%20nitroprusside%20is%20a%20rapid%20IV%20vasodilator%20for%20hypertensive%20emergency%3B%20prolonged%20use%20risks%20cyanide%20toxicity.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20Intention-to-treat%20analysis%20means%20patients%20are%20analysed%3F%0AAns%3A%20By%20the%20group%20they%20were%20randomised%20to%0AWhy%3A%20Intention-to-treat%20analyses%20all%20randomised%20patients%20in%20their%20original%20group%2C%20preserving%20randomisation%20and%20reducing%20bias.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 09 Oct 2026*\n\n🎓 *MBBS* (Autonomic Nervous System)\nQ: Which drug is used to treat myasthenia gravis?\nAns: Neostigmine\nWhy: Neostigmine, an anticholinesterase, increases acetylcholine at the neuromuscular junction, improving muscle strength.\n\n🩺 *NEET PG* (Central Nervous System)\nQ: Which antidepressant is safest in overdose?\nAns: Fluoxetine\nWhy: SSRIs like fluoxetine are safer in overdose than TCAs, which cause fatal arrhythmias.\n\n🏥 *INI-CET* (Central Nervous System)\nQ: Which antimigraine class blocks CGRP?\nAns: Gepants\nWhy: Gepants (rimegepant, ubrogepant) are CGRP receptor antagonists; monoclonal anti-CGRP antibodies are also used for prevention.\n\n🌍 *FMGE* (Central Nervous System)\nQ: Levodopa is combined with carbidopa to?\nAns: Increase CNS entry and reduce side effects\nWhy: Carbidopa inhibits peripheral dopa decarboxylase, so more levodopa reaches the brain with fewer peripheral side effects.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: A non-inferiority trial aims to show the new drug is?\nAns: Not worse than comparator by a set margin\nWhy: Non-inferiority trials show the new treatment is not worse than the standard by more than a pre-specified margin.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2009%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Which%20drug%20is%20used%20to%20treat%20myasthenia%20gravis%3F%0AAns%3A%20Neostigmine%0AWhy%3A%20Neostigmine%2C%20an%20anticholinesterase%2C%20increases%20acetylcholine%20at%20the%20neuromuscular%20junction%2C%20improving%20muscle%20strength.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Which%20antidepressant%20is%20safest%20in%20overdose%3F%0AAns%3A%20Fluoxetine%0AWhy%3A%20SSRIs%20like%20fluoxetine%20are%20safer%20in%20overdose%20than%20TCAs%2C%20which%20cause%20fatal%20arrhythmias.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Which%20antimigraine%20class%20blocks%20CGRP%3F%0AAns%3A%20Gepants%0AWhy%3A%20Gepants%20%28rimegepant%2C%20ubrogepant%29%20are%20CGRP%20receptor%20antagonists%3B%20monoclonal%20anti-CGRP%20antibodies%20are%20also%20used%20for%20prevention.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Levodopa%20is%20combined%20with%20carbidopa%20to%3F%0AAns%3A%20Increase%20CNS%20entry%20and%20reduce%20side%20effects%0AWhy%3A%20Carbidopa%20inhibits%20peripheral%20dopa%20decarboxylase%2C%20so%20more%20levodopa%20reaches%20the%20brain%20with%20fewer%20peripheral%20side%20effects.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20A%20non-inferiority%20trial%20aims%20to%20show%20the%20new%20drug%20is%3F%0AAns%3A%20Not%20worse%20than%20comparator%20by%20a%20set%20margin%0AWhy%3A%20Non-inferiority%20trials%20show%20the%20new%20treatment%20is%20not%20worse%20than%20the%20standard%20by%20more%20than%20a%20pre-specified%20margin.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
