@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Autonomic Nervous System",
-      "question": "Which drug is used to treat myasthenia gravis?",
+      "topic": "Cardiovascular",
+      "question": "Digoxin acts by inhibiting?",
       "options": [
-        "Atropine",
-        "Neostigmine",
-        "Adrenaline",
-        "Propranolol"
+        "Na-K ATPase",
+        "ACE",
+        "Beta receptors",
+        "Calcium channels"
       ],
-      "correct": 1,
-      "explanation": "Neostigmine, an anticholinesterase, increases acetylcholine at the neuromuscular junction, improving muscle strength."
+      "correct": 0,
+      "explanation": "Digoxin inhibits the Na-K ATPase pump, raising intracellular calcium and increasing cardiac contractility (positive inotrope)."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Central Nervous System",
-      "question": "Which antidepressant is safest in overdose?",
+      "topic": "Autacoids and NSAIDs",
+      "question": "Selective COX-2 inhibitor among these?",
       "options": [
-        "Amitriptyline",
-        "Fluoxetine",
-        "Imipramine",
-        "Phenelzine"
+        "Ibuprofen",
+        "Celecoxib",
+        "Naproxen",
+        "Indomethacin"
       ],
       "correct": 1,
-      "explanation": "SSRIs like fluoxetine are safer in overdose than TCAs, which cause fatal arrhythmias."
+      "explanation": "Celecoxib is a selective COX-2 inhibitor with less GI toxicity but increased cardiovascular risk."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
       "topic": "Central Nervous System",
-      "question": "Which antimigraine class blocks CGRP?",
+      "question": "Esketamine nasal spray is approved for?",
       "options": [
-        "Triptans",
-        "Gepants",
-        "Ergots",
-        "NSAIDs"
+        "Epilepsy",
+        "Treatment-resistant depression",
+        "Parkinsonism",
+        "Insomnia"
       ],
       "correct": 1,
-      "explanation": "Gepants (rimegepant, ubrogepant) are CGRP receptor antagonists; monoclonal anti-CGRP antibodies are also used for prevention."
+      "explanation": "Esketamine, an NMDA antagonist, is approved for treatment-resistant depression; it acts rapidly compared to SSRIs."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "Central Nervous System",
-      "question": "Levodopa is combined with carbidopa to?",
+      "question": "Diazepam enhances the action of which neurotransmitter?",
       "options": [
-        "Increase CNS entry and reduce side effects",
-        "Increase metabolism",
-        "Block dopamine",
-        "Cause sedation"
+        "Glutamate",
+        "GABA",
+        "Dopamine",
+        "Acetylcholine"
       ],
-      "correct": 0,
-      "explanation": "Carbidopa inhibits peripheral dopa decarboxylase, so more levodopa reaches the brain with fewer peripheral side effects."
+      "correct": 1,
+      "explanation": "Benzodiazepines enhance GABA-A activity (increase frequency of chloride channel opening), causing sedation and anxiolysis."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Clinical Trials",
-      "question": "A non-inferiority trial aims to show the new drug is?",
+      "topic": "Research Methodology",
+      "question": "Number needed to treat (NNT) is calculated as?",
       "options": [
-        "Better than comparator",
-        "Not worse than comparator by a set margin",
-        "Cheaper",
-        "Equal in cost"
+        "1/absolute risk reduction",
+        "1/relative risk",
+        "Risk ratio",
+        "Odds ratio"
       ],
-      "correct": 1,
-      "explanation": "Non-inferiority trials show the new treatment is not worse than the standard by more than a pre-specified margin."
+      "correct": 0,
+      "explanation": "NNT = 1 / absolute risk reduction. It is the number of patients treated to prevent one additional adverse outcome."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 09 Oct 2026*\n\n🎓 *MBBS* (Autonomic Nervous System)\nQ: Which drug is used to treat myasthenia gravis?\nAns: Neostigmine\nWhy: Neostigmine, an anticholinesterase, increases acetylcholine at the neuromuscular junction, improving muscle strength.\n\n🩺 *NEET PG* (Central Nervous System)\nQ: Which antidepressant is safest in overdose?\nAns: Fluoxetine\nWhy: SSRIs like fluoxetine are safer in overdose than TCAs, which cause fatal arrhythmias.\n\n🏥 *INI-CET* (Central Nervous System)\nQ: Which antimigraine class blocks CGRP?\nAns: Gepants\nWhy: Gepants (rimegepant, ubrogepant) are CGRP receptor antagonists; monoclonal anti-CGRP antibodies are also used for prevention.\n\n🌍 *FMGE* (Central Nervous System)\nQ: Levodopa is combined with carbidopa to?\nAns: Increase CNS entry and reduce side effects\nWhy: Carbidopa inhibits peripheral dopa decarboxylase, so more levodopa reaches the brain with fewer peripheral side effects.\n\n🔬 *MD Pharmacology* (Clinical Trials)\nQ: A non-inferiority trial aims to show the new drug is?\nAns: Not worse than comparator by a set margin\nWhy: Non-inferiority trials show the new treatment is not worse than the standard by more than a pre-specified margin.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2009%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Which%20drug%20is%20used%20to%20treat%20myasthenia%20gravis%3F%0AAns%3A%20Neostigmine%0AWhy%3A%20Neostigmine%2C%20an%20anticholinesterase%2C%20increases%20acetylcholine%20at%20the%20neuromuscular%20junction%2C%20improving%20muscle%20strength.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Which%20antidepressant%20is%20safest%20in%20overdose%3F%0AAns%3A%20Fluoxetine%0AWhy%3A%20SSRIs%20like%20fluoxetine%20are%20safer%20in%20overdose%20than%20TCAs%2C%20which%20cause%20fatal%20arrhythmias.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Which%20antimigraine%20class%20blocks%20CGRP%3F%0AAns%3A%20Gepants%0AWhy%3A%20Gepants%20%28rimegepant%2C%20ubrogepant%29%20are%20CGRP%20receptor%20antagonists%3B%20monoclonal%20anti-CGRP%20antibodies%20are%20also%20used%20for%20prevention.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Levodopa%20is%20combined%20with%20carbidopa%20to%3F%0AAns%3A%20Increase%20CNS%20entry%20and%20reduce%20side%20effects%0AWhy%3A%20Carbidopa%20inhibits%20peripheral%20dopa%20decarboxylase%2C%20so%20more%20levodopa%20reaches%20the%20brain%20with%20fewer%20peripheral%20side%20effects.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Clinical%20Trials%29%0AQ%3A%20A%20non-inferiority%20trial%20aims%20to%20show%20the%20new%20drug%20is%3F%0AAns%3A%20Not%20worse%20than%20comparator%20by%20a%20set%20margin%0AWhy%3A%20Non-inferiority%20trials%20show%20the%20new%20treatment%20is%20not%20worse%20than%20the%20standard%20by%20more%20than%20a%20pre-specified%20margin.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 10 Oct 2026*\n\n🎓 *MBBS* (Cardiovascular)\nQ: Digoxin acts by inhibiting?\nAns: Na-K ATPase\nWhy: Digoxin inhibits the Na-K ATPase pump, raising intracellular calcium and increasing cardiac contractility (positive inotrope).\n\n🩺 *NEET PG* (Autacoids and NSAIDs)\nQ: Selective COX-2 inhibitor among these?\nAns: Celecoxib\nWhy: Celecoxib is a selective COX-2 inhibitor with less GI toxicity but increased cardiovascular risk.\n\n🏥 *INI-CET* (Central Nervous System)\nQ: Esketamine nasal spray is approved for?\nAns: Treatment-resistant depression\nWhy: Esketamine, an NMDA antagonist, is approved for treatment-resistant depression; it acts rapidly compared to SSRIs.\n\n🌍 *FMGE* (Central Nervous System)\nQ: Diazepam enhances the action of which neurotransmitter?\nAns: GABA\nWhy: Benzodiazepines enhance GABA-A activity (increase frequency of chloride channel opening), causing sedation and anxiolysis.\n\n🔬 *MD Pharmacology* (Research Methodology)\nQ: Number needed to treat (NNT) is calculated as?\nAns: 1/absolute risk reduction\nWhy: NNT = 1 / absolute risk reduction. It is the number of patients treated to prevent one additional adverse outcome.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2010%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Cardiovascular%29%0AQ%3A%20Digoxin%20acts%20by%20inhibiting%3F%0AAns%3A%20Na-K%20ATPase%0AWhy%3A%20Digoxin%20inhibits%20the%20Na-K%20ATPase%20pump%2C%20raising%20intracellular%20calcium%20and%20increasing%20cardiac%20contractility%20%28positive%20inotrope%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Selective%20COX-2%20inhibitor%20among%20these%3F%0AAns%3A%20Celecoxib%0AWhy%3A%20Celecoxib%20is%20a%20selective%20COX-2%20inhibitor%20with%20less%20GI%20toxicity%20but%20increased%20cardiovascular%20risk.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Esketamine%20nasal%20spray%20is%20approved%20for%3F%0AAns%3A%20Treatment-resistant%20depression%0AWhy%3A%20Esketamine%2C%20an%20NMDA%20antagonist%2C%20is%20approved%20for%20treatment-resistant%20depression%3B%20it%20acts%20rapidly%20compared%20to%20SSRIs.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Diazepam%20enhances%20the%20action%20of%20which%20neurotransmitter%3F%0AAns%3A%20GABA%0AWhy%3A%20Benzodiazepines%20enhance%20GABA-A%20activity%20%28increase%20frequency%20of%20chloride%20channel%20opening%29%2C%20causing%20sedation%20and%20anxiolysis.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Research%20Methodology%29%0AQ%3A%20Number%20needed%20to%20treat%20%28NNT%29%20is%20calculated%20as%3F%0AAns%3A%201/absolute%20risk%20reduction%0AWhy%3A%20NNT%20%3D%201%20/%20absolute%20risk%20reduction.%20It%20is%20the%20number%20of%20patients%20treated%20to%20prevent%20one%20additional%20adverse%20outcome.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
