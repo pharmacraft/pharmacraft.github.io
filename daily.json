@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Cardiovascular",
-      "question": "A common adverse effect of ACE inhibitors is?",
+      "question": "Which drug is given sublingually for acute angina?",
       "options": [
-        "Dry cough",
-        "Hypokalemia",
-        "Bradycardia",
-        "Weight gain"
+        "Atenolol",
+        "Glyceryl trinitrate",
+        "Digoxin",
+        "Amlodipine"
       ],
-      "correct": 0,
-      "explanation": "ACE inhibitors raise bradykinin, causing a dry cough. Other effects: hyperkalemia, angioedema. Contraindicated in pregnancy."
+      "correct": 1,
+      "explanation": "Sublingual glyceryl trinitrate (nitroglycerin) causes rapid venodilation, reducing preload and relieving angina."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Respiratory",
-      "question": "Omalizumab used in severe asthma is a?",
+      "topic": "Gastrointestinal",
+      "question": "Drug of choice for cytoprotection in NSAID ulcers?",
       "options": [
-        "Anti-IgE antibody",
-        "Anti-IL5",
-        "LABA",
-        "Leukotriene antagonist"
+        "Ranitidine",
+        "Misoprostol",
+        "Omeprazole",
+        "Sucralfate"
       ],
-      "correct": 0,
-      "explanation": "Omalizumab is a monoclonal anti-IgE antibody for severe allergic asthma. Mepolizumab targets IL-5."
+      "correct": 1,
+      "explanation": "Misoprostol, a PGE1 analogue, prevents NSAID-induced ulcers but causes diarrhoea; avoided in pregnancy (abortifacient)."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
       "topic": "Chemotherapy",
-      "question": "Bedaquiline used in MDR-TB acts by inhibiting?",
+      "question": "Which antifungal is an echinocandin?",
       "options": [
-        "Cell wall",
-        "Mycobacterial ATP synthase",
-        "RNA polymerase",
-        "Folate synthesis"
+        "Fluconazole",
+        "Caspofungin",
+        "Amphotericin B",
+        "Griseofulvin"
       ],
       "correct": 1,
-      "explanation": "Bedaquiline inhibits mycobacterial ATP synthase; it is used in MDR-TB. Caution: QT prolongation and hepatotoxicity."
+      "explanation": "Caspofungin, micafungin and anidulafungin inhibit beta-1,3-glucan synthesis of the fungal cell wall."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Autacoids and NSAIDs",
-      "question": "First-generation antihistamine causing sedation is?",
+      "topic": "Respiratory",
+      "question": "Inhaled corticosteroid used for asthma maintenance is?",
       "options": [
-        "Loratadine",
-        "Chlorpheniramine",
-        "Fexofenadine",
-        "Cetirizine"
+        "Salbutamol",
+        "Budesonide",
+        "Ipratropium",
+        "Theophylline"
       ],
       "correct": 1,
-      "explanation": "Chlorpheniramine and diphenhydramine are sedating first-generation H1 blockers that cross the blood-brain barrier."
+      "explanation": "Budesonide and fluticasone are inhaled corticosteroids controlling airway inflammation for long-term asthma control."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Research Methodology",
-      "question": "Which study design is best for studying rare diseases?",
+      "question": "A p-value less than 0.05 conventionally indicates?",
       "options": [
-        "Cohort",
-        "Case-control",
-        "RCT",
-        "Cross-sectional"
+        "Clinical importance",
+        "Statistical significance",
+        "No effect",
+        "Large effect size"
       ],
       "correct": 1,
-      "explanation": "Case-control studies start from outcome and look back at exposure, making them efficient for rare diseases. They yield odds ratios."
+      "explanation": "p<0.05 means the result is statistically significant (unlikely by chance), but it does not confirm clinical importance."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 11 Oct 2026*\n\n🎓 *MBBS* (Cardiovascular)\nQ: A common adverse effect of ACE inhibitors is?\nAns: Dry cough\nWhy: ACE inhibitors raise bradykinin, causing a dry cough. Other effects: hyperkalemia, angioedema. Contraindicated in pregnancy.\n\n🩺 *NEET PG* (Respiratory)\nQ: Omalizumab used in severe asthma is a?\nAns: Anti-IgE antibody\nWhy: Omalizumab is a monoclonal anti-IgE antibody for severe allergic asthma. Mepolizumab targets IL-5.\n\n🏥 *INI-CET* (Chemotherapy)\nQ: Bedaquiline used in MDR-TB acts by inhibiting?\nAns: Mycobacterial ATP synthase\nWhy: Bedaquiline inhibits mycobacterial ATP synthase; it is used in MDR-TB. Caution: QT prolongation and hepatotoxicity.\n\n🌍 *FMGE* (Autacoids and NSAIDs)\nQ: First-generation antihistamine causing sedation is?\nAns: Chlorpheniramine\nWhy: Chlorpheniramine and diphenhydramine are sedating first-generation H1 blockers that cross the blood-brain barrier.\n\n🔬 *MD Pharmacology* (Research Methodology)\nQ: Which study design is best for studying rare diseases?\nAns: Case-control\nWhy: Case-control studies start from outcome and look back at exposure, making them efficient for rare diseases. They yield odds ratios.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2011%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Cardiovascular%29%0AQ%3A%20A%20common%20adverse%20effect%20of%20ACE%20inhibitors%20is%3F%0AAns%3A%20Dry%20cough%0AWhy%3A%20ACE%20inhibitors%20raise%20bradykinin%2C%20causing%20a%20dry%20cough.%20Other%20effects%3A%20hyperkalemia%2C%20angioedema.%20Contraindicated%20in%20pregnancy.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Respiratory%29%0AQ%3A%20Omalizumab%20used%20in%20severe%20asthma%20is%20a%3F%0AAns%3A%20Anti-IgE%20antibody%0AWhy%3A%20Omalizumab%20is%20a%20monoclonal%20anti-IgE%20antibody%20for%20severe%20allergic%20asthma.%20Mepolizumab%20targets%20IL-5.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Chemotherapy%29%0AQ%3A%20Bedaquiline%20used%20in%20MDR-TB%20acts%20by%20inhibiting%3F%0AAns%3A%20Mycobacterial%20ATP%20synthase%0AWhy%3A%20Bedaquiline%20inhibits%20mycobacterial%20ATP%20synthase%3B%20it%20is%20used%20in%20MDR-TB.%20Caution%3A%20QT%20prolongation%20and%20hepatotoxicity.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20First-generation%20antihistamine%20causing%20sedation%20is%3F%0AAns%3A%20Chlorpheniramine%0AWhy%3A%20Chlorpheniramine%20and%20diphenhydramine%20are%20sedating%20first-generation%20H1%20blockers%20that%20cross%20the%20blood-brain%20barrier.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Research%20Methodology%29%0AQ%3A%20Which%20study%20design%20is%20best%20for%20studying%20rare%20diseases%3F%0AAns%3A%20Case-control%0AWhy%3A%20Case-control%20studies%20start%20from%20outcome%20and%20look%20back%20at%20exposure%2C%20making%20them%20efficient%20for%20rare%20diseases.%20They%20yield%20odds%20ratios.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 12 Oct 2026*\n\n🎓 *MBBS* (Cardiovascular)\nQ: Which drug is given sublingually for acute angina?\nAns: Glyceryl trinitrate\nWhy: Sublingual glyceryl trinitrate (nitroglycerin) causes rapid venodilation, reducing preload and relieving angina.\n\n🩺 *NEET PG* (Gastrointestinal)\nQ: Drug of choice for cytoprotection in NSAID ulcers?\nAns: Misoprostol\nWhy: Misoprostol, a PGE1 analogue, prevents NSAID-induced ulcers but causes diarrhoea; avoided in pregnancy (abortifacient).\n\n🏥 *INI-CET* (Chemotherapy)\nQ: Which antifungal is an echinocandin?\nAns: Caspofungin\nWhy: Caspofungin, micafungin and anidulafungin inhibit beta-1,3-glucan synthesis of the fungal cell wall.\n\n🌍 *FMGE* (Respiratory)\nQ: Inhaled corticosteroid used for asthma maintenance is?\nAns: Budesonide\nWhy: Budesonide and fluticasone are inhaled corticosteroids controlling airway inflammation for long-term asthma control.\n\n🔬 *MD Pharmacology* (Research Methodology)\nQ: A p-value less than 0.05 conventionally indicates?\nAns: Statistical significance\nWhy: p<0.05 means the result is statistically significant (unlikely by chance), but it does not confirm clinical importance.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2012%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20drug%20is%20given%20sublingually%20for%20acute%20angina%3F%0AAns%3A%20Glyceryl%20trinitrate%0AWhy%3A%20Sublingual%20glyceryl%20trinitrate%20%28nitroglycerin%29%20causes%20rapid%20venodilation%2C%20reducing%20preload%20and%20relieving%20angina.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Gastrointestinal%29%0AQ%3A%20Drug%20of%20choice%20for%20cytoprotection%20in%20NSAID%20ulcers%3F%0AAns%3A%20Misoprostol%0AWhy%3A%20Misoprostol%2C%20a%20PGE1%20analogue%2C%20prevents%20NSAID-induced%20ulcers%20but%20causes%20diarrhoea%3B%20avoided%20in%20pregnancy%20%28abortifacient%29.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Chemotherapy%29%0AQ%3A%20Which%20antifungal%20is%20an%20echinocandin%3F%0AAns%3A%20Caspofungin%0AWhy%3A%20Caspofungin%2C%20micafungin%20and%20anidulafungin%20inhibit%20beta-1%2C3-glucan%20synthesis%20of%20the%20fungal%20cell%20wall.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Respiratory%29%0AQ%3A%20Inhaled%20corticosteroid%20used%20for%20asthma%20maintenance%20is%3F%0AAns%3A%20Budesonide%0AWhy%3A%20Budesonide%20and%20fluticasone%20are%20inhaled%20corticosteroids%20controlling%20airway%20inflammation%20for%20long-term%20asthma%20control.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Research%20Methodology%29%0AQ%3A%20A%20p-value%20less%20than%200.05%20conventionally%20indicates%3F%0AAns%3A%20Statistical%20significance%0AWhy%3A%20p%3C0.05%20means%20the%20result%20is%20statistically%20significant%20%28unlikely%20by%20chance%29%2C%20but%20it%20does%20not%20confirm%20clinical%20importance.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
