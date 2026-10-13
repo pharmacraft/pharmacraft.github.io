@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Cardiovascular",
-      "question": "Which drug is given sublingually for acute angina?",
+      "topic": "Central Nervous System",
+      "question": "Which is the drug of choice for absence (petit mal) seizures?",
       "options": [
-        "Atenolol",
-        "Glyceryl trinitrate",
-        "Digoxin",
-        "Amlodipine"
+        "Phenytoin",
+        "Ethosuximide",
+        "Carbamazepine",
+        "Phenobarbitone"
       ],
       "correct": 1,
-      "explanation": "Sublingual glyceryl trinitrate (nitroglycerin) causes rapid venodilation, reducing preload and relieving angina."
+      "explanation": "Ethosuximide (blocks T-type calcium channels) is first-line for absence seizures. Valproate is an alternative."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Gastrointestinal",
-      "question": "Drug of choice for cytoprotection in NSAID ulcers?",
+      "topic": "Endocrine",
+      "question": "Which antidiabetic causes weight loss and has cardiovascular benefit?",
       "options": [
-        "Ranitidine",
-        "Misoprostol",
-        "Omeprazole",
-        "Sucralfate"
+        "Glimepiride",
+        "Empagliflozin",
+        "Pioglitazone",
+        "Sitagliptin"
       ],
       "correct": 1,
-      "explanation": "Misoprostol, a PGE1 analogue, prevents NSAID-induced ulcers but causes diarrhoea; avoided in pregnancy (abortifacient)."
+      "explanation": "SGLT2 inhibitors (empagliflozin) cause glucosuria, weight loss, and reduce cardiovascular and renal events."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Chemotherapy",
-      "question": "Which antifungal is an echinocandin?",
+      "topic": "Anticancer",
+      "question": "Imatinib targets which tyrosine kinase?",
       "options": [
-        "Fluconazole",
-        "Caspofungin",
-        "Amphotericin B",
-        "Griseofulvin"
+        "EGFR",
+        "BCR-ABL",
+        "VEGFR",
+        "HER2"
       ],
       "correct": 1,
-      "explanation": "Caspofungin, micafungin and anidulafungin inhibit beta-1,3-glucan synthesis of the fungal cell wall."
+      "explanation": "Imatinib inhibits BCR-ABL tyrosine kinase in chronic myeloid leukaemia; also acts on c-KIT in GIST."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Respiratory",
-      "question": "Inhaled corticosteroid used for asthma maintenance is?",
+      "topic": "Gastrointestinal",
+      "question": "Which drug is used in hepatic encephalopathy to reduce ammonia?",
       "options": [
-        "Salbutamol",
-        "Budesonide",
-        "Ipratropium",
-        "Theophylline"
+        "Lactulose",
+        "Loperamide",
+        "Omeprazole",
+        "Ondansetron"
       ],
-      "correct": 1,
-      "explanation": "Budesonide and fluticasone are inhaled corticosteroids controlling airway inflammation for long-term asthma control."
+      "correct": 0,
+      "explanation": "Lactulose acidifies the colon, trapping ammonia as ammonium and promoting its excretion. Rifaximin is an add-on."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Research Methodology",
-      "question": "A p-value less than 0.05 conventionally indicates?",
+      "topic": "Drug Development",
+      "question": "The document submitted to the regulator before first human testing is the?",
       "options": [
-        "Clinical importance",
-        "Statistical significance",
-        "No effect",
-        "Large effect size"
+        "NDA",
+        "IND",
+        "ANDA",
+        "BLA"
       ],
       "correct": 1,
-      "explanation": "p<0.05 means the result is statistically significant (unlikely by chance), but it does not confirm clinical importance."
+      "explanation": "The Investigational New Drug (IND) application, with preclinical data and protocol, is submitted before Phase I human studies."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 12 Oct 2026*\n\n🎓 *MBBS* (Cardiovascular)\nQ: Which drug is given sublingually for acute angina?\nAns: Glyceryl trinitrate\nWhy: Sublingual glyceryl trinitrate (nitroglycerin) causes rapid venodilation, reducing preload and relieving angina.\n\n🩺 *NEET PG* (Gastrointestinal)\nQ: Drug of choice for cytoprotection in NSAID ulcers?\nAns: Misoprostol\nWhy: Misoprostol, a PGE1 analogue, prevents NSAID-induced ulcers but causes diarrhoea; avoided in pregnancy (abortifacient).\n\n🏥 *INI-CET* (Chemotherapy)\nQ: Which antifungal is an echinocandin?\nAns: Caspofungin\nWhy: Caspofungin, micafungin and anidulafungin inhibit beta-1,3-glucan synthesis of the fungal cell wall.\n\n🌍 *FMGE* (Respiratory)\nQ: Inhaled corticosteroid used for asthma maintenance is?\nAns: Budesonide\nWhy: Budesonide and fluticasone are inhaled corticosteroids controlling airway inflammation for long-term asthma control.\n\n🔬 *MD Pharmacology* (Research Methodology)\nQ: A p-value less than 0.05 conventionally indicates?\nAns: Statistical significance\nWhy: p<0.05 means the result is statistically significant (unlikely by chance), but it does not confirm clinical importance.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2012%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20drug%20is%20given%20sublingually%20for%20acute%20angina%3F%0AAns%3A%20Glyceryl%20trinitrate%0AWhy%3A%20Sublingual%20glyceryl%20trinitrate%20%28nitroglycerin%29%20causes%20rapid%20venodilation%2C%20reducing%20preload%20and%20relieving%20angina.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Gastrointestinal%29%0AQ%3A%20Drug%20of%20choice%20for%20cytoprotection%20in%20NSAID%20ulcers%3F%0AAns%3A%20Misoprostol%0AWhy%3A%20Misoprostol%2C%20a%20PGE1%20analogue%2C%20prevents%20NSAID-induced%20ulcers%20but%20causes%20diarrhoea%3B%20avoided%20in%20pregnancy%20%28abortifacient%29.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Chemotherapy%29%0AQ%3A%20Which%20antifungal%20is%20an%20echinocandin%3F%0AAns%3A%20Caspofungin%0AWhy%3A%20Caspofungin%2C%20micafungin%20and%20anidulafungin%20inhibit%20beta-1%2C3-glucan%20synthesis%20of%20the%20fungal%20cell%20wall.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Respiratory%29%0AQ%3A%20Inhaled%20corticosteroid%20used%20for%20asthma%20maintenance%20is%3F%0AAns%3A%20Budesonide%0AWhy%3A%20Budesonide%20and%20fluticasone%20are%20inhaled%20corticosteroids%20controlling%20airway%20inflammation%20for%20long-term%20asthma%20control.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Research%20Methodology%29%0AQ%3A%20A%20p-value%20less%20than%200.05%20conventionally%20indicates%3F%0AAns%3A%20Statistical%20significance%0AWhy%3A%20p%3C0.05%20means%20the%20result%20is%20statistically%20significant%20%28unlikely%20by%20chance%29%2C%20but%20it%20does%20not%20confirm%20clinical%20importance.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 13 Oct 2026*\n\n🎓 *MBBS* (Central Nervous System)\nQ: Which is the drug of choice for absence (petit mal) seizures?\nAns: Ethosuximide\nWhy: Ethosuximide (blocks T-type calcium channels) is first-line for absence seizures. Valproate is an alternative.\n\n🩺 *NEET PG* (Endocrine)\nQ: Which antidiabetic causes weight loss and has cardiovascular benefit?\nAns: Empagliflozin\nWhy: SGLT2 inhibitors (empagliflozin) cause glucosuria, weight loss, and reduce cardiovascular and renal events.\n\n🏥 *INI-CET* (Anticancer)\nQ: Imatinib targets which tyrosine kinase?\nAns: BCR-ABL\nWhy: Imatinib inhibits BCR-ABL tyrosine kinase in chronic myeloid leukaemia; also acts on c-KIT in GIST.\n\n🌍 *FMGE* (Gastrointestinal)\nQ: Which drug is used in hepatic encephalopathy to reduce ammonia?\nAns: Lactulose\nWhy: Lactulose acidifies the colon, trapping ammonia as ammonium and promoting its excretion. Rifaximin is an add-on.\n\n🔬 *MD Pharmacology* (Drug Development)\nQ: The document submitted to the regulator before first human testing is the?\nAns: IND\nWhy: The Investigational New Drug (IND) application, with preclinical data and protocol, is submitted before Phase I human studies.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2013%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Which%20is%20the%20drug%20of%20choice%20for%20absence%20%28petit%20mal%29%20seizures%3F%0AAns%3A%20Ethosuximide%0AWhy%3A%20Ethosuximide%20%28blocks%20T-type%20calcium%20channels%29%20is%20first-line%20for%20absence%20seizures.%20Valproate%20is%20an%20alternative.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Endocrine%29%0AQ%3A%20Which%20antidiabetic%20causes%20weight%20loss%20and%20has%20cardiovascular%20benefit%3F%0AAns%3A%20Empagliflozin%0AWhy%3A%20SGLT2%20inhibitors%20%28empagliflozin%29%20cause%20glucosuria%2C%20weight%20loss%2C%20and%20reduce%20cardiovascular%20and%20renal%20events.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%29%0AQ%3A%20Imatinib%20targets%20which%20tyrosine%20kinase%3F%0AAns%3A%20BCR-ABL%0AWhy%3A%20Imatinib%20inhibits%20BCR-ABL%20tyrosine%20kinase%20in%20chronic%20myeloid%20leukaemia%3B%20also%20acts%20on%20c-KIT%20in%20GIST.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Gastrointestinal%29%0AQ%3A%20Which%20drug%20is%20used%20in%20hepatic%20encephalopathy%20to%20reduce%20ammonia%3F%0AAns%3A%20Lactulose%0AWhy%3A%20Lactulose%20acidifies%20the%20colon%2C%20trapping%20ammonia%20as%20ammonium%20and%20promoting%20its%20excretion.%20Rifaximin%20is%20an%20add-on.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Drug%20Development%29%0AQ%3A%20The%20document%20submitted%20to%20the%20regulator%20before%20first%20human%20testing%20is%20the%3F%0AAns%3A%20IND%0AWhy%3A%20The%20Investigational%20New%20Drug%20%28IND%29%20application%2C%20with%20preclinical%20data%20and%20protocol%2C%20is%20submitted%20before%20Phase%20I%20human%20studies.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
