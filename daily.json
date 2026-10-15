@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Central Nervous System",
-      "question": "Morphine mainly acts on which receptor?",
+      "question": "Which benzodiazepine antagonist reverses its effects?",
       "options": [
-        "GABA",
-        "Mu opioid",
-        "Dopamine",
-        "Serotonin"
+        "Naloxone",
+        "Flumazenil",
+        "Atropine",
+        "Physostigmine"
       ],
       "correct": 1,
-      "explanation": "Morphine is a mu opioid receptor agonist, giving analgesia, euphoria, respiratory depression and constipation."
+      "explanation": "Flumazenil is a competitive benzodiazepine antagonist used in overdose. Naloxone reverses opioids."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Endocrine",
-      "question": "GLP-1 receptor agonist among these?",
+      "topic": "Chemotherapy",
+      "question": "Which drug is used in MRSA infection?",
       "options": [
-        "Liraglutide",
-        "Metformin",
-        "Acarbose",
-        "Repaglinide"
+        "Penicillin",
+        "Vancomycin",
+        "Ampicillin",
+        "Cefazolin"
       ],
-      "correct": 0,
-      "explanation": "Liraglutide and semaglutide are GLP-1 agonists; they aid weight loss and have cardiovascular benefit."
+      "correct": 1,
+      "explanation": "Vancomycin (glycopeptide) is used for MRSA. Linezolid and daptomycin are alternatives."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
       "topic": "Anticancer",
-      "question": "Immune checkpoint inhibitor pembrolizumab targets?",
+      "question": "Trastuzumab is a monoclonal antibody against?",
       "options": [
-        "CTLA-4",
-        "PD-1",
-        "VEGF",
-        "CD20"
+        "EGFR",
+        "HER2/neu",
+        "CD20",
+        "VEGF"
       ],
       "correct": 1,
-      "explanation": "Pembrolizumab and nivolumab block PD-1, restoring T-cell antitumour activity. Ipilimumab targets CTLA-4."
+      "explanation": "Trastuzumab targets HER2 in HER2-positive breast cancer; cardiotoxicity is a key adverse effect."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "Endocrine",
-      "question": "Which insulin has the fastest onset?",
+      "question": "Hydrocortisone is used in which emergency?",
       "options": [
-        "Regular",
-        "Lispro",
-        "NPH",
-        "Glargine"
+        "Thyroid storm",
+        "Addisonian (adrenal) crisis",
+        "Hyperglycemia",
+        "Hypertension"
       ],
       "correct": 1,
-      "explanation": "Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, given at mealtime. Glargine is long-acting basal."
+      "explanation": "IV hydrocortisone is life-saving in acute adrenal (Addisonian) crisis along with fluids and glucose."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Drug Development",
-      "question": "An ANDA (Abbreviated New Drug Application) is used for?",
+      "question": "Preclinical testing mainly involves?",
       "options": [
-        "New molecules",
-        "Generic drugs",
-        "Biologics",
-        "Vaccines"
+        "Healthy volunteers",
+        "Animal and in-vitro studies",
+        "Large patient trials",
+        "Marketing"
       ],
       "correct": 1,
-      "explanation": "An ANDA is filed for generic drugs, requiring bioequivalence to the reference product rather than new efficacy trials."
+      "explanation": "Preclinical studies use in-vitro and animal models to assess pharmacology and toxicology before human trials, under GLP."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 14 Oct 2026*\n\n🎓 *MBBS* (Central Nervous System)\nQ: Morphine mainly acts on which receptor?\nAns: Mu opioid\nWhy: Morphine is a mu opioid receptor agonist, giving analgesia, euphoria, respiratory depression and constipation.\n\n🩺 *NEET PG* (Endocrine)\nQ: GLP-1 receptor agonist among these?\nAns: Liraglutide\nWhy: Liraglutide and semaglutide are GLP-1 agonists; they aid weight loss and have cardiovascular benefit.\n\n🏥 *INI-CET* (Anticancer)\nQ: Immune checkpoint inhibitor pembrolizumab targets?\nAns: PD-1\nWhy: Pembrolizumab and nivolumab block PD-1, restoring T-cell antitumour activity. Ipilimumab targets CTLA-4.\n\n🌍 *FMGE* (Endocrine)\nQ: Which insulin has the fastest onset?\nAns: Lispro\nWhy: Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, given at mealtime. Glargine is long-acting basal.\n\n🔬 *MD Pharmacology* (Drug Development)\nQ: An ANDA (Abbreviated New Drug Application) is used for?\nAns: Generic drugs\nWhy: An ANDA is filed for generic drugs, requiring bioequivalence to the reference product rather than new efficacy trials.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2014%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Morphine%20mainly%20acts%20on%20which%20receptor%3F%0AAns%3A%20Mu%20opioid%0AWhy%3A%20Morphine%20is%20a%20mu%20opioid%20receptor%20agonist%2C%20giving%20analgesia%2C%20euphoria%2C%20respiratory%20depression%20and%20constipation.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Endocrine%29%0AQ%3A%20GLP-1%20receptor%20agonist%20among%20these%3F%0AAns%3A%20Liraglutide%0AWhy%3A%20Liraglutide%20and%20semaglutide%20are%20GLP-1%20agonists%3B%20they%20aid%20weight%20loss%20and%20have%20cardiovascular%20benefit.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%29%0AQ%3A%20Immune%20checkpoint%20inhibitor%20pembrolizumab%20targets%3F%0AAns%3A%20PD-1%0AWhy%3A%20Pembrolizumab%20and%20nivolumab%20block%20PD-1%2C%20restoring%20T-cell%20antitumour%20activity.%20Ipilimumab%20targets%20CTLA-4.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Endocrine%29%0AQ%3A%20Which%20insulin%20has%20the%20fastest%20onset%3F%0AAns%3A%20Lispro%0AWhy%3A%20Rapid-acting%20analogues%20%28lispro%2C%20aspart%2C%20glulisine%29%20act%20within%2015%20minutes%2C%20given%20at%20mealtime.%20Glargine%20is%20long-acting%20basal.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Drug%20Development%29%0AQ%3A%20An%20ANDA%20%28Abbreviated%20New%20Drug%20Application%29%20is%20used%20for%3F%0AAns%3A%20Generic%20drugs%0AWhy%3A%20An%20ANDA%20is%20filed%20for%20generic%20drugs%2C%20requiring%20bioequivalence%20to%20the%20reference%20product%20rather%20than%20new%20efficacy%20trials.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 15 Oct 2026*\n\n🎓 *MBBS* (Central Nervous System)\nQ: Which benzodiazepine antagonist reverses its effects?\nAns: Flumazenil\nWhy: Flumazenil is a competitive benzodiazepine antagonist used in overdose. Naloxone reverses opioids.\n\n🩺 *NEET PG* (Chemotherapy)\nQ: Which drug is used in MRSA infection?\nAns: Vancomycin\nWhy: Vancomycin (glycopeptide) is used for MRSA. Linezolid and daptomycin are alternatives.\n\n🏥 *INI-CET* (Anticancer)\nQ: Trastuzumab is a monoclonal antibody against?\nAns: HER2/neu\nWhy: Trastuzumab targets HER2 in HER2-positive breast cancer; cardiotoxicity is a key adverse effect.\n\n🌍 *FMGE* (Endocrine)\nQ: Hydrocortisone is used in which emergency?\nAns: Addisonian (adrenal) crisis\nWhy: IV hydrocortisone is life-saving in acute adrenal (Addisonian) crisis along with fluids and glucose.\n\n🔬 *MD Pharmacology* (Drug Development)\nQ: Preclinical testing mainly involves?\nAns: Animal and in-vitro studies\nWhy: Preclinical studies use in-vitro and animal models to assess pharmacology and toxicology before human trials, under GLP.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2015%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Which%20benzodiazepine%20antagonist%20reverses%20its%20effects%3F%0AAns%3A%20Flumazenil%0AWhy%3A%20Flumazenil%20is%20a%20competitive%20benzodiazepine%20antagonist%20used%20in%20overdose.%20Naloxone%20reverses%20opioids.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Chemotherapy%29%0AQ%3A%20Which%20drug%20is%20used%20in%20MRSA%20infection%3F%0AAns%3A%20Vancomycin%0AWhy%3A%20Vancomycin%20%28glycopeptide%29%20is%20used%20for%20MRSA.%20Linezolid%20and%20daptomycin%20are%20alternatives.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%29%0AQ%3A%20Trastuzumab%20is%20a%20monoclonal%20antibody%20against%3F%0AAns%3A%20HER2/neu%0AWhy%3A%20Trastuzumab%20targets%20HER2%20in%20HER2-positive%20breast%20cancer%3B%20cardiotoxicity%20is%20a%20key%20adverse%20effect.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Endocrine%29%0AQ%3A%20Hydrocortisone%20is%20used%20in%20which%20emergency%3F%0AAns%3A%20Addisonian%20%28adrenal%29%20crisis%0AWhy%3A%20IV%20hydrocortisone%20is%20life-saving%20in%20acute%20adrenal%20%28Addisonian%29%20crisis%20along%20with%20fluids%20and%20glucose.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Drug%20Development%29%0AQ%3A%20Preclinical%20testing%20mainly%20involves%3F%0AAns%3A%20Animal%20and%20in-vitro%20studies%0AWhy%3A%20Preclinical%20studies%20use%20in-vitro%20and%20animal%20models%20to%20assess%20pharmacology%20and%20toxicology%20before%20human%20trials%2C%20under%20GLP.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
