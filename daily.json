@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Autacoids and NSAIDs",
-      "question": "Aspirin irreversibly inhibits which enzyme?",
+      "question": "Paracetamol overdose is treated with?",
       "options": [
-        "Lipoxygenase",
-        "Cyclooxygenase",
-        "Phospholipase A2",
-        "Xanthine oxidase"
+        "N-acetylcysteine",
+        "Naloxone",
+        "Atropine",
+        "Vitamin K"
       ],
-      "correct": 1,
-      "explanation": "Aspirin irreversibly acetylates cyclooxygenase (COX), reducing prostaglandin and thromboxane synthesis."
+      "correct": 0,
+      "explanation": "N-acetylcysteine replenishes glutathione, preventing hepatotoxicity from the toxic metabolite NAPQI."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
       "topic": "Chemotherapy",
-      "question": "Mechanism of action of fluoroquinolones?",
+      "question": "Antitubercular drug causing optic neuritis is?",
       "options": [
-        "Inhibit DNA gyrase/topoisomerase",
-        "Inhibit cell wall",
-        "Inhibit 30S ribosome",
-        "Inhibit folate"
+        "Isoniazid",
+        "Ethambutol",
+        "Rifampicin",
+        "Pyrazinamide"
       ],
-      "correct": 0,
-      "explanation": "Fluoroquinolones inhibit DNA gyrase (topoisomerase II) and topoisomerase IV, blocking bacterial DNA replication."
+      "correct": 1,
+      "explanation": "Ethambutol causes dose-dependent retrobulbar optic neuritis; monitor colour vision and acuity."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
       "topic": "Immunopharmacology",
-      "question": "Rituximab acts against which cell surface marker?",
+      "question": "Which biologic is a TNF-alpha inhibitor?",
       "options": [
-        "CD20",
-        "CD3",
-        "CD52",
-        "TNF-alpha"
+        "Adalimumab",
+        "Tocilizumab",
+        "Ustekinumab",
+        "Secukinumab"
       ],
       "correct": 0,
-      "explanation": "Rituximab is an anti-CD20 monoclonal antibody depleting B cells, used in lymphoma and autoimmune disease."
+      "explanation": "Adalimumab, infliximab and etanercept inhibit TNF-alpha. Screen for latent TB before starting."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "Chemotherapy",
-      "question": "Drug of choice for Pneumocystis jirovecii pneumonia is?",
+      "question": "Which antibiotic should be avoided in children due to tooth discolouration?",
       "options": [
-        "Cotrimoxazole",
-        "Azithromycin",
-        "Fluconazole",
-        "Doxycycline"
+        "Amoxicillin",
+        "Tetracycline",
+        "Erythromycin",
+        "Cephalexin"
       ],
-      "correct": 0,
-      "explanation": "Cotrimoxazole (trimethoprim-sulfamethoxazole) is first-line for PCP treatment and prophylaxis in immunocompromised patients."
+      "correct": 1,
+      "explanation": "Tetracyclines chelate calcium, causing permanent tooth discolouration and affecting bone; avoided in children under 8 and pregnancy."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Pharmaceutical Industry",
-      "question": "Good Manufacturing Practice (GMP) primarily ensures?",
+      "topic": "Regulatory",
+      "question": "The regulatory authority for drug approval in India is?",
       "options": [
-        "Marketing ethics",
-        "Consistent quality of manufactured drugs",
-        "Clinical trial design",
-        "Pricing"
+        "FDA",
+        "CDSCO (DCGI)",
+        "EMA",
+        "MHRA"
       ],
       "correct": 1,
-      "explanation": "GMP ensures products are consistently produced and controlled to quality standards appropriate to their intended use."
+      "explanation": "The Central Drugs Standard Control Organisation (CDSCO), headed by the DCGI, regulates drug approval in India."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 16 Oct 2026*\n\n🎓 *MBBS* (Autacoids and NSAIDs)\nQ: Aspirin irreversibly inhibits which enzyme?\nAns: Cyclooxygenase\nWhy: Aspirin irreversibly acetylates cyclooxygenase (COX), reducing prostaglandin and thromboxane synthesis.\n\n🩺 *NEET PG* (Chemotherapy)\nQ: Mechanism of action of fluoroquinolones?\nAns: Inhibit DNA gyrase/topoisomerase\nWhy: Fluoroquinolones inhibit DNA gyrase (topoisomerase II) and topoisomerase IV, blocking bacterial DNA replication.\n\n🏥 *INI-CET* (Immunopharmacology)\nQ: Rituximab acts against which cell surface marker?\nAns: CD20\nWhy: Rituximab is an anti-CD20 monoclonal antibody depleting B cells, used in lymphoma and autoimmune disease.\n\n🌍 *FMGE* (Chemotherapy)\nQ: Drug of choice for Pneumocystis jirovecii pneumonia is?\nAns: Cotrimoxazole\nWhy: Cotrimoxazole (trimethoprim-sulfamethoxazole) is first-line for PCP treatment and prophylaxis in immunocompromised patients.\n\n🔬 *MD Pharmacology* (Pharmaceutical Industry)\nQ: Good Manufacturing Practice (GMP) primarily ensures?\nAns: Consistent quality of manufactured drugs\nWhy: GMP ensures products are consistently produced and controlled to quality standards appropriate to their intended use.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2016%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Aspirin%20irreversibly%20inhibits%20which%20enzyme%3F%0AAns%3A%20Cyclooxygenase%0AWhy%3A%20Aspirin%20irreversibly%20acetylates%20cyclooxygenase%20%28COX%29%2C%20reducing%20prostaglandin%20and%20thromboxane%20synthesis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Chemotherapy%29%0AQ%3A%20Mechanism%20of%20action%20of%20fluoroquinolones%3F%0AAns%3A%20Inhibit%20DNA%20gyrase/topoisomerase%0AWhy%3A%20Fluoroquinolones%20inhibit%20DNA%20gyrase%20%28topoisomerase%20II%29%20and%20topoisomerase%20IV%2C%20blocking%20bacterial%20DNA%20replication.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Immunopharmacology%29%0AQ%3A%20Rituximab%20acts%20against%20which%20cell%20surface%20marker%3F%0AAns%3A%20CD20%0AWhy%3A%20Rituximab%20is%20an%20anti-CD20%20monoclonal%20antibody%20depleting%20B%20cells%2C%20used%20in%20lymphoma%20and%20autoimmune%20disease.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Chemotherapy%29%0AQ%3A%20Drug%20of%20choice%20for%20Pneumocystis%20jirovecii%20pneumonia%20is%3F%0AAns%3A%20Cotrimoxazole%0AWhy%3A%20Cotrimoxazole%20%28trimethoprim-sulfamethoxazole%29%20is%20first-line%20for%20PCP%20treatment%20and%20prophylaxis%20in%20immunocompromised%20patients.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmaceutical%20Industry%29%0AQ%3A%20Good%20Manufacturing%20Practice%20%28GMP%29%20primarily%20ensures%3F%0AAns%3A%20Consistent%20quality%20of%20manufactured%20drugs%0AWhy%3A%20GMP%20ensures%20products%20are%20consistently%20produced%20and%20controlled%20to%20quality%20standards%20appropriate%20to%20their%20intended%20use.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 17 Oct 2026*\n\n🎓 *MBBS* (Autacoids and NSAIDs)\nQ: Paracetamol overdose is treated with?\nAns: N-acetylcysteine\nWhy: N-acetylcysteine replenishes glutathione, preventing hepatotoxicity from the toxic metabolite NAPQI.\n\n🩺 *NEET PG* (Chemotherapy)\nQ: Antitubercular drug causing optic neuritis is?\nAns: Ethambutol\nWhy: Ethambutol causes dose-dependent retrobulbar optic neuritis; monitor colour vision and acuity.\n\n🏥 *INI-CET* (Immunopharmacology)\nQ: Which biologic is a TNF-alpha inhibitor?\nAns: Adalimumab\nWhy: Adalimumab, infliximab and etanercept inhibit TNF-alpha. Screen for latent TB before starting.\n\n🌍 *FMGE* (Chemotherapy)\nQ: Which antibiotic should be avoided in children due to tooth discolouration?\nAns: Tetracycline\nWhy: Tetracyclines chelate calcium, causing permanent tooth discolouration and affecting bone; avoided in children under 8 and pregnancy.\n\n🔬 *MD Pharmacology* (Regulatory)\nQ: The regulatory authority for drug approval in India is?\nAns: CDSCO (DCGI)\nWhy: The Central Drugs Standard Control Organisation (CDSCO), headed by the DCGI, regulates drug approval in India.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2017%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Paracetamol%20overdose%20is%20treated%20with%3F%0AAns%3A%20N-acetylcysteine%0AWhy%3A%20N-acetylcysteine%20replenishes%20glutathione%2C%20preventing%20hepatotoxicity%20from%20the%20toxic%20metabolite%20NAPQI.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Chemotherapy%29%0AQ%3A%20Antitubercular%20drug%20causing%20optic%20neuritis%20is%3F%0AAns%3A%20Ethambutol%0AWhy%3A%20Ethambutol%20causes%20dose-dependent%20retrobulbar%20optic%20neuritis%3B%20monitor%20colour%20vision%20and%20acuity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Immunopharmacology%29%0AQ%3A%20Which%20biologic%20is%20a%20TNF-alpha%20inhibitor%3F%0AAns%3A%20Adalimumab%0AWhy%3A%20Adalimumab%2C%20infliximab%20and%20etanercept%20inhibit%20TNF-alpha.%20Screen%20for%20latent%20TB%20before%20starting.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Chemotherapy%29%0AQ%3A%20Which%20antibiotic%20should%20be%20avoided%20in%20children%20due%20to%20tooth%20discolouration%3F%0AAns%3A%20Tetracycline%0AWhy%3A%20Tetracyclines%20chelate%20calcium%2C%20causing%20permanent%20tooth%20discolouration%20and%20affecting%20bone%3B%20avoided%20in%20children%20under%208%20and%20pregnancy.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Regulatory%29%0AQ%3A%20The%20regulatory%20authority%20for%20drug%20approval%20in%20India%20is%3F%0AAns%3A%20CDSCO%20%28DCGI%29%0AWhy%3A%20The%20Central%20Drugs%20Standard%20Control%20Organisation%20%28CDSCO%29%2C%20headed%20by%20the%20DCGI%2C%20regulates%20drug%20approval%20in%20India.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
