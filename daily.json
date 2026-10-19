@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Respiratory",
-      "question": "Drug of choice for acute bronchial asthma is?",
+      "topic": "Gastrointestinal",
+      "question": "Omeprazole reduces gastric acid by inhibiting?",
       "options": [
-        "Salmeterol",
-        "Salbutamol",
-        "Montelukast",
-        "Ipratropium"
+        "H2 receptors",
+        "Proton pump (H/K ATPase)",
+        "Muscarinic receptors",
+        "Gastrin"
       ],
       "correct": 1,
-      "explanation": "Inhaled short-acting beta-2 agonist salbutamol gives rapid bronchodilation in acute asthma."
+      "explanation": "Omeprazole irreversibly inhibits the gastric H+/K+ ATPase (proton pump), the final common step of acid secretion."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
       "topic": "Blood",
-      "question": "Specific antidote for dabigatran is?",
+      "question": "Heparin-induced thrombocytopenia is managed with?",
       "options": [
-        "Andexanet alfa",
-        "Idarucizumab",
-        "Protamine",
-        "Vitamin K"
+        "More heparin",
+        "Argatroban or fondaparinux",
+        "Warfarin alone",
+        "Aspirin"
       ],
       "correct": 1,
-      "explanation": "Idarucizumab reverses dabigatran (direct thrombin inhibitor). Andexanet alfa reverses factor Xa inhibitors."
+      "explanation": "Stop heparin; use a non-heparin anticoagulant (argatroban, fondaparinux). Avoid warfarin until platelets recover."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Endocrine",
-      "question": "Tirzepatide is a dual agonist of?",
+      "topic": "Respiratory",
+      "question": "Which drug is a PDE4 inhibitor used in COPD?",
       "options": [
-        "GLP-1 and GIP",
-        "GLP-1 and SGLT2",
-        "GIP and DPP4",
-        "GLP-1 and glucagon"
+        "Roflumilast",
+        "Theophylline",
+        "Tiotropium",
+        "Montelukast"
       ],
       "correct": 0,
-      "explanation": "Tirzepatide is a dual GIP and GLP-1 receptor agonist with marked glycaemic and weight-loss benefit."
+      "explanation": "Roflumilast is a selective phosphodiesterase-4 inhibitor reducing exacerbations in severe COPD with chronic bronchitis."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Chemotherapy",
-      "question": "Gray baby syndrome is caused by?",
+      "topic": "Blood",
+      "question": "Which vitamin is given with isoniazid to prevent neuropathy?",
       "options": [
-        "Chloramphenicol",
-        "Gentamicin",
-        "Penicillin",
-        "Sulfonamide"
+        "Vitamin B6 (pyridoxine)",
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin K"
       ],
       "correct": 0,
-      "explanation": "Chloramphenicol causes gray baby syndrome in neonates due to immature glucuronidation and reduced clearance."
+      "explanation": "Pyridoxine (B6) prevents isoniazid-induced peripheral neuropathy by replacing the depleted cofactor."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Regulatory",
-      "question": "Schedule H drugs in India are?",
+      "topic": "Pharmacovigilance",
+      "question": "A Type A adverse drug reaction is?",
       "options": [
-        "OTC drugs",
-        "Prescription-only drugs",
-        "Narcotics only",
-        "Banned drugs"
+        "Bizarre and unpredictable",
+        "Dose-dependent and predictable",
+        "Due to allergy",
+        "Idiosyncratic"
       ],
       "correct": 1,
-      "explanation": "Schedule H lists prescription-only drugs. Schedule X covers drugs with stricter control; Schedule H1 targets antibiotics and certain drugs."
+      "explanation": "Type A (augmented) reactions are dose-dependent, predictable extensions of pharmacology (e.g. bleeding with anticoagulants)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 18 Oct 2026*\n\n🎓 *MBBS* (Respiratory)\nQ: Drug of choice for acute bronchial asthma is?\nAns: Salbutamol\nWhy: Inhaled short-acting beta-2 agonist salbutamol gives rapid bronchodilation in acute asthma.\n\n🩺 *NEET PG* (Blood)\nQ: Specific antidote for dabigatran is?\nAns: Idarucizumab\nWhy: Idarucizumab reverses dabigatran (direct thrombin inhibitor). Andexanet alfa reverses factor Xa inhibitors.\n\n🏥 *INI-CET* (Endocrine)\nQ: Tirzepatide is a dual agonist of?\nAns: GLP-1 and GIP\nWhy: Tirzepatide is a dual GIP and GLP-1 receptor agonist with marked glycaemic and weight-loss benefit.\n\n🌍 *FMGE* (Chemotherapy)\nQ: Gray baby syndrome is caused by?\nAns: Chloramphenicol\nWhy: Chloramphenicol causes gray baby syndrome in neonates due to immature glucuronidation and reduced clearance.\n\n🔬 *MD Pharmacology* (Regulatory)\nQ: Schedule H drugs in India are?\nAns: Prescription-only drugs\nWhy: Schedule H lists prescription-only drugs. Schedule X covers drugs with stricter control; Schedule H1 targets antibiotics and certain drugs.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2018%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Respiratory%29%0AQ%3A%20Drug%20of%20choice%20for%20acute%20bronchial%20asthma%20is%3F%0AAns%3A%20Salbutamol%0AWhy%3A%20Inhaled%20short-acting%20beta-2%20agonist%20salbutamol%20gives%20rapid%20bronchodilation%20in%20acute%20asthma.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Blood%29%0AQ%3A%20Specific%20antidote%20for%20dabigatran%20is%3F%0AAns%3A%20Idarucizumab%0AWhy%3A%20Idarucizumab%20reverses%20dabigatran%20%28direct%20thrombin%20inhibitor%29.%20Andexanet%20alfa%20reverses%20factor%20Xa%20inhibitors.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Endocrine%29%0AQ%3A%20Tirzepatide%20is%20a%20dual%20agonist%20of%3F%0AAns%3A%20GLP-1%20and%20GIP%0AWhy%3A%20Tirzepatide%20is%20a%20dual%20GIP%20and%20GLP-1%20receptor%20agonist%20with%20marked%20glycaemic%20and%20weight-loss%20benefit.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Chemotherapy%29%0AQ%3A%20Gray%20baby%20syndrome%20is%20caused%20by%3F%0AAns%3A%20Chloramphenicol%0AWhy%3A%20Chloramphenicol%20causes%20gray%20baby%20syndrome%20in%20neonates%20due%20to%20immature%20glucuronidation%20and%20reduced%20clearance.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Regulatory%29%0AQ%3A%20Schedule%20H%20drugs%20in%20India%20are%3F%0AAns%3A%20Prescription-only%20drugs%0AWhy%3A%20Schedule%20H%20lists%20prescription-only%20drugs.%20Schedule%20X%20covers%20drugs%20with%20stricter%20control%3B%20Schedule%20H1%20targets%20antibiotics%20and%20certain%20drugs.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 19 Oct 2026*\n\n🎓 *MBBS* (Gastrointestinal)\nQ: Omeprazole reduces gastric acid by inhibiting?\nAns: Proton pump (H/K ATPase)\nWhy: Omeprazole irreversibly inhibits the gastric H+/K+ ATPase (proton pump), the final common step of acid secretion.\n\n🩺 *NEET PG* (Blood)\nQ: Heparin-induced thrombocytopenia is managed with?\nAns: Argatroban or fondaparinux\nWhy: Stop heparin; use a non-heparin anticoagulant (argatroban, fondaparinux). Avoid warfarin until platelets recover.\n\n🏥 *INI-CET* (Respiratory)\nQ: Which drug is a PDE4 inhibitor used in COPD?\nAns: Roflumilast\nWhy: Roflumilast is a selective phosphodiesterase-4 inhibitor reducing exacerbations in severe COPD with chronic bronchitis.\n\n🌍 *FMGE* (Blood)\nQ: Which vitamin is given with isoniazid to prevent neuropathy?\nAns: Vitamin B6 (pyridoxine)\nWhy: Pyridoxine (B6) prevents isoniazid-induced peripheral neuropathy by replacing the depleted cofactor.\n\n🔬 *MD Pharmacology* (Pharmacovigilance)\nQ: A Type A adverse drug reaction is?\nAns: Dose-dependent and predictable\nWhy: Type A (augmented) reactions are dose-dependent, predictable extensions of pharmacology (e.g. bleeding with anticoagulants).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2019%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Gastrointestinal%29%0AQ%3A%20Omeprazole%20reduces%20gastric%20acid%20by%20inhibiting%3F%0AAns%3A%20Proton%20pump%20%28H/K%20ATPase%29%0AWhy%3A%20Omeprazole%20irreversibly%20inhibits%20the%20gastric%20H%2B/K%2B%20ATPase%20%28proton%20pump%29%2C%20the%20final%20common%20step%20of%20acid%20secretion.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Blood%29%0AQ%3A%20Heparin-induced%20thrombocytopenia%20is%20managed%20with%3F%0AAns%3A%20Argatroban%20or%20fondaparinux%0AWhy%3A%20Stop%20heparin%3B%20use%20a%20non-heparin%20anticoagulant%20%28argatroban%2C%20fondaparinux%29.%20Avoid%20warfarin%20until%20platelets%20recover.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Respiratory%29%0AQ%3A%20Which%20drug%20is%20a%20PDE4%20inhibitor%20used%20in%20COPD%3F%0AAns%3A%20Roflumilast%0AWhy%3A%20Roflumilast%20is%20a%20selective%20phosphodiesterase-4%20inhibitor%20reducing%20exacerbations%20in%20severe%20COPD%20with%20chronic%20bronchitis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Blood%29%0AQ%3A%20Which%20vitamin%20is%20given%20with%20isoniazid%20to%20prevent%20neuropathy%3F%0AAns%3A%20Vitamin%20B6%20%28pyridoxine%29%0AWhy%3A%20Pyridoxine%20%28B6%29%20prevents%20isoniazid-induced%20peripheral%20neuropathy%20by%20replacing%20the%20depleted%20cofactor.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmacovigilance%29%0AQ%3A%20A%20Type%20A%20adverse%20drug%20reaction%20is%3F%0AAns%3A%20Dose-dependent%20and%20predictable%0AWhy%3A%20Type%20A%20%28augmented%29%20reactions%20are%20dose-dependent%2C%20predictable%20extensions%20of%20pharmacology%20%28e.g.%20bleeding%20with%20anticoagulants%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
