@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Gastrointestinal",
-      "question": "Omeprazole reduces gastric acid by inhibiting?",
+      "question": "Which drug is a 5-HT3 antagonist antiemetic?",
       "options": [
-        "H2 receptors",
-        "Proton pump (H/K ATPase)",
-        "Muscarinic receptors",
-        "Gastrin"
+        "Metoclopramide",
+        "Ondansetron",
+        "Domperidone",
+        "Hyoscine"
       ],
       "correct": 1,
-      "explanation": "Omeprazole irreversibly inhibits the gastric H+/K+ ATPase (proton pump), the final common step of acid secretion."
+      "explanation": "Ondansetron blocks 5-HT3 receptors and is effective for chemotherapy and post-operative vomiting."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Blood",
-      "question": "Heparin-induced thrombocytopenia is managed with?",
+      "topic": "Renal",
+      "question": "Which diuretic can cause gynaecomastia?",
       "options": [
-        "More heparin",
-        "Argatroban or fondaparinux",
-        "Warfarin alone",
-        "Aspirin"
+        "Furosemide",
+        "Spironolactone",
+        "Thiazide",
+        "Mannitol"
       ],
       "correct": 1,
-      "explanation": "Stop heparin; use a non-heparin anticoagulant (argatroban, fondaparinux). Avoid warfarin until platelets recover."
+      "explanation": "Spironolactone, an aldosterone antagonist, causes gynaecomastia and hyperkalemia due to antiandrogen action."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Respiratory",
-      "question": "Which drug is a PDE4 inhibitor used in COPD?",
+      "topic": "Blood",
+      "question": "Caplacizumab used in TTP targets?",
       "options": [
-        "Roflumilast",
-        "Theophylline",
-        "Tiotropium",
-        "Montelukast"
+        "von Willebrand factor",
+        "Factor Xa",
+        "Thrombin",
+        "Platelet GPIIb/IIIa"
       ],
       "correct": 0,
-      "explanation": "Roflumilast is a selective phosphodiesterase-4 inhibitor reducing exacerbations in severe COPD with chronic bronchitis."
+      "explanation": "Caplacizumab is an anti-von Willebrand factor nanobody used in acquired thrombotic thrombocytopenic purpura."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Blood",
-      "question": "Which vitamin is given with isoniazid to prevent neuropathy?",
+      "topic": "Renal",
+      "question": "Mannitol is which type of diuretic?",
       "options": [
-        "Vitamin B6 (pyridoxine)",
-        "Vitamin C",
-        "Vitamin D",
-        "Vitamin K"
+        "Osmotic",
+        "Loop",
+        "Thiazide",
+        "Potassium-sparing"
       ],
       "correct": 0,
-      "explanation": "Pyridoxine (B6) prevents isoniazid-induced peripheral neuropathy by replacing the depleted cofactor."
+      "explanation": "Mannitol is an osmotic diuretic used to reduce raised intracranial and intraocular pressure. Avoid in pulmonary oedema."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Pharmacovigilance",
-      "question": "A Type A adverse drug reaction is?",
+      "question": "Causality of an adverse drug reaction is commonly assessed by?",
       "options": [
-        "Bizarre and unpredictable",
-        "Dose-dependent and predictable",
-        "Due to allergy",
-        "Idiosyncratic"
+        "Naranjo scale",
+        "APGAR score",
+        "Glasgow scale",
+        "MMSE"
       ],
-      "correct": 1,
-      "explanation": "Type A (augmented) reactions are dose-dependent, predictable extensions of pharmacology (e.g. bleeding with anticoagulants)."
+      "correct": 0,
+      "explanation": "The Naranjo algorithm scores the probability that a drug caused an adverse reaction (definite, probable, possible, doubtful)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 19 Oct 2026*\n\n🎓 *MBBS* (Gastrointestinal)\nQ: Omeprazole reduces gastric acid by inhibiting?\nAns: Proton pump (H/K ATPase)\nWhy: Omeprazole irreversibly inhibits the gastric H+/K+ ATPase (proton pump), the final common step of acid secretion.\n\n🩺 *NEET PG* (Blood)\nQ: Heparin-induced thrombocytopenia is managed with?\nAns: Argatroban or fondaparinux\nWhy: Stop heparin; use a non-heparin anticoagulant (argatroban, fondaparinux). Avoid warfarin until platelets recover.\n\n🏥 *INI-CET* (Respiratory)\nQ: Which drug is a PDE4 inhibitor used in COPD?\nAns: Roflumilast\nWhy: Roflumilast is a selective phosphodiesterase-4 inhibitor reducing exacerbations in severe COPD with chronic bronchitis.\n\n🌍 *FMGE* (Blood)\nQ: Which vitamin is given with isoniazid to prevent neuropathy?\nAns: Vitamin B6 (pyridoxine)\nWhy: Pyridoxine (B6) prevents isoniazid-induced peripheral neuropathy by replacing the depleted cofactor.\n\n🔬 *MD Pharmacology* (Pharmacovigilance)\nQ: A Type A adverse drug reaction is?\nAns: Dose-dependent and predictable\nWhy: Type A (augmented) reactions are dose-dependent, predictable extensions of pharmacology (e.g. bleeding with anticoagulants).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2019%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Gastrointestinal%29%0AQ%3A%20Omeprazole%20reduces%20gastric%20acid%20by%20inhibiting%3F%0AAns%3A%20Proton%20pump%20%28H/K%20ATPase%29%0AWhy%3A%20Omeprazole%20irreversibly%20inhibits%20the%20gastric%20H%2B/K%2B%20ATPase%20%28proton%20pump%29%2C%20the%20final%20common%20step%20of%20acid%20secretion.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Blood%29%0AQ%3A%20Heparin-induced%20thrombocytopenia%20is%20managed%20with%3F%0AAns%3A%20Argatroban%20or%20fondaparinux%0AWhy%3A%20Stop%20heparin%3B%20use%20a%20non-heparin%20anticoagulant%20%28argatroban%2C%20fondaparinux%29.%20Avoid%20warfarin%20until%20platelets%20recover.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Respiratory%29%0AQ%3A%20Which%20drug%20is%20a%20PDE4%20inhibitor%20used%20in%20COPD%3F%0AAns%3A%20Roflumilast%0AWhy%3A%20Roflumilast%20is%20a%20selective%20phosphodiesterase-4%20inhibitor%20reducing%20exacerbations%20in%20severe%20COPD%20with%20chronic%20bronchitis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Blood%29%0AQ%3A%20Which%20vitamin%20is%20given%20with%20isoniazid%20to%20prevent%20neuropathy%3F%0AAns%3A%20Vitamin%20B6%20%28pyridoxine%29%0AWhy%3A%20Pyridoxine%20%28B6%29%20prevents%20isoniazid-induced%20peripheral%20neuropathy%20by%20replacing%20the%20depleted%20cofactor.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmacovigilance%29%0AQ%3A%20A%20Type%20A%20adverse%20drug%20reaction%20is%3F%0AAns%3A%20Dose-dependent%20and%20predictable%0AWhy%3A%20Type%20A%20%28augmented%29%20reactions%20are%20dose-dependent%2C%20predictable%20extensions%20of%20pharmacology%20%28e.g.%20bleeding%20with%20anticoagulants%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 20 Oct 2026*\n\n🎓 *MBBS* (Gastrointestinal)\nQ: Which drug is a 5-HT3 antagonist antiemetic?\nAns: Ondansetron\nWhy: Ondansetron blocks 5-HT3 receptors and is effective for chemotherapy and post-operative vomiting.\n\n🩺 *NEET PG* (Renal)\nQ: Which diuretic can cause gynaecomastia?\nAns: Spironolactone\nWhy: Spironolactone, an aldosterone antagonist, causes gynaecomastia and hyperkalemia due to antiandrogen action.\n\n🏥 *INI-CET* (Blood)\nQ: Caplacizumab used in TTP targets?\nAns: von Willebrand factor\nWhy: Caplacizumab is an anti-von Willebrand factor nanobody used in acquired thrombotic thrombocytopenic purpura.\n\n🌍 *FMGE* (Renal)\nQ: Mannitol is which type of diuretic?\nAns: Osmotic\nWhy: Mannitol is an osmotic diuretic used to reduce raised intracranial and intraocular pressure. Avoid in pulmonary oedema.\n\n🔬 *MD Pharmacology* (Pharmacovigilance)\nQ: Causality of an adverse drug reaction is commonly assessed by?\nAns: Naranjo scale\nWhy: The Naranjo algorithm scores the probability that a drug caused an adverse reaction (definite, probable, possible, doubtful).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2020%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Gastrointestinal%29%0AQ%3A%20Which%20drug%20is%20a%205-HT3%20antagonist%20antiemetic%3F%0AAns%3A%20Ondansetron%0AWhy%3A%20Ondansetron%20blocks%205-HT3%20receptors%20and%20is%20effective%20for%20chemotherapy%20and%20post-operative%20vomiting.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Renal%29%0AQ%3A%20Which%20diuretic%20can%20cause%20gynaecomastia%3F%0AAns%3A%20Spironolactone%0AWhy%3A%20Spironolactone%2C%20an%20aldosterone%20antagonist%2C%20causes%20gynaecomastia%20and%20hyperkalemia%20due%20to%20antiandrogen%20action.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Blood%29%0AQ%3A%20Caplacizumab%20used%20in%20TTP%20targets%3F%0AAns%3A%20von%20Willebrand%20factor%0AWhy%3A%20Caplacizumab%20is%20an%20anti-von%20Willebrand%20factor%20nanobody%20used%20in%20acquired%20thrombotic%20thrombocytopenic%20purpura.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Renal%29%0AQ%3A%20Mannitol%20is%20which%20type%20of%20diuretic%3F%0AAns%3A%20Osmotic%0AWhy%3A%20Mannitol%20is%20an%20osmotic%20diuretic%20used%20to%20reduce%20raised%20intracranial%20and%20intraocular%20pressure.%20Avoid%20in%20pulmonary%20oedema.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmacovigilance%29%0AQ%3A%20Causality%20of%20an%20adverse%20drug%20reaction%20is%20commonly%20assessed%20by%3F%0AAns%3A%20Naranjo%20scale%0AWhy%3A%20The%20Naranjo%20algorithm%20scores%20the%20probability%20that%20a%20drug%20caused%20an%20adverse%20reaction%20%28definite%2C%20probable%2C%20possible%2C%20doubtful%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
