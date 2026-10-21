@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Gastrointestinal",
-      "question": "Which drug is a 5-HT3 antagonist antiemetic?",
+      "topic": "Endocrine",
+      "question": "First-line drug in type 2 diabetes mellitus is?",
       "options": [
-        "Metoclopramide",
-        "Ondansetron",
-        "Domperidone",
-        "Hyoscine"
+        "Insulin",
+        "Metformin",
+        "Glibenclamide",
+        "Pioglitazone"
       ],
       "correct": 1,
-      "explanation": "Ondansetron blocks 5-HT3 receptors and is effective for chemotherapy and post-operative vomiting."
+      "explanation": "Metformin reduces hepatic glucose output, is weight-neutral and does not cause hypoglycaemia."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Renal",
-      "question": "Which diuretic can cause gynaecomastia?",
+      "topic": "Reproductive",
+      "question": "Drug used for medical abortion with misoprostol?",
       "options": [
-        "Furosemide",
-        "Spironolactone",
-        "Thiazide",
-        "Mannitol"
+        "Mifepristone",
+        "Clomiphene",
+        "Danazol",
+        "Tamoxifen"
       ],
-      "correct": 1,
-      "explanation": "Spironolactone, an aldosterone antagonist, causes gynaecomastia and hyperkalemia due to antiandrogen action."
+      "correct": 0,
+      "explanation": "Mifepristone (antiprogestin) followed by misoprostol is used for medical termination of early pregnancy."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Blood",
-      "question": "Caplacizumab used in TTP targets?",
+      "topic": "General Pharmacology",
+      "question": "Therapeutic drug monitoring is essential for which drug?",
       "options": [
-        "von Willebrand factor",
-        "Factor Xa",
-        "Thrombin",
-        "Platelet GPIIb/IIIa"
+        "Paracetamol",
+        "Lithium",
+        "Amoxicillin",
+        "Loratadine"
       ],
-      "correct": 0,
-      "explanation": "Caplacizumab is an anti-von Willebrand factor nanobody used in acquired thrombotic thrombocytopenic purpura."
+      "correct": 1,
+      "explanation": "Lithium has a narrow therapeutic index; levels must be monitored. Others: digoxin, phenytoin, aminoglycosides, cyclosporine."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Renal",
-      "question": "Mannitol is which type of diuretic?",
+      "topic": "Reproductive",
+      "question": "Oxytocin is used in obstetrics to?",
       "options": [
-        "Osmotic",
-        "Loop",
-        "Thiazide",
-        "Potassium-sparing"
+        "Stop labour",
+        "Induce or augment labour",
+        "Prevent ovulation",
+        "Treat infertility only"
       ],
-      "correct": 0,
-      "explanation": "Mannitol is an osmotic diuretic used to reduce raised intracranial and intraocular pressure. Avoid in pulmonary oedema."
+      "correct": 1,
+      "explanation": "Oxytocin induces and augments uterine contractions and controls postpartum haemorrhage by uterine contraction."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Pharmacovigilance",
-      "question": "Causality of an adverse drug reaction is commonly assessed by?",
+      "topic": "History of Pharmacology",
+      "question": "The 'father of modern pharmacology' who established the first pharmacology institute is?",
       "options": [
-        "Naranjo scale",
-        "APGAR score",
-        "Glasgow scale",
-        "MMSE"
+        "Oswald Schmiedeberg",
+        "Paul Ehrlich",
+        "Alexander Fleming",
+        "William Withering"
       ],
       "correct": 0,
-      "explanation": "The Naranjo algorithm scores the probability that a drug caused an adverse reaction (definite, probable, possible, doubtful)."
+      "explanation": "Oswald Schmiedeberg is regarded as the father of modern pharmacology. Paul Ehrlich pioneered chemotherapy ('magic bullet')."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 20 Oct 2026*\n\n🎓 *MBBS* (Gastrointestinal)\nQ: Which drug is a 5-HT3 antagonist antiemetic?\nAns: Ondansetron\nWhy: Ondansetron blocks 5-HT3 receptors and is effective for chemotherapy and post-operative vomiting.\n\n🩺 *NEET PG* (Renal)\nQ: Which diuretic can cause gynaecomastia?\nAns: Spironolactone\nWhy: Spironolactone, an aldosterone antagonist, causes gynaecomastia and hyperkalemia due to antiandrogen action.\n\n🏥 *INI-CET* (Blood)\nQ: Caplacizumab used in TTP targets?\nAns: von Willebrand factor\nWhy: Caplacizumab is an anti-von Willebrand factor nanobody used in acquired thrombotic thrombocytopenic purpura.\n\n🌍 *FMGE* (Renal)\nQ: Mannitol is which type of diuretic?\nAns: Osmotic\nWhy: Mannitol is an osmotic diuretic used to reduce raised intracranial and intraocular pressure. Avoid in pulmonary oedema.\n\n🔬 *MD Pharmacology* (Pharmacovigilance)\nQ: Causality of an adverse drug reaction is commonly assessed by?\nAns: Naranjo scale\nWhy: The Naranjo algorithm scores the probability that a drug caused an adverse reaction (definite, probable, possible, doubtful).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2020%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Gastrointestinal%29%0AQ%3A%20Which%20drug%20is%20a%205-HT3%20antagonist%20antiemetic%3F%0AAns%3A%20Ondansetron%0AWhy%3A%20Ondansetron%20blocks%205-HT3%20receptors%20and%20is%20effective%20for%20chemotherapy%20and%20post-operative%20vomiting.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Renal%29%0AQ%3A%20Which%20diuretic%20can%20cause%20gynaecomastia%3F%0AAns%3A%20Spironolactone%0AWhy%3A%20Spironolactone%2C%20an%20aldosterone%20antagonist%2C%20causes%20gynaecomastia%20and%20hyperkalemia%20due%20to%20antiandrogen%20action.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Blood%29%0AQ%3A%20Caplacizumab%20used%20in%20TTP%20targets%3F%0AAns%3A%20von%20Willebrand%20factor%0AWhy%3A%20Caplacizumab%20is%20an%20anti-von%20Willebrand%20factor%20nanobody%20used%20in%20acquired%20thrombotic%20thrombocytopenic%20purpura.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Renal%29%0AQ%3A%20Mannitol%20is%20which%20type%20of%20diuretic%3F%0AAns%3A%20Osmotic%0AWhy%3A%20Mannitol%20is%20an%20osmotic%20diuretic%20used%20to%20reduce%20raised%20intracranial%20and%20intraocular%20pressure.%20Avoid%20in%20pulmonary%20oedema.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmacovigilance%29%0AQ%3A%20Causality%20of%20an%20adverse%20drug%20reaction%20is%20commonly%20assessed%20by%3F%0AAns%3A%20Naranjo%20scale%0AWhy%3A%20The%20Naranjo%20algorithm%20scores%20the%20probability%20that%20a%20drug%20caused%20an%20adverse%20reaction%20%28definite%2C%20probable%2C%20possible%2C%20doubtful%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 21 Oct 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: First-line drug in type 2 diabetes mellitus is?\nAns: Metformin\nWhy: Metformin reduces hepatic glucose output, is weight-neutral and does not cause hypoglycaemia.\n\n🩺 *NEET PG* (Reproductive)\nQ: Drug used for medical abortion with misoprostol?\nAns: Mifepristone\nWhy: Mifepristone (antiprogestin) followed by misoprostol is used for medical termination of early pregnancy.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: Therapeutic drug monitoring is essential for which drug?\nAns: Lithium\nWhy: Lithium has a narrow therapeutic index; levels must be monitored. Others: digoxin, phenytoin, aminoglycosides, cyclosporine.\n\n🌍 *FMGE* (Reproductive)\nQ: Oxytocin is used in obstetrics to?\nAns: Induce or augment labour\nWhy: Oxytocin induces and augments uterine contractions and controls postpartum haemorrhage by uterine contraction.\n\n🔬 *MD Pharmacology* (History of Pharmacology)\nQ: The 'father of modern pharmacology' who established the first pharmacology institute is?\nAns: Oswald Schmiedeberg\nWhy: Oswald Schmiedeberg is regarded as the father of modern pharmacology. Paul Ehrlich pioneered chemotherapy ('magic bullet').\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2021%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20First-line%20drug%20in%20type%202%20diabetes%20mellitus%20is%3F%0AAns%3A%20Metformin%0AWhy%3A%20Metformin%20reduces%20hepatic%20glucose%20output%2C%20is%20weight-neutral%20and%20does%20not%20cause%20hypoglycaemia.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Reproductive%29%0AQ%3A%20Drug%20used%20for%20medical%20abortion%20with%20misoprostol%3F%0AAns%3A%20Mifepristone%0AWhy%3A%20Mifepristone%20%28antiprogestin%29%20followed%20by%20misoprostol%20is%20used%20for%20medical%20termination%20of%20early%20pregnancy.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20Therapeutic%20drug%20monitoring%20is%20essential%20for%20which%20drug%3F%0AAns%3A%20Lithium%0AWhy%3A%20Lithium%20has%20a%20narrow%20therapeutic%20index%3B%20levels%20must%20be%20monitored.%20Others%3A%20digoxin%2C%20phenytoin%2C%20aminoglycosides%2C%20cyclosporine.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Reproductive%29%0AQ%3A%20Oxytocin%20is%20used%20in%20obstetrics%20to%3F%0AAns%3A%20Induce%20or%20augment%20labour%0AWhy%3A%20Oxytocin%20induces%20and%20augments%20uterine%20contractions%20and%20controls%20postpartum%20haemorrhage%20by%20uterine%20contraction.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28History%20of%20Pharmacology%29%0AQ%3A%20The%20%27father%20of%20modern%20pharmacology%27%20who%20established%20the%20first%20pharmacology%20institute%20is%3F%0AAns%3A%20Oswald%20Schmiedeberg%0AWhy%3A%20Oswald%20Schmiedeberg%20is%20regarded%20as%20the%20father%20of%20modern%20pharmacology.%20Paul%20Ehrlich%20pioneered%20chemotherapy%20%28%27magic%20bullet%27%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
