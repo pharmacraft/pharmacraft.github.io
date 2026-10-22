@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
       "topic": "Endocrine",
-      "question": "First-line drug in type 2 diabetes mellitus is?",
+      "question": "Which drug is used in hyperthyroidism to block hormone synthesis?",
       "options": [
-        "Insulin",
-        "Metformin",
-        "Glibenclamide",
-        "Pioglitazone"
+        "Levothyroxine",
+        "Carbimazole",
+        "Propranolol",
+        "Iodine"
       ],
       "correct": 1,
-      "explanation": "Metformin reduces hepatic glucose output, is weight-neutral and does not cause hypoglycaemia."
+      "explanation": "Carbimazole (and methimazole) inhibit thyroid peroxidase, blocking thyroid hormone synthesis."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Reproductive",
-      "question": "Drug used for medical abortion with misoprostol?",
+      "topic": "Anticancer",
+      "question": "Methotrexate toxicity is rescued by?",
       "options": [
-        "Mifepristone",
-        "Clomiphene",
-        "Danazol",
-        "Tamoxifen"
+        "Folinic acid",
+        "Folic acid",
+        "Mesna",
+        "Dexrazoxane"
       ],
       "correct": 0,
-      "explanation": "Mifepristone (antiprogestin) followed by misoprostol is used for medical termination of early pregnancy."
+      "explanation": "Leucovorin (folinic acid) rescues normal cells. Mesna prevents cyclophosphamide cystitis; dexrazoxane protects from anthracyclines."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "General Pharmacology",
-      "question": "Therapeutic drug monitoring is essential for which drug?",
+      "topic": "Pharmacogenomics",
+      "question": "HLA-B*1502 testing before which drug reduces Stevens-Johnson risk?",
       "options": [
-        "Paracetamol",
-        "Lithium",
-        "Amoxicillin",
-        "Loratadine"
+        "Carbamazepine",
+        "Phenobarbitone",
+        "Valproate",
+        "Gabapentin"
       ],
-      "correct": 1,
-      "explanation": "Lithium has a narrow therapeutic index; levels must be monitored. Others: digoxin, phenytoin, aminoglycosides, cyclosporine."
+      "correct": 0,
+      "explanation": "HLA-B*1502 (common in Asians) predicts carbamazepine-induced SJS/TEN; testing is advised before starting."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Reproductive",
-      "question": "Oxytocin is used in obstetrics to?",
+      "topic": "Toxicology",
+      "question": "Antidote for benzodiazepine overdose is?",
       "options": [
-        "Stop labour",
-        "Induce or augment labour",
-        "Prevent ovulation",
-        "Treat infertility only"
+        "Naloxone",
+        "Flumazenil",
+        "Atropine",
+        "N-acetylcysteine"
       ],
       "correct": 1,
-      "explanation": "Oxytocin induces and augments uterine contractions and controls postpartum haemorrhage by uterine contraction."
+      "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist; use cautiously as it may precipitate seizures."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "History of Pharmacology",
-      "question": "The 'father of modern pharmacology' who established the first pharmacology institute is?",
+      "question": "William Withering is known for introducing which drug?",
       "options": [
-        "Oswald Schmiedeberg",
-        "Paul Ehrlich",
-        "Alexander Fleming",
-        "William Withering"
+        "Digitalis",
+        "Penicillin",
+        "Aspirin",
+        "Quinine"
       ],
       "correct": 0,
-      "explanation": "Oswald Schmiedeberg is regarded as the father of modern pharmacology. Paul Ehrlich pioneered chemotherapy ('magic bullet')."
+      "explanation": "William Withering described the use of digitalis (foxglove) for dropsy (heart failure) in 1785."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 21 Oct 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: First-line drug in type 2 diabetes mellitus is?\nAns: Metformin\nWhy: Metformin reduces hepatic glucose output, is weight-neutral and does not cause hypoglycaemia.\n\n🩺 *NEET PG* (Reproductive)\nQ: Drug used for medical abortion with misoprostol?\nAns: Mifepristone\nWhy: Mifepristone (antiprogestin) followed by misoprostol is used for medical termination of early pregnancy.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: Therapeutic drug monitoring is essential for which drug?\nAns: Lithium\nWhy: Lithium has a narrow therapeutic index; levels must be monitored. Others: digoxin, phenytoin, aminoglycosides, cyclosporine.\n\n🌍 *FMGE* (Reproductive)\nQ: Oxytocin is used in obstetrics to?\nAns: Induce or augment labour\nWhy: Oxytocin induces and augments uterine contractions and controls postpartum haemorrhage by uterine contraction.\n\n🔬 *MD Pharmacology* (History of Pharmacology)\nQ: The 'father of modern pharmacology' who established the first pharmacology institute is?\nAns: Oswald Schmiedeberg\nWhy: Oswald Schmiedeberg is regarded as the father of modern pharmacology. Paul Ehrlich pioneered chemotherapy ('magic bullet').\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2021%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20First-line%20drug%20in%20type%202%20diabetes%20mellitus%20is%3F%0AAns%3A%20Metformin%0AWhy%3A%20Metformin%20reduces%20hepatic%20glucose%20output%2C%20is%20weight-neutral%20and%20does%20not%20cause%20hypoglycaemia.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Reproductive%29%0AQ%3A%20Drug%20used%20for%20medical%20abortion%20with%20misoprostol%3F%0AAns%3A%20Mifepristone%0AWhy%3A%20Mifepristone%20%28antiprogestin%29%20followed%20by%20misoprostol%20is%20used%20for%20medical%20termination%20of%20early%20pregnancy.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20Therapeutic%20drug%20monitoring%20is%20essential%20for%20which%20drug%3F%0AAns%3A%20Lithium%0AWhy%3A%20Lithium%20has%20a%20narrow%20therapeutic%20index%3B%20levels%20must%20be%20monitored.%20Others%3A%20digoxin%2C%20phenytoin%2C%20aminoglycosides%2C%20cyclosporine.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Reproductive%29%0AQ%3A%20Oxytocin%20is%20used%20in%20obstetrics%20to%3F%0AAns%3A%20Induce%20or%20augment%20labour%0AWhy%3A%20Oxytocin%20induces%20and%20augments%20uterine%20contractions%20and%20controls%20postpartum%20haemorrhage%20by%20uterine%20contraction.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28History%20of%20Pharmacology%29%0AQ%3A%20The%20%27father%20of%20modern%20pharmacology%27%20who%20established%20the%20first%20pharmacology%20institute%20is%3F%0AAns%3A%20Oswald%20Schmiedeberg%0AWhy%3A%20Oswald%20Schmiedeberg%20is%20regarded%20as%20the%20father%20of%20modern%20pharmacology.%20Paul%20Ehrlich%20pioneered%20chemotherapy%20%28%27magic%20bullet%27%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 22 Oct 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: Which drug is used in hyperthyroidism to block hormone synthesis?\nAns: Carbimazole\nWhy: Carbimazole (and methimazole) inhibit thyroid peroxidase, blocking thyroid hormone synthesis.\n\n🩺 *NEET PG* (Anticancer)\nQ: Methotrexate toxicity is rescued by?\nAns: Folinic acid\nWhy: Leucovorin (folinic acid) rescues normal cells. Mesna prevents cyclophosphamide cystitis; dexrazoxane protects from anthracyclines.\n\n🏥 *INI-CET* (Pharmacogenomics)\nQ: HLA-B*1502 testing before which drug reduces Stevens-Johnson risk?\nAns: Carbamazepine\nWhy: HLA-B*1502 (common in Asians) predicts carbamazepine-induced SJS/TEN; testing is advised before starting.\n\n🌍 *FMGE* (Toxicology)\nQ: Antidote for benzodiazepine overdose is?\nAns: Flumazenil\nWhy: Flumazenil is a competitive benzodiazepine receptor antagonist; use cautiously as it may precipitate seizures.\n\n🔬 *MD Pharmacology* (History of Pharmacology)\nQ: William Withering is known for introducing which drug?\nAns: Digitalis\nWhy: William Withering described the use of digitalis (foxglove) for dropsy (heart failure) in 1785.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2022%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20Which%20drug%20is%20used%20in%20hyperthyroidism%20to%20block%20hormone%20synthesis%3F%0AAns%3A%20Carbimazole%0AWhy%3A%20Carbimazole%20%28and%20methimazole%29%20inhibit%20thyroid%20peroxidase%2C%20blocking%20thyroid%20hormone%20synthesis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%29%0AQ%3A%20Methotrexate%20toxicity%20is%20rescued%20by%3F%0AAns%3A%20Folinic%20acid%0AWhy%3A%20Leucovorin%20%28folinic%20acid%29%20rescues%20normal%20cells.%20Mesna%20prevents%20cyclophosphamide%20cystitis%3B%20dexrazoxane%20protects%20from%20anthracyclines.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Pharmacogenomics%29%0AQ%3A%20HLA-B%2A1502%20testing%20before%20which%20drug%20reduces%20Stevens-Johnson%20risk%3F%0AAns%3A%20Carbamazepine%0AWhy%3A%20HLA-B%2A1502%20%28common%20in%20Asians%29%20predicts%20carbamazepine-induced%20SJS/TEN%3B%20testing%20is%20advised%20before%20starting.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Antidote%20for%20benzodiazepine%20overdose%20is%3F%0AAns%3A%20Flumazenil%0AWhy%3A%20Flumazenil%20is%20a%20competitive%20benzodiazepine%20receptor%20antagonist%3B%20use%20cautiously%20as%20it%20may%20precipitate%20seizures.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28History%20of%20Pharmacology%29%0AQ%3A%20William%20Withering%20is%20known%20for%20introducing%20which%20drug%3F%0AAns%3A%20Digitalis%0AWhy%3A%20William%20Withering%20described%20the%20use%20of%20digitalis%20%28foxglove%29%20for%20dropsy%20%28heart%20failure%29%20in%201785.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
