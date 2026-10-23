@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Endocrine",
-      "question": "Which drug is used in hyperthyroidism to block hormone synthesis?",
+      "topic": "Chemotherapy",
+      "question": "Which antibiotic inhibits bacterial cell wall synthesis?",
       "options": [
-        "Levothyroxine",
-        "Carbimazole",
-        "Propranolol",
-        "Iodine"
+        "Gentamicin",
+        "Penicillin",
+        "Tetracycline",
+        "Ciprofloxacin"
       ],
       "correct": 1,
-      "explanation": "Carbimazole (and methimazole) inhibit thyroid peroxidase, blocking thyroid hormone synthesis."
+      "explanation": "Penicillins (beta-lactams) inhibit transpeptidase, blocking peptidoglycan cross-linking in the cell wall."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
       "topic": "Anticancer",
-      "question": "Methotrexate toxicity is rescued by?",
+      "question": "Cardiotoxicity is characteristic of which drug?",
       "options": [
-        "Folinic acid",
-        "Folic acid",
-        "Mesna",
-        "Dexrazoxane"
+        "Cisplatin",
+        "Doxorubicin",
+        "Vincristine",
+        "Bleomycin"
       ],
-      "correct": 0,
-      "explanation": "Leucovorin (folinic acid) rescues normal cells. Mesna prevents cyclophosphamide cystitis; dexrazoxane protects from anthracyclines."
+      "correct": 1,
+      "explanation": "Doxorubicin (anthracycline) causes dose-dependent cardiomyopathy; dexrazoxane is cardioprotective. Bleomycin causes lung fibrosis."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Pharmacogenomics",
-      "question": "HLA-B*1502 testing before which drug reduces Stevens-Johnson risk?",
+      "topic": "Toxicology",
+      "question": "Antidote for methanol poisoning is?",
       "options": [
-        "Carbamazepine",
-        "Phenobarbitone",
-        "Valproate",
-        "Gabapentin"
+        "Fomepizole or ethanol",
+        "Naloxone",
+        "Atropine",
+        "Deferoxamine"
       ],
       "correct": 0,
-      "explanation": "HLA-B*1502 (common in Asians) predicts carbamazepine-induced SJS/TEN; testing is advised before starting."
+      "explanation": "Fomepizole (or ethanol) inhibits alcohol dehydrogenase, preventing toxic formic acid formation in methanol poisoning."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "Toxicology",
-      "question": "Antidote for benzodiazepine overdose is?",
+      "question": "Activated charcoal is most useful when given?",
       "options": [
-        "Naloxone",
-        "Flumazenil",
-        "Atropine",
-        "N-acetylcysteine"
+        "After 24 hours",
+        "Within 1 hour of ingestion",
+        "Only IV",
+        "For metal poisoning"
       ],
       "correct": 1,
-      "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist; use cautiously as it may precipitate seizures."
+      "explanation": "Activated charcoal adsorbs many drugs if given within about 1 hour of ingestion. It does not bind iron, lithium or alcohols."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "History of Pharmacology",
-      "question": "William Withering is known for introducing which drug?",
+      "question": "Paul Ehrlich developed which early antisyphilitic drug?",
       "options": [
-        "Digitalis",
+        "Salvarsan",
         "Penicillin",
-        "Aspirin",
-        "Quinine"
+        "Sulfanilamide",
+        "Streptomycin"
       ],
       "correct": 0,
-      "explanation": "William Withering described the use of digitalis (foxglove) for dropsy (heart failure) in 1785."
+      "explanation": "Paul Ehrlich introduced Salvarsan (arsphenamine) for syphilis, founding the concept of targeted chemotherapy."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 22 Oct 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: Which drug is used in hyperthyroidism to block hormone synthesis?\nAns: Carbimazole\nWhy: Carbimazole (and methimazole) inhibit thyroid peroxidase, blocking thyroid hormone synthesis.\n\n🩺 *NEET PG* (Anticancer)\nQ: Methotrexate toxicity is rescued by?\nAns: Folinic acid\nWhy: Leucovorin (folinic acid) rescues normal cells. Mesna prevents cyclophosphamide cystitis; dexrazoxane protects from anthracyclines.\n\n🏥 *INI-CET* (Pharmacogenomics)\nQ: HLA-B*1502 testing before which drug reduces Stevens-Johnson risk?\nAns: Carbamazepine\nWhy: HLA-B*1502 (common in Asians) predicts carbamazepine-induced SJS/TEN; testing is advised before starting.\n\n🌍 *FMGE* (Toxicology)\nQ: Antidote for benzodiazepine overdose is?\nAns: Flumazenil\nWhy: Flumazenil is a competitive benzodiazepine receptor antagonist; use cautiously as it may precipitate seizures.\n\n🔬 *MD Pharmacology* (History of Pharmacology)\nQ: William Withering is known for introducing which drug?\nAns: Digitalis\nWhy: William Withering described the use of digitalis (foxglove) for dropsy (heart failure) in 1785.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2022%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20Which%20drug%20is%20used%20in%20hyperthyroidism%20to%20block%20hormone%20synthesis%3F%0AAns%3A%20Carbimazole%0AWhy%3A%20Carbimazole%20%28and%20methimazole%29%20inhibit%20thyroid%20peroxidase%2C%20blocking%20thyroid%20hormone%20synthesis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%29%0AQ%3A%20Methotrexate%20toxicity%20is%20rescued%20by%3F%0AAns%3A%20Folinic%20acid%0AWhy%3A%20Leucovorin%20%28folinic%20acid%29%20rescues%20normal%20cells.%20Mesna%20prevents%20cyclophosphamide%20cystitis%3B%20dexrazoxane%20protects%20from%20anthracyclines.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Pharmacogenomics%29%0AQ%3A%20HLA-B%2A1502%20testing%20before%20which%20drug%20reduces%20Stevens-Johnson%20risk%3F%0AAns%3A%20Carbamazepine%0AWhy%3A%20HLA-B%2A1502%20%28common%20in%20Asians%29%20predicts%20carbamazepine-induced%20SJS/TEN%3B%20testing%20is%20advised%20before%20starting.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Antidote%20for%20benzodiazepine%20overdose%20is%3F%0AAns%3A%20Flumazenil%0AWhy%3A%20Flumazenil%20is%20a%20competitive%20benzodiazepine%20receptor%20antagonist%3B%20use%20cautiously%20as%20it%20may%20precipitate%20seizures.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28History%20of%20Pharmacology%29%0AQ%3A%20William%20Withering%20is%20known%20for%20introducing%20which%20drug%3F%0AAns%3A%20Digitalis%0AWhy%3A%20William%20Withering%20described%20the%20use%20of%20digitalis%20%28foxglove%29%20for%20dropsy%20%28heart%20failure%29%20in%201785.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 23 Oct 2026*\n\n🎓 *MBBS* (Chemotherapy)\nQ: Which antibiotic inhibits bacterial cell wall synthesis?\nAns: Penicillin\nWhy: Penicillins (beta-lactams) inhibit transpeptidase, blocking peptidoglycan cross-linking in the cell wall.\n\n🩺 *NEET PG* (Anticancer)\nQ: Cardiotoxicity is characteristic of which drug?\nAns: Doxorubicin\nWhy: Doxorubicin (anthracycline) causes dose-dependent cardiomyopathy; dexrazoxane is cardioprotective. Bleomycin causes lung fibrosis.\n\n🏥 *INI-CET* (Toxicology)\nQ: Antidote for methanol poisoning is?\nAns: Fomepizole or ethanol\nWhy: Fomepizole (or ethanol) inhibits alcohol dehydrogenase, preventing toxic formic acid formation in methanol poisoning.\n\n🌍 *FMGE* (Toxicology)\nQ: Activated charcoal is most useful when given?\nAns: Within 1 hour of ingestion\nWhy: Activated charcoal adsorbs many drugs if given within about 1 hour of ingestion. It does not bind iron, lithium or alcohols.\n\n🔬 *MD Pharmacology* (History of Pharmacology)\nQ: Paul Ehrlich developed which early antisyphilitic drug?\nAns: Salvarsan\nWhy: Paul Ehrlich introduced Salvarsan (arsphenamine) for syphilis, founding the concept of targeted chemotherapy.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2023%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Chemotherapy%29%0AQ%3A%20Which%20antibiotic%20inhibits%20bacterial%20cell%20wall%20synthesis%3F%0AAns%3A%20Penicillin%0AWhy%3A%20Penicillins%20%28beta-lactams%29%20inhibit%20transpeptidase%2C%20blocking%20peptidoglycan%20cross-linking%20in%20the%20cell%20wall.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%29%0AQ%3A%20Cardiotoxicity%20is%20characteristic%20of%20which%20drug%3F%0AAns%3A%20Doxorubicin%0AWhy%3A%20Doxorubicin%20%28anthracycline%29%20causes%20dose-dependent%20cardiomyopathy%3B%20dexrazoxane%20is%20cardioprotective.%20Bleomycin%20causes%20lung%20fibrosis.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Toxicology%29%0AQ%3A%20Antidote%20for%20methanol%20poisoning%20is%3F%0AAns%3A%20Fomepizole%20or%20ethanol%0AWhy%3A%20Fomepizole%20%28or%20ethanol%29%20inhibits%20alcohol%20dehydrogenase%2C%20preventing%20toxic%20formic%20acid%20formation%20in%20methanol%20poisoning.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Activated%20charcoal%20is%20most%20useful%20when%20given%3F%0AAns%3A%20Within%201%20hour%20of%20ingestion%0AWhy%3A%20Activated%20charcoal%20adsorbs%20many%20drugs%20if%20given%20within%20about%201%20hour%20of%20ingestion.%20It%20does%20not%20bind%20iron%2C%20lithium%20or%20alcohols.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28History%20of%20Pharmacology%29%0AQ%3A%20Paul%20Ehrlich%20developed%20which%20early%20antisyphilitic%20drug%3F%0AAns%3A%20Salvarsan%0AWhy%3A%20Paul%20Ehrlich%20introduced%20Salvarsan%20%28arsphenamine%29%20for%20syphilis%2C%20founding%20the%20concept%20of%20targeted%20chemotherapy.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
