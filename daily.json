@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Chemotherapy",
-      "question": "Red-orange discolouration of body fluids is caused by?",
+      "topic": "Blood",
+      "question": "Antidote for warfarin overdose is?",
       "options": [
-        "Isoniazid",
-        "Rifampicin",
-        "Ethambutol",
-        "Pyrazinamide"
+        "Protamine",
+        "Vitamin K",
+        "Idarucizumab",
+        "FFP only"
       ],
       "correct": 1,
-      "explanation": "Rifampicin causes harmless red-orange colouring of urine, sweat and tears. It is a potent enzyme inducer."
+      "explanation": "Vitamin K reverses warfarin (a vitamin K antagonist). Protamine reverses heparin."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Immunopharmacology",
-      "question": "Cyclosporine acts by inhibiting?",
+      "topic": "Autonomic Nervous System",
+      "question": "Which drug precipitates thyroid storm if stopped and treats tremor in hyperthyroidism?",
       "options": [
-        "Calcineurin",
-        "mTOR",
-        "IMP dehydrogenase",
-        "Dihydrofolate reductase"
+        "Propranolol",
+        "Atenolol",
+        "Esmolol",
+        "Carvedilol"
       ],
       "correct": 0,
-      "explanation": "Cyclosporine and tacrolimus inhibit calcineurin, reducing IL-2 and T-cell activation. Nephrotoxicity is a key concern."
+      "explanation": "Propranolol controls adrenergic symptoms of thyrotoxicosis and blocks peripheral T4 to T3 conversion at high doses."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Toxicology",
-      "question": "Antidote for iron poisoning is?",
+      "topic": "Cardiovascular",
+      "question": "Which anticoagulant is preferred in antiphospholipid syndrome?",
       "options": [
-        "Deferoxamine",
-        "Penicillamine",
-        "Dimercaprol",
-        "EDTA"
+        "Dabigatran",
+        "Warfarin",
+        "Rivaroxaban",
+        "Apixaban"
       ],
-      "correct": 0,
-      "explanation": "Deferoxamine chelates iron in acute iron overdose. Dimercaprol/penicillamine are used for other heavy metals."
+      "correct": 1,
+      "explanation": "Warfarin is preferred in antiphospholipid syndrome; DOACs showed higher thrombosis rates in trials."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "General Pharmacology",
-      "question": "A drug that binds a receptor and produces no effect but blocks the agonist is a?",
+      "topic": "Autacoids and NSAIDs",
+      "question": "Which drug is uricosuric (increases uric acid excretion)?",
       "options": [
-        "Full agonist",
-        "Antagonist",
-        "Partial agonist",
-        "Inverse agonist"
+        "Allopurinol",
+        "Probenecid",
+        "Febuxostat",
+        "Colchicine"
       ],
       "correct": 1,
-      "explanation": "An antagonist binds the receptor without activating it and prevents the agonist from acting."
+      "explanation": "Probenecid increases renal uric acid excretion for chronic gout. Allopurinol and febuxostat reduce uric acid production."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
       "topic": "Recent Advances",
-      "question": "CAR-T cell therapy is primarily used in?",
+      "question": "mRNA vaccine technology works by?",
       "options": [
-        "Hypertension",
-        "Certain haematological cancers",
-        "Diabetes",
-        "Asthma"
+        "Live attenuated virus",
+        "Delivering mRNA encoding an antigen",
+        "Inactivated toxin",
+        "Bacterial extract"
       ],
       "correct": 1,
-      "explanation": "Chimeric antigen receptor T-cell therapy re-engineers patient T cells against tumour antigens (e.g. CD19 in B-cell malignancies)."
+      "explanation": "mRNA vaccines deliver mRNA (in lipid nanoparticles) that instructs host cells to make an antigen, triggering immunity."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 24 Oct 2026*\n\n🎓 *MBBS* (Chemotherapy)\nQ: Red-orange discolouration of body fluids is caused by?\nAns: Rifampicin\nWhy: Rifampicin causes harmless red-orange colouring of urine, sweat and tears. It is a potent enzyme inducer.\n\n🩺 *NEET PG* (Immunopharmacology)\nQ: Cyclosporine acts by inhibiting?\nAns: Calcineurin\nWhy: Cyclosporine and tacrolimus inhibit calcineurin, reducing IL-2 and T-cell activation. Nephrotoxicity is a key concern.\n\n🏥 *INI-CET* (Toxicology)\nQ: Antidote for iron poisoning is?\nAns: Deferoxamine\nWhy: Deferoxamine chelates iron in acute iron overdose. Dimercaprol/penicillamine are used for other heavy metals.\n\n🌍 *FMGE* (General Pharmacology)\nQ: A drug that binds a receptor and produces no effect but blocks the agonist is a?\nAns: Antagonist\nWhy: An antagonist binds the receptor without activating it and prevents the agonist from acting.\n\n🔬 *MD Pharmacology* (Recent Advances)\nQ: CAR-T cell therapy is primarily used in?\nAns: Certain haematological cancers\nWhy: Chimeric antigen receptor T-cell therapy re-engineers patient T cells against tumour antigens (e.g. CD19 in B-cell malignancies).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2024%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Chemotherapy%29%0AQ%3A%20Red-orange%20discolouration%20of%20body%20fluids%20is%20caused%20by%3F%0AAns%3A%20Rifampicin%0AWhy%3A%20Rifampicin%20causes%20harmless%20red-orange%20colouring%20of%20urine%2C%20sweat%20and%20tears.%20It%20is%20a%20potent%20enzyme%20inducer.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Immunopharmacology%29%0AQ%3A%20Cyclosporine%20acts%20by%20inhibiting%3F%0AAns%3A%20Calcineurin%0AWhy%3A%20Cyclosporine%20and%20tacrolimus%20inhibit%20calcineurin%2C%20reducing%20IL-2%20and%20T-cell%20activation.%20Nephrotoxicity%20is%20a%20key%20concern.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Toxicology%29%0AQ%3A%20Antidote%20for%20iron%20poisoning%20is%3F%0AAns%3A%20Deferoxamine%0AWhy%3A%20Deferoxamine%20chelates%20iron%20in%20acute%20iron%20overdose.%20Dimercaprol/penicillamine%20are%20used%20for%20other%20heavy%20metals.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20drug%20that%20binds%20a%20receptor%20and%20produces%20no%20effect%20but%20blocks%20the%20agonist%20is%20a%3F%0AAns%3A%20Antagonist%0AWhy%3A%20An%20antagonist%20binds%20the%20receptor%20without%20activating%20it%20and%20prevents%20the%20agonist%20from%20acting.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Recent%20Advances%29%0AQ%3A%20CAR-T%20cell%20therapy%20is%20primarily%20used%20in%3F%0AAns%3A%20Certain%20haematological%20cancers%0AWhy%3A%20Chimeric%20antigen%20receptor%20T-cell%20therapy%20re-engineers%20patient%20T%20cells%20against%20tumour%20antigens%20%28e.g.%20CD19%20in%20B-cell%20malignancies%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 25 Oct 2026*\n\n🎓 *MBBS* (Blood)\nQ: Antidote for warfarin overdose is?\nAns: Vitamin K\nWhy: Vitamin K reverses warfarin (a vitamin K antagonist). Protamine reverses heparin.\n\n🩺 *NEET PG* (Autonomic Nervous System)\nQ: Which drug precipitates thyroid storm if stopped and treats tremor in hyperthyroidism?\nAns: Propranolol\nWhy: Propranolol controls adrenergic symptoms of thyrotoxicosis and blocks peripheral T4 to T3 conversion at high doses.\n\n🏥 *INI-CET* (Cardiovascular)\nQ: Which anticoagulant is preferred in antiphospholipid syndrome?\nAns: Warfarin\nWhy: Warfarin is preferred in antiphospholipid syndrome; DOACs showed higher thrombosis rates in trials.\n\n🌍 *FMGE* (Autacoids and NSAIDs)\nQ: Which drug is uricosuric (increases uric acid excretion)?\nAns: Probenecid\nWhy: Probenecid increases renal uric acid excretion for chronic gout. Allopurinol and febuxostat reduce uric acid production.\n\n🔬 *MD Pharmacology* (Recent Advances)\nQ: mRNA vaccine technology works by?\nAns: Delivering mRNA encoding an antigen\nWhy: mRNA vaccines deliver mRNA (in lipid nanoparticles) that instructs host cells to make an antigen, triggering immunity.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2025%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Blood%29%0AQ%3A%20Antidote%20for%20warfarin%20overdose%20is%3F%0AAns%3A%20Vitamin%20K%0AWhy%3A%20Vitamin%20K%20reverses%20warfarin%20%28a%20vitamin%20K%20antagonist%29.%20Protamine%20reverses%20heparin.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Which%20drug%20precipitates%20thyroid%20storm%20if%20stopped%20and%20treats%20tremor%20in%20hyperthyroidism%3F%0AAns%3A%20Propranolol%0AWhy%3A%20Propranolol%20controls%20adrenergic%20symptoms%20of%20thyrotoxicosis%20and%20blocks%20peripheral%20T4%20to%20T3%20conversion%20at%20high%20doses.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20anticoagulant%20is%20preferred%20in%20antiphospholipid%20syndrome%3F%0AAns%3A%20Warfarin%0AWhy%3A%20Warfarin%20is%20preferred%20in%20antiphospholipid%20syndrome%3B%20DOACs%20showed%20higher%20thrombosis%20rates%20in%20trials.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Which%20drug%20is%20uricosuric%20%28increases%20uric%20acid%20excretion%29%3F%0AAns%3A%20Probenecid%0AWhy%3A%20Probenecid%20increases%20renal%20uric%20acid%20excretion%20for%20chronic%20gout.%20Allopurinol%20and%20febuxostat%20reduce%20uric%20acid%20production.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Recent%20Advances%29%0AQ%3A%20mRNA%20vaccine%20technology%20works%20by%3F%0AAns%3A%20Delivering%20mRNA%20encoding%20an%20antigen%0AWhy%3A%20mRNA%20vaccines%20deliver%20mRNA%20%28in%20lipid%20nanoparticles%29%20that%20instructs%20host%20cells%20to%20make%20an%20antigen%2C%20triggering%20immunity.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
