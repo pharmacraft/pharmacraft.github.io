@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Blood",
-      "question": "Antidote for warfarin overdose is?",
+      "topic": "Renal",
+      "question": "Furosemide acts on which part of the nephron?",
       "options": [
-        "Protamine",
-        "Vitamin K",
-        "Idarucizumab",
-        "FFP only"
+        "Proximal tubule",
+        "Thick ascending loop of Henle",
+        "Distal tubule",
+        "Collecting duct"
       ],
       "correct": 1,
-      "explanation": "Vitamin K reverses warfarin (a vitamin K antagonist). Protamine reverses heparin."
+      "explanation": "Furosemide inhibits the Na-K-2Cl cotransporter in the thick ascending limb, a powerful loop diuretic."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Autonomic Nervous System",
-      "question": "Which drug precipitates thyroid storm if stopped and treats tremor in hyperthyroidism?",
+      "topic": "Central Nervous System",
+      "question": "Vigabatrin acts by?",
       "options": [
-        "Propranolol",
-        "Atenolol",
-        "Esmolol",
-        "Carvedilol"
+        "Blocking sodium channels",
+        "Inhibiting GABA transaminase",
+        "Blocking calcium channels",
+        "NMDA antagonism"
       ],
-      "correct": 0,
-      "explanation": "Propranolol controls adrenergic symptoms of thyrotoxicosis and blocks peripheral T4 to T3 conversion at high doses."
+      "correct": 1,
+      "explanation": "Vigabatrin irreversibly inhibits GABA transaminase, raising brain GABA; risk of visual field defects."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Cardiovascular",
-      "question": "Which anticoagulant is preferred in antiphospholipid syndrome?",
+      "topic": "Autacoids and NSAIDs",
+      "question": "Which gout drug is a selective xanthine oxidase inhibitor and non-purine?",
       "options": [
-        "Dabigatran",
-        "Warfarin",
-        "Rivaroxaban",
-        "Apixaban"
+        "Allopurinol",
+        "Febuxostat",
+        "Probenecid",
+        "Colchicine"
       ],
       "correct": 1,
-      "explanation": "Warfarin is preferred in antiphospholipid syndrome; DOACs showed higher thrombosis rates in trials."
+      "explanation": "Febuxostat is a non-purine selective xanthine oxidase inhibitor for chronic gout; useful if allopurinol is not tolerated."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Autacoids and NSAIDs",
-      "question": "Which drug is uricosuric (increases uric acid excretion)?",
+      "topic": "Cardiovascular",
+      "question": "Which electrolyte disturbance increases digoxin toxicity?",
       "options": [
-        "Allopurinol",
-        "Probenecid",
-        "Febuxostat",
-        "Colchicine"
+        "Hyperkalemia",
+        "Hypokalemia",
+        "Hypernatremia",
+        "Hypercalcemia low"
       ],
       "correct": 1,
-      "explanation": "Probenecid increases renal uric acid excretion for chronic gout. Allopurinol and febuxostat reduce uric acid production."
+      "explanation": "Hypokalemia increases digoxin binding to Na-K ATPase, precipitating toxicity. Watch in patients on diuretics."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Recent Advances",
-      "question": "mRNA vaccine technology works by?",
+      "topic": "Biostatistics",
+      "question": "Which test compares means of two independent groups with normal data?",
       "options": [
-        "Live attenuated virus",
-        "Delivering mRNA encoding an antigen",
-        "Inactivated toxin",
-        "Bacterial extract"
+        "Chi-square test",
+        "Student t-test",
+        "Mann-Whitney U",
+        "ANOVA"
       ],
       "correct": 1,
-      "explanation": "mRNA vaccines deliver mRNA (in lipid nanoparticles) that instructs host cells to make an antigen, triggering immunity."
+      "explanation": "The unpaired Student t-test compares means of two independent, normally distributed groups. ANOVA compares three or more."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 25 Oct 2026*\n\n🎓 *MBBS* (Blood)\nQ: Antidote for warfarin overdose is?\nAns: Vitamin K\nWhy: Vitamin K reverses warfarin (a vitamin K antagonist). Protamine reverses heparin.\n\n🩺 *NEET PG* (Autonomic Nervous System)\nQ: Which drug precipitates thyroid storm if stopped and treats tremor in hyperthyroidism?\nAns: Propranolol\nWhy: Propranolol controls adrenergic symptoms of thyrotoxicosis and blocks peripheral T4 to T3 conversion at high doses.\n\n🏥 *INI-CET* (Cardiovascular)\nQ: Which anticoagulant is preferred in antiphospholipid syndrome?\nAns: Warfarin\nWhy: Warfarin is preferred in antiphospholipid syndrome; DOACs showed higher thrombosis rates in trials.\n\n🌍 *FMGE* (Autacoids and NSAIDs)\nQ: Which drug is uricosuric (increases uric acid excretion)?\nAns: Probenecid\nWhy: Probenecid increases renal uric acid excretion for chronic gout. Allopurinol and febuxostat reduce uric acid production.\n\n🔬 *MD Pharmacology* (Recent Advances)\nQ: mRNA vaccine technology works by?\nAns: Delivering mRNA encoding an antigen\nWhy: mRNA vaccines deliver mRNA (in lipid nanoparticles) that instructs host cells to make an antigen, triggering immunity.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2025%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Blood%29%0AQ%3A%20Antidote%20for%20warfarin%20overdose%20is%3F%0AAns%3A%20Vitamin%20K%0AWhy%3A%20Vitamin%20K%20reverses%20warfarin%20%28a%20vitamin%20K%20antagonist%29.%20Protamine%20reverses%20heparin.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autonomic%20Nervous%20System%29%0AQ%3A%20Which%20drug%20precipitates%20thyroid%20storm%20if%20stopped%20and%20treats%20tremor%20in%20hyperthyroidism%3F%0AAns%3A%20Propranolol%0AWhy%3A%20Propranolol%20controls%20adrenergic%20symptoms%20of%20thyrotoxicosis%20and%20blocks%20peripheral%20T4%20to%20T3%20conversion%20at%20high%20doses.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20anticoagulant%20is%20preferred%20in%20antiphospholipid%20syndrome%3F%0AAns%3A%20Warfarin%0AWhy%3A%20Warfarin%20is%20preferred%20in%20antiphospholipid%20syndrome%3B%20DOACs%20showed%20higher%20thrombosis%20rates%20in%20trials.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Which%20drug%20is%20uricosuric%20%28increases%20uric%20acid%20excretion%29%3F%0AAns%3A%20Probenecid%0AWhy%3A%20Probenecid%20increases%20renal%20uric%20acid%20excretion%20for%20chronic%20gout.%20Allopurinol%20and%20febuxostat%20reduce%20uric%20acid%20production.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Recent%20Advances%29%0AQ%3A%20mRNA%20vaccine%20technology%20works%20by%3F%0AAns%3A%20Delivering%20mRNA%20encoding%20an%20antigen%0AWhy%3A%20mRNA%20vaccines%20deliver%20mRNA%20%28in%20lipid%20nanoparticles%29%20that%20instructs%20host%20cells%20to%20make%20an%20antigen%2C%20triggering%20immunity.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 26 Oct 2026*\n\n🎓 *MBBS* (Renal)\nQ: Furosemide acts on which part of the nephron?\nAns: Thick ascending loop of Henle\nWhy: Furosemide inhibits the Na-K-2Cl cotransporter in the thick ascending limb, a powerful loop diuretic.\n\n🩺 *NEET PG* (Central Nervous System)\nQ: Vigabatrin acts by?\nAns: Inhibiting GABA transaminase\nWhy: Vigabatrin irreversibly inhibits GABA transaminase, raising brain GABA; risk of visual field defects.\n\n🏥 *INI-CET* (Autacoids and NSAIDs)\nQ: Which gout drug is a selective xanthine oxidase inhibitor and non-purine?\nAns: Febuxostat\nWhy: Febuxostat is a non-purine selective xanthine oxidase inhibitor for chronic gout; useful if allopurinol is not tolerated.\n\n🌍 *FMGE* (Cardiovascular)\nQ: Which electrolyte disturbance increases digoxin toxicity?\nAns: Hypokalemia\nWhy: Hypokalemia increases digoxin binding to Na-K ATPase, precipitating toxicity. Watch in patients on diuretics.\n\n🔬 *MD Pharmacology* (Biostatistics)\nQ: Which test compares means of two independent groups with normal data?\nAns: Student t-test\nWhy: The unpaired Student t-test compares means of two independent, normally distributed groups. ANOVA compares three or more.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2026%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Renal%29%0AQ%3A%20Furosemide%20acts%20on%20which%20part%20of%20the%20nephron%3F%0AAns%3A%20Thick%20ascending%20loop%20of%20Henle%0AWhy%3A%20Furosemide%20inhibits%20the%20Na-K-2Cl%20cotransporter%20in%20the%20thick%20ascending%20limb%2C%20a%20powerful%20loop%20diuretic.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Vigabatrin%20acts%20by%3F%0AAns%3A%20Inhibiting%20GABA%20transaminase%0AWhy%3A%20Vigabatrin%20irreversibly%20inhibits%20GABA%20transaminase%2C%20raising%20brain%20GABA%3B%20risk%20of%20visual%20field%20defects.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Which%20gout%20drug%20is%20a%20selective%20xanthine%20oxidase%20inhibitor%20and%20non-purine%3F%0AAns%3A%20Febuxostat%0AWhy%3A%20Febuxostat%20is%20a%20non-purine%20selective%20xanthine%20oxidase%20inhibitor%20for%20chronic%20gout%3B%20useful%20if%20allopurinol%20is%20not%20tolerated.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20electrolyte%20disturbance%20increases%20digoxin%20toxicity%3F%0AAns%3A%20Hypokalemia%0AWhy%3A%20Hypokalemia%20increases%20digoxin%20binding%20to%20Na-K%20ATPase%2C%20precipitating%20toxicity.%20Watch%20in%20patients%20on%20diuretics.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Biostatistics%29%0AQ%3A%20Which%20test%20compares%20means%20of%20two%20independent%20groups%20with%20normal%20data%3F%0AAns%3A%20Student%20t-test%0AWhy%3A%20The%20unpaired%20Student%20t-test%20compares%20means%20of%20two%20independent%2C%20normally%20distributed%20groups.%20ANOVA%20compares%20three%20or%20more.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
