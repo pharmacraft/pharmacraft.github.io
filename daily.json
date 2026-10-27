@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Renal",
-      "question": "Furosemide acts on which part of the nephron?",
+      "topic": "Toxicology",
+      "question": "Specific antidote for organophosphate poisoning is?",
       "options": [
-        "Proximal tubule",
-        "Thick ascending loop of Henle",
-        "Distal tubule",
-        "Collecting duct"
+        "Atropine and pralidoxime",
+        "Naloxone",
+        "Flumazenil",
+        "Vitamin K"
       ],
-      "correct": 1,
-      "explanation": "Furosemide inhibits the Na-K-2Cl cotransporter in the thick ascending limb, a powerful loop diuretic."
+      "correct": 0,
+      "explanation": "Atropine blocks muscarinic effects; pralidoxime reactivates cholinesterase. Both are used together."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Central Nervous System",
-      "question": "Vigabatrin acts by?",
+      "topic": "General Pharmacology",
+      "question": "A drug with zero-order kinetics at therapeutic doses is?",
       "options": [
-        "Blocking sodium channels",
-        "Inhibiting GABA transaminase",
-        "Blocking calcium channels",
-        "NMDA antagonism"
+        "Paracetamol",
+        "Phenytoin",
+        "Amoxicillin",
+        "Atenolol"
       ],
       "correct": 1,
-      "explanation": "Vigabatrin irreversibly inhibits GABA transaminase, raising brain GABA; risk of visual field defects."
+      "explanation": "Phenytoin, ethanol, aspirin (high dose) and theophylline show zero-order (saturation) kinetics, risking toxicity."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Autacoids and NSAIDs",
-      "question": "Which gout drug is a selective xanthine oxidase inhibitor and non-purine?",
+      "topic": "Recent Advances",
+      "question": "Inclisiran, a cholesterol-lowering drug, acts by?",
       "options": [
-        "Allopurinol",
-        "Febuxostat",
-        "Probenecid",
-        "Colchicine"
+        "Statin pathway",
+        "siRNA against PCSK9",
+        "Anti-PCSK9 antibody",
+        "Bile acid binding"
       ],
       "correct": 1,
-      "explanation": "Febuxostat is a non-purine selective xanthine oxidase inhibitor for chronic gout; useful if allopurinol is not tolerated."
+      "explanation": "Inclisiran is a small interfering RNA (siRNA) that silences hepatic PCSK9 synthesis, lowering LDL with twice-yearly dosing."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Cardiovascular",
-      "question": "Which electrolyte disturbance increases digoxin toxicity?",
+      "topic": "General Pharmacology",
+      "question": "The term 'half-life' of a drug refers to time taken for?",
       "options": [
-        "Hyperkalemia",
-        "Hypokalemia",
-        "Hypernatremia",
-        "Hypercalcemia low"
+        "Full elimination",
+        "Plasma concentration to fall by half",
+        "Onset of action",
+        "Peak effect"
       ],
       "correct": 1,
-      "explanation": "Hypokalemia increases digoxin binding to Na-K ATPase, precipitating toxicity. Watch in patients on diuretics."
+      "explanation": "Half-life (t1/2) is the time for plasma concentration to decrease by 50%. About 4-5 half-lives reach steady state."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Biostatistics",
-      "question": "Which test compares means of two independent groups with normal data?",
+      "topic": "Pharmacoeconomics",
+      "question": "Cost-effectiveness analysis expresses outcomes in?",
       "options": [
-        "Chi-square test",
-        "Student t-test",
-        "Mann-Whitney U",
-        "ANOVA"
+        "Only money",
+        "Natural units (e.g. life-years gained)",
+        "Utility (QALYs)",
+        "Willingness to pay"
       ],
       "correct": 1,
-      "explanation": "The unpaired Student t-test compares means of two independent, normally distributed groups. ANOVA compares three or more."
+      "explanation": "Cost-effectiveness analysis measures outcomes in natural units (e.g. cost per life-year gained). Cost-utility uses QALYs."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 26 Oct 2026*\n\n🎓 *MBBS* (Renal)\nQ: Furosemide acts on which part of the nephron?\nAns: Thick ascending loop of Henle\nWhy: Furosemide inhibits the Na-K-2Cl cotransporter in the thick ascending limb, a powerful loop diuretic.\n\n🩺 *NEET PG* (Central Nervous System)\nQ: Vigabatrin acts by?\nAns: Inhibiting GABA transaminase\nWhy: Vigabatrin irreversibly inhibits GABA transaminase, raising brain GABA; risk of visual field defects.\n\n🏥 *INI-CET* (Autacoids and NSAIDs)\nQ: Which gout drug is a selective xanthine oxidase inhibitor and non-purine?\nAns: Febuxostat\nWhy: Febuxostat is a non-purine selective xanthine oxidase inhibitor for chronic gout; useful if allopurinol is not tolerated.\n\n🌍 *FMGE* (Cardiovascular)\nQ: Which electrolyte disturbance increases digoxin toxicity?\nAns: Hypokalemia\nWhy: Hypokalemia increases digoxin binding to Na-K ATPase, precipitating toxicity. Watch in patients on diuretics.\n\n🔬 *MD Pharmacology* (Biostatistics)\nQ: Which test compares means of two independent groups with normal data?\nAns: Student t-test\nWhy: The unpaired Student t-test compares means of two independent, normally distributed groups. ANOVA compares three or more.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2026%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Renal%29%0AQ%3A%20Furosemide%20acts%20on%20which%20part%20of%20the%20nephron%3F%0AAns%3A%20Thick%20ascending%20loop%20of%20Henle%0AWhy%3A%20Furosemide%20inhibits%20the%20Na-K-2Cl%20cotransporter%20in%20the%20thick%20ascending%20limb%2C%20a%20powerful%20loop%20diuretic.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Central%20Nervous%20System%29%0AQ%3A%20Vigabatrin%20acts%20by%3F%0AAns%3A%20Inhibiting%20GABA%20transaminase%0AWhy%3A%20Vigabatrin%20irreversibly%20inhibits%20GABA%20transaminase%2C%20raising%20brain%20GABA%3B%20risk%20of%20visual%20field%20defects.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autacoids%20and%20NSAIDs%29%0AQ%3A%20Which%20gout%20drug%20is%20a%20selective%20xanthine%20oxidase%20inhibitor%20and%20non-purine%3F%0AAns%3A%20Febuxostat%0AWhy%3A%20Febuxostat%20is%20a%20non-purine%20selective%20xanthine%20oxidase%20inhibitor%20for%20chronic%20gout%3B%20useful%20if%20allopurinol%20is%20not%20tolerated.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Cardiovascular%29%0AQ%3A%20Which%20electrolyte%20disturbance%20increases%20digoxin%20toxicity%3F%0AAns%3A%20Hypokalemia%0AWhy%3A%20Hypokalemia%20increases%20digoxin%20binding%20to%20Na-K%20ATPase%2C%20precipitating%20toxicity.%20Watch%20in%20patients%20on%20diuretics.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Biostatistics%29%0AQ%3A%20Which%20test%20compares%20means%20of%20two%20independent%20groups%20with%20normal%20data%3F%0AAns%3A%20Student%20t-test%0AWhy%3A%20The%20unpaired%20Student%20t-test%20compares%20means%20of%20two%20independent%2C%20normally%20distributed%20groups.%20ANOVA%20compares%20three%20or%20more.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 27 Oct 2026*\n\n🎓 *MBBS* (Toxicology)\nQ: Specific antidote for organophosphate poisoning is?\nAns: Atropine and pralidoxime\nWhy: Atropine blocks muscarinic effects; pralidoxime reactivates cholinesterase. Both are used together.\n\n🩺 *NEET PG* (General Pharmacology)\nQ: A drug with zero-order kinetics at therapeutic doses is?\nAns: Phenytoin\nWhy: Phenytoin, ethanol, aspirin (high dose) and theophylline show zero-order (saturation) kinetics, risking toxicity.\n\n🏥 *INI-CET* (Recent Advances)\nQ: Inclisiran, a cholesterol-lowering drug, acts by?\nAns: siRNA against PCSK9\nWhy: Inclisiran is a small interfering RNA (siRNA) that silences hepatic PCSK9 synthesis, lowering LDL with twice-yearly dosing.\n\n🌍 *FMGE* (General Pharmacology)\nQ: The term 'half-life' of a drug refers to time taken for?\nAns: Plasma concentration to fall by half\nWhy: Half-life (t1/2) is the time for plasma concentration to decrease by 50%. About 4-5 half-lives reach steady state.\n\n🔬 *MD Pharmacology* (Pharmacoeconomics)\nQ: Cost-effectiveness analysis expresses outcomes in?\nAns: Natural units (e.g. life-years gained)\nWhy: Cost-effectiveness analysis measures outcomes in natural units (e.g. cost per life-year gained). Cost-utility uses QALYs.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2027%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Toxicology%29%0AQ%3A%20Specific%20antidote%20for%20organophosphate%20poisoning%20is%3F%0AAns%3A%20Atropine%20and%20pralidoxime%0AWhy%3A%20Atropine%20blocks%20muscarinic%20effects%3B%20pralidoxime%20reactivates%20cholinesterase.%20Both%20are%20used%20together.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20drug%20with%20zero-order%20kinetics%20at%20therapeutic%20doses%20is%3F%0AAns%3A%20Phenytoin%0AWhy%3A%20Phenytoin%2C%20ethanol%2C%20aspirin%20%28high%20dose%29%20and%20theophylline%20show%20zero-order%20%28saturation%29%20kinetics%2C%20risking%20toxicity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Recent%20Advances%29%0AQ%3A%20Inclisiran%2C%20a%20cholesterol-lowering%20drug%2C%20acts%20by%3F%0AAns%3A%20siRNA%20against%20PCSK9%0AWhy%3A%20Inclisiran%20is%20a%20small%20interfering%20RNA%20%28siRNA%29%20that%20silences%20hepatic%20PCSK9%20synthesis%2C%20lowering%20LDL%20with%20twice-yearly%20dosing.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20The%20term%20%27half-life%27%20of%20a%20drug%20refers%20to%20time%20taken%20for%3F%0AAns%3A%20Plasma%20concentration%20to%20fall%20by%20half%0AWhy%3A%20Half-life%20%28t1/2%29%20is%20the%20time%20for%20plasma%20concentration%20to%20decrease%20by%2050%25.%20About%204-5%20half-lives%20reach%20steady%20state.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmacoeconomics%29%0AQ%3A%20Cost-effectiveness%20analysis%20expresses%20outcomes%20in%3F%0AAns%3A%20Natural%20units%20%28e.g.%20life-years%20gained%29%0AWhy%3A%20Cost-effectiveness%20analysis%20measures%20outcomes%20in%20natural%20units%20%28e.g.%20cost%20per%20life-year%20gained%29.%20Cost-utility%20uses%20QALYs.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
