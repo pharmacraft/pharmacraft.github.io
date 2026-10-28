@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Toxicology",
-      "question": "Specific antidote for organophosphate poisoning is?",
+      "topic": "General Pharmacology",
+      "question": "The study of movement of drugs in the body (absorption, distribution, metabolism, excretion) is called?",
       "options": [
-        "Atropine and pralidoxime",
-        "Naloxone",
-        "Flumazenil",
-        "Vitamin K"
+        "Pharmacokinetics",
+        "Pharmacovigilance",
+        "Pharmacogenetics",
+        "Pharmacodynamics"
       ],
       "correct": 0,
-      "explanation": "Atropine blocks muscarinic effects; pralidoxime reactivates cholinesterase. Both are used together."
-    },
-    {
-      "stream": "NEET PG",
-      "emoji": "🩺",
-      "topic": "General Pharmacology",
-      "question": "A drug with zero-order kinetics at therapeutic doses is?",
-      "options": [
-        "Paracetamol",
-        "Phenytoin",
-        "Amoxicillin",
-        "Atenolol"
-      ],
-      "correct": 1,
-      "explanation": "Phenytoin, ethanol, aspirin (high dose) and theophylline show zero-order (saturation) kinetics, risking toxicity."
-    },
-    {
-      "stream": "INI-CET",
-      "emoji": "🏥",
-      "topic": "Recent Advances",
-      "question": "Inclisiran, a cholesterol-lowering drug, acts by?",
-      "options": [
-        "Statin pathway",
-        "siRNA against PCSK9",
-        "Anti-PCSK9 antibody",
-        "Bile acid binding"
-      ],
-      "correct": 1,
-      "explanation": "Inclisiran is a small interfering RNA (siRNA) that silences hepatic PCSK9 synthesis, lowering LDL with twice-yearly dosing."
+      "explanation": "Pharmacokinetics = what the body does to the drug (ADME). Pharmacodynamics = what the drug does to the body."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
       "topic": "General Pharmacology",
-      "question": "The term 'half-life' of a drug refers to time taken for?",
+      "question": "The 'therapeutic index' is the ratio of?",
       "options": [
-        "Full elimination",
-        "Plasma concentration to fall by half",
-        "Onset of action",
-        "Peak effect"
+        "Cmax/Cmin",
+        "LD50/ED50",
+        "ED50/LD50",
+        "Vd/clearance"
       ],
       "correct": 1,
-      "explanation": "Half-life (t1/2) is the time for plasma concentration to decrease by 50%. About 4-5 half-lives reach steady state."
+      "explanation": "Therapeutic index = LD50/ED50; a higher value means a safer drug."
+    },
+    {
+      "stream": "NEET PG",
+      "emoji": "🩺",
+      "topic": "General Pharmacology",
+      "question": "A drug with a very high volume of distribution (Vd) is best described as?",
+      "options": [
+        "Extensively bound to tissues",
+        "Highly renally cleared",
+        "Confined to plasma",
+        "Poorly absorbed"
+      ],
+      "correct": 0,
+      "explanation": "A large Vd (e.g., chloroquine, amiodarone) indicates extensive tissue sequestration; haemodialysis removes little."
+    },
+    {
+      "stream": "INI-CET",
+      "emoji": "🏥",
+      "topic": "General Pharmacology",
+      "question": "A drug has a clearance of 70 mL/min and is 100% bioavailable. To double the steady-state concentration you should?",
+      "options": [
+        "Double the loading dose only",
+        "Double the maintenance dose rate",
+        "Halve the dose",
+        "Halve the interval and dose"
+      ],
+      "correct": 1,
+      "explanation": "At steady state, Css is proportional to dosing rate/clearance; doubling the maintenance rate doubles Css."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Pharmacoeconomics",
-      "question": "Cost-effectiveness analysis expresses outcomes in?",
+      "topic": "Paper I: General/Experimental",
+      "question": "In a Schild plot, the pA2 value represents the negative log of the antagonist concentration that requires?",
       "options": [
-        "Only money",
-        "Natural units (e.g. life-years gained)",
-        "Utility (QALYs)",
-        "Willingness to pay"
+        "A tripling",
+        "A doubling of agonist concentration",
+        "Half response",
+        "A 10-fold increase"
       ],
       "correct": 1,
-      "explanation": "Cost-effectiveness analysis measures outcomes in natural units (e.g. cost per life-year gained). Cost-utility uses QALYs."
+      "explanation": "pA2 is the -log of the molar antagonist concentration that necessitates doubling the agonist concentration (dose ratio = 2)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 27 Oct 2026*\n\n🎓 *MBBS* (Toxicology)\nQ: Specific antidote for organophosphate poisoning is?\nAns: Atropine and pralidoxime\nWhy: Atropine blocks muscarinic effects; pralidoxime reactivates cholinesterase. Both are used together.\n\n🩺 *NEET PG* (General Pharmacology)\nQ: A drug with zero-order kinetics at therapeutic doses is?\nAns: Phenytoin\nWhy: Phenytoin, ethanol, aspirin (high dose) and theophylline show zero-order (saturation) kinetics, risking toxicity.\n\n🏥 *INI-CET* (Recent Advances)\nQ: Inclisiran, a cholesterol-lowering drug, acts by?\nAns: siRNA against PCSK9\nWhy: Inclisiran is a small interfering RNA (siRNA) that silences hepatic PCSK9 synthesis, lowering LDL with twice-yearly dosing.\n\n🌍 *FMGE* (General Pharmacology)\nQ: The term 'half-life' of a drug refers to time taken for?\nAns: Plasma concentration to fall by half\nWhy: Half-life (t1/2) is the time for plasma concentration to decrease by 50%. About 4-5 half-lives reach steady state.\n\n🔬 *MD Pharmacology* (Pharmacoeconomics)\nQ: Cost-effectiveness analysis expresses outcomes in?\nAns: Natural units (e.g. life-years gained)\nWhy: Cost-effectiveness analysis measures outcomes in natural units (e.g. cost per life-year gained). Cost-utility uses QALYs.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2027%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Toxicology%29%0AQ%3A%20Specific%20antidote%20for%20organophosphate%20poisoning%20is%3F%0AAns%3A%20Atropine%20and%20pralidoxime%0AWhy%3A%20Atropine%20blocks%20muscarinic%20effects%3B%20pralidoxime%20reactivates%20cholinesterase.%20Both%20are%20used%20together.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20drug%20with%20zero-order%20kinetics%20at%20therapeutic%20doses%20is%3F%0AAns%3A%20Phenytoin%0AWhy%3A%20Phenytoin%2C%20ethanol%2C%20aspirin%20%28high%20dose%29%20and%20theophylline%20show%20zero-order%20%28saturation%29%20kinetics%2C%20risking%20toxicity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Recent%20Advances%29%0AQ%3A%20Inclisiran%2C%20a%20cholesterol-lowering%20drug%2C%20acts%20by%3F%0AAns%3A%20siRNA%20against%20PCSK9%0AWhy%3A%20Inclisiran%20is%20a%20small%20interfering%20RNA%20%28siRNA%29%20that%20silences%20hepatic%20PCSK9%20synthesis%2C%20lowering%20LDL%20with%20twice-yearly%20dosing.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20The%20term%20%27half-life%27%20of%20a%20drug%20refers%20to%20time%20taken%20for%3F%0AAns%3A%20Plasma%20concentration%20to%20fall%20by%20half%0AWhy%3A%20Half-life%20%28t1/2%29%20is%20the%20time%20for%20plasma%20concentration%20to%20decrease%20by%2050%25.%20About%204-5%20half-lives%20reach%20steady%20state.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Pharmacoeconomics%29%0AQ%3A%20Cost-effectiveness%20analysis%20expresses%20outcomes%20in%3F%0AAns%3A%20Natural%20units%20%28e.g.%20life-years%20gained%29%0AWhy%3A%20Cost-effectiveness%20analysis%20measures%20outcomes%20in%20natural%20units%20%28e.g.%20cost%20per%20life-year%20gained%29.%20Cost-utility%20uses%20QALYs.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 28 Oct 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: The study of movement of drugs in the body (absorption, distribution, metabolism, excretion) is called?\nAns: Pharmacokinetics\nWhy: Pharmacokinetics = what the body does to the drug (ADME). Pharmacodynamics = what the drug does to the body.\n\n🌍 *FMGE* (General Pharmacology)\nQ: The 'therapeutic index' is the ratio of?\nAns: LD50/ED50\nWhy: Therapeutic index = LD50/ED50; a higher value means a safer drug.\n\n🩺 *NEET PG* (General Pharmacology)\nQ: A drug with a very high volume of distribution (Vd) is best described as?\nAns: Extensively bound to tissues\nWhy: A large Vd (e.g., chloroquine, amiodarone) indicates extensive tissue sequestration; haemodialysis removes little.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: A drug has a clearance of 70 mL/min and is 100% bioavailable. To double the steady-state concentration you should?\nAns: Double the maintenance dose rate\nWhy: At steady state, Css is proportional to dosing rate/clearance; doubling the maintenance rate doubles Css.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: In a Schild plot, the pA2 value represents the negative log of the antagonist concentration that requires?\nAns: A doubling of agonist concentration\nWhy: pA2 is the -log of the molar antagonist concentration that necessitates doubling the agonist concentration (dose ratio = 2).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2028%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20The%20study%20of%20movement%20of%20drugs%20in%20the%20body%20%28absorption%2C%20distribution%2C%20metabolism%2C%20excretion%29%20is%20called%3F%0AAns%3A%20Pharmacokinetics%0AWhy%3A%20Pharmacokinetics%20%3D%20what%20the%20body%20does%20to%20the%20drug%20%28ADME%29.%20Pharmacodynamics%20%3D%20what%20the%20drug%20does%20to%20the%20body.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20The%20%27therapeutic%20index%27%20is%20the%20ratio%20of%3F%0AAns%3A%20LD50/ED50%0AWhy%3A%20Therapeutic%20index%20%3D%20LD50/ED50%3B%20a%20higher%20value%20means%20a%20safer%20drug.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20drug%20with%20a%20very%20high%20volume%20of%20distribution%20%28Vd%29%20is%20best%20described%20as%3F%0AAns%3A%20Extensively%20bound%20to%20tissues%0AWhy%3A%20A%20large%20Vd%20%28e.g.%2C%20chloroquine%2C%20amiodarone%29%20indicates%20extensive%20tissue%20sequestration%3B%20haemodialysis%20removes%20little.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20drug%20has%20a%20clearance%20of%2070%20mL/min%20and%20is%20100%25%20bioavailable.%20To%20double%20the%20steady-state%20concentration%20you%20should%3F%0AAns%3A%20Double%20the%20maintenance%20dose%20rate%0AWhy%3A%20At%20steady%20state%2C%20Css%20is%20proportional%20to%20dosing%20rate/clearance%3B%20doubling%20the%20maintenance%20rate%20doubles%20Css.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20In%20a%20Schild%20plot%2C%20the%20pA2%20value%20represents%20the%20negative%20log%20of%20the%20antagonist%20concentration%20that%20requires%3F%0AAns%3A%20A%20doubling%20of%20agonist%20concentration%0AWhy%3A%20pA2%20is%20the%20-log%20of%20the%20molar%20antagonist%20concentration%20that%20necessitates%20doubling%20the%20agonist%20concentration%20%28dose%20ratio%20%3D%202%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

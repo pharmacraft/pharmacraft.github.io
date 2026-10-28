@@ -1,0 +1,59 @@
+{
+ "days": [
+  {
+   "date": "2026-10-28",
+   "source": "bank",
+   "topic_index": 0,
+   "md_paper_index": 0,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "486a8ea5695d",
+     "stem": "The study of movement of drugs in the body (absorption, distribution, metabolism, excretion) is called?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "42a61388ed4f",
+     "stem": "The 'therapeutic index' is the ratio of?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "9eccc23d3e94",
+     "stem": "A drug with a very high volume of distribution (Vd) is best described as?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "a9c2968d6b56",
+     "stem": "A drug has a clearance of 70 mL/min and is 100% bioavailable. To double the steady-state concentration you should?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "9a822f30119c",
+     "stem": "In a Schild plot, the pA2 value represents the negative log of the antagonist concentration that requires?"
+    }
+   ]
+  }
+ ]
+}
