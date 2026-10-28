@@ -298,11 +298,11 @@ def from_bank(log):
     items = []
     for stream, _ in SLOTS:
         lst = bank.get(stream, [])
-        fresh = [q for q in lst if stem_hash(q["question"]) not in old]
-        if not fresh:
-            print("Bank exhausted for", stream, "- skipping")
+        if not lst:
             continue
-        q = dict(fresh[0])
+        fresh = [q for q in lst if stem_hash(q["question"]) not in old]
+        _n = len([d for d in log.get("days", []) if d.get("items")])
+        q = dict(fresh[0] if fresh else lst[_n % len(lst)])
         q.update({"stream": stream, "concept": q.get("topic", ""), "angle": "", "type": "Bank",
                   "explanation_short": q.get("explanation", "")[:190]})
         items.append(q)
@@ -335,7 +335,7 @@ def main():
 
     today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30))).date()
     log = load_json(LOG_FILE, {"days": []})
-    seed_log_from_bank(log, today)
+    pass  # bank-seed disabled
     if any(d.get("date") == today.isoformat() for d in log["days"]):
         print("Already posted today - nothing to do.")
         return
