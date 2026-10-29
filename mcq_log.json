@@ -54,6 +54,61 @@
      "stem": "In a Schild plot, the pA2 value represents the negative log of the antagonist concentration that requires?"
     }
    ]
+  },
+  {
+   "date": "2026-10-29",
+   "source": "bank",
+   "topic_index": 1,
+   "md_paper_index": 1,
+   "case_slot": 1,
+   "ra_slot": 3,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "a22536eb2235",
+     "stem": "Atropine blocks which type of receptor?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "e704eeed790b",
+     "stem": "Pilocarpine is used in glaucoma because it causes?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "9bee7c51906a",
+     "stem": "Mirabegron treats overactive bladder by acting as a?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "a64cf32dd290",
+     "stem": "Why does phenylephrine cause reflex bradycardia?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "a7997b4bc103",
+     "stem": "Which clinical trial phase first establishes safety and pharmacokinetics in healthy volunteers?"
+    }
+   ]
   }
  ]
 }
