@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "ANS",
-      "question": "Atropine blocks which type of receptor?",
+      "topic": "CVS",
+      "question": "Digoxin inhibits which membrane enzyme?",
       "options": [
-        "Alpha",
-        "Beta",
-        "Muscarinic",
-        "Nicotinic"
+        "Phosphodiesterase",
+        "Ca2+ ATPase",
+        "Na+/K+ ATPase",
+        "Adenylyl cyclase"
       ],
       "correct": 2,
-      "explanation": "Atropine is a competitive muscarinic (M) receptor antagonist, causing tachycardia, mydriasis, dry mouth."
+      "explanation": "Digoxin inhibits Na+/K+ ATPase, raising intracellular Na+ then Ca2+, increasing contractility."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "ANS",
-      "question": "Pilocarpine is used in glaucoma because it causes?",
+      "topic": "CVS",
+      "question": "Which drug is contraindicated with sildenafil due to severe hypotension?",
       "options": [
-        "Cycloplegia",
-        "Miosis and improved aqueous outflow",
-        "Vasoconstriction",
-        "Mydriasis"
+        "Metformin",
+        "Nitrates",
+        "Atenolol",
+        "Aspirin"
       ],
       "correct": 1,
-      "explanation": "Pilocarpine (muscarinic agonist) causes miosis and ciliary contraction, improving aqueous humour outflow."
+      "explanation": "Sildenafil (PDE5 inhibitor) with nitrates causes dangerous hypotension; the combination is contraindicated."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "ANS",
-      "question": "Mirabegron treats overactive bladder by acting as a?",
+      "topic": "CVS",
+      "question": "Ivabradine lowers heart rate by selectively inhibiting the ___ current in the SA node.",
       "options": [
-        "Beta-3 agonist",
-        "Muscarinic antagonist",
-        "Alpha blocker",
-        "Beta-1 blocker"
+        "Na+",
+        "Ca2+",
+        "K+",
+        "If (funny) current"
       ],
-      "correct": 0,
-      "explanation": "Mirabegron is a selective beta-3 agonist relaxing the detrusor, an alternative to antimuscarinics."
+      "correct": 3,
+      "explanation": "Ivabradine blocks the If current in the SA node, reducing heart rate without affecting contractility or BP."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "ANS",
-      "question": "Why does phenylephrine cause reflex bradycardia?",
+      "topic": "CVS",
+      "question": "Why does ivabradine cause visual phosphenes?",
       "options": [
-        "Beta blockade",
-        "Alpha-1 vasoconstriction raises BP, triggering baroreceptor vagal reflex",
-        "Direct M2 agonism",
-        "Ganglion block"
+        "Dopamine effect",
+        "Optic neuritis",
+        "Retinal If-like channel (Ih) blockade",
+        "Cataract"
       ],
-      "correct": 1,
-      "explanation": "Phenylephrine raises BP via alpha-1 vasoconstriction; baroreceptors trigger reflex vagal bradycardia."
+      "correct": 2,
+      "explanation": "Ivabradine blocks retinal Ih channels (similar to cardiac If), causing transient luminous phenomena (phosphenes)."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "Which clinical trial phase first establishes safety and pharmacokinetics in healthy volunteers?",
+      "topic": "Paper III: Systemic",
+      "question": "Why is the ARNI (sacubitril/valsartan) not combined with an ACE inhibitor?",
       "options": [
-        "Phase I",
-        "Phase II",
-        "Phase III",
-        "Phase IV"
+        "Reduced efficacy",
+        "Hyperkalaemia only",
+        "Cost",
+        "Increased angioedema risk from dual bradykinin accumulation"
       ],
-      "correct": 0,
-      "explanation": "Phase I trials assess safety, tolerability and pharmacokinetics, usually in a small group of healthy volunteers."
+      "correct": 3,
+      "explanation": "Both raise bradykinin; combining ARNI with an ACE inhibitor markedly increases angioedema risk (36-hour washout needed)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 29 Oct 2026*\n\n🎓 *MBBS* (ANS)\nQ: Atropine blocks which type of receptor?\nAns: Muscarinic\nWhy: Atropine is a competitive muscarinic (M) receptor antagonist, causing tachycardia, mydriasis, dry mouth.\n\n🌍 *FMGE* (ANS)\nQ: Pilocarpine is used in glaucoma because it causes?\nAns: Miosis and improved aqueous outflow\nWhy: Pilocarpine (muscarinic agonist) causes miosis and ciliary contraction, improving aqueous humour outflow.\n\n🩺 *NEET PG* (ANS)\nQ: Mirabegron treats overactive bladder by acting as a?\nAns: Beta-3 agonist\nWhy: Mirabegron is a selective beta-3 agonist relaxing the detrusor, an alternative to antimuscarinics.\n\n🏥 *INI-CET* (ANS)\nQ: Why does phenylephrine cause reflex bradycardia?\nAns: Alpha-1 vasoconstriction raises BP, triggering baroreceptor vagal reflex\nWhy: Phenylephrine raises BP via alpha-1 vasoconstriction; baroreceptors trigger reflex vagal bradycardia.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: Which clinical trial phase first establishes safety and pharmacokinetics in healthy volunteers?\nAns: Phase I\nWhy: Phase I trials assess safety, tolerability and pharmacokinetics, usually in a small group of healthy volunteers.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2029%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28ANS%29%0AQ%3A%20Atropine%20blocks%20which%20type%20of%20receptor%3F%0AAns%3A%20Muscarinic%0AWhy%3A%20Atropine%20is%20a%20competitive%20muscarinic%20%28M%29%20receptor%20antagonist%2C%20causing%20tachycardia%2C%20mydriasis%2C%20dry%20mouth.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28ANS%29%0AQ%3A%20Pilocarpine%20is%20used%20in%20glaucoma%20because%20it%20causes%3F%0AAns%3A%20Miosis%20and%20improved%20aqueous%20outflow%0AWhy%3A%20Pilocarpine%20%28muscarinic%20agonist%29%20causes%20miosis%20and%20ciliary%20contraction%2C%20improving%20aqueous%20humour%20outflow.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28ANS%29%0AQ%3A%20Mirabegron%20treats%20overactive%20bladder%20by%20acting%20as%20a%3F%0AAns%3A%20Beta-3%20agonist%0AWhy%3A%20Mirabegron%20is%20a%20selective%20beta-3%20agonist%20relaxing%20the%20detrusor%2C%20an%20alternative%20to%20antimuscarinics.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28ANS%29%0AQ%3A%20Why%20does%20phenylephrine%20cause%20reflex%20bradycardia%3F%0AAns%3A%20Alpha-1%20vasoconstriction%20raises%20BP%2C%20triggering%20baroreceptor%20vagal%20reflex%0AWhy%3A%20Phenylephrine%20raises%20BP%20via%20alpha-1%20vasoconstriction%3B%20baroreceptors%20trigger%20reflex%20vagal%20bradycardia.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20Which%20clinical%20trial%20phase%20first%20establishes%20safety%20and%20pharmacokinetics%20in%20healthy%20volunteers%3F%0AAns%3A%20Phase%20I%0AWhy%3A%20Phase%20I%20trials%20assess%20safety%2C%20tolerability%20and%20pharmacokinetics%2C%20usually%20in%20a%20small%20group%20of%20healthy%20volunteers.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 30 Oct 2026*\n\n🎓 *MBBS* (CVS)\nQ: Digoxin inhibits which membrane enzyme?\nAns: Na+/K+ ATPase\nWhy: Digoxin inhibits Na+/K+ ATPase, raising intracellular Na+ then Ca2+, increasing contractility.\n\n🌍 *FMGE* (CVS)\nQ: Which drug is contraindicated with sildenafil due to severe hypotension?\nAns: Nitrates\nWhy: Sildenafil (PDE5 inhibitor) with nitrates causes dangerous hypotension; the combination is contraindicated.\n\n🩺 *NEET PG* (CVS)\nQ: Ivabradine lowers heart rate by selectively inhibiting the ___ current in the SA node.\nAns: If (funny) current\nWhy: Ivabradine blocks the If current in the SA node, reducing heart rate without affecting contractility or BP.\n\n🏥 *INI-CET* (CVS)\nQ: Why does ivabradine cause visual phosphenes?\nAns: Retinal If-like channel (Ih) blockade\nWhy: Ivabradine blocks retinal Ih channels (similar to cardiac If), causing transient luminous phenomena (phosphenes).\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Why is the ARNI (sacubitril/valsartan) not combined with an ACE inhibitor?\nAns: Increased angioedema risk from dual bradykinin accumulation\nWhy: Both raise bradykinin; combining ARNI with an ACE inhibitor markedly increases angioedema risk (36-hour washout needed).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2030%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28CVS%29%0AQ%3A%20Digoxin%20inhibits%20which%20membrane%20enzyme%3F%0AAns%3A%20Na%2B/K%2B%20ATPase%0AWhy%3A%20Digoxin%20inhibits%20Na%2B/K%2B%20ATPase%2C%20raising%20intracellular%20Na%2B%20then%20Ca2%2B%2C%20increasing%20contractility.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28CVS%29%0AQ%3A%20Which%20drug%20is%20contraindicated%20with%20sildenafil%20due%20to%20severe%20hypotension%3F%0AAns%3A%20Nitrates%0AWhy%3A%20Sildenafil%20%28PDE5%20inhibitor%29%20with%20nitrates%20causes%20dangerous%20hypotension%3B%20the%20combination%20is%20contraindicated.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28CVS%29%0AQ%3A%20Ivabradine%20lowers%20heart%20rate%20by%20selectively%20inhibiting%20the%20___%20current%20in%20the%20SA%20node.%0AAns%3A%20If%20%28funny%29%20current%0AWhy%3A%20Ivabradine%20blocks%20the%20If%20current%20in%20the%20SA%20node%2C%20reducing%20heart%20rate%20without%20affecting%20contractility%20or%20BP.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28CVS%29%0AQ%3A%20Why%20does%20ivabradine%20cause%20visual%20phosphenes%3F%0AAns%3A%20Retinal%20If-like%20channel%20%28Ih%29%20blockade%0AWhy%3A%20Ivabradine%20blocks%20retinal%20Ih%20channels%20%28similar%20to%20cardiac%20If%29%2C%20causing%20transient%20luminous%20phenomena%20%28phosphenes%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Why%20is%20the%20ARNI%20%28sacubitril/valsartan%29%20not%20combined%20with%20an%20ACE%20inhibitor%3F%0AAns%3A%20Increased%20angioedema%20risk%20from%20dual%20bradykinin%20accumulation%0AWhy%3A%20Both%20raise%20bradykinin%3B%20combining%20ARNI%20with%20an%20ACE%20inhibitor%20markedly%20increases%20angioedema%20risk%20%2836-hour%20washout%20needed%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

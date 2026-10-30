@@ -109,6 +109,61 @@
      "stem": "Which clinical trial phase first establishes safety and pharmacokinetics in healthy volunteers?"
     }
    ]
+  },
+  {
+   "date": "2026-10-30",
+   "source": "bank",
+   "topic_index": 2,
+   "md_paper_index": 2,
+   "case_slot": 2,
+   "ra_slot": 4,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "6ee811593fc0",
+     "stem": "Digoxin inhibits which membrane enzyme?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "0109806492bb",
+     "stem": "Which drug is contraindicated with sildenafil due to severe hypotension?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "b836341638e0",
+     "stem": "Ivabradine lowers heart rate by selectively inhibiting the ___ current in the SA node."
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "d874e8eb3c59",
+     "stem": "Why does ivabradine cause visual phosphenes?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "a729bb7a5546",
+     "stem": "Why is the ARNI (sacubitril/valsartan) not combined with an ACE inhibitor?"
+    }
+   ]
   }
  ]
 }
