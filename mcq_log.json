@@ -164,6 +164,61 @@
      "stem": "Why is the ARNI (sacubitril/valsartan) not combined with an ACE inhibitor?"
     }
    ]
+  },
+  {
+   "date": "2026-10-31",
+   "source": "bank",
+   "topic_index": 3,
+   "md_paper_index": 3,
+   "case_slot": 3,
+   "ra_slot": 0,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "12c5975e7d11",
+     "stem": "Diazepam enhances the action of which inhibitory neurotransmitter?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "457e684e99f9",
+     "stem": "Carbamazepine is the drug of choice for?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "0e3856477607",
+     "stem": "Levetiracetam acts by binding to which synaptic protein?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "ff9777e760a2",
+     "stem": "Why is flumazenil avoided in mixed overdose with tricyclic antidepressants?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "d39b32c097dd",
+     "stem": "Inclisiran lowers LDL cholesterol as a?"
+    }
+   ]
   }
  ]
 }
