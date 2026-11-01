@@ -219,6 +219,61 @@
      "stem": "Inclisiran lowers LDL cholesterol as a?"
     }
    ]
+  },
+  {
+   "date": "2026-11-01",
+   "source": "bank",
+   "topic_index": 4,
+   "md_paper_index": 0,
+   "case_slot": 4,
+   "ra_slot": 1,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "0f292402aed7",
+     "stem": "Aspirin irreversibly inhibits which enzyme?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "1c55dbba4ebb",
+     "stem": "Reye's syndrome in children is linked to which drug in viral fevers?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "d0ae18023c73",
+     "stem": "Celecoxib has lower GI risk than non-selective NSAIDs but may increase?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "6a3f2bd2d93e",
+     "stem": "Why does aspirin cause a prolonged antiplatelet effect lasting ~7-10 days?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "b6038b110552",
+     "stem": "The ED50 obtained from a quantal dose-response curve measures?"
+    }
+   ]
   }
  ]
 }

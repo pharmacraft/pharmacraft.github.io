@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "CNS",
-      "question": "Diazepam enhances the action of which inhibitory neurotransmitter?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Aspirin irreversibly inhibits which enzyme?",
       "options": [
-        "Serotonin",
-        "Glutamate",
-        "Dopamine",
-        "GABA"
+        "Cyclo-oxygenase",
+        "Thromboxane synthase",
+        "Phospholipase A2",
+        "Lipoxygenase"
       ],
-      "correct": 3,
-      "explanation": "Benzodiazepines enhance GABA-A receptor activity (increase chloride channel opening frequency)."
+      "correct": 0,
+      "explanation": "Aspirin irreversibly acetylates cyclo-oxygenase (COX), reducing prostaglandins and thromboxane."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "CNS",
-      "question": "Carbamazepine is the drug of choice for?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Reye's syndrome in children is linked to which drug in viral fevers?",
       "options": [
-        "Absence seizures",
-        "Trigeminal neuralgia",
-        "Myoclonic seizures",
-        "Status epilepticus"
+        "Diclofenac",
+        "Aspirin",
+        "Paracetamol",
+        "Ibuprofen"
       ],
       "correct": 1,
-      "explanation": "Carbamazepine is first-line for trigeminal neuralgia and focal seizures; blocks Na+ channels."
+      "explanation": "Aspirin is avoided in children with viral illness due to risk of Reye's syndrome (encephalopathy, hepatic failure)."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "CNS",
-      "question": "Levetiracetam acts by binding to which synaptic protein?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Celecoxib has lower GI risk than non-selective NSAIDs but may increase?",
       "options": [
-        "NMDA receptor",
-        "GABA-A",
-        "Na+ channel",
-        "SV2A"
+        "Bleeding",
+        "Hypoglycaemia",
+        "Cardiovascular thrombotic events",
+        "Infection"
       ],
-      "correct": 3,
-      "explanation": "Levetiracetam binds synaptic vesicle protein SV2A, modulating neurotransmitter release; broad-spectrum."
+      "correct": 2,
+      "explanation": "Selective COX-2 inhibition reduces protective prostacyclin relative to thromboxane, raising CV risk."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "CNS",
-      "question": "Why is flumazenil avoided in mixed overdose with tricyclic antidepressants?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Why does aspirin cause a prolonged antiplatelet effect lasting ~7-10 days?",
       "options": [
-        "It worsens sedation",
-        "It causes arrhythmia directly",
-        "It is ineffective",
-        "Removing benzodiazepine protection may unmask TCA-induced seizures"
+        "Tissue binding",
+        "Irreversible COX-1 acetylation; platelets cannot resynthesise COX",
+        "Enterohepatic recycling",
+        "Long half-life"
       ],
-      "correct": 3,
-      "explanation": "Benzodiazepines protect against TCA seizures; flumazenil can precipitate them in mixed overdose."
+      "correct": 1,
+      "explanation": "Platelets lack nuclei, so irreversibly inhibited COX cannot be replaced until new platelets form (~7-10 days)."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper IV: Recent Advances",
-      "question": "Inclisiran lowers LDL cholesterol as a?",
+      "topic": "Paper I: General/Experimental",
+      "question": "The ED50 obtained from a quantal dose-response curve measures?",
       "options": [
-        "Monoclonal antibody",
-        "Statin",
-        "Fibrate",
-        "Small interfering RNA (siRNA) targeting PCSK9"
+        "Potency in an individual",
+        "Dose effective in 50% of a population",
+        "Receptor affinity",
+        "Maximal efficacy"
       ],
-      "correct": 3,
-      "explanation": "Inclisiran is an siRNA that silences hepatic PCSK9 synthesis, given twice yearly to lower LDL."
+      "correct": 1,
+      "explanation": "A quantal curve plots the fraction of a population responding; ED50 is the dose effective in 50%."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 31 Oct 2026*\n\n🎓 *MBBS* (CNS)\nQ: Diazepam enhances the action of which inhibitory neurotransmitter?\nAns: GABA\nWhy: Benzodiazepines enhance GABA-A receptor activity (increase chloride channel opening frequency).\n\n🌍 *FMGE* (CNS)\nQ: Carbamazepine is the drug of choice for?\nAns: Trigeminal neuralgia\nWhy: Carbamazepine is first-line for trigeminal neuralgia and focal seizures; blocks Na+ channels.\n\n🩺 *NEET PG* (CNS)\nQ: Levetiracetam acts by binding to which synaptic protein?\nAns: SV2A\nWhy: Levetiracetam binds synaptic vesicle protein SV2A, modulating neurotransmitter release; broad-spectrum.\n\n🏥 *INI-CET* (CNS)\nQ: Why is flumazenil avoided in mixed overdose with tricyclic antidepressants?\nAns: Removing benzodiazepine protection may unmask TCA-induced seizures\nWhy: Benzodiazepines protect against TCA seizures; flumazenil can precipitate them in mixed overdose.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Inclisiran lowers LDL cholesterol as a?\nAns: Small interfering RNA (siRNA) targeting PCSK9\nWhy: Inclisiran is an siRNA that silences hepatic PCSK9 synthesis, given twice yearly to lower LDL.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2031%20Oct%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28CNS%29%0AQ%3A%20Diazepam%20enhances%20the%20action%20of%20which%20inhibitory%20neurotransmitter%3F%0AAns%3A%20GABA%0AWhy%3A%20Benzodiazepines%20enhance%20GABA-A%20receptor%20activity%20%28increase%20chloride%20channel%20opening%20frequency%29.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28CNS%29%0AQ%3A%20Carbamazepine%20is%20the%20drug%20of%20choice%20for%3F%0AAns%3A%20Trigeminal%20neuralgia%0AWhy%3A%20Carbamazepine%20is%20first-line%20for%20trigeminal%20neuralgia%20and%20focal%20seizures%3B%20blocks%20Na%2B%20channels.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28CNS%29%0AQ%3A%20Levetiracetam%20acts%20by%20binding%20to%20which%20synaptic%20protein%3F%0AAns%3A%20SV2A%0AWhy%3A%20Levetiracetam%20binds%20synaptic%20vesicle%20protein%20SV2A%2C%20modulating%20neurotransmitter%20release%3B%20broad-spectrum.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28CNS%29%0AQ%3A%20Why%20is%20flumazenil%20avoided%20in%20mixed%20overdose%20with%20tricyclic%20antidepressants%3F%0AAns%3A%20Removing%20benzodiazepine%20protection%20may%20unmask%20TCA-induced%20seizures%0AWhy%3A%20Benzodiazepines%20protect%20against%20TCA%20seizures%3B%20flumazenil%20can%20precipitate%20them%20in%20mixed%20overdose.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Inclisiran%20lowers%20LDL%20cholesterol%20as%20a%3F%0AAns%3A%20Small%20interfering%20RNA%20%28siRNA%29%20targeting%20PCSK9%0AWhy%3A%20Inclisiran%20is%20an%20siRNA%20that%20silences%20hepatic%20PCSK9%20synthesis%2C%20given%20twice%20yearly%20to%20lower%20LDL.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 01 Nov 2026*\n\n🎓 *MBBS* (Autacoids & NSAIDs)\nQ: Aspirin irreversibly inhibits which enzyme?\nAns: Cyclo-oxygenase\nWhy: Aspirin irreversibly acetylates cyclo-oxygenase (COX), reducing prostaglandins and thromboxane.\n\n🌍 *FMGE* (Autacoids & NSAIDs)\nQ: Reye's syndrome in children is linked to which drug in viral fevers?\nAns: Aspirin\nWhy: Aspirin is avoided in children with viral illness due to risk of Reye's syndrome (encephalopathy, hepatic failure).\n\n🩺 *NEET PG* (Autacoids & NSAIDs)\nQ: Celecoxib has lower GI risk than non-selective NSAIDs but may increase?\nAns: Cardiovascular thrombotic events\nWhy: Selective COX-2 inhibition reduces protective prostacyclin relative to thromboxane, raising CV risk.\n\n🏥 *INI-CET* (Autacoids & NSAIDs)\nQ: Why does aspirin cause a prolonged antiplatelet effect lasting ~7-10 days?\nAns: Irreversible COX-1 acetylation; platelets cannot resynthesise COX\nWhy: Platelets lack nuclei, so irreversibly inhibited COX cannot be replaced until new platelets form (~7-10 days).\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: The ED50 obtained from a quantal dose-response curve measures?\nAns: Dose effective in 50% of a population\nWhy: A quantal curve plots the fraction of a population responding; ED50 is the dose effective in 50%.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2001%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Aspirin%20irreversibly%20inhibits%20which%20enzyme%3F%0AAns%3A%20Cyclo-oxygenase%0AWhy%3A%20Aspirin%20irreversibly%20acetylates%20cyclo-oxygenase%20%28COX%29%2C%20reducing%20prostaglandins%20and%20thromboxane.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Reye%27s%20syndrome%20in%20children%20is%20linked%20to%20which%20drug%20in%20viral%20fevers%3F%0AAns%3A%20Aspirin%0AWhy%3A%20Aspirin%20is%20avoided%20in%20children%20with%20viral%20illness%20due%20to%20risk%20of%20Reye%27s%20syndrome%20%28encephalopathy%2C%20hepatic%20failure%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Celecoxib%20has%20lower%20GI%20risk%20than%20non-selective%20NSAIDs%20but%20may%20increase%3F%0AAns%3A%20Cardiovascular%20thrombotic%20events%0AWhy%3A%20Selective%20COX-2%20inhibition%20reduces%20protective%20prostacyclin%20relative%20to%20thromboxane%2C%20raising%20CV%20risk.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Why%20does%20aspirin%20cause%20a%20prolonged%20antiplatelet%20effect%20lasting%20~7-10%20days%3F%0AAns%3A%20Irreversible%20COX-1%20acetylation%3B%20platelets%20cannot%20resynthesise%20COX%0AWhy%3A%20Platelets%20lack%20nuclei%2C%20so%20irreversibly%20inhibited%20COX%20cannot%20be%20replaced%20until%20new%20platelets%20form%20%28~7-10%20days%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20The%20ED50%20obtained%20from%20a%20quantal%20dose-response%20curve%20measures%3F%0AAns%3A%20Dose%20effective%20in%2050%25%20of%20a%20population%0AWhy%3A%20A%20quantal%20curve%20plots%20the%20fraction%20of%20a%20population%20responding%3B%20ED50%20is%20the%20dose%20effective%20in%2050%25.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
