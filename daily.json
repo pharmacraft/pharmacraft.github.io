@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Aspirin irreversibly inhibits which enzyme?",
+      "topic": "Respiratory",
+      "question": "Salbutamol relieves acute asthma by acting as a?",
       "options": [
-        "Cyclo-oxygenase",
-        "Thromboxane synthase",
-        "Phospholipase A2",
-        "Lipoxygenase"
+        "Beta-2 agonist",
+        "Muscarinic agonist",
+        "Leukotriene blocker",
+        "Beta blocker"
       ],
       "correct": 0,
-      "explanation": "Aspirin irreversibly acetylates cyclo-oxygenase (COX), reducing prostaglandins and thromboxane."
+      "explanation": "Salbutamol is a short-acting beta-2 agonist (SABA) causing bronchodilation - the reliever of choice."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Reye's syndrome in children is linked to which drug in viral fevers?",
+      "topic": "Respiratory",
+      "question": "The reliever of choice in an acute asthma attack is inhaled?",
       "options": [
-        "Diclofenac",
-        "Aspirin",
-        "Paracetamol",
-        "Ibuprofen"
+        "Montelukast",
+        "Salmeterol",
+        "Salbutamol",
+        "Budesonide"
       ],
-      "correct": 1,
-      "explanation": "Aspirin is avoided in children with viral illness due to risk of Reye's syndrome (encephalopathy, hepatic failure)."
+      "correct": 2,
+      "explanation": "Inhaled salbutamol (SABA) gives rapid bronchodilation and is the reliever of choice in acute asthma."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Celecoxib has lower GI risk than non-selective NSAIDs but may increase?",
+      "topic": "Respiratory",
+      "question": "Omalizumab is used in severe allergic asthma and targets?",
       "options": [
-        "Bleeding",
-        "Hypoglycaemia",
-        "Cardiovascular thrombotic events",
-        "Infection"
+        "TSLP",
+        "IL-4 receptor",
+        "Free IgE",
+        "IL-5"
       ],
       "correct": 2,
-      "explanation": "Selective COX-2 inhibition reduces protective prostacyclin relative to thromboxane, raising CV risk."
+      "explanation": "Omalizumab is an anti-IgE monoclonal antibody reducing allergic asthma exacerbations."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Why does aspirin cause a prolonged antiplatelet effect lasting ~7-10 days?",
+      "topic": "Respiratory",
+      "question": "Why can non-selective beta-blockers be dangerous in asthma even if cardioselective seems safer?",
       "options": [
-        "Tissue binding",
-        "Irreversible COX-1 acetylation; platelets cannot resynthesise COX",
-        "Enterohepatic recycling",
-        "Long half-life"
+        "They cause oedema",
+        "They cause cough",
+        "Beta-2 blockade can trigger bronchoconstriction",
+        "They thin secretions"
       ],
-      "correct": 1,
-      "explanation": "Platelets lack nuclei, so irreversibly inhibited COX cannot be replaced until new platelets form (~7-10 days)."
+      "correct": 2,
+      "explanation": "Beta-2 blockade removes bronchodilator tone; even cardioselective agents lose selectivity at higher doses."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "The ED50 obtained from a quantal dose-response curve measures?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "Phase III trials are primarily designed to establish?",
       "options": [
-        "Potency in an individual",
-        "Dose effective in 50% of a population",
-        "Receptor affinity",
-        "Maximal efficacy"
+        "Confirmatory efficacy and safety in large populations",
+        "Dose range only",
+        "Mechanism",
+        "Pharmacokinetics"
       ],
-      "correct": 1,
-      "explanation": "A quantal curve plots the fraction of a population responding; ED50 is the dose effective in 50%."
+      "correct": 0,
+      "explanation": "Phase III randomised controlled trials confirm efficacy and monitor adverse effects in large patient groups."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 01 Nov 2026*\n\n🎓 *MBBS* (Autacoids & NSAIDs)\nQ: Aspirin irreversibly inhibits which enzyme?\nAns: Cyclo-oxygenase\nWhy: Aspirin irreversibly acetylates cyclo-oxygenase (COX), reducing prostaglandins and thromboxane.\n\n🌍 *FMGE* (Autacoids & NSAIDs)\nQ: Reye's syndrome in children is linked to which drug in viral fevers?\nAns: Aspirin\nWhy: Aspirin is avoided in children with viral illness due to risk of Reye's syndrome (encephalopathy, hepatic failure).\n\n🩺 *NEET PG* (Autacoids & NSAIDs)\nQ: Celecoxib has lower GI risk than non-selective NSAIDs but may increase?\nAns: Cardiovascular thrombotic events\nWhy: Selective COX-2 inhibition reduces protective prostacyclin relative to thromboxane, raising CV risk.\n\n🏥 *INI-CET* (Autacoids & NSAIDs)\nQ: Why does aspirin cause a prolonged antiplatelet effect lasting ~7-10 days?\nAns: Irreversible COX-1 acetylation; platelets cannot resynthesise COX\nWhy: Platelets lack nuclei, so irreversibly inhibited COX cannot be replaced until new platelets form (~7-10 days).\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: The ED50 obtained from a quantal dose-response curve measures?\nAns: Dose effective in 50% of a population\nWhy: A quantal curve plots the fraction of a population responding; ED50 is the dose effective in 50%.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2001%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Aspirin%20irreversibly%20inhibits%20which%20enzyme%3F%0AAns%3A%20Cyclo-oxygenase%0AWhy%3A%20Aspirin%20irreversibly%20acetylates%20cyclo-oxygenase%20%28COX%29%2C%20reducing%20prostaglandins%20and%20thromboxane.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Reye%27s%20syndrome%20in%20children%20is%20linked%20to%20which%20drug%20in%20viral%20fevers%3F%0AAns%3A%20Aspirin%0AWhy%3A%20Aspirin%20is%20avoided%20in%20children%20with%20viral%20illness%20due%20to%20risk%20of%20Reye%27s%20syndrome%20%28encephalopathy%2C%20hepatic%20failure%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Celecoxib%20has%20lower%20GI%20risk%20than%20non-selective%20NSAIDs%20but%20may%20increase%3F%0AAns%3A%20Cardiovascular%20thrombotic%20events%0AWhy%3A%20Selective%20COX-2%20inhibition%20reduces%20protective%20prostacyclin%20relative%20to%20thromboxane%2C%20raising%20CV%20risk.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Why%20does%20aspirin%20cause%20a%20prolonged%20antiplatelet%20effect%20lasting%20~7-10%20days%3F%0AAns%3A%20Irreversible%20COX-1%20acetylation%3B%20platelets%20cannot%20resynthesise%20COX%0AWhy%3A%20Platelets%20lack%20nuclei%2C%20so%20irreversibly%20inhibited%20COX%20cannot%20be%20replaced%20until%20new%20platelets%20form%20%28~7-10%20days%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20The%20ED50%20obtained%20from%20a%20quantal%20dose-response%20curve%20measures%3F%0AAns%3A%20Dose%20effective%20in%2050%25%20of%20a%20population%0AWhy%3A%20A%20quantal%20curve%20plots%20the%20fraction%20of%20a%20population%20responding%3B%20ED50%20is%20the%20dose%20effective%20in%2050%25.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 02 Nov 2026*\n\n🎓 *MBBS* (Respiratory)\nQ: Salbutamol relieves acute asthma by acting as a?\nAns: Beta-2 agonist\nWhy: Salbutamol is a short-acting beta-2 agonist (SABA) causing bronchodilation - the reliever of choice.\n\n🌍 *FMGE* (Respiratory)\nQ: The reliever of choice in an acute asthma attack is inhaled?\nAns: Salbutamol\nWhy: Inhaled salbutamol (SABA) gives rapid bronchodilation and is the reliever of choice in acute asthma.\n\n🩺 *NEET PG* (Respiratory)\nQ: Omalizumab is used in severe allergic asthma and targets?\nAns: Free IgE\nWhy: Omalizumab is an anti-IgE monoclonal antibody reducing allergic asthma exacerbations.\n\n🏥 *INI-CET* (Respiratory)\nQ: Why can non-selective beta-blockers be dangerous in asthma even if cardioselective seems safer?\nAns: Beta-2 blockade can trigger bronchoconstriction\nWhy: Beta-2 blockade removes bronchodilator tone; even cardioselective agents lose selectivity at higher doses.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: Phase III trials are primarily designed to establish?\nAns: Confirmatory efficacy and safety in large populations\nWhy: Phase III randomised controlled trials confirm efficacy and monitor adverse effects in large patient groups.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2002%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Respiratory%29%0AQ%3A%20Salbutamol%20relieves%20acute%20asthma%20by%20acting%20as%20a%3F%0AAns%3A%20Beta-2%20agonist%0AWhy%3A%20Salbutamol%20is%20a%20short-acting%20beta-2%20agonist%20%28SABA%29%20causing%20bronchodilation%20-%20the%20reliever%20of%20choice.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Respiratory%29%0AQ%3A%20The%20reliever%20of%20choice%20in%20an%20acute%20asthma%20attack%20is%20inhaled%3F%0AAns%3A%20Salbutamol%0AWhy%3A%20Inhaled%20salbutamol%20%28SABA%29%20gives%20rapid%20bronchodilation%20and%20is%20the%20reliever%20of%20choice%20in%20acute%20asthma.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Respiratory%29%0AQ%3A%20Omalizumab%20is%20used%20in%20severe%20allergic%20asthma%20and%20targets%3F%0AAns%3A%20Free%20IgE%0AWhy%3A%20Omalizumab%20is%20an%20anti-IgE%20monoclonal%20antibody%20reducing%20allergic%20asthma%20exacerbations.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Respiratory%29%0AQ%3A%20Why%20can%20non-selective%20beta-blockers%20be%20dangerous%20in%20asthma%20even%20if%20cardioselective%20seems%20safer%3F%0AAns%3A%20Beta-2%20blockade%20can%20trigger%20bronchoconstriction%0AWhy%3A%20Beta-2%20blockade%20removes%20bronchodilator%20tone%3B%20even%20cardioselective%20agents%20lose%20selectivity%20at%20higher%20doses.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20Phase%20III%20trials%20are%20primarily%20designed%20to%20establish%3F%0AAns%3A%20Confirmatory%20efficacy%20and%20safety%20in%20large%20populations%0AWhy%3A%20Phase%20III%20randomised%20controlled%20trials%20confirm%20efficacy%20and%20monitor%20adverse%20effects%20in%20large%20patient%20groups.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

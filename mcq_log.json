@@ -274,6 +274,61 @@
      "stem": "The ED50 obtained from a quantal dose-response curve measures?"
     }
    ]
+  },
+  {
+   "date": "2026-11-02",
+   "source": "bank",
+   "topic_index": 5,
+   "md_paper_index": 1,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "fe5b4e0d1cfe",
+     "stem": "Salbutamol relieves acute asthma by acting as a?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "4ff70327888d",
+     "stem": "The reliever of choice in an acute asthma attack is inhaled?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "f4a8fc280413",
+     "stem": "Omalizumab is used in severe allergic asthma and targets?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "de538062cdfc",
+     "stem": "Why can non-selective beta-blockers be dangerous in asthma even if cardioselective seems safer?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "7a3f4097bd85",
+     "stem": "Phase III trials are primarily designed to establish?"
+    }
+   ]
   }
  ]
 }
