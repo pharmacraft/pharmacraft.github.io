@@ -329,6 +329,61 @@
      "stem": "Phase III trials are primarily designed to establish?"
     }
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "source": "bank",
+   "topic_index": 6,
+   "md_paper_index": 2,
+   "case_slot": 1,
+   "ra_slot": 3,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "fe6e9dd504d7",
+     "stem": "Omeprazole reduces gastric acid by inhibiting the?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "dc28e35f353f",
+     "stem": "Which PPI is commonly used in peptic ulcer disease?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "d3e333205cff",
+     "stem": "Vonoprazan suppresses acid as a?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "191ffb916783",
+     "stem": "Why does long-term PPI use increase fracture and infection risk?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "b8ed9f51f035",
+     "stem": "Vaughan-Williams class III antiarrhythmics act mainly by blocking?"
+    }
+   ]
   }
  ]
 }

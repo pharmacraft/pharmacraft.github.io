@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Respiratory",
-      "question": "Salbutamol relieves acute asthma by acting as a?",
+      "topic": "GIT",
+      "question": "Omeprazole reduces gastric acid by inhibiting the?",
       "options": [
-        "Beta-2 agonist",
-        "Muscarinic agonist",
-        "Leukotriene blocker",
-        "Beta blocker"
+        "Proton pump (H+/K+ ATPase)",
+        "H2 receptor",
+        "Gastrin receptor",
+        "Muscarinic receptor"
       ],
       "correct": 0,
-      "explanation": "Salbutamol is a short-acting beta-2 agonist (SABA) causing bronchodilation - the reliever of choice."
+      "explanation": "Omeprazole is a proton pump inhibitor, irreversibly blocking H+/K+ ATPase in parietal cells."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Respiratory",
-      "question": "The reliever of choice in an acute asthma attack is inhaled?",
+      "topic": "GIT",
+      "question": "Which PPI is commonly used in peptic ulcer disease?",
       "options": [
-        "Montelukast",
-        "Salmeterol",
-        "Salbutamol",
-        "Budesonide"
+        "Omeprazole",
+        "Ranitidine",
+        "Misoprostol",
+        "Sucralfate"
       ],
-      "correct": 2,
-      "explanation": "Inhaled salbutamol (SABA) gives rapid bronchodilation and is the reliever of choice in acute asthma."
+      "correct": 0,
+      "explanation": "Omeprazole and other PPIs provide potent, long-lasting acid suppression for peptic ulcers/GERD."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Respiratory",
-      "question": "Omalizumab is used in severe allergic asthma and targets?",
+      "topic": "GIT",
+      "question": "Vonoprazan suppresses acid as a?",
       "options": [
-        "TSLP",
-        "IL-4 receptor",
-        "Free IgE",
-        "IL-5"
+        "Potassium-competitive acid blocker",
+        "Antacid",
+        "Proton pump inhibitor (irreversible)",
+        "H2 blocker"
       ],
-      "correct": 2,
-      "explanation": "Omalizumab is an anti-IgE monoclonal antibody reducing allergic asthma exacerbations."
+      "correct": 0,
+      "explanation": "Vonoprazan is a potassium-competitive acid blocker (P-CAB) giving faster, more sustained acid suppression than PPIs."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Respiratory",
-      "question": "Why can non-selective beta-blockers be dangerous in asthma even if cardioselective seems safer?",
+      "topic": "GIT",
+      "question": "Why does long-term PPI use increase fracture and infection risk?",
       "options": [
-        "They cause oedema",
-        "They cause cough",
-        "Beta-2 blockade can trigger bronchoconstriction",
-        "They thin secretions"
+        "Reduced calcium/B12 absorption and altered gut flora",
+        "Hormonal effect",
+        "Direct bone toxicity",
+        "Renal loss"
       ],
-      "correct": 2,
-      "explanation": "Beta-2 blockade removes bronchodilator tone; even cardioselective agents lose selectivity at higher doses."
+      "correct": 0,
+      "explanation": "Prolonged acid suppression impairs calcium/B12 absorption and raises enteric infection (C. difficile) risk."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "Phase III trials are primarily designed to establish?",
+      "topic": "Paper III: Systemic",
+      "question": "Vaughan-Williams class III antiarrhythmics act mainly by blocking?",
       "options": [
-        "Confirmatory efficacy and safety in large populations",
-        "Dose range only",
-        "Mechanism",
-        "Pharmacokinetics"
+        "Sodium channels",
+        "Calcium channels",
+        "Potassium channels (prolonging repolarisation)",
+        "Beta receptors"
       ],
-      "correct": 0,
-      "explanation": "Phase III randomised controlled trials confirm efficacy and monitor adverse effects in large patient groups."
+      "correct": 2,
+      "explanation": "Class III agents (amiodarone, sotalol) block K+ channels, prolonging the action potential and refractory period."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 02 Nov 2026*\n\n🎓 *MBBS* (Respiratory)\nQ: Salbutamol relieves acute asthma by acting as a?\nAns: Beta-2 agonist\nWhy: Salbutamol is a short-acting beta-2 agonist (SABA) causing bronchodilation - the reliever of choice.\n\n🌍 *FMGE* (Respiratory)\nQ: The reliever of choice in an acute asthma attack is inhaled?\nAns: Salbutamol\nWhy: Inhaled salbutamol (SABA) gives rapid bronchodilation and is the reliever of choice in acute asthma.\n\n🩺 *NEET PG* (Respiratory)\nQ: Omalizumab is used in severe allergic asthma and targets?\nAns: Free IgE\nWhy: Omalizumab is an anti-IgE monoclonal antibody reducing allergic asthma exacerbations.\n\n🏥 *INI-CET* (Respiratory)\nQ: Why can non-selective beta-blockers be dangerous in asthma even if cardioselective seems safer?\nAns: Beta-2 blockade can trigger bronchoconstriction\nWhy: Beta-2 blockade removes bronchodilator tone; even cardioselective agents lose selectivity at higher doses.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: Phase III trials are primarily designed to establish?\nAns: Confirmatory efficacy and safety in large populations\nWhy: Phase III randomised controlled trials confirm efficacy and monitor adverse effects in large patient groups.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2002%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Respiratory%29%0AQ%3A%20Salbutamol%20relieves%20acute%20asthma%20by%20acting%20as%20a%3F%0AAns%3A%20Beta-2%20agonist%0AWhy%3A%20Salbutamol%20is%20a%20short-acting%20beta-2%20agonist%20%28SABA%29%20causing%20bronchodilation%20-%20the%20reliever%20of%20choice.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Respiratory%29%0AQ%3A%20The%20reliever%20of%20choice%20in%20an%20acute%20asthma%20attack%20is%20inhaled%3F%0AAns%3A%20Salbutamol%0AWhy%3A%20Inhaled%20salbutamol%20%28SABA%29%20gives%20rapid%20bronchodilation%20and%20is%20the%20reliever%20of%20choice%20in%20acute%20asthma.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Respiratory%29%0AQ%3A%20Omalizumab%20is%20used%20in%20severe%20allergic%20asthma%20and%20targets%3F%0AAns%3A%20Free%20IgE%0AWhy%3A%20Omalizumab%20is%20an%20anti-IgE%20monoclonal%20antibody%20reducing%20allergic%20asthma%20exacerbations.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Respiratory%29%0AQ%3A%20Why%20can%20non-selective%20beta-blockers%20be%20dangerous%20in%20asthma%20even%20if%20cardioselective%20seems%20safer%3F%0AAns%3A%20Beta-2%20blockade%20can%20trigger%20bronchoconstriction%0AWhy%3A%20Beta-2%20blockade%20removes%20bronchodilator%20tone%3B%20even%20cardioselective%20agents%20lose%20selectivity%20at%20higher%20doses.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20Phase%20III%20trials%20are%20primarily%20designed%20to%20establish%3F%0AAns%3A%20Confirmatory%20efficacy%20and%20safety%20in%20large%20populations%0AWhy%3A%20Phase%20III%20randomised%20controlled%20trials%20confirm%20efficacy%20and%20monitor%20adverse%20effects%20in%20large%20patient%20groups.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 03 Nov 2026*\n\n🎓 *MBBS* (GIT)\nQ: Omeprazole reduces gastric acid by inhibiting the?\nAns: Proton pump (H+/K+ ATPase)\nWhy: Omeprazole is a proton pump inhibitor, irreversibly blocking H+/K+ ATPase in parietal cells.\n\n🌍 *FMGE* (GIT)\nQ: Which PPI is commonly used in peptic ulcer disease?\nAns: Omeprazole\nWhy: Omeprazole and other PPIs provide potent, long-lasting acid suppression for peptic ulcers/GERD.\n\n🩺 *NEET PG* (GIT)\nQ: Vonoprazan suppresses acid as a?\nAns: Potassium-competitive acid blocker\nWhy: Vonoprazan is a potassium-competitive acid blocker (P-CAB) giving faster, more sustained acid suppression than PPIs.\n\n🏥 *INI-CET* (GIT)\nQ: Why does long-term PPI use increase fracture and infection risk?\nAns: Reduced calcium/B12 absorption and altered gut flora\nWhy: Prolonged acid suppression impairs calcium/B12 absorption and raises enteric infection (C. difficile) risk.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Vaughan-Williams class III antiarrhythmics act mainly by blocking?\nAns: Potassium channels (prolonging repolarisation)\nWhy: Class III agents (amiodarone, sotalol) block K+ channels, prolonging the action potential and refractory period.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2003%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28GIT%29%0AQ%3A%20Omeprazole%20reduces%20gastric%20acid%20by%20inhibiting%20the%3F%0AAns%3A%20Proton%20pump%20%28H%2B/K%2B%20ATPase%29%0AWhy%3A%20Omeprazole%20is%20a%20proton%20pump%20inhibitor%2C%20irreversibly%20blocking%20H%2B/K%2B%20ATPase%20in%20parietal%20cells.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28GIT%29%0AQ%3A%20Which%20PPI%20is%20commonly%20used%20in%20peptic%20ulcer%20disease%3F%0AAns%3A%20Omeprazole%0AWhy%3A%20Omeprazole%20and%20other%20PPIs%20provide%20potent%2C%20long-lasting%20acid%20suppression%20for%20peptic%20ulcers/GERD.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28GIT%29%0AQ%3A%20Vonoprazan%20suppresses%20acid%20as%20a%3F%0AAns%3A%20Potassium-competitive%20acid%20blocker%0AWhy%3A%20Vonoprazan%20is%20a%20potassium-competitive%20acid%20blocker%20%28P-CAB%29%20giving%20faster%2C%20more%20sustained%20acid%20suppression%20than%20PPIs.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28GIT%29%0AQ%3A%20Why%20does%20long-term%20PPI%20use%20increase%20fracture%20and%20infection%20risk%3F%0AAns%3A%20Reduced%20calcium/B12%20absorption%20and%20altered%20gut%20flora%0AWhy%3A%20Prolonged%20acid%20suppression%20impairs%20calcium/B12%20absorption%20and%20raises%20enteric%20infection%20%28C.%20difficile%29%20risk.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Vaughan-Williams%20class%20III%20antiarrhythmics%20act%20mainly%20by%20blocking%3F%0AAns%3A%20Potassium%20channels%20%28prolonging%20repolarisation%29%0AWhy%3A%20Class%20III%20agents%20%28amiodarone%2C%20sotalol%29%20block%20K%2B%20channels%2C%20prolonging%20the%20action%20potential%20and%20refractory%20period.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
