@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "GIT",
-      "question": "Omeprazole reduces gastric acid by inhibiting the?",
+      "topic": "Endocrine",
+      "question": "Metformin is the first-line drug for type 2 diabetes and acts by?",
       "options": [
-        "Proton pump (H+/K+ ATPase)",
-        "H2 receptor",
-        "Gastrin receptor",
-        "Muscarinic receptor"
+        "Blocking glucose absorption",
+        "Stimulating insulin release",
+        "Increasing glucagon",
+        "Reducing hepatic glucose output"
       ],
-      "correct": 0,
-      "explanation": "Omeprazole is a proton pump inhibitor, irreversibly blocking H+/K+ ATPase in parietal cells."
+      "correct": 3,
+      "explanation": "Metformin (a biguanide) reduces hepatic gluconeogenesis and improves insulin sensitivity; no hypoglycaemia alone."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "GIT",
-      "question": "Which PPI is commonly used in peptic ulcer disease?",
+      "topic": "Endocrine",
+      "question": "Which sulfonylurea has the highest risk of hypoglycaemia in the elderly?",
       "options": [
-        "Omeprazole",
-        "Ranitidine",
-        "Misoprostol",
-        "Sucralfate"
+        "Tolbutamide",
+        "Glimepiride",
+        "Glibenclamide",
+        "Gliclazide"
       ],
-      "correct": 0,
-      "explanation": "Omeprazole and other PPIs provide potent, long-lasting acid suppression for peptic ulcers/GERD."
+      "correct": 2,
+      "explanation": "Glibenclamide is long-acting with active metabolites, causing prolonged hypoglycaemia in the elderly."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "GIT",
-      "question": "Vonoprazan suppresses acid as a?",
+      "topic": "Endocrine",
+      "question": "SGLT2 inhibitors (empagliflozin) also reduce the risk of?",
       "options": [
-        "Potassium-competitive acid blocker",
-        "Antacid",
-        "Proton pump inhibitor (irreversible)",
-        "H2 blocker"
+        "Weight gain",
+        "Hyperkalaemia",
+        "Heart failure hospitalisation",
+        "Hypoglycaemia"
       ],
-      "correct": 0,
-      "explanation": "Vonoprazan is a potassium-competitive acid blocker (P-CAB) giving faster, more sustained acid suppression than PPIs."
+      "correct": 2,
+      "explanation": "SGLT2 inhibitors reduce heart failure hospitalisation and slow CKD progression, beyond glucose lowering."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "GIT",
-      "question": "Why does long-term PPI use increase fracture and infection risk?",
+      "topic": "Endocrine",
+      "question": "Why do SGLT2 inhibitors cause an initial small rise in creatinine?",
       "options": [
-        "Reduced calcium/B12 absorption and altered gut flora",
-        "Hormonal effect",
-        "Direct bone toxicity",
-        "Renal loss"
+        "Reduced intraglomerular pressure (tubuloglomerular feedback)",
+        "Dehydration only",
+        "Muscle breakdown",
+        "Nephrotoxicity"
       ],
       "correct": 0,
-      "explanation": "Prolonged acid suppression impairs calcium/B12 absorption and raises enteric infection (C. difficile) risk."
+      "explanation": "SGLT2 inhibition restores tubuloglomerular feedback, reducing hyperfiltration; the initial creatinine rise is protective."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper III: Systemic",
-      "question": "Vaughan-Williams class III antiarrhythmics act mainly by blocking?",
+      "topic": "Paper IV: Recent Advances",
+      "question": "Semaglutide's marked weight-loss benefit is due to its action as a?",
       "options": [
-        "Sodium channels",
-        "Calcium channels",
-        "Potassium channels (prolonging repolarisation)",
-        "Beta receptors"
+        "Amylin analogue",
+        "SGLT2 inhibitor",
+        "GLP-1 receptor agonist",
+        "DPP-4 inhibitor"
       ],
       "correct": 2,
-      "explanation": "Class III agents (amiodarone, sotalol) block K+ channels, prolonging the action potential and refractory period."
+      "explanation": "Semaglutide is a GLP-1 receptor agonist that reduces appetite and body weight, approved for obesity."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 03 Nov 2026*\n\n🎓 *MBBS* (GIT)\nQ: Omeprazole reduces gastric acid by inhibiting the?\nAns: Proton pump (H+/K+ ATPase)\nWhy: Omeprazole is a proton pump inhibitor, irreversibly blocking H+/K+ ATPase in parietal cells.\n\n🌍 *FMGE* (GIT)\nQ: Which PPI is commonly used in peptic ulcer disease?\nAns: Omeprazole\nWhy: Omeprazole and other PPIs provide potent, long-lasting acid suppression for peptic ulcers/GERD.\n\n🩺 *NEET PG* (GIT)\nQ: Vonoprazan suppresses acid as a?\nAns: Potassium-competitive acid blocker\nWhy: Vonoprazan is a potassium-competitive acid blocker (P-CAB) giving faster, more sustained acid suppression than PPIs.\n\n🏥 *INI-CET* (GIT)\nQ: Why does long-term PPI use increase fracture and infection risk?\nAns: Reduced calcium/B12 absorption and altered gut flora\nWhy: Prolonged acid suppression impairs calcium/B12 absorption and raises enteric infection (C. difficile) risk.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Vaughan-Williams class III antiarrhythmics act mainly by blocking?\nAns: Potassium channels (prolonging repolarisation)\nWhy: Class III agents (amiodarone, sotalol) block K+ channels, prolonging the action potential and refractory period.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2003%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28GIT%29%0AQ%3A%20Omeprazole%20reduces%20gastric%20acid%20by%20inhibiting%20the%3F%0AAns%3A%20Proton%20pump%20%28H%2B/K%2B%20ATPase%29%0AWhy%3A%20Omeprazole%20is%20a%20proton%20pump%20inhibitor%2C%20irreversibly%20blocking%20H%2B/K%2B%20ATPase%20in%20parietal%20cells.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28GIT%29%0AQ%3A%20Which%20PPI%20is%20commonly%20used%20in%20peptic%20ulcer%20disease%3F%0AAns%3A%20Omeprazole%0AWhy%3A%20Omeprazole%20and%20other%20PPIs%20provide%20potent%2C%20long-lasting%20acid%20suppression%20for%20peptic%20ulcers/GERD.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28GIT%29%0AQ%3A%20Vonoprazan%20suppresses%20acid%20as%20a%3F%0AAns%3A%20Potassium-competitive%20acid%20blocker%0AWhy%3A%20Vonoprazan%20is%20a%20potassium-competitive%20acid%20blocker%20%28P-CAB%29%20giving%20faster%2C%20more%20sustained%20acid%20suppression%20than%20PPIs.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28GIT%29%0AQ%3A%20Why%20does%20long-term%20PPI%20use%20increase%20fracture%20and%20infection%20risk%3F%0AAns%3A%20Reduced%20calcium/B12%20absorption%20and%20altered%20gut%20flora%0AWhy%3A%20Prolonged%20acid%20suppression%20impairs%20calcium/B12%20absorption%20and%20raises%20enteric%20infection%20%28C.%20difficile%29%20risk.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Vaughan-Williams%20class%20III%20antiarrhythmics%20act%20mainly%20by%20blocking%3F%0AAns%3A%20Potassium%20channels%20%28prolonging%20repolarisation%29%0AWhy%3A%20Class%20III%20agents%20%28amiodarone%2C%20sotalol%29%20block%20K%2B%20channels%2C%20prolonging%20the%20action%20potential%20and%20refractory%20period.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 04 Nov 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: Metformin is the first-line drug for type 2 diabetes and acts by?\nAns: Reducing hepatic glucose output\nWhy: Metformin (a biguanide) reduces hepatic gluconeogenesis and improves insulin sensitivity; no hypoglycaemia alone.\n\n🌍 *FMGE* (Endocrine)\nQ: Which sulfonylurea has the highest risk of hypoglycaemia in the elderly?\nAns: Glibenclamide\nWhy: Glibenclamide is long-acting with active metabolites, causing prolonged hypoglycaemia in the elderly.\n\n🩺 *NEET PG* (Endocrine)\nQ: SGLT2 inhibitors (empagliflozin) also reduce the risk of?\nAns: Heart failure hospitalisation\nWhy: SGLT2 inhibitors reduce heart failure hospitalisation and slow CKD progression, beyond glucose lowering.\n\n🏥 *INI-CET* (Endocrine)\nQ: Why do SGLT2 inhibitors cause an initial small rise in creatinine?\nAns: Reduced intraglomerular pressure (tubuloglomerular feedback)\nWhy: SGLT2 inhibition restores tubuloglomerular feedback, reducing hyperfiltration; the initial creatinine rise is protective.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Semaglutide's marked weight-loss benefit is due to its action as a?\nAns: GLP-1 receptor agonist\nWhy: Semaglutide is a GLP-1 receptor agonist that reduces appetite and body weight, approved for obesity.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2004%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20Metformin%20is%20the%20first-line%20drug%20for%20type%202%20diabetes%20and%20acts%20by%3F%0AAns%3A%20Reducing%20hepatic%20glucose%20output%0AWhy%3A%20Metformin%20%28a%20biguanide%29%20reduces%20hepatic%20gluconeogenesis%20and%20improves%20insulin%20sensitivity%3B%20no%20hypoglycaemia%20alone.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Endocrine%29%0AQ%3A%20Which%20sulfonylurea%20has%20the%20highest%20risk%20of%20hypoglycaemia%20in%20the%20elderly%3F%0AAns%3A%20Glibenclamide%0AWhy%3A%20Glibenclamide%20is%20long-acting%20with%20active%20metabolites%2C%20causing%20prolonged%20hypoglycaemia%20in%20the%20elderly.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Endocrine%29%0AQ%3A%20SGLT2%20inhibitors%20%28empagliflozin%29%20also%20reduce%20the%20risk%20of%3F%0AAns%3A%20Heart%20failure%20hospitalisation%0AWhy%3A%20SGLT2%20inhibitors%20reduce%20heart%20failure%20hospitalisation%20and%20slow%20CKD%20progression%2C%20beyond%20glucose%20lowering.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Endocrine%29%0AQ%3A%20Why%20do%20SGLT2%20inhibitors%20cause%20an%20initial%20small%20rise%20in%20creatinine%3F%0AAns%3A%20Reduced%20intraglomerular%20pressure%20%28tubuloglomerular%20feedback%29%0AWhy%3A%20SGLT2%20inhibition%20restores%20tubuloglomerular%20feedback%2C%20reducing%20hyperfiltration%3B%20the%20initial%20creatinine%20rise%20is%20protective.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Semaglutide%27s%20marked%20weight-loss%20benefit%20is%20due%20to%20its%20action%20as%20a%3F%0AAns%3A%20GLP-1%20receptor%20agonist%0AWhy%3A%20Semaglutide%20is%20a%20GLP-1%20receptor%20agonist%20that%20reduces%20appetite%20and%20body%20weight%2C%20approved%20for%20obesity.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

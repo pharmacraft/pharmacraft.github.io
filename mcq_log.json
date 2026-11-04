@@ -384,6 +384,61 @@
      "stem": "Vaughan-Williams class III antiarrhythmics act mainly by blocking?"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "source": "bank",
+   "topic_index": 7,
+   "md_paper_index": 3,
+   "case_slot": 2,
+   "ra_slot": 4,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "ee2ea5cd6a25",
+     "stem": "Metformin is the first-line drug for type 2 diabetes and acts by?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "2ca3b65d640f",
+     "stem": "Which sulfonylurea has the highest risk of hypoglycaemia in the elderly?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "292085b8e6c7",
+     "stem": "SGLT2 inhibitors (empagliflozin) also reduce the risk of?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "054669718eaa",
+     "stem": "Why do SGLT2 inhibitors cause an initial small rise in creatinine?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "6c66a381bc8d",
+     "stem": "Semaglutide's marked weight-loss benefit is due to its action as a?"
+    }
+   ]
   }
  ]
 }
