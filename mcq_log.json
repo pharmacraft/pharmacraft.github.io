@@ -439,6 +439,61 @@
      "stem": "Semaglutide's marked weight-loss benefit is due to its action as a?"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "source": "bank",
+   "topic_index": 8,
+   "md_paper_index": 0,
+   "case_slot": 3,
+   "ra_slot": 0,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "977005233fbd",
+     "stem": "Penicillin acts by inhibiting synthesis of the bacterial?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "10f2ced96e71",
+     "stem": "Amoxicillin is combined with clavulanic acid to?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "3ee46824023e",
+     "stem": "Linezolid inhibits protein synthesis and can cause serotonin syndrome because it is a weak?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "016e1875fdd5",
+     "stem": "Why must vancomycin trough levels be monitored?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "30975e2c1ea2",
+     "stem": "Intrinsic activity of a full agonist is defined as?"
+    }
+   ]
   }
  ]
 }

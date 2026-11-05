@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Endocrine",
-      "question": "Metformin is the first-line drug for type 2 diabetes and acts by?",
+      "topic": "Antibacterials",
+      "question": "Penicillin acts by inhibiting synthesis of the bacterial?",
       "options": [
-        "Blocking glucose absorption",
-        "Stimulating insulin release",
-        "Increasing glucagon",
-        "Reducing hepatic glucose output"
+        "DNA",
+        "Protein",
+        "Cell membrane",
+        "Cell wall"
       ],
       "correct": 3,
-      "explanation": "Metformin (a biguanide) reduces hepatic gluconeogenesis and improves insulin sensitivity; no hypoglycaemia alone."
+      "explanation": "Beta-lactams like penicillin inhibit transpeptidase, blocking peptidoglycan (cell wall) synthesis."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Endocrine",
-      "question": "Which sulfonylurea has the highest risk of hypoglycaemia in the elderly?",
+      "topic": "Antibacterials",
+      "question": "Amoxicillin is combined with clavulanic acid to?",
       "options": [
-        "Tolbutamide",
-        "Glimepiride",
-        "Glibenclamide",
-        "Gliclazide"
+        "Increase absorption",
+        "Prolong half-life",
+        "Reduce toxicity",
+        "Inhibit beta-lactamase"
       ],
-      "correct": 2,
-      "explanation": "Glibenclamide is long-acting with active metabolites, causing prolonged hypoglycaemia in the elderly."
+      "correct": 3,
+      "explanation": "Clavulanic acid inhibits bacterial beta-lactamase, protecting amoxicillin from degradation."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Endocrine",
-      "question": "SGLT2 inhibitors (empagliflozin) also reduce the risk of?",
+      "topic": "Antibacterials",
+      "question": "Linezolid inhibits protein synthesis and can cause serotonin syndrome because it is a weak?",
       "options": [
-        "Weight gain",
-        "Hyperkalaemia",
-        "Heart failure hospitalisation",
-        "Hypoglycaemia"
+        "COMT inhibitor",
+        "SSRI",
+        "MAO inhibitor",
+        "DHFR inhibitor"
       ],
       "correct": 2,
-      "explanation": "SGLT2 inhibitors reduce heart failure hospitalisation and slow CKD progression, beyond glucose lowering."
+      "explanation": "Linezolid is a weak MAO inhibitor; combined with serotonergic drugs it can cause serotonin syndrome."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Endocrine",
-      "question": "Why do SGLT2 inhibitors cause an initial small rise in creatinine?",
+      "topic": "Antibacterials",
+      "question": "Why must vancomycin trough levels be monitored?",
       "options": [
-        "Reduced intraglomerular pressure (tubuloglomerular feedback)",
-        "Dehydration only",
-        "Muscle breakdown",
-        "Nephrotoxicity"
+        "Hepatotoxicity",
+        "Narrow therapeutic window with nephrotoxicity risk",
+        "Ototoxicity only",
+        "QT prolongation"
       ],
-      "correct": 0,
-      "explanation": "SGLT2 inhibition restores tubuloglomerular feedback, reducing hyperfiltration; the initial creatinine rise is protective."
+      "correct": 1,
+      "explanation": "Vancomycin has a narrow index; AUC/trough monitoring minimises nephrotoxicity and ensures efficacy."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper IV: Recent Advances",
-      "question": "Semaglutide's marked weight-loss benefit is due to its action as a?",
+      "topic": "Paper I: General/Experimental",
+      "question": "Intrinsic activity of a full agonist is defined as?",
       "options": [
-        "Amylin analogue",
-        "SGLT2 inhibitor",
-        "GLP-1 receptor agonist",
-        "DPP-4 inhibitor"
+        "Negative",
+        "Between 0 and 1",
+        "0",
+        "1"
       ],
-      "correct": 2,
-      "explanation": "Semaglutide is a GLP-1 receptor agonist that reduces appetite and body weight, approved for obesity."
+      "correct": 3,
+      "explanation": "Intrinsic activity (efficacy) is 1 for a full agonist, 0 for an antagonist, and between 0-1 for partial agonists."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 04 Nov 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: Metformin is the first-line drug for type 2 diabetes and acts by?\nAns: Reducing hepatic glucose output\nWhy: Metformin (a biguanide) reduces hepatic gluconeogenesis and improves insulin sensitivity; no hypoglycaemia alone.\n\n🌍 *FMGE* (Endocrine)\nQ: Which sulfonylurea has the highest risk of hypoglycaemia in the elderly?\nAns: Glibenclamide\nWhy: Glibenclamide is long-acting with active metabolites, causing prolonged hypoglycaemia in the elderly.\n\n🩺 *NEET PG* (Endocrine)\nQ: SGLT2 inhibitors (empagliflozin) also reduce the risk of?\nAns: Heart failure hospitalisation\nWhy: SGLT2 inhibitors reduce heart failure hospitalisation and slow CKD progression, beyond glucose lowering.\n\n🏥 *INI-CET* (Endocrine)\nQ: Why do SGLT2 inhibitors cause an initial small rise in creatinine?\nAns: Reduced intraglomerular pressure (tubuloglomerular feedback)\nWhy: SGLT2 inhibition restores tubuloglomerular feedback, reducing hyperfiltration; the initial creatinine rise is protective.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Semaglutide's marked weight-loss benefit is due to its action as a?\nAns: GLP-1 receptor agonist\nWhy: Semaglutide is a GLP-1 receptor agonist that reduces appetite and body weight, approved for obesity.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2004%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20Metformin%20is%20the%20first-line%20drug%20for%20type%202%20diabetes%20and%20acts%20by%3F%0AAns%3A%20Reducing%20hepatic%20glucose%20output%0AWhy%3A%20Metformin%20%28a%20biguanide%29%20reduces%20hepatic%20gluconeogenesis%20and%20improves%20insulin%20sensitivity%3B%20no%20hypoglycaemia%20alone.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Endocrine%29%0AQ%3A%20Which%20sulfonylurea%20has%20the%20highest%20risk%20of%20hypoglycaemia%20in%20the%20elderly%3F%0AAns%3A%20Glibenclamide%0AWhy%3A%20Glibenclamide%20is%20long-acting%20with%20active%20metabolites%2C%20causing%20prolonged%20hypoglycaemia%20in%20the%20elderly.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Endocrine%29%0AQ%3A%20SGLT2%20inhibitors%20%28empagliflozin%29%20also%20reduce%20the%20risk%20of%3F%0AAns%3A%20Heart%20failure%20hospitalisation%0AWhy%3A%20SGLT2%20inhibitors%20reduce%20heart%20failure%20hospitalisation%20and%20slow%20CKD%20progression%2C%20beyond%20glucose%20lowering.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Endocrine%29%0AQ%3A%20Why%20do%20SGLT2%20inhibitors%20cause%20an%20initial%20small%20rise%20in%20creatinine%3F%0AAns%3A%20Reduced%20intraglomerular%20pressure%20%28tubuloglomerular%20feedback%29%0AWhy%3A%20SGLT2%20inhibition%20restores%20tubuloglomerular%20feedback%2C%20reducing%20hyperfiltration%3B%20the%20initial%20creatinine%20rise%20is%20protective.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Semaglutide%27s%20marked%20weight-loss%20benefit%20is%20due%20to%20its%20action%20as%20a%3F%0AAns%3A%20GLP-1%20receptor%20agonist%0AWhy%3A%20Semaglutide%20is%20a%20GLP-1%20receptor%20agonist%20that%20reduces%20appetite%20and%20body%20weight%2C%20approved%20for%20obesity.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 05 Nov 2026*\n\n🎓 *MBBS* (Antibacterials)\nQ: Penicillin acts by inhibiting synthesis of the bacterial?\nAns: Cell wall\nWhy: Beta-lactams like penicillin inhibit transpeptidase, blocking peptidoglycan (cell wall) synthesis.\n\n🌍 *FMGE* (Antibacterials)\nQ: Amoxicillin is combined with clavulanic acid to?\nAns: Inhibit beta-lactamase\nWhy: Clavulanic acid inhibits bacterial beta-lactamase, protecting amoxicillin from degradation.\n\n🩺 *NEET PG* (Antibacterials)\nQ: Linezolid inhibits protein synthesis and can cause serotonin syndrome because it is a weak?\nAns: MAO inhibitor\nWhy: Linezolid is a weak MAO inhibitor; combined with serotonergic drugs it can cause serotonin syndrome.\n\n🏥 *INI-CET* (Antibacterials)\nQ: Why must vancomycin trough levels be monitored?\nAns: Narrow therapeutic window with nephrotoxicity risk\nWhy: Vancomycin has a narrow index; AUC/trough monitoring minimises nephrotoxicity and ensures efficacy.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: Intrinsic activity of a full agonist is defined as?\nAns: 1\nWhy: Intrinsic activity (efficacy) is 1 for a full agonist, 0 for an antagonist, and between 0-1 for partial agonists.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2005%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antibacterials%29%0AQ%3A%20Penicillin%20acts%20by%20inhibiting%20synthesis%20of%20the%20bacterial%3F%0AAns%3A%20Cell%20wall%0AWhy%3A%20Beta-lactams%20like%20penicillin%20inhibit%20transpeptidase%2C%20blocking%20peptidoglycan%20%28cell%20wall%29%20synthesis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antibacterials%29%0AQ%3A%20Amoxicillin%20is%20combined%20with%20clavulanic%20acid%20to%3F%0AAns%3A%20Inhibit%20beta-lactamase%0AWhy%3A%20Clavulanic%20acid%20inhibits%20bacterial%20beta-lactamase%2C%20protecting%20amoxicillin%20from%20degradation.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antibacterials%29%0AQ%3A%20Linezolid%20inhibits%20protein%20synthesis%20and%20can%20cause%20serotonin%20syndrome%20because%20it%20is%20a%20weak%3F%0AAns%3A%20MAO%20inhibitor%0AWhy%3A%20Linezolid%20is%20a%20weak%20MAO%20inhibitor%3B%20combined%20with%20serotonergic%20drugs%20it%20can%20cause%20serotonin%20syndrome.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antibacterials%29%0AQ%3A%20Why%20must%20vancomycin%20trough%20levels%20be%20monitored%3F%0AAns%3A%20Narrow%20therapeutic%20window%20with%20nephrotoxicity%20risk%0AWhy%3A%20Vancomycin%20has%20a%20narrow%20index%3B%20AUC/trough%20monitoring%20minimises%20nephrotoxicity%20and%20ensures%20efficacy.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20Intrinsic%20activity%20of%20a%20full%20agonist%20is%20defined%20as%3F%0AAns%3A%201%0AWhy%3A%20Intrinsic%20activity%20%28efficacy%29%20is%201%20for%20a%20full%20agonist%2C%200%20for%20an%20antagonist%2C%20and%20between%200-1%20for%20partial%20agonists.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
