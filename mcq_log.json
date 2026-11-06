@@ -494,6 +494,61 @@
      "stem": "Intrinsic activity of a full agonist is defined as?"
     }
    ]
+  },
+  {
+   "date": "2026-11-06",
+   "source": "bank",
+   "topic_index": 9,
+   "md_paper_index": 1,
+   "case_slot": 4,
+   "ra_slot": 1,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "f77af88da957",
+     "stem": "Acyclovir is used to treat infections caused by?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "32b2757b84da",
+     "stem": "Primaquine is added in vivax malaria to kill the?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "1fde166384e6",
+     "stem": "Which HIV drug class ends in '-vir' and blocks the viral protease?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "3aee9a63f0a9",
+     "stem": "Why is ritonavir added in low dose to other protease inhibitors?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "4a0311d9dc85",
+     "stem": "Post-marketing surveillance corresponds to which phase?"
+    }
+   ]
   }
  ]
 }

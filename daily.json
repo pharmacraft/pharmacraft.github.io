@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Antibacterials",
-      "question": "Penicillin acts by inhibiting synthesis of the bacterial?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Acyclovir is used to treat infections caused by?",
       "options": [
-        "DNA",
-        "Protein",
-        "Cell membrane",
-        "Cell wall"
+        "Hepatitis B",
+        "HIV",
+        "Influenza",
+        "Herpes simplex virus"
       ],
       "correct": 3,
-      "explanation": "Beta-lactams like penicillin inhibit transpeptidase, blocking peptidoglycan (cell wall) synthesis."
+      "explanation": "Acyclovir is phosphorylated by viral thymidine kinase and inhibits herpes viral DNA polymerase."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Antibacterials",
-      "question": "Amoxicillin is combined with clavulanic acid to?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Primaquine is added in vivax malaria to kill the?",
       "options": [
-        "Increase absorption",
-        "Prolong half-life",
-        "Reduce toxicity",
-        "Inhibit beta-lactamase"
+        "Schizonts in blood",
+        "Ring forms",
+        "Gametocytes only",
+        "Hypnozoites in the liver"
       ],
       "correct": 3,
-      "explanation": "Clavulanic acid inhibits bacterial beta-lactamase, protecting amoxicillin from degradation."
+      "explanation": "Primaquine eliminates dormant liver hypnozoites of P. vivax/ovale, preventing relapse."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Antibacterials",
-      "question": "Linezolid inhibits protein synthesis and can cause serotonin syndrome because it is a weak?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Which HIV drug class ends in '-vir' and blocks the viral protease?",
       "options": [
-        "COMT inhibitor",
-        "SSRI",
-        "MAO inhibitor",
-        "DHFR inhibitor"
+        "Protease inhibitors (e.g., ritonavir)",
+        "NRTIs",
+        "NNRTIs",
+        "Integrase inhibitors"
       ],
-      "correct": 2,
-      "explanation": "Linezolid is a weak MAO inhibitor; combined with serotonergic drugs it can cause serotonin syndrome."
+      "correct": 0,
+      "explanation": "Protease inhibitors (ritonavir, atazanavir) block maturation; ritonavir is also a CYP3A4 booster."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Antibacterials",
-      "question": "Why must vancomycin trough levels be monitored?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Why is ritonavir added in low dose to other protease inhibitors?",
       "options": [
-        "Hepatotoxicity",
-        "Narrow therapeutic window with nephrotoxicity risk",
-        "Ototoxicity only",
-        "QT prolongation"
+        "Reduces resistance directly",
+        "CYP3A4 inhibition boosts levels of the partner drug",
+        "Added antiviral effect",
+        "Improves absorption only"
       ],
       "correct": 1,
-      "explanation": "Vancomycin has a narrow index; AUC/trough monitoring minimises nephrotoxicity and ensures efficacy."
+      "explanation": "Ritonavir is a pharmacokinetic 'booster' inhibiting CYP3A4 to raise levels of co-administered protease inhibitors."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "Intrinsic activity of a full agonist is defined as?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "Post-marketing surveillance corresponds to which phase?",
       "options": [
-        "Negative",
-        "Between 0 and 1",
-        "0",
-        "1"
+        "Phase II",
+        "Phase I",
+        "Phase IV",
+        "Phase III"
       ],
-      "correct": 3,
-      "explanation": "Intrinsic activity (efficacy) is 1 for a full agonist, 0 for an antagonist, and between 0-1 for partial agonists."
+      "correct": 2,
+      "explanation": "Phase IV (post-marketing) detects rare/long-term adverse effects after approval."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 05 Nov 2026*\n\n🎓 *MBBS* (Antibacterials)\nQ: Penicillin acts by inhibiting synthesis of the bacterial?\nAns: Cell wall\nWhy: Beta-lactams like penicillin inhibit transpeptidase, blocking peptidoglycan (cell wall) synthesis.\n\n🌍 *FMGE* (Antibacterials)\nQ: Amoxicillin is combined with clavulanic acid to?\nAns: Inhibit beta-lactamase\nWhy: Clavulanic acid inhibits bacterial beta-lactamase, protecting amoxicillin from degradation.\n\n🩺 *NEET PG* (Antibacterials)\nQ: Linezolid inhibits protein synthesis and can cause serotonin syndrome because it is a weak?\nAns: MAO inhibitor\nWhy: Linezolid is a weak MAO inhibitor; combined with serotonergic drugs it can cause serotonin syndrome.\n\n🏥 *INI-CET* (Antibacterials)\nQ: Why must vancomycin trough levels be monitored?\nAns: Narrow therapeutic window with nephrotoxicity risk\nWhy: Vancomycin has a narrow index; AUC/trough monitoring minimises nephrotoxicity and ensures efficacy.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: Intrinsic activity of a full agonist is defined as?\nAns: 1\nWhy: Intrinsic activity (efficacy) is 1 for a full agonist, 0 for an antagonist, and between 0-1 for partial agonists.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2005%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antibacterials%29%0AQ%3A%20Penicillin%20acts%20by%20inhibiting%20synthesis%20of%20the%20bacterial%3F%0AAns%3A%20Cell%20wall%0AWhy%3A%20Beta-lactams%20like%20penicillin%20inhibit%20transpeptidase%2C%20blocking%20peptidoglycan%20%28cell%20wall%29%20synthesis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antibacterials%29%0AQ%3A%20Amoxicillin%20is%20combined%20with%20clavulanic%20acid%20to%3F%0AAns%3A%20Inhibit%20beta-lactamase%0AWhy%3A%20Clavulanic%20acid%20inhibits%20bacterial%20beta-lactamase%2C%20protecting%20amoxicillin%20from%20degradation.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antibacterials%29%0AQ%3A%20Linezolid%20inhibits%20protein%20synthesis%20and%20can%20cause%20serotonin%20syndrome%20because%20it%20is%20a%20weak%3F%0AAns%3A%20MAO%20inhibitor%0AWhy%3A%20Linezolid%20is%20a%20weak%20MAO%20inhibitor%3B%20combined%20with%20serotonergic%20drugs%20it%20can%20cause%20serotonin%20syndrome.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antibacterials%29%0AQ%3A%20Why%20must%20vancomycin%20trough%20levels%20be%20monitored%3F%0AAns%3A%20Narrow%20therapeutic%20window%20with%20nephrotoxicity%20risk%0AWhy%3A%20Vancomycin%20has%20a%20narrow%20index%3B%20AUC/trough%20monitoring%20minimises%20nephrotoxicity%20and%20ensures%20efficacy.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20Intrinsic%20activity%20of%20a%20full%20agonist%20is%20defined%20as%3F%0AAns%3A%201%0AWhy%3A%20Intrinsic%20activity%20%28efficacy%29%20is%201%20for%20a%20full%20agonist%2C%200%20for%20an%20antagonist%2C%20and%20between%200-1%20for%20partial%20agonists.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 06 Nov 2026*\n\n🎓 *MBBS* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Acyclovir is used to treat infections caused by?\nAns: Herpes simplex virus\nWhy: Acyclovir is phosphorylated by viral thymidine kinase and inhibits herpes viral DNA polymerase.\n\n🌍 *FMGE* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Primaquine is added in vivax malaria to kill the?\nAns: Hypnozoites in the liver\nWhy: Primaquine eliminates dormant liver hypnozoites of P. vivax/ovale, preventing relapse.\n\n🩺 *NEET PG* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Which HIV drug class ends in '-vir' and blocks the viral protease?\nAns: Protease inhibitors (e.g., ritonavir)\nWhy: Protease inhibitors (ritonavir, atazanavir) block maturation; ritonavir is also a CYP3A4 booster.\n\n🏥 *INI-CET* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Why is ritonavir added in low dose to other protease inhibitors?\nAns: CYP3A4 inhibition boosts levels of the partner drug\nWhy: Ritonavir is a pharmacokinetic 'booster' inhibiting CYP3A4 to raise levels of co-administered protease inhibitors.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: Post-marketing surveillance corresponds to which phase?\nAns: Phase IV\nWhy: Phase IV (post-marketing) detects rare/long-term adverse effects after approval.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2006%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Acyclovir%20is%20used%20to%20treat%20infections%20caused%20by%3F%0AAns%3A%20Herpes%20simplex%20virus%0AWhy%3A%20Acyclovir%20is%20phosphorylated%20by%20viral%20thymidine%20kinase%20and%20inhibits%20herpes%20viral%20DNA%20polymerase.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Primaquine%20is%20added%20in%20vivax%20malaria%20to%20kill%20the%3F%0AAns%3A%20Hypnozoites%20in%20the%20liver%0AWhy%3A%20Primaquine%20eliminates%20dormant%20liver%20hypnozoites%20of%20P.%20vivax/ovale%2C%20preventing%20relapse.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Which%20HIV%20drug%20class%20ends%20in%20%27-vir%27%20and%20blocks%20the%20viral%20protease%3F%0AAns%3A%20Protease%20inhibitors%20%28e.g.%2C%20ritonavir%29%0AWhy%3A%20Protease%20inhibitors%20%28ritonavir%2C%20atazanavir%29%20block%20maturation%3B%20ritonavir%20is%20also%20a%20CYP3A4%20booster.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Why%20is%20ritonavir%20added%20in%20low%20dose%20to%20other%20protease%20inhibitors%3F%0AAns%3A%20CYP3A4%20inhibition%20boosts%20levels%20of%20the%20partner%20drug%0AWhy%3A%20Ritonavir%20is%20a%20pharmacokinetic%20%27booster%27%20inhibiting%20CYP3A4%20to%20raise%20levels%20of%20co-administered%20protease%20inhibitors.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20Post-marketing%20surveillance%20corresponds%20to%20which%20phase%3F%0AAns%3A%20Phase%20IV%0AWhy%3A%20Phase%20IV%20%28post-marketing%29%20detects%20rare/long-term%20adverse%20effects%20after%20approval.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
