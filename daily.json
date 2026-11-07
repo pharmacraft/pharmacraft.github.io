@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Acyclovir is used to treat infections caused by?",
+      "topic": "Anticancer & Immuno",
+      "question": "Methotrexate inhibits which enzyme?",
       "options": [
-        "Hepatitis B",
-        "HIV",
-        "Influenza",
-        "Herpes simplex virus"
+        "Dihydrofolate reductase",
+        "Tyrosine kinase",
+        "Thymidylate synthase",
+        "Topoisomerase"
       ],
-      "correct": 3,
-      "explanation": "Acyclovir is phosphorylated by viral thymidine kinase and inhibits herpes viral DNA polymerase."
+      "correct": 0,
+      "explanation": "Methotrexate inhibits dihydrofolate reductase, reducing folate and DNA synthesis; rescued by folinic acid."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Primaquine is added in vivax malaria to kill the?",
+      "topic": "Anticancer & Immuno",
+      "question": "Leucovorin (folinic acid) rescue is used after high-dose?",
       "options": [
-        "Schizonts in blood",
-        "Ring forms",
-        "Gametocytes only",
-        "Hypnozoites in the liver"
+        "Methotrexate",
+        "Vincristine",
+        "Doxorubicin",
+        "Cisplatin"
       ],
-      "correct": 3,
-      "explanation": "Primaquine eliminates dormant liver hypnozoites of P. vivax/ovale, preventing relapse."
+      "correct": 0,
+      "explanation": "Folinic acid bypasses the DHFR block, rescuing normal cells after high-dose methotrexate."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Which HIV drug class ends in '-vir' and blocks the viral protease?",
+      "topic": "Anticancer & Immuno",
+      "question": "Immune checkpoint inhibitors like nivolumab target?",
       "options": [
-        "Protease inhibitors (e.g., ritonavir)",
-        "NRTIs",
-        "NNRTIs",
-        "Integrase inhibitors"
+        "VEGF",
+        "CD20",
+        "PD-1",
+        "HER2"
       ],
-      "correct": 0,
-      "explanation": "Protease inhibitors (ritonavir, atazanavir) block maturation; ritonavir is also a CYP3A4 booster."
+      "correct": 2,
+      "explanation": "Nivolumab/pembrolizumab block PD-1, restoring T-cell antitumour activity; can cause immune-related adverse effects."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Why is ritonavir added in low dose to other protease inhibitors?",
+      "topic": "Anticancer & Immuno",
+      "question": "Immune-related adverse effects of checkpoint inhibitors are treated with?",
       "options": [
-        "Reduces resistance directly",
-        "CYP3A4 inhibition boosts levels of the partner drug",
-        "Added antiviral effect",
-        "Improves absorption only"
+        "Antibiotics",
+        "Chemotherapy",
+        "Corticosteroids/immunosuppression",
+        "More immunotherapy"
       ],
-      "correct": 1,
-      "explanation": "Ritonavir is a pharmacokinetic 'booster' inhibiting CYP3A4 to raise levels of co-administered protease inhibitors."
+      "correct": 2,
+      "explanation": "Checkpoint inhibitor colitis, pneumonitis and endocrinopathies are managed with corticosteroids."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "Post-marketing surveillance corresponds to which phase?",
+      "topic": "Paper III: Systemic",
+      "question": "Which antihypertensive is preferred in a diabetic with proteinuria?",
       "options": [
-        "Phase II",
-        "Phase I",
-        "Phase IV",
-        "Phase III"
+        "Alpha-blocker",
+        "Thiazide",
+        "Beta-blocker",
+        "ACE inhibitor/ARB"
       ],
-      "correct": 2,
-      "explanation": "Phase IV (post-marketing) detects rare/long-term adverse effects after approval."
+      "correct": 3,
+      "explanation": "ACE inhibitors/ARBs reduce intraglomerular pressure and proteinuria, slowing diabetic nephropathy."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 06 Nov 2026*\n\n🎓 *MBBS* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Acyclovir is used to treat infections caused by?\nAns: Herpes simplex virus\nWhy: Acyclovir is phosphorylated by viral thymidine kinase and inhibits herpes viral DNA polymerase.\n\n🌍 *FMGE* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Primaquine is added in vivax malaria to kill the?\nAns: Hypnozoites in the liver\nWhy: Primaquine eliminates dormant liver hypnozoites of P. vivax/ovale, preventing relapse.\n\n🩺 *NEET PG* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Which HIV drug class ends in '-vir' and blocks the viral protease?\nAns: Protease inhibitors (e.g., ritonavir)\nWhy: Protease inhibitors (ritonavir, atazanavir) block maturation; ritonavir is also a CYP3A4 booster.\n\n🏥 *INI-CET* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Why is ritonavir added in low dose to other protease inhibitors?\nAns: CYP3A4 inhibition boosts levels of the partner drug\nWhy: Ritonavir is a pharmacokinetic 'booster' inhibiting CYP3A4 to raise levels of co-administered protease inhibitors.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: Post-marketing surveillance corresponds to which phase?\nAns: Phase IV\nWhy: Phase IV (post-marketing) detects rare/long-term adverse effects after approval.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2006%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Acyclovir%20is%20used%20to%20treat%20infections%20caused%20by%3F%0AAns%3A%20Herpes%20simplex%20virus%0AWhy%3A%20Acyclovir%20is%20phosphorylated%20by%20viral%20thymidine%20kinase%20and%20inhibits%20herpes%20viral%20DNA%20polymerase.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Primaquine%20is%20added%20in%20vivax%20malaria%20to%20kill%20the%3F%0AAns%3A%20Hypnozoites%20in%20the%20liver%0AWhy%3A%20Primaquine%20eliminates%20dormant%20liver%20hypnozoites%20of%20P.%20vivax/ovale%2C%20preventing%20relapse.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Which%20HIV%20drug%20class%20ends%20in%20%27-vir%27%20and%20blocks%20the%20viral%20protease%3F%0AAns%3A%20Protease%20inhibitors%20%28e.g.%2C%20ritonavir%29%0AWhy%3A%20Protease%20inhibitors%20%28ritonavir%2C%20atazanavir%29%20block%20maturation%3B%20ritonavir%20is%20also%20a%20CYP3A4%20booster.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Why%20is%20ritonavir%20added%20in%20low%20dose%20to%20other%20protease%20inhibitors%3F%0AAns%3A%20CYP3A4%20inhibition%20boosts%20levels%20of%20the%20partner%20drug%0AWhy%3A%20Ritonavir%20is%20a%20pharmacokinetic%20%27booster%27%20inhibiting%20CYP3A4%20to%20raise%20levels%20of%20co-administered%20protease%20inhibitors.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20Post-marketing%20surveillance%20corresponds%20to%20which%20phase%3F%0AAns%3A%20Phase%20IV%0AWhy%3A%20Phase%20IV%20%28post-marketing%29%20detects%20rare/long-term%20adverse%20effects%20after%20approval.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 07 Nov 2026*\n\n🎓 *MBBS* (Anticancer & Immuno)\nQ: Methotrexate inhibits which enzyme?\nAns: Dihydrofolate reductase\nWhy: Methotrexate inhibits dihydrofolate reductase, reducing folate and DNA synthesis; rescued by folinic acid.\n\n🌍 *FMGE* (Anticancer & Immuno)\nQ: Leucovorin (folinic acid) rescue is used after high-dose?\nAns: Methotrexate\nWhy: Folinic acid bypasses the DHFR block, rescuing normal cells after high-dose methotrexate.\n\n🩺 *NEET PG* (Anticancer & Immuno)\nQ: Immune checkpoint inhibitors like nivolumab target?\nAns: PD-1\nWhy: Nivolumab/pembrolizumab block PD-1, restoring T-cell antitumour activity; can cause immune-related adverse effects.\n\n🏥 *INI-CET* (Anticancer & Immuno)\nQ: Immune-related adverse effects of checkpoint inhibitors are treated with?\nAns: Corticosteroids/immunosuppression\nWhy: Checkpoint inhibitor colitis, pneumonitis and endocrinopathies are managed with corticosteroids.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Which antihypertensive is preferred in a diabetic with proteinuria?\nAns: ACE inhibitor/ARB\nWhy: ACE inhibitors/ARBs reduce intraglomerular pressure and proteinuria, slowing diabetic nephropathy.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2007%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Methotrexate%20inhibits%20which%20enzyme%3F%0AAns%3A%20Dihydrofolate%20reductase%0AWhy%3A%20Methotrexate%20inhibits%20dihydrofolate%20reductase%2C%20reducing%20folate%20and%20DNA%20synthesis%3B%20rescued%20by%20folinic%20acid.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Leucovorin%20%28folinic%20acid%29%20rescue%20is%20used%20after%20high-dose%3F%0AAns%3A%20Methotrexate%0AWhy%3A%20Folinic%20acid%20bypasses%20the%20DHFR%20block%2C%20rescuing%20normal%20cells%20after%20high-dose%20methotrexate.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Immune%20checkpoint%20inhibitors%20like%20nivolumab%20target%3F%0AAns%3A%20PD-1%0AWhy%3A%20Nivolumab/pembrolizumab%20block%20PD-1%2C%20restoring%20T-cell%20antitumour%20activity%3B%20can%20cause%20immune-related%20adverse%20effects.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Immune-related%20adverse%20effects%20of%20checkpoint%20inhibitors%20are%20treated%20with%3F%0AAns%3A%20Corticosteroids/immunosuppression%0AWhy%3A%20Checkpoint%20inhibitor%20colitis%2C%20pneumonitis%20and%20endocrinopathies%20are%20managed%20with%20corticosteroids.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Which%20antihypertensive%20is%20preferred%20in%20a%20diabetic%20with%20proteinuria%3F%0AAns%3A%20ACE%20inhibitor/ARB%0AWhy%3A%20ACE%20inhibitors/ARBs%20reduce%20intraglomerular%20pressure%20and%20proteinuria%2C%20slowing%20diabetic%20nephropathy.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

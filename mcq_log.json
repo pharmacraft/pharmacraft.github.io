@@ -549,6 +549,61 @@
      "stem": "Post-marketing surveillance corresponds to which phase?"
     }
    ]
+  },
+  {
+   "date": "2026-11-07",
+   "source": "bank",
+   "topic_index": 10,
+   "md_paper_index": 2,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "ef76e54b6ff2",
+     "stem": "Methotrexate inhibits which enzyme?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "b467806ef268",
+     "stem": "Leucovorin (folinic acid) rescue is used after high-dose?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "efc1bf4ddfca",
+     "stem": "Immune checkpoint inhibitors like nivolumab target?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "b6edd3cca236",
+     "stem": "Immune-related adverse effects of checkpoint inhibitors are treated with?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "4e7b1e133aaf",
+     "stem": "Which antihypertensive is preferred in a diabetic with proteinuria?"
+    }
+   ]
   }
  ]
 }
