@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Anticancer & Immuno",
-      "question": "Methotrexate inhibits which enzyme?",
+      "topic": "Hematology",
+      "question": "Heparin acts by enhancing the activity of?",
       "options": [
-        "Dihydrofolate reductase",
-        "Tyrosine kinase",
-        "Thymidylate synthase",
-        "Topoisomerase"
+        "Protein C",
+        "Vitamin K",
+        "Plasmin",
+        "Antithrombin III"
       ],
-      "correct": 0,
-      "explanation": "Methotrexate inhibits dihydrofolate reductase, reducing folate and DNA synthesis; rescued by folinic acid."
+      "correct": 3,
+      "explanation": "Heparin potentiates antithrombin III, inactivating thrombin and factor Xa; monitored by aPTT."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Anticancer & Immuno",
-      "question": "Leucovorin (folinic acid) rescue is used after high-dose?",
+      "topic": "Hematology",
+      "question": "Low-molecular-weight heparin (enoxaparin) mainly inhibits?",
       "options": [
-        "Methotrexate",
-        "Vincristine",
-        "Doxorubicin",
-        "Cisplatin"
+        "Plasmin",
+        "Thrombin",
+        "Factor Xa",
+        "Factor VII"
       ],
-      "correct": 0,
-      "explanation": "Folinic acid bypasses the DHFR block, rescuing normal cells after high-dose methotrexate."
+      "correct": 2,
+      "explanation": "LMWH preferentially inhibits factor Xa (via antithrombin); more predictable, given subcutaneously."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Anticancer & Immuno",
-      "question": "Immune checkpoint inhibitors like nivolumab target?",
+      "topic": "Hematology",
+      "question": "Idarucizumab is the specific reversal agent for?",
       "options": [
-        "VEGF",
-        "CD20",
-        "PD-1",
-        "HER2"
+        "Rivaroxaban",
+        "Dabigatran",
+        "Warfarin",
+        "Heparin"
       ],
-      "correct": 2,
-      "explanation": "Nivolumab/pembrolizumab block PD-1, restoring T-cell antitumour activity; can cause immune-related adverse effects."
+      "correct": 1,
+      "explanation": "Idarucizumab is a monoclonal antibody fragment that rapidly reverses the thrombin inhibitor dabigatran."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Anticancer & Immuno",
-      "question": "Immune-related adverse effects of checkpoint inhibitors are treated with?",
+      "topic": "Hematology",
+      "question": "Why is bridging with heparin needed when starting warfarin in acute thrombosis?",
       "options": [
-        "Antibiotics",
-        "Chemotherapy",
-        "Corticosteroids/immunosuppression",
-        "More immunotherapy"
+        "Warfarin needs food",
+        "Heparin is oral",
+        "To reduce cost",
+        "Warfarin is slow and initially prothrombotic (protein C falls first)"
       ],
-      "correct": 2,
-      "explanation": "Checkpoint inhibitor colitis, pneumonitis and endocrinopathies are managed with corticosteroids."
+      "correct": 3,
+      "explanation": "Warfarin first lowers protein C (short half-life), causing transient hypercoagulability; heparin bridges this."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper III: Systemic",
-      "question": "Which antihypertensive is preferred in a diabetic with proteinuria?",
+      "topic": "Paper IV: Recent Advances",
+      "question": "Tirzepatide is novel because it is a dual agonist of?",
       "options": [
-        "Alpha-blocker",
-        "Thiazide",
-        "Beta-blocker",
-        "ACE inhibitor/ARB"
+        "GIP and GLP-1 receptors",
+        "SGLT2 and GLP-1",
+        "GLP-1 and glucagon",
+        "Amylin and GLP-1"
       ],
-      "correct": 3,
-      "explanation": "ACE inhibitors/ARBs reduce intraglomerular pressure and proteinuria, slowing diabetic nephropathy."
+      "correct": 0,
+      "explanation": "Tirzepatide is a dual GIP/GLP-1 receptor agonist with potent glucose-lowering and weight-loss effects."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 07 Nov 2026*\n\n🎓 *MBBS* (Anticancer & Immuno)\nQ: Methotrexate inhibits which enzyme?\nAns: Dihydrofolate reductase\nWhy: Methotrexate inhibits dihydrofolate reductase, reducing folate and DNA synthesis; rescued by folinic acid.\n\n🌍 *FMGE* (Anticancer & Immuno)\nQ: Leucovorin (folinic acid) rescue is used after high-dose?\nAns: Methotrexate\nWhy: Folinic acid bypasses the DHFR block, rescuing normal cells after high-dose methotrexate.\n\n🩺 *NEET PG* (Anticancer & Immuno)\nQ: Immune checkpoint inhibitors like nivolumab target?\nAns: PD-1\nWhy: Nivolumab/pembrolizumab block PD-1, restoring T-cell antitumour activity; can cause immune-related adverse effects.\n\n🏥 *INI-CET* (Anticancer & Immuno)\nQ: Immune-related adverse effects of checkpoint inhibitors are treated with?\nAns: Corticosteroids/immunosuppression\nWhy: Checkpoint inhibitor colitis, pneumonitis and endocrinopathies are managed with corticosteroids.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Which antihypertensive is preferred in a diabetic with proteinuria?\nAns: ACE inhibitor/ARB\nWhy: ACE inhibitors/ARBs reduce intraglomerular pressure and proteinuria, slowing diabetic nephropathy.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2007%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Methotrexate%20inhibits%20which%20enzyme%3F%0AAns%3A%20Dihydrofolate%20reductase%0AWhy%3A%20Methotrexate%20inhibits%20dihydrofolate%20reductase%2C%20reducing%20folate%20and%20DNA%20synthesis%3B%20rescued%20by%20folinic%20acid.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Leucovorin%20%28folinic%20acid%29%20rescue%20is%20used%20after%20high-dose%3F%0AAns%3A%20Methotrexate%0AWhy%3A%20Folinic%20acid%20bypasses%20the%20DHFR%20block%2C%20rescuing%20normal%20cells%20after%20high-dose%20methotrexate.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Immune%20checkpoint%20inhibitors%20like%20nivolumab%20target%3F%0AAns%3A%20PD-1%0AWhy%3A%20Nivolumab/pembrolizumab%20block%20PD-1%2C%20restoring%20T-cell%20antitumour%20activity%3B%20can%20cause%20immune-related%20adverse%20effects.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Immune-related%20adverse%20effects%20of%20checkpoint%20inhibitors%20are%20treated%20with%3F%0AAns%3A%20Corticosteroids/immunosuppression%0AWhy%3A%20Checkpoint%20inhibitor%20colitis%2C%20pneumonitis%20and%20endocrinopathies%20are%20managed%20with%20corticosteroids.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Which%20antihypertensive%20is%20preferred%20in%20a%20diabetic%20with%20proteinuria%3F%0AAns%3A%20ACE%20inhibitor/ARB%0AWhy%3A%20ACE%20inhibitors/ARBs%20reduce%20intraglomerular%20pressure%20and%20proteinuria%2C%20slowing%20diabetic%20nephropathy.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 08 Nov 2026*\n\n🎓 *MBBS* (Hematology)\nQ: Heparin acts by enhancing the activity of?\nAns: Antithrombin III\nWhy: Heparin potentiates antithrombin III, inactivating thrombin and factor Xa; monitored by aPTT.\n\n🌍 *FMGE* (Hematology)\nQ: Low-molecular-weight heparin (enoxaparin) mainly inhibits?\nAns: Factor Xa\nWhy: LMWH preferentially inhibits factor Xa (via antithrombin); more predictable, given subcutaneously.\n\n🩺 *NEET PG* (Hematology)\nQ: Idarucizumab is the specific reversal agent for?\nAns: Dabigatran\nWhy: Idarucizumab is a monoclonal antibody fragment that rapidly reverses the thrombin inhibitor dabigatran.\n\n🏥 *INI-CET* (Hematology)\nQ: Why is bridging with heparin needed when starting warfarin in acute thrombosis?\nAns: Warfarin is slow and initially prothrombotic (protein C falls first)\nWhy: Warfarin first lowers protein C (short half-life), causing transient hypercoagulability; heparin bridges this.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Tirzepatide is novel because it is a dual agonist of?\nAns: GIP and GLP-1 receptors\nWhy: Tirzepatide is a dual GIP/GLP-1 receptor agonist with potent glucose-lowering and weight-loss effects.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2008%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Hematology%29%0AQ%3A%20Heparin%20acts%20by%20enhancing%20the%20activity%20of%3F%0AAns%3A%20Antithrombin%20III%0AWhy%3A%20Heparin%20potentiates%20antithrombin%20III%2C%20inactivating%20thrombin%20and%20factor%20Xa%3B%20monitored%20by%20aPTT.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Hematology%29%0AQ%3A%20Low-molecular-weight%20heparin%20%28enoxaparin%29%20mainly%20inhibits%3F%0AAns%3A%20Factor%20Xa%0AWhy%3A%20LMWH%20preferentially%20inhibits%20factor%20Xa%20%28via%20antithrombin%29%3B%20more%20predictable%2C%20given%20subcutaneously.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Hematology%29%0AQ%3A%20Idarucizumab%20is%20the%20specific%20reversal%20agent%20for%3F%0AAns%3A%20Dabigatran%0AWhy%3A%20Idarucizumab%20is%20a%20monoclonal%20antibody%20fragment%20that%20rapidly%20reverses%20the%20thrombin%20inhibitor%20dabigatran.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Hematology%29%0AQ%3A%20Why%20is%20bridging%20with%20heparin%20needed%20when%20starting%20warfarin%20in%20acute%20thrombosis%3F%0AAns%3A%20Warfarin%20is%20slow%20and%20initially%20prothrombotic%20%28protein%20C%20falls%20first%29%0AWhy%3A%20Warfarin%20first%20lowers%20protein%20C%20%28short%20half-life%29%2C%20causing%20transient%20hypercoagulability%3B%20heparin%20bridges%20this.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Tirzepatide%20is%20novel%20because%20it%20is%20a%20dual%20agonist%20of%3F%0AAns%3A%20GIP%20and%20GLP-1%20receptors%0AWhy%3A%20Tirzepatide%20is%20a%20dual%20GIP/GLP-1%20receptor%20agonist%20with%20potent%20glucose-lowering%20and%20weight-loss%20effects.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

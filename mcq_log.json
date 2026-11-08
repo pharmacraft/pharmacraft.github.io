@@ -604,6 +604,61 @@
      "stem": "Which antihypertensive is preferred in a diabetic with proteinuria?"
     }
    ]
+  },
+  {
+   "date": "2026-11-08",
+   "source": "bank",
+   "topic_index": 11,
+   "md_paper_index": 3,
+   "case_slot": 1,
+   "ra_slot": 3,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "22b5958733a3",
+     "stem": "Heparin acts by enhancing the activity of?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "4984e3ee8430",
+     "stem": "Low-molecular-weight heparin (enoxaparin) mainly inhibits?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "d229b9440bb2",
+     "stem": "Idarucizumab is the specific reversal agent for?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "d99251708d15",
+     "stem": "Why is bridging with heparin needed when starting warfarin in acute thrombosis?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "f43057422c72",
+     "stem": "Tirzepatide is novel because it is a dual agonist of?"
+    }
+   ]
   }
  ]
 }
