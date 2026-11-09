@@ -659,6 +659,61 @@
      "stem": "Tirzepatide is novel because it is a dual agonist of?"
     }
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "source": "bank",
+   "topic_index": 12,
+   "md_paper_index": 0,
+   "case_slot": 2,
+   "ra_slot": 4,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "21fe5ac922b2",
+     "stem": "Furosemide acts on which part of the nephron?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "1b891c701030",
+     "stem": "Which diuretic is used with a loop diuretic to treat resistant oedema (sequential blockade)?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "13f5b8368ac2",
+     "stem": "Tolvaptan is also used to slow cyst growth in?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "0ba33e81f651",
+     "stem": "Why does chronic loop diuretic use cause metabolic alkalosis?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "aee7a6257e75",
+     "stem": "Which isolated tissue preparation is classically used to study histamine responses?"
+    }
+   ]
   }
  ]
 }

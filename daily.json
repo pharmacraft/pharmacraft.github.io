@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Hematology",
-      "question": "Heparin acts by enhancing the activity of?",
+      "topic": "Renal & Diuretics",
+      "question": "Furosemide acts on which part of the nephron?",
       "options": [
-        "Protein C",
-        "Vitamin K",
-        "Plasmin",
-        "Antithrombin III"
+        "Distal tubule",
+        "Collecting duct",
+        "Proximal tubule",
+        "Thick ascending limb of loop of Henle"
       ],
       "correct": 3,
-      "explanation": "Heparin potentiates antithrombin III, inactivating thrombin and factor Xa; monitored by aPTT."
+      "explanation": "Loop diuretics inhibit the Na-K-2Cl cotransporter in the thick ascending limb; most potent diuretics."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Hematology",
-      "question": "Low-molecular-weight heparin (enoxaparin) mainly inhibits?",
+      "topic": "Renal & Diuretics",
+      "question": "Which diuretic is used with a loop diuretic to treat resistant oedema (sequential blockade)?",
       "options": [
-        "Plasmin",
-        "Thrombin",
-        "Factor Xa",
-        "Factor VII"
+        "Amiloride",
+        "Metolazone (thiazide-like)",
+        "Mannitol",
+        "Acetazolamide"
       ],
-      "correct": 2,
-      "explanation": "LMWH preferentially inhibits factor Xa (via antithrombin); more predictable, given subcutaneously."
+      "correct": 1,
+      "explanation": "Metolazone added to a loop diuretic produces strong synergistic diuresis in resistant oedema."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Hematology",
-      "question": "Idarucizumab is the specific reversal agent for?",
+      "topic": "Renal & Diuretics",
+      "question": "Tolvaptan is also used to slow cyst growth in?",
       "options": [
-        "Rivaroxaban",
-        "Dabigatran",
-        "Warfarin",
-        "Heparin"
+        "Autosomal dominant polycystic kidney disease",
+        "Diabetic nephropathy",
+        "Glomerulonephritis",
+        "Nephrotic syndrome"
       ],
-      "correct": 1,
-      "explanation": "Idarucizumab is a monoclonal antibody fragment that rapidly reverses the thrombin inhibitor dabigatran."
+      "correct": 0,
+      "explanation": "Tolvaptan (V2 antagonist) slows progression in ADPKD; monitor for hepatotoxicity."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Hematology",
-      "question": "Why is bridging with heparin needed when starting warfarin in acute thrombosis?",
+      "topic": "Renal & Diuretics",
+      "question": "Why does chronic loop diuretic use cause metabolic alkalosis?",
       "options": [
-        "Warfarin needs food",
-        "Heparin is oral",
-        "To reduce cost",
-        "Warfarin is slow and initially prothrombotic (protein C falls first)"
+        "Acid retention",
+        "Lactic acidosis",
+        "Bicarbonate loss",
+        "Contraction alkalosis with H+/K+ loss"
       ],
       "correct": 3,
-      "explanation": "Warfarin first lowers protein C (short half-life), causing transient hypercoagulability; heparin bridges this."
+      "explanation": "Loop diuretics cause volume contraction and increased distal H+/K+ secretion, producing metabolic alkalosis."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper IV: Recent Advances",
-      "question": "Tirzepatide is novel because it is a dual agonist of?",
+      "topic": "Paper I: General/Experimental",
+      "question": "Which isolated tissue preparation is classically used to study histamine responses?",
       "options": [
-        "GIP and GLP-1 receptors",
-        "SGLT2 and GLP-1",
-        "GLP-1 and glucagon",
-        "Amylin and GLP-1"
+        "Frog heart",
+        "Rat uterus",
+        "Rabbit jejunum",
+        "Guinea pig ileum"
       ],
-      "correct": 0,
-      "explanation": "Tirzepatide is a dual GIP/GLP-1 receptor agonist with potent glucose-lowering and weight-loss effects."
+      "correct": 3,
+      "explanation": "The guinea pig ileum is a classic preparation for histamine and acetylcholine dose-response studies."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 08 Nov 2026*\n\n🎓 *MBBS* (Hematology)\nQ: Heparin acts by enhancing the activity of?\nAns: Antithrombin III\nWhy: Heparin potentiates antithrombin III, inactivating thrombin and factor Xa; monitored by aPTT.\n\n🌍 *FMGE* (Hematology)\nQ: Low-molecular-weight heparin (enoxaparin) mainly inhibits?\nAns: Factor Xa\nWhy: LMWH preferentially inhibits factor Xa (via antithrombin); more predictable, given subcutaneously.\n\n🩺 *NEET PG* (Hematology)\nQ: Idarucizumab is the specific reversal agent for?\nAns: Dabigatran\nWhy: Idarucizumab is a monoclonal antibody fragment that rapidly reverses the thrombin inhibitor dabigatran.\n\n🏥 *INI-CET* (Hematology)\nQ: Why is bridging with heparin needed when starting warfarin in acute thrombosis?\nAns: Warfarin is slow and initially prothrombotic (protein C falls first)\nWhy: Warfarin first lowers protein C (short half-life), causing transient hypercoagulability; heparin bridges this.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Tirzepatide is novel because it is a dual agonist of?\nAns: GIP and GLP-1 receptors\nWhy: Tirzepatide is a dual GIP/GLP-1 receptor agonist with potent glucose-lowering and weight-loss effects.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2008%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Hematology%29%0AQ%3A%20Heparin%20acts%20by%20enhancing%20the%20activity%20of%3F%0AAns%3A%20Antithrombin%20III%0AWhy%3A%20Heparin%20potentiates%20antithrombin%20III%2C%20inactivating%20thrombin%20and%20factor%20Xa%3B%20monitored%20by%20aPTT.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Hematology%29%0AQ%3A%20Low-molecular-weight%20heparin%20%28enoxaparin%29%20mainly%20inhibits%3F%0AAns%3A%20Factor%20Xa%0AWhy%3A%20LMWH%20preferentially%20inhibits%20factor%20Xa%20%28via%20antithrombin%29%3B%20more%20predictable%2C%20given%20subcutaneously.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Hematology%29%0AQ%3A%20Idarucizumab%20is%20the%20specific%20reversal%20agent%20for%3F%0AAns%3A%20Dabigatran%0AWhy%3A%20Idarucizumab%20is%20a%20monoclonal%20antibody%20fragment%20that%20rapidly%20reverses%20the%20thrombin%20inhibitor%20dabigatran.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Hematology%29%0AQ%3A%20Why%20is%20bridging%20with%20heparin%20needed%20when%20starting%20warfarin%20in%20acute%20thrombosis%3F%0AAns%3A%20Warfarin%20is%20slow%20and%20initially%20prothrombotic%20%28protein%20C%20falls%20first%29%0AWhy%3A%20Warfarin%20first%20lowers%20protein%20C%20%28short%20half-life%29%2C%20causing%20transient%20hypercoagulability%3B%20heparin%20bridges%20this.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Tirzepatide%20is%20novel%20because%20it%20is%20a%20dual%20agonist%20of%3F%0AAns%3A%20GIP%20and%20GLP-1%20receptors%0AWhy%3A%20Tirzepatide%20is%20a%20dual%20GIP/GLP-1%20receptor%20agonist%20with%20potent%20glucose-lowering%20and%20weight-loss%20effects.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 09 Nov 2026*\n\n🎓 *MBBS* (Renal & Diuretics)\nQ: Furosemide acts on which part of the nephron?\nAns: Thick ascending limb of loop of Henle\nWhy: Loop diuretics inhibit the Na-K-2Cl cotransporter in the thick ascending limb; most potent diuretics.\n\n🌍 *FMGE* (Renal & Diuretics)\nQ: Which diuretic is used with a loop diuretic to treat resistant oedema (sequential blockade)?\nAns: Metolazone (thiazide-like)\nWhy: Metolazone added to a loop diuretic produces strong synergistic diuresis in resistant oedema.\n\n🩺 *NEET PG* (Renal & Diuretics)\nQ: Tolvaptan is also used to slow cyst growth in?\nAns: Autosomal dominant polycystic kidney disease\nWhy: Tolvaptan (V2 antagonist) slows progression in ADPKD; monitor for hepatotoxicity.\n\n🏥 *INI-CET* (Renal & Diuretics)\nQ: Why does chronic loop diuretic use cause metabolic alkalosis?\nAns: Contraction alkalosis with H+/K+ loss\nWhy: Loop diuretics cause volume contraction and increased distal H+/K+ secretion, producing metabolic alkalosis.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: Which isolated tissue preparation is classically used to study histamine responses?\nAns: Guinea pig ileum\nWhy: The guinea pig ileum is a classic preparation for histamine and acetylcholine dose-response studies.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2009%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Furosemide%20acts%20on%20which%20part%20of%20the%20nephron%3F%0AAns%3A%20Thick%20ascending%20limb%20of%20loop%20of%20Henle%0AWhy%3A%20Loop%20diuretics%20inhibit%20the%20Na-K-2Cl%20cotransporter%20in%20the%20thick%20ascending%20limb%3B%20most%20potent%20diuretics.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Which%20diuretic%20is%20used%20with%20a%20loop%20diuretic%20to%20treat%20resistant%20oedema%20%28sequential%20blockade%29%3F%0AAns%3A%20Metolazone%20%28thiazide-like%29%0AWhy%3A%20Metolazone%20added%20to%20a%20loop%20diuretic%20produces%20strong%20synergistic%20diuresis%20in%20resistant%20oedema.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Tolvaptan%20is%20also%20used%20to%20slow%20cyst%20growth%20in%3F%0AAns%3A%20Autosomal%20dominant%20polycystic%20kidney%20disease%0AWhy%3A%20Tolvaptan%20%28V2%20antagonist%29%20slows%20progression%20in%20ADPKD%3B%20monitor%20for%20hepatotoxicity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Why%20does%20chronic%20loop%20diuretic%20use%20cause%20metabolic%20alkalosis%3F%0AAns%3A%20Contraction%20alkalosis%20with%20H%2B/K%2B%20loss%0AWhy%3A%20Loop%20diuretics%20cause%20volume%20contraction%20and%20increased%20distal%20H%2B/K%2B%20secretion%2C%20producing%20metabolic%20alkalosis.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20Which%20isolated%20tissue%20preparation%20is%20classically%20used%20to%20study%20histamine%20responses%3F%0AAns%3A%20Guinea%20pig%20ileum%0AWhy%3A%20The%20guinea%20pig%20ileum%20is%20a%20classic%20preparation%20for%20histamine%20and%20acetylcholine%20dose-response%20studies.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
