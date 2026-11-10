@@ -714,6 +714,61 @@
      "stem": "Which isolated tissue preparation is classically used to study histamine responses?"
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "source": "bank",
+   "topic_index": 13,
+   "md_paper_index": 1,
+   "case_slot": 3,
+   "ra_slot": 0,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "22577680a218",
+     "stem": "The specific antidote for organophosphate poisoning is?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "07443a28633f",
+     "stem": "Opioid overdose presents with pinpoint pupils and respiratory depression, reversed by?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "547e76463a87",
+     "stem": "Hydroxocobalamin treats cyanide poisoning by?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "09444253cd7a",
+     "stem": "High anion gap metabolic acidosis with osmolar gap suggests poisoning by?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "c75b27be5eff",
+     "stem": "The WHO-UMC causality category 'certain' requires a reaction that?"
+    }
+   ]
   }
  ]
 }

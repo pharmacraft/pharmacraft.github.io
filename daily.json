@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Renal & Diuretics",
-      "question": "Furosemide acts on which part of the nephron?",
+      "topic": "Toxicology",
+      "question": "The specific antidote for organophosphate poisoning is?",
       "options": [
-        "Distal tubule",
-        "Collecting duct",
-        "Proximal tubule",
-        "Thick ascending limb of loop of Henle"
+        "Flumazenil",
+        "N-acetylcysteine",
+        "Naloxone",
+        "Atropine + pralidoxime"
       ],
       "correct": 3,
-      "explanation": "Loop diuretics inhibit the Na-K-2Cl cotransporter in the thick ascending limb; most potent diuretics."
+      "explanation": "Atropine blocks muscarinic effects; pralidoxime reactivates acetylcholinesterase in OP poisoning."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Renal & Diuretics",
-      "question": "Which diuretic is used with a loop diuretic to treat resistant oedema (sequential blockade)?",
+      "topic": "Toxicology",
+      "question": "Opioid overdose presents with pinpoint pupils and respiratory depression, reversed by?",
       "options": [
-        "Amiloride",
-        "Metolazone (thiazide-like)",
-        "Mannitol",
-        "Acetazolamide"
+        "Naloxone",
+        "Atropine",
+        "Flumazenil",
+        "Pralidoxime"
       ],
-      "correct": 1,
-      "explanation": "Metolazone added to a loop diuretic produces strong synergistic diuresis in resistant oedema."
+      "correct": 0,
+      "explanation": "Naloxone rapidly reverses opioid-induced respiratory depression and miosis."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Renal & Diuretics",
-      "question": "Tolvaptan is also used to slow cyst growth in?",
+      "topic": "Toxicology",
+      "question": "Hydroxocobalamin treats cyanide poisoning by?",
       "options": [
-        "Autosomal dominant polycystic kidney disease",
-        "Diabetic nephropathy",
-        "Glomerulonephritis",
-        "Nephrotic syndrome"
+        "Chelating iron",
+        "Binding cyanide to form cyanocobalamin",
+        "Blocking absorption",
+        "Forming methaemoglobin"
       ],
-      "correct": 0,
-      "explanation": "Tolvaptan (V2 antagonist) slows progression in ADPKD; monitor for hepatotoxicity."
+      "correct": 1,
+      "explanation": "Hydroxocobalamin binds cyanide forming non-toxic cyanocobalamin (vitamin B12a), excreted in urine."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Renal & Diuretics",
-      "question": "Why does chronic loop diuretic use cause metabolic alkalosis?",
+      "topic": "Toxicology",
+      "question": "High anion gap metabolic acidosis with osmolar gap suggests poisoning by?",
       "options": [
-        "Acid retention",
-        "Lactic acidosis",
-        "Bicarbonate loss",
-        "Contraction alkalosis with H+/K+ loss"
+        "Benzodiazepine",
+        "Opioid",
+        "Beta-blocker",
+        "Methanol or ethylene glycol"
       ],
       "correct": 3,
-      "explanation": "Loop diuretics cause volume contraction and increased distal H+/K+ secretion, producing metabolic alkalosis."
+      "explanation": "Toxic alcohols raise both the anion gap (acid metabolites) and the osmolar gap (parent alcohol)."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "Which isolated tissue preparation is classically used to study histamine responses?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "The WHO-UMC causality category 'certain' requires a reaction that?",
       "options": [
-        "Frog heart",
-        "Rat uterus",
-        "Rabbit jejunum",
-        "Guinea pig ileum"
+        "Has a plausible time, dechallenge/rechallenge positive, and no alternative cause",
+        "Is unrelated to drug",
+        "Occurs once",
+        "Is dose independent"
       ],
-      "correct": 3,
-      "explanation": "The guinea pig ileum is a classic preparation for histamine and acetylcholine dose-response studies."
+      "correct": 0,
+      "explanation": "'Certain' causality needs a plausible temporal relationship, positive dechallenge/rechallenge and no other explanation."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 09 Nov 2026*\n\n🎓 *MBBS* (Renal & Diuretics)\nQ: Furosemide acts on which part of the nephron?\nAns: Thick ascending limb of loop of Henle\nWhy: Loop diuretics inhibit the Na-K-2Cl cotransporter in the thick ascending limb; most potent diuretics.\n\n🌍 *FMGE* (Renal & Diuretics)\nQ: Which diuretic is used with a loop diuretic to treat resistant oedema (sequential blockade)?\nAns: Metolazone (thiazide-like)\nWhy: Metolazone added to a loop diuretic produces strong synergistic diuresis in resistant oedema.\n\n🩺 *NEET PG* (Renal & Diuretics)\nQ: Tolvaptan is also used to slow cyst growth in?\nAns: Autosomal dominant polycystic kidney disease\nWhy: Tolvaptan (V2 antagonist) slows progression in ADPKD; monitor for hepatotoxicity.\n\n🏥 *INI-CET* (Renal & Diuretics)\nQ: Why does chronic loop diuretic use cause metabolic alkalosis?\nAns: Contraction alkalosis with H+/K+ loss\nWhy: Loop diuretics cause volume contraction and increased distal H+/K+ secretion, producing metabolic alkalosis.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: Which isolated tissue preparation is classically used to study histamine responses?\nAns: Guinea pig ileum\nWhy: The guinea pig ileum is a classic preparation for histamine and acetylcholine dose-response studies.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2009%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Furosemide%20acts%20on%20which%20part%20of%20the%20nephron%3F%0AAns%3A%20Thick%20ascending%20limb%20of%20loop%20of%20Henle%0AWhy%3A%20Loop%20diuretics%20inhibit%20the%20Na-K-2Cl%20cotransporter%20in%20the%20thick%20ascending%20limb%3B%20most%20potent%20diuretics.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Which%20diuretic%20is%20used%20with%20a%20loop%20diuretic%20to%20treat%20resistant%20oedema%20%28sequential%20blockade%29%3F%0AAns%3A%20Metolazone%20%28thiazide-like%29%0AWhy%3A%20Metolazone%20added%20to%20a%20loop%20diuretic%20produces%20strong%20synergistic%20diuresis%20in%20resistant%20oedema.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Tolvaptan%20is%20also%20used%20to%20slow%20cyst%20growth%20in%3F%0AAns%3A%20Autosomal%20dominant%20polycystic%20kidney%20disease%0AWhy%3A%20Tolvaptan%20%28V2%20antagonist%29%20slows%20progression%20in%20ADPKD%3B%20monitor%20for%20hepatotoxicity.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Why%20does%20chronic%20loop%20diuretic%20use%20cause%20metabolic%20alkalosis%3F%0AAns%3A%20Contraction%20alkalosis%20with%20H%2B/K%2B%20loss%0AWhy%3A%20Loop%20diuretics%20cause%20volume%20contraction%20and%20increased%20distal%20H%2B/K%2B%20secretion%2C%20producing%20metabolic%20alkalosis.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20Which%20isolated%20tissue%20preparation%20is%20classically%20used%20to%20study%20histamine%20responses%3F%0AAns%3A%20Guinea%20pig%20ileum%0AWhy%3A%20The%20guinea%20pig%20ileum%20is%20a%20classic%20preparation%20for%20histamine%20and%20acetylcholine%20dose-response%20studies.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 10 Nov 2026*\n\n🎓 *MBBS* (Toxicology)\nQ: The specific antidote for organophosphate poisoning is?\nAns: Atropine + pralidoxime\nWhy: Atropine blocks muscarinic effects; pralidoxime reactivates acetylcholinesterase in OP poisoning.\n\n🌍 *FMGE* (Toxicology)\nQ: Opioid overdose presents with pinpoint pupils and respiratory depression, reversed by?\nAns: Naloxone\nWhy: Naloxone rapidly reverses opioid-induced respiratory depression and miosis.\n\n🩺 *NEET PG* (Toxicology)\nQ: Hydroxocobalamin treats cyanide poisoning by?\nAns: Binding cyanide to form cyanocobalamin\nWhy: Hydroxocobalamin binds cyanide forming non-toxic cyanocobalamin (vitamin B12a), excreted in urine.\n\n🏥 *INI-CET* (Toxicology)\nQ: High anion gap metabolic acidosis with osmolar gap suggests poisoning by?\nAns: Methanol or ethylene glycol\nWhy: Toxic alcohols raise both the anion gap (acid metabolites) and the osmolar gap (parent alcohol).\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: The WHO-UMC causality category 'certain' requires a reaction that?\nAns: Has a plausible time, dechallenge/rechallenge positive, and no alternative cause\nWhy: 'Certain' causality needs a plausible temporal relationship, positive dechallenge/rechallenge and no other explanation.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2010%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Toxicology%29%0AQ%3A%20The%20specific%20antidote%20for%20organophosphate%20poisoning%20is%3F%0AAns%3A%20Atropine%20%2B%20pralidoxime%0AWhy%3A%20Atropine%20blocks%20muscarinic%20effects%3B%20pralidoxime%20reactivates%20acetylcholinesterase%20in%20OP%20poisoning.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Opioid%20overdose%20presents%20with%20pinpoint%20pupils%20and%20respiratory%20depression%2C%20reversed%20by%3F%0AAns%3A%20Naloxone%0AWhy%3A%20Naloxone%20rapidly%20reverses%20opioid-induced%20respiratory%20depression%20and%20miosis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Toxicology%29%0AQ%3A%20Hydroxocobalamin%20treats%20cyanide%20poisoning%20by%3F%0AAns%3A%20Binding%20cyanide%20to%20form%20cyanocobalamin%0AWhy%3A%20Hydroxocobalamin%20binds%20cyanide%20forming%20non-toxic%20cyanocobalamin%20%28vitamin%20B12a%29%2C%20excreted%20in%20urine.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Toxicology%29%0AQ%3A%20High%20anion%20gap%20metabolic%20acidosis%20with%20osmolar%20gap%20suggests%20poisoning%20by%3F%0AAns%3A%20Methanol%20or%20ethylene%20glycol%0AWhy%3A%20Toxic%20alcohols%20raise%20both%20the%20anion%20gap%20%28acid%20metabolites%29%20and%20the%20osmolar%20gap%20%28parent%20alcohol%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20The%20WHO-UMC%20causality%20category%20%27certain%27%20requires%20a%20reaction%20that%3F%0AAns%3A%20Has%20a%20plausible%20time%2C%20dechallenge/rechallenge%20positive%2C%20and%20no%20alternative%20cause%0AWhy%3A%20%27Certain%27%20causality%20needs%20a%20plausible%20temporal%20relationship%2C%20positive%20dechallenge/rechallenge%20and%20no%20other%20explanation.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
