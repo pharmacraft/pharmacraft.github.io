@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Toxicology",
-      "question": "The specific antidote for organophosphate poisoning is?",
+      "topic": "General Pharmacology",
+      "question": "Bioavailability of a drug given intravenously is?",
       "options": [
-        "Flumazenil",
-        "N-acetylcysteine",
-        "Naloxone",
-        "Atropine + pralidoxime"
+        "0%",
+        "50%",
+        "75%",
+        "100%"
       ],
       "correct": 3,
-      "explanation": "Atropine blocks muscarinic effects; pralidoxime reactivates acetylcholinesterase in OP poisoning."
+      "explanation": "IV route bypasses absorption, so bioavailability (F) is 100% by definition."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Toxicology",
-      "question": "Opioid overdose presents with pinpoint pupils and respiratory depression, reversed by?",
+      "topic": "General Pharmacology",
+      "question": "Zero-order kinetics means a constant ______ is eliminated per unit time.",
       "options": [
-        "Naloxone",
-        "Atropine",
-        "Flumazenil",
-        "Pralidoxime"
+        "half",
+        "amount",
+        "percentage",
+        "fraction"
       ],
-      "correct": 0,
-      "explanation": "Naloxone rapidly reverses opioid-induced respiratory depression and miosis."
+      "correct": 1,
+      "explanation": "In zero-order kinetics a constant AMOUNT is eliminated per unit time (e.g., ethanol, phenytoin at high dose)."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Toxicology",
-      "question": "Hydroxocobalamin treats cyanide poisoning by?",
+      "topic": "General Pharmacology",
+      "question": "Zero-order elimination becomes important for phenytoin because at therapeutic doses enzymes are?",
       "options": [
-        "Chelating iron",
-        "Binding cyanide to form cyanocobalamin",
-        "Blocking absorption",
-        "Forming methaemoglobin"
+        "Inhibited",
+        "Induced",
+        "Saturated",
+        "Absent"
       ],
-      "correct": 1,
-      "explanation": "Hydroxocobalamin binds cyanide forming non-toxic cyanocobalamin (vitamin B12a), excreted in urine."
+      "correct": 2,
+      "explanation": "Phenytoin shows saturation (Michaelis-Menten) kinetics; small dose increases cause large plasma rises."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Toxicology",
-      "question": "High anion gap metabolic acidosis with osmolar gap suggests poisoning by?",
+      "topic": "General Pharmacology",
+      "question": "Flip-flop kinetics occurs when?",
       "options": [
-        "Benzodiazepine",
-        "Opioid",
-        "Beta-blocker",
-        "Methanol or ethylene glycol"
+        "Elimination is faster than absorption",
+        "Absorption rate is slower than elimination",
+        "Protein binding is high",
+        "Vd is very large"
       ],
-      "correct": 3,
-      "explanation": "Toxic alcohols raise both the anion gap (acid metabolites) and the osmolar gap (parent alcohol)."
+      "correct": 1,
+      "explanation": "In flip-flop kinetics the slow absorption rate governs the terminal slope (e.g., depot/SR formulations)."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "The WHO-UMC causality category 'certain' requires a reaction that?",
+      "topic": "Paper III: Systemic",
+      "question": "Levothyroxine absorption is reduced by concurrent?",
       "options": [
-        "Has a plausible time, dechallenge/rechallenge positive, and no alternative cause",
-        "Is unrelated to drug",
-        "Occurs once",
-        "Is dose independent"
+        "Water",
+        "Calcium/iron supplements",
+        "Fasting",
+        "Exercise"
       ],
-      "correct": 0,
-      "explanation": "'Certain' causality needs a plausible temporal relationship, positive dechallenge/rechallenge and no other explanation."
+      "correct": 1,
+      "explanation": "Calcium and iron bind levothyroxine, reducing absorption; separate dosing is needed."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 10 Nov 2026*\n\n🎓 *MBBS* (Toxicology)\nQ: The specific antidote for organophosphate poisoning is?\nAns: Atropine + pralidoxime\nWhy: Atropine blocks muscarinic effects; pralidoxime reactivates acetylcholinesterase in OP poisoning.\n\n🌍 *FMGE* (Toxicology)\nQ: Opioid overdose presents with pinpoint pupils and respiratory depression, reversed by?\nAns: Naloxone\nWhy: Naloxone rapidly reverses opioid-induced respiratory depression and miosis.\n\n🩺 *NEET PG* (Toxicology)\nQ: Hydroxocobalamin treats cyanide poisoning by?\nAns: Binding cyanide to form cyanocobalamin\nWhy: Hydroxocobalamin binds cyanide forming non-toxic cyanocobalamin (vitamin B12a), excreted in urine.\n\n🏥 *INI-CET* (Toxicology)\nQ: High anion gap metabolic acidosis with osmolar gap suggests poisoning by?\nAns: Methanol or ethylene glycol\nWhy: Toxic alcohols raise both the anion gap (acid metabolites) and the osmolar gap (parent alcohol).\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: The WHO-UMC causality category 'certain' requires a reaction that?\nAns: Has a plausible time, dechallenge/rechallenge positive, and no alternative cause\nWhy: 'Certain' causality needs a plausible temporal relationship, positive dechallenge/rechallenge and no other explanation.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2010%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Toxicology%29%0AQ%3A%20The%20specific%20antidote%20for%20organophosphate%20poisoning%20is%3F%0AAns%3A%20Atropine%20%2B%20pralidoxime%0AWhy%3A%20Atropine%20blocks%20muscarinic%20effects%3B%20pralidoxime%20reactivates%20acetylcholinesterase%20in%20OP%20poisoning.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Opioid%20overdose%20presents%20with%20pinpoint%20pupils%20and%20respiratory%20depression%2C%20reversed%20by%3F%0AAns%3A%20Naloxone%0AWhy%3A%20Naloxone%20rapidly%20reverses%20opioid-induced%20respiratory%20depression%20and%20miosis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Toxicology%29%0AQ%3A%20Hydroxocobalamin%20treats%20cyanide%20poisoning%20by%3F%0AAns%3A%20Binding%20cyanide%20to%20form%20cyanocobalamin%0AWhy%3A%20Hydroxocobalamin%20binds%20cyanide%20forming%20non-toxic%20cyanocobalamin%20%28vitamin%20B12a%29%2C%20excreted%20in%20urine.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Toxicology%29%0AQ%3A%20High%20anion%20gap%20metabolic%20acidosis%20with%20osmolar%20gap%20suggests%20poisoning%20by%3F%0AAns%3A%20Methanol%20or%20ethylene%20glycol%0AWhy%3A%20Toxic%20alcohols%20raise%20both%20the%20anion%20gap%20%28acid%20metabolites%29%20and%20the%20osmolar%20gap%20%28parent%20alcohol%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20The%20WHO-UMC%20causality%20category%20%27certain%27%20requires%20a%20reaction%20that%3F%0AAns%3A%20Has%20a%20plausible%20time%2C%20dechallenge/rechallenge%20positive%2C%20and%20no%20alternative%20cause%0AWhy%3A%20%27Certain%27%20causality%20needs%20a%20plausible%20temporal%20relationship%2C%20positive%20dechallenge/rechallenge%20and%20no%20other%20explanation.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 11 Nov 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: Bioavailability of a drug given intravenously is?\nAns: 100%\nWhy: IV route bypasses absorption, so bioavailability (F) is 100% by definition.\n\n🌍 *FMGE* (General Pharmacology)\nQ: Zero-order kinetics means a constant ______ is eliminated per unit time.\nAns: amount\nWhy: In zero-order kinetics a constant AMOUNT is eliminated per unit time (e.g., ethanol, phenytoin at high dose).\n\n🩺 *NEET PG* (General Pharmacology)\nQ: Zero-order elimination becomes important for phenytoin because at therapeutic doses enzymes are?\nAns: Saturated\nWhy: Phenytoin shows saturation (Michaelis-Menten) kinetics; small dose increases cause large plasma rises.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: Flip-flop kinetics occurs when?\nAns: Absorption rate is slower than elimination\nWhy: In flip-flop kinetics the slow absorption rate governs the terminal slope (e.g., depot/SR formulations).\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Levothyroxine absorption is reduced by concurrent?\nAns: Calcium/iron supplements\nWhy: Calcium and iron bind levothyroxine, reducing absorption; separate dosing is needed.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2011%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20Bioavailability%20of%20a%20drug%20given%20intravenously%20is%3F%0AAns%3A%20100%25%0AWhy%3A%20IV%20route%20bypasses%20absorption%2C%20so%20bioavailability%20%28F%29%20is%20100%25%20by%20definition.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20Zero-order%20kinetics%20means%20a%20constant%20______%20is%20eliminated%20per%20unit%20time.%0AAns%3A%20amount%0AWhy%3A%20In%20zero-order%20kinetics%20a%20constant%20AMOUNT%20is%20eliminated%20per%20unit%20time%20%28e.g.%2C%20ethanol%2C%20phenytoin%20at%20high%20dose%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20Zero-order%20elimination%20becomes%20important%20for%20phenytoin%20because%20at%20therapeutic%20doses%20enzymes%20are%3F%0AAns%3A%20Saturated%0AWhy%3A%20Phenytoin%20shows%20saturation%20%28Michaelis-Menten%29%20kinetics%3B%20small%20dose%20increases%20cause%20large%20plasma%20rises.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20Flip-flop%20kinetics%20occurs%20when%3F%0AAns%3A%20Absorption%20rate%20is%20slower%20than%20elimination%0AWhy%3A%20In%20flip-flop%20kinetics%20the%20slow%20absorption%20rate%20governs%20the%20terminal%20slope%20%28e.g.%2C%20depot/SR%20formulations%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Levothyroxine%20absorption%20is%20reduced%20by%20concurrent%3F%0AAns%3A%20Calcium/iron%20supplements%0AWhy%3A%20Calcium%20and%20iron%20bind%20levothyroxine%2C%20reducing%20absorption%3B%20separate%20dosing%20is%20needed.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

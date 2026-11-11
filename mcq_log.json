@@ -769,6 +769,61 @@
      "stem": "The WHO-UMC causality category 'certain' requires a reaction that?"
     }
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "source": "bank",
+   "topic_index": 0,
+   "md_paper_index": 2,
+   "case_slot": 4,
+   "ra_slot": 1,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "3db28fc17f4f",
+     "stem": "Bioavailability of a drug given intravenously is?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "d4e3fff4ec00",
+     "stem": "Zero-order kinetics means a constant ______ is eliminated per unit time."
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "087e07be3b90",
+     "stem": "Zero-order elimination becomes important for phenytoin because at therapeutic doses enzymes are?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "5f4aa9163b35",
+     "stem": "Flip-flop kinetics occurs when?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "3baaab1c0d0b",
+     "stem": "Levothyroxine absorption is reduced by concurrent?"
+    }
+   ]
   }
  ]
 }
