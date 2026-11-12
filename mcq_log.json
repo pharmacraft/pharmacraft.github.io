@@ -824,6 +824,61 @@
      "stem": "Levothyroxine absorption is reduced by concurrent?"
     }
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "source": "bank",
+   "topic_index": 1,
+   "md_paper_index": 3,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "a1cac4c63e48",
+     "stem": "Adrenaline is the drug of choice for?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "a06e72fca2f2",
+     "stem": "Beta-blockers are contraindicated in which condition?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "5be35cb43db4",
+     "stem": "Tamsulosin improves benign prostatic hyperplasia symptoms by blocking?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "1c0b5bce4c7c",
+     "stem": "Epinephrine reversal (vasodepressor effect) occurs after pretreatment with?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "41004f12c5fb",
+     "stem": "Nirmatrelvir (with ritonavir) treats COVID-19 by inhibiting the viral?"
+    }
+   ]
   }
  ]
 }

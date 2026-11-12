@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "General Pharmacology",
-      "question": "Bioavailability of a drug given intravenously is?",
+      "topic": "ANS",
+      "question": "Adrenaline is the drug of choice for?",
       "options": [
-        "0%",
-        "50%",
-        "75%",
-        "100%"
+        "Hypertension",
+        "Anaphylaxis",
+        "Glaucoma",
+        "Angina"
       ],
-      "correct": 3,
-      "explanation": "IV route bypasses absorption, so bioavailability (F) is 100% by definition."
+      "correct": 1,
+      "explanation": "Adrenaline (IM) is first-line in anaphylaxis - it reverses bronchospasm, hypotension and oedema."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "General Pharmacology",
-      "question": "Zero-order kinetics means a constant ______ is eliminated per unit time.",
+      "topic": "ANS",
+      "question": "Beta-blockers are contraindicated in which condition?",
       "options": [
-        "half",
-        "amount",
-        "percentage",
-        "fraction"
+        "Bronchial asthma",
+        "Arrhythmia",
+        "Hypertension",
+        "Angina"
       ],
-      "correct": 1,
-      "explanation": "In zero-order kinetics a constant AMOUNT is eliminated per unit time (e.g., ethanol, phenytoin at high dose)."
+      "correct": 0,
+      "explanation": "Non-selective beta-blockers can cause bronchospasm and are relatively contraindicated in asthma."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "General Pharmacology",
-      "question": "Zero-order elimination becomes important for phenytoin because at therapeutic doses enzymes are?",
+      "topic": "ANS",
+      "question": "Tamsulosin improves benign prostatic hyperplasia symptoms by blocking?",
       "options": [
-        "Inhibited",
-        "Induced",
-        "Saturated",
-        "Absent"
+        "Muscarinic receptors",
+        "Beta receptors",
+        "Alpha-1A receptors",
+        "5-alpha reductase"
       ],
       "correct": 2,
-      "explanation": "Phenytoin shows saturation (Michaelis-Menten) kinetics; small dose increases cause large plasma rises."
+      "explanation": "Tamsulosin is a uroselective alpha-1A blocker relaxing prostatic smooth muscle."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "General Pharmacology",
-      "question": "Flip-flop kinetics occurs when?",
+      "topic": "ANS",
+      "question": "Epinephrine reversal (vasodepressor effect) occurs after pretreatment with?",
       "options": [
-        "Elimination is faster than absorption",
-        "Absorption rate is slower than elimination",
-        "Protein binding is high",
-        "Vd is very large"
+        "Neostigmine",
+        "Alpha blocker (e.g., phentolamine)",
+        "Atropine",
+        "Beta blocker"
       ],
       "correct": 1,
-      "explanation": "In flip-flop kinetics the slow absorption rate governs the terminal slope (e.g., depot/SR formulations)."
+      "explanation": "With alpha blockade, epinephrine's beta-2 vasodilation dominates, lowering BP (epinephrine reversal)."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper III: Systemic",
-      "question": "Levothyroxine absorption is reduced by concurrent?",
+      "topic": "Paper IV: Recent Advances",
+      "question": "Nirmatrelvir (with ritonavir) treats COVID-19 by inhibiting the viral?",
       "options": [
-        "Water",
-        "Calcium/iron supplements",
-        "Fasting",
-        "Exercise"
+        "Spike protein",
+        "Main protease (3CL protease)",
+        "Neuraminidase",
+        "RNA polymerase"
       ],
       "correct": 1,
-      "explanation": "Calcium and iron bind levothyroxine, reducing absorption; separate dosing is needed."
+      "explanation": "Nirmatrelvir inhibits SARS-CoV-2 3CL (main) protease; ritonavir boosts its levels."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 11 Nov 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: Bioavailability of a drug given intravenously is?\nAns: 100%\nWhy: IV route bypasses absorption, so bioavailability (F) is 100% by definition.\n\n🌍 *FMGE* (General Pharmacology)\nQ: Zero-order kinetics means a constant ______ is eliminated per unit time.\nAns: amount\nWhy: In zero-order kinetics a constant AMOUNT is eliminated per unit time (e.g., ethanol, phenytoin at high dose).\n\n🩺 *NEET PG* (General Pharmacology)\nQ: Zero-order elimination becomes important for phenytoin because at therapeutic doses enzymes are?\nAns: Saturated\nWhy: Phenytoin shows saturation (Michaelis-Menten) kinetics; small dose increases cause large plasma rises.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: Flip-flop kinetics occurs when?\nAns: Absorption rate is slower than elimination\nWhy: In flip-flop kinetics the slow absorption rate governs the terminal slope (e.g., depot/SR formulations).\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Levothyroxine absorption is reduced by concurrent?\nAns: Calcium/iron supplements\nWhy: Calcium and iron bind levothyroxine, reducing absorption; separate dosing is needed.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2011%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20Bioavailability%20of%20a%20drug%20given%20intravenously%20is%3F%0AAns%3A%20100%25%0AWhy%3A%20IV%20route%20bypasses%20absorption%2C%20so%20bioavailability%20%28F%29%20is%20100%25%20by%20definition.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20Zero-order%20kinetics%20means%20a%20constant%20______%20is%20eliminated%20per%20unit%20time.%0AAns%3A%20amount%0AWhy%3A%20In%20zero-order%20kinetics%20a%20constant%20AMOUNT%20is%20eliminated%20per%20unit%20time%20%28e.g.%2C%20ethanol%2C%20phenytoin%20at%20high%20dose%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20Zero-order%20elimination%20becomes%20important%20for%20phenytoin%20because%20at%20therapeutic%20doses%20enzymes%20are%3F%0AAns%3A%20Saturated%0AWhy%3A%20Phenytoin%20shows%20saturation%20%28Michaelis-Menten%29%20kinetics%3B%20small%20dose%20increases%20cause%20large%20plasma%20rises.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20Flip-flop%20kinetics%20occurs%20when%3F%0AAns%3A%20Absorption%20rate%20is%20slower%20than%20elimination%0AWhy%3A%20In%20flip-flop%20kinetics%20the%20slow%20absorption%20rate%20governs%20the%20terminal%20slope%20%28e.g.%2C%20depot/SR%20formulations%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Levothyroxine%20absorption%20is%20reduced%20by%20concurrent%3F%0AAns%3A%20Calcium/iron%20supplements%0AWhy%3A%20Calcium%20and%20iron%20bind%20levothyroxine%2C%20reducing%20absorption%3B%20separate%20dosing%20is%20needed.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 12 Nov 2026*\n\n🎓 *MBBS* (ANS)\nQ: Adrenaline is the drug of choice for?\nAns: Anaphylaxis\nWhy: Adrenaline (IM) is first-line in anaphylaxis - it reverses bronchospasm, hypotension and oedema.\n\n🌍 *FMGE* (ANS)\nQ: Beta-blockers are contraindicated in which condition?\nAns: Bronchial asthma\nWhy: Non-selective beta-blockers can cause bronchospasm and are relatively contraindicated in asthma.\n\n🩺 *NEET PG* (ANS)\nQ: Tamsulosin improves benign prostatic hyperplasia symptoms by blocking?\nAns: Alpha-1A receptors\nWhy: Tamsulosin is a uroselective alpha-1A blocker relaxing prostatic smooth muscle.\n\n🏥 *INI-CET* (ANS)\nQ: Epinephrine reversal (vasodepressor effect) occurs after pretreatment with?\nAns: Alpha blocker (e.g., phentolamine)\nWhy: With alpha blockade, epinephrine's beta-2 vasodilation dominates, lowering BP (epinephrine reversal).\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Nirmatrelvir (with ritonavir) treats COVID-19 by inhibiting the viral?\nAns: Main protease (3CL protease)\nWhy: Nirmatrelvir inhibits SARS-CoV-2 3CL (main) protease; ritonavir boosts its levels.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2012%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28ANS%29%0AQ%3A%20Adrenaline%20is%20the%20drug%20of%20choice%20for%3F%0AAns%3A%20Anaphylaxis%0AWhy%3A%20Adrenaline%20%28IM%29%20is%20first-line%20in%20anaphylaxis%20-%20it%20reverses%20bronchospasm%2C%20hypotension%20and%20oedema.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28ANS%29%0AQ%3A%20Beta-blockers%20are%20contraindicated%20in%20which%20condition%3F%0AAns%3A%20Bronchial%20asthma%0AWhy%3A%20Non-selective%20beta-blockers%20can%20cause%20bronchospasm%20and%20are%20relatively%20contraindicated%20in%20asthma.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28ANS%29%0AQ%3A%20Tamsulosin%20improves%20benign%20prostatic%20hyperplasia%20symptoms%20by%20blocking%3F%0AAns%3A%20Alpha-1A%20receptors%0AWhy%3A%20Tamsulosin%20is%20a%20uroselective%20alpha-1A%20blocker%20relaxing%20prostatic%20smooth%20muscle.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28ANS%29%0AQ%3A%20Epinephrine%20reversal%20%28vasodepressor%20effect%29%20occurs%20after%20pretreatment%20with%3F%0AAns%3A%20Alpha%20blocker%20%28e.g.%2C%20phentolamine%29%0AWhy%3A%20With%20alpha%20blockade%2C%20epinephrine%27s%20beta-2%20vasodilation%20dominates%2C%20lowering%20BP%20%28epinephrine%20reversal%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Nirmatrelvir%20%28with%20ritonavir%29%20treats%20COVID-19%20by%20inhibiting%20the%20viral%3F%0AAns%3A%20Main%20protease%20%283CL%20protease%29%0AWhy%3A%20Nirmatrelvir%20inhibits%20SARS-CoV-2%203CL%20%28main%29%20protease%3B%20ritonavir%20boosts%20its%20levels.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
