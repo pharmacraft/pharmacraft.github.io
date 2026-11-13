@@ -879,6 +879,61 @@
      "stem": "Nirmatrelvir (with ritonavir) treats COVID-19 by inhibiting the viral?"
     }
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "source": "bank",
+   "topic_index": 2,
+   "md_paper_index": 0,
+   "case_slot": 1,
+   "ra_slot": 3,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "b926562557d5",
+     "stem": "Which antihypertensive is an ACE inhibitor?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "ab18e32baa2c",
+     "stem": "Losartan lowers blood pressure by blocking?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "4971c137d5f5",
+     "stem": "Sacubitril/valsartan improves heart failure outcomes; sacubitril inhibits?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "1556bf2ce850",
+     "stem": "In Wolff-Parkinson-White with atrial fibrillation, which drug is dangerous?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "d128d9f17473",
+     "stem": "The 3Rs principle in animal experimentation stands for Replacement, Reduction and?"
+    }
+   ]
   }
  ]
 }
