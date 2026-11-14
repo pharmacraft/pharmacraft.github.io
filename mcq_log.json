@@ -934,6 +934,61 @@
      "stem": "The 3Rs principle in animal experimentation stands for Replacement, Reduction and?"
     }
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "source": "bank",
+   "topic_index": 3,
+   "md_paper_index": 1,
+   "case_slot": 2,
+   "ra_slot": 4,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "f08d4d0fd785",
+     "stem": "The specific antidote for benzodiazepine overdose is?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "0b2cb11f49d3",
+     "stem": "Which drug is used in Parkinson's disease as a dopamine agonist?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "55de799d0051",
+     "stem": "Which drug is first-line for absence (petit mal) seizures?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "CNS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CNS",
+     "stem_hash": "d374b11e1e87",
+     "stem": "Lamotrigine dosing must be titrated slowly to avoid?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "d5f0ec260525",
+     "stem": "The Naranjo scale is used to assess?"
+    }
+   ]
   }
  ]
 }

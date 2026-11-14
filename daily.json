@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "CVS",
-      "question": "Which antihypertensive is an ACE inhibitor?",
+      "topic": "CNS",
+      "question": "The specific antidote for benzodiazepine overdose is?",
       "options": [
-        "Amlodipine",
-        "Hydrochlorothiazide",
-        "Losartan",
-        "Enalapril"
+        "Physostigmine",
+        "Atropine",
+        "Flumazenil",
+        "Naloxone"
       ],
-      "correct": 3,
-      "explanation": "Enalapril blocks angiotensin-converting enzyme. Losartan is an ARB; amlodipine is a CCB."
+      "correct": 2,
+      "explanation": "Flumazenil is a benzodiazepine receptor antagonist used in benzodiazepine overdose."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "CVS",
-      "question": "Losartan lowers blood pressure by blocking?",
+      "topic": "CNS",
+      "question": "Which drug is used in Parkinson's disease as a dopamine agonist?",
       "options": [
-        "Beta receptors",
-        "Calcium channels",
-        "Angiotensin II AT1 receptors",
-        "ACE"
+        "Carbidopa",
+        "Levodopa",
+        "Entacapone",
+        "Bromocriptine"
       ],
-      "correct": 2,
-      "explanation": "Losartan is an ARB blocking AT1 receptors; no cough (unlike ACE inhibitors)."
+      "correct": 3,
+      "explanation": "Bromocriptine directly stimulates dopamine receptors; levodopa is a dopamine precursor."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "CVS",
-      "question": "Sacubitril/valsartan improves heart failure outcomes; sacubitril inhibits?",
+      "topic": "CNS",
+      "question": "Which drug is first-line for absence (petit mal) seizures?",
       "options": [
-        "Neprilysin",
-        "Renin",
-        "ACE",
-        "Aldosterone"
+        "Vigabatrin",
+        "Ethosuximide",
+        "Phenytoin",
+        "Carbamazepine"
       ],
-      "correct": 0,
-      "explanation": "Sacubitril inhibits neprilysin, raising natriuretic peptides; combined with the ARB valsartan (ARNI)."
+      "correct": 1,
+      "explanation": "Ethosuximide blocks T-type calcium channels in thalamic neurons; first-line for absence seizures."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "CVS",
-      "question": "In Wolff-Parkinson-White with atrial fibrillation, which drug is dangerous?",
+      "topic": "CNS",
+      "question": "Lamotrigine dosing must be titrated slowly to avoid?",
       "options": [
-        "Flecainide",
-        "DC cardioversion",
-        "Procainamide",
-        "AV nodal blockers like digoxin/verapamil"
+        "Hyponatraemia",
+        "Weight gain",
+        "Sedation",
+        "Stevens-Johnson syndrome"
       ],
       "correct": 3,
-      "explanation": "AV nodal blockers can increase conduction down the accessory pathway, risking ventricular fibrillation in WPW+AF."
+      "explanation": "Rapid lamotrigine escalation increases the risk of severe rash/Stevens-Johnson syndrome."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "The 3Rs principle in animal experimentation stands for Replacement, Reduction and?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "The Naranjo scale is used to assess?",
       "options": [
-        "Refinement",
-        "Repetition",
-        "Randomisation",
-        "Reporting"
+        "Probability of an adverse drug reaction (causality)",
+        "Drug potency",
+        "Bioequivalence",
+        "Trial quality"
       ],
       "correct": 0,
-      "explanation": "The 3Rs are Replacement, Reduction and Refinement, guiding humane animal use (CPCSEA)."
+      "explanation": "The Naranjo algorithm scores the likelihood that a drug caused an adverse reaction."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 13 Nov 2026*\n\n🎓 *MBBS* (CVS)\nQ: Which antihypertensive is an ACE inhibitor?\nAns: Enalapril\nWhy: Enalapril blocks angiotensin-converting enzyme. Losartan is an ARB; amlodipine is a CCB.\n\n🌍 *FMGE* (CVS)\nQ: Losartan lowers blood pressure by blocking?\nAns: Angiotensin II AT1 receptors\nWhy: Losartan is an ARB blocking AT1 receptors; no cough (unlike ACE inhibitors).\n\n🩺 *NEET PG* (CVS)\nQ: Sacubitril/valsartan improves heart failure outcomes; sacubitril inhibits?\nAns: Neprilysin\nWhy: Sacubitril inhibits neprilysin, raising natriuretic peptides; combined with the ARB valsartan (ARNI).\n\n🏥 *INI-CET* (CVS)\nQ: In Wolff-Parkinson-White with atrial fibrillation, which drug is dangerous?\nAns: AV nodal blockers like digoxin/verapamil\nWhy: AV nodal blockers can increase conduction down the accessory pathway, risking ventricular fibrillation in WPW+AF.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: The 3Rs principle in animal experimentation stands for Replacement, Reduction and?\nAns: Refinement\nWhy: The 3Rs are Replacement, Reduction and Refinement, guiding humane animal use (CPCSEA).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2013%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28CVS%29%0AQ%3A%20Which%20antihypertensive%20is%20an%20ACE%20inhibitor%3F%0AAns%3A%20Enalapril%0AWhy%3A%20Enalapril%20blocks%20angiotensin-converting%20enzyme.%20Losartan%20is%20an%20ARB%3B%20amlodipine%20is%20a%20CCB.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28CVS%29%0AQ%3A%20Losartan%20lowers%20blood%20pressure%20by%20blocking%3F%0AAns%3A%20Angiotensin%20II%20AT1%20receptors%0AWhy%3A%20Losartan%20is%20an%20ARB%20blocking%20AT1%20receptors%3B%20no%20cough%20%28unlike%20ACE%20inhibitors%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28CVS%29%0AQ%3A%20Sacubitril/valsartan%20improves%20heart%20failure%20outcomes%3B%20sacubitril%20inhibits%3F%0AAns%3A%20Neprilysin%0AWhy%3A%20Sacubitril%20inhibits%20neprilysin%2C%20raising%20natriuretic%20peptides%3B%20combined%20with%20the%20ARB%20valsartan%20%28ARNI%29.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28CVS%29%0AQ%3A%20In%20Wolff-Parkinson-White%20with%20atrial%20fibrillation%2C%20which%20drug%20is%20dangerous%3F%0AAns%3A%20AV%20nodal%20blockers%20like%20digoxin/verapamil%0AWhy%3A%20AV%20nodal%20blockers%20can%20increase%20conduction%20down%20the%20accessory%20pathway%2C%20risking%20ventricular%20fibrillation%20in%20WPW%2BAF.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20The%203Rs%20principle%20in%20animal%20experimentation%20stands%20for%20Replacement%2C%20Reduction%20and%3F%0AAns%3A%20Refinement%0AWhy%3A%20The%203Rs%20are%20Replacement%2C%20Reduction%20and%20Refinement%2C%20guiding%20humane%20animal%20use%20%28CPCSEA%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 14 Nov 2026*\n\n🎓 *MBBS* (CNS)\nQ: The specific antidote for benzodiazepine overdose is?\nAns: Flumazenil\nWhy: Flumazenil is a benzodiazepine receptor antagonist used in benzodiazepine overdose.\n\n🌍 *FMGE* (CNS)\nQ: Which drug is used in Parkinson's disease as a dopamine agonist?\nAns: Bromocriptine\nWhy: Bromocriptine directly stimulates dopamine receptors; levodopa is a dopamine precursor.\n\n🩺 *NEET PG* (CNS)\nQ: Which drug is first-line for absence (petit mal) seizures?\nAns: Ethosuximide\nWhy: Ethosuximide blocks T-type calcium channels in thalamic neurons; first-line for absence seizures.\n\n🏥 *INI-CET* (CNS)\nQ: Lamotrigine dosing must be titrated slowly to avoid?\nAns: Stevens-Johnson syndrome\nWhy: Rapid lamotrigine escalation increases the risk of severe rash/Stevens-Johnson syndrome.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: The Naranjo scale is used to assess?\nAns: Probability of an adverse drug reaction (causality)\nWhy: The Naranjo algorithm scores the likelihood that a drug caused an adverse reaction.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2014%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28CNS%29%0AQ%3A%20The%20specific%20antidote%20for%20benzodiazepine%20overdose%20is%3F%0AAns%3A%20Flumazenil%0AWhy%3A%20Flumazenil%20is%20a%20benzodiazepine%20receptor%20antagonist%20used%20in%20benzodiazepine%20overdose.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28CNS%29%0AQ%3A%20Which%20drug%20is%20used%20in%20Parkinson%27s%20disease%20as%20a%20dopamine%20agonist%3F%0AAns%3A%20Bromocriptine%0AWhy%3A%20Bromocriptine%20directly%20stimulates%20dopamine%20receptors%3B%20levodopa%20is%20a%20dopamine%20precursor.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28CNS%29%0AQ%3A%20Which%20drug%20is%20first-line%20for%20absence%20%28petit%20mal%29%20seizures%3F%0AAns%3A%20Ethosuximide%0AWhy%3A%20Ethosuximide%20blocks%20T-type%20calcium%20channels%20in%20thalamic%20neurons%3B%20first-line%20for%20absence%20seizures.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28CNS%29%0AQ%3A%20Lamotrigine%20dosing%20must%20be%20titrated%20slowly%20to%20avoid%3F%0AAns%3A%20Stevens-Johnson%20syndrome%0AWhy%3A%20Rapid%20lamotrigine%20escalation%20increases%20the%20risk%20of%20severe%20rash/Stevens-Johnson%20syndrome.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20The%20Naranjo%20scale%20is%20used%20to%20assess%3F%0AAns%3A%20Probability%20of%20an%20adverse%20drug%20reaction%20%28causality%29%0AWhy%3A%20The%20Naranjo%20algorithm%20scores%20the%20likelihood%20that%20a%20drug%20caused%20an%20adverse%20reaction.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
