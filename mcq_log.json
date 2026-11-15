@@ -989,6 +989,61 @@
      "stem": "The Naranjo scale is used to assess?"
     }
    ]
+  },
+  {
+   "date": "2026-11-15",
+   "source": "bank",
+   "topic_index": 4,
+   "md_paper_index": 2,
+   "case_slot": 3,
+   "ra_slot": 0,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "2b16db00b09d",
+     "stem": "Low-dose aspirin is used for its effect on?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "cc7b6313d708",
+     "stem": "Which drug is preferred for fever in children?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "0d123c248109",
+     "stem": "Which drug is used for acute gout and inhibits neutrophil migration via microtubules?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Autacoids & NSAIDs",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Autacoids & NSAIDs",
+     "stem_hash": "9165f2735c39",
+     "stem": "Aspirin-exacerbated respiratory disease (Samter's triad) results from?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "f7b5dd33ed85",
+     "stem": "Which insulin has the fastest onset for prandial control?"
+    }
+   ]
   }
  ]
 }

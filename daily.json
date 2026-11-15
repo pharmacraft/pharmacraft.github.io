@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "CNS",
-      "question": "The specific antidote for benzodiazepine overdose is?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Low-dose aspirin is used for its effect on?",
       "options": [
-        "Physostigmine",
-        "Atropine",
-        "Flumazenil",
-        "Naloxone"
+        "Platelet aggregation",
+        "Fever",
+        "Inflammation",
+        "Pain"
       ],
-      "correct": 2,
-      "explanation": "Flumazenil is a benzodiazepine receptor antagonist used in benzodiazepine overdose."
+      "correct": 0,
+      "explanation": "Low-dose aspirin irreversibly inhibits platelet COX-1, reducing thromboxane A2 and aggregation."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "CNS",
-      "question": "Which drug is used in Parkinson's disease as a dopamine agonist?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Which drug is preferred for fever in children?",
       "options": [
-        "Carbidopa",
-        "Levodopa",
-        "Entacapone",
-        "Bromocriptine"
+        "Indomethacin",
+        "Aspirin",
+        "Ketorolac",
+        "Paracetamol"
       ],
       "correct": 3,
-      "explanation": "Bromocriptine directly stimulates dopamine receptors; levodopa is a dopamine precursor."
+      "explanation": "Paracetamol is the preferred antipyretic in children; aspirin is avoided."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "CNS",
-      "question": "Which drug is first-line for absence (petit mal) seizures?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Which drug is used for acute gout and inhibits neutrophil migration via microtubules?",
       "options": [
-        "Vigabatrin",
-        "Ethosuximide",
-        "Phenytoin",
-        "Carbamazepine"
+        "Colchicine",
+        "Probenecid",
+        "Febuxostat",
+        "Allopurinol"
       ],
-      "correct": 1,
-      "explanation": "Ethosuximide blocks T-type calcium channels in thalamic neurons; first-line for absence seizures."
+      "correct": 0,
+      "explanation": "Colchicine binds tubulin, impairing neutrophil chemotaxis; effective in acute gout but GI toxicity limits dose."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "CNS",
-      "question": "Lamotrigine dosing must be titrated slowly to avoid?",
+      "topic": "Autacoids & NSAIDs",
+      "question": "Aspirin-exacerbated respiratory disease (Samter's triad) results from?",
       "options": [
-        "Hyponatraemia",
-        "Weight gain",
-        "Sedation",
-        "Stevens-Johnson syndrome"
+        "Histamine release",
+        "COX-2 selectivity",
+        "IgE allergy",
+        "Shunting of arachidonate to leukotrienes after COX inhibition"
       ],
       "correct": 3,
-      "explanation": "Rapid lamotrigine escalation increases the risk of severe rash/Stevens-Johnson syndrome."
+      "explanation": "COX inhibition diverts arachidonic acid to leukotrienes, causing bronchospasm in sensitive asthmatics."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "The Naranjo scale is used to assess?",
+      "topic": "Paper III: Systemic",
+      "question": "Which insulin has the fastest onset for prandial control?",
       "options": [
-        "Probability of an adverse drug reaction (causality)",
-        "Drug potency",
-        "Bioequivalence",
-        "Trial quality"
+        "NPH",
+        "Detemir",
+        "Lispro/aspart (rapid-acting analogues)",
+        "Glargine"
       ],
-      "correct": 0,
-      "explanation": "The Naranjo algorithm scores the likelihood that a drug caused an adverse reaction."
+      "correct": 2,
+      "explanation": "Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, ideal for mealtime coverage."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 14 Nov 2026*\n\n🎓 *MBBS* (CNS)\nQ: The specific antidote for benzodiazepine overdose is?\nAns: Flumazenil\nWhy: Flumazenil is a benzodiazepine receptor antagonist used in benzodiazepine overdose.\n\n🌍 *FMGE* (CNS)\nQ: Which drug is used in Parkinson's disease as a dopamine agonist?\nAns: Bromocriptine\nWhy: Bromocriptine directly stimulates dopamine receptors; levodopa is a dopamine precursor.\n\n🩺 *NEET PG* (CNS)\nQ: Which drug is first-line for absence (petit mal) seizures?\nAns: Ethosuximide\nWhy: Ethosuximide blocks T-type calcium channels in thalamic neurons; first-line for absence seizures.\n\n🏥 *INI-CET* (CNS)\nQ: Lamotrigine dosing must be titrated slowly to avoid?\nAns: Stevens-Johnson syndrome\nWhy: Rapid lamotrigine escalation increases the risk of severe rash/Stevens-Johnson syndrome.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: The Naranjo scale is used to assess?\nAns: Probability of an adverse drug reaction (causality)\nWhy: The Naranjo algorithm scores the likelihood that a drug caused an adverse reaction.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2014%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28CNS%29%0AQ%3A%20The%20specific%20antidote%20for%20benzodiazepine%20overdose%20is%3F%0AAns%3A%20Flumazenil%0AWhy%3A%20Flumazenil%20is%20a%20benzodiazepine%20receptor%20antagonist%20used%20in%20benzodiazepine%20overdose.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28CNS%29%0AQ%3A%20Which%20drug%20is%20used%20in%20Parkinson%27s%20disease%20as%20a%20dopamine%20agonist%3F%0AAns%3A%20Bromocriptine%0AWhy%3A%20Bromocriptine%20directly%20stimulates%20dopamine%20receptors%3B%20levodopa%20is%20a%20dopamine%20precursor.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28CNS%29%0AQ%3A%20Which%20drug%20is%20first-line%20for%20absence%20%28petit%20mal%29%20seizures%3F%0AAns%3A%20Ethosuximide%0AWhy%3A%20Ethosuximide%20blocks%20T-type%20calcium%20channels%20in%20thalamic%20neurons%3B%20first-line%20for%20absence%20seizures.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28CNS%29%0AQ%3A%20Lamotrigine%20dosing%20must%20be%20titrated%20slowly%20to%20avoid%3F%0AAns%3A%20Stevens-Johnson%20syndrome%0AWhy%3A%20Rapid%20lamotrigine%20escalation%20increases%20the%20risk%20of%20severe%20rash/Stevens-Johnson%20syndrome.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20The%20Naranjo%20scale%20is%20used%20to%20assess%3F%0AAns%3A%20Probability%20of%20an%20adverse%20drug%20reaction%20%28causality%29%0AWhy%3A%20The%20Naranjo%20algorithm%20scores%20the%20likelihood%20that%20a%20drug%20caused%20an%20adverse%20reaction.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 15 Nov 2026*\n\n🎓 *MBBS* (Autacoids & NSAIDs)\nQ: Low-dose aspirin is used for its effect on?\nAns: Platelet aggregation\nWhy: Low-dose aspirin irreversibly inhibits platelet COX-1, reducing thromboxane A2 and aggregation.\n\n🌍 *FMGE* (Autacoids & NSAIDs)\nQ: Which drug is preferred for fever in children?\nAns: Paracetamol\nWhy: Paracetamol is the preferred antipyretic in children; aspirin is avoided.\n\n🩺 *NEET PG* (Autacoids & NSAIDs)\nQ: Which drug is used for acute gout and inhibits neutrophil migration via microtubules?\nAns: Colchicine\nWhy: Colchicine binds tubulin, impairing neutrophil chemotaxis; effective in acute gout but GI toxicity limits dose.\n\n🏥 *INI-CET* (Autacoids & NSAIDs)\nQ: Aspirin-exacerbated respiratory disease (Samter's triad) results from?\nAns: Shunting of arachidonate to leukotrienes after COX inhibition\nWhy: COX inhibition diverts arachidonic acid to leukotrienes, causing bronchospasm in sensitive asthmatics.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Which insulin has the fastest onset for prandial control?\nAns: Lispro/aspart (rapid-acting analogues)\nWhy: Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, ideal for mealtime coverage.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2015%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Low-dose%20aspirin%20is%20used%20for%20its%20effect%20on%3F%0AAns%3A%20Platelet%20aggregation%0AWhy%3A%20Low-dose%20aspirin%20irreversibly%20inhibits%20platelet%20COX-1%2C%20reducing%20thromboxane%20A2%20and%20aggregation.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Which%20drug%20is%20preferred%20for%20fever%20in%20children%3F%0AAns%3A%20Paracetamol%0AWhy%3A%20Paracetamol%20is%20the%20preferred%20antipyretic%20in%20children%3B%20aspirin%20is%20avoided.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Which%20drug%20is%20used%20for%20acute%20gout%20and%20inhibits%20neutrophil%20migration%20via%20microtubules%3F%0AAns%3A%20Colchicine%0AWhy%3A%20Colchicine%20binds%20tubulin%2C%20impairing%20neutrophil%20chemotaxis%3B%20effective%20in%20acute%20gout%20but%20GI%20toxicity%20limits%20dose.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Aspirin-exacerbated%20respiratory%20disease%20%28Samter%27s%20triad%29%20results%20from%3F%0AAns%3A%20Shunting%20of%20arachidonate%20to%20leukotrienes%20after%20COX%20inhibition%0AWhy%3A%20COX%20inhibition%20diverts%20arachidonic%20acid%20to%20leukotrienes%2C%20causing%20bronchospasm%20in%20sensitive%20asthmatics.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Which%20insulin%20has%20the%20fastest%20onset%20for%20prandial%20control%3F%0AAns%3A%20Lispro/aspart%20%28rapid-acting%20analogues%29%0AWhy%3A%20Rapid-acting%20analogues%20%28lispro%2C%20aspart%2C%20glulisine%29%20act%20within%2015%20minutes%2C%20ideal%20for%20mealtime%20coverage.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
