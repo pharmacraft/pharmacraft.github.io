@@ -1044,6 +1044,61 @@
      "stem": "Which insulin has the fastest onset for prandial control?"
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "source": "bank",
+   "topic_index": 5,
+   "md_paper_index": 3,
+   "case_slot": 4,
+   "ra_slot": 1,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "a181a1bdb262",
+     "stem": "Inhaled corticosteroids such as budesonide are used in asthma as?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "6be7fc7103dd",
+     "stem": "Which drug combination is common maintenance therapy in moderate asthma?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "f15608e02a6d",
+     "stem": "Mepolizumab reduces eosinophilic asthma by targeting?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Respiratory",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Respiratory",
+     "stem_hash": "752f80acbc03",
+     "stem": "Benralizumab reduces eosinophils by targeting?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "075a7c0c50ce",
+     "stem": "Remdesivir acts against SARS-CoV-2 by inhibiting the?"
+    }
+   ]
   }
  ]
 }

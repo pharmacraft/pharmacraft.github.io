@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Low-dose aspirin is used for its effect on?",
+      "topic": "Respiratory",
+      "question": "Inhaled corticosteroids such as budesonide are used in asthma as?",
       "options": [
-        "Platelet aggregation",
-        "Fever",
-        "Inflammation",
-        "Pain"
+        "Decongestants",
+        "Antibiotics",
+        "Controllers",
+        "Relievers"
       ],
-      "correct": 0,
-      "explanation": "Low-dose aspirin irreversibly inhibits platelet COX-1, reducing thromboxane A2 and aggregation."
+      "correct": 2,
+      "explanation": "Inhaled corticosteroids are preventers/controllers reducing airway inflammation; not for acute relief."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Which drug is preferred for fever in children?",
+      "topic": "Respiratory",
+      "question": "Which drug combination is common maintenance therapy in moderate asthma?",
       "options": [
-        "Indomethacin",
-        "Aspirin",
-        "Ketorolac",
-        "Paracetamol"
+        "LABA alone",
+        "ICS + LABA",
+        "SABA + antibiotic",
+        "Antacid + steroid"
       ],
-      "correct": 3,
-      "explanation": "Paracetamol is the preferred antipyretic in children; aspirin is avoided."
+      "correct": 1,
+      "explanation": "Inhaled corticosteroid plus a long-acting beta-2 agonist is standard maintenance in persistent asthma."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Which drug is used for acute gout and inhibits neutrophil migration via microtubules?",
+      "topic": "Respiratory",
+      "question": "Mepolizumab reduces eosinophilic asthma by targeting?",
       "options": [
-        "Colchicine",
-        "Probenecid",
-        "Febuxostat",
-        "Allopurinol"
+        "IL-5",
+        "IL-13",
+        "IgE",
+        "Leukotrienes"
       ],
       "correct": 0,
-      "explanation": "Colchicine binds tubulin, impairing neutrophil chemotaxis; effective in acute gout but GI toxicity limits dose."
+      "explanation": "Mepolizumab is an anti-IL-5 monoclonal antibody reducing eosinophils in severe eosinophilic asthma."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Autacoids & NSAIDs",
-      "question": "Aspirin-exacerbated respiratory disease (Samter's triad) results from?",
+      "topic": "Respiratory",
+      "question": "Benralizumab reduces eosinophils by targeting?",
       "options": [
-        "Histamine release",
-        "COX-2 selectivity",
-        "IgE allergy",
-        "Shunting of arachidonate to leukotrienes after COX inhibition"
+        "IL-4",
+        "The IL-5 receptor alpha (causing eosinophil apoptosis)",
+        "IL-5",
+        "IgE"
       ],
-      "correct": 3,
-      "explanation": "COX inhibition diverts arachidonic acid to leukotrienes, causing bronchospasm in sensitive asthmatics."
+      "correct": 1,
+      "explanation": "Benralizumab binds IL-5 receptor alpha, causing antibody-dependent eosinophil depletion."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper III: Systemic",
-      "question": "Which insulin has the fastest onset for prandial control?",
+      "topic": "Paper IV: Recent Advances",
+      "question": "Remdesivir acts against SARS-CoV-2 by inhibiting the?",
       "options": [
-        "NPH",
-        "Detemir",
-        "Lispro/aspart (rapid-acting analogues)",
-        "Glargine"
+        "RNA-dependent RNA polymerase",
+        "Integrase",
+        "Spike protein",
+        "Protease"
       ],
-      "correct": 2,
-      "explanation": "Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, ideal for mealtime coverage."
+      "correct": 0,
+      "explanation": "Remdesivir is a nucleotide analogue that inhibits viral RNA-dependent RNA polymerase."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 15 Nov 2026*\n\n🎓 *MBBS* (Autacoids & NSAIDs)\nQ: Low-dose aspirin is used for its effect on?\nAns: Platelet aggregation\nWhy: Low-dose aspirin irreversibly inhibits platelet COX-1, reducing thromboxane A2 and aggregation.\n\n🌍 *FMGE* (Autacoids & NSAIDs)\nQ: Which drug is preferred for fever in children?\nAns: Paracetamol\nWhy: Paracetamol is the preferred antipyretic in children; aspirin is avoided.\n\n🩺 *NEET PG* (Autacoids & NSAIDs)\nQ: Which drug is used for acute gout and inhibits neutrophil migration via microtubules?\nAns: Colchicine\nWhy: Colchicine binds tubulin, impairing neutrophil chemotaxis; effective in acute gout but GI toxicity limits dose.\n\n🏥 *INI-CET* (Autacoids & NSAIDs)\nQ: Aspirin-exacerbated respiratory disease (Samter's triad) results from?\nAns: Shunting of arachidonate to leukotrienes after COX inhibition\nWhy: COX inhibition diverts arachidonic acid to leukotrienes, causing bronchospasm in sensitive asthmatics.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Which insulin has the fastest onset for prandial control?\nAns: Lispro/aspart (rapid-acting analogues)\nWhy: Rapid-acting analogues (lispro, aspart, glulisine) act within 15 minutes, ideal for mealtime coverage.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2015%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Low-dose%20aspirin%20is%20used%20for%20its%20effect%20on%3F%0AAns%3A%20Platelet%20aggregation%0AWhy%3A%20Low-dose%20aspirin%20irreversibly%20inhibits%20platelet%20COX-1%2C%20reducing%20thromboxane%20A2%20and%20aggregation.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Which%20drug%20is%20preferred%20for%20fever%20in%20children%3F%0AAns%3A%20Paracetamol%0AWhy%3A%20Paracetamol%20is%20the%20preferred%20antipyretic%20in%20children%3B%20aspirin%20is%20avoided.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Which%20drug%20is%20used%20for%20acute%20gout%20and%20inhibits%20neutrophil%20migration%20via%20microtubules%3F%0AAns%3A%20Colchicine%0AWhy%3A%20Colchicine%20binds%20tubulin%2C%20impairing%20neutrophil%20chemotaxis%3B%20effective%20in%20acute%20gout%20but%20GI%20toxicity%20limits%20dose.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Autacoids%20%26%20NSAIDs%29%0AQ%3A%20Aspirin-exacerbated%20respiratory%20disease%20%28Samter%27s%20triad%29%20results%20from%3F%0AAns%3A%20Shunting%20of%20arachidonate%20to%20leukotrienes%20after%20COX%20inhibition%0AWhy%3A%20COX%20inhibition%20diverts%20arachidonic%20acid%20to%20leukotrienes%2C%20causing%20bronchospasm%20in%20sensitive%20asthmatics.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Which%20insulin%20has%20the%20fastest%20onset%20for%20prandial%20control%3F%0AAns%3A%20Lispro/aspart%20%28rapid-acting%20analogues%29%0AWhy%3A%20Rapid-acting%20analogues%20%28lispro%2C%20aspart%2C%20glulisine%29%20act%20within%2015%20minutes%2C%20ideal%20for%20mealtime%20coverage.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 16 Nov 2026*\n\n🎓 *MBBS* (Respiratory)\nQ: Inhaled corticosteroids such as budesonide are used in asthma as?\nAns: Controllers\nWhy: Inhaled corticosteroids are preventers/controllers reducing airway inflammation; not for acute relief.\n\n🌍 *FMGE* (Respiratory)\nQ: Which drug combination is common maintenance therapy in moderate asthma?\nAns: ICS + LABA\nWhy: Inhaled corticosteroid plus a long-acting beta-2 agonist is standard maintenance in persistent asthma.\n\n🩺 *NEET PG* (Respiratory)\nQ: Mepolizumab reduces eosinophilic asthma by targeting?\nAns: IL-5\nWhy: Mepolizumab is an anti-IL-5 monoclonal antibody reducing eosinophils in severe eosinophilic asthma.\n\n🏥 *INI-CET* (Respiratory)\nQ: Benralizumab reduces eosinophils by targeting?\nAns: The IL-5 receptor alpha (causing eosinophil apoptosis)\nWhy: Benralizumab binds IL-5 receptor alpha, causing antibody-dependent eosinophil depletion.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Remdesivir acts against SARS-CoV-2 by inhibiting the?\nAns: RNA-dependent RNA polymerase\nWhy: Remdesivir is a nucleotide analogue that inhibits viral RNA-dependent RNA polymerase.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2016%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Respiratory%29%0AQ%3A%20Inhaled%20corticosteroids%20such%20as%20budesonide%20are%20used%20in%20asthma%20as%3F%0AAns%3A%20Controllers%0AWhy%3A%20Inhaled%20corticosteroids%20are%20preventers/controllers%20reducing%20airway%20inflammation%3B%20not%20for%20acute%20relief.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Respiratory%29%0AQ%3A%20Which%20drug%20combination%20is%20common%20maintenance%20therapy%20in%20moderate%20asthma%3F%0AAns%3A%20ICS%20%2B%20LABA%0AWhy%3A%20Inhaled%20corticosteroid%20plus%20a%20long-acting%20beta-2%20agonist%20is%20standard%20maintenance%20in%20persistent%20asthma.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Respiratory%29%0AQ%3A%20Mepolizumab%20reduces%20eosinophilic%20asthma%20by%20targeting%3F%0AAns%3A%20IL-5%0AWhy%3A%20Mepolizumab%20is%20an%20anti-IL-5%20monoclonal%20antibody%20reducing%20eosinophils%20in%20severe%20eosinophilic%20asthma.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Respiratory%29%0AQ%3A%20Benralizumab%20reduces%20eosinophils%20by%20targeting%3F%0AAns%3A%20The%20IL-5%20receptor%20alpha%20%28causing%20eosinophil%20apoptosis%29%0AWhy%3A%20Benralizumab%20binds%20IL-5%20receptor%20alpha%2C%20causing%20antibody-dependent%20eosinophil%20depletion.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Remdesivir%20acts%20against%20SARS-CoV-2%20by%20inhibiting%20the%3F%0AAns%3A%20RNA-dependent%20RNA%20polymerase%0AWhy%3A%20Remdesivir%20is%20a%20nucleotide%20analogue%20that%20inhibits%20viral%20RNA-dependent%20RNA%20polymerase.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
