@@ -1099,6 +1099,61 @@
      "stem": "Remdesivir acts against SARS-CoV-2 by inhibiting the?"
     }
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "source": "bank",
+   "topic_index": 6,
+   "md_paper_index": 0,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "60f11e44c531",
+     "stem": "Ranitidine reduces acid secretion by blocking?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "33a22e12d226",
+     "stem": "Domperidone is a prokinetic preferred over metoclopramide because it causes fewer?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "d3ae6cd304d7",
+     "stem": "Which drug is used in chemotherapy-induced delayed emesis as an NK1 antagonist?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "GIT",
+     "angle": "",
+     "type": "Bank",
+     "topic": "GIT",
+     "stem_hash": "af490729a80b",
+     "stem": "Vedolizumab is gut-selective in IBD because it targets?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "96748ca15753",
+     "stem": "Which analytical method separates drugs based on differential partitioning between mobile and stationary phases?"
+    }
+   ]
   }
  ]
 }

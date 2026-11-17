@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Respiratory",
-      "question": "Inhaled corticosteroids such as budesonide are used in asthma as?",
+      "topic": "GIT",
+      "question": "Ranitidine reduces acid secretion by blocking?",
       "options": [
-        "Decongestants",
-        "Antibiotics",
-        "Controllers",
-        "Relievers"
+        "Muscarinic receptors",
+        "H1 receptors",
+        "Proton pump",
+        "H2 receptors"
       ],
-      "correct": 2,
-      "explanation": "Inhaled corticosteroids are preventers/controllers reducing airway inflammation; not for acute relief."
+      "correct": 3,
+      "explanation": "Ranitidine is an H2-receptor antagonist reducing histamine-stimulated acid secretion."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Respiratory",
-      "question": "Which drug combination is common maintenance therapy in moderate asthma?",
+      "topic": "GIT",
+      "question": "Domperidone is a prokinetic preferred over metoclopramide because it causes fewer?",
       "options": [
-        "LABA alone",
-        "ICS + LABA",
-        "SABA + antibiotic",
-        "Antacid + steroid"
+        "Renal effects",
+        "Central (extrapyramidal) effects",
+        "GI effects",
+        "Cardiac effects"
       ],
       "correct": 1,
-      "explanation": "Inhaled corticosteroid plus a long-acting beta-2 agonist is standard maintenance in persistent asthma."
+      "explanation": "Domperidone poorly crosses the blood-brain barrier, so it causes fewer extrapyramidal effects."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Respiratory",
-      "question": "Mepolizumab reduces eosinophilic asthma by targeting?",
+      "topic": "GIT",
+      "question": "Which drug is used in chemotherapy-induced delayed emesis as an NK1 antagonist?",
       "options": [
-        "IL-5",
-        "IL-13",
-        "IgE",
-        "Leukotrienes"
+        "Aprepitant",
+        "Ondansetron",
+        "Domperidone",
+        "Metoclopramide"
       ],
       "correct": 0,
-      "explanation": "Mepolizumab is an anti-IL-5 monoclonal antibody reducing eosinophils in severe eosinophilic asthma."
+      "explanation": "Aprepitant blocks substance P at NK1 receptors; added for delayed chemotherapy-induced nausea."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Respiratory",
-      "question": "Benralizumab reduces eosinophils by targeting?",
+      "topic": "GIT",
+      "question": "Vedolizumab is gut-selective in IBD because it targets?",
       "options": [
-        "IL-4",
-        "The IL-5 receptor alpha (causing eosinophil apoptosis)",
-        "IL-5",
-        "IgE"
+        "JAK",
+        "Alpha4-beta7 integrin (gut lymphocyte homing)",
+        "IL-12/23",
+        "TNF-alpha"
       ],
       "correct": 1,
-      "explanation": "Benralizumab binds IL-5 receptor alpha, causing antibody-dependent eosinophil depletion."
+      "explanation": "Vedolizumab blocks the alpha4-beta7 integrin, selectively reducing gut lymphocyte trafficking with few systemic effects."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper IV: Recent Advances",
-      "question": "Remdesivir acts against SARS-CoV-2 by inhibiting the?",
+      "topic": "Paper I: General/Experimental",
+      "question": "Which analytical method separates drugs based on differential partitioning between mobile and stationary phases?",
       "options": [
-        "RNA-dependent RNA polymerase",
-        "Integrase",
-        "Spike protein",
-        "Protease"
+        "ELISA",
+        "Spectrophotometry",
+        "HPLC",
+        "PCR"
       ],
-      "correct": 0,
-      "explanation": "Remdesivir is a nucleotide analogue that inhibits viral RNA-dependent RNA polymerase."
+      "correct": 2,
+      "explanation": "High-performance liquid chromatography separates compounds by their partitioning between phases for quantification."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 16 Nov 2026*\n\n🎓 *MBBS* (Respiratory)\nQ: Inhaled corticosteroids such as budesonide are used in asthma as?\nAns: Controllers\nWhy: Inhaled corticosteroids are preventers/controllers reducing airway inflammation; not for acute relief.\n\n🌍 *FMGE* (Respiratory)\nQ: Which drug combination is common maintenance therapy in moderate asthma?\nAns: ICS + LABA\nWhy: Inhaled corticosteroid plus a long-acting beta-2 agonist is standard maintenance in persistent asthma.\n\n🩺 *NEET PG* (Respiratory)\nQ: Mepolizumab reduces eosinophilic asthma by targeting?\nAns: IL-5\nWhy: Mepolizumab is an anti-IL-5 monoclonal antibody reducing eosinophils in severe eosinophilic asthma.\n\n🏥 *INI-CET* (Respiratory)\nQ: Benralizumab reduces eosinophils by targeting?\nAns: The IL-5 receptor alpha (causing eosinophil apoptosis)\nWhy: Benralizumab binds IL-5 receptor alpha, causing antibody-dependent eosinophil depletion.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Remdesivir acts against SARS-CoV-2 by inhibiting the?\nAns: RNA-dependent RNA polymerase\nWhy: Remdesivir is a nucleotide analogue that inhibits viral RNA-dependent RNA polymerase.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2016%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Respiratory%29%0AQ%3A%20Inhaled%20corticosteroids%20such%20as%20budesonide%20are%20used%20in%20asthma%20as%3F%0AAns%3A%20Controllers%0AWhy%3A%20Inhaled%20corticosteroids%20are%20preventers/controllers%20reducing%20airway%20inflammation%3B%20not%20for%20acute%20relief.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Respiratory%29%0AQ%3A%20Which%20drug%20combination%20is%20common%20maintenance%20therapy%20in%20moderate%20asthma%3F%0AAns%3A%20ICS%20%2B%20LABA%0AWhy%3A%20Inhaled%20corticosteroid%20plus%20a%20long-acting%20beta-2%20agonist%20is%20standard%20maintenance%20in%20persistent%20asthma.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Respiratory%29%0AQ%3A%20Mepolizumab%20reduces%20eosinophilic%20asthma%20by%20targeting%3F%0AAns%3A%20IL-5%0AWhy%3A%20Mepolizumab%20is%20an%20anti-IL-5%20monoclonal%20antibody%20reducing%20eosinophils%20in%20severe%20eosinophilic%20asthma.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Respiratory%29%0AQ%3A%20Benralizumab%20reduces%20eosinophils%20by%20targeting%3F%0AAns%3A%20The%20IL-5%20receptor%20alpha%20%28causing%20eosinophil%20apoptosis%29%0AWhy%3A%20Benralizumab%20binds%20IL-5%20receptor%20alpha%2C%20causing%20antibody-dependent%20eosinophil%20depletion.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Remdesivir%20acts%20against%20SARS-CoV-2%20by%20inhibiting%20the%3F%0AAns%3A%20RNA-dependent%20RNA%20polymerase%0AWhy%3A%20Remdesivir%20is%20a%20nucleotide%20analogue%20that%20inhibits%20viral%20RNA-dependent%20RNA%20polymerase.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 17 Nov 2026*\n\n🎓 *MBBS* (GIT)\nQ: Ranitidine reduces acid secretion by blocking?\nAns: H2 receptors\nWhy: Ranitidine is an H2-receptor antagonist reducing histamine-stimulated acid secretion.\n\n🌍 *FMGE* (GIT)\nQ: Domperidone is a prokinetic preferred over metoclopramide because it causes fewer?\nAns: Central (extrapyramidal) effects\nWhy: Domperidone poorly crosses the blood-brain barrier, so it causes fewer extrapyramidal effects.\n\n🩺 *NEET PG* (GIT)\nQ: Which drug is used in chemotherapy-induced delayed emesis as an NK1 antagonist?\nAns: Aprepitant\nWhy: Aprepitant blocks substance P at NK1 receptors; added for delayed chemotherapy-induced nausea.\n\n🏥 *INI-CET* (GIT)\nQ: Vedolizumab is gut-selective in IBD because it targets?\nAns: Alpha4-beta7 integrin (gut lymphocyte homing)\nWhy: Vedolizumab blocks the alpha4-beta7 integrin, selectively reducing gut lymphocyte trafficking with few systemic effects.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: Which analytical method separates drugs based on differential partitioning between mobile and stationary phases?\nAns: HPLC\nWhy: High-performance liquid chromatography separates compounds by their partitioning between phases for quantification.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2017%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28GIT%29%0AQ%3A%20Ranitidine%20reduces%20acid%20secretion%20by%20blocking%3F%0AAns%3A%20H2%20receptors%0AWhy%3A%20Ranitidine%20is%20an%20H2-receptor%20antagonist%20reducing%20histamine-stimulated%20acid%20secretion.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28GIT%29%0AQ%3A%20Domperidone%20is%20a%20prokinetic%20preferred%20over%20metoclopramide%20because%20it%20causes%20fewer%3F%0AAns%3A%20Central%20%28extrapyramidal%29%20effects%0AWhy%3A%20Domperidone%20poorly%20crosses%20the%20blood-brain%20barrier%2C%20so%20it%20causes%20fewer%20extrapyramidal%20effects.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28GIT%29%0AQ%3A%20Which%20drug%20is%20used%20in%20chemotherapy-induced%20delayed%20emesis%20as%20an%20NK1%20antagonist%3F%0AAns%3A%20Aprepitant%0AWhy%3A%20Aprepitant%20blocks%20substance%20P%20at%20NK1%20receptors%3B%20added%20for%20delayed%20chemotherapy-induced%20nausea.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28GIT%29%0AQ%3A%20Vedolizumab%20is%20gut-selective%20in%20IBD%20because%20it%20targets%3F%0AAns%3A%20Alpha4-beta7%20integrin%20%28gut%20lymphocyte%20homing%29%0AWhy%3A%20Vedolizumab%20blocks%20the%20alpha4-beta7%20integrin%2C%20selectively%20reducing%20gut%20lymphocyte%20trafficking%20with%20few%20systemic%20effects.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20Which%20analytical%20method%20separates%20drugs%20based%20on%20differential%20partitioning%20between%20mobile%20and%20stationary%20phases%3F%0AAns%3A%20HPLC%0AWhy%3A%20High-performance%20liquid%20chromatography%20separates%20compounds%20by%20their%20partitioning%20between%20phases%20for%20quantification.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
