@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "GIT",
-      "question": "Ranitidine reduces acid secretion by blocking?",
+      "topic": "Endocrine",
+      "question": "Which oral hypoglycaemic stimulates insulin release from beta cells?",
       "options": [
-        "Muscarinic receptors",
-        "H1 receptors",
-        "Proton pump",
-        "H2 receptors"
+        "Pioglitazone",
+        "Glibenclamide",
+        "Metformin",
+        "Acarbose"
       ],
-      "correct": 3,
-      "explanation": "Ranitidine is an H2-receptor antagonist reducing histamine-stimulated acid secretion."
+      "correct": 1,
+      "explanation": "Sulfonylureas like glibenclamide close K-ATP channels, stimulating insulin secretion; risk of hypoglycaemia."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "GIT",
-      "question": "Domperidone is a prokinetic preferred over metoclopramide because it causes fewer?",
+      "topic": "Endocrine",
+      "question": "Pioglitazone improves insulin sensitivity by acting on?",
       "options": [
-        "Renal effects",
-        "Central (extrapyramidal) effects",
-        "GI effects",
-        "Cardiac effects"
+        "Alpha-glucosidase",
+        "PPAR-gamma receptors",
+        "GLP-1 receptors",
+        "K-ATP channels"
       ],
       "correct": 1,
-      "explanation": "Domperidone poorly crosses the blood-brain barrier, so it causes fewer extrapyramidal effects."
+      "explanation": "Thiazolidinediones (pioglitazone) activate PPAR-gamma, increasing insulin sensitivity."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "GIT",
-      "question": "Which drug is used in chemotherapy-induced delayed emesis as an NK1 antagonist?",
+      "topic": "Endocrine",
+      "question": "Which diabetes drug class can cause euglycaemic diabetic ketoacidosis?",
       "options": [
-        "Aprepitant",
-        "Ondansetron",
-        "Domperidone",
-        "Metoclopramide"
+        "Metformin",
+        "Sulfonylureas",
+        "SGLT2 inhibitors",
+        "DPP-4 inhibitors"
       ],
-      "correct": 0,
-      "explanation": "Aprepitant blocks substance P at NK1 receptors; added for delayed chemotherapy-induced nausea."
+      "correct": 2,
+      "explanation": "SGLT2 inhibitors can precipitate ketoacidosis with near-normal glucose, especially with illness/fasting."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "GIT",
-      "question": "Vedolizumab is gut-selective in IBD because it targets?",
+      "topic": "Endocrine",
+      "question": "Why is metformin withheld before iodinated contrast in CKD?",
       "options": [
-        "JAK",
-        "Alpha4-beta7 integrin (gut lymphocyte homing)",
-        "IL-12/23",
-        "TNF-alpha"
+        "It raises glucose",
+        "Risk of lactic acidosis if acute kidney injury occurs",
+        "It binds contrast",
+        "Direct interaction"
       ],
       "correct": 1,
-      "explanation": "Vedolizumab blocks the alpha4-beta7 integrin, selectively reducing gut lymphocyte trafficking with few systemic effects."
+      "explanation": "Contrast-induced AKI can impair metformin clearance, raising lactic acidosis risk; withhold around contrast."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "Which analytical method separates drugs based on differential partitioning between mobile and stationary phases?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "A Type A adverse drug reaction is?",
       "options": [
-        "ELISA",
-        "Spectrophotometry",
-        "HPLC",
-        "PCR"
+        "Dose-dependent and predictable (augmented)",
+        "Bizarre/idiosyncratic",
+        "Delayed only",
+        "Immunological"
       ],
-      "correct": 2,
-      "explanation": "High-performance liquid chromatography separates compounds by their partitioning between phases for quantification."
+      "correct": 0,
+      "explanation": "Type A reactions are augmented, dose-related and predictable from the drug's pharmacology (e.g., bleeding with warfarin)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 17 Nov 2026*\n\n🎓 *MBBS* (GIT)\nQ: Ranitidine reduces acid secretion by blocking?\nAns: H2 receptors\nWhy: Ranitidine is an H2-receptor antagonist reducing histamine-stimulated acid secretion.\n\n🌍 *FMGE* (GIT)\nQ: Domperidone is a prokinetic preferred over metoclopramide because it causes fewer?\nAns: Central (extrapyramidal) effects\nWhy: Domperidone poorly crosses the blood-brain barrier, so it causes fewer extrapyramidal effects.\n\n🩺 *NEET PG* (GIT)\nQ: Which drug is used in chemotherapy-induced delayed emesis as an NK1 antagonist?\nAns: Aprepitant\nWhy: Aprepitant blocks substance P at NK1 receptors; added for delayed chemotherapy-induced nausea.\n\n🏥 *INI-CET* (GIT)\nQ: Vedolizumab is gut-selective in IBD because it targets?\nAns: Alpha4-beta7 integrin (gut lymphocyte homing)\nWhy: Vedolizumab blocks the alpha4-beta7 integrin, selectively reducing gut lymphocyte trafficking with few systemic effects.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: Which analytical method separates drugs based on differential partitioning between mobile and stationary phases?\nAns: HPLC\nWhy: High-performance liquid chromatography separates compounds by their partitioning between phases for quantification.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2017%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28GIT%29%0AQ%3A%20Ranitidine%20reduces%20acid%20secretion%20by%20blocking%3F%0AAns%3A%20H2%20receptors%0AWhy%3A%20Ranitidine%20is%20an%20H2-receptor%20antagonist%20reducing%20histamine-stimulated%20acid%20secretion.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28GIT%29%0AQ%3A%20Domperidone%20is%20a%20prokinetic%20preferred%20over%20metoclopramide%20because%20it%20causes%20fewer%3F%0AAns%3A%20Central%20%28extrapyramidal%29%20effects%0AWhy%3A%20Domperidone%20poorly%20crosses%20the%20blood-brain%20barrier%2C%20so%20it%20causes%20fewer%20extrapyramidal%20effects.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28GIT%29%0AQ%3A%20Which%20drug%20is%20used%20in%20chemotherapy-induced%20delayed%20emesis%20as%20an%20NK1%20antagonist%3F%0AAns%3A%20Aprepitant%0AWhy%3A%20Aprepitant%20blocks%20substance%20P%20at%20NK1%20receptors%3B%20added%20for%20delayed%20chemotherapy-induced%20nausea.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28GIT%29%0AQ%3A%20Vedolizumab%20is%20gut-selective%20in%20IBD%20because%20it%20targets%3F%0AAns%3A%20Alpha4-beta7%20integrin%20%28gut%20lymphocyte%20homing%29%0AWhy%3A%20Vedolizumab%20blocks%20the%20alpha4-beta7%20integrin%2C%20selectively%20reducing%20gut%20lymphocyte%20trafficking%20with%20few%20systemic%20effects.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20Which%20analytical%20method%20separates%20drugs%20based%20on%20differential%20partitioning%20between%20mobile%20and%20stationary%20phases%3F%0AAns%3A%20HPLC%0AWhy%3A%20High-performance%20liquid%20chromatography%20separates%20compounds%20by%20their%20partitioning%20between%20phases%20for%20quantification.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 18 Nov 2026*\n\n🎓 *MBBS* (Endocrine)\nQ: Which oral hypoglycaemic stimulates insulin release from beta cells?\nAns: Glibenclamide\nWhy: Sulfonylureas like glibenclamide close K-ATP channels, stimulating insulin secretion; risk of hypoglycaemia.\n\n🌍 *FMGE* (Endocrine)\nQ: Pioglitazone improves insulin sensitivity by acting on?\nAns: PPAR-gamma receptors\nWhy: Thiazolidinediones (pioglitazone) activate PPAR-gamma, increasing insulin sensitivity.\n\n🩺 *NEET PG* (Endocrine)\nQ: Which diabetes drug class can cause euglycaemic diabetic ketoacidosis?\nAns: SGLT2 inhibitors\nWhy: SGLT2 inhibitors can precipitate ketoacidosis with near-normal glucose, especially with illness/fasting.\n\n🏥 *INI-CET* (Endocrine)\nQ: Why is metformin withheld before iodinated contrast in CKD?\nAns: Risk of lactic acidosis if acute kidney injury occurs\nWhy: Contrast-induced AKI can impair metformin clearance, raising lactic acidosis risk; withhold around contrast.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: A Type A adverse drug reaction is?\nAns: Dose-dependent and predictable (augmented)\nWhy: Type A reactions are augmented, dose-related and predictable from the drug's pharmacology (e.g., bleeding with warfarin).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2018%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Endocrine%29%0AQ%3A%20Which%20oral%20hypoglycaemic%20stimulates%20insulin%20release%20from%20beta%20cells%3F%0AAns%3A%20Glibenclamide%0AWhy%3A%20Sulfonylureas%20like%20glibenclamide%20close%20K-ATP%20channels%2C%20stimulating%20insulin%20secretion%3B%20risk%20of%20hypoglycaemia.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Endocrine%29%0AQ%3A%20Pioglitazone%20improves%20insulin%20sensitivity%20by%20acting%20on%3F%0AAns%3A%20PPAR-gamma%20receptors%0AWhy%3A%20Thiazolidinediones%20%28pioglitazone%29%20activate%20PPAR-gamma%2C%20increasing%20insulin%20sensitivity.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Endocrine%29%0AQ%3A%20Which%20diabetes%20drug%20class%20can%20cause%20euglycaemic%20diabetic%20ketoacidosis%3F%0AAns%3A%20SGLT2%20inhibitors%0AWhy%3A%20SGLT2%20inhibitors%20can%20precipitate%20ketoacidosis%20with%20near-normal%20glucose%2C%20especially%20with%20illness/fasting.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Endocrine%29%0AQ%3A%20Why%20is%20metformin%20withheld%20before%20iodinated%20contrast%20in%20CKD%3F%0AAns%3A%20Risk%20of%20lactic%20acidosis%20if%20acute%20kidney%20injury%20occurs%0AWhy%3A%20Contrast-induced%20AKI%20can%20impair%20metformin%20clearance%2C%20raising%20lactic%20acidosis%20risk%3B%20withhold%20around%20contrast.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20A%20Type%20A%20adverse%20drug%20reaction%20is%3F%0AAns%3A%20Dose-dependent%20and%20predictable%20%28augmented%29%0AWhy%3A%20Type%20A%20reactions%20are%20augmented%2C%20dose-related%20and%20predictable%20from%20the%20drug%27s%20pharmacology%20%28e.g.%2C%20bleeding%20with%20warfarin%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

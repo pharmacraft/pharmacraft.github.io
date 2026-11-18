@@ -1154,6 +1154,61 @@
      "stem": "Which analytical method separates drugs based on differential partitioning between mobile and stationary phases?"
     }
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "source": "bank",
+   "topic_index": 7,
+   "md_paper_index": 1,
+   "case_slot": 1,
+   "ra_slot": 3,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "93566a995104",
+     "stem": "Which oral hypoglycaemic stimulates insulin release from beta cells?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "a01bdd508cda",
+     "stem": "Pioglitazone improves insulin sensitivity by acting on?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "4c89b726d554",
+     "stem": "Which diabetes drug class can cause euglycaemic diabetic ketoacidosis?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Endocrine",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Endocrine",
+     "stem_hash": "6bcbac872012",
+     "stem": "Why is metformin withheld before iodinated contrast in CKD?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "9a8a973ca8ee",
+     "stem": "A Type A adverse drug reaction is?"
+    }
+   ]
   }
  ]
 }
