@@ -1209,6 +1209,61 @@
      "stem": "A Type A adverse drug reaction is?"
     }
    ]
+  },
+  {
+   "date": "2026-11-20",
+   "source": "bank",
+   "topic_index": 8,
+   "md_paper_index": 2,
+   "case_slot": 2,
+   "ra_slot": 4,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "5cf300298822",
+     "stem": "Which antibiotic class inhibits the 30S ribosomal subunit?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "a80eb03a6d53",
+     "stem": "Which antibiotic class is first-line for atypical pneumonia (e.g., Mycoplasma)?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "2298ceaeb455",
+     "stem": "Which antibiotic is used for MRSA and inhibits the 50S subunit (oxazolidinone)?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Antibacterials",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antibacterials",
+     "stem_hash": "b1f9f20b148a",
+     "stem": "Extended-interval (once-daily) aminoglycoside dosing exploits which property?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "8d63e53e8fe6",
+     "stem": "Glargine provides basal coverage because it?"
+    }
+   ]
   }
  ]
 }
