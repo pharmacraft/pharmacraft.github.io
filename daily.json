@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Antibacterials",
-      "question": "Which antibiotic class inhibits the 30S ribosomal subunit?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Which drug is a first-line antifungal for systemic candidiasis?",
       "options": [
-        "Beta-lactams",
-        "Macrolides",
-        "Fluoroquinolones",
-        "Aminoglycosides"
+        "Terbinafine",
+        "Nystatin",
+        "Fluconazole",
+        "Griseofulvin"
       ],
-      "correct": 3,
-      "explanation": "Aminoglycosides (e.g., gentamicin) bind the 30S subunit, causing misreading of mRNA."
+      "correct": 2,
+      "explanation": "Fluconazole inhibits fungal CYP-dependent ergosterol synthesis; used for candidiasis and cryptococcosis."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Antibacterials",
-      "question": "Which antibiotic class is first-line for atypical pneumonia (e.g., Mycoplasma)?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "ACT (artemisinin-based combination therapy) is first-line for?",
       "options": [
-        "Glycopeptides",
-        "Aminoglycosides",
-        "Penicillins",
-        "Macrolides"
+        "Filariasis",
+        "Falciparum malaria",
+        "Amoebiasis",
+        "Vivax malaria only"
       ],
-      "correct": 3,
-      "explanation": "Macrolides (azithromycin) cover atypical organisms like Mycoplasma and Legionella."
+      "correct": 1,
+      "explanation": "Artemisinin-based combination therapy is the recommended first-line treatment for P. falciparum malaria."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Antibacterials",
-      "question": "Which antibiotic is used for MRSA and inhibits the 50S subunit (oxazolidinone)?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Dolutegravir inhibits which HIV enzyme?",
       "options": [
-        "Daptomycin",
-        "Gentamicin",
-        "Vancomycin",
-        "Linezolid"
+        "Neuraminidase",
+        "Reverse transcriptase",
+        "Protease",
+        "Integrase"
       ],
       "correct": 3,
-      "explanation": "Linezolid (oxazolidinone) inhibits 50S initiation complex formation; covers MRSA and VRE."
+      "explanation": "Dolutegravir is an integrase strand-transfer inhibitor, a preferred component of first-line ART."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Antibacterials",
-      "question": "Extended-interval (once-daily) aminoglycoside dosing exploits which property?",
+      "topic": "Antiviral/Fungal/Protozoal/Helminth",
+      "question": "Which antifungal class is preferred for invasive candidiasis in unstable patients due to few interactions?",
       "options": [
-        "Renal secretion",
-        "Concentration-dependent killing and post-antibiotic effect",
-        "High protein binding",
-        "Time-dependent killing"
+        "Azoles",
+        "Echinocandins (caspofungin)",
+        "Allylamines",
+        "Polyenes"
       ],
       "correct": 1,
-      "explanation": "Aminoglycosides kill in a concentration-dependent manner with a post-antibiotic effect, enabling once-daily dosing."
+      "explanation": "Echinocandins are first-line for invasive candidiasis: fungicidal with few drug interactions."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper III: Systemic",
-      "question": "Glargine provides basal coverage because it?",
+      "topic": "Paper IV: Recent Advances",
+      "question": "CAR-T cell therapies (e.g., tisagenlecleucel) are engineered to target?",
       "options": [
-        "Is rapid-acting",
-        "Peaks sharply",
-        "Needs TDS dosing",
-        "Forms a microprecipitate for slow, peakless release"
+        "Solid tumours only",
+        "PD-1",
+        "HER2",
+        "CD19 on B-cell malignancies"
       ],
       "correct": 3,
-      "explanation": "Insulin glargine precipitates at physiologic pH, giving a prolonged, relatively peakless basal profile."
+      "explanation": "Approved CAR-T therapies target CD19 in refractory B-cell leukaemia/lymphoma."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 20 Nov 2026*\n\n🎓 *MBBS* (Antibacterials)\nQ: Which antibiotic class inhibits the 30S ribosomal subunit?\nAns: Aminoglycosides\nWhy: Aminoglycosides (e.g., gentamicin) bind the 30S subunit, causing misreading of mRNA.\n\n🌍 *FMGE* (Antibacterials)\nQ: Which antibiotic class is first-line for atypical pneumonia (e.g., Mycoplasma)?\nAns: Macrolides\nWhy: Macrolides (azithromycin) cover atypical organisms like Mycoplasma and Legionella.\n\n🩺 *NEET PG* (Antibacterials)\nQ: Which antibiotic is used for MRSA and inhibits the 50S subunit (oxazolidinone)?\nAns: Linezolid\nWhy: Linezolid (oxazolidinone) inhibits 50S initiation complex formation; covers MRSA and VRE.\n\n🏥 *INI-CET* (Antibacterials)\nQ: Extended-interval (once-daily) aminoglycoside dosing exploits which property?\nAns: Concentration-dependent killing and post-antibiotic effect\nWhy: Aminoglycosides kill in a concentration-dependent manner with a post-antibiotic effect, enabling once-daily dosing.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Glargine provides basal coverage because it?\nAns: Forms a microprecipitate for slow, peakless release\nWhy: Insulin glargine precipitates at physiologic pH, giving a prolonged, relatively peakless basal profile.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2020%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antibacterials%29%0AQ%3A%20Which%20antibiotic%20class%20inhibits%20the%2030S%20ribosomal%20subunit%3F%0AAns%3A%20Aminoglycosides%0AWhy%3A%20Aminoglycosides%20%28e.g.%2C%20gentamicin%29%20bind%20the%2030S%20subunit%2C%20causing%20misreading%20of%20mRNA.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antibacterials%29%0AQ%3A%20Which%20antibiotic%20class%20is%20first-line%20for%20atypical%20pneumonia%20%28e.g.%2C%20Mycoplasma%29%3F%0AAns%3A%20Macrolides%0AWhy%3A%20Macrolides%20%28azithromycin%29%20cover%20atypical%20organisms%20like%20Mycoplasma%20and%20Legionella.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antibacterials%29%0AQ%3A%20Which%20antibiotic%20is%20used%20for%20MRSA%20and%20inhibits%20the%2050S%20subunit%20%28oxazolidinone%29%3F%0AAns%3A%20Linezolid%0AWhy%3A%20Linezolid%20%28oxazolidinone%29%20inhibits%2050S%20initiation%20complex%20formation%3B%20covers%20MRSA%20and%20VRE.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antibacterials%29%0AQ%3A%20Extended-interval%20%28once-daily%29%20aminoglycoside%20dosing%20exploits%20which%20property%3F%0AAns%3A%20Concentration-dependent%20killing%20and%20post-antibiotic%20effect%0AWhy%3A%20Aminoglycosides%20kill%20in%20a%20concentration-dependent%20manner%20with%20a%20post-antibiotic%20effect%2C%20enabling%20once-daily%20dosing.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Glargine%20provides%20basal%20coverage%20because%20it%3F%0AAns%3A%20Forms%20a%20microprecipitate%20for%20slow%2C%20peakless%20release%0AWhy%3A%20Insulin%20glargine%20precipitates%20at%20physiologic%20pH%2C%20giving%20a%20prolonged%2C%20relatively%20peakless%20basal%20profile.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 21 Nov 2026*\n\n🎓 *MBBS* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Which drug is a first-line antifungal for systemic candidiasis?\nAns: Fluconazole\nWhy: Fluconazole inhibits fungal CYP-dependent ergosterol synthesis; used for candidiasis and cryptococcosis.\n\n🌍 *FMGE* (Antiviral/Fungal/Protozoal/Helminth)\nQ: ACT (artemisinin-based combination therapy) is first-line for?\nAns: Falciparum malaria\nWhy: Artemisinin-based combination therapy is the recommended first-line treatment for P. falciparum malaria.\n\n🩺 *NEET PG* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Dolutegravir inhibits which HIV enzyme?\nAns: Integrase\nWhy: Dolutegravir is an integrase strand-transfer inhibitor, a preferred component of first-line ART.\n\n🏥 *INI-CET* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Which antifungal class is preferred for invasive candidiasis in unstable patients due to few interactions?\nAns: Echinocandins (caspofungin)\nWhy: Echinocandins are first-line for invasive candidiasis: fungicidal with few drug interactions.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: CAR-T cell therapies (e.g., tisagenlecleucel) are engineered to target?\nAns: CD19 on B-cell malignancies\nWhy: Approved CAR-T therapies target CD19 in refractory B-cell leukaemia/lymphoma.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2021%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Which%20drug%20is%20a%20first-line%20antifungal%20for%20systemic%20candidiasis%3F%0AAns%3A%20Fluconazole%0AWhy%3A%20Fluconazole%20inhibits%20fungal%20CYP-dependent%20ergosterol%20synthesis%3B%20used%20for%20candidiasis%20and%20cryptococcosis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20ACT%20%28artemisinin-based%20combination%20therapy%29%20is%20first-line%20for%3F%0AAns%3A%20Falciparum%20malaria%0AWhy%3A%20Artemisinin-based%20combination%20therapy%20is%20the%20recommended%20first-line%20treatment%20for%20P.%20falciparum%20malaria.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Dolutegravir%20inhibits%20which%20HIV%20enzyme%3F%0AAns%3A%20Integrase%0AWhy%3A%20Dolutegravir%20is%20an%20integrase%20strand-transfer%20inhibitor%2C%20a%20preferred%20component%20of%20first-line%20ART.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Which%20antifungal%20class%20is%20preferred%20for%20invasive%20candidiasis%20in%20unstable%20patients%20due%20to%20few%20interactions%3F%0AAns%3A%20Echinocandins%20%28caspofungin%29%0AWhy%3A%20Echinocandins%20are%20first-line%20for%20invasive%20candidiasis%3A%20fungicidal%20with%20few%20drug%20interactions.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20CAR-T%20cell%20therapies%20%28e.g.%2C%20tisagenlecleucel%29%20are%20engineered%20to%20target%3F%0AAns%3A%20CD19%20on%20B-cell%20malignancies%0AWhy%3A%20Approved%20CAR-T%20therapies%20target%20CD19%20in%20refractory%20B-cell%20leukaemia/lymphoma.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

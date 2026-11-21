@@ -1264,6 +1264,61 @@
      "stem": "Glargine provides basal coverage because it?"
     }
    ]
+  },
+  {
+   "date": "2026-11-21",
+   "source": "bank",
+   "topic_index": 9,
+   "md_paper_index": 3,
+   "case_slot": 3,
+   "ra_slot": 0,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "7c27965f7601",
+     "stem": "Which drug is a first-line antifungal for systemic candidiasis?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "300caa917b90",
+     "stem": "ACT (artemisinin-based combination therapy) is first-line for?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "aef5a8073140",
+     "stem": "Dolutegravir inhibits which HIV enzyme?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Antiviral/Fungal/Protozoal/Helminth",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Antiviral/Fungal/Protozoal/Helminth",
+     "stem_hash": "011609b613dd",
+     "stem": "Which antifungal class is preferred for invasive candidiasis in unstable patients due to few interactions?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "70bf9b8c9082",
+     "stem": "CAR-T cell therapies (e.g., tisagenlecleucel) are engineered to target?"
+    }
+   ]
   }
  ]
 }
