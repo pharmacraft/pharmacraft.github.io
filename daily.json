@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Which drug is a first-line antifungal for systemic candidiasis?",
+      "topic": "Anticancer & Immuno",
+      "question": "Vincristine, an anticancer drug, acts by?",
       "options": [
-        "Terbinafine",
-        "Nystatin",
-        "Fluconazole",
-        "Griseofulvin"
+        "Cross-linking DNA",
+        "Inhibiting topoisomerase",
+        "Inhibiting microtubule assembly",
+        "Blocking folate"
       ],
       "correct": 2,
-      "explanation": "Fluconazole inhibits fungal CYP-dependent ergosterol synthesis; used for candidiasis and cryptococcosis."
+      "explanation": "Vincristine binds tubulin and prevents microtubule assembly, arresting mitosis; causes neuropathy."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "ACT (artemisinin-based combination therapy) is first-line for?",
+      "topic": "Anticancer & Immuno",
+      "question": "Cyclophosphamide can cause haemorrhagic cystitis, prevented by?",
       "options": [
-        "Filariasis",
-        "Falciparum malaria",
-        "Amoebiasis",
-        "Vivax malaria only"
+        "Allopurinol",
+        "Folinic acid",
+        "Amifostine",
+        "Hydration and mesna"
       ],
-      "correct": 1,
-      "explanation": "Artemisinin-based combination therapy is the recommended first-line treatment for P. falciparum malaria."
+      "correct": 3,
+      "explanation": "Mesna binds the toxic metabolite acrolein in the bladder, with hydration, preventing haemorrhagic cystitis."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Dolutegravir inhibits which HIV enzyme?",
+      "topic": "Anticancer & Immuno",
+      "question": "Bevacizumab inhibits angiogenesis by targeting?",
       "options": [
-        "Neuraminidase",
-        "Reverse transcriptase",
-        "Protease",
-        "Integrase"
+        "PD-L1",
+        "EGFR",
+        "VEGF",
+        "HER2"
       ],
-      "correct": 3,
-      "explanation": "Dolutegravir is an integrase strand-transfer inhibitor, a preferred component of first-line ART."
+      "correct": 2,
+      "explanation": "Bevacizumab binds VEGF, inhibiting tumour angiogenesis; risks bleeding, hypertension, impaired healing."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Antiviral/Fungal/Protozoal/Helminth",
-      "question": "Which antifungal class is preferred for invasive candidiasis in unstable patients due to few interactions?",
+      "topic": "Anticancer & Immuno",
+      "question": "Why does rasburicase help prevent tumour lysis nephropathy better than allopurinol?",
       "options": [
-        "Azoles",
-        "Echinocandins (caspofungin)",
-        "Allylamines",
-        "Polyenes"
+        "It enzymatically degrades existing uric acid to allantoin",
+        "It chelates urate",
+        "It alkalinises urine",
+        "Blocks synthesis"
       ],
-      "correct": 1,
-      "explanation": "Echinocandins are first-line for invasive candidiasis: fungicidal with few drug interactions."
+      "correct": 0,
+      "explanation": "Rasburicase (urate oxidase) breaks down existing uric acid, unlike allopurinol which only blocks formation."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper IV: Recent Advances",
-      "question": "CAR-T cell therapies (e.g., tisagenlecleucel) are engineered to target?",
+      "topic": "Paper I: General/Experimental",
+      "question": "The dose ratio in a Schild analysis is used to calculate the antagonist's?",
       "options": [
-        "Solid tumours only",
-        "PD-1",
-        "HER2",
-        "CD19 on B-cell malignancies"
+        "pA2/affinity (pKB)",
+        "Efficacy",
+        "Bioavailability",
+        "Potency as agonist"
       ],
-      "correct": 3,
-      "explanation": "Approved CAR-T therapies target CD19 in refractory B-cell leukaemia/lymphoma."
+      "correct": 0,
+      "explanation": "The Schild plot of log(dose ratio-1) versus log[antagonist] yields the antagonist dissociation constant (pA2/pKB)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 21 Nov 2026*\n\n🎓 *MBBS* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Which drug is a first-line antifungal for systemic candidiasis?\nAns: Fluconazole\nWhy: Fluconazole inhibits fungal CYP-dependent ergosterol synthesis; used for candidiasis and cryptococcosis.\n\n🌍 *FMGE* (Antiviral/Fungal/Protozoal/Helminth)\nQ: ACT (artemisinin-based combination therapy) is first-line for?\nAns: Falciparum malaria\nWhy: Artemisinin-based combination therapy is the recommended first-line treatment for P. falciparum malaria.\n\n🩺 *NEET PG* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Dolutegravir inhibits which HIV enzyme?\nAns: Integrase\nWhy: Dolutegravir is an integrase strand-transfer inhibitor, a preferred component of first-line ART.\n\n🏥 *INI-CET* (Antiviral/Fungal/Protozoal/Helminth)\nQ: Which antifungal class is preferred for invasive candidiasis in unstable patients due to few interactions?\nAns: Echinocandins (caspofungin)\nWhy: Echinocandins are first-line for invasive candidiasis: fungicidal with few drug interactions.\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: CAR-T cell therapies (e.g., tisagenlecleucel) are engineered to target?\nAns: CD19 on B-cell malignancies\nWhy: Approved CAR-T therapies target CD19 in refractory B-cell leukaemia/lymphoma.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2021%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Which%20drug%20is%20a%20first-line%20antifungal%20for%20systemic%20candidiasis%3F%0AAns%3A%20Fluconazole%0AWhy%3A%20Fluconazole%20inhibits%20fungal%20CYP-dependent%20ergosterol%20synthesis%3B%20used%20for%20candidiasis%20and%20cryptococcosis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20ACT%20%28artemisinin-based%20combination%20therapy%29%20is%20first-line%20for%3F%0AAns%3A%20Falciparum%20malaria%0AWhy%3A%20Artemisinin-based%20combination%20therapy%20is%20the%20recommended%20first-line%20treatment%20for%20P.%20falciparum%20malaria.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Dolutegravir%20inhibits%20which%20HIV%20enzyme%3F%0AAns%3A%20Integrase%0AWhy%3A%20Dolutegravir%20is%20an%20integrase%20strand-transfer%20inhibitor%2C%20a%20preferred%20component%20of%20first-line%20ART.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Antiviral/Fungal/Protozoal/Helminth%29%0AQ%3A%20Which%20antifungal%20class%20is%20preferred%20for%20invasive%20candidiasis%20in%20unstable%20patients%20due%20to%20few%20interactions%3F%0AAns%3A%20Echinocandins%20%28caspofungin%29%0AWhy%3A%20Echinocandins%20are%20first-line%20for%20invasive%20candidiasis%3A%20fungicidal%20with%20few%20drug%20interactions.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20CAR-T%20cell%20therapies%20%28e.g.%2C%20tisagenlecleucel%29%20are%20engineered%20to%20target%3F%0AAns%3A%20CD19%20on%20B-cell%20malignancies%0AWhy%3A%20Approved%20CAR-T%20therapies%20target%20CD19%20in%20refractory%20B-cell%20leukaemia/lymphoma.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 22 Nov 2026*\n\n🎓 *MBBS* (Anticancer & Immuno)\nQ: Vincristine, an anticancer drug, acts by?\nAns: Inhibiting microtubule assembly\nWhy: Vincristine binds tubulin and prevents microtubule assembly, arresting mitosis; causes neuropathy.\n\n🌍 *FMGE* (Anticancer & Immuno)\nQ: Cyclophosphamide can cause haemorrhagic cystitis, prevented by?\nAns: Hydration and mesna\nWhy: Mesna binds the toxic metabolite acrolein in the bladder, with hydration, preventing haemorrhagic cystitis.\n\n🩺 *NEET PG* (Anticancer & Immuno)\nQ: Bevacizumab inhibits angiogenesis by targeting?\nAns: VEGF\nWhy: Bevacizumab binds VEGF, inhibiting tumour angiogenesis; risks bleeding, hypertension, impaired healing.\n\n🏥 *INI-CET* (Anticancer & Immuno)\nQ: Why does rasburicase help prevent tumour lysis nephropathy better than allopurinol?\nAns: It enzymatically degrades existing uric acid to allantoin\nWhy: Rasburicase (urate oxidase) breaks down existing uric acid, unlike allopurinol which only blocks formation.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: The dose ratio in a Schild analysis is used to calculate the antagonist's?\nAns: pA2/affinity (pKB)\nWhy: The Schild plot of log(dose ratio-1) versus log[antagonist] yields the antagonist dissociation constant (pA2/pKB).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2022%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Vincristine%2C%20an%20anticancer%20drug%2C%20acts%20by%3F%0AAns%3A%20Inhibiting%20microtubule%20assembly%0AWhy%3A%20Vincristine%20binds%20tubulin%20and%20prevents%20microtubule%20assembly%2C%20arresting%20mitosis%3B%20causes%20neuropathy.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Cyclophosphamide%20can%20cause%20haemorrhagic%20cystitis%2C%20prevented%20by%3F%0AAns%3A%20Hydration%20and%20mesna%0AWhy%3A%20Mesna%20binds%20the%20toxic%20metabolite%20acrolein%20in%20the%20bladder%2C%20with%20hydration%2C%20preventing%20haemorrhagic%20cystitis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Bevacizumab%20inhibits%20angiogenesis%20by%20targeting%3F%0AAns%3A%20VEGF%0AWhy%3A%20Bevacizumab%20binds%20VEGF%2C%20inhibiting%20tumour%20angiogenesis%3B%20risks%20bleeding%2C%20hypertension%2C%20impaired%20healing.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Why%20does%20rasburicase%20help%20prevent%20tumour%20lysis%20nephropathy%20better%20than%20allopurinol%3F%0AAns%3A%20It%20enzymatically%20degrades%20existing%20uric%20acid%20to%20allantoin%0AWhy%3A%20Rasburicase%20%28urate%20oxidase%29%20breaks%20down%20existing%20uric%20acid%2C%20unlike%20allopurinol%20which%20only%20blocks%20formation.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20The%20dose%20ratio%20in%20a%20Schild%20analysis%20is%20used%20to%20calculate%20the%20antagonist%27s%3F%0AAns%3A%20pA2/affinity%20%28pKB%29%0AWhy%3A%20The%20Schild%20plot%20of%20log%28dose%20ratio-1%29%20versus%20log%5Bantagonist%5D%20yields%20the%20antagonist%20dissociation%20constant%20%28pA2/pKB%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

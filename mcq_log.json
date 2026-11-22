@@ -1319,6 +1319,61 @@
      "stem": "CAR-T cell therapies (e.g., tisagenlecleucel) are engineered to target?"
     }
    ]
+  },
+  {
+   "date": "2026-11-22",
+   "source": "bank",
+   "topic_index": 10,
+   "md_paper_index": 0,
+   "case_slot": 4,
+   "ra_slot": 1,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "e88661deca4b",
+     "stem": "Vincristine, an anticancer drug, acts by?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "e33ace733993",
+     "stem": "Cyclophosphamide can cause haemorrhagic cystitis, prevented by?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "3f232aa76705",
+     "stem": "Bevacizumab inhibits angiogenesis by targeting?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Anticancer & Immuno",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Anticancer & Immuno",
+     "stem_hash": "6d4f310a18b4",
+     "stem": "Why does rasburicase help prevent tumour lysis nephropathy better than allopurinol?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "825f48be2049",
+     "stem": "The dose ratio in a Schild analysis is used to calculate the antagonist's?"
+    }
+   ]
   }
  ]
 }
