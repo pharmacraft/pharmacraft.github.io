@@ -1374,6 +1374,61 @@
      "stem": "The dose ratio in a Schild analysis is used to calculate the antagonist's?"
     }
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "source": "bank",
+   "topic_index": 11,
+   "md_paper_index": 1,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "09c315b4c31d",
+     "stem": "The antidote for heparin overdose is?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "65d5c7835a18",
+     "stem": "Which oral anticoagulant is a direct factor Xa inhibitor?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "9eda86a9085e",
+     "stem": "Andexanet alfa reverses the anticoagulant effect of?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Hematology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Hematology",
+     "stem_hash": "b1fdd9cd1943",
+     "stem": "DOACs are preferred over warfarin in non-valvular AF because they?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "4ab4c32992c2",
+     "stem": "A Type B adverse drug reaction is?"
+    }
+   ]
   }
  ]
 }

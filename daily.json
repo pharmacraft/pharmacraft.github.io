@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Anticancer & Immuno",
-      "question": "Vincristine, an anticancer drug, acts by?",
+      "topic": "Hematology",
+      "question": "The antidote for heparin overdose is?",
       "options": [
-        "Cross-linking DNA",
-        "Inhibiting topoisomerase",
-        "Inhibiting microtubule assembly",
-        "Blocking folate"
+        "Protamine sulfate",
+        "Vitamin K",
+        "Fresh frozen plasma",
+        "Tranexamic acid"
       ],
-      "correct": 2,
-      "explanation": "Vincristine binds tubulin and prevents microtubule assembly, arresting mitosis; causes neuropathy."
+      "correct": 0,
+      "explanation": "Protamine sulfate neutralises heparin by forming an inactive complex."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Anticancer & Immuno",
-      "question": "Cyclophosphamide can cause haemorrhagic cystitis, prevented by?",
+      "topic": "Hematology",
+      "question": "Which oral anticoagulant is a direct factor Xa inhibitor?",
       "options": [
-        "Allopurinol",
-        "Folinic acid",
-        "Amifostine",
-        "Hydration and mesna"
+        "Streptokinase",
+        "Heparin",
+        "Warfarin",
+        "Rivaroxaban"
       ],
       "correct": 3,
-      "explanation": "Mesna binds the toxic metabolite acrolein in the bladder, with hydration, preventing haemorrhagic cystitis."
+      "explanation": "Rivaroxaban/apixaban directly inhibit factor Xa; no routine monitoring needed."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Anticancer & Immuno",
-      "question": "Bevacizumab inhibits angiogenesis by targeting?",
+      "topic": "Hematology",
+      "question": "Andexanet alfa reverses the anticoagulant effect of?",
       "options": [
-        "PD-L1",
-        "EGFR",
-        "VEGF",
-        "HER2"
+        "Warfarin",
+        "Dabigatran",
+        "Factor Xa inhibitors (rivaroxaban/apixaban)",
+        "Heparin"
       ],
       "correct": 2,
-      "explanation": "Bevacizumab binds VEGF, inhibiting tumour angiogenesis; risks bleeding, hypertension, impaired healing."
+      "explanation": "Andexanet alfa is a decoy factor Xa that reverses direct factor Xa inhibitors."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Anticancer & Immuno",
-      "question": "Why does rasburicase help prevent tumour lysis nephropathy better than allopurinol?",
+      "topic": "Hematology",
+      "question": "DOACs are preferred over warfarin in non-valvular AF because they?",
       "options": [
-        "It enzymatically degrades existing uric acid to allantoin",
-        "It chelates urate",
-        "It alkalinises urine",
-        "Blocks synthesis"
+        "Are reversed by vitamin K",
+        "Need INR monitoring",
+        "Have fewer food/drug interactions and fixed dosing",
+        "Are cheaper always"
       ],
-      "correct": 0,
-      "explanation": "Rasburicase (urate oxidase) breaks down existing uric acid, unlike allopurinol which only blocks formation."
+      "correct": 2,
+      "explanation": "Direct oral anticoagulants offer predictable dosing without routine monitoring and fewer interactions."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "The dose ratio in a Schild analysis is used to calculate the antagonist's?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "A Type B adverse drug reaction is?",
       "options": [
-        "pA2/affinity (pKB)",
-        "Efficacy",
-        "Bioavailability",
-        "Potency as agonist"
+        "Reversible always",
+        "Bizarre, unpredictable (e.g., anaphylaxis)",
+        "Common",
+        "Dose-dependent"
       ],
-      "correct": 0,
-      "explanation": "The Schild plot of log(dose ratio-1) versus log[antagonist] yields the antagonist dissociation constant (pA2/pKB)."
+      "correct": 1,
+      "explanation": "Type B reactions are bizarre/idiosyncratic, often immunological, and not dose-related (e.g., penicillin anaphylaxis)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 22 Nov 2026*\n\n🎓 *MBBS* (Anticancer & Immuno)\nQ: Vincristine, an anticancer drug, acts by?\nAns: Inhibiting microtubule assembly\nWhy: Vincristine binds tubulin and prevents microtubule assembly, arresting mitosis; causes neuropathy.\n\n🌍 *FMGE* (Anticancer & Immuno)\nQ: Cyclophosphamide can cause haemorrhagic cystitis, prevented by?\nAns: Hydration and mesna\nWhy: Mesna binds the toxic metabolite acrolein in the bladder, with hydration, preventing haemorrhagic cystitis.\n\n🩺 *NEET PG* (Anticancer & Immuno)\nQ: Bevacizumab inhibits angiogenesis by targeting?\nAns: VEGF\nWhy: Bevacizumab binds VEGF, inhibiting tumour angiogenesis; risks bleeding, hypertension, impaired healing.\n\n🏥 *INI-CET* (Anticancer & Immuno)\nQ: Why does rasburicase help prevent tumour lysis nephropathy better than allopurinol?\nAns: It enzymatically degrades existing uric acid to allantoin\nWhy: Rasburicase (urate oxidase) breaks down existing uric acid, unlike allopurinol which only blocks formation.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: The dose ratio in a Schild analysis is used to calculate the antagonist's?\nAns: pA2/affinity (pKB)\nWhy: The Schild plot of log(dose ratio-1) versus log[antagonist] yields the antagonist dissociation constant (pA2/pKB).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2022%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Vincristine%2C%20an%20anticancer%20drug%2C%20acts%20by%3F%0AAns%3A%20Inhibiting%20microtubule%20assembly%0AWhy%3A%20Vincristine%20binds%20tubulin%20and%20prevents%20microtubule%20assembly%2C%20arresting%20mitosis%3B%20causes%20neuropathy.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Cyclophosphamide%20can%20cause%20haemorrhagic%20cystitis%2C%20prevented%20by%3F%0AAns%3A%20Hydration%20and%20mesna%0AWhy%3A%20Mesna%20binds%20the%20toxic%20metabolite%20acrolein%20in%20the%20bladder%2C%20with%20hydration%2C%20preventing%20haemorrhagic%20cystitis.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Bevacizumab%20inhibits%20angiogenesis%20by%20targeting%3F%0AAns%3A%20VEGF%0AWhy%3A%20Bevacizumab%20binds%20VEGF%2C%20inhibiting%20tumour%20angiogenesis%3B%20risks%20bleeding%2C%20hypertension%2C%20impaired%20healing.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Anticancer%20%26%20Immuno%29%0AQ%3A%20Why%20does%20rasburicase%20help%20prevent%20tumour%20lysis%20nephropathy%20better%20than%20allopurinol%3F%0AAns%3A%20It%20enzymatically%20degrades%20existing%20uric%20acid%20to%20allantoin%0AWhy%3A%20Rasburicase%20%28urate%20oxidase%29%20breaks%20down%20existing%20uric%20acid%2C%20unlike%20allopurinol%20which%20only%20blocks%20formation.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20The%20dose%20ratio%20in%20a%20Schild%20analysis%20is%20used%20to%20calculate%20the%20antagonist%27s%3F%0AAns%3A%20pA2/affinity%20%28pKB%29%0AWhy%3A%20The%20Schild%20plot%20of%20log%28dose%20ratio-1%29%20versus%20log%5Bantagonist%5D%20yields%20the%20antagonist%20dissociation%20constant%20%28pA2/pKB%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 23 Nov 2026*\n\n🎓 *MBBS* (Hematology)\nQ: The antidote for heparin overdose is?\nAns: Protamine sulfate\nWhy: Protamine sulfate neutralises heparin by forming an inactive complex.\n\n🌍 *FMGE* (Hematology)\nQ: Which oral anticoagulant is a direct factor Xa inhibitor?\nAns: Rivaroxaban\nWhy: Rivaroxaban/apixaban directly inhibit factor Xa; no routine monitoring needed.\n\n🩺 *NEET PG* (Hematology)\nQ: Andexanet alfa reverses the anticoagulant effect of?\nAns: Factor Xa inhibitors (rivaroxaban/apixaban)\nWhy: Andexanet alfa is a decoy factor Xa that reverses direct factor Xa inhibitors.\n\n🏥 *INI-CET* (Hematology)\nQ: DOACs are preferred over warfarin in non-valvular AF because they?\nAns: Have fewer food/drug interactions and fixed dosing\nWhy: Direct oral anticoagulants offer predictable dosing without routine monitoring and fewer interactions.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: A Type B adverse drug reaction is?\nAns: Bizarre, unpredictable (e.g., anaphylaxis)\nWhy: Type B reactions are bizarre/idiosyncratic, often immunological, and not dose-related (e.g., penicillin anaphylaxis).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2023%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Hematology%29%0AQ%3A%20The%20antidote%20for%20heparin%20overdose%20is%3F%0AAns%3A%20Protamine%20sulfate%0AWhy%3A%20Protamine%20sulfate%20neutralises%20heparin%20by%20forming%20an%20inactive%20complex.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Hematology%29%0AQ%3A%20Which%20oral%20anticoagulant%20is%20a%20direct%20factor%20Xa%20inhibitor%3F%0AAns%3A%20Rivaroxaban%0AWhy%3A%20Rivaroxaban/apixaban%20directly%20inhibit%20factor%20Xa%3B%20no%20routine%20monitoring%20needed.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Hematology%29%0AQ%3A%20Andexanet%20alfa%20reverses%20the%20anticoagulant%20effect%20of%3F%0AAns%3A%20Factor%20Xa%20inhibitors%20%28rivaroxaban/apixaban%29%0AWhy%3A%20Andexanet%20alfa%20is%20a%20decoy%20factor%20Xa%20that%20reverses%20direct%20factor%20Xa%20inhibitors.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Hematology%29%0AQ%3A%20DOACs%20are%20preferred%20over%20warfarin%20in%20non-valvular%20AF%20because%20they%3F%0AAns%3A%20Have%20fewer%20food/drug%20interactions%20and%20fixed%20dosing%0AWhy%3A%20Direct%20oral%20anticoagulants%20offer%20predictable%20dosing%20without%20routine%20monitoring%20and%20fewer%20interactions.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20A%20Type%20B%20adverse%20drug%20reaction%20is%3F%0AAns%3A%20Bizarre%2C%20unpredictable%20%28e.g.%2C%20anaphylaxis%29%0AWhy%3A%20Type%20B%20reactions%20are%20bizarre/idiosyncratic%2C%20often%20immunological%2C%20and%20not%20dose-related%20%28e.g.%2C%20penicillin%20anaphylaxis%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
