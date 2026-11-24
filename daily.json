@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Hematology",
-      "question": "The antidote for heparin overdose is?",
+      "topic": "Renal & Diuretics",
+      "question": "Thiazide diuretics act on the?",
       "options": [
-        "Protamine sulfate",
-        "Vitamin K",
-        "Fresh frozen plasma",
-        "Tranexamic acid"
+        "Distal convoluted tubule",
+        "Loop of Henle",
+        "Glomerulus",
+        "Collecting duct"
       ],
       "correct": 0,
-      "explanation": "Protamine sulfate neutralises heparin by forming an inactive complex."
+      "explanation": "Thiazides inhibit the Na-Cl cotransporter in the distal convoluted tubule; used in hypertension."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Hematology",
-      "question": "Which oral anticoagulant is a direct factor Xa inhibitor?",
+      "topic": "Renal & Diuretics",
+      "question": "Amiloride is a potassium-sparing diuretic that blocks?",
       "options": [
-        "Streptokinase",
-        "Heparin",
-        "Warfarin",
-        "Rivaroxaban"
+        "Carbonic anhydrase",
+        "Aldosterone receptor",
+        "Epithelial sodium channels (ENaC)",
+        "Na-Cl transporter"
       ],
-      "correct": 3,
-      "explanation": "Rivaroxaban/apixaban directly inhibit factor Xa; no routine monitoring needed."
+      "correct": 2,
+      "explanation": "Amiloride and triamterene block ENaC in the collecting duct, sparing potassium (not via aldosterone)."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Hematology",
-      "question": "Andexanet alfa reverses the anticoagulant effect of?",
+      "topic": "Renal & Diuretics",
+      "question": "Finerenone is a non-steroidal MRA used to reduce progression of?",
       "options": [
-        "Warfarin",
-        "Dabigatran",
-        "Factor Xa inhibitors (rivaroxaban/apixaban)",
-        "Heparin"
+        "Nephrolithiasis",
+        "Diabetic kidney disease",
+        "Hypertension only",
+        "UTI"
       ],
-      "correct": 2,
-      "explanation": "Andexanet alfa is a decoy factor Xa that reverses direct factor Xa inhibitors."
+      "correct": 1,
+      "explanation": "Finerenone, a selective non-steroidal mineralocorticoid receptor antagonist, slows diabetic CKD progression."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Hematology",
-      "question": "DOACs are preferred over warfarin in non-valvular AF because they?",
+      "topic": "Renal & Diuretics",
+      "question": "SGLT2 inhibitors reduce CKD progression partly by?",
       "options": [
-        "Are reversed by vitamin K",
-        "Need INR monitoring",
-        "Have fewer food/drug interactions and fixed dosing",
-        "Are cheaper always"
+        "Diuresis only",
+        "Increasing GFR",
+        "Reducing intraglomerular hyperfiltration via tubuloglomerular feedback",
+        "Blocking aldosterone"
       ],
       "correct": 2,
-      "explanation": "Direct oral anticoagulants offer predictable dosing without routine monitoring and fewer interactions."
+      "explanation": "By increasing distal sodium delivery, SGLT2 inhibitors restore tubuloglomerular feedback, lowering hyperfiltration."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "A Type B adverse drug reaction is?",
+      "topic": "Paper III: Systemic",
+      "question": "The drug of choice for absence seizures that also treats generalised seizures is?",
       "options": [
-        "Reversible always",
-        "Bizarre, unpredictable (e.g., anaphylaxis)",
-        "Common",
-        "Dose-dependent"
+        "Carbamazepine",
+        "Phenytoin",
+        "Ethosuximide",
+        "Valproate"
       ],
-      "correct": 1,
-      "explanation": "Type B reactions are bizarre/idiosyncratic, often immunological, and not dose-related (e.g., penicillin anaphylaxis)."
+      "correct": 3,
+      "explanation": "Valproate is broad-spectrum (covers absence and generalised seizures); ethosuximide covers only absence."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 23 Nov 2026*\n\n🎓 *MBBS* (Hematology)\nQ: The antidote for heparin overdose is?\nAns: Protamine sulfate\nWhy: Protamine sulfate neutralises heparin by forming an inactive complex.\n\n🌍 *FMGE* (Hematology)\nQ: Which oral anticoagulant is a direct factor Xa inhibitor?\nAns: Rivaroxaban\nWhy: Rivaroxaban/apixaban directly inhibit factor Xa; no routine monitoring needed.\n\n🩺 *NEET PG* (Hematology)\nQ: Andexanet alfa reverses the anticoagulant effect of?\nAns: Factor Xa inhibitors (rivaroxaban/apixaban)\nWhy: Andexanet alfa is a decoy factor Xa that reverses direct factor Xa inhibitors.\n\n🏥 *INI-CET* (Hematology)\nQ: DOACs are preferred over warfarin in non-valvular AF because they?\nAns: Have fewer food/drug interactions and fixed dosing\nWhy: Direct oral anticoagulants offer predictable dosing without routine monitoring and fewer interactions.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: A Type B adverse drug reaction is?\nAns: Bizarre, unpredictable (e.g., anaphylaxis)\nWhy: Type B reactions are bizarre/idiosyncratic, often immunological, and not dose-related (e.g., penicillin anaphylaxis).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2023%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Hematology%29%0AQ%3A%20The%20antidote%20for%20heparin%20overdose%20is%3F%0AAns%3A%20Protamine%20sulfate%0AWhy%3A%20Protamine%20sulfate%20neutralises%20heparin%20by%20forming%20an%20inactive%20complex.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Hematology%29%0AQ%3A%20Which%20oral%20anticoagulant%20is%20a%20direct%20factor%20Xa%20inhibitor%3F%0AAns%3A%20Rivaroxaban%0AWhy%3A%20Rivaroxaban/apixaban%20directly%20inhibit%20factor%20Xa%3B%20no%20routine%20monitoring%20needed.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Hematology%29%0AQ%3A%20Andexanet%20alfa%20reverses%20the%20anticoagulant%20effect%20of%3F%0AAns%3A%20Factor%20Xa%20inhibitors%20%28rivaroxaban/apixaban%29%0AWhy%3A%20Andexanet%20alfa%20is%20a%20decoy%20factor%20Xa%20that%20reverses%20direct%20factor%20Xa%20inhibitors.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Hematology%29%0AQ%3A%20DOACs%20are%20preferred%20over%20warfarin%20in%20non-valvular%20AF%20because%20they%3F%0AAns%3A%20Have%20fewer%20food/drug%20interactions%20and%20fixed%20dosing%0AWhy%3A%20Direct%20oral%20anticoagulants%20offer%20predictable%20dosing%20without%20routine%20monitoring%20and%20fewer%20interactions.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20A%20Type%20B%20adverse%20drug%20reaction%20is%3F%0AAns%3A%20Bizarre%2C%20unpredictable%20%28e.g.%2C%20anaphylaxis%29%0AWhy%3A%20Type%20B%20reactions%20are%20bizarre/idiosyncratic%2C%20often%20immunological%2C%20and%20not%20dose-related%20%28e.g.%2C%20penicillin%20anaphylaxis%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 24 Nov 2026*\n\n🎓 *MBBS* (Renal & Diuretics)\nQ: Thiazide diuretics act on the?\nAns: Distal convoluted tubule\nWhy: Thiazides inhibit the Na-Cl cotransporter in the distal convoluted tubule; used in hypertension.\n\n🌍 *FMGE* (Renal & Diuretics)\nQ: Amiloride is a potassium-sparing diuretic that blocks?\nAns: Epithelial sodium channels (ENaC)\nWhy: Amiloride and triamterene block ENaC in the collecting duct, sparing potassium (not via aldosterone).\n\n🩺 *NEET PG* (Renal & Diuretics)\nQ: Finerenone is a non-steroidal MRA used to reduce progression of?\nAns: Diabetic kidney disease\nWhy: Finerenone, a selective non-steroidal mineralocorticoid receptor antagonist, slows diabetic CKD progression.\n\n🏥 *INI-CET* (Renal & Diuretics)\nQ: SGLT2 inhibitors reduce CKD progression partly by?\nAns: Reducing intraglomerular hyperfiltration via tubuloglomerular feedback\nWhy: By increasing distal sodium delivery, SGLT2 inhibitors restore tubuloglomerular feedback, lowering hyperfiltration.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: The drug of choice for absence seizures that also treats generalised seizures is?\nAns: Valproate\nWhy: Valproate is broad-spectrum (covers absence and generalised seizures); ethosuximide covers only absence.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2024%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Thiazide%20diuretics%20act%20on%20the%3F%0AAns%3A%20Distal%20convoluted%20tubule%0AWhy%3A%20Thiazides%20inhibit%20the%20Na-Cl%20cotransporter%20in%20the%20distal%20convoluted%20tubule%3B%20used%20in%20hypertension.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Amiloride%20is%20a%20potassium-sparing%20diuretic%20that%20blocks%3F%0AAns%3A%20Epithelial%20sodium%20channels%20%28ENaC%29%0AWhy%3A%20Amiloride%20and%20triamterene%20block%20ENaC%20in%20the%20collecting%20duct%2C%20sparing%20potassium%20%28not%20via%20aldosterone%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Finerenone%20is%20a%20non-steroidal%20MRA%20used%20to%20reduce%20progression%20of%3F%0AAns%3A%20Diabetic%20kidney%20disease%0AWhy%3A%20Finerenone%2C%20a%20selective%20non-steroidal%20mineralocorticoid%20receptor%20antagonist%2C%20slows%20diabetic%20CKD%20progression.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20SGLT2%20inhibitors%20reduce%20CKD%20progression%20partly%20by%3F%0AAns%3A%20Reducing%20intraglomerular%20hyperfiltration%20via%20tubuloglomerular%20feedback%0AWhy%3A%20By%20increasing%20distal%20sodium%20delivery%2C%20SGLT2%20inhibitors%20restore%20tubuloglomerular%20feedback%2C%20lowering%20hyperfiltration.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20The%20drug%20of%20choice%20for%20absence%20seizures%20that%20also%20treats%20generalised%20seizures%20is%3F%0AAns%3A%20Valproate%0AWhy%3A%20Valproate%20is%20broad-spectrum%20%28covers%20absence%20and%20generalised%20seizures%29%3B%20ethosuximide%20covers%20only%20absence.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

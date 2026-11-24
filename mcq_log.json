@@ -1429,6 +1429,61 @@
      "stem": "A Type B adverse drug reaction is?"
     }
    ]
+  },
+  {
+   "date": "2026-11-24",
+   "source": "bank",
+   "topic_index": 12,
+   "md_paper_index": 2,
+   "case_slot": 1,
+   "ra_slot": 3,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "5e70689678e8",
+     "stem": "Thiazide diuretics act on the?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "cb38f0bdd484",
+     "stem": "Amiloride is a potassium-sparing diuretic that blocks?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "92ca51404ad6",
+     "stem": "Finerenone is a non-steroidal MRA used to reduce progression of?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Renal & Diuretics",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Renal & Diuretics",
+     "stem_hash": "c542a2ed1f1a",
+     "stem": "SGLT2 inhibitors reduce CKD progression partly by?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "ad2cf62d0ea2",
+     "stem": "The drug of choice for absence seizures that also treats generalised seizures is?"
+    }
+   ]
   }
  ]
 }
