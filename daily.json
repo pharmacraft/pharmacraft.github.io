@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Renal & Diuretics",
-      "question": "Thiazide diuretics act on the?",
+      "topic": "Toxicology",
+      "question": "Carbon monoxide poisoning is treated with?",
       "options": [
-        "Distal convoluted tubule",
-        "Loop of Henle",
-        "Glomerulus",
-        "Collecting duct"
+        "Naloxone",
+        "Deferoxamine",
+        "100% oxygen",
+        "Atropine"
       ],
-      "correct": 0,
-      "explanation": "Thiazides inhibit the Na-Cl cotransporter in the distal convoluted tubule; used in hypertension."
+      "correct": 2,
+      "explanation": "High-flow/hyperbaric 100% oxygen displaces CO from haemoglobin, reducing carboxyhaemoglobin."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Renal & Diuretics",
-      "question": "Amiloride is a potassium-sparing diuretic that blocks?",
+      "topic": "Toxicology",
+      "question": "Dimercaprol (BAL) is a chelator used for which metal poisoning?",
       "options": [
-        "Carbonic anhydrase",
-        "Aldosterone receptor",
-        "Epithelial sodium channels (ENaC)",
-        "Na-Cl transporter"
+        "Arsenic/mercury/lead",
+        "Copper only",
+        "Iron",
+        "Lithium"
       ],
-      "correct": 2,
-      "explanation": "Amiloride and triamterene block ENaC in the collecting duct, sparing potassium (not via aldosterone)."
+      "correct": 0,
+      "explanation": "Dimercaprol chelates arsenic, mercury and lead; given IM in oil."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Renal & Diuretics",
-      "question": "Finerenone is a non-steroidal MRA used to reduce progression of?",
+      "topic": "Toxicology",
+      "question": "Fomepizole is preferred over ethanol in methanol/ethylene glycol poisoning because it?",
       "options": [
-        "Nephrolithiasis",
-        "Diabetic kidney disease",
-        "Hypertension only",
-        "UTI"
+        "Has predictable dosing without CNS depression",
+        "Is cheaper",
+        "Chelates the toxin",
+        "Works faster at the kidney"
       ],
-      "correct": 1,
-      "explanation": "Finerenone, a selective non-steroidal mineralocorticoid receptor antagonist, slows diabetic CKD progression."
+      "correct": 0,
+      "explanation": "Fomepizole inhibits alcohol dehydrogenase with predictable dosing and no intoxication, unlike ethanol."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Renal & Diuretics",
-      "question": "SGLT2 inhibitors reduce CKD progression partly by?",
+      "topic": "Toxicology",
+      "question": "Why is sodium bicarbonate used in tricyclic antidepressant overdose?",
       "options": [
-        "Diuresis only",
-        "Increasing GFR",
-        "Reducing intraglomerular hyperfiltration via tubuloglomerular feedback",
-        "Blocking aldosterone"
+        "Correct acidosis only",
+        "Increases excretion only",
+        "Narrows QRS by overcoming sodium channel blockade",
+        "Chelates TCA"
       ],
       "correct": 2,
-      "explanation": "By increasing distal sodium delivery, SGLT2 inhibitors restore tubuloglomerular feedback, lowering hyperfiltration."
+      "explanation": "Bicarbonate increases serum sodium and pH, overcoming TCA-induced fast sodium channel blockade (wide QRS)."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper III: Systemic",
-      "question": "The drug of choice for absence seizures that also treats generalised seizures is?",
+      "topic": "Paper IV: Recent Advances",
+      "question": "Lecanemab, used in early Alzheimer's disease, is a monoclonal antibody against?",
       "options": [
-        "Carbamazepine",
-        "Phenytoin",
-        "Ethosuximide",
-        "Valproate"
+        "Acetylcholinesterase",
+        "Amyloid-beta protofibrils",
+        "Tau",
+        "NMDA receptor"
       ],
-      "correct": 3,
-      "explanation": "Valproate is broad-spectrum (covers absence and generalised seizures); ethosuximide covers only absence."
+      "correct": 1,
+      "explanation": "Lecanemab binds amyloid-beta protofibrils, modestly slowing early Alzheimer's decline; risk of ARIA."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 24 Nov 2026*\n\n🎓 *MBBS* (Renal & Diuretics)\nQ: Thiazide diuretics act on the?\nAns: Distal convoluted tubule\nWhy: Thiazides inhibit the Na-Cl cotransporter in the distal convoluted tubule; used in hypertension.\n\n🌍 *FMGE* (Renal & Diuretics)\nQ: Amiloride is a potassium-sparing diuretic that blocks?\nAns: Epithelial sodium channels (ENaC)\nWhy: Amiloride and triamterene block ENaC in the collecting duct, sparing potassium (not via aldosterone).\n\n🩺 *NEET PG* (Renal & Diuretics)\nQ: Finerenone is a non-steroidal MRA used to reduce progression of?\nAns: Diabetic kidney disease\nWhy: Finerenone, a selective non-steroidal mineralocorticoid receptor antagonist, slows diabetic CKD progression.\n\n🏥 *INI-CET* (Renal & Diuretics)\nQ: SGLT2 inhibitors reduce CKD progression partly by?\nAns: Reducing intraglomerular hyperfiltration via tubuloglomerular feedback\nWhy: By increasing distal sodium delivery, SGLT2 inhibitors restore tubuloglomerular feedback, lowering hyperfiltration.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: The drug of choice for absence seizures that also treats generalised seizures is?\nAns: Valproate\nWhy: Valproate is broad-spectrum (covers absence and generalised seizures); ethosuximide covers only absence.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2024%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Thiazide%20diuretics%20act%20on%20the%3F%0AAns%3A%20Distal%20convoluted%20tubule%0AWhy%3A%20Thiazides%20inhibit%20the%20Na-Cl%20cotransporter%20in%20the%20distal%20convoluted%20tubule%3B%20used%20in%20hypertension.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Amiloride%20is%20a%20potassium-sparing%20diuretic%20that%20blocks%3F%0AAns%3A%20Epithelial%20sodium%20channels%20%28ENaC%29%0AWhy%3A%20Amiloride%20and%20triamterene%20block%20ENaC%20in%20the%20collecting%20duct%2C%20sparing%20potassium%20%28not%20via%20aldosterone%29.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20Finerenone%20is%20a%20non-steroidal%20MRA%20used%20to%20reduce%20progression%20of%3F%0AAns%3A%20Diabetic%20kidney%20disease%0AWhy%3A%20Finerenone%2C%20a%20selective%20non-steroidal%20mineralocorticoid%20receptor%20antagonist%2C%20slows%20diabetic%20CKD%20progression.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Renal%20%26%20Diuretics%29%0AQ%3A%20SGLT2%20inhibitors%20reduce%20CKD%20progression%20partly%20by%3F%0AAns%3A%20Reducing%20intraglomerular%20hyperfiltration%20via%20tubuloglomerular%20feedback%0AWhy%3A%20By%20increasing%20distal%20sodium%20delivery%2C%20SGLT2%20inhibitors%20restore%20tubuloglomerular%20feedback%2C%20lowering%20hyperfiltration.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20The%20drug%20of%20choice%20for%20absence%20seizures%20that%20also%20treats%20generalised%20seizures%20is%3F%0AAns%3A%20Valproate%0AWhy%3A%20Valproate%20is%20broad-spectrum%20%28covers%20absence%20and%20generalised%20seizures%29%3B%20ethosuximide%20covers%20only%20absence.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 25 Nov 2026*\n\n🎓 *MBBS* (Toxicology)\nQ: Carbon monoxide poisoning is treated with?\nAns: 100% oxygen\nWhy: High-flow/hyperbaric 100% oxygen displaces CO from haemoglobin, reducing carboxyhaemoglobin.\n\n🌍 *FMGE* (Toxicology)\nQ: Dimercaprol (BAL) is a chelator used for which metal poisoning?\nAns: Arsenic/mercury/lead\nWhy: Dimercaprol chelates arsenic, mercury and lead; given IM in oil.\n\n🩺 *NEET PG* (Toxicology)\nQ: Fomepizole is preferred over ethanol in methanol/ethylene glycol poisoning because it?\nAns: Has predictable dosing without CNS depression\nWhy: Fomepizole inhibits alcohol dehydrogenase with predictable dosing and no intoxication, unlike ethanol.\n\n🏥 *INI-CET* (Toxicology)\nQ: Why is sodium bicarbonate used in tricyclic antidepressant overdose?\nAns: Narrows QRS by overcoming sodium channel blockade\nWhy: Bicarbonate increases serum sodium and pH, overcoming TCA-induced fast sodium channel blockade (wide QRS).\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Lecanemab, used in early Alzheimer's disease, is a monoclonal antibody against?\nAns: Amyloid-beta protofibrils\nWhy: Lecanemab binds amyloid-beta protofibrils, modestly slowing early Alzheimer's decline; risk of ARIA.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2025%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Toxicology%29%0AQ%3A%20Carbon%20monoxide%20poisoning%20is%20treated%20with%3F%0AAns%3A%20100%25%20oxygen%0AWhy%3A%20High-flow/hyperbaric%20100%25%20oxygen%20displaces%20CO%20from%20haemoglobin%2C%20reducing%20carboxyhaemoglobin.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Dimercaprol%20%28BAL%29%20is%20a%20chelator%20used%20for%20which%20metal%20poisoning%3F%0AAns%3A%20Arsenic/mercury/lead%0AWhy%3A%20Dimercaprol%20chelates%20arsenic%2C%20mercury%20and%20lead%3B%20given%20IM%20in%20oil.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Toxicology%29%0AQ%3A%20Fomepizole%20is%20preferred%20over%20ethanol%20in%20methanol/ethylene%20glycol%20poisoning%20because%20it%3F%0AAns%3A%20Has%20predictable%20dosing%20without%20CNS%20depression%0AWhy%3A%20Fomepizole%20inhibits%20alcohol%20dehydrogenase%20with%20predictable%20dosing%20and%20no%20intoxication%2C%20unlike%20ethanol.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Toxicology%29%0AQ%3A%20Why%20is%20sodium%20bicarbonate%20used%20in%20tricyclic%20antidepressant%20overdose%3F%0AAns%3A%20Narrows%20QRS%20by%20overcoming%20sodium%20channel%20blockade%0AWhy%3A%20Bicarbonate%20increases%20serum%20sodium%20and%20pH%2C%20overcoming%20TCA-induced%20fast%20sodium%20channel%20blockade%20%28wide%20QRS%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Lecanemab%2C%20used%20in%20early%20Alzheimer%27s%20disease%2C%20is%20a%20monoclonal%20antibody%20against%3F%0AAns%3A%20Amyloid-beta%20protofibrils%0AWhy%3A%20Lecanemab%20binds%20amyloid-beta%20protofibrils%2C%20modestly%20slowing%20early%20Alzheimer%27s%20decline%3B%20risk%20of%20ARIA.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }

@@ -1484,6 +1484,61 @@
      "stem": "The drug of choice for absence seizures that also treats generalised seizures is?"
     }
    ]
+  },
+  {
+   "date": "2026-11-25",
+   "source": "bank",
+   "topic_index": 13,
+   "md_paper_index": 3,
+   "case_slot": 2,
+   "ra_slot": 4,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "be7542bc6571",
+     "stem": "Carbon monoxide poisoning is treated with?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "f033f053e2d4",
+     "stem": "Dimercaprol (BAL) is a chelator used for which metal poisoning?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "5aa69234237e",
+     "stem": "Fomepizole is preferred over ethanol in methanol/ethylene glycol poisoning because it?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "Toxicology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Toxicology",
+     "stem_hash": "d2c59da5ade7",
+     "stem": "Why is sodium bicarbonate used in tricyclic antidepressant overdose?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper IV: Recent Advances",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper IV: Recent Advances",
+     "stem_hash": "d64d4d0b6067",
+     "stem": "Lecanemab, used in early Alzheimer's disease, is a monoclonal antibody against?"
+    }
+   ]
   }
  ]
 }
