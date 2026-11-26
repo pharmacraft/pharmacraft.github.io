@@ -1539,6 +1539,61 @@
      "stem": "Lecanemab, used in early Alzheimer's disease, is a monoclonal antibody against?"
     }
    ]
+  },
+  {
+   "date": "2026-11-26",
+   "source": "bank",
+   "topic_index": 0,
+   "md_paper_index": 0,
+   "case_slot": 3,
+   "ra_slot": 0,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "7bc39ae5b34c",
+     "stem": "First-order kinetics means a constant ______ of drug is eliminated per unit time."
+    },
+    {
+     "stream": "FMGE",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "ff7f834d8e8f",
+     "stem": "Drugs that induce liver enzymes will ______ the metabolism of other drugs."
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "5bc970e752ca",
+     "stem": "Which phenomenon explains greater drug effect when two drugs give a response larger than the sum of each?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "General Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "General Pharmacology",
+     "stem_hash": "fc5685986510",
+     "stem": "A noncompetitive antagonist differs from a competitive one in that it?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper I: General/Experimental",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper I: General/Experimental",
+     "stem_hash": "9d40fdb6c01b",
+     "stem": "CPCSEA guidelines in India regulate?"
+    }
+   ]
   }
  ]
 }

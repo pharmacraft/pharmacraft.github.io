@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "Toxicology",
-      "question": "Carbon monoxide poisoning is treated with?",
+      "topic": "General Pharmacology",
+      "question": "First-order kinetics means a constant ______ of drug is eliminated per unit time.",
       "options": [
-        "Naloxone",
-        "Deferoxamine",
-        "100% oxygen",
-        "Atropine"
+        "amount",
+        "fraction",
+        "dose",
+        "concentration"
       ],
-      "correct": 2,
-      "explanation": "High-flow/hyperbaric 100% oxygen displaces CO from haemoglobin, reducing carboxyhaemoglobin."
+      "correct": 1,
+      "explanation": "In first-order kinetics a constant FRACTION is eliminated per unit time; most drugs follow this."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "Toxicology",
-      "question": "Dimercaprol (BAL) is a chelator used for which metal poisoning?",
+      "topic": "General Pharmacology",
+      "question": "Drugs that induce liver enzymes will ______ the metabolism of other drugs.",
       "options": [
-        "Arsenic/mercury/lead",
-        "Copper only",
-        "Iron",
-        "Lithium"
+        "stop",
+        "not change",
+        "increase",
+        "decrease"
       ],
-      "correct": 0,
-      "explanation": "Dimercaprol chelates arsenic, mercury and lead; given IM in oil."
+      "correct": 2,
+      "explanation": "Enzyme inducers (rifampicin, phenytoin) increase metabolism, lowering levels of co-administered drugs."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "Toxicology",
-      "question": "Fomepizole is preferred over ethanol in methanol/ethylene glycol poisoning because it?",
+      "topic": "General Pharmacology",
+      "question": "Which phenomenon explains greater drug effect when two drugs give a response larger than the sum of each?",
       "options": [
-        "Has predictable dosing without CNS depression",
-        "Is cheaper",
-        "Chelates the toxin",
-        "Works faster at the kidney"
+        "Antagonism",
+        "Synergism (potentiation)",
+        "Addition",
+        "Tolerance"
       ],
-      "correct": 0,
-      "explanation": "Fomepizole inhibits alcohol dehydrogenase with predictable dosing and no intoxication, unlike ethanol."
+      "correct": 1,
+      "explanation": "Synergism/potentiation is a combined effect greater than the sum of individual effects."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "Toxicology",
-      "question": "Why is sodium bicarbonate used in tricyclic antidepressant overdose?",
+      "topic": "General Pharmacology",
+      "question": "A noncompetitive antagonist differs from a competitive one in that it?",
       "options": [
-        "Correct acidosis only",
-        "Increases excretion only",
-        "Narrows QRS by overcoming sodium channel blockade",
-        "Chelates TCA"
+        "Lowers the maximal response (not surmountable)",
+        "Shifts curve right, max unchanged",
+        "Has no effect on max",
+        "Increases potency"
       ],
-      "correct": 2,
-      "explanation": "Bicarbonate increases serum sodium and pH, overcoming TCA-induced fast sodium channel blockade (wide QRS)."
+      "correct": 0,
+      "explanation": "Noncompetitive antagonism reduces the maximal response and cannot be overcome by more agonist."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper IV: Recent Advances",
-      "question": "Lecanemab, used in early Alzheimer's disease, is a monoclonal antibody against?",
+      "topic": "Paper I: General/Experimental",
+      "question": "CPCSEA guidelines in India regulate?",
       "options": [
-        "Acetylcholinesterase",
-        "Amyloid-beta protofibrils",
-        "Tau",
-        "NMDA receptor"
+        "Drug pricing",
+        "Pharmacovigilance",
+        "Care and use of laboratory animals",
+        "Clinical trials"
       ],
-      "correct": 1,
-      "explanation": "Lecanemab binds amyloid-beta protofibrils, modestly slowing early Alzheimer's decline; risk of ARIA."
+      "correct": 2,
+      "explanation": "CPCSEA oversees the ethical care and use of animals in research in India."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 25 Nov 2026*\n\n🎓 *MBBS* (Toxicology)\nQ: Carbon monoxide poisoning is treated with?\nAns: 100% oxygen\nWhy: High-flow/hyperbaric 100% oxygen displaces CO from haemoglobin, reducing carboxyhaemoglobin.\n\n🌍 *FMGE* (Toxicology)\nQ: Dimercaprol (BAL) is a chelator used for which metal poisoning?\nAns: Arsenic/mercury/lead\nWhy: Dimercaprol chelates arsenic, mercury and lead; given IM in oil.\n\n🩺 *NEET PG* (Toxicology)\nQ: Fomepizole is preferred over ethanol in methanol/ethylene glycol poisoning because it?\nAns: Has predictable dosing without CNS depression\nWhy: Fomepizole inhibits alcohol dehydrogenase with predictable dosing and no intoxication, unlike ethanol.\n\n🏥 *INI-CET* (Toxicology)\nQ: Why is sodium bicarbonate used in tricyclic antidepressant overdose?\nAns: Narrows QRS by overcoming sodium channel blockade\nWhy: Bicarbonate increases serum sodium and pH, overcoming TCA-induced fast sodium channel blockade (wide QRS).\n\n🔬 *MD Pharmacology* (Paper IV: Recent Advances)\nQ: Lecanemab, used in early Alzheimer's disease, is a monoclonal antibody against?\nAns: Amyloid-beta protofibrils\nWhy: Lecanemab binds amyloid-beta protofibrils, modestly slowing early Alzheimer's decline; risk of ARIA.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2025%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28Toxicology%29%0AQ%3A%20Carbon%20monoxide%20poisoning%20is%20treated%20with%3F%0AAns%3A%20100%25%20oxygen%0AWhy%3A%20High-flow/hyperbaric%20100%25%20oxygen%20displaces%20CO%20from%20haemoglobin%2C%20reducing%20carboxyhaemoglobin.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28Toxicology%29%0AQ%3A%20Dimercaprol%20%28BAL%29%20is%20a%20chelator%20used%20for%20which%20metal%20poisoning%3F%0AAns%3A%20Arsenic/mercury/lead%0AWhy%3A%20Dimercaprol%20chelates%20arsenic%2C%20mercury%20and%20lead%3B%20given%20IM%20in%20oil.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28Toxicology%29%0AQ%3A%20Fomepizole%20is%20preferred%20over%20ethanol%20in%20methanol/ethylene%20glycol%20poisoning%20because%20it%3F%0AAns%3A%20Has%20predictable%20dosing%20without%20CNS%20depression%0AWhy%3A%20Fomepizole%20inhibits%20alcohol%20dehydrogenase%20with%20predictable%20dosing%20and%20no%20intoxication%2C%20unlike%20ethanol.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28Toxicology%29%0AQ%3A%20Why%20is%20sodium%20bicarbonate%20used%20in%20tricyclic%20antidepressant%20overdose%3F%0AAns%3A%20Narrows%20QRS%20by%20overcoming%20sodium%20channel%20blockade%0AWhy%3A%20Bicarbonate%20increases%20serum%20sodium%20and%20pH%2C%20overcoming%20TCA-induced%20fast%20sodium%20channel%20blockade%20%28wide%20QRS%29.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20IV%3A%20Recent%20Advances%29%0AQ%3A%20Lecanemab%2C%20used%20in%20early%20Alzheimer%27s%20disease%2C%20is%20a%20monoclonal%20antibody%20against%3F%0AAns%3A%20Amyloid-beta%20protofibrils%0AWhy%3A%20Lecanemab%20binds%20amyloid-beta%20protofibrils%2C%20modestly%20slowing%20early%20Alzheimer%27s%20decline%3B%20risk%20of%20ARIA.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 26 Nov 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: First-order kinetics means a constant ______ of drug is eliminated per unit time.\nAns: fraction\nWhy: In first-order kinetics a constant FRACTION is eliminated per unit time; most drugs follow this.\n\n🌍 *FMGE* (General Pharmacology)\nQ: Drugs that induce liver enzymes will ______ the metabolism of other drugs.\nAns: increase\nWhy: Enzyme inducers (rifampicin, phenytoin) increase metabolism, lowering levels of co-administered drugs.\n\n🩺 *NEET PG* (General Pharmacology)\nQ: Which phenomenon explains greater drug effect when two drugs give a response larger than the sum of each?\nAns: Synergism (potentiation)\nWhy: Synergism/potentiation is a combined effect greater than the sum of individual effects.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: A noncompetitive antagonist differs from a competitive one in that it?\nAns: Lowers the maximal response (not surmountable)\nWhy: Noncompetitive antagonism reduces the maximal response and cannot be overcome by more agonist.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: CPCSEA guidelines in India regulate?\nAns: Care and use of laboratory animals\nWhy: CPCSEA oversees the ethical care and use of animals in research in India.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2026%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20First-order%20kinetics%20means%20a%20constant%20______%20of%20drug%20is%20eliminated%20per%20unit%20time.%0AAns%3A%20fraction%0AWhy%3A%20In%20first-order%20kinetics%20a%20constant%20FRACTION%20is%20eliminated%20per%20unit%20time%3B%20most%20drugs%20follow%20this.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20Drugs%20that%20induce%20liver%20enzymes%20will%20______%20the%20metabolism%20of%20other%20drugs.%0AAns%3A%20increase%0AWhy%3A%20Enzyme%20inducers%20%28rifampicin%2C%20phenytoin%29%20increase%20metabolism%2C%20lowering%20levels%20of%20co-administered%20drugs.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20Which%20phenomenon%20explains%20greater%20drug%20effect%20when%20two%20drugs%20give%20a%20response%20larger%20than%20the%20sum%20of%20each%3F%0AAns%3A%20Synergism%20%28potentiation%29%0AWhy%3A%20Synergism/potentiation%20is%20a%20combined%20effect%20greater%20than%20the%20sum%20of%20individual%20effects.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20noncompetitive%20antagonist%20differs%20from%20a%20competitive%20one%20in%20that%20it%3F%0AAns%3A%20Lowers%20the%20maximal%20response%20%28not%20surmountable%29%0AWhy%3A%20Noncompetitive%20antagonism%20reduces%20the%20maximal%20response%20and%20cannot%20be%20overcome%20by%20more%20agonist.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20CPCSEA%20guidelines%20in%20India%20regulate%3F%0AAns%3A%20Care%20and%20use%20of%20laboratory%20animals%0AWhy%3A%20CPCSEA%20oversees%20the%20ethical%20care%20and%20use%20of%20animals%20in%20research%20in%20India.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
