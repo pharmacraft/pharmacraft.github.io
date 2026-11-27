@@ -1594,6 +1594,61 @@
      "stem": "CPCSEA guidelines in India regulate?"
     }
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "source": "bank",
+   "topic_index": 1,
+   "md_paper_index": 1,
+   "case_slot": 4,
+   "ra_slot": 1,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "685742320061",
+     "stem": "Which drug causes miosis (pupillary constriction)?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "55a39d7789f2",
+     "stem": "Which drug reverses non-depolarising neuromuscular blockade?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "ae69f5790e7c",
+     "stem": "Which drug precipitates a hypertensive crisis if taken with tyramine-rich foods?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "ANS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "ANS",
+     "stem_hash": "1497ae32f410",
+     "stem": "Which explains why selective beta-1 blockers are safer in asthma than propranolol?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper II: Clinical Pharmacology",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper II: Clinical Pharmacology",
+     "stem_hash": "c4a5dacb5e94",
+     "stem": "The Indian Pharmacopoeia Commission is the National Coordination Centre for?"
+    }
+   ]
   }
  ]
 }

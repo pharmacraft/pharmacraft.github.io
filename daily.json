@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "General Pharmacology",
-      "question": "First-order kinetics means a constant ______ of drug is eliminated per unit time.",
+      "topic": "ANS",
+      "question": "Which drug causes miosis (pupillary constriction)?",
       "options": [
-        "amount",
-        "fraction",
-        "dose",
-        "concentration"
+        "Adrenaline",
+        "Ephedrine",
+        "Pilocarpine",
+        "Atropine"
       ],
-      "correct": 1,
-      "explanation": "In first-order kinetics a constant FRACTION is eliminated per unit time; most drugs follow this."
+      "correct": 2,
+      "explanation": "Pilocarpine is a muscarinic agonist causing miosis; used in glaucoma. Atropine causes mydriasis."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "General Pharmacology",
-      "question": "Drugs that induce liver enzymes will ______ the metabolism of other drugs.",
+      "topic": "ANS",
+      "question": "Which drug reverses non-depolarising neuromuscular blockade?",
       "options": [
-        "stop",
-        "not change",
-        "increase",
-        "decrease"
+        "Succinylcholine",
+        "Pancuronium",
+        "Atropine",
+        "Neostigmine"
       ],
-      "correct": 2,
-      "explanation": "Enzyme inducers (rifampicin, phenytoin) increase metabolism, lowering levels of co-administered drugs."
+      "correct": 3,
+      "explanation": "Neostigmine increases ACh at the neuromuscular junction, reversing non-depolarising blockers."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "General Pharmacology",
-      "question": "Which phenomenon explains greater drug effect when two drugs give a response larger than the sum of each?",
+      "topic": "ANS",
+      "question": "Which drug precipitates a hypertensive crisis if taken with tyramine-rich foods?",
       "options": [
-        "Antagonism",
-        "Synergism (potentiation)",
-        "Addition",
-        "Tolerance"
+        "Beta-blockers",
+        "SSRIs",
+        "MAO inhibitors",
+        "ACE inhibitors"
       ],
-      "correct": 1,
-      "explanation": "Synergism/potentiation is a combined effect greater than the sum of individual effects."
+      "correct": 2,
+      "explanation": "Non-selective MAO inhibitors prevent tyramine breakdown, causing a 'cheese reaction' hypertensive crisis."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "General Pharmacology",
-      "question": "A noncompetitive antagonist differs from a competitive one in that it?",
+      "topic": "ANS",
+      "question": "Which explains why selective beta-1 blockers are safer in asthma than propranolol?",
       "options": [
-        "Lowers the maximal response (not surmountable)",
-        "Shifts curve right, max unchanged",
-        "Has no effect on max",
-        "Increases potency"
+        "Spare beta-2 bronchial receptors",
+        "Shorter half-life",
+        "Renal clearance",
+        "Less CNS entry"
       ],
       "correct": 0,
-      "explanation": "Noncompetitive antagonism reduces the maximal response and cannot be overcome by more agonist."
+      "explanation": "Cardioselective beta-1 blockers spare bronchial beta-2 receptors, reducing bronchospasm risk."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper I: General/Experimental",
-      "question": "CPCSEA guidelines in India regulate?",
+      "topic": "Paper II: Clinical Pharmacology",
+      "question": "The Indian Pharmacopoeia Commission is the National Coordination Centre for?",
       "options": [
+        "Clinical trials",
         "Drug pricing",
-        "Pharmacovigilance",
-        "Care and use of laboratory animals",
-        "Clinical trials"
+        "Pharmacovigilance Programme of India (PvPI)",
+        "Animal ethics"
       ],
       "correct": 2,
-      "explanation": "CPCSEA oversees the ethical care and use of animals in research in India."
+      "explanation": "The IPC (Ghaziabad) coordinates the Pharmacovigilance Programme of India (PvPI)."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 26 Nov 2026*\n\n🎓 *MBBS* (General Pharmacology)\nQ: First-order kinetics means a constant ______ of drug is eliminated per unit time.\nAns: fraction\nWhy: In first-order kinetics a constant FRACTION is eliminated per unit time; most drugs follow this.\n\n🌍 *FMGE* (General Pharmacology)\nQ: Drugs that induce liver enzymes will ______ the metabolism of other drugs.\nAns: increase\nWhy: Enzyme inducers (rifampicin, phenytoin) increase metabolism, lowering levels of co-administered drugs.\n\n🩺 *NEET PG* (General Pharmacology)\nQ: Which phenomenon explains greater drug effect when two drugs give a response larger than the sum of each?\nAns: Synergism (potentiation)\nWhy: Synergism/potentiation is a combined effect greater than the sum of individual effects.\n\n🏥 *INI-CET* (General Pharmacology)\nQ: A noncompetitive antagonist differs from a competitive one in that it?\nAns: Lowers the maximal response (not surmountable)\nWhy: Noncompetitive antagonism reduces the maximal response and cannot be overcome by more agonist.\n\n🔬 *MD Pharmacology* (Paper I: General/Experimental)\nQ: CPCSEA guidelines in India regulate?\nAns: Care and use of laboratory animals\nWhy: CPCSEA oversees the ethical care and use of animals in research in India.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2026%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28General%20Pharmacology%29%0AQ%3A%20First-order%20kinetics%20means%20a%20constant%20______%20of%20drug%20is%20eliminated%20per%20unit%20time.%0AAns%3A%20fraction%0AWhy%3A%20In%20first-order%20kinetics%20a%20constant%20FRACTION%20is%20eliminated%20per%20unit%20time%3B%20most%20drugs%20follow%20this.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28General%20Pharmacology%29%0AQ%3A%20Drugs%20that%20induce%20liver%20enzymes%20will%20______%20the%20metabolism%20of%20other%20drugs.%0AAns%3A%20increase%0AWhy%3A%20Enzyme%20inducers%20%28rifampicin%2C%20phenytoin%29%20increase%20metabolism%2C%20lowering%20levels%20of%20co-administered%20drugs.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28General%20Pharmacology%29%0AQ%3A%20Which%20phenomenon%20explains%20greater%20drug%20effect%20when%20two%20drugs%20give%20a%20response%20larger%20than%20the%20sum%20of%20each%3F%0AAns%3A%20Synergism%20%28potentiation%29%0AWhy%3A%20Synergism/potentiation%20is%20a%20combined%20effect%20greater%20than%20the%20sum%20of%20individual%20effects.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28General%20Pharmacology%29%0AQ%3A%20A%20noncompetitive%20antagonist%20differs%20from%20a%20competitive%20one%20in%20that%20it%3F%0AAns%3A%20Lowers%20the%20maximal%20response%20%28not%20surmountable%29%0AWhy%3A%20Noncompetitive%20antagonism%20reduces%20the%20maximal%20response%20and%20cannot%20be%20overcome%20by%20more%20agonist.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20I%3A%20General/Experimental%29%0AQ%3A%20CPCSEA%20guidelines%20in%20India%20regulate%3F%0AAns%3A%20Care%20and%20use%20of%20laboratory%20animals%0AWhy%3A%20CPCSEA%20oversees%20the%20ethical%20care%20and%20use%20of%20animals%20in%20research%20in%20India.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 27 Nov 2026*\n\n🎓 *MBBS* (ANS)\nQ: Which drug causes miosis (pupillary constriction)?\nAns: Pilocarpine\nWhy: Pilocarpine is a muscarinic agonist causing miosis; used in glaucoma. Atropine causes mydriasis.\n\n🌍 *FMGE* (ANS)\nQ: Which drug reverses non-depolarising neuromuscular blockade?\nAns: Neostigmine\nWhy: Neostigmine increases ACh at the neuromuscular junction, reversing non-depolarising blockers.\n\n🩺 *NEET PG* (ANS)\nQ: Which drug precipitates a hypertensive crisis if taken with tyramine-rich foods?\nAns: MAO inhibitors\nWhy: Non-selective MAO inhibitors prevent tyramine breakdown, causing a 'cheese reaction' hypertensive crisis.\n\n🏥 *INI-CET* (ANS)\nQ: Which explains why selective beta-1 blockers are safer in asthma than propranolol?\nAns: Spare beta-2 bronchial receptors\nWhy: Cardioselective beta-1 blockers spare bronchial beta-2 receptors, reducing bronchospasm risk.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: The Indian Pharmacopoeia Commission is the National Coordination Centre for?\nAns: Pharmacovigilance Programme of India (PvPI)\nWhy: The IPC (Ghaziabad) coordinates the Pharmacovigilance Programme of India (PvPI).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2027%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28ANS%29%0AQ%3A%20Which%20drug%20causes%20miosis%20%28pupillary%20constriction%29%3F%0AAns%3A%20Pilocarpine%0AWhy%3A%20Pilocarpine%20is%20a%20muscarinic%20agonist%20causing%20miosis%3B%20used%20in%20glaucoma.%20Atropine%20causes%20mydriasis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28ANS%29%0AQ%3A%20Which%20drug%20reverses%20non-depolarising%20neuromuscular%20blockade%3F%0AAns%3A%20Neostigmine%0AWhy%3A%20Neostigmine%20increases%20ACh%20at%20the%20neuromuscular%20junction%2C%20reversing%20non-depolarising%20blockers.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28ANS%29%0AQ%3A%20Which%20drug%20precipitates%20a%20hypertensive%20crisis%20if%20taken%20with%20tyramine-rich%20foods%3F%0AAns%3A%20MAO%20inhibitors%0AWhy%3A%20Non-selective%20MAO%20inhibitors%20prevent%20tyramine%20breakdown%2C%20causing%20a%20%27cheese%20reaction%27%20hypertensive%20crisis.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28ANS%29%0AQ%3A%20Which%20explains%20why%20selective%20beta-1%20blockers%20are%20safer%20in%20asthma%20than%20propranolol%3F%0AAns%3A%20Spare%20beta-2%20bronchial%20receptors%0AWhy%3A%20Cardioselective%20beta-1%20blockers%20spare%20bronchial%20beta-2%20receptors%2C%20reducing%20bronchospasm%20risk.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20The%20Indian%20Pharmacopoeia%20Commission%20is%20the%20National%20Coordination%20Centre%20for%3F%0AAns%3A%20Pharmacovigilance%20Programme%20of%20India%20%28PvPI%29%0AWhy%3A%20The%20IPC%20%28Ghaziabad%29%20coordinates%20the%20Pharmacovigilance%20Programme%20of%20India%20%28PvPI%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
