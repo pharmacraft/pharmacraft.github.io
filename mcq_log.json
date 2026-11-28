@@ -1649,6 +1649,61 @@
      "stem": "The Indian Pharmacopoeia Commission is the National Coordination Centre for?"
     }
    ]
+  },
+  {
+   "date": "2026-11-28",
+   "source": "bank",
+   "topic_index": 2,
+   "md_paper_index": 2,
+   "case_slot": 0,
+   "ra_slot": 2,
+   "items": [
+    {
+     "stream": "MBBS",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "0803f56a21f4",
+     "stem": "A common dry cough is a side effect of which drug class?"
+    },
+    {
+     "stream": "FMGE",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "d31a5a262d8a",
+     "stem": "Which antiarrhythmic is a potassium channel blocker used in many arrhythmias?"
+    },
+    {
+     "stream": "NEET PG",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "f7e867382596",
+     "stem": "Which class I antiarrhythmic is used for ventricular arrhythmias during acute MI?"
+    },
+    {
+     "stream": "INI-CET",
+     "concept": "CVS",
+     "angle": "",
+     "type": "Bank",
+     "topic": "CVS",
+     "stem_hash": "ff87405ca3fc",
+     "stem": "Why does amiodarone cause both hypo- and hyperthyroidism?"
+    },
+    {
+     "stream": "MD Pharmacology",
+     "concept": "Paper III: Systemic",
+     "angle": "",
+     "type": "Bank",
+     "topic": "Paper III: Systemic",
+     "stem_hash": "19248f4330b7",
+     "stem": "Which drug class reduces mortality in HFrEF: ACEi/ARB, beta-blocker, MRA and?"
+    }
+   ]
   }
  ]
 }

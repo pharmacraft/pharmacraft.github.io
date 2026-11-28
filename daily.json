@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "items": [
     {
       "stream": "MBBS",
       "emoji": "🎓",
-      "topic": "ANS",
-      "question": "Which drug causes miosis (pupillary constriction)?",
+      "topic": "CVS",
+      "question": "A common dry cough is a side effect of which drug class?",
       "options": [
-        "Adrenaline",
-        "Ephedrine",
-        "Pilocarpine",
-        "Atropine"
+        "ACE inhibitors",
+        "CCBs",
+        "Diuretics",
+        "Beta-blockers"
       ],
-      "correct": 2,
-      "explanation": "Pilocarpine is a muscarinic agonist causing miosis; used in glaucoma. Atropine causes mydriasis."
+      "correct": 0,
+      "explanation": "ACE inhibitors raise bradykinin, causing dry cough; switch to an ARB if troublesome."
     },
     {
       "stream": "FMGE",
       "emoji": "🌍",
-      "topic": "ANS",
-      "question": "Which drug reverses non-depolarising neuromuscular blockade?",
+      "topic": "CVS",
+      "question": "Which antiarrhythmic is a potassium channel blocker used in many arrhythmias?",
       "options": [
-        "Succinylcholine",
-        "Pancuronium",
-        "Atropine",
-        "Neostigmine"
+        "Amiodarone",
+        "Adenosine",
+        "Verapamil",
+        "Lignocaine"
       ],
-      "correct": 3,
-      "explanation": "Neostigmine increases ACh at the neuromuscular junction, reversing non-depolarising blockers."
+      "correct": 0,
+      "explanation": "Amiodarone is mainly a class III (K+ channel blocker) antiarrhythmic with multi-class actions."
     },
     {
       "stream": "NEET PG",
       "emoji": "🩺",
-      "topic": "ANS",
-      "question": "Which drug precipitates a hypertensive crisis if taken with tyramine-rich foods?",
+      "topic": "CVS",
+      "question": "Which class I antiarrhythmic is used for ventricular arrhythmias during acute MI?",
       "options": [
-        "Beta-blockers",
-        "SSRIs",
-        "MAO inhibitors",
-        "ACE inhibitors"
+        "Lignocaine (lidocaine)",
+        "Quinidine",
+        "Flecainide",
+        "Procainamide"
       ],
-      "correct": 2,
-      "explanation": "Non-selective MAO inhibitors prevent tyramine breakdown, causing a 'cheese reaction' hypertensive crisis."
+      "correct": 0,
+      "explanation": "Lidocaine (class Ib) is used IV for ventricular arrhythmias, acting on ischaemic/depolarised tissue."
     },
     {
       "stream": "INI-CET",
       "emoji": "🏥",
-      "topic": "ANS",
-      "question": "Which explains why selective beta-1 blockers are safer in asthma than propranolol?",
+      "topic": "CVS",
+      "question": "Why does amiodarone cause both hypo- and hyperthyroidism?",
       "options": [
-        "Spare beta-2 bronchial receptors",
-        "Shorter half-life",
-        "Renal clearance",
-        "Less CNS entry"
+        "High iodine content and effects on thyroid hormone metabolism",
+        "Autoimmune trigger",
+        "Pituitary damage",
+        "Direct TSH effect"
       ],
       "correct": 0,
-      "explanation": "Cardioselective beta-1 blockers spare bronchial beta-2 receptors, reducing bronchospasm risk."
+      "explanation": "Amiodarone's high iodine load and inhibition of T4-to-T3 conversion can cause either thyroid dysfunction."
     },
     {
       "stream": "MD Pharmacology",
       "emoji": "🔬",
-      "topic": "Paper II: Clinical Pharmacology",
-      "question": "The Indian Pharmacopoeia Commission is the National Coordination Centre for?",
+      "topic": "Paper III: Systemic",
+      "question": "Which drug class reduces mortality in HFrEF: ACEi/ARB, beta-blocker, MRA and?",
       "options": [
-        "Clinical trials",
-        "Drug pricing",
-        "Pharmacovigilance Programme of India (PvPI)",
-        "Animal ethics"
+        "Digoxin",
+        "Nitrates alone",
+        "CCBs",
+        "SGLT2 inhibitors"
       ],
-      "correct": 2,
-      "explanation": "The IPC (Ghaziabad) coordinates the Pharmacovigilance Programme of India (PvPI)."
+      "correct": 3,
+      "explanation": "SGLT2 inhibitors are now a pillar of guideline-directed HFrEF therapy, reducing mortality and hospitalisation."
     }
   ],
-  "whatsapp_text": "*PharmaCraft Daily - 27 Nov 2026*\n\n🎓 *MBBS* (ANS)\nQ: Which drug causes miosis (pupillary constriction)?\nAns: Pilocarpine\nWhy: Pilocarpine is a muscarinic agonist causing miosis; used in glaucoma. Atropine causes mydriasis.\n\n🌍 *FMGE* (ANS)\nQ: Which drug reverses non-depolarising neuromuscular blockade?\nAns: Neostigmine\nWhy: Neostigmine increases ACh at the neuromuscular junction, reversing non-depolarising blockers.\n\n🩺 *NEET PG* (ANS)\nQ: Which drug precipitates a hypertensive crisis if taken with tyramine-rich foods?\nAns: MAO inhibitors\nWhy: Non-selective MAO inhibitors prevent tyramine breakdown, causing a 'cheese reaction' hypertensive crisis.\n\n🏥 *INI-CET* (ANS)\nQ: Which explains why selective beta-1 blockers are safer in asthma than propranolol?\nAns: Spare beta-2 bronchial receptors\nWhy: Cardioselective beta-1 blockers spare bronchial beta-2 receptors, reducing bronchospasm risk.\n\n🔬 *MD Pharmacology* (Paper II: Clinical Pharmacology)\nQ: The Indian Pharmacopoeia Commission is the National Coordination Centre for?\nAns: Pharmacovigilance Programme of India (PvPI)\nWhy: The IPC (Ghaziabad) coordinates the Pharmacovigilance Programme of India (PvPI).\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
-  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2027%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28ANS%29%0AQ%3A%20Which%20drug%20causes%20miosis%20%28pupillary%20constriction%29%3F%0AAns%3A%20Pilocarpine%0AWhy%3A%20Pilocarpine%20is%20a%20muscarinic%20agonist%20causing%20miosis%3B%20used%20in%20glaucoma.%20Atropine%20causes%20mydriasis.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28ANS%29%0AQ%3A%20Which%20drug%20reverses%20non-depolarising%20neuromuscular%20blockade%3F%0AAns%3A%20Neostigmine%0AWhy%3A%20Neostigmine%20increases%20ACh%20at%20the%20neuromuscular%20junction%2C%20reversing%20non-depolarising%20blockers.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28ANS%29%0AQ%3A%20Which%20drug%20precipitates%20a%20hypertensive%20crisis%20if%20taken%20with%20tyramine-rich%20foods%3F%0AAns%3A%20MAO%20inhibitors%0AWhy%3A%20Non-selective%20MAO%20inhibitors%20prevent%20tyramine%20breakdown%2C%20causing%20a%20%27cheese%20reaction%27%20hypertensive%20crisis.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28ANS%29%0AQ%3A%20Which%20explains%20why%20selective%20beta-1%20blockers%20are%20safer%20in%20asthma%20than%20propranolol%3F%0AAns%3A%20Spare%20beta-2%20bronchial%20receptors%0AWhy%3A%20Cardioselective%20beta-1%20blockers%20spare%20bronchial%20beta-2%20receptors%2C%20reducing%20bronchospasm%20risk.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20II%3A%20Clinical%20Pharmacology%29%0AQ%3A%20The%20Indian%20Pharmacopoeia%20Commission%20is%20the%20National%20Coordination%20Centre%20for%3F%0AAns%3A%20Pharmacovigilance%20Programme%20of%20India%20%28PvPI%29%0AWhy%3A%20The%20IPC%20%28Ghaziabad%29%20coordinates%20the%20Pharmacovigilance%20Programme%20of%20India%20%28PvPI%29.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
+  "whatsapp_text": "*PharmaCraft Daily - 28 Nov 2026*\n\n🎓 *MBBS* (CVS)\nQ: A common dry cough is a side effect of which drug class?\nAns: ACE inhibitors\nWhy: ACE inhibitors raise bradykinin, causing dry cough; switch to an ARB if troublesome.\n\n🌍 *FMGE* (CVS)\nQ: Which antiarrhythmic is a potassium channel blocker used in many arrhythmias?\nAns: Amiodarone\nWhy: Amiodarone is mainly a class III (K+ channel blocker) antiarrhythmic with multi-class actions.\n\n🩺 *NEET PG* (CVS)\nQ: Which class I antiarrhythmic is used for ventricular arrhythmias during acute MI?\nAns: Lignocaine (lidocaine)\nWhy: Lidocaine (class Ib) is used IV for ventricular arrhythmias, acting on ischaemic/depolarised tissue.\n\n🏥 *INI-CET* (CVS)\nQ: Why does amiodarone cause both hypo- and hyperthyroidism?\nAns: High iodine content and effects on thyroid hormone metabolism\nWhy: Amiodarone's high iodine load and inhibition of T4-to-T3 conversion can cause either thyroid dysfunction.\n\n🔬 *MD Pharmacology* (Paper III: Systemic)\nQ: Which drug class reduces mortality in HFrEF: ACEi/ARB, beta-blocker, MRA and?\nAns: SGLT2 inhibitors\nWhy: SGLT2 inhibitors are now a pillar of guideline-directed HFrEF therapy, reducing mortality and hospitalisation.\n\nJoin: https://t.me/pharmacraft_official\nMore: https://pharmacraft.in",
+  "whatsapp_url": "https://wa.me/?text=%2APharmaCraft%20Daily%20-%2028%20Nov%202026%2A%0A%0A%F0%9F%8E%93%20%2AMBBS%2A%20%28CVS%29%0AQ%3A%20A%20common%20dry%20cough%20is%20a%20side%20effect%20of%20which%20drug%20class%3F%0AAns%3A%20ACE%20inhibitors%0AWhy%3A%20ACE%20inhibitors%20raise%20bradykinin%2C%20causing%20dry%20cough%3B%20switch%20to%20an%20ARB%20if%20troublesome.%0A%0A%F0%9F%8C%8D%20%2AFMGE%2A%20%28CVS%29%0AQ%3A%20Which%20antiarrhythmic%20is%20a%20potassium%20channel%20blocker%20used%20in%20many%20arrhythmias%3F%0AAns%3A%20Amiodarone%0AWhy%3A%20Amiodarone%20is%20mainly%20a%20class%20III%20%28K%2B%20channel%20blocker%29%20antiarrhythmic%20with%20multi-class%20actions.%0A%0A%F0%9F%A9%BA%20%2ANEET%20PG%2A%20%28CVS%29%0AQ%3A%20Which%20class%20I%20antiarrhythmic%20is%20used%20for%20ventricular%20arrhythmias%20during%20acute%20MI%3F%0AAns%3A%20Lignocaine%20%28lidocaine%29%0AWhy%3A%20Lidocaine%20%28class%20Ib%29%20is%20used%20IV%20for%20ventricular%20arrhythmias%2C%20acting%20on%20ischaemic/depolarised%20tissue.%0A%0A%F0%9F%8F%A5%20%2AINI-CET%2A%20%28CVS%29%0AQ%3A%20Why%20does%20amiodarone%20cause%20both%20hypo-%20and%20hyperthyroidism%3F%0AAns%3A%20High%20iodine%20content%20and%20effects%20on%20thyroid%20hormone%20metabolism%0AWhy%3A%20Amiodarone%27s%20high%20iodine%20load%20and%20inhibition%20of%20T4-to-T3%20conversion%20can%20cause%20either%20thyroid%20dysfunction.%0A%0A%F0%9F%94%AC%20%2AMD%20Pharmacology%2A%20%28Paper%20III%3A%20Systemic%29%0AQ%3A%20Which%20drug%20class%20reduces%20mortality%20in%20HFrEF%3A%20ACEi/ARB%2C%20beta-blocker%2C%20MRA%20and%3F%0AAns%3A%20SGLT2%20inhibitors%0AWhy%3A%20SGLT2%20inhibitors%20are%20now%20a%20pillar%20of%20guideline-directed%20HFrEF%20therapy%2C%20reducing%20mortality%20and%20hospitalisation.%0A%0AJoin%3A%20https%3A//t.me/pharmacraft_official%0AMore%3A%20https%3A//pharmacraft.in"
 }
